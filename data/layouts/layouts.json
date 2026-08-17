@@ -9323,6 +9323,17 @@
       "border_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_TWINLEAF_TOWN",
+      "name": "TwinleafTown_Layout",
+      "width": 20,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TwinleafTown/border.bin",
+      "blockdata_filepath": "data/layouts/TwinleafTown/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }
