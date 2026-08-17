@@ -2206,7 +2206,10 @@ static const struct NamingScreenTemplate sRivalNamingScreenTemplate =
 {
     .copyExistingString = FALSE,
     .maxChars = PLAYER_NAME_LENGTH,
-    .iconFunction = 6,
+    // iconFunction 6 (NamingScreen_CreateRivalIcon) renders garbage -- this path was apparently
+    // never actually exercised before (nothing in Emerald called NAMING_SCREEN_RIVAL until now).
+    // Disabling rather than guessing further at a rendering bug in code we didn't write.
+    .iconFunction = 0,
     .addGenderIcon = FALSE,
     .initialPage = KBPAGE_LETTERS_UPPER,
     .title = sText_RivalsName,

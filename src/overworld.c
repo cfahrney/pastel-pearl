@@ -1934,10 +1934,11 @@ void CB2_NewGame(void)
     PlayTimeCounter_Start();
     ScriptContext_Init();
     UnlockPlayerFieldControls();
-    if (IS_FRLG)
-        gFieldCallback = FieldCB_WarpExitFadeFromBlack;
-    else
-        gFieldCallback = ExecuteTruckSequence;
+    // Both versions now warp straight into the player's bedroom on a new game (see WarpToTruck in
+    // new_game.c) rather than the moving-truck map, so always use a plain warp-in fade rather than
+    // ExecuteTruckSequence, which unconditionally rewrites tiles at a fixed grid position assuming
+    // it's running on the InsideOfTruck map — it was corrupting the bedroom's tiles otherwise.
+    gFieldCallback = FieldCB_WarpExitFadeFromBlack;
     gFieldCallback2 = NULL;
     DoMapLoadLoop(&gMain.state);
     SetFieldVBlankCallback();
