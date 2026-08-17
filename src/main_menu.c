@@ -263,13 +263,13 @@ static void MainMenu_FormatSavegameBadges(void);
 // .rodata
 
 static const u16 sBirchSpeechBgPals[][16] = {
-    INCGFX_U16("graphics/birch_speech/bg0.pal", ".gbapal"),
-    INCGFX_U16("graphics/birch_speech/bg1.pal", ".gbapal")
+    INCGFX_U16("graphics/rowan_speech/bg0.pal", ".gbapal"),
+    INCGFX_U16("graphics/rowan_speech/bg1.pal", ".gbapal")
 };
 
 static const u32 sBirchSpeechShadowGfx[] = INCGFX_U32("graphics/birch_speech/shadow.png", ".4bpp.smol");
 static const u32 sBirchSpeechBgMap[] = INCGFX_U32("graphics/birch_speech/map.bin", ".smolTM");
-static const u16 sBirchSpeechBgGradientPal[] = INCGFX_U16("graphics/birch_speech/bg2.pal", ".gbapal");
+static const u16 sBirchSpeechBgGradientPal[] = INCGFX_U16("graphics/rowan_speech/bg2.pal", ".gbapal");
 
 static const u8 gText_SaveFileCorrupted[] = _("The save file is corrupted. The\nprevious save file will be loaded.");
 static const u8 gText_SaveFileErased[] = _("The save file has been erased\ndue to corruption or damage.");

@@ -545,7 +545,6 @@
 
 #define MUS_ROWAN_LAB                610
 
-
 // Diamond/Pearl/Platinum music port (sourced from ipatix's GBA-Pokemon-DPPt-Music, used with permission)
 #define MUS_ACCESSORY_OBTAINED       611
 #define MUS_MORNING_THEME            612
