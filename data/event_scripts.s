@@ -1740,3 +1740,19 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/wild_encounter.inc"
 
 	.include "data/maps/TwinleafTown/scripts.inc"
+
+	.include "data/maps/VerityLakefront/scripts.inc"
+
+	.include "data/maps/Route201/scripts.inc"
+
+	.include "data/maps/TwinleafTown_BarryHouse_2F/scripts.inc"
+
+	.include "data/maps/TwinleafTown_TopRightHouse_1F/scripts.inc"
+
+	.include "data/maps/TwinleafTown_BarryHouse_1F/scripts.inc"
+
+	.include "data/maps/TwinleafTown_PlayerHouse_2F/scripts.inc"
+
+	.include "data/maps/TwinleafTown_PlayerHouse_1F/scripts.inc"
+
+	.include "data/maps/TwinleafTown_BottomLeftHouse_1F/scripts.inc"

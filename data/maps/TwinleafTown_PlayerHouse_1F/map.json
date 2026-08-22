@@ -1,0 +1,43 @@
+{
+  "id": "MAP_TWINLEAF_TOWN_PLAYER_HOUSE_1F",
+  "name": "TwinleafTown_PlayerHouse_1F",
+  "layout": "LAYOUT_TWINLEAF_TOWN_PLAYER_HOUSE_1F",
+  "music": "MUS_TWINLEAF_TOWN_DAY",
+  "region_map_section": "MAPSEC_TWINLEAF_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN_PLAYER_HOUSE_2F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_HOENN"
+}

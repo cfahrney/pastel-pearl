@@ -2,9 +2,17 @@
   "map_sections": [
     {
       "id": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "LITTLEROOT TOWN",
+      "name": " ",
       "x": 4,
       "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_TWINLEAF_TOWN",
+      "name": "TWINLEAF TOWN",
+      "x": 4,
+      "y": 13,
       "width": 1,
       "height": 1
     },
@@ -133,6 +141,22 @@
       "name": "ROUTE 101",
       "x": 4,
       "y": 10,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_201",
+      "name": "ROUTE 201",
+      "x": 4,
+      "y": 12,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_VERITY_LAKEFRONT",
+      "name": "VERITY LAKEFRONT",
+      "x": 3,
+      "y": 12,
       "width": 1,
       "height": 1
     },

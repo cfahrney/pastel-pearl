@@ -142,35 +142,13 @@ static void WarpToTruck(void)
     }
     else
     {
-        // Skip the moving-truck intro; warp straight into the player's bedroom with the clock unset.
-        // Normally InsideOfTruck_EventScript_SetIntroFlagsMale/Female (data/maps/InsideOfTruck/scripts.inc)
-        // hides the rival's mom/sibling (misplaced in the player's own house object list) and the other
-        // gender's house objects. Since that script never runs here, replicate its flag/var/respawn effects.
-        if (gSaveBlock2Ptr->playerGender == MALE)
-        {
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL);
-            VarSet(VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1);
-            SetLastHealLocationWarp(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F);
-        }
-        else
-        {
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING);
-            FlagSet(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL);
-            VarSet(VAR_LITTLEROOT_HOUSES_STATE_MAY, 1);
-            SetLastHealLocationWarp(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F);
-        }
+        // Skip the moving-truck intro; warp straight into the player's bedroom in Twinleaf Town,
+        // standing in front of the TV, with the clock unset. Unlike Littleroot's Brendan's/May's
+        // House split, Twinleaf has a single shared player house (the rival has their own house),
+        // so there's no other-gender house/family to hide here.
         VarSet(VAR_LITTLEROOT_INTRO_STATE, 4);
-        if (gSaveBlock2Ptr->playerGender == MALE)
-            SetWarpDestination(MAP_GROUP(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F), MAP_NUM(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F), WARP_ID_NONE, 7, 1);
-        else
-            SetWarpDestination(MAP_GROUP(MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F), MAP_NUM(MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F), WARP_ID_NONE, 7, 1);
+        SetLastHealLocationWarp(HEAL_LOCATION_TWINLEAF_TOWN_PLAYER_HOUSE_2F);
+        SetWarpDestination(MAP_GROUP(MAP_TWINLEAF_TOWN_PLAYER_HOUSE_2F), MAP_NUM(MAP_TWINLEAF_TOWN_PLAYER_HOUSE_2F), WARP_ID_NONE, 3, 4);
     }
     WarpIntoMap();
 }
