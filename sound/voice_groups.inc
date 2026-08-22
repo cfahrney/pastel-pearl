@@ -202,3 +202,11 @@
 .include "sound/voicegroups/rg_sevii_45.inc"
 .include "sound/voicegroups/rg_sevii_67.inc"
 .include "sound/voicegroups/drumsets/rg_credits.inc"
+
+@ Diamond/Pearl/Platinum music port (sourced from ipatix's GBA-Pokemon-DPPt-Music)
+.include "sound/voicegroups/dppt/voice_def_dppt.inc"
+.include "sound/voicegroups/dppt/drumtbl1_dppt.inc"
+.include "sound/voicegroups/dppt/drumtbl2_dppt.inc"
+.include "sound/voicegroups/dppt/drumtbl3_dppt.inc"
+.include "sound/voicegroups/dppt/instrsplit_dppt.inc"
+.include "sound/voicegroups/dppt/voicegroup_dppt.inc"

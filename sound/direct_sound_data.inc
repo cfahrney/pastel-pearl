@@ -9041,3 +9041,1095 @@ DirectSoundWaveData_sd90_classical_whistle::
 	.align 2
 DirectSoundWaveData_sd90_enhanced_delay_shaku::
 	.incbin "sound/direct_sound_samples/sd90_enhanced_delay_shaku.bin"
+
+@ Diamond/Pearl/Platinum music port (sourced from ipatix's GBA-Pokemon-DPPt-Music)
+
+	.align 2
+	.global snd_0_Global
+snd_0_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_0_Global.bin"
+
+	.align 2
+	.global snd_1_Key_28
+snd_1_Key_28:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_28.bin"
+
+	.align 2
+	.global snd_1_Key_29
+snd_1_Key_29:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_29.bin"
+
+	.align 2
+	.global snd_1_Key_30
+snd_1_Key_30:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_30.bin"
+
+	.align 2
+	.global snd_1_Key_31
+snd_1_Key_31:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_31.bin"
+
+	.align 2
+	.global snd_1_Key_32
+snd_1_Key_32:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_32.bin"
+
+	.align 2
+	.global snd_1_Key_33
+snd_1_Key_33:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_33.bin"
+
+	.align 2
+	.global snd_1_Key_34
+snd_1_Key_34:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_34.bin"
+
+	.align 2
+	.global snd_1_Key_35
+snd_1_Key_35:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_35.bin"
+
+	.align 2
+	.global snd_1_Key_36
+snd_1_Key_36:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_36.bin"
+
+	.align 2
+	.global snd_1_Key_37
+snd_1_Key_37:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_37.bin"
+
+	.align 2
+	.global snd_1_Key_38
+snd_1_Key_38:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_38.bin"
+
+	.align 2
+	.global snd_1_Key_39
+snd_1_Key_39:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_39.bin"
+
+	.align 2
+	.global snd_1_Key_40
+snd_1_Key_40:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_40.bin"
+
+	.align 2
+	.global snd_1_Key_41
+snd_1_Key_41:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_41.bin"
+
+	.align 2
+	.global snd_1_Key_42
+snd_1_Key_42:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_42.bin"
+
+	.align 2
+	.global snd_1_Key_44
+snd_1_Key_44:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_44.bin"
+
+	.align 2
+	.global snd_1_Key_46
+snd_1_Key_46:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_46.bin"
+
+	.align 2
+	.global snd_1_Key_49
+snd_1_Key_49:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_49.bin"
+
+	.align 2
+	.global snd_1_Key_51
+snd_1_Key_51:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_51.bin"
+
+	.align 2
+	.global snd_1_Key_52
+snd_1_Key_52:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_52.bin"
+
+	.align 2
+	.global snd_1_Key_53
+snd_1_Key_53:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_53.bin"
+
+	.align 2
+	.global snd_1_Key_54
+snd_1_Key_54:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_54.bin"
+
+	.align 2
+	.global snd_1_Key_55
+snd_1_Key_55:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_55.bin"
+
+	.align 2
+	.global snd_1_Key_56
+snd_1_Key_56:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_56.bin"
+
+	.align 2
+	.global snd_1_Key_57
+snd_1_Key_57:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_57.bin"
+
+	.align 2
+	.global snd_1_Key_59
+snd_1_Key_59:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_59.bin"
+
+	.align 2
+	.global snd_1_Key_60
+snd_1_Key_60:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_60.bin"
+
+	.align 2
+	.global snd_1_Key_62
+snd_1_Key_62:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_62.bin"
+
+	.align 2
+	.global snd_1_Key_63
+snd_1_Key_63:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_63.bin"
+
+	.align 2
+	.global snd_1_Key_65
+snd_1_Key_65:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_65.bin"
+
+	.align 2
+	.global snd_1_Key_67
+snd_1_Key_67:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_67.bin"
+
+	.align 2
+	.global snd_1_Key_71
+snd_1_Key_71:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_71.bin"
+
+	.align 2
+	.global snd_1_Key_72
+snd_1_Key_72:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_72.bin"
+
+	.align 2
+	.global snd_1_Key_76
+snd_1_Key_76:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_76.bin"
+
+	.align 2
+	.global snd_1_Key_80
+snd_1_Key_80:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_80.bin"
+
+	.align 2
+	.global snd_1_Key_82
+snd_1_Key_82:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_82.bin"
+
+	.align 2
+	.global snd_1_Key_83
+snd_1_Key_83:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_83.bin"
+
+	.align 2
+	.global snd_1_Key_87
+snd_1_Key_87:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_87.bin"
+
+	.align 2
+	.global snd_1_Key_88
+snd_1_Key_88:
+	.incbin "sound/direct_sound_samples/dppt/snd_1_Key_88.bin"
+
+	.align 2
+	.global snd_105_0
+snd_105_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_105_0.bin"
+
+	.align 2
+	.global snd_105_1
+snd_105_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_105_1.bin"
+
+	.align 2
+	.global snd_105_split
+snd_105_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_105_split.kst"
+
+	.align 2
+	.global snd_11_0
+snd_11_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_11_0.bin"
+
+	.align 2
+	.global snd_11_1
+snd_11_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_11_1.bin"
+
+	.align 2
+	.global snd_11_2
+snd_11_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_11_2.bin"
+
+	.align 2
+	.global snd_11_3
+snd_11_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_11_3.bin"
+
+	.align 2
+	.global snd_11_4
+snd_11_4:
+	.incbin "sound/direct_sound_samples/dppt/snd_11_4.bin"
+
+	.align 2
+	.global snd_11_5
+snd_11_5:
+	.incbin "sound/direct_sound_samples/dppt/snd_11_5.bin"
+
+	.align 2
+	.global snd_11_split
+snd_11_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_11_split.kst"
+
+	.align 2
+	.global snd_12_0
+snd_12_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_12_0.bin"
+
+	.align 2
+	.global snd_12_1
+snd_12_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_12_1.bin"
+
+	.align 2
+	.global snd_12_2
+snd_12_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_12_2.bin"
+
+	.align 2
+	.global snd_12_split
+snd_12_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_12_split.kst"
+
+	.align 2
+	.global snd_13_0
+snd_13_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_13_0.bin"
+
+	.align 2
+	.global snd_13_1
+snd_13_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_13_1.bin"
+
+	.align 2
+	.global snd_13_2
+snd_13_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_13_2.bin"
+
+	.align 2
+	.global snd_13_3
+snd_13_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_13_3.bin"
+
+	.align 2
+	.global snd_13_4
+snd_13_4:
+	.incbin "sound/direct_sound_samples/dppt/snd_13_4.bin"
+
+	.align 2
+	.global snd_13_split
+snd_13_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_13_split.kst"
+
+	.align 2
+	.global snd_14_0
+snd_14_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_14_0.bin"
+
+	.align 2
+	.global snd_14_1
+snd_14_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_14_1.bin"
+
+	.align 2
+	.global snd_14_2
+snd_14_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_14_2.bin"
+
+	.align 2
+	.global snd_14_3
+snd_14_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_14_3.bin"
+
+	.align 2
+	.global snd_14_split
+snd_14_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_14_split.kst"
+
+	.align 2
+	.global snd_15_0
+snd_15_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_15_0.bin"
+
+	.align 2
+	.global snd_15_1
+snd_15_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_15_1.bin"
+
+	.align 2
+	.global snd_15_2
+snd_15_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_15_2.bin"
+
+	.align 2
+	.global snd_15_3
+snd_15_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_15_3.bin"
+
+	.align 2
+	.global snd_15_split
+snd_15_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_15_split.kst"
+
+	.align 2
+	.global snd_16_Key_36_37
+snd_16_Key_36_37:
+	.incbin "sound/direct_sound_samples/dppt/snd_16_Key_36_37.bin"
+
+	.align 2
+	.global snd_16_Key_38
+snd_16_Key_38:
+	.incbin "sound/direct_sound_samples/dppt/snd_16_Key_38.bin"
+
+	.align 2
+	.global snd_17_0
+snd_17_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_17_0.bin"
+
+	.align 2
+	.global snd_17_1
+snd_17_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_17_1.bin"
+
+	.align 2
+	.global snd_17_2
+snd_17_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_17_2.bin"
+
+	.align 2
+	.global snd_17_3
+snd_17_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_17_3.bin"
+
+	.align 2
+	.global snd_17_split
+snd_17_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_17_split.kst"
+
+	.align 2
+	.global snd_18_0
+snd_18_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_18_0.bin"
+
+	.align 2
+	.global snd_18_1
+snd_18_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_18_1.bin"
+
+	.align 2
+	.global snd_18_split
+snd_18_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_18_split.kst"
+
+	.align 2
+	.global snd_19_Global
+snd_19_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_19_Global.bin"
+
+	.align 2
+	.global snd_2_0
+snd_2_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_0.bin"
+
+	.align 2
+	.global snd_2_1
+snd_2_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_1.bin"
+
+	.align 2
+	.global snd_2_2
+snd_2_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_2.bin"
+
+	.align 2
+	.global snd_2_3
+snd_2_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_3.bin"
+
+	.align 2
+	.global snd_2_4
+snd_2_4:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_4.bin"
+
+	.align 2
+	.global snd_2_5
+snd_2_5:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_5.bin"
+
+	.align 2
+	.global snd_2_6
+snd_2_6:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_6.bin"
+
+	.align 2
+	.global snd_2_7
+snd_2_7:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_7.bin"
+
+	.align 2
+	.global snd_2_split
+snd_2_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_2_split.kst"
+
+	.align 2
+	.global snd_20_Global
+snd_20_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_20_Global.bin"
+
+	.align 2
+	.global snd_21_0
+snd_21_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_21_0.bin"
+
+	.align 2
+	.global snd_21_1
+snd_21_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_21_1.bin"
+
+	.align 2
+	.global snd_21_2
+snd_21_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_21_2.bin"
+
+	.align 2
+	.global snd_21_3
+snd_21_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_21_3.bin"
+
+	.align 2
+	.global snd_21_split
+snd_21_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_21_split.kst"
+
+	.align 2
+	.global snd_22_Global
+snd_22_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_22_Global.bin"
+
+	.align 2
+	.global snd_23_Global
+snd_23_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_23_Global.bin"
+
+	.align 2
+	.global snd_24_0
+snd_24_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_24_0.bin"
+
+	.align 2
+	.global snd_24_1
+snd_24_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_24_1.bin"
+
+	.align 2
+	.global snd_24_2
+snd_24_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_24_2.bin"
+
+	.align 2
+	.global snd_24_3
+snd_24_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_24_3.bin"
+
+	.align 2
+	.global snd_24_split
+snd_24_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_24_split.kst"
+
+	.align 2
+	.global snd_25_Global
+snd_25_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_25_Global.bin"
+
+	.align 2
+	.global snd_26_Global
+snd_26_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_26_Global.bin"
+
+	.align 2
+	.global snd_27_0
+snd_27_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_27_0.bin"
+
+	.align 2
+	.global snd_27_1
+snd_27_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_27_1.bin"
+
+	.align 2
+	.global snd_27_2
+snd_27_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_27_2.bin"
+
+	.align 2
+	.global snd_27_split
+snd_27_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_27_split.kst"
+
+	.align 2
+	.global snd_28_Global
+snd_28_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_28_Global.bin"
+
+	.align 2
+	.global snd_29_0
+snd_29_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_29_0.bin"
+
+	.align 2
+	.global snd_29_1
+snd_29_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_29_1.bin"
+
+	.align 2
+	.global snd_29_2
+snd_29_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_29_2.bin"
+
+	.align 2
+	.global snd_29_3
+snd_29_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_29_3.bin"
+
+	.align 2
+	.global snd_29_4
+snd_29_4:
+	.incbin "sound/direct_sound_samples/dppt/snd_29_4.bin"
+
+	.align 2
+	.global snd_29_split
+snd_29_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_29_split.kst"
+
+	.align 2
+	.global snd_3_0
+snd_3_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_3_0.bin"
+
+	.align 2
+	.global snd_3_1
+snd_3_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_3_1.bin"
+
+	.align 2
+	.global snd_3_split
+snd_3_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_3_split.kst"
+
+	.align 2
+	.global snd_30_0
+snd_30_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_30_0.bin"
+
+	.align 2
+	.global snd_30_1
+snd_30_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_30_1.bin"
+
+	.align 2
+	.global snd_30_2
+snd_30_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_30_2.bin"
+
+	.align 2
+	.global snd_30_split
+snd_30_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_30_split.kst"
+
+	.align 2
+	.global snd_32_0
+snd_32_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_32_0.bin"
+
+	.align 2
+	.global snd_32_1
+snd_32_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_32_1.bin"
+
+	.align 2
+	.global snd_32_2
+snd_32_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_32_2.bin"
+
+	.align 2
+	.global snd_32_split
+snd_32_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_32_split.kst"
+
+	.align 2
+	.global snd_33_Global
+snd_33_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_33_Global.bin"
+
+	.align 2
+	.global snd_34_Global
+snd_34_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_34_Global.bin"
+
+	.align 2
+	.global snd_35_Global
+snd_35_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_35_Global.bin"
+
+	.align 2
+	.global snd_36_Global
+snd_36_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_36_Global.bin"
+
+	.align 2
+	.global snd_37_Global
+snd_37_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_37_Global.bin"
+
+	.align 2
+	.global snd_38_Global
+snd_38_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_38_Global.bin"
+
+	.align 2
+	.global snd_39_Global
+snd_39_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_39_Global.bin"
+
+	.align 2
+	.global snd_4_0
+snd_4_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_4_0.bin"
+
+	.align 2
+	.global snd_4_1
+snd_4_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_4_1.bin"
+
+	.align 2
+	.global snd_4_split
+snd_4_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_4_split.kst"
+
+	.align 2
+	.global snd_40_0
+snd_40_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_40_0.bin"
+
+	.align 2
+	.global snd_40_1
+snd_40_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_40_1.bin"
+
+	.align 2
+	.global snd_40_2
+snd_40_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_40_2.bin"
+
+	.align 2
+	.global snd_40_3
+snd_40_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_40_3.bin"
+
+	.align 2
+	.global snd_40_split
+snd_40_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_40_split.kst"
+
+	.align 2
+	.global snd_41_Global
+snd_41_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_41_Global.bin"
+
+	.align 2
+	.global snd_43_Global
+snd_43_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_43_Global.bin"
+
+	.align 2
+	.global snd_44_Global
+snd_44_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_44_Global.bin"
+
+	.align 2
+	.global snd_45_0
+snd_45_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_45_0.bin"
+
+	.align 2
+	.global snd_45_1
+snd_45_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_45_1.bin"
+
+	.align 2
+	.global snd_45_split
+snd_45_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_45_split.kst"
+
+	.align 2
+	.global snd_46_0
+snd_46_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_46_0.bin"
+
+	.align 2
+	.global snd_46_1
+snd_46_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_46_1.bin"
+
+	.align 2
+	.global snd_46_2
+snd_46_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_46_2.bin"
+
+	.align 2
+	.global snd_46_3
+snd_46_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_46_3.bin"
+
+	.align 2
+	.global snd_46_split
+snd_46_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_46_split.kst"
+
+	.align 2
+	.global snd_47_0
+snd_47_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_47_0.bin"
+
+	.align 2
+	.global snd_47_1
+snd_47_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_47_1.bin"
+
+	.align 2
+	.global snd_47_split
+snd_47_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_47_split.kst"
+
+	.align 2
+	.global snd_48_0
+snd_48_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_48_0.bin"
+
+	.align 2
+	.global snd_48_1
+snd_48_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_48_1.bin"
+
+	.align 2
+	.global snd_48_2
+snd_48_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_48_2.bin"
+
+	.align 2
+	.global snd_48_3
+snd_48_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_48_3.bin"
+
+	.align 2
+	.global snd_48_split
+snd_48_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_48_split.kst"
+
+	.align 2
+	.global snd_49_Global
+snd_49_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_49_Global.bin"
+
+	.align 2
+	.global snd_5_0
+snd_5_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_5_0.bin"
+
+	.align 2
+	.global snd_5_1
+snd_5_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_5_1.bin"
+
+	.align 2
+	.global snd_5_split
+snd_5_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_5_split.kst"
+
+	.align 2
+	.global snd_50_Global
+snd_50_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_50_Global.bin"
+
+	.align 2
+	.global snd_51_0
+snd_51_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_51_0.bin"
+
+	.align 2
+	.global snd_51_1
+snd_51_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_51_1.bin"
+
+	.align 2
+	.global snd_51_split
+snd_51_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_51_split.kst"
+
+	.align 2
+	.global snd_53_Global
+snd_53_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_53_Global.bin"
+
+	.align 2
+	.global snd_54_Global
+snd_54_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_54_Global.bin"
+
+	.align 2
+	.global snd_55_Global
+snd_55_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_55_Global.bin"
+
+	.align 2
+	.global snd_56_0
+snd_56_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_56_0.bin"
+
+	.align 2
+	.global snd_56_1
+snd_56_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_56_1.bin"
+
+	.align 2
+	.global snd_56_2
+snd_56_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_56_2.bin"
+
+	.align 2
+	.global snd_56_split
+snd_56_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_56_split.kst"
+
+	.align 2
+	.global snd_57_0
+snd_57_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_57_0.bin"
+
+	.align 2
+	.global snd_57_1
+snd_57_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_57_1.bin"
+
+	.align 2
+	.global snd_57_2
+snd_57_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_57_2.bin"
+
+	.align 2
+	.global snd_57_split
+snd_57_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_57_split.kst"
+
+	.align 2
+	.global snd_58_0
+snd_58_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_58_0.bin"
+
+	.align 2
+	.global snd_58_1
+snd_58_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_58_1.bin"
+
+	.align 2
+	.global snd_58_split
+snd_58_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_58_split.kst"
+
+	.align 2
+	.global snd_6_Sample_128
+snd_6_Sample_128:
+	.incbin "sound/direct_sound_samples/dppt/snd_6_Sample_128.bin"
+
+	.align 2
+	.global snd_6_Sample_29
+snd_6_Sample_29:
+	.incbin "sound/direct_sound_samples/dppt/snd_6_Sample_29.bin"
+
+	.align 2
+	.global snd_6_Sample_78
+snd_6_Sample_78:
+	.incbin "sound/direct_sound_samples/dppt/snd_6_Sample_78.bin"
+
+	.align 2
+	.global snd_60_0
+snd_60_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_60_0.bin"
+
+	.align 2
+	.global snd_60_1
+snd_60_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_60_1.bin"
+
+	.align 2
+	.global snd_60_split
+snd_60_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_60_split.kst"
+
+	.align 2
+	.global snd_61_0
+snd_61_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_61_0.bin"
+
+	.align 2
+	.global snd_61_1
+snd_61_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_61_1.bin"
+
+	.align 2
+	.global snd_61_2
+snd_61_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_61_2.bin"
+
+	.align 2
+	.global snd_61_3
+snd_61_3:
+	.incbin "sound/direct_sound_samples/dppt/snd_61_3.bin"
+
+	.align 2
+	.global snd_61_split
+snd_61_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_61_split.kst"
+
+	.align 2
+	.global snd_64_Global
+snd_64_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_64_Global.bin"
+
+	.align 2
+	.global snd_65_Global
+snd_65_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_65_Global.bin"
+
+	.align 2
+	.global snd_68_Global
+snd_68_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_68_Global.bin"
+
+	.align 2
+	.global snd_7_0
+snd_7_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_7_0.bin"
+
+	.align 2
+	.global snd_7_1
+snd_7_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_7_1.bin"
+
+	.align 2
+	.global snd_7_2
+snd_7_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_7_2.bin"
+
+	.align 2
+	.global snd_7_split
+snd_7_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_7_split.kst"
+
+	.align 2
+	.global snd_71_Global
+snd_71_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_71_Global.bin"
+
+	.align 2
+	.global snd_73_0
+snd_73_0:
+	.incbin "sound/direct_sound_samples/dppt/snd_73_0.bin"
+
+	.align 2
+	.global snd_73_1
+snd_73_1:
+	.incbin "sound/direct_sound_samples/dppt/snd_73_1.bin"
+
+	.align 2
+	.global snd_73_2
+snd_73_2:
+	.incbin "sound/direct_sound_samples/dppt/snd_73_2.bin"
+
+	.align 2
+	.global snd_73_split
+snd_73_split:
+	.incbin "sound/direct_sound_samples/dppt/snd_73_split.kst"
+
+	.align 2
+	.global snd_74_Global
+snd_74_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_74_Global.bin"
+
+	.align 2
+	.global snd_75_Global
+snd_75_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_75_Global.bin"
+
+	.align 2
+	.global snd_76_Global
+snd_76_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_76_Global.bin"
+
+	.align 2
+	.global snd_77_Global
+snd_77_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_77_Global.bin"
+
+	.align 2
+	.global snd_78_Global
+snd_78_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_78_Global.bin"
+
+	.align 2
+	.global snd_80_Global
+snd_80_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_80_Global.bin"
+
+	.align 2
+	.global snd_81_Global
+snd_81_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_81_Global.bin"
+
+	.align 2
+	.global snd_9_Global
+snd_9_Global:
+	.incbin "sound/direct_sound_samples/dppt/snd_9_Global.bin"
+
+	.align 2
+	.global snd_square_12
+snd_square_12:
+	.incbin "sound/direct_sound_samples/dppt/snd_square_12.pcm"
+
+	.align 2
+	.global snd_square_25
+snd_square_25:
+	.incbin "sound/direct_sound_samples/dppt/snd_square_25.pcm"
+
+	.align 2
+	.global snd_square_50
+snd_square_50:
+	.incbin "sound/direct_sound_samples/dppt/snd_square_50.pcm"
+
+	.align 2
+	.global snd_square_50_wave
+snd_square_50_wave:
+	.incbin "sound/direct_sound_samples/dppt/snd_square_50_wave.pcm"
