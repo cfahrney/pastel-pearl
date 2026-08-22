@@ -74,7 +74,11 @@
     "gMapGroup_IndoorFiveIslandRoute_Frlg",
     "gMapGroup_IndoorTwoIslandRoute_Frlg",
     "gMapGroup_IndoorSixIslandRoute_Frlg",
-    "gMapGroup_IndoorSevenIslandRoute_Frlg"
+    "gMapGroup_IndoorSevenIslandRoute_Frlg",
+    "gMapGroup_SinnohTowns",
+    "gMapGroup_SinnohRoutes",
+    "gMapGroup_SinnohDungeons",
+    "gMapGroup_SinnohIndoorTwinleaf"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1160,5 +1164,21 @@
   ],
   "gMapGroup_IndoorSevenIslandRoute_Frlg": [
     "SevenIsland_SevaultCanyon_House_Frlg"
+  ],
+  "gMapGroup_SinnohTowns": [
+    "TwinleafTown"
+  ],
+  "gMapGroup_SinnohRoutes": [
+    "Route201",
+    "VerityLakefront"
+  ],
+  "gMapGroup_SinnohDungeons": [],
+  "gMapGroup_SinnohIndoorTwinleaf": [
+    "TwinleafTown_PlayerHouse_1F",
+    "TwinleafTown_PlayerHouse_2F",
+    "TwinleafTown_BarryHouse_1F",
+    "TwinleafTown_BottomLeftHouse_1F",
+    "TwinleafTown_TopRightHouse_1F",
+    "TwinleafTown_BarryHouse_2F"
   ]
 }
