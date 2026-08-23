@@ -1,4 +1,3 @@
-
 	.section .rodata
 	.global voicegroup_dppt
 	.align	2
@@ -79,11 +78,11 @@ voicegroup_dppt:
 
 @**************** Voice 008 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 009 ****************@
@@ -97,11 +96,11 @@ voicegroup_dppt:
 
 @**************** Voice 010 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 011 ****************@
@@ -565,11 +564,11 @@ voicegroup_dppt:
 
 @**************** Voice 062 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 063 ****************@
@@ -628,11 +627,11 @@ voicegroup_dppt:
 
 @**************** Voice 069 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 070 ****************@
@@ -655,11 +654,11 @@ voicegroup_dppt:
 
 @**************** Voice 072 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 073 ****************@
@@ -718,11 +717,11 @@ voicegroup_dppt:
 
 @**************** Voice 079 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 080 ****************@
@@ -745,164 +744,164 @@ voicegroup_dppt:
 
 @**************** Voice 082 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 083 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 084 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 085 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 086 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 087 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 088 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 089 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 090 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 091 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 092 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 093 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 094 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 095 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 096 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 097 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 098 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 099 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 100 ****************@
@@ -925,29 +924,29 @@ voicegroup_dppt:
 
 @**************** Voice 102 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 103 ****************@
 
-	.byte	0
+	.byte	SquareWave2
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 104 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 105 ****************@
@@ -961,11 +960,11 @@ voicegroup_dppt:
 
 @**************** Voice 106 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 107 ****************@
@@ -979,183 +978,180 @@ voicegroup_dppt:
 
 @**************** Voice 108 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 109 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 110 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 111 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 112 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 113 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 114 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 115 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 116 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 117 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 118 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 119 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 120 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 121 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 122 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 123 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 124 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 125 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 126 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 127 ****************@
 
-	.byte	0
+	.byte	SquareWave1
 	.byte	60
 	.byte	0x0
 	.byte	0x0
-	.word	0
+	.word	WaveDuty50
 	.byte	0x0, 0x0, 0xF, 0x0
-
-
-

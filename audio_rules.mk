@@ -36,10 +36,21 @@ $(SOUND_BIN_DIR)/%.bin: sound/%.wav
 # Data following the colon in said file corresponds to arguments passed into mid2agb
 MID_CFG_PATH := $(MID_SUBDIR)/midi.cfg
 
+# A midi.cfg line whose options start with --midi2agb is converted with
+# ipatix's midi2agb (tools/midi2agb) instead of the standard mid2agb.
+# The DPPt songs were authored/tuned against ipatix's own build recipe
+# (GBA-Pokemon-DPPt-Music/Music/Makefile), which uses midi2agb-only
+# features (natural volume scale, modulation scale, LFO speed override)
+# that the standard tool doesn't support -- see .claude/guides for details.
+#
 # $1: Source path no extension, $2 Options
 define MID_RULE
 $(MID_ASM_DIR)/$1.s: $(MID_SUBDIR)/$1.mid $(MID_CFG_PATH) $(EXPANSION_BATTLE_CONFIG)
+ifeq ($(word 1,$2),--midi2agb)
+	$(MIDI2AGB) $$< $$@ $(wordlist 2,999,$2)
+else
 	$(MID) $$< $$@ $2
+endif
 endef
 #                            source path,                             remaining text (options)
 define MID_EXPANSION

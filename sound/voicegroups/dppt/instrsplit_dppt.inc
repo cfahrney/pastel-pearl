@@ -1,4 +1,3 @@
-
 	.section .rodata
 
 	.global KeySplitInstr2
