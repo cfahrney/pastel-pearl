@@ -243,6 +243,7 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad2(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromRivalNamingScreen(void);
 static void Task_NewGameBirchSpeech_ReturnFromRivalNamingScreenShowTextbox(u8);
 static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8);
+static void Task_NewGameBirchSpeech_SlidePlatformAway3(u8);
 static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8);
 static void Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter(u8);
 static void Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter2(u8);
@@ -1815,7 +1816,7 @@ static void Task_NewGameBirchSpeech_ProcessRivalNameYesNoMenu(u8 taskId)
         gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
         NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_ReshowBirchLotad2;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway3;
         break;
     case MENU_B_PRESSED:
     case 1:
@@ -1866,6 +1867,22 @@ static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8 taskId)
     else
     {
         gTasks[taskId].func = Task_NewGameBirchSpeech_ReshowBirchLotad;
+    }
+}
+
+// Same slide-back-to-center as Task_NewGameBirchSpeech_SlidePlatformAway2, but for the rival
+// naming path -- hands off to ReshowBirchLotad2 (which reshows Barry-relative Birch/Lotad
+// state) instead of ReshowBirchLotad (the player-naming version).
+static void Task_NewGameBirchSpeech_SlidePlatformAway3(u8 taskId)
+{
+    if (gTasks[taskId].tBG1HOFS)
+    {
+        gTasks[taskId].tBG1HOFS += 2;
+        SetGpuReg(REG_OFFSET_BG1HOFS, gTasks[taskId].tBG1HOFS);
+    }
+    else
+    {
+        gTasks[taskId].func = Task_NewGameBirchSpeech_ReshowBirchLotad2;
     }
 }
 
@@ -2195,19 +2212,18 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[lotadSpriteId].oam.priority = 0;
     gSprites[lotadSpriteId].invisible = TRUE;
     gTasks[taskId].tLotadSpriteId = lotadSpriteId;
-    brendanSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_BRENDAN), 120, 60, 0, NULL);
+    brendanSpriteId = CreateTrainerSprite(TRAINER_PIC_LUCAS, 120, 60, 0, NULL);
     gSprites[brendanSpriteId].callback = SpriteCB_Null;
     gSprites[brendanSpriteId].invisible = TRUE;
     gSprites[brendanSpriteId].oam.priority = 0;
     gTasks[taskId].tBrendanSpriteId = brendanSpriteId;
-    maySpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_MAY), 120, 60, 0, NULL);
+    maySpriteId = CreateTrainerSprite(TRAINER_PIC_DAWN, 120, 60, 0, NULL);
     gSprites[maySpriteId].callback = SpriteCB_Null;
     gSprites[maySpriteId].invisible = TRUE;
     gSprites[maySpriteId].oam.priority = 0;
     gTasks[taskId].tMaySpriteId = maySpriteId;
-    // The rival (Barry) is a distinct character, not just "the opposite gender's Brendan/May" --
-    // placeholder art borrowed from FRLG's rival (Blue) until Barry has his own sprites.
-    rivalSpriteId = CreateTrainerSprite(TRAINER_PIC_RIVAL_EARLY_FRLG, 120, 60, 0, NULL);
+    // The rival (Barry) is a distinct character, not just "the opposite gender's Brendan/May".
+    rivalSpriteId = CreateTrainerSprite(TRAINER_PIC_BARRY, 120, 60, 0, NULL);
     gSprites[rivalSpriteId].callback = SpriteCB_Null;
     gSprites[rivalSpriteId].invisible = TRUE;
     gSprites[rivalSpriteId].oam.priority = 0;
