@@ -223,6 +223,15 @@ const u16 gTrainerPalette_Brendan[] = INCGFX_U16("graphics/trainers/palettes/bre
 const u32 gTrainerFrontPic_May[] = INCGFX_U32("graphics/trainers/front_pics/may.png", ".4bpp.smol");
 const u16 gTrainerPalette_May[] = INCGFX_U16("graphics/trainers/palettes/may.pal", ".gbapal");
 
+const u32 gTrainerFrontPic_Lucas[] = INCGFX_U32("graphics/trainers/front_pics/lucas.png", ".4bpp.smol");
+const u16 gTrainerPalette_Lucas[] = INCGFX_U16("graphics/trainers/palettes/lucas.pal", ".gbapal");
+
+const u32 gTrainerFrontPic_Dawn[] = INCGFX_U32("graphics/trainers/front_pics/dawn.png", ".4bpp.smol");
+const u16 gTrainerPalette_Dawn[] = INCGFX_U16("graphics/trainers/palettes/dawn.pal", ".gbapal");
+
+const u32 gTrainerFrontPic_Barry[] = INCGFX_U32("graphics/trainers/front_pics/barry.png", ".4bpp.smol");
+const u16 gTrainerPalette_Barry[] = INCGFX_U16("graphics/trainers/front_pics/barry.png", ".gbapal");
+
 const u32 gTrainerFrontPic_BugCatcher[] = INCGFX_U32("graphics/trainers/front_pics/bug_catcher.png", ".4bpp.smol");
 const u16 gTrainerPalette_BugCatcher[] = INCGFX_U16("graphics/trainers/front_pics/bug_catcher.png", ".gbapal");
 
@@ -472,6 +481,8 @@ const u16 gTrainerPalette_PainterFrlg[] = INCGFX_U16("graphics/trainers/palettes
 static const u8 gTrainerBackPic_None[] = INCGFX_U8("graphics/trainers/back_pics/none.png", ".4bpp");
 const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan.png", ".4bpp");
 const u8 gTrainerBackPic_May[] = INCGFX_U8("graphics/trainers/back_pics/may.png", ".4bpp");
+const u8 gTrainerBackPic_Lucas[] = INCGFX_U8("graphics/trainers/back_pics/lucas.png", ".4bpp");
+const u8 gTrainerBackPic_Dawn[] = INCGFX_U8("graphics/trainers/back_pics/dawn.png", ".4bpp");
 const u8 gTrainerBackPic_Red[] = INCGFX_U8("graphics/trainers/back_pics/red.png", ".4bpp");
 const u8 gTrainerBackPic_Leaf[] = INCGFX_U8("graphics/trainers/back_pics/leaf.png", ".4bpp");
 const u8 gTrainerBackPic_RubySapphireBrendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan_rs.png", ".4bpp");
@@ -599,6 +610,20 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_May, gTrainerPalette_May),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_May, gTrainerPalette_May, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_LUCAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Lucas, gTrainerPalette_Lucas),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Lucas, gTrainerPalette_Lucas, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_DAWN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Dawn, gTrainerPalette_Dawn),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Dawn, gTrainerPalette_Dawn, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BARRY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Barry, gTrainerPalette_Barry),
     },
     [TRAINER_PIC_RED] =
     {

@@ -192,6 +192,18 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanWate
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayWatering;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanDecorating;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LucasNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LucasMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LucasSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LucasFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Barry;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archie;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Maxie;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KyogreFront;
@@ -597,6 +609,18 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MAY_WATERING] =             &gObjectEventGraphicsInfo_MayWatering,
     [OBJ_EVENT_GFX_BRENDAN_DECORATING] =       &gObjectEventGraphicsInfo_BrendanDecorating,
     [OBJ_EVENT_GFX_MAY_DECORATING] =           &gObjectEventGraphicsInfo_MayDecorating,
+    [OBJ_EVENT_GFX_LUCAS_NORMAL] =              &gObjectEventGraphicsInfo_LucasNormal,
+    [OBJ_EVENT_GFX_LUCAS_MACH_BIKE] =           &gObjectEventGraphicsInfo_LucasMachBike,
+    [OBJ_EVENT_GFX_LUCAS_SURFING] =             &gObjectEventGraphicsInfo_LucasSurfing,
+    [OBJ_EVENT_GFX_LUCAS_FISHING] =             &gObjectEventGraphicsInfo_LucasFishing,
+    [OBJ_EVENT_GFX_DAWN_NORMAL] =               &gObjectEventGraphicsInfo_DawnNormal,
+    [OBJ_EVENT_GFX_DAWN_MACH_BIKE] =            &gObjectEventGraphicsInfo_DawnMachBike,
+    [OBJ_EVENT_GFX_DAWN_SURFING] =              &gObjectEventGraphicsInfo_DawnSurfing,
+    [OBJ_EVENT_GFX_DAWN_FISHING] =              &gObjectEventGraphicsInfo_DawnFishing,
+    [OBJ_EVENT_GFX_DAWN_FIELD_MOVE] =           &gObjectEventGraphicsInfo_DawnFieldMove,
+    [OBJ_EVENT_GFX_DAWN_WATERING] =             &gObjectEventGraphicsInfo_DawnWatering,
+    [OBJ_EVENT_GFX_DAWN_DECORATING] =           &gObjectEventGraphicsInfo_DawnDecorating,
+    [OBJ_EVENT_GFX_BARRY_NORMAL] =              &gObjectEventGraphicsInfo_Barry,
     [OBJ_EVENT_GFX_ARCHIE] =                   &gObjectEventGraphicsInfo_Archie,
     [OBJ_EVENT_GFX_MAXIE] =                    &gObjectEventGraphicsInfo_Maxie,
     [OBJ_EVENT_GFX_KYOGRE_FRONT] =             &gObjectEventGraphicsInfo_KyogreFront,
