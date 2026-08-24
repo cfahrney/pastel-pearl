@@ -1377,6 +1377,7 @@ static void NamingScreen_CreateMonIcon(void);
 static void NamingScreen_CreateWaldaDadIcon(void);
 static void NamingScreen_CreateCodeIcon(void);
 static void NamingScreen_CreateRivalIcon(void);
+static void NamingScreen_CreateBarryIcon(void);
 
 static void (*const sIconFunctions[])(void) =
 {
@@ -1387,6 +1388,7 @@ static void (*const sIconFunctions[])(void) =
     NamingScreen_CreateWaldaDadIcon,
     NamingScreen_CreateCodeIcon,
     NamingScreen_CreateRivalIcon,
+    NamingScreen_CreateBarryIcon,
 };
 
 static void CreateInputTargetIcon(void)
@@ -1401,11 +1403,24 @@ static void NamingScreen_NoIcon(void)
 
 static void NamingScreen_CreatePlayerIcon(void)
 {
-    u16 rivalGfxId;
+    u16 playerGfxId;
     u8 spriteId;
 
-    rivalGfxId = GetRivalAvatarGraphicsIdByStateIdAndGender(PLAYER_AVATAR_STATE_NORMAL, (enum Gender)sNamingScreen->monSpecies);
-    spriteId = CreateObjectGraphicsSprite(rivalGfxId, SpriteCallbackDummy, 56, 37, 0);
+    playerGfxId = GetPlayerAvatarGraphicsIdByStateIdAndGender(PLAYER_AVATAR_STATE_NORMAL, (enum Gender)sNamingScreen->monSpecies);
+    spriteId = CreateObjectGraphicsSprite(playerGfxId, SpriteCallbackDummy, 56, 37, 0);
+    gSprites[spriteId].oam.priority = 3;
+    StartSpriteAnim(&gSprites[spriteId], ANIM_STD_GO_SOUTH);
+}
+
+// Barry is a fixed character (not gender-dependent like the vanilla May/Brendan rival),
+// so this just shows his own overworld sprite directly -- same approach as
+// NamingScreen_CreatePlayerIcon, sidestepping the separate custom-tile NamingScreen_CreateRivalIcon
+// path above, which renders garbage (see comment on sRivalNamingScreenTemplate).
+static void NamingScreen_CreateBarryIcon(void)
+{
+    u8 spriteId;
+
+    spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_BARRY_NORMAL, SpriteCallbackDummy, 56, 37, 0);
     gSprites[spriteId].oam.priority = 3;
     StartSpriteAnim(&gSprites[spriteId], ANIM_STD_GO_SOUTH);
 }
@@ -1458,6 +1473,9 @@ static const union AnimCmd *const sAnims_Rival[] =
     sAnim_Rival
 };
 
+// Unused -- renders garbage via its own custom tile/palette assets
+// (graphics/naming_screen/rival.png). Kept as-is rather than deleted;
+// NamingScreen_CreateBarryIcon is used instead for NAMING_SCREEN_RIVAL.
 static void NamingScreen_CreateRivalIcon(void)
 {
     const struct SpriteSheet sheet = {
@@ -2206,10 +2224,9 @@ static const struct NamingScreenTemplate sRivalNamingScreenTemplate =
 {
     .copyExistingString = FALSE,
     .maxChars = PLAYER_NAME_LENGTH,
-    // iconFunction 6 (NamingScreen_CreateRivalIcon) renders garbage -- this path was apparently
-    // never actually exercised before (nothing in Emerald called NAMING_SCREEN_RIVAL until now).
-    // Disabling rather than guessing further at a rendering bug in code we didn't write.
-    .iconFunction = 0,
+    // iconFunction 6 (NamingScreen_CreateRivalIcon) renders garbage -- see comment there.
+    // Using Barry's own registered overworld sprite instead (iconFunction 7).
+    .iconFunction = 7,
     .addGenderIcon = FALSE,
     .initialPage = KBPAGE_LETTERS_UPPER,
     .title = sText_RivalsName,
