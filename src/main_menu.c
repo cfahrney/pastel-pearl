@@ -243,6 +243,7 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad2(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromRivalNamingScreen(void);
 static void Task_NewGameBirchSpeech_ReturnFromRivalNamingScreenShowTextbox(u8);
 static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8);
+static void Task_NewGameBirchSpeech_SlidePlatformAway3(u8);
 static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8);
 static void Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter(u8);
 static void Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter2(u8);
@@ -1815,7 +1816,7 @@ static void Task_NewGameBirchSpeech_ProcessRivalNameYesNoMenu(u8 taskId)
         gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
         NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_ReshowBirchLotad2;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway3;
         break;
     case MENU_B_PRESSED:
     case 1:
@@ -1866,6 +1867,22 @@ static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8 taskId)
     else
     {
         gTasks[taskId].func = Task_NewGameBirchSpeech_ReshowBirchLotad;
+    }
+}
+
+// Same slide-back-to-center as Task_NewGameBirchSpeech_SlidePlatformAway2, but for the rival
+// naming path -- hands off to ReshowBirchLotad2 (which reshows Barry-relative Birch/Lotad
+// state) instead of ReshowBirchLotad (the player-naming version).
+static void Task_NewGameBirchSpeech_SlidePlatformAway3(u8 taskId)
+{
+    if (gTasks[taskId].tBG1HOFS)
+    {
+        gTasks[taskId].tBG1HOFS += 2;
+        SetGpuReg(REG_OFFSET_BG1HOFS, gTasks[taskId].tBG1HOFS);
+    }
+    else
+    {
+        gTasks[taskId].func = Task_NewGameBirchSpeech_ReshowBirchLotad2;
     }
 }
 
