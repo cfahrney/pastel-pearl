@@ -1218,6 +1218,54 @@ static bool16 IsInfiltratedSpaceCenter(struct WarpData *warp)
     return FALSE;
 }
 
+// Maps a map's default (DAY) music to its NIGHT counterpart. Both halves of each
+// pair must already exist in sound/song_table.inc; add new Sinnoh DAY/NIGHT songs
+// here as they're imported so every map using the DAY variant swaps automatically.
+static const u16 sDayNightMusic[][2] =
+{
+    { MUS_JUBILIFE_CITY_DAY,   MUS_JUBILIFE_CITY_NIGHT },
+    { MUS_CANALAVE_CITY_DAY,   MUS_CANALAVE_CITY_NIGHT },
+    { MUS_OREBURGH_CITY_DAY,   MUS_OREBURGH_CITY_NIGHT },
+    { MUS_ETERNA_CITY_DAY,     MUS_ETERNA_CITY_NIGHT },
+    { MUS_HEARTHOME_CITY_DAY,  MUS_HEARTHOME_CITY_NIGHT },
+    { MUS_VEILSTONE_CITY_DAY,  MUS_VEILSTONE_CITY_NIGHT },
+    { MUS_SUNYSHORE_CITY_DAY,  MUS_SUNYSHORE_CITY_NIGHT },
+    { MUS_SNOWPOINT_CITY_DAY,  MUS_SNOWPOINT_CITY_NIGHT },
+    { MUS_POKEMON_LEAGUE_DAY,  MUS_POKEMON_LEAGUE_NIGHT },
+    { MUS_FIGHT_AREA_DAY,      MUS_FIGHT_AREA_NIGHT },
+    { MUS_ROUTE_201_DAY,       MUS_ROUTE_201_NIGHT },
+    { MUS_ROUTE_228_DAY,       MUS_ROUTE_228_NIGHT },
+    { MUS_ROUTE_203_DAY,       MUS_ROUTE_203_NIGHT },
+    { MUS_ROUTE_205_DAY,       MUS_ROUTE_205_NIGHT },
+    { MUS_ROUTE_206_DAY,       MUS_ROUTE_206_NIGHT },
+    { MUS_ROUTE_209_DAY,       MUS_ROUTE_209_NIGHT },
+    { MUS_ROUTE_210_DAY,       MUS_ROUTE_210_NIGHT },
+    { MUS_ROUTE_216_DAY,       MUS_ROUTE_216_NIGHT },
+    { MUS_TWINLEAF_TOWN_DAY,   MUS_TWINLEAF_TOWN_NIGHT },
+    { MUS_SANDGEM_TOWN_DAY,    MUS_SANDGEM_TOWN_NIGHT },
+    { MUS_FLOAROMA_TOWN_DAY,   MUS_FLOAROMA_TOWN_NIGHT },
+    { MUS_ROUTE_225_DAY,       MUS_ROUTE_225_NIGHT },
+    { MUS_RESORT_AREA_DAY,     MUS_RESORT_AREA_NIGHT },
+};
+
+// Swaps a map's music for its NIGHT counterpart if it's night out and one exists.
+// Songs with no NIGHT counterpart (or that aren't in the table at all) pass through
+// unchanged, so this is safe to call on any music value, not just map themes.
+static u16 ApplyTimeOfDayMusic(u16 music)
+{
+    u32 i;
+
+    if (!OW_ENABLE_DNS || GetTimeOfDay() != TIME_NIGHT)
+        return music;
+
+    for (i = 0; i < ARRAY_COUNT(sDayNightMusic); i++)
+    {
+        if (sDayNightMusic[i][0] == music)
+            return sDayNightMusic[i][1];
+    }
+    return music;
+}
+
 u16 GetLocationMusic(struct WarpData *warp)
 {
     if (NoMusicInSootopolisWithLegendaries(warp) == TRUE)
@@ -1229,7 +1277,7 @@ u16 GetLocationMusic(struct WarpData *warp)
     else if (IsInfiltratedWeatherInstitute(warp) == TRUE)
         return MUS_MT_CHIMNEY;
     else
-        return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
+        return ApplyTimeOfDayMusic(Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music);
 }
 
 u16 GetCurrLocationDefaultMusic(void)
@@ -1350,6 +1398,27 @@ void Overworld_ChangeMusicToDefault(void)
     u16 currentMusic = GetCurrentMapMusic();
     if (currentMusic != GetCurrLocationDefaultMusic())
         FadeOutAndPlayNewMapMusic(GetCurrLocationDefaultMusic(), 8);
+}
+
+// Called once a minute (see OverworldBasic) so DAY/NIGHT map themes swap while the
+// player is standing on the map, not just on map load/warp. Only acts if the song
+// currently playing is itself one half of a DAY/NIGHT pair, so it never stomps on
+// surf/underwater/battle music or other special-case tracks.
+static void TryUpdateTimeOfDayMusic(void)
+{
+    u32 i;
+    u16 currentMusic = GetCurrentMapMusic();
+
+    for (i = 0; i < ARRAY_COUNT(sDayNightMusic); i++)
+    {
+        if (sDayNightMusic[i][0] == currentMusic || sDayNightMusic[i][1] == currentMusic)
+        {
+            u16 wantedMusic = GetCurrLocationDefaultMusic();
+            if (wantedMusic != currentMusic)
+                FadeOutAndPlayNewMapMusic(wantedMusic, 8);
+            return;
+        }
+    }
 }
 
 void Overworld_ChangeMusicTo(u16 newMusic)
@@ -1856,6 +1925,7 @@ static void OverworldBasic(void)
         gTimeUpdateCounter = (SECONDS_PER_MINUTE * 60 / FakeRtc_GetSecondsRatio());
         UpdateTimeOfDay(TRUE);
         FormChangeTimeUpdate();
+        TryUpdateTimeOfDayMusic();
         if (MapHasNaturalLight(gMapHeader.mapType) &&
            (bld0[0] != bld1[0]
          || bld0[1] != bld1[1]
