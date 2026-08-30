@@ -128,6 +128,7 @@ static const struct CombinedMove sCombinedMoves[2] =
 
 #define KANTO_TO_NATIONAL(name)     [KANTO_DEX_##name - 1] = NATIONAL_DEX_##name,
 #define HOENN_TO_NATIONAL(name)     [HOENN_DEX_##name - 1] = NATIONAL_DEX_##name,
+#define SINNOH_TO_NATIONAL(name)    [SINNOH_DEX_##name - 1] = NATIONAL_DEX_##name,
 
 static const enum NationalDexOrder sKantoToNationalOrder[KANTO_DEX_COUNT] =
 {
@@ -139,6 +140,12 @@ static const enum NationalDexOrder sKantoToNationalOrder[KANTO_DEX_COUNT] =
 static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
 {
     FOREACH_SPECIES_IN_HOENN_DEX_ORDER(HOENN_TO_NATIONAL)
+};
+
+// Assigns all Sinnoh Dex Indexes to a National Dex Index
+static const enum NationalDexOrder sSinnohToNationalOrder[SINNOH_DEX_COUNT - 1] =
+{
+    FOREACH_SPECIES_IN_SINNOH_DEX_ORDER(SINNOH_TO_NATIONAL)
 };
 
 // In Battle Palace, moves are chosen based on the Pokémon's nature rather than by the player
@@ -4703,7 +4710,7 @@ u32 NationalToRegionalOrder(enum NationalDexOrder nationalNum)
 {
     if (IS_FRLG)
         return NationalToKantoOrder(nationalNum);
-    return NationalToHoennOrder(nationalNum);
+    return NationalToSinnohOrder(nationalNum);
 }
 
 enum KantoDexOrder NationalToKantoOrder(enum NationalDexOrder nationalNum)
@@ -4742,6 +4749,24 @@ enum HoennDexOrder NationalToHoennOrder(enum NationalDexOrder nationalNum)
     return hoennNum + 1;
 }
 
+enum SinnohDexOrder NationalToSinnohOrder(enum NationalDexOrder nationalNum)
+{
+    u16 sinnohNum;
+
+    if (!nationalNum)
+        return 0;
+
+    sinnohNum = 0;
+
+    while (sinnohNum < (SINNOH_DEX_COUNT - 1) && sSinnohToNationalOrder[sinnohNum] != nationalNum)
+        sinnohNum++;
+
+    if (sinnohNum >= SINNOH_DEX_COUNT - 1)
+        return 0;
+
+    return sinnohNum + 1;
+}
+
 enum NationalDexOrder SpeciesToNationalPokedexNum(enum Species species)
 {
     species = SanitizeSpeciesId(species);
@@ -4755,7 +4780,7 @@ u32 SpeciesToRegionalPokedexNum(enum Species species)
 {
     if (IS_FRLG)
         return SpeciesToKantoPokedexNum(species);
-    return SpeciesToHoennPokedexNum(species);
+    return SpeciesToSinnohPokedexNum(species);
 }
 
 enum KantoDexOrder SpeciesToKantoPokedexNum(enum Species species)
@@ -4772,11 +4797,18 @@ enum HoennDexOrder SpeciesToHoennPokedexNum(enum Species species)
     return NationalToHoennOrder(gSpeciesInfo[species].natDexNum);
 }
 
+enum SinnohDexOrder SpeciesToSinnohPokedexNum(enum Species species)
+{
+    if (!species)
+        return 0;
+    return NationalToSinnohOrder(gSpeciesInfo[species].natDexNum);
+}
+
 enum NationalDexOrder RegionalToNationalOrder(u32 regionalNum)
 {
     if (IS_FRLG)
         return KantoToNationalOrder(regionalNum);
-    return HoennToNationalOrder(regionalNum);
+    return SinnohToNationalOrder(regionalNum);
 }
 
 enum NationalDexOrder KantoToNationalOrder(enum KantoDexOrder kantoNum)
@@ -4793,6 +4825,14 @@ enum NationalDexOrder HoennToNationalOrder(enum HoennDexOrder hoennNum)
         return 0;
 
     return sHoennToNationalOrder[hoennNum - 1];
+}
+
+enum NationalDexOrder SinnohToNationalOrder(enum SinnohDexOrder sinnohNum)
+{
+    if (!sinnohNum || sinnohNum >= SINNOH_DEX_COUNT)
+        return 0;
+
+    return sSinnohToNationalOrder[sinnohNum - 1];
 }
 
 void EvolutionRenameMon(struct Pokemon *mon, enum Species oldSpecies, enum Species newSpecies)
@@ -5155,7 +5195,7 @@ bool32 IsSpeciesInRegionalDex(enum Species species)
 {
     if (IS_FRLG)
         return IsSpeciesInKantoDex(species);
-    return IsSpeciesInHoennDex(species);
+    return IsSpeciesInSinnohDex(species);
 }
 
 bool32 IsSpeciesInKantoDex(enum Species species)
@@ -5169,6 +5209,14 @@ bool32 IsSpeciesInKantoDex(enum Species species)
 bool32 IsSpeciesInHoennDex(enum Species species)
 {
     if (SpeciesToHoennPokedexNum(species) > HOENN_DEX_COUNT)
+        return FALSE;
+    else
+        return TRUE;
+}
+
+bool32 IsSpeciesInSinnohDex(enum Species species)
+{
+    if (SpeciesToSinnohPokedexNum(species) > SINNOH_DEX_COUNT)
         return FALSE;
     else
         return TRUE;

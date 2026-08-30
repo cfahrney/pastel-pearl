@@ -1315,7 +1315,226 @@ enum HoennDexOrder
     #undef HOENN_DEX_ENUM
 };
 
+// Sinnoh Pokédex order (matches Platinum's 210-entry Sinnoh Dex, Turtwig-Giratina)
+#define FOREACH_SPECIES_IN_SINNOH_DEX_ORDER(F) \
+    F(TURTWIG) \
+    F(GROTLE) \
+    F(TORTERRA) \
+    F(CHIMCHAR) \
+    F(MONFERNO) \
+    F(INFERNAPE) \
+    F(PIPLUP) \
+    F(PRINPLUP) \
+    F(EMPOLEON) \
+    F(STARLY) \
+    F(STARAVIA) \
+    F(STARAPTOR) \
+    F(BIDOOF) \
+    F(BIBAREL) \
+    F(KRICKETOT) \
+    F(KRICKETUNE) \
+    F(SHINX) \
+    F(LUXIO) \
+    F(LUXRAY) \
+    F(ABRA) \
+    F(KADABRA) \
+    F(ALAKAZAM) \
+    F(MAGIKARP) \
+    F(GYARADOS) \
+    F(BUDEW) \
+    F(ROSELIA) \
+    F(ROSERADE) \
+    F(ZUBAT) \
+    F(GOLBAT) \
+    F(CROBAT) \
+    F(GEODUDE) \
+    F(GRAVELER) \
+    F(GOLEM) \
+    F(ONIX) \
+    F(STEELIX) \
+    F(CRANIDOS) \
+    F(RAMPARDOS) \
+    F(SHIELDON) \
+    F(BASTIODON) \
+    F(MACHOP) \
+    F(MACHOKE) \
+    F(MACHAMP) \
+    F(PSYDUCK) \
+    F(GOLDUCK) \
+    F(BURMY) \
+    F(WORMADAM) \
+    F(MOTHIM) \
+    F(WURMPLE) \
+    F(SILCOON) \
+    F(BEAUTIFLY) \
+    F(CASCOON) \
+    F(DUSTOX) \
+    F(COMBEE) \
+    F(VESPIQUEN) \
+    F(PACHIRISU) \
+    F(BUIZEL) \
+    F(FLOATZEL) \
+    F(CHERUBI) \
+    F(CHERRIM) \
+    F(SHELLOS) \
+    F(GASTRODON) \
+    F(HERACROSS) \
+    F(AIPOM) \
+    F(AMBIPOM) \
+    F(DRIFLOON) \
+    F(DRIFBLIM) \
+    F(BUNEARY) \
+    F(LOPUNNY) \
+    F(GASTLY) \
+    F(HAUNTER) \
+    F(GENGAR) \
+    F(MISDREAVUS) \
+    F(MISMAGIUS) \
+    F(MURKROW) \
+    F(HONCHKROW) \
+    F(GLAMEOW) \
+    F(PURUGLY) \
+    F(GOLDEEN) \
+    F(SEAKING) \
+    F(BARBOACH) \
+    F(WHISCASH) \
+    F(CHINGLING) \
+    F(CHIMECHO) \
+    F(STUNKY) \
+    F(SKUNTANK) \
+    F(MEDITITE) \
+    F(MEDICHAM) \
+    F(BRONZOR) \
+    F(BRONZONG) \
+    F(PONYTA) \
+    F(RAPIDASH) \
+    F(BONSLY) \
+    F(SUDOWOODO) \
+    F(MIME_JR) \
+    F(MR_MIME) \
+    F(HAPPINY) \
+    F(CHANSEY) \
+    F(BLISSEY) \
+    F(CLEFFA) \
+    F(CLEFAIRY) \
+    F(CLEFABLE) \
+    F(CHATOT) \
+    F(PICHU) \
+    F(PIKACHU) \
+    F(RAICHU) \
+    F(HOOTHOOT) \
+    F(NOCTOWL) \
+    F(SPIRITOMB) \
+    F(GIBLE) \
+    F(GABITE) \
+    F(GARCHOMP) \
+    F(MUNCHLAX) \
+    F(SNORLAX) \
+    F(UNOWN) \
+    F(RIOLU) \
+    F(LUCARIO) \
+    F(WOOPER) \
+    F(QUAGSIRE) \
+    F(WINGULL) \
+    F(PELIPPER) \
+    F(GIRAFARIG) \
+    F(HIPPOPOTAS) \
+    F(HIPPOWDON) \
+    F(AZURILL) \
+    F(MARILL) \
+    F(AZUMARILL) \
+    F(SKORUPI) \
+    F(DRAPION) \
+    F(CROAGUNK) \
+    F(TOXICROAK) \
+    F(CARNIVINE) \
+    F(REMORAID) \
+    F(OCTILLERY) \
+    F(FINNEON) \
+    F(LUMINEON) \
+    F(TENTACOOL) \
+    F(TENTACRUEL) \
+    F(FEEBAS) \
+    F(MILOTIC) \
+    F(MANTYKE) \
+    F(MANTINE) \
+    F(SNOVER) \
+    F(ABOMASNOW) \
+    F(SNEASEL) \
+    F(WEAVILE) \
+    F(UXIE) \
+    F(MESPRIT) \
+    F(AZELF) \
+    F(DIALGA) \
+    F(PALKIA) \
+    F(MANAPHY) \
+    F(ROTOM) \
+    F(GLIGAR) \
+    F(GLISCOR) \
+    F(NOSEPASS) \
+    F(PROBOPASS) \
+    F(RALTS) \
+    F(KIRLIA) \
+    F(GARDEVOIR) \
+    F(GALLADE) \
+    F(LICKITUNG) \
+    F(LICKILICKY) \
+    F(EEVEE) \
+    F(VAPOREON) \
+    F(JOLTEON) \
+    F(FLAREON) \
+    F(ESPEON) \
+    F(UMBREON) \
+    F(LEAFEON) \
+    F(GLACEON) \
+    F(SWABLU) \
+    F(ALTARIA) \
+    F(TOGEPI) \
+    F(TOGETIC) \
+    F(TOGEKISS) \
+    F(HOUNDOUR) \
+    F(HOUNDOOM) \
+    F(MAGNEMITE) \
+    F(MAGNETON) \
+    F(MAGNEZONE) \
+    F(TANGELA) \
+    F(TANGROWTH) \
+    F(YANMA) \
+    F(YANMEGA) \
+    F(TROPIUS) \
+    F(RHYHORN) \
+    F(RHYDON) \
+    F(RHYPERIOR) \
+    F(DUSKULL) \
+    F(DUSCLOPS) \
+    F(DUSKNOIR) \
+    F(PORYGON) \
+    F(PORYGON2) \
+    F(PORYGON_Z) \
+    F(SCYTHER) \
+    F(SCIZOR) \
+    F(ELEKID) \
+    F(ELECTABUZZ) \
+    F(ELECTIVIRE) \
+    F(MAGBY) \
+    F(MAGMAR) \
+    F(MAGMORTAR) \
+    F(SWINUB) \
+    F(PILOSWINE) \
+    F(MAMOSWINE) \
+    F(SNORUNT) \
+    F(GLALIE) \
+    F(FROSLASS) \
+    F(ABSOL) \
+    F(GIRATINA)
 
+enum SinnohDexOrder
+{
+    SINNOH_DEX_NONE,
+    #define SINNOH_DEX_ENUM(name) SINNOH_DEX_ ##name,
+    FOREACH_SPECIES_IN_SINNOH_DEX_ORDER(SINNOH_DEX_ENUM)
+    #undef SINNOH_DEX_ENUM
+};
 
 #if P_NEW_EVOS_IN_REGIONAL_DEX
 #define KANTO_DEX_IF(config, ...) CAT(KANTO_DEX_IF_, config)(__VA_ARGS__)
@@ -1526,8 +1745,9 @@ enum KantoDexOrder
 
 #define KANTO_DEX_COUNT (KANTO_DEX_MEW + 1)
 #define HOENN_DEX_COUNT (HOENN_DEX_DEOXYS + 1)
+#define SINNOH_DEX_COUNT (SINNOH_DEX_GIRATINA + 1)
 
-#define REGIONAL_DEX_COUNT (IS_FRLG ? KANTO_DEX_COUNT : HOENN_DEX_COUNT)
+#define REGIONAL_DEX_COUNT (IS_FRLG ? KANTO_DEX_COUNT : SINNOH_DEX_COUNT)
 
 #define DECAGRAMS_IN_POUND             453592
 #define CM_PER_INCH                    2.54
