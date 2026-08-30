@@ -78,7 +78,8 @@
     "gMapGroup_SinnohTowns",
     "gMapGroup_SinnohRoutes",
     "gMapGroup_SinnohDungeons",
-    "gMapGroup_SinnohIndoorTwinleaf"
+    "gMapGroup_SinnohIndoorTwinleaf",
+    "gMapGroup_IndoorSandgem"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1166,11 +1167,15 @@
     "SevenIsland_SevaultCanyon_House_Frlg"
   ],
   "gMapGroup_SinnohTowns": [
-    "TwinleafTown"
+    "TwinleafTown",
+    "SandgemTown"
   ],
   "gMapGroup_SinnohRoutes": [
     "Route201",
-    "VerityLakefront"
+    "VerityLakefront",
+    "LakeVerity",
+    "Route219",
+    "Route202"
   ],
   "gMapGroup_SinnohDungeons": [],
   "gMapGroup_SinnohIndoorTwinleaf": [
@@ -1180,5 +1185,14 @@
     "TwinleafTown_BottomLeftHouse_1F",
     "TwinleafTown_TopRightHouse_1F",
     "TwinleafTown_BarryHouse_2F"
+  ],
+  "gMapGroup_IndoorSandgem": [
+    "SandgemTown_PokemonCenter_1F",
+    "SandgemTown_PokemonCenter_2F",
+    "SandgemTown_BottomLeftHouse_1F",
+    "SandgemTown_BottomRightHouse_1F",
+    "SandgemTown_BottomRightHouse_2F",
+    "SandgemTown_Mart",
+    "SandgemTown_ProfessorRowansLab"
   ]
 }

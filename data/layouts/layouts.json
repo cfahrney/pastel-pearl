@@ -9420,6 +9420,116 @@
       "border_filepath": "data/layouts/TwinleafTown_BarryHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_BarryHouse_2F/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_LAKE_VERITY",
+      "name": "LakeVerity_Layout",
+      "width": 52,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LakeVerity",
+      "border_filepath": "data/layouts/LakeVerity/border.bin",
+      "blockdata_filepath": "data/layouts/LakeVerity/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN",
+      "name": "SandgemTown_Layout",
+      "width": 42,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SandgemTown/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE202",
+      "name": "Route202_Layout",
+      "width": 37,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route202/border.bin",
+      "blockdata_filepath": "data/layouts/Route202/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE219",
+      "name": "Route219_Layout",
+      "width": 27,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route219/border.bin",
+      "blockdata_filepath": "data/layouts/Route219/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_POKEMON_CENTER_1F",
+      "name": "SandgemTown_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SandgemTown_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_POKEMON_CENTER_2F",
+      "name": "SandgemTown_PokemonCenter_2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SandgemTown_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_PROFESSOR_ROWANS_LAB",
+      "name": "SandgemTown_ProfessorRowansLab_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/SandgemTown_ProfessorRowansLab/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown_ProfessorRowansLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_BOTTOM_LEFT_HOUSE_1F",
+      "name": "SandgemTown_BottomLeftHouse_1F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/SandgemTown_BottomLeftHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown_BottomLeftHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_MART",
+      "name": "SandgemTown_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SandgemTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_BOTTOM_RIGHT_HOUSE_1F",
+      "name": "SandgemTown_BottomRightHouse_1F_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/SandgemTown_BottomRightHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown_BottomRightHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_BOTTOM_RIGHT_HOUSE_2F",
+      "name": "SandgemTown_BottomRightHouse_2F_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/map.bin"
     }
   ]
 }
