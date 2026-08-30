@@ -1756,3 +1756,25 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/TwinleafTown_PlayerHouse_1F/scripts.inc"
 
 	.include "data/maps/TwinleafTown_BottomLeftHouse_1F/scripts.inc"
+
+	.include "data/maps/LakeVerity/scripts.inc"
+
+	.include "data/maps/SandgemTown/scripts.inc"
+
+	.include "data/maps/Route202/scripts.inc"
+
+	.include "data/maps/Route219/scripts.inc"
+
+	.include "data/maps/SandgemTown_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/SandgemTown_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/SandgemTown_BottomRightHouse_1F/scripts.inc"
+
+	.include "data/maps/SandgemTown_Mart/scripts.inc"
+
+	.include "data/maps/SandgemTown_ProfessorRowansLab/scripts.inc"
+
+	.include "data/maps/SandgemTown_BottomLeftHouse_1F/scripts.inc"
+
+	.include "data/maps/SandgemTown_BottomRightHouse_2F/scripts.inc"

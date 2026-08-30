@@ -3,7 +3,6 @@
   "name": "OneIsland_PokemonCenter_1F_Frlg",
   "layout": "LAYOUT_ONE_ISLAND_POKEMON_CENTER_1F",
   "music": "MUS_RG_NET_CENTER",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_ONE_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -12,13 +11,11 @@
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": false,
-  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_ONE_ISLAND_NURSE",
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_NURSE_FRLG",
       "x": 5,
       "y": 2,
@@ -33,7 +30,6 @@
     },
     {
       "local_id": "LOCALID_ONE_ISLAND_POKEMON_CENTER_BILL",
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BILL",
       "x": 14,
       "y": 6,
@@ -48,7 +44,6 @@
     },
     {
       "local_id": "LOCALID_CELIO",
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CELIO",
       "x": 15,
       "y": 6,
@@ -62,7 +57,6 @@
       "flag": "FLAG_HIDE_ONE_ISLAND_POKECENTER_CELIO"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_FRLG",
       "x": 6,
       "y": 8,
@@ -76,7 +70,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_HIKER_FRLG",
       "x": 3,
       "y": 7,
@@ -90,7 +83,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CRUSH_GIRL",
       "x": 7,
       "y": 4,
@@ -231,5 +223,7 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "OneIsland_PokemonCenter_1F_EventScript_NetworkMachine"
     }
-  ]
+  ],
+  "floor_number": 0,
+  "region": "REGION_KANTO"
 }
