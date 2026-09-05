@@ -9530,16 +9530,6 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/map.bin"
-    },
-    {
-      "id": "LAYOUT_JUBILIFE_CITY",
-      "name": "JubilifeCity_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/JubilifeCity/border.bin",
-      "blockdata_filepath": "data/layouts/JubilifeCity/map.bin"
     }
   ]
 }
