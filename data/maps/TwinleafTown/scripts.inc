@@ -1,5 +1,18 @@
 TwinleafTown_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, TwinleafTown_OnTransition
 	.byte 0
+
+@ MOM's "sandgem not far" line (see TwinleafTown_PlayerHouse_1F) is only
+@ meant to be heard while the player is still inside the house right
+@ after the homecoming scene. Stepping back outside clears it, so her
+@ next indoor visit gets the repeatable welcome-home/rest offer instead.
+TwinleafTown_OnTransition:
+	call_if_ge VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_ClearMomSandgemFlag
+	end
+
+TwinleafTown_EventScript_ClearMomSandgemFlag:
+	clearflag FLAG_TWINLEAF_TOWN_PLAYER_HOUSE_MOM_MENTIONED_SANDGEM
+	return
 
 TwinleafTown_EventScript_TechEnthusiast::
 	msgbox TwinleafTown_Text_TechnologyBlowsMeAway, MSGBOX_NPC
@@ -11,7 +24,12 @@ TwinleafTown_Text_TechnologyBlowsMeAway:
 	.string "around the world…wirelessly!$"
 
 TwinleafTown_EventScript_Woman::
+	goto_if_ge VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_WomanAfterStarterCaught
 	msgbox TwinleafTown_Text_WildPokemonAttackButAlsoFriends, MSGBOX_NPC
+	end
+
+TwinleafTown_EventScript_WomanAfterStarterCaught::
+	msgbox TwinleafTown_Text_LookGoodTogether, MSGBOX_NPC
 	end
 
 TwinleafTown_Text_WildPokemonAttackButAlsoFriends:
@@ -20,8 +38,21 @@ TwinleafTown_Text_WildPokemonAttackButAlsoFriends:
 	.string "However, POKéMON also let you\n"
 	.string "become friends with them.$"
 
+TwinleafTown_Text_LookGoodTogether:
+	.string "Oh! A POKéMON!\n"
+	.string "You look good together!$"
+
+@ Once VAR_TWINLEAF_TOWN_STATE reaches 2, BARRY has already run off toward
+@ ROUTE 201 (see TwinleafTown_BarryHouse_2F_EventScript_BarryNoticesPlayer),
+@ so the neighbor's line updates to match, same convention as
+@ TwinleafTown_BarryHouse_1F_EventScript_Mom.
 TwinleafTown_EventScript_Neighbor::
+	goto_if_ge VAR_TWINLEAF_TOWN_STATE, 2, TwinleafTown_EventScript_NeighborAfterBarryLeft
 	msgbox TwinleafTown_Text_BarryWasLookingForYou, MSGBOX_NPC
+	end
+
+TwinleafTown_EventScript_NeighborAfterBarryLeft::
+	msgbox TwinleafTown_Text_BarryWentTearingOff, MSGBOX_NPC
 	end
 
 TwinleafTown_Text_BarryWasLookingForYou:
@@ -29,6 +60,14 @@ TwinleafTown_Text_BarryWasLookingForYou:
 	.string "{RIVAL} was looking for you.\p"
 	.string "I think he's home now.\n"
 	.string "Why don't you go check it out?$"
+
+TwinleafTown_Text_BarryWentTearingOff:
+	.string "Hiya, {PLAYER}.\n"
+	.string "You're looking for {RIVAL}?\p"
+	.string "He just went tearing off a little\n"
+	.string "while ago.\p"
+	.string "He's probably not gone too far.\n"
+	.string "Why not go chase after him?$"
 
 @ VAR_TWINLEAF_TOWN_STATE == 0: the neighbor runs up from his usual spot to
 @ block the path north until the player has gone to see {RIVAL}. One wrapper
@@ -332,10 +371,16 @@ TwinleafTown_EventScript_BarryLeavesHouse::
 	lockall
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
+	@ Door has to be fully open before BARRY appears, to read as him coming
+	@ from inside rather than materializing on top of a still-closed door.
+	opendoor 5, 10
+	waitdooranim
 	addobject LOCALID_TWINLEAF_BARRY
 	applymovement LOCALID_TWINLEAF_BARRY, TwinleafTown_Movement_BarryExitHouse
 	applymovement LOCALID_PLAYER, TwinleafTown_Movement_PlayerStepBack
 	waitmovement 0
+	@ Swings shut right as he clears the doorway, in sync with the THUD.
+	closedoor 5, 10
 	playse SE_WALL_HIT
 	playbgm MUS_RIVAL_THEME, TRUE
 	msgbox TwinleafTown_Text_ThudGoingToTheLake, MSGBOX_DEFAULT
@@ -355,13 +400,15 @@ TwinleafTown_EventScript_BarryLeavesHouse::
 	closemessage
 	applymovement LOCALID_TWINLEAF_BARRY, TwinleafTown_Movement_BarryFaceDoor
 	waitmovement 0
-	opendoor 5, 11
+	opendoor 5, 10
 	waitdooranim
 	applymovement LOCALID_TWINLEAF_BARRY, TwinleafTown_Movement_BarryWalkThroughDoor
 	waitmovement 0
-	closedoor 5, 11
-	waitdooranim
+	@ Removed before closing, so the door doesn't visibly shut on top of
+	@ him — he should vanish through the doorway first.
 	removeobject LOCALID_TWINLEAF_BARRY
+	closedoor 5, 10
+	waitdooranim
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setvar VAR_TWINLEAF_TOWN_STATE, 1
@@ -408,3 +455,12 @@ TwinleafTown_Movement_BarryFaceDoor:
 TwinleafTown_Movement_BarryWalkThroughDoor:
 	walk_up
 	step_end
+
+TwinleafTown_EventScript_TownSign::
+	msgbox TwinleafTown_Text_TownSign, MSGBOX_SIGN
+	end
+
+TwinleafTown_Text_TownSign:
+	.string "TWINLEAF TOWN\n"
+	.string "“A refreshing town that smells\l"
+	.string "of country living.”$"

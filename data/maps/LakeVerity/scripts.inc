@@ -120,6 +120,7 @@ LakeVerity_EventScript_ArriveAtLake::
 	clearflag FLAG_HIDE_LAKE_VERITY_BARRY_STARLY
 	addobject LOCALID_LAKE_VERITY_PLAYER_STARLY
 	addobject LOCALID_LAKE_VERITY_BARRY_STARLY
+	playbgm MUS_HELP, TRUE
 	applymovement LOCALID_LAKE_VERITY_PLAYER_STARLY, LakeVerity_Movement_PlayerStarlyApproach
 	applymovement LOCALID_LAKE_VERITY_BARRY_STARLY, LakeVerity_Movement_BarryStarlyApproach
 	waitmovementall
@@ -144,9 +145,12 @@ LakeVerity_EventScript_ArriveAtLake::
 	@ in start_menu.c).
 	setflag FLAG_SYS_POKEMON_GET
 	fadescreen FADE_TO_BLACK
-	special ChooseStarter
+	@ Removed here, not after the battle returns, so the screen is still
+	@ black when they vanish instead of visibly popping out on the
+	@ post-battle fade-in.
 	removeobject LOCALID_LAKE_VERITY_PLAYER_STARLY
 	removeobject LOCALID_LAKE_VERITY_BARRY_STARLY
+	special ChooseStarter
 	@ STR_VAR_1 holds the new starter's species name. STR_VAR_2 holds the
 	@ species that counters it, for BARRY's brag line below.
 	bufferleadmonspeciesname STR_VAR_1

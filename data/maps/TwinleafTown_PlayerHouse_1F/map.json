@@ -25,7 +25,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TwinleafTown_PlayerHouse_1F_EventScript_Mom",
       "flag": "0"
     }
   ],
@@ -52,7 +52,35 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
+      "var_value": "1",
+      "script": "TwinleafTown_PlayerHouse_1F_EventScript_MomDoorReminder"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
+      "var_value": "1",
+      "script": "TwinleafTown_PlayerHouse_1F_EventScript_MomDoorReminder"
+    }
+  ],
   "bg_events": [],
   "region": "REGION_HOENN"
 }

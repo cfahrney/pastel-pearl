@@ -72,7 +72,10 @@ VerityLakefront_EventScript_BarryHypesUpTheLakeAtX5::
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkUp
 	waitmovementall
 	setvar VAR_TWINLEAF_TOWN_STATE, 4
-	warp MAP_LAKE_VERITY, 39, 41
+	@ Always land at x38, same as the AtX4 trigger — x39 is where BARRY's
+	@ stand-in spawns for the arrival scene, and warping here would land
+	@ the player right on top of him.
+	warp MAP_LAKE_VERITY, 38, 41
 	waitstate
 	releaseall
 	end
@@ -118,3 +121,11 @@ VerityLakefront_Movement_BarryRejoin:
 	walk_up
 	face_right
 	step_end
+
+VerityLakefront_EventScript_LakeSign::
+	msgbox VerityLakefront_Text_LakeSign, MSGBOX_SIGN
+	end
+
+VerityLakefront_Text_LakeSign:
+	.string "{UP_ARROW} Lake Verity Ahead\n"
+	.string "The Lake of Emotions$"

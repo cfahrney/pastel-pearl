@@ -179,7 +179,7 @@ Route201_EventScript_RowanNoticesPlayerAtY8::
 	delay 16
 	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanApproachAtY8
 	waitmovement 0
-	goto Route201_EventScript_RowanConfrontsPlayer
+	goto Route201_EventScript_RowanConfrontsPlayerAtY8
 
 Route201_EventScript_RowanNoticesPlayerAtY9::
 	lockall
@@ -193,9 +193,9 @@ Route201_EventScript_RowanNoticesPlayerAtY9::
 	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanApproachAtY9
 	applymovement LOCALID_ROUTE201_LUCASDAWN Common_Movement_FaceLeft
 	waitmovementall
-	goto Route201_EventScript_RowanConfrontsPlayer
+	goto Route201_EventScript_RowanConfrontsPlayerAtY9
 
-Route201_EventScript_RowanConfrontsPlayer:
+Route201_EventScript_RowanConfrontsPlayerAtY8:
 	call Route201_EventScript_BufferAssistantName
 	msgbox Route201_Text_RowanHmm, MSGBOX_DEFAULT
 	closemessage
@@ -214,7 +214,56 @@ Route201_EventScript_RowanConfrontsPlayer:
 	msgbox Route201_Text_RowanGoingBackToLab, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanExitRight
-	applymovement LOCALID_ROUTE201_LUCASDAWN, Route201_Movement_LucasDawnFidgetWhileRowanLeaves
+	applymovement LOCALID_ROUTE201_LUCASDAWN, Route201_Movement_LucasDawnFidgetWhileRowanLeavesAtY8
+	waitmovementall
+	removeobject LOCALID_ROUTE201_ROWAN
+	@ Safe to set now, since the flag only blocks respawning and doesn't
+	@ affect an object that's already active.
+	setflag FLAG_HIDE_ROUTE201_LUCASDAWNROWAN
+	msgbox Route201_Text_UhYeaOfCourse, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROUTE201_LUCASDAWN, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox Route201_Text_VisitOurLab, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROUTE201_LUCASDAWN, Route201_Movement_LucasDawnExitRight
+	waitmovement 0
+	removeobject LOCALID_ROUTE201_LUCASDAWN
+	msgbox Route201_Text_BarryWhatWasThatCraziness, MSGBOX_DEFAULT
+	closemessage
+	msgbox Route201_Text_BarryCouldveJustYelled, MSGBOX_DEFAULT
+	closemessage
+	msgbox Route201_Text_BarryWeShouldGoHomeToo, MSGBOX_DEFAULT
+	closemessage
+	@ Drops BARRY's follower status so the player's lead POKéMON takes over
+	@ as follower (see UpdateFollowingPokemon in event_object_movement.c).
+	destroyfollowernpc
+	setvar VAR_TWINLEAF_TOWN_STATE, 11
+	warp MAP_TWINLEAF_TOWN_PLAYER_HOUSE_1F, 1, 5
+	waitstate
+	releaseall
+	end
+
+Route201_EventScript_RowanConfrontsPlayerAtY9:
+	call Route201_EventScript_BufferAssistantName
+	msgbox Route201_Text_RowanHmm, MSGBOX_DEFAULT
+	closemessage
+	msgbox Route201_Text_RowanHeardFromAssistant, MSGBOX_DEFAULT
+	closemessage
+	bufferleadmonspeciesname STR_VAR_2
+	call Route201_EventScript_BufferBarryCounterStarterName
+	msgbox Route201_Text_RowanHmSpecies, MSGBOX_DEFAULT
+	closemessage
+	msgbox Route201_Text_RowanEllipsis, MSGBOX_DEFAULT
+	closemessage
+	msgbox Route201_Text_RowanHmm, MSGBOX_DEFAULT
+	closemessage
+	msgbox Route201_Text_RowanISee, MSGBOX_DEFAULT
+	closemessage
+	msgbox Route201_Text_RowanGoingBackToLab, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanExitRight
+	applymovement LOCALID_ROUTE201_LUCASDAWN, Route201_Movement_LucasDawnFidgetWhileRowanLeavesAtY9
 	waitmovementall
 	removeobject LOCALID_ROUTE201_ROWAN
 	@ Safe to set now, since the flag only blocks respawning and doesn't
@@ -337,6 +386,14 @@ Route201_Text_BarryWeShouldGoHomeToo:
 	.string "{PLAYER}…\n"
 	.string "We should go home, too…$"
 
+Route201_EventScript_RouteSign::
+	msgbox Route201_Text_RouteSign, MSGBOX_SIGN
+	end
+
+Route201_Text_RouteSign:
+	.string "ROUTE 201\n"
+	.string "{DOWN_ARROW} TWINLEAF TOWN$"
+
 Route201_Movement_RowanFaceLeftAndPause:
 	face_left
 	delay_16
@@ -365,7 +422,14 @@ Route201_Movement_RowanExitRight:
 	walk_right
 	step_end
 
-Route201_Movement_LucasDawnFidgetWhileRowanLeaves:
+Route201_Movement_LucasDawnFidgetWhileRowanLeavesAtY8:
+	face_up
+	delay_16
+    delay_16
+	face_right
+	step_end
+
+Route201_Movement_LucasDawnFidgetWhileRowanLeavesAtY9:
 	walk_up
 	face_down
 	face_right
