@@ -151,8 +151,10 @@ void SetUpBattleVarsAndBirchZigzagoon(void)
     BattleAI_SetupItems();
     BattleAI_SetupFlags();
 
+    // The forced, no-running "first battle" opponent — SPECIES_ZIGZAGOON in
+    // vanilla Emerald (saving Birch), SPECIES_STARLY here (Lake Verity).
     if (!IS_FRLG && gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
-        CreateWildMon(SPECIES_ZIGZAGOON, 2);
+        CreateWildMon(SPECIES_STARLY, 2);
 }
 
 void InitBattleControllers(void)
