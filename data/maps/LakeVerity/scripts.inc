@@ -3,25 +3,9 @@ LakeVerity_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LakeVerity_OnFrame
 	.byte 0
 
-@ Sets LUCAS/DAWN's object graphics to whichever protagonist the player
-@ didn't choose.
 LakeVerity_OnTransition:
-	call LakeVerity_EventScript_SetupLucasDawnGfxId
+	call Common_EventScript_SetupLucasDawnAssistantGfxId
 	end
-
-LakeVerity_EventScript_SetupLucasDawnGfxId::
-	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, LakeVerity_EventScript_SetupDawnGfxId
-	goto_if_eq VAR_RESULT, FEMALE, LakeVerity_EventScript_SetupLucasGfxId
-	end
-
-LakeVerity_EventScript_SetupDawnGfxId::
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_DAWN_NORMAL
-	return
-
-LakeVerity_EventScript_SetupLucasGfxId::
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LUCAS_NORMAL
-	return
 
 @ Fires when VAR_TWINLEAF_TOWN_STATE == 4, right after the player warps
 @ in from VERITY LAKEFRONT with BARRY following. Swaps him to a stand-in

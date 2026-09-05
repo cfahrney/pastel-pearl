@@ -35,7 +35,7 @@
     },
     {
       "local_id": "LOCALID_TWINLEAF_WANDERING_NEIGHBOR",
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_WORKER_F",
       "x": 17,
       "y": 12,
       "elevation": 0,
@@ -49,7 +49,7 @@
     },
     {
       "local_id": "LOCALID_TWINLEAF_NEIGHBOR",
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
       "x": 6,
       "y": 5,
       "elevation": 0,

@@ -5,6 +5,7 @@ Route201_MapScripts::
 @ Shows BARRY while VAR_TWINLEAF_TOWN_STATE == 2, and ROWAN/LUCAS-DAWN
 @ while it's == 10.
 Route201_OnTransition:
+	call Common_EventScript_SetupLucasDawnAssistantGfxId
 	setflag FLAG_HIDE_ROUTE201_BARRY
 	call_if_eq VAR_TWINLEAF_TOWN_STATE, 2, Route201_EventScript_ShowBarry
 	setflag FLAG_HIDE_ROUTE201_LUCASDAWNROWAN
