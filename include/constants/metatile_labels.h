@@ -260,7 +260,7 @@
 // gTileset_General
 #define METATILE_General_BlueCaveIndent        0x1B0
 #define METATILE_General_BlueCaveOpen          0x1B1
-#define METATILE_General_CalmWater             0x170
+#define METATILE_General_CalmWater             0x192
 #define METATILE_General_CaveEntrance_Bottom   0x0A7
 #define METATILE_General_CaveEntrance_Top      0x09F
 #define METATILE_General_Door                  0x021
@@ -322,6 +322,7 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
 
 // gTileset_LakeVerity
+#define METATILE_LakeVerity_CalmWater  0x211
 #define METATILE_LakeVerity_TallGrass  0x208
 
 // gTileset_Lavaridge

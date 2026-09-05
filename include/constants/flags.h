@@ -51,17 +51,17 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+#define FLAG_HIDE_TWINLEAF_TOWN_BARRY    0x20
+#define FLAG_HIDE_TWINLEAF_TOWN_BARRYHOUSE_BARRY    0x21
+#define FLAG_HIDE_ROUTE201_BARRY    0x22
+#define FLAG_HIDE_LAKE_VERITY_BARRY    0x23
+#define FLAG_HIDE_LAKE_VERITY_SUITCASE    0x24
+#define FLAG_HIDE_LAKE_VERITY_PLAYER_STARLY    0x25
+#define FLAG_HIDE_LAKE_VERITY_BARRY_STARLY    0x26
+#define FLAG_HIDE_LAKE_VERITY_PROFESSOR_ROWAN    0x27
+#define FLAG_HIDE_LAKE_VERITY_LUCASDAWN    0x28
+#define FLAG_HIDE_VERITY_LAKEFRONT_BARRY    0x29
+#define FLAG_HIDE_ROUTE201_LUCASDAWNROWAN    0x2A
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag

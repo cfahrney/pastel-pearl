@@ -108,7 +108,6 @@ Common_Movement_WalkUp::
 	walk_up
 	step_end
 
-@ Unused
 Common_Movement_WalkUp2::
 	walk_up
 	walk_up

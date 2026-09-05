@@ -81,6 +81,7 @@ static void CB2_SkipToNewGame(void)
 #else
     static const u8 sText_PlayerMale[] = _("LUCAS");
     static const u8 sText_PlayerFemale[] = _("DAWN");
+    static const u8 sText_Rival[] = _("BARRY");
 #endif  // IS_FRLG
 
     if (!UpdatePaletteFade())
@@ -89,9 +90,7 @@ static void CB2_SkipToNewGame(void)
         const u8* textPtr = gSaveBlock2Ptr->playerGender == FEMALE ? sText_PlayerFemale : sText_PlayerMale;
         StringCopy_PlayerName(gSaveBlock2Ptr->playerName, textPtr);
 
-#if IS_FRLG
         StringCopy_PlayerName(gSaveBlock1Ptr->rivalName, sText_Rival);
-#endif  // IS_FRLG
 
         ResetSpriteData();
         FreeAllSpritePalettes();

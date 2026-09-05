@@ -1778,3 +1778,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/SandgemTown_BottomLeftHouse_1F/scripts.inc"
 
 	.include "data/maps/SandgemTown_BottomRightHouse_2F/scripts.inc"
+
+	.include "data/maps/JubilifeCity/scripts.inc"

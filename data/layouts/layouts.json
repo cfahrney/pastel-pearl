@@ -9328,7 +9328,7 @@
       "id": "LAYOUT_TWINLEAF_TOWN",
       "name": "TwinleafTown_Layout",
       "width": 20,
-      "height": 35,
+      "height": 38,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/TwinleafTown/border.bin",
@@ -9413,7 +9413,7 @@
     {
       "id": "LAYOUT_TWINLEAF_TOWN_BARRY_HOUSE_2F",
       "name": "TwinleafTown_BarryHouse_2F_Layout",
-      "width": 10,
+      "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BrendansMaysHouse",
@@ -9530,6 +9530,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY",
+      "name": "JubilifeCity_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JubilifeCity/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity/map.bin"
     }
   ]
 }
