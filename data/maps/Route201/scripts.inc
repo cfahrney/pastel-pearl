@@ -10,7 +10,18 @@ Route201_OnTransition:
 	call_if_eq VAR_TWINLEAF_TOWN_STATE, 2, Route201_EventScript_ShowBarry
 	setflag FLAG_HIDE_ROUTE201_LUCASDAWNROWAN
 	call_if_eq VAR_TWINLEAF_TOWN_STATE, 10, Route201_EventScript_ShowRowanAndLucasDawn
+	@ No wild encounters before the player has a starter.
+	call_if_lt VAR_TWINLEAF_TOWN_STATE, 12, Route201_EventScript_DisableWildEncounters
+	call_if_ge VAR_TWINLEAF_TOWN_STATE, 12, Route201_EventScript_EnableWildEncounters
 	end
+
+Route201_EventScript_DisableWildEncounters:
+	setflag FLAG_WILD_ENCOUNTERS_DISABLED
+	return
+
+Route201_EventScript_EnableWildEncounters:
+	clearflag FLAG_WILD_ENCOUNTERS_DISABLED
+	return
 
 Route201_EventScript_ShowBarry:
 	clearflag FLAG_HIDE_ROUTE201_BARRY

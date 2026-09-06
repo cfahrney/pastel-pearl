@@ -63,8 +63,8 @@
 #define FLAG_HIDE_VERITY_LAKEFRONT_BARRY    0x29
 #define FLAG_HIDE_ROUTE201_LUCASDAWNROWAN    0x2A
 #define FLAG_TWINLEAF_TOWN_PLAYER_HOUSE_MOM_MENTIONED_SANDGEM    0x2B
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
+#define FLAG_WILD_ENCOUNTERS_DISABLED    0x2C // No starter yet; blocks all wild encounters
+#define FLAG_DEBUG_NO_COLLISION    0x2D // Debug menu: toggle collisions
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag

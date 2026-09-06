@@ -8,10 +8,21 @@ TwinleafTown_MapScripts::
 @ next indoor visit gets the repeatable welcome-home/rest offer instead.
 TwinleafTown_OnTransition:
 	call_if_ge VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_ClearMomSandgemFlag
+	@ No wild encounters before the player has a starter.
+	call_if_lt VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_DisableWildEncounters
+	call_if_ge VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_EnableWildEncounters
 	end
 
 TwinleafTown_EventScript_ClearMomSandgemFlag:
 	clearflag FLAG_TWINLEAF_TOWN_PLAYER_HOUSE_MOM_MENTIONED_SANDGEM
+	return
+
+TwinleafTown_EventScript_DisableWildEncounters:
+	setflag FLAG_WILD_ENCOUNTERS_DISABLED
+	return
+
+TwinleafTown_EventScript_EnableWildEncounters:
+	clearflag FLAG_WILD_ENCOUNTERS_DISABLED
 	return
 
 TwinleafTown_EventScript_TechEnthusiast::
