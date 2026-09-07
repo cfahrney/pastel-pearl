@@ -276,7 +276,6 @@
 #define METATILE_General_MuddySlope_Frame0     0x0E8
 #define METATILE_General_MuddySlope_Frame1     0x0E9
 #define METATILE_General_MuddySlope_Frame2     0x0EA
-#define METATILE_General_MuddySlope_Frame3     0x0EB
 #define METATILE_General_RedCaveIndent         0x1A0
 #define METATILE_General_RedCaveOpen           0x1A1
 #define METATILE_General_ReflectiveWater       0x0A1
@@ -337,16 +336,14 @@
 #define METATILE_LavenderTown_Door  0x2A2
 
 // gTileset_Lilycove
-#define METATILE_Lilycove_Door             0x246
-#define METATILE_Lilycove_Door_DeptStore   0x30C
-#define METATILE_Lilycove_Door_SafariZone  0x32D
-#define METATILE_Lilycove_Door_Wooden      0x28E
-#define METATILE_Lilycove_Wailmer0         0x290
-#define METATILE_Lilycove_Wailmer0_Alt     0x298
-#define METATILE_Lilycove_Wailmer1         0x291
-#define METATILE_Lilycove_Wailmer1_Alt     0x299
-#define METATILE_Lilycove_Wailmer2         0x2A0
-#define METATILE_Lilycove_Wailmer3         0x2A1
+#define METATILE_Lilycove_Door               0x246
+#define METATILE_Lilycove_Door_DeptStore     0x30C
+#define METATILE_Lilycove_Door_SafariZone    0x32D
+#define METATILE_Lilycove_Door_Wooden        0x28E
+#define METATILE_Lilycove_StairsAscendLeft   0x222
+#define METATILE_Lilycove_StairsAscendNorth  0x21A
+#define METATILE_Lilycove_StairsAscendRight  0x223
+#define METATILE_Lilycove_StairsAscendSouth  0x21B
 
 // gTileset_LilycoveMuseum
 #define METATILE_LilycoveMuseum_Painting0_Left   0x25A

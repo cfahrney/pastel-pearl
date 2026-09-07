@@ -1168,14 +1168,16 @@
   ],
   "gMapGroup_SinnohTowns": [
     "TwinleafTown",
-    "SandgemTown"
+    "SandgemTown",
+    "JubilifeCity"
   ],
   "gMapGroup_SinnohRoutes": [
     "Route201",
     "VerityLakefront",
     "LakeVerity",
     "Route219",
-    "Route202"
+    "Route202",
+    "Route203"
   ],
   "gMapGroup_SinnohDungeons": [],
   "gMapGroup_SinnohIndoorTwinleaf": [

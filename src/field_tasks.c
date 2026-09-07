@@ -885,7 +885,6 @@ enum {
 
 static const u16 sMuddySlopeMetatiles[] = {
     METATILE_General_MuddySlope_Frame0,
-    METATILE_General_MuddySlope_Frame3,
     METATILE_General_MuddySlope_Frame2,
     METATILE_General_MuddySlope_Frame1
 };

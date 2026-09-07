@@ -36853,6 +36853,144 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SANDGEM_TOWN",
+          "base_label": "gSandgemTown",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_WURMPLE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_WURMPLE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROUTE202",
+          "base_label": "gRoute202",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_KRICKETOT"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_KRICKETOT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_SENTRET"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_GROWLITHE"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_PICHU"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_PICHU"
+              }
+            ]
+          }
         }
       ]
     },

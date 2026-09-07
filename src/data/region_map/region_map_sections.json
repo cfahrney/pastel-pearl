@@ -10,7 +10,7 @@
     },
     {
       "id": "MAPSEC_TWINLEAF_TOWN",
-      "name": "TWINLEAF TOWN",
+      "name": "Twinleaf Town",
       "x": 4,
       "y": 13,
       "width": 1,
@@ -146,7 +146,7 @@
     },
     {
       "id": "MAPSEC_ROUTE_201",
-      "name": "ROUTE 201",
+      "name": "Route 201",
       "x": 4,
       "y": 12,
       "width": 1,
@@ -154,7 +154,7 @@
     },
     {
       "id": "MAPSEC_VERITY_LAKEFRONT",
-      "name": "VERITY LAKEFRONT",
+      "name": "Verity Lakefront",
       "x": 3,
       "y": 12,
       "width": 1,
@@ -1653,7 +1653,7 @@
     },
     {
       "id": "MAPSEC_LAKE_VERITY",
-      "name": "LAKE VERITY",
+      "name": "Lake Verity",
       "x": 3,
       "y": 13,
       "width": 1,
@@ -1661,7 +1661,7 @@
     },
     {
       "id": "MAPSEC_SANDGEM_TOWN",
-      "name": "SANDGEM TOWN",
+      "name": "Sandgem Town",
       "x": 5,
       "y": 12,
       "width": 1,
@@ -1669,7 +1669,7 @@
     },
     {
       "id": "MAPSEC_ROUTE_202",
-      "name": "ROUTE 202",
+      "name": "Route 202",
       "x": 5,
       "y": 11,
       "width": 1,
@@ -1677,11 +1677,19 @@
     },
     {
       "id": "MAPSEC_ROUTE_219",
-      "name": "ROUTE 219",
+      "name": "Route 219",
       "x": 5,
       "y": 13,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_JUBILIFE_CITY",
+      "name": "Jubilife City"
+    },
+    {
+      "id": "MAPSEC_ROUTE_203",
+      "name": "Route 203"
     }
   ]
 }

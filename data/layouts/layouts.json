@@ -9351,7 +9351,7 @@
       "width": 72,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route201/border.bin",
       "blockdata_filepath": "data/layouts/Route201/map.bin"
     },
@@ -9530,6 +9530,26 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY",
+      "name": "JubilifeCity_Layout",
+      "width": 72,
+      "height": 69,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/JubilifeCity/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE203",
+      "name": "Route203_Layout",
+      "width": 59,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/Route203/border.bin",
+      "blockdata_filepath": "data/layouts/Route203/map.bin"
     }
   ]
 }
