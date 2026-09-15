@@ -411,3 +411,9 @@ const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_LakeVerity[] = INCBIN_U16("data/tilesets/secondary/lake_verity/metatiles.bin");
 const u16 gMetatileAttributes_LakeVerity[] = INCBIN_U16("data/tilesets/secondary/lake_verity/metatile_attributes.bin");
+
+const u16 gMetatiles_Jubilife[] = INCBIN_U16("data/tilesets/secondary/jubilife/metatiles.bin");
+const u16 gMetatileAttributes_Jubilife[] = INCBIN_U16("data/tilesets/secondary/jubilife/metatile_attributes.bin");
+
+const u16 gMetatiles_Oreburgh[] = INCBIN_U16("data/tilesets/secondary/oreburgh/metatiles.bin");
+const u16 gMetatileAttributes_Oreburgh[] = INCBIN_U16("data/tilesets/secondary/oreburgh/metatile_attributes.bin");

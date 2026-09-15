@@ -1169,7 +1169,8 @@
   "gMapGroup_SinnohTowns": [
     "TwinleafTown",
     "SandgemTown",
-    "JubilifeCity"
+    "JubilifeCity",
+    "OreburghCity"
   ],
   "gMapGroup_SinnohRoutes": [
     "Route201",
@@ -1177,9 +1178,16 @@
     "LakeVerity",
     "Route219",
     "Route202",
-    "Route203"
+    "Route203",
+    "Route204",
+    "Route207",
+    "Route206"
   ],
-  "gMapGroup_SinnohDungeons": [],
+  "gMapGroup_SinnohDungeons": [
+    "OreburghGate",
+    "OreburghGate_B1F",
+    "RavagedPath"
+  ],
   "gMapGroup_SinnohIndoorTwinleaf": [
     "TwinleafTown_PlayerHouse_1F",
     "TwinleafTown_PlayerHouse_2F",

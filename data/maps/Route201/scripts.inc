@@ -456,3 +456,71 @@ Route201_Movement_LucasDawnExitRight:
 	walk_right
 	walk_right
 	step_end
+
+Route201_EventScript_Trainer1::
+	trainerbattle_single TRAINER_ROUTE201_1, Route201_Text_Trainer1Intro, Route201_Text_Trainer1Defeated
+	msgbox Route201_Text_Trainer1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route201_Text_Trainer1Intro:
+	.string "ROUTE 201 TRAINER 1\n"
+	.string "wants to battle!$"
+
+Route201_Text_Trainer1Defeated:
+	.string "ROUTE 201 TRAINER 1\n"
+	.string "was defeated!$"
+
+Route201_Text_Trainer1PostBattle:
+	.string "ROUTE 201 TRAINER 1\n"
+	.string "has nothing else to say.$"
+
+Route201_EventScript_Trainer2::
+	trainerbattle_single TRAINER_ROUTE201_2, Route201_Text_Trainer2Intro, Route201_Text_Trainer2Defeated
+	msgbox Route201_Text_Trainer2PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route201_EventScript_Trainer3::
+	trainerbattle_single TRAINER_ROUTE201_3, Route201_Text_Trainer3Intro, Route201_Text_Trainer3Defeated
+	msgbox Route201_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route201_EventScript_Trainer4::
+	trainerbattle_single TRAINER_ROUTE201_4, Route201_Text_Trainer4Intro, Route201_Text_Trainer4Defeated
+	msgbox Route201_Text_Trainer4PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route201_Text_Trainer2Intro:
+	.string "ROUTE 201 TRAINER 2\n"
+	.string "wants to battle!$"
+
+Route201_Text_Trainer2Defeated:
+	.string "ROUTE 201 TRAINER 2\n"
+	.string "was defeated!$"
+
+Route201_Text_Trainer2PostBattle:
+	.string "ROUTE 201 TRAINER 2\n"
+	.string "has nothing else to say.$"
+
+Route201_Text_Trainer3Intro:
+	.string "ROUTE 201 TRAINER 3\n"
+	.string "wants to battle!$"
+
+Route201_Text_Trainer3Defeated:
+	.string "ROUTE 201 TRAINER 3\n"
+	.string "was defeated!$"
+
+Route201_Text_Trainer3PostBattle:
+	.string "ROUTE 201 TRAINER 3\n"
+	.string "has nothing else to say.$"
+
+Route201_Text_Trainer4Intro:
+	.string "ROUTE 201 TRAINER 4\n"
+	.string "wants to battle!$"
+
+Route201_Text_Trainer4Defeated:
+	.string "ROUTE 201 TRAINER 4\n"
+	.string "was defeated!$"
+
+Route201_Text_Trainer4PostBattle:
+	.string "ROUTE 201 TRAINER 4\n"
+	.string "has nothing else to say.$"

@@ -16877,3 +16877,406 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE201_1 ===
+Name: SCHOOL KID
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE202_1 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE202_2 ===
+Name: BUGCATCHER
+Class: Bug Catcher
+Pic: Bug Catcher Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE202_3 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE202_4 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_1 ===
+Name: LASS
+Class: Lass
+Pic: Lass Frlg
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_2 ===
+Name: LASS
+Class: Lass
+Pic: Lass Frlg
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_3 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_4 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_5 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_6 ===
+Name: LASS
+Class: Lass
+Pic: Lass Frlg
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE204_1 ===
+Name: LASS
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE204_2 ===
+Name: LASS
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE207_1 ===
+Name: HIKER
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE207_2 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE207_3 ===
+Name: CAMPER
+Class: Camper
+Pic: Camper Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE207_4 ===
+Name: PICNICKER
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE207_5 ===
+Name: HIKER
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_OREBURGH_GATE_1 ===
+Name: HIKER
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_OREBURGH_GATE_2 ===
+Name: PICNICKER
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_OREBURGH_GATE_3 ===
+Name: PICNICKER
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_OREBURGH_GATE_B1F_1 ===
+Name: EXPERT
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_OREBURGH_GATE_B1F_2 ===
+Name: TRIATHLETE
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE201_2 ===
+Name: CRUSHGIRL
+Class: Crush Girl Frlg
+Pic: Crush Girl Frlg
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE201_3 ===
+Name: PICNICKER
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE201_4 ===
+Name: POKEFAN
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE204_3 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE204_4 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE204_5 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE207_6 ===
+Name: TRIATHLETE
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE207_7 ===
+Name: TRIATHLETE
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

@@ -9434,7 +9434,7 @@
     {
       "id": "LAYOUT_SANDGEM_TOWN",
       "name": "SandgemTown_Layout",
-      "width": 42,
+      "width": 44,
       "height": 34,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -9447,7 +9447,7 @@
       "width": 37,
       "height": 32,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route202/border.bin",
       "blockdata_filepath": "data/layouts/Route202/map.bin"
     },
@@ -9537,19 +9537,89 @@
       "width": 72,
       "height": 69,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/JubilifeCity/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE203",
       "name": "Route203_Layout",
-      "width": 59,
+      "width": 65,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route203/border.bin",
       "blockdata_filepath": "data/layouts/Route203/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE204",
+      "name": "Route204_Layout",
+      "width": 34,
+      "height": 72,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Jubilife",
+      "border_filepath": "data/layouts/Route204/border.bin",
+      "blockdata_filepath": "data/layouts/Route204/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_GATE",
+      "name": "OreburghGate_Layout",
+      "width": 28,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/OreburghGate/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghGate/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY",
+      "name": "OreburghCity_Layout",
+      "width": 63,
+      "height": 63,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Oreburgh",
+      "border_filepath": "data/layouts/OreburghCity/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE207",
+      "name": "Route207_Layout",
+      "width": 81,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Oreburgh",
+      "border_filepath": "data/layouts/Route207/border.bin",
+      "blockdata_filepath": "data/layouts/Route207/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE206",
+      "name": "Route206_Layout",
+      "width": 120,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Oreburgh",
+      "border_filepath": "data/layouts/Route206/border.bin",
+      "blockdata_filepath": "data/layouts/Route206/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_GATE_B1F",
+      "name": "OreburghGate_B1F_Layout",
+      "width": 65,
+      "height": 29,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/OreburghGate_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghGate_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAVAGED_PATH",
+      "name": "RavagedPath_Layout",
+      "width": 36,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RavagedPath/border.bin",
+      "blockdata_filepath": "data/layouts/RavagedPath/map.bin"
     }
   ]
 }

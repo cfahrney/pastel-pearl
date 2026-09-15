@@ -32,35 +32,35 @@
   "object_events": [],
   "warp_events": [
     {
-      "x": 8,
+      "x": 10,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_PROFESSOR_ROWANS_LAB",
       "dest_warp_id": "0"
     },
     {
-      "x": 15,
+      "x": 17,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 25,
+      "x": 27,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 7,
+      "x": 9,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_BOTTOM_LEFT_HOUSE_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 16,
+      "x": 18,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_BOTTOM_RIGHT_HOUSE_1F",

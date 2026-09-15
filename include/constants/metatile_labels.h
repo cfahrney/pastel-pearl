@@ -438,6 +438,9 @@
 // gTileset_MtEmber
 #define METATILE_MtEmber_CaveEntrance  0x346
 
+// gTileset_Oreburgh
+#define METATILE_Oreburgh_TallGrass  0x23D
+
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A
 #define METATILE_Pacifidlog_FloatingLogs_HorizontalLeft        0x250

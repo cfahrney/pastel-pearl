@@ -3067,3 +3067,47 @@ const u16 gTilesetPalettes_LakeVerity[][16] =
 };
 
 const u32 gTilesetTiles_LakeVerity[] = INCBIN_U32("data/tilesets/secondary/lake_verity/tiles.4bpp.lz");
+
+const u32 gTilesetTiles_Jubilife[] = INCGFX_U32("data/tilesets/secondary/jubilife/tiles.png", ".4bpp.fastSmol");
+
+const u16 gTilesetPalettes_Jubilife[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/jubilife/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_Oreburgh[] = INCGFX_U32("data/tilesets/secondary/oreburgh/tiles.png", ".4bpp.fastSmol");
+
+const u16 gTilesetPalettes_Oreburgh[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh/palettes/15.pal", ".gbapal"),
+};

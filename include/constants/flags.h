@@ -65,26 +65,26 @@
 #define FLAG_TWINLEAF_TOWN_PLAYER_HOUSE_MOM_MENTIONED_SANDGEM    0x2B
 #define FLAG_WILD_ENCOUNTERS_DISABLED    0x2C // No starter yet; blocks all wild encounters
 #define FLAG_DEBUG_NO_COLLISION    0x2D // Debug menu: toggle collisions
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
+#define FLAG_HIDE_ROUTE204_TREE1                                    0x2E
+#define FLAG_HIDE_VERITY_LAKEFRONT_TREE1                            0x2F
+#define FLAG_HIDE_OREBURGH_GATE_ROCK1                               0x30
+#define FLAG_HIDE_OREBURGH_GATE_ROCK2                               0x31
+#define FLAG_HIDE_OREBURGH_GATE_ROCK3                               0x32
+#define FLAG_HIDE_OREBURGH_GATE_ROCK4                               0x33
+#define FLAG_HIDE_OREBURGH_GATE_ROCK5                               0x34
+#define FLAG_HIDE_OREBURGH_GATE_ROCK6                               0x35
+#define FLAG_HIDE_OREBURGH_GATE_ROCK7                               0x36
+#define FLAG_HIDE_OREBURGH_GATE_ROCK8                               0x37
+#define FLAG_HIDE_OREBURGH_GATE_ROCK9                               0x38
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK1                           0x39
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK2                           0x3A
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK3                           0x3B
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK4                           0x3C
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK5                           0x3D
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK6                           0x3E
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK7                           0x3F
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK8                           0x40
+#define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK9                           0x41
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
@@ -1222,29 +1222,29 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
+#define FLAG_ITEM_ROUTE_202_POTION                                  0x493
+#define FLAG_ITEM_ROUTE_203_REPEL                                   0x494
+#define FLAG_ITEM_ROUTE_203_X_DEFEND                                0x495
+#define FLAG_ITEM_ROUTE_203_POKE_BALL                               0x496
+#define FLAG_ITEM_ROUTE_204_TM_BULLET_SEED                          0x497
+#define FLAG_ITEM_ROUTE_204_AWAKENING                               0x498
+#define FLAG_ITEM_ROUTE_204_PARALYZE_HEAL                           0x499
+#define FLAG_ITEM_ROUTE_204_HP_UP                                   0x49A
+#define FLAG_ITEM_ROUTE_204_SEA_INCENSE                             0x49B
+#define FLAG_ITEM_ROUTE_207_POKE_BALL                               0x49C
+#define FLAG_ITEM_ROUTE_207_REVIVE                                  0x49D
+#define FLAG_ITEM_ROUTE_207_IRON                                    0x49E
+#define FLAG_ITEM_ROUTE_207_TIMER_BALL                              0x49F
+#define FLAG_ITEM_ROUTE_207_SUPER_POTION                            0x4A0
+#define FLAG_ITEM_OREBURGH_CITY_YELLOW_SHARD                        0x4A1
+#define FLAG_ITEM_OREBURGH_CITY_DIRE_HIT                            0x4A2
+#define FLAG_ITEM_OREBURGH_GATE_TM_SAFEGUARD                        0x4A3
+#define FLAG_ITEM_OREBURGH_GATE_TM_BRICK_BREAK                      0x4A4
+#define FLAG_ITEM_OREBURGH_GATE_TM_FOCUS_PUNCH                      0x4A5
+#define FLAG_ITEM_OREBURGH_GATE_B1F_BIG_PEARL                       0x4A6
+#define FLAG_ITEM_OREBURGH_GATE_B1F_EARTH_PLATE                     0x4A7
+#define FLAG_ITEM_VERITY_LAKEFRONT_1                                0x4A8
+#define FLAG_ITEM_ROUTE_219_1                                       0x4A9
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag

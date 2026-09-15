@@ -860,12 +860,45 @@
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
+// Pastel Pearl trainers (Route 201-207 / Oreburgh)
+#define TRAINER_ROUTE201_1                  855
+#define TRAINER_ROUTE202_1                  856
+#define TRAINER_ROUTE202_2                  857
+#define TRAINER_ROUTE202_3                  858
+#define TRAINER_ROUTE202_4                  859
+#define TRAINER_ROUTE203_1                  860
+#define TRAINER_ROUTE203_2                  861
+#define TRAINER_ROUTE203_3                  862
+#define TRAINER_ROUTE203_4                  863
+#define TRAINER_ROUTE203_5                  864
+#define TRAINER_ROUTE203_6                  865
+#define TRAINER_ROUTE204_1                  866
+#define TRAINER_ROUTE204_2                  867
+#define TRAINER_ROUTE207_1                  868
+#define TRAINER_ROUTE207_2                  869
+#define TRAINER_ROUTE207_3                  870
+#define TRAINER_ROUTE207_4                  871
+#define TRAINER_ROUTE207_5                  872
+#define TRAINER_OREBURGH_GATE_1             873
+#define TRAINER_OREBURGH_GATE_2             874
+#define TRAINER_OREBURGH_GATE_3             875
+#define TRAINER_OREBURGH_GATE_B1F_1         876
+#define TRAINER_OREBURGH_GATE_B1F_2         877
+#define TRAINER_ROUTE201_2                  878
+#define TRAINER_ROUTE201_3                  879
+#define TRAINER_ROUTE201_4                  880
+#define TRAINER_ROUTE204_3                  881
+#define TRAINER_ROUTE204_4                  882
+#define TRAINER_ROUTE204_5                  883
+#define TRAINER_ROUTE207_6                  884
+#define TRAINER_ROUTE207_7                  885
+
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for a limited number of additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     855
-#define MAX_TRAINERS_COUNT_EMERALD 864
+#define TRAINERS_COUNT_EMERALD     886
+#define MAX_TRAINERS_COUNT_EMERALD 1176
 
 #if IS_FRLG
 #define TRAINERS_COUNT                      TRAINERS_COUNT_FRLG

@@ -1690,6 +1690,30 @@
     {
       "id": "MAPSEC_ROUTE_203",
       "name": "Route 203"
+    },
+    {
+      "id": "MAPSEC_ROUTE_204",
+      "name": "Route 204"
+    },
+    {
+      "id": "MAPSEC_OREBURGH_GATE",
+      "name": "Oreburgh Gate"
+    },
+    {
+      "id": "MAPSEC_OREBURGH_CITY",
+      "name": "Oreburgh City"
+    },
+    {
+      "id": "MAPSEC_ROUTE_207",
+      "name": "Route 207"
+    },
+    {
+      "id": "MAPSEC_ROUTE_206",
+      "name": "Route 206"
+    },
+    {
+      "id": "MAPSEC_RAVAGED_PATH",
+      "name": "Ravaged Path"
     }
   ]
 }

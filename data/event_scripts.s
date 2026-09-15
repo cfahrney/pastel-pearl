@@ -1783,3 +1783,17 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/JubilifeCity/scripts.inc"
 
 	.include "data/maps/Route203/scripts.inc"
+
+	.include "data/maps/Route204/scripts.inc"
+
+	.include "data/maps/OreburghGate/scripts.inc"
+
+	.include "data/maps/OreburghCity/scripts.inc"
+
+	.include "data/maps/Route207/scripts.inc"
+
+	.include "data/maps/Route206/scripts.inc"
+
+	.include "data/maps/RavagedPath/scripts.inc"
+
+	.include "data/maps/OreburghGate_B1F/scripts.inc"
