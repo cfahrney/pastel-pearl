@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# poe [MapName] — start Poe, or just open the browser if it's already running.
+set -e
+REPO="$(cd "$(dirname "$(realpath "${BASH_SOURCE[0]}")")/../.." && pwd)"
+PORT=8765
+URL="http://127.0.0.1:$PORT/${1:+#$1}"
+
+if curl -s --max-time 1 "http://127.0.0.1:$PORT/" | grep -q "<title>Poe</title>"; then
+    echo "Poe is already running — opening $URL"
+    open "$URL"
+    exit 0
+fi
+
+cd "$REPO"
+exec python3 tools/poe/server.py "$@"

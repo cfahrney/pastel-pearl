@@ -54,11 +54,6 @@ main { flex: 1; display: flex; min-height: 0; }
 #conn-left .lbl { transform: rotate(180deg); }
 .conn button:disabled { opacity: .35; font-weight: 400; box-shadow: none; }
 .btnrow { display: flex; gap: 8px; margin-top: 8px; align-items: center; }
-#zoomCtl { position: absolute; right: 16px; bottom: 16px; display: flex; border: 1px solid var(--line); border-radius: 8px;
-           overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,.25); background: var(--panel); }
-#zoomCtl button { border: 0; border-radius: 0; width: 36px; height: 32px; font-size: 18px; line-height: 1; padding: 0; background: var(--panel); }
-#zoomCtl button + button { border-left: 1px solid var(--line); }
-#zoomCtl button:hover:not(:disabled) { background: var(--field); }
 #mapWrap { position: relative; flex: none; margin: auto; box-shadow: 0 1px 6px rgba(0,0,0,.25); }
 #mapImg { display: block; image-rendering: pixelated; }
 #rangeLayer { position: absolute; left: 0; top: 0; pointer-events: none; image-rendering: pixelated; }
@@ -200,7 +195,6 @@ kbd { font-size: 11px; border: 1px solid var(--line); border-radius: 3px; paddin
     <div id="mapPane"><div id="mapWrap"><img id="mapImg" alt=""></div></div>
     <div class="conn" id="conn-up"></div><div class="conn" id="conn-down"></div>
     <div class="conn" id="conn-left"></div><div class="conn" id="conn-right"></div>
-    <div id="zoomCtl"><button id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button><button id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button></div>
   </div>
   <aside id="side"><div class="empty">Pick a map, then click a marker.<br><br>
     A yellow dot means the object still has placeholder content.<br><kbd>⌘S</kbd> saves the field you're editing.</div></aside>
@@ -218,7 +212,7 @@ try {
 const legendCat = o => o.kind !== "fieldobj" ? o.kind
   : /rock/.test(o.icon || "") || (!o.icon && o.tag === "R") ? "rock" : /boulder/.test(o.icon || "") ? "boulder" : "tree";
 const isShown = o => !hiddenCats.has(legendCat(o));
-const ZOOM_MIN = 1, ZOOM_MAX = 4;
+const ZOOM_MIN = 0.5, ZOOM_MAX = 8;
 let zoom = 2;
 try {
   autoWrap = localStorage.getItem("autoWrap") !== "0";
@@ -303,6 +297,7 @@ async function loadMap(name, keepSel) {
   $("#mapInput").value = name;
   if (location.hash.slice(1) !== name) history.replaceState(null, "", "#" + name);
   document.title = name + " · Poe";
+  try { localStorage.setItem("lastMap", name); } catch (e) {}
   $("#mapImg").replaceWith(img);
   if (!keepSel) { SEL = null; RANGE = null; showEmpty(); }
   drawMarkers();
@@ -316,8 +311,6 @@ async function refreshObjects() {
 
 function drawMarkers() {
   const px = 16 * zoom, wrap = $("#mapWrap");
-  $("#zoomOut").disabled = zoom <= ZOOM_MIN;
-  $("#zoomIn").disabled = zoom >= ZOOM_MAX;
   $("#mapImg").style.width = MAP.width * px + "px";
   $("#mapImg").style.height = MAP.height * px + "px";
   wrap.querySelectorAll(".marker").forEach(m => m.remove());
@@ -529,17 +522,40 @@ async function copyText(text) {
   return ok;
 }
 
-function setZoom(z) {
+// Zoom so the map point under (clientX, clientY) stays under the pointer.
+function zoomAt(z, clientX, clientY) {
   z = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, z));
-  if (z === zoom || !MAP) return;
-  const pane = $("#mapPane"), wrap = $("#mapWrap");
-  // Tile coords at the view's center, measured from the map's (possibly centered) origin.
-  const cx = (pane.scrollLeft + pane.clientWidth / 2 - wrap.offsetLeft) / (zoom * 16);
-  const cy = (pane.scrollTop + pane.clientHeight / 2 - wrap.offsetTop) / (zoom * 16);
+  if (!MAP || Math.abs(z - zoom) < 0.001) return;
+  const pane = $("#mapPane"), wrap = $("#mapWrap"), r = pane.getBoundingClientRect();
+  const px = clientX - r.left, py = clientY - r.top;
+  const mx = (pane.scrollLeft + px - wrap.offsetLeft) / (zoom * 16);
+  const my = (pane.scrollTop + py - wrap.offsetTop) / (zoom * 16);
   zoom = z;
-  try { localStorage.setItem("zoom", String(zoom)); } catch (e) {}
   drawMarkers();
-  pane.scrollTo(cx * zoom * 16 + wrap.offsetLeft - pane.clientWidth / 2, cy * zoom * 16 + wrap.offsetTop - pane.clientHeight / 2);
+  pane.scrollLeft = mx * zoom * 16 + wrap.offsetLeft - px;
+  pane.scrollTop = my * zoom * 16 + wrap.offsetTop - py;
+  try { localStorage.setItem("zoom", String(zoom)); } catch (e) {}
+}
+
+// Trackpad pinch arrives as ctrl+wheel (Chrome/Firefox/Edge) or gesture events (Safari).
+function initPinchZoom() {
+  const pane = $("#mapPane");
+  let pending = null;
+  const queue = (z, x, y) => {
+    const first = !pending;
+    pending = {z, x, y};
+    if (first) requestAnimationFrame(() => { const p = pending; pending = null; zoomAt(p.z, p.x, p.y); });
+  };
+  const target = () => pending ? pending.z : zoom;
+  pane.addEventListener("wheel", e => {
+    if (!e.ctrlKey) return;  // plain two-finger scroll still pans
+    e.preventDefault();
+    queue(target() * Math.exp(-e.deltaY * 0.01), e.clientX, e.clientY);
+  }, {passive: false});
+  let startZoom = zoom;
+  pane.addEventListener("gesturestart", e => { e.preventDefault(); startZoom = zoom; });
+  pane.addEventListener("gesturechange", e => { e.preventDefault(); queue(startZoom * e.scale, e.clientX, e.clientY); });
+  pane.addEventListener("gestureend", e => e.preventDefault());
 }
 
 function textCard(t) {
@@ -1224,8 +1240,7 @@ window.addEventListener("hashchange", () => { const n = decodeURIComponent(locat
     if (n && n !== MAP?.name && n !== loadingMap) loadMap(n);
   });
   $("#reloadBtn").onclick = () => MAP && loadMap(MAP.name, false);
-  $("#zoomOut").onclick = () => setZoom(zoom - 1);
-  $("#zoomIn").onclick = () => setZoom(zoom + 1);
+  initPinchZoom();
   $("#nextTodo").onclick = nextTodo;
   document.querySelectorAll("#legend input[data-cat]").forEach(cb => {
     cb.checked = !hiddenCats.has(cb.dataset.cat);
@@ -1235,7 +1250,9 @@ window.addEventListener("hashchange", () => { const n = decodeURIComponent(locat
       if (MAP) drawMarkers();
     };
   });
-  const start = decodeURIComponent(location.hash.slice(1)) || INIT.defaultMap;
+  let last = "";
+  try { last = localStorage.getItem("lastMap") || ""; } catch (e) {}
+  const start = decodeURIComponent(location.hash.slice(1)) || INIT.defaultMap || last;
   if (start && INIT.maps.includes(start)) loadMap(start);
 })();
 </script>
