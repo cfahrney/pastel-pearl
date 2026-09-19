@@ -439,7 +439,9 @@
 #define METATILE_MtEmber_CaveEntrance  0x346
 
 // gTileset_Oreburgh
-#define METATILE_Oreburgh_TallGrass  0x23D
+#define METATILE_Oreburgh_Oreburgh_Door   0x259
+#define METATILE_Oreburgh_Oreburgh_Door2  0x2C1
+#define METATILE_Oreburgh_TallGrass       0x23D
 
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A

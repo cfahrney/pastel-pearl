@@ -417,3 +417,9 @@ const u16 gMetatileAttributes_Jubilife[] = INCBIN_U16("data/tilesets/secondary/j
 
 const u16 gMetatiles_Oreburgh[] = INCBIN_U16("data/tilesets/secondary/oreburgh/metatiles.bin");
 const u16 gMetatileAttributes_Oreburgh[] = INCBIN_U16("data/tilesets/secondary/oreburgh/metatile_attributes.bin");
+
+const u16 gMetatiles_SinnohBuilding[] = INCBIN_U16("data/tilesets/secondary/sinnoh_building/metatiles.bin");
+const u16 gMetatileAttributes_SinnohBuilding[] = INCBIN_U16("data/tilesets/secondary/sinnoh_building/metatile_attributes.bin");
+
+const u16 gMetatiles_SinnohHighRise[] = INCBIN_U16("data/tilesets/secondary/sinnoh_high_rise/metatiles.bin");
+const u16 gMetatileAttributes_SinnohHighRise[] = INCBIN_U16("data/tilesets/secondary/sinnoh_high_rise/metatile_attributes.bin");

@@ -1,5 +1,10 @@
 JubilifeCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, JubilifeCity_OnTransition
 	.byte 0
+
+JubilifeCity_OnTransition:
+	setflag FLAG_VISITED_JUBILIFE_CITY
+	end
 
 JubilifeCity_EventScript_Sign1::
 	msgbox JubilifeCity_Text_Sign1, MSGBOX_SIGN

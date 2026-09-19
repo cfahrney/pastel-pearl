@@ -7,6 +7,7 @@ TwinleafTown_MapScripts::
 @ after the homecoming scene. Stepping back outside clears it, so her
 @ next indoor visit gets the repeatable welcome-home/rest offer instead.
 TwinleafTown_OnTransition:
+	setflag FLAG_VISITED_TWINLEAF_TOWN
 	call_if_ge VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_ClearMomSandgemFlag
 	@ No wild encounters before the player has a starter.
 	call_if_lt VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_DisableWildEncounters

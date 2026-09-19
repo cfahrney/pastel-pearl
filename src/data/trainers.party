@@ -17005,7 +17005,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Bidoof
-Level: 2
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE203_6 ===
@@ -17112,6 +17112,19 @@ Bidoof
 Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE207_6 ===
+Name: TRIATHLETE
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_OREBURGH_GATE_1 ===
 Name: HIKER
 Class: Hiker
@@ -17177,106 +17190,3 @@ Bidoof
 Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE201_2 ===
-Name: CRUSHGIRL
-Class: Crush Girl Frlg
-Pic: Crush Girl Frlg
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE201_3 ===
-Name: PICNICKER
-Class: Picnicker
-Pic: Picnicker Dp
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE201_4 ===
-Name: POKEFAN
-Class: Pokefan
-Pic: Pokefan M
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE204_3 ===
-Name: YOUNGSTER
-Class: Youngster
-Pic: Youngster Dp
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE204_4 ===
-Name: YOUNGSTER
-Class: Youngster
-Pic: Youngster Dp
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE204_5 ===
-Name: YOUNGSTER
-Class: Youngster
-Pic: Youngster Dp
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE207_6 ===
-Name: TRIATHLETE
-Class: Triathlete
-Pic: Cycling Triathlete M
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE207_7 ===
-Name: TRIATHLETE
-Class: Triathlete
-Pic: Running Triathlete F
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

@@ -78,8 +78,10 @@
     "gMapGroup_SinnohTowns",
     "gMapGroup_SinnohRoutes",
     "gMapGroup_SinnohDungeons",
-    "gMapGroup_SinnohIndoorTwinleaf",
-    "gMapGroup_IndoorSandgem"
+    "gMapGroup_IndoorTwinleaf",
+    "gMapGroup_IndoorSandgem",
+    "gMapGroup_IndoorOreburgh",
+    "gMapGroup_Templates"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1188,7 +1190,7 @@
     "OreburghGate_B1F",
     "RavagedPath"
   ],
-  "gMapGroup_SinnohIndoorTwinleaf": [
+  "gMapGroup_IndoorTwinleaf": [
     "TwinleafTown_PlayerHouse_1F",
     "TwinleafTown_PlayerHouse_2F",
     "TwinleafTown_BarryHouse_1F",
@@ -1204,5 +1206,20 @@
     "SandgemTown_BottomRightHouse_2F",
     "SandgemTown_Mart",
     "SandgemTown_ProfessorRowansLab"
+  ],
+  "gMapGroup_IndoorOreburgh": [
+    "OreburghCity_PokemonCenter_1F",
+    "OreburghCity_PokemonCenter_2F",
+    "OreburghCity_Mart",
+    "OreburghCity_LeftOfGymHouse",
+    "OreburghCity_RightOfGymHouse",
+    "OreburghCity_Gym"
+  ],
+  "gMapGroup_Templates": [
+    "Template_PokemonCenter_1F",
+    "Template_PokemonCenter_2F",
+    "Template_Mart",
+    "Template_StandardHome_1F",
+    "Template_StandardHome_2F"
   ]
 }

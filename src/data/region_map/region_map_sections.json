@@ -1685,35 +1685,67 @@
     },
     {
       "id": "MAPSEC_JUBILIFE_CITY",
-      "name": "Jubilife City"
+      "name": "Jubilife City",
+      "x": 5,
+      "y": 10,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_203",
-      "name": "Route 203"
+      "name": "Route 203",
+      "x": 5,
+      "y": 9,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_204",
-      "name": "Route 204"
+      "name": "Route 204",
+      "x": 6,
+      "y": 9,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_OREBURGH_GATE",
-      "name": "Oreburgh Gate"
+      "name": "Oreburgh Gate",
+      "x": 5,
+      "y": 8,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_OREBURGH_CITY",
-      "name": "Oreburgh City"
+      "name": "Oreburgh City",
+      "x": 5,
+      "y": 7,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_207",
-      "name": "Route 207"
+      "name": "Route 207",
+      "x": 5,
+      "y": 6,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_206",
-      "name": "Route 206"
+      "name": "Route 206",
+      "x": 4,
+      "y": 7,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_RAVAGED_PATH",
-      "name": "Ravaged Path"
+      "name": "Ravaged Path",
+      "x": 3,
+      "y": 7,
+      "width": 1,
+      "height": 1
     }
   ]
 }

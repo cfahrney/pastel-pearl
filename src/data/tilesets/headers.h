@@ -1574,3 +1574,25 @@ const struct Tileset gTileset_Oreburgh =
     .metatileAttributes = gMetatileAttributes_Oreburgh,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SinnohBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SinnohBuilding,
+    .palettes = gTilesetPalettes_SinnohBuilding,
+    .metatiles = gMetatiles_SinnohBuilding,
+    .metatileAttributes = gMetatileAttributes_SinnohBuilding,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_SinnohHighRise =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SinnohHighRise,
+    .palettes = gTilesetPalettes_SinnohHighRise,
+    .metatiles = gMetatiles_SinnohHighRise,
+    .metatileAttributes = gMetatileAttributes_SinnohHighRise,
+    .callback = NULL,
+};

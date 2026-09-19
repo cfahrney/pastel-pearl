@@ -223,6 +223,28 @@ void DrawDoorMetatileAt(int x, int y, u16 *tiles)
     }
 }
 
+// Like DrawDoorMetatileAt, but only overwrites the metatile's bottom-left/bottom-right tile slots
+// (the 8px row closest to the door). The top row is left alone, so it keeps showing whatever the
+// real map tile already has there instead of needing to be restored afterward.
+void DrawDoorMetatileBottomRowAt(int x, int y, u16 *tiles)
+{
+    int offset = MapPosToBgTilemapOffset(&sFieldCameraOffset, x, y);
+
+    if (offset >= 0)
+    {
+        gOverworldTilemapBuffer_Bg3[offset + 0x20] = tiles[2];
+        gOverworldTilemapBuffer_Bg3[offset + 0x21] = tiles[3];
+        gOverworldTilemapBuffer_Bg2[offset + 0x20] = tiles[6];
+        gOverworldTilemapBuffer_Bg2[offset + 0x21] = tiles[7];
+        gOverworldTilemapBuffer_Bg1[offset + 0x20] = 0;
+        gOverworldTilemapBuffer_Bg1[offset + 0x21] = 0;
+        ScheduleBgCopyTilemapToVram(1);
+        ScheduleBgCopyTilemapToVram(2);
+        ScheduleBgCopyTilemapToVram(3);
+        sFieldCameraOffset.copyBGToVRAM = TRUE;
+    }
+}
+
 static void DrawMetatileAt(const struct MapLayout *mapLayout, u16 offset, int x, int y)
 {
     u16 metatileId = MapGridGetMetatileIdAt(x, y);

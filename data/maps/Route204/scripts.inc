@@ -59,53 +59,23 @@ Route204_EventScript_Tree1::
 	releaseall
 	end
 
-Route204_EventScript_Trainer3::
-	trainerbattle_single TRAINER_ROUTE204_3, Route204_Text_Trainer3Intro, Route204_Text_Trainer3Defeated
-	msgbox Route204_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
+Route204_EventScript_NPC1::
+	msgbox Route204_Text_NPC1, MSGBOX_NPC
 	end
 
-Route204_EventScript_Trainer4::
-	trainerbattle_single TRAINER_ROUTE204_4, Route204_Text_Trainer4Intro, Route204_Text_Trainer4Defeated
-	msgbox Route204_Text_Trainer4PostBattle, MSGBOX_AUTOCLOSE
+Route204_EventScript_NPC2::
+	msgbox Route204_Text_NPC2, MSGBOX_NPC
 	end
 
-Route204_EventScript_Trainer5::
-	trainerbattle_single TRAINER_ROUTE204_5, Route204_Text_Trainer5Intro, Route204_Text_Trainer5Defeated
-	msgbox Route204_Text_Trainer5PostBattle, MSGBOX_AUTOCLOSE
+Route204_EventScript_NPC3::
+	msgbox Route204_Text_NPC3, MSGBOX_NPC
 	end
 
-Route204_Text_Trainer3Intro:
-	.string "ROUTE 204 TRAINER 3\n"
-	.string "wants to battle!$"
+Route204_Text_NPC1:
+	.string "ROUTE 204 NPC 1$"
 
-Route204_Text_Trainer3Defeated:
-	.string "ROUTE 204 TRAINER 3\n"
-	.string "was defeated!$"
+Route204_Text_NPC2:
+	.string "ROUTE 204 NPC 2$"
 
-Route204_Text_Trainer3PostBattle:
-	.string "ROUTE 204 TRAINER 3\n"
-	.string "has nothing else to say.$"
-
-Route204_Text_Trainer4Intro:
-	.string "ROUTE 204 TRAINER 4\n"
-	.string "wants to battle!$"
-
-Route204_Text_Trainer4Defeated:
-	.string "ROUTE 204 TRAINER 4\n"
-	.string "was defeated!$"
-
-Route204_Text_Trainer4PostBattle:
-	.string "ROUTE 204 TRAINER 4\n"
-	.string "has nothing else to say.$"
-
-Route204_Text_Trainer5Intro:
-	.string "ROUTE 204 TRAINER 5\n"
-	.string "wants to battle!$"
-
-Route204_Text_Trainer5Defeated:
-	.string "ROUTE 204 TRAINER 5\n"
-	.string "was defeated!$"
-
-Route204_Text_Trainer5PostBattle:
-	.string "ROUTE 204 TRAINER 5\n"
-	.string "has nothing else to say.$"
+Route204_Text_NPC3:
+	.string "ROUTE 204 NPC 3$"

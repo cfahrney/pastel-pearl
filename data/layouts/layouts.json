@@ -9361,7 +9361,7 @@
       "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_TopRightHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_TopRightHouse_1F/map.bin",
       "layout_version": "emerald"
@@ -9372,7 +9372,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_PlayerHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_PlayerHouse_1F/map.bin",
       "layout_version": "emerald"
@@ -9383,7 +9383,7 @@
       "width": 10,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_PlayerHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_PlayerHouse_2F/map.bin",
       "layout_version": "emerald"
@@ -9394,7 +9394,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_BarryHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_BarryHouse_1F/map.bin",
       "layout_version": "emerald"
@@ -9405,7 +9405,7 @@
       "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_BottomLeftHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_BottomLeftHouse_1F/map.bin",
       "layout_version": "emerald"
@@ -9416,7 +9416,7 @@
       "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_BarryHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_BarryHouse_2F/map.bin",
       "layout_version": "emerald"
@@ -9497,7 +9497,7 @@
       "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/SandgemTown_BottomLeftHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown_BottomLeftHouse_1F/map.bin"
     },
@@ -9517,7 +9517,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/SandgemTown_BottomRightHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown_BottomRightHouse_1F/map.bin"
     },
@@ -9527,7 +9527,7 @@
       "width": 10,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown_BottomRightHouse_2F/map.bin"
     },
@@ -9620,6 +9620,116 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/RavagedPath/border.bin",
       "blockdata_filepath": "data/layouts/RavagedPath/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_MART",
+      "name": "OreburghCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/OreburghCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_POKEMON_CENTER_2F",
+      "name": "OreburghCity_PokemonCenter_2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OreburghCity_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_POKEMON_CENTER_1F",
+      "name": "OreburghCity_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OreburghCity_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_LEFT_OF_GYM_HOUSE",
+      "name": "OreburghCity_LeftOfGymHouse_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohBuilding",
+      "border_filepath": "data/layouts/OreburghCity_LeftOfGymHouse/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_LeftOfGymHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_RIGHT_OF_GYM_HOUSE",
+      "name": "OreburghCity_RightOfGymHouse_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohBuilding",
+      "border_filepath": "data/layouts/OreburghCity_RightOfGymHouse/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_RightOfGymHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_POKEMON_CENTER_1F",
+      "name": "Template_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Template_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_POKEMON_CENTER_2F",
+      "name": "Template_PokemonCenter_2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Template_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_MART",
+      "name": "Template_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Template_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/Template_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_STANDARD_HOME_1F",
+      "name": "Template_StandardHome_1F_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohBuilding",
+      "border_filepath": "data/layouts/Template_StandardHome_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_StandardHome_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_STANDARD_HOME_2F",
+      "name": "Template_StandardHome_2F_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohBuilding",
+      "border_filepath": "data/layouts/Template_StandardHome_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_StandardHome_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_GYM",
+      "name": "OreburghCity_Gym_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohBuilding",
+      "border_filepath": "data/layouts/OreburghCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_Gym/map.bin"
     }
   ]
 }

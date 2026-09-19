@@ -474,53 +474,23 @@ Route201_Text_Trainer1PostBattle:
 	.string "ROUTE 201 TRAINER 1\n"
 	.string "has nothing else to say.$"
 
-Route201_EventScript_Trainer2::
-	trainerbattle_single TRAINER_ROUTE201_2, Route201_Text_Trainer2Intro, Route201_Text_Trainer2Defeated
-	msgbox Route201_Text_Trainer2PostBattle, MSGBOX_AUTOCLOSE
+Route201_EventScript_NPC1::
+	msgbox Route201_Text_NPC1, MSGBOX_NPC
 	end
 
-Route201_EventScript_Trainer3::
-	trainerbattle_single TRAINER_ROUTE201_3, Route201_Text_Trainer3Intro, Route201_Text_Trainer3Defeated
-	msgbox Route201_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
+Route201_EventScript_NPC2::
+	msgbox Route201_Text_NPC2, MSGBOX_NPC
 	end
 
-Route201_EventScript_Trainer4::
-	trainerbattle_single TRAINER_ROUTE201_4, Route201_Text_Trainer4Intro, Route201_Text_Trainer4Defeated
-	msgbox Route201_Text_Trainer4PostBattle, MSGBOX_AUTOCLOSE
+Route201_EventScript_NPC3::
+	msgbox Route201_Text_NPC3, MSGBOX_NPC
 	end
 
-Route201_Text_Trainer2Intro:
-	.string "ROUTE 201 TRAINER 2\n"
-	.string "wants to battle!$"
+Route201_Text_NPC1:
+	.string "ROUTE 201 NPC 1$"
 
-Route201_Text_Trainer2Defeated:
-	.string "ROUTE 201 TRAINER 2\n"
-	.string "was defeated!$"
+Route201_Text_NPC2:
+	.string "ROUTE 201 NPC 2$"
 
-Route201_Text_Trainer2PostBattle:
-	.string "ROUTE 201 TRAINER 2\n"
-	.string "has nothing else to say.$"
-
-Route201_Text_Trainer3Intro:
-	.string "ROUTE 201 TRAINER 3\n"
-	.string "wants to battle!$"
-
-Route201_Text_Trainer3Defeated:
-	.string "ROUTE 201 TRAINER 3\n"
-	.string "was defeated!$"
-
-Route201_Text_Trainer3PostBattle:
-	.string "ROUTE 201 TRAINER 3\n"
-	.string "has nothing else to say.$"
-
-Route201_Text_Trainer4Intro:
-	.string "ROUTE 201 TRAINER 4\n"
-	.string "wants to battle!$"
-
-Route201_Text_Trainer4Defeated:
-	.string "ROUTE 201 TRAINER 4\n"
-	.string "was defeated!$"
-
-Route201_Text_Trainer4PostBattle:
-	.string "ROUTE 201 TRAINER 4\n"
-	.string "has nothing else to say.$"
+Route201_Text_NPC3:
+	.string "ROUTE 201 NPC 3$"
