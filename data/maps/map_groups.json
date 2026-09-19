@@ -81,7 +81,8 @@
     "gMapGroup_IndoorTwinleaf",
     "gMapGroup_IndoorSandgem",
     "gMapGroup_IndoorOreburgh",
-    "gMapGroup_Templates"
+    "gMapGroup_Templates",
+    "gMapGroup_IndoorJubilife"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1221,5 +1222,10 @@
     "Template_Mart",
     "Template_StandardHome_1F",
     "Template_StandardHome_2F"
+  ],
+  "gMapGroup_IndoorJubilife": [
+    "JubilifeCity_PokemonCenter_1F",
+    "JubilifeCity_PokemonCenter_2F",
+    "JubilifeCity_Mart"
   ]
 }

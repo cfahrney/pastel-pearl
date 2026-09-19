@@ -1819,3 +1819,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Template_StandardHome_2F/scripts.inc"
 
 	.include "data/maps/OreburghCity_Gym/scripts.inc"
+
+	.include "data/maps/JubilifeCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_Mart/scripts.inc"

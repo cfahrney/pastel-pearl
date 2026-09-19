@@ -363,18 +363,26 @@
     {
       "id": "HEAL_LOCATION_OREBURGH_CITY",
       "map": "MAP_OREBURGH_CITY",
-      "x": 0,
-      "y": 0,
+      "x": 47,
+      "y": 21,
       "respawn_map": "MAP_OREBURGH_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_OREBURGH_NURSE"
     },
     {
       "id": "HEAL_LOCATION_SANDGEM_TOWN",
       "map": "MAP_SANDGEM_TOWN",
-      "x": 0,
-      "y": 0,
+      "x": 17,
+      "y": 11,
       "respawn_map": "MAP_SANDGEM_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SANDGEM_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_JUBILIFE_CITY",
+      "map": "MAP_JUBILIFE_CITY",
+      "x": 60,
+      "y": 42,
+      "respawn_map": "MAP_JUBILIFE_CITY_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_JUBILIFE_NURSE"
     }
   ]
 }

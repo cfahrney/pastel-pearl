@@ -9730,6 +9730,36 @@
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/OreburghCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_POKEMON_CENTER_1F",
+      "name": "JubilifeCity_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/JubilifeCity_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_POKEMON_CENTER_2F",
+      "name": "JubilifeCity_PokemonCenter_2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/JubilifeCity_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_MART",
+      "name": "JubilifeCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/JubilifeCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_Mart/map.bin"
     }
   ]
 }
