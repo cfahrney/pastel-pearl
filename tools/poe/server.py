@@ -23,6 +23,7 @@ PARTY_FILE = ROOT / "src/data/trainers.party"
 FLAGS_FILE = ROOT / "include/constants/flags.h"
 MAX_TEXT_WIDTH = 208
 TRAINER_NAME_LENGTH = 10
+POKEMON_NAME_LENGTH = 12
 WRITE_LOCK = threading.Lock()
 
 # (tiles, metatiles, palettes) in the primary tileset, per layout_version
@@ -160,7 +161,8 @@ def render_icon(name):
     out = img.convert("RGBA")
     if img.mode == "P":
         idx = img.tobytes()
-        out.putdata([(0, 0, 0, 0) if i == 0 else p for i, p in zip(idx, out.getdata())])
+        rgba = out.tobytes()
+        out.putdata([(0, 0, 0, 0) if i == 0 else tuple(rgba[n * 4:n * 4 + 4]) for n, i in enumerate(idx)])
     buf = io.BytesIO()
     out.save(buf, "PNG")
     return buf.getvalue()
@@ -220,7 +222,7 @@ def mon_overworld_db():
     if _mon_ow is not None:
         return _mon_ow
     tables = {}
-    for f in (OBJ_DIR / "object_event_pic_tables_followers.h", OBJ_DIR / "object_event_pic_tables.h"):
+    for f in (OBJ_DIR / "object_event_pic_tables.h", OBJ_DIR / "object_event_pic_tables_followers.h"):  # followers win on name clashes
         tables.update(re.findall(r"SpriteFrameImage (sPicTable_\w+)\[\]\s*=\s*\{\s*\w+\((gObjectEventPic_\w+)", read(f)))
     paths = dict(re.findall(r"(gObjectEventPic_\w+|g\w*OverworldPalette\w*)\[\]\s*=\s*INCGFX_\w+\(\"([^\"]+)\"",
                             read(ROOT / "src/data/graphics/pokemon.h")))
@@ -410,6 +412,63 @@ def render_map(name):
     return buf.getvalue()
 
 
+# ---------------------------------------------------------------- story-state registry
+
+VARS_FILE = ROOT / "include/constants/vars.h"
+STATE_HEAD_RE = re.compile(r"^\s*//\s*@states\b\s*(.*)$")
+STATE_ROW_RE = re.compile(r"^\s*//\s+(\d+)\s\s*(\S.*?)\s*$")
+_story_states = None
+
+
+def story_states():
+    """VAR_X -> its documented state values, from the `// @states` block under its #define.
+
+    Lives next to the #define (rather than in its own file) so the names can't drift from
+    the var they describe; a var with no block simply isn't story state as far as Poe cares.
+    """
+    global _story_states
+    if _story_states is not None:
+        return _story_states
+    out, lines = {}, read(VARS_FILE).splitlines()
+    for i, line in enumerate(lines):
+        m = re.match(r"^\s*#define\s+(VAR_\w+)\s+0x[0-9A-Fa-f]+", line)
+        if not m or i + 1 >= len(lines):
+            continue
+        head = STATE_HEAD_RE.match(lines[i + 1])
+        if not head:
+            continue
+        states = []
+        for row in lines[i + 2:]:
+            r = STATE_ROW_RE.match(row)
+            if not r:
+                break
+            states.append({"value": int(r.group(1)), "label": r.group(2)})
+        out[m.group(1)] = {"var": m.group(1), "note": head.group(1), "states": states}
+    _story_states = out
+    return out
+
+
+def story_state_audit():
+    """Values a map script uses for a registered var that the registry doesn't document."""
+    reg = story_states()
+    if not reg:
+        return {}
+    used = {v: set() for v in reg}
+    pattern = re.compile(r"\b(?:setvar|compare|map_script_2|(?:goto|call)_if_\w+)\s+(%s)\s*,\s*(\d+)"
+                         % "|".join(map(re.escape, reg)))
+    for p in (ROOT / "data/maps").glob("*/scripts.inc"):
+        for var, val in pattern.findall(read(p)):
+            used[var].add(int(val))
+    out = {}
+    for var, info in reg.items():
+        known = {s["value"] for s in info["states"]}
+        missing = sorted(used[var] - known)
+        unused = sorted(known - used[var] - {0})  # 0 is every var's starting value, never set explicitly
+        if missing or unused:
+            out[var] = {"undocumented": missing, "documented_but_unused": unused}
+    return out
+
+
 # ---------------------------------------------------------------- scripts.inc text
 
 LABEL_RE = re.compile(r"^([A-Za-z_]\w*)::?\s*(@.*)?$")
@@ -452,8 +511,132 @@ def script_body(lines, label_line):
     return body
 
 
+CMP_NEG = {"eq": "ne", "ne": "eq", "lt": "ge", "ge": "lt", "gt": "le", "le": "gt",
+           "set": "unset", "unset": "set", "defeated": "not_defeated", "not_defeated": "defeated"}
+INT_OPS = ("eq", "ne", "lt", "le", "gt", "ge")
+JUMP_RE = re.compile(r"^\s*(goto|call)_if_(eq|ne|lt|le|gt|ge|set|unset|not_defeated|defeated)\s+(.+?)\s*$")
+GOTO_RE = re.compile(r"^\s*goto\s+(\w+)\s*$")
+SWITCH_RE = re.compile(r"^\s*switch\s+(\w+)\s*$")
+CASE_RE = re.compile(r"^\s*case\s+([^,]+?)\s*,\s*(\w+)\s*$")
+COMPARE_RE = re.compile(r"^\s*compare\s+(\w+)\s*,\s*(\S+)\s*$")
+VAR_WRITE_RE = re.compile(r"^\s*(?:setvar|copyvar|addvar|subvar|specialvar)\s+(\w+)")
+FLAG_WRITE_RE = re.compile(r"^\s*(?:setflag|clearflag)\s+(\w+)")
+MAX_BLOCKS = 24
+
+
+def trackable(c, registered):
+    """Only conditions on state that persists can be carried down a branch.
+
+    Scratch vars (VAR_RESULT, VAR_0x800x) are rewritten constantly — by multichoice, YESNO
+    boxes, specialvar — so a condition on one is stale the moment anything reassigns it, and
+    carrying it produces nonsense guards. A var counts as real state exactly when the registry
+    documents it, which is also what keeps Yes/No handlers from looking like dialogue variants.
+    """
+    if c["op"] in ("set", "unset"):
+        return c["left"].startswith("FLAG_")
+    if c["op"] in ("defeated", "not_defeated"):
+        return True
+    return c["left"] in registered
+
+
+def negate(c):
+    return {"left": c["left"], "op": CMP_NEG[c["op"]], "right": c["right"]}
+
+
+def parse_jump(op, args):
+    """(condition, destination) for one goto_if_/call_if_ line; condition None if not readable."""
+    if op in ("set", "unset", "defeated", "not_defeated"):
+        return ({"left": args[0], "op": op, "right": None}, args[1]) if len(args) == 2 else (None, args[-1])
+    if len(args) == 3:
+        return {"left": args[0], "op": op, "right": args[1]}, args[2]
+    return None, args[-1] if args else None
+
+
+def guard_impossible(guard):
+    """True when no value could satisfy the whole guard — i.e. an earlier branch shadows this one."""
+    by_var, flags = {}, {}
+    for c in guard:
+        if c["op"] in ("set", "unset"):
+            if flags.setdefault(c["left"], c["op"]) != c["op"]:
+                return True
+        elif c["op"] in INT_OPS and str(c["right"]).isdigit():
+            by_var.setdefault(c["left"], []).append((c["op"], int(c["right"])))
+    for conds in by_var.values():
+        lo, hi, excluded = 0, 0xFFFF, set()
+        for op, v in conds:
+            if op == "eq":
+                lo, hi = max(lo, v), min(hi, v)
+            elif op == "ne":
+                excluded.add(v)
+            elif op == "lt":
+                hi = min(hi, v - 1)
+            elif op == "le":
+                hi = min(hi, v)
+            elif op == "gt":
+                lo = max(lo, v + 1)
+            elif op == "ge":
+                lo = max(lo, v)
+        if lo > hi or (lo == hi and lo in excluded):
+            return True
+    return False
+
+
+def walk_block(body, labels, guard, queue, texts, order, registered):
+    """Step through one script block, carrying the conditions that must hold to reach each line."""
+    cur, switch_var, pending = list(guard), None, None
+    keep = lambda c: [x for x in cur if x["left"] != c]  # a write makes earlier tests on it stale
+    for line in body:
+        line = re.sub(r"\s+@.*$", "", line)  # a trailing @ comment would end up inside the jump target
+        m = VAR_WRITE_RE.match(line) or FLAG_WRITE_RE.match(line)
+        if m:
+            cur = keep(m.group(1))
+            continue
+        m = SWITCH_RE.match(line)
+        if m:
+            switch_var, pending = m.group(1), None
+            continue
+        m = COMPARE_RE.match(line)
+        if m:
+            pending = (m.group(1), m.group(2))
+            continue
+        m = CASE_RE.match(line)
+        if m and switch_var:
+            c = {"left": switch_var, "op": "eq", "right": m.group(1)}
+            use = [c] if trackable(c, registered) else []
+            queue.append((m.group(2), cur + use))
+            cur = cur + [negate(c) for c in use]
+            continue
+        m = GOTO_RE.match(line)
+        if m:
+            queue.append((m.group(1), list(cur)))
+            return  # whatever follows an unconditional goto can't be reached
+        m = JUMP_RE.match(line)
+        if m:
+            kind, op, rest = m.groups()
+            args = [a.strip() for a in rest.split(",")]
+            c, dest = parse_jump(op, args)
+            if c is None and len(args) == 1 and pending:
+                c = {"left": pending[0], "op": op, "right": pending[1]}
+            use = [c] if c and trackable(c, registered) else []
+            if dest:
+                queue.append((dest, cur + use))
+                if kind == "goto":  # a call comes back, so it doesn't constrain what follows
+                    cur = cur + [negate(x) for x in use]
+            pending = None
+            continue
+        for tok in re.findall(r"\b[A-Za-z_]\w*\b", line):
+            if tok not in labels:
+                continue
+            if labels[tok][1] == "text":
+                if tok not in texts:
+                    texts[tok], _ = [], order.append(tok)
+                texts[tok].append(list(cur))
+            else:
+                queue.append((tok, list(cur)))
+
+
 def collect_script(map_name, script):
-    """Follow a script and its same-file sub-scripts; return (body text, text labels in order)."""
+    """Follow a script and its same-file sub-scripts; return the bodies plus each text and its guards."""
     path = scripts_path(map_name)
     if not path.exists():
         return None
@@ -461,23 +644,20 @@ def collect_script(map_name, script):
     labels = parse_labels(lines)
     if script not in labels:
         return None
-    seen, queue, bodies, texts, blocks = set(), [script], [], [], []
-    while queue and len(seen) < 12:
-        s = queue.pop(0)
-        if s in seen or s not in labels or labels[s][1] != "script":
+    seen, queue, bodies, blocks = set(), [(script, [])], [], []
+    texts, order, registered = {}, [], set(story_states())
+    while queue and len(seen) < MAX_BLOCKS:
+        label, guard = queue.pop(0)
+        if label in seen or label not in labels or labels[label][1] != "script":
             continue
-        seen.add(s)
-        body = script_body(lines, labels[s][0])
+        seen.add(label)
+        body = script_body(lines, labels[label][0])
         bodies.append("\n".join(body))
-        blocks.append({"label": s, "body": "\n".join(body)})
-        for tok in re.findall(r"\b[A-Za-z_]\w*\b", "\n".join(body[1:])):
-            if tok in labels:
-                if labels[tok][1] == "text" and tok not in texts:
-                    texts.append(tok)
-                elif labels[tok][1] == "script":
-                    queue.append(tok)
-    return {"body": "\n\n".join(bodies), "blocks": blocks, "texts": [
-        {"label": t, "strings": text_block(lines, labels[t][0])} for t in texts]}
+        blocks.append({"label": label, "body": "\n".join(body)})
+        walk_block(body[1:], labels, guard, queue, texts, order, registered)
+    return {"body": "\n\n".join(bodies), "blocks": blocks,
+            "texts": [{"label": t, "strings": text_block(lines, labels[t][0]), "paths": texts[t],
+                       "unreachable": all(guard_impossible(p) for p in texts[t])} for t in order]}
 
 
 def replace_text(map_name, label, expected, new_strings):
@@ -553,7 +733,7 @@ def known_constants():
     return _constants
 
 
-CHECKED_PREFIXES = ("SPECIES_", "MOVE_", "ITEM_", "ABILITY_", "NATURE_", "TRAINER_CLASS_", "TRAINER_PIC_")
+CHECKED_PREFIXES = ("SPECIES_", "MOVE_", "ITEM_", "ABILITY_", "NATURE_", "BALL_", "TRAINER_CLASS_", "TRAINER_PIC_")
 
 
 def validate_party_file(text, trainer):
@@ -633,6 +813,8 @@ def trainer_data():
     music = [c for c in re.findall(r"#define\s+(TRAINER_ENCOUNTER_MUSIC_\w+)", consts)]
 
     order = {c: int(n) for c, n in re.findall(r"^\s*(SPECIES_\w+)\s*=\s*(\d+)", read(ROOT / "include/constants/species.h"), re.M)}
+    abilities = named_table(ROOT / "src/data/abilities.h", "ABILITY_")
+    known_abilities = {a["const"] for a in abilities}
     gfx = dict(re.findall(r"(gMon(?:FrontPic|Palette|ShinyPalette)_\w+)\[\]\s*=\s*INCGFX_U\d+\(\"([^\"]+)\"", read(ROOT / "src/data/graphics/pokemon.h")))
     species = {}
     for f in sorted((ROOT / "src/data/pokemon/species_info").glob("gen_*_families.h")):
@@ -654,6 +836,7 @@ def trainer_data():
                 form = base[len(norm) + 1:] if base.startswith(norm + "_") else ""
                 label = f"{label} ({title_from_const(form)})" if form else label
             species[const] = {"const": const, "label": label, "party": party, "n": order[const]}
+            species[const].update(species_abilities(body, known_abilities))
             if pic and pal and pic.group(1) in gfx and pal.group(1) in gfx:
                 _mon_pics[const] = (gfx[pic.group(1)], gfx[pal.group(1)],
                                     gfx.get(shiny.group(1)) if shiny else None)
@@ -664,10 +847,41 @@ def trainer_data():
     _trainer_data = {"classes": classes, "pics": [{"const": c, "party": title_from_const(c[len("TRAINER_PIC_"):])} for c in pics],
                      "music": [{"const": c, "party": title_from_const(c[len("TRAINER_ENCOUNTER_MUSIC_"):])} for c in music],
                      "species": species_list, "nameLength": TRAINER_NAME_LENGTH,
+                     "monNameLength": POKEMON_NAME_LENGTH,
                      "items": named_table(ROOT / "src/data/items.h", "ITEM_"),
                      "moves": named_table(ROOT / "src/data/moves_info.h", "MOVE_"),
-                     "natures": natures}
+                     "natures": natures, "abilities": abilities, "balls": ball_list()}
     return _trainer_data
+
+
+def species_abilities(body, known):
+    """The 3 ability slots of one species -> {abilities: [...], ha: <hidden>} for the Ability dropdown.
+
+    The engine asserts a trainer mon's ability is one of its species' three slots
+    (battle_main.c CreateNPCTrainerPartyFromTrainer), so the dropdown has to match this list.
+    """
+    m = re.search(r"\.abilities\s*=\s*\{([^}]*)\}", body)
+    if not m:
+        return {}
+    slots = [a for a in re.findall(r"ABILITY_\w+", m.group(1))][:3]
+    usable = [a for a in dict.fromkeys(slots) if a != "ABILITY_NONE" and a in known]
+    out = {"abilities": usable} if usable else {}
+    if len(slots) > 2 and slots[2] in usable and slots[2] not in slots[:2]:
+        out["ha"] = slots[2]
+    return out
+
+
+def ball_list():
+    """BALL_X -> the bare word trainerproc wants after `Ball:`, labelled with the ball item's name."""
+    consts = re.findall(r"^\s*(BALL_\w+)\s*=", read(ROOT / "include/constants/pokeball.h"), re.M)
+    names = dict(re.findall(r"\[(ITEM_\w+)\]\s*=\s*\{\s*\.name\s*=\s*\w*\(\"([^\"]*)\"\)", read(ROOT / "src/data/items.h")))
+    out = []
+    for const in consts:
+        suffix, party = const[len("BALL_"):], title_from_const(const[len("BALL_"):])
+        item = f"ITEM_{suffix}_BALL"
+        out.append({"const": const, "party": party, "label": names.get(item, party + " Ball"),
+                    "item": item if item in names else ""})
+    return out
 
 
 _item_icons, _item_icon_cache = None, {}
@@ -739,6 +953,55 @@ def named_table(path, prefix):
         if counts[r["label"]] > 1:
             r["label"] = f"{r['label']} ({title_from_const(r['const'][len(prefix):])})"
     return rows
+
+
+_encounters = None
+ENC_LABELS = {"land_mons": "Grass / cave", "water_mons": "Surfing", "rock_smash_mons": "Rock Smash",
+              "fishing_mons": "Fishing", "hidden_mons": "Hidden"}
+
+
+def encounter_db():
+    """MAP_X -> encounter sections, slots merged per species, with real per-slot chances."""
+    global _encounters
+    if _encounters is not None:
+        return _encounters
+    data = json.loads(read(ROOT / "src/data/wild_encounters.json"))
+    names = {sp["const"]: sp["label"] for sp in trainer_data()["species"]}
+    _encounters = {}
+    for group in data["wild_encounter_groups"]:
+        if not group.get("for_maps"):
+            continue
+        fields = {f["type"]: f for f in group["fields"]}
+        for enc in group["encounters"]:
+            sections = []
+            for ftype, field in fields.items():
+                table = enc.get(ftype)
+                if not table:
+                    continue
+                rates = field.get("encounter_rates") or []
+                # Fishing splits into rods; everything else is one list.
+                parts = field.get("groups") or {"": list(range(len(table["mons"])))}
+                for part, idxs in parts.items():
+                    total = sum(rates[i] for i in idxs if i < len(rates)) or 1
+                    merged = {}
+                    for i in idxs:
+                        if i >= len(table["mons"]):
+                            continue
+                        mon = table["mons"][i]
+                        cur = merged.setdefault(mon["species"], {"species": mon["species"],
+                                                                "label": names.get(mon["species"], mon["species"]),
+                                                                "min": mon["min_level"], "max": mon["max_level"], "chance": 0})
+                        cur["min"] = min(cur["min"], mon["min_level"])
+                        cur["max"] = max(cur["max"], mon["max_level"])
+                        cur["chance"] += 100 * (rates[i] if i < len(rates) else 0) / total
+                    if merged:
+                        sections.append({"type": ftype,
+                                         "label": ENC_LABELS.get(ftype, ftype) + (f" · {title_from_const(part.upper())}" if part else ""),
+                                         "rate": table.get("encounter_rate"),
+                                         "mons": sorted(merged.values(), key=lambda m: -m["chance"])})
+            if sections:
+                _encounters.setdefault(enc["map"], []).extend(sections)
+    return _encounters
 
 
 def render_mon(const, shiny=False):
@@ -815,7 +1078,37 @@ def set_item(map_name, kind, index, item):
         return note
 
 
+# ---------------------------------------------------------------- per-object settings
+
+# Lives on the event itself in map.json: mapjson only reads keys it knows, and Porymap keeps
+# unrecognized keys and shows them under Custom Attributes, so the setting survives both tools.
+MUTED_KEY = "poe_muted"
+FALSY = ("", "false", "0", "no")
+
+
+def is_muted(ev):
+    """Muted events are never reported as to-dos. Tolerates a hand-typed string from Porymap."""
+    v = ev.get(MUTED_KEY)
+    if isinstance(v, str):
+        return v.strip().lower() not in FALSY
+    return bool(v)
+
+
+def set_muted(map_name, src, index, muted):
+    with WRITE_LOCK:
+        path = ROOT / "data/maps" / map_name / "map.json"
+        m = json.loads(read(path))
+        ev = m[EVENT_KEYS[src]][index]
+        if muted:
+            ev[MUTED_KEY] = True
+        else:
+            ev.pop(MUTED_KEY, None)
+        write(path, json.dumps(m, indent=2) + "\n")
+
+
 # ---------------------------------------------------------------- map objects
+
+EVENT_KEYS = {"object": "object_events", "bg": "bg_events", "coord": "coord_events", "warp": "warp_events"}
 
 def classify(ev, map_name):
     script = ev.get("script", "")
@@ -870,7 +1163,8 @@ def map_objects(map_name):
                      "destLabel": pretty_map_name(folder) if folder else ev.get("dest_map", "")})
     icons = item_icons()
     for o in objs:
-        o["placeholder"] = is_placeholder(map_name, o)
+        o["muted"] = is_muted(m[EVENT_KEYS[o["src"]]][o["index"]])
+        o["placeholder"] = not o["muted"] and is_placeholder(map_name, o)
         if o.get("item") in icons:
             o["itemIcon"] = o["item"]
     conns = []
@@ -881,7 +1175,8 @@ def map_objects(map_name):
     layout = load_layout(m["layout"])
     raw = (ROOT / layout["blockdata_filepath"]).read_bytes()
     collision = [1 if int.from_bytes(raw[i:i + 2], "little") & 0xC00 else 0 for i in range(0, len(raw), 2)]
-    return {"name": map_name, "label": pretty_map_name(map_name), "width": layout["width"],
+    return {"name": map_name, "id": m.get("id"), "hasEncounters": bool(encounter_db().get(m.get("id"))),
+            "label": pretty_map_name(map_name), "width": layout["width"],
             "height": layout["height"], "objects": objs, "connections": conns,
             "collision": collision[:layout["width"] * layout["height"]]}
 
@@ -908,9 +1203,8 @@ def is_placeholder(map_name, o):
 
 def object_detail(map_name, src, index):
     m = load_map(map_name)
-    key = {"object": "object_events", "bg": "bg_events", "coord": "coord_events", "warp": "warp_events"}[src]
-    ev = m[key][index]
-    out = {"event": ev}
+    ev = m[EVENT_KEYS[src]][index]
+    out = {"event": ev, "muted": is_muted(ev)}
     if src == "warp":
         out["dest_folder"] = map_folder(ev.get("dest_map", ""))
         out["dest_label"] = pretty_map_name(out["dest_folder"]) if out["dest_folder"] else ev.get("dest_map", "")
@@ -988,9 +1282,12 @@ class Handler(BaseHTTPRequestHandler):
                                 "metrics": text_metrics(), "items": item_list(),
                                 "movementTypes": movement_types(), "facing": sprite_db()["facing"],
                                 "maxRange": MAX_MOVEMENT_RANGE, "maxSight": MAX_SIGHT,
-                                "itemIcons": sorted(item_icons())})
+                                "itemIcons": sorted(item_icons()),
+                                "storyStates": story_states(), "storyAudit": story_state_audit()})
             elif u.path == "/api/map":
                 self.send(200, map_objects(q["name"]))
+            elif u.path == "/api/encounters":
+                self.send(200, {"sections": encounter_db().get(q["map"], [])})
             elif u.path == "/api/map.png":
                 self.send(200, render_map(q["name"]), "image/png")
             elif u.path == "/api/trainerdata":
@@ -1032,6 +1329,9 @@ class Handler(BaseHTTPRequestHandler):
             elif u.path == "/api/item":
                 note = set_item(data["map"], data["kind"], int(data["index"]), data["item"])
                 self.send(200, {"ok": True, "note": note})
+            elif u.path == "/api/mute":
+                set_muted(data["map"], data["src"], int(data["index"]), bool(data["muted"]))
+                self.send(200, {"ok": True})
             else:
                 self.send(404, {"error": "not found"})
         except ConflictError as e:
