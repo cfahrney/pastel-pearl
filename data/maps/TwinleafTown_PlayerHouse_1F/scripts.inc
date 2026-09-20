@@ -319,3 +319,16 @@ TwinleafTown_PlayerHouse_1F_Text_MomWelcomeHomeRest:
 	.string "Welcome home, {PLAYER}.\n"
 	.string "Are you and your POKéMON healthy?\p"
 	.string "Take a quick rest, dear.$"
+
+TwinleafTown_PlayerHouse_1F_EventScript_NPC1::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GLAMEOW, CRY_MODE_NORMAL
+	msgbox TwinleafTown_PlayerHouse_1F_Text_NPC1, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+TwinleafTown_PlayerHouse_1F_Text_NPC1:
+	.string "Glammy: Glaaaam!$"

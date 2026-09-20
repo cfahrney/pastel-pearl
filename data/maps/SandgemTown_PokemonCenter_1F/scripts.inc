@@ -16,3 +16,24 @@ SandgemTown_PokemonCenter_1F_EventScript_Nurse::
 	waitmovement 0
 	release
 	end
+
+SandgemTown_PokemonCenter_1F_EventScript_NPC1::
+	msgbox SandgemTown_PokemonCenter_1F_Text_NPC1, MSGBOX_NPC
+	end
+
+SandgemTown_PokemonCenter_1F_EventScript_NPC2::
+	msgbox SandgemTown_PokemonCenter_1F_Text_NPC2, MSGBOX_NPC
+	end
+
+SandgemTown_PokemonCenter_1F_EventScript_NPC3::
+	msgbox SandgemTown_PokemonCenter_1F_Text_NPC3, MSGBOX_NPC
+	end
+
+SandgemTown_PokemonCenter_1F_Text_NPC1:
+	.string "POKEMON CENTER 1F NPC 1$"
+
+SandgemTown_PokemonCenter_1F_Text_NPC2:
+	.string "POKEMON CENTER 1F NPC 2$"
+
+SandgemTown_PokemonCenter_1F_Text_NPC3:
+	.string "POKEMON CENTER 1F NPC 3$"

@@ -885,12 +885,16 @@
 #define TRAINER_OREBURGH_GATE_B1F_1         876
 #define TRAINER_OREBURGH_GATE_B1F_2         877
 #define TRAINER_ROUTE207_6                  878
+#define TRAINER_OREBURGH_CITY_GYM_1         879
+#define TRAINER_OREBURGH_CITY_GYM_2         880
+#define TRAINER_OREBURGH_CITY_GYM_3         881
+#define TRAINER_ROUTE204_3                  882
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for a limited number of additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     879
+#define TRAINERS_COUNT_EMERALD     883
 #define MAX_TRAINERS_COUNT_EMERALD 1176
 
 #if IS_FRLG

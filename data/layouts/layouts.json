@@ -9725,9 +9725,9 @@
       "id": "LAYOUT_OREBURGH_CITY_GYM",
       "name": "OreburghCity_Gym_Layout",
       "width": 10,
-      "height": 8,
+      "height": 24,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SinnohBuilding",
+      "secondary_tileset": "gTileset_RustboroGym",
       "border_filepath": "data/layouts/OreburghCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity_Gym/map.bin"
     },
@@ -9760,6 +9760,106 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/JubilifeCity_Mart/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_NORTH_OF_MINES_HOUSE",
+      "name": "OreburghCity_NorthOfMinesHouse_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohBuilding",
+      "border_filepath": "data/layouts/OreburghCity_NorthOfMinesHouse/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_NorthOfMinesHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_MUSEUM",
+      "name": "OreburghCity_Museum_Layout",
+      "width": 19,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OceanicMuseum",
+      "border_filepath": "data/layouts/OreburghCity_Museum/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_Museum/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_TOP_LEFT_CONDO_2F",
+      "name": "OreburghCity_TopLeftCondo_2F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/OreburghCity_TopLeftCondo_2F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_TopLeftCondo_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_OREBURGH_MINE",
+      "name": "OreburghCity_OreburghMine_Layout",
+      "width": 21,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/OreburghCity_OreburghMine/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_OreburghMine/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_TOP_RIGHT_CONDO_1F",
+      "name": "OreburghCity_TopRightCondo_1F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/OreburghCity_TopRightCondo_1F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_TopRightCondo_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_BOTTOM_RIGHT_CONDO_1F",
+      "name": "OreburghCity_BottomRightCondo_1F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/OreburghCity_BottomRightCondo_1F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_BottomRightCondo_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_BOTTOM_RIGHT_CONDO_2F",
+      "name": "OreburghCity_BottomRightCondo_2F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/OreburghCity_BottomRightCondo_2F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_BottomRightCondo_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_TOP_LEFT_CONDO_1F",
+      "name": "OreburghCity_TopLeftCondo_1F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/OreburghCity_TopLeftCondo_1F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_TopLeftCondo_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_TOP_RIGHT_CONDO_2F",
+      "name": "OreburghCity_TopRightCondo_2F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/OreburghCity_TopRightCondo_2F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_TopRightCondo_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_OREBURGH_MINE_2",
+      "name": "OreburghCity_OreburghMine_2_Layout",
+      "width": 32,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/OreburghCity_OreburghMine_2/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_OreburghMine_2/map.bin"
     }
   ]
 }

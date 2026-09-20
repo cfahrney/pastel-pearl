@@ -98,10 +98,25 @@
 #define VAR_POKELOT_RND2                                 0x404C
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
 #define VAR_TWINLEAF_TOWN_STATE                          0x404E
+// @states Twinleaf intro arc, from waking up to owning a starter.
+//    0  Game start, Barry is still in his house
+//    1  Barry has left his house
+//    2  Barry found the player upstairs and ran off to Route 201
+//    3  Barry joined the player on Route 201
+//    4  Barry has walked the player into Lake Verity
+//    5  At the lake, before the forced Starly battle
+//    9  Starter chosen, on the way back out of the lake
+//   10  Back on Verity Lakefront, Rowan waits on Route 201
+//   11  Rowan has reclaimed the borrowed Pokemon
+//   12  Mom's homecoming scene done, the player owns their starter
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
 #define VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE             0x4052
+// @states Mom's scripted beats inside the player's house.
+//    0  Mom hasn't given the running shoes yet
+//    1  Running shoes given
+//    2  Mom has warned the player about the tall grass on the way out
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var

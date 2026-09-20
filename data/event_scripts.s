@@ -1825,3 +1825,23 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/JubilifeCity_PokemonCenter_2F/scripts.inc"
 
 	.include "data/maps/JubilifeCity_Mart/scripts.inc"
+
+	.include "data/maps/OreburghCity_NorthOfMinesHouse/scripts.inc"
+
+	.include "data/maps/OreburghCity_Museum/scripts.inc"
+
+	.include "data/maps/OreburghCity_TopRightCondo_1F/scripts.inc"
+
+	.include "data/maps/OreburghCity_OreburghMine/scripts.inc"
+
+	.include "data/maps/OreburghCity_TopLeftCondo_1F/scripts.inc"
+
+	.include "data/maps/OreburghCity_BottomRightCondo_2F/scripts.inc"
+
+	.include "data/maps/OreburghCity_TopRightCondo_2F/scripts.inc"
+
+	.include "data/maps/OreburghCity_BottomRightCondo_1F/scripts.inc"
+
+	.include "data/maps/OreburghCity_TopLeftCondo_2F/scripts.inc"
+
+	.include "data/maps/OreburghCity_OreburghMine_2/scripts.inc"

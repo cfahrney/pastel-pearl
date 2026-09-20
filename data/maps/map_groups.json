@@ -1214,7 +1214,17 @@
     "OreburghCity_Mart",
     "OreburghCity_LeftOfGymHouse",
     "OreburghCity_RightOfGymHouse",
-    "OreburghCity_Gym"
+    "OreburghCity_Gym",
+    "OreburghCity_NorthOfMinesHouse",
+    "OreburghCity_Museum",
+    "OreburghCity_TopLeftCondo_1F",
+    "OreburghCity_TopLeftCondo_2F",
+    "OreburghCity_TopRightCondo_1F",
+    "OreburghCity_TopRightCondo_2F",
+    "OreburghCity_BottomRightCondo_1F",
+    "OreburghCity_BottomRightCondo_2F",
+    "OreburghCity_OreburghMine",
+    "OreburghCity_OreburghMine_2"
   ],
   "gMapGroup_Templates": [
     "Template_PokemonCenter_1F",

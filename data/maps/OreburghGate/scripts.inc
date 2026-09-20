@@ -37,8 +37,8 @@ OreburghGate_Text_Trainer2Defeated:
 	.string "was defeated!$"
 
 OreburghGate_Text_Trainer2PostBattle:
-	.string "OREBURGH GATE TRAINER 2\n"
-	.string "has nothing else to say.$"
+	.string "Getting through that cave feels like an\n"
+	.string "adventure.$"
 
 OreburghGate_Text_Trainer3Intro:
 	.string "OREBURGH GATE TRAINER 3\n"

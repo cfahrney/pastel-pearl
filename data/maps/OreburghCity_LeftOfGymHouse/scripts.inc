@@ -20,13 +20,18 @@ OreburghCity_LeftOfGymHouse_EventScript_NPC3::
 	end
 
 OreburghCity_LeftOfGymHouse_Text_NPC1:
-	.string "OREBURGH CITY LEFT OF GYM HOUSE\n"
-	.string "NPC 1$"
+	.string "You know how Pokemon have different\n"
+	.string "natures like we have personalities?\p"
+	.string "I don't think it's surprising to see\n"
+	.string "Pokemon in different colors.$"
 
 OreburghCity_LeftOfGymHouse_Text_NPC2:
-	.string "OREBURGH CITY LEFT OF GYM HOUSE\n"
-	.string "NPC 2$"
+	.string "Have you ever seen or heard about\n"
+	.string "differently colored Pokemon?\p"
+	.string "For instance, a regular Pikachu has a\n"
+	.string "yellow body, correct?\p"
+	.string "Well, the different-colored Pikachu has\n"
+	.string "a sort of orange body.$"
 
 OreburghCity_LeftOfGymHouse_Text_NPC3:
-	.string "OREBURGH CITY LEFT OF GYM HOUSE\n"
-	.string "NPC 3$"
+	.string "Pikachu: Pikaaah!$"

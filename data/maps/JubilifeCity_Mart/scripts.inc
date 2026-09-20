@@ -19,3 +19,17 @@ JubilifeCity_Mart_Pokemart:
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
 	pokemartlistend
+
+JubilifeCity_Mart_EventScript_NPC1::
+	msgbox JubilifeCity_Mart_Text_NPC1, MSGBOX_NPC
+	end
+
+JubilifeCity_Mart_EventScript_NPC2::
+	msgbox JubilifeCity_Mart_Text_NPC2, MSGBOX_NPC
+	end
+
+JubilifeCity_Mart_Text_NPC1:
+	.string "MART NPC 1$"
+
+JubilifeCity_Mart_Text_NPC2:
+	.string "MART NPC 2$"

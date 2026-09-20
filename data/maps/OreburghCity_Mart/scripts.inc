@@ -19,3 +19,17 @@ OreburghCity_Mart_Pokemart:
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
 	pokemartlistend
+
+OreburghCity_Mart_EventScript_NPC1::
+	msgbox OreburghCity_Mart_Text_NPC1, MSGBOX_NPC
+	end
+
+OreburghCity_Mart_EventScript_NPC2::
+	msgbox OreburghCity_Mart_Text_NPC2, MSGBOX_NPC
+	end
+
+OreburghCity_Mart_Text_NPC1:
+	.string "MART NPC 1$"
+
+OreburghCity_Mart_Text_NPC2:
+	.string "MART NPC 2$"

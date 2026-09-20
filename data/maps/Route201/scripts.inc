@@ -403,8 +403,8 @@ Route201_EventScript_RouteSign::
 	end
 
 Route201_Text_RouteSign:
-	.string "ROUTE 201\n"
-	.string "{DOWN_ARROW} TWINLEAF TOWN$"
+	.string "Route 201\n"
+	.string "{DOWN_ARROW} Twinleaf Town$"
 
 Route201_Movement_RowanFaceLeftAndPause:
 	face_left

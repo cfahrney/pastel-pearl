@@ -16913,7 +16913,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
+Sentret
 Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -16944,60 +16944,38 @@ Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE203_1 ===
-Name: LASS
+Name: Madeline
 Class: Lass
 Pic: Lass Frlg
 Gender: Female
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
+Starly
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Bidoof
-Level: 2
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE203_2 ===
-Name: LASS
-Class: Lass
+Name: Sebastian
+Class: Youngster Frlg
 Pic: Lass Frlg
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Machop
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE203_3 ===
-Name: YOUNGSTER
-Class: Youngster
-Pic: Youngster Dp
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE203_4 ===
-Name: YOUNGSTER
-Class: Youngster
-Pic: Youngster Dp
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ROUTE203_5 ===
-Name: YOUNGSTER
-Class: Youngster
+Name: Kaitlin
+Class: Lass
 Pic: Youngster Dp
 Gender: Male
 Music: Male
@@ -17008,8 +16986,46 @@ Bidoof
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Budew
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hoothoot
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_4 ===
+Name: Dallas
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Wurmple
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE203_5 ===
+Name: Michael
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Magby
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Zubat
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_ROUTE203_6 ===
-Name: LASS
+Name: Taylor
 Class: Lass
 Pic: Lass Frlg
 Gender: Female
@@ -17017,12 +17033,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
+Togepi
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Bidoof
-Level: 2
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE204_1 ===
-Name: LASS
+Name: Samantha
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -17030,8 +17050,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Budew
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE204_2 ===
@@ -17044,7 +17064,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Bidoof
-Level: 2
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hoothoot
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE207_1 ===
@@ -17139,7 +17163,7 @@ Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_OREBURGH_GATE_2 ===
-Name: PICNICKER
+Name: Diana
 Class: Picnicker
 Pic: Picnicker Dp
 Gender: Female
@@ -17147,8 +17171,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Budew
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Psyduck
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_OREBURGH_GATE_3 ===
@@ -17190,3 +17218,55 @@ Bidoof
 Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_OREBURGH_CITY_GYM_1 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_OREBURGH_CITY_GYM_2 ===
+Name: YOUNGSTER
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_OREBURGH_CITY_GYM_3 ===
+Name: ROXANNE
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE204_3 ===
+Name: LASS
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

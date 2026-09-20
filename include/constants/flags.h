@@ -85,8 +85,8 @@
 #define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK7                           0x3F
 #define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK8                           0x40
 #define FLAG_HIDE_OREBURGH_GATE_B1F_ROCK9                           0x41
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
+#define FLAG_HIDE_OREBURGH_MINE_2_ROCK1                             0x42
+#define FLAG_HIDE_OREBURGH_MINE_2_ROCK2                             0x43
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
@@ -1245,7 +1245,7 @@
 #define FLAG_ITEM_OREBURGH_GATE_B1F_EARTH_PLATE                     0x4A7
 #define FLAG_ITEM_VERITY_LAKEFRONT_1                                0x4A8
 #define FLAG_ITEM_ROUTE_219_1                                       0x4A9
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
+#define FLAG_ITEM_OREBURGH_MINE_2_1                                 0x4AA
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag

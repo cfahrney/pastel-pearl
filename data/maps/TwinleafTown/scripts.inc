@@ -473,6 +473,6 @@ TwinleafTown_EventScript_TownSign::
 	end
 
 TwinleafTown_Text_TownSign:
-	.string "TWINLEAF TOWN\n"
+	.string "Twinleaf Town\n"
 	.string "“A refreshing town that smells\l"
 	.string "of country living.”$"

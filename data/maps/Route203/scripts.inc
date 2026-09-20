@@ -18,16 +18,27 @@ Route203_EventScript_Sign4::
 	end
 
 Route203_Text_Sign1:
-	.string "ROUTE 203 SIGN 1$"
+	.string "Route 203\n"
+	.string "{LEFT_ARROW} Jubilife City$"
 
 Route203_Text_Sign2:
-	.string "ROUTE 203 SIGN 2$"
+	.string "Trainer Tips!\p"
+	.string "Pokemon moves use energy called Power\n"
+	.string "Points, or PP for short.\p"
+	.string "If the PP of moves runs low, head for\n"
+	.string "any Pokemon Center.$"
 
 Route203_Text_Sign3:
-	.string "ROUTE 203 SIGN 3$"
+	.string "Trainer tips!\p"
+	.string "If a Pokemon is about to evolve, it can\n"
+	.string "be instantly stopped.\p"
+	.string "Press the B Button during evolution to\n"
+	.string "startle the Pokemon into stopping.\p"
+	.string "This is how evolution can be canceled.$"
 
 Route203_Text_Sign4:
-	.string "ROUTE 203 SIGN 4$"
+	.string "Route 203\n"
+	.string "{RIGHT_ARROW} Oreburgh City$"
 
 Route203_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ROUTE203_1, Route203_Text_Trainer1Intro, Route203_Text_Trainer1Defeated
@@ -60,73 +71,69 @@ Route203_EventScript_Trainer6::
 	end
 
 Route203_Text_Trainer1Intro:
-	.string "ROUTE 203 TRAINER 1\n"
-	.string "wants to battle!$"
+	.string "I got a nifty-keen Gym Badge from the\n"
+	.string "Gym Leader in Oreburgh City!$"
 
 Route203_Text_Trainer1Defeated:
-	.string "ROUTE 203 TRAINER 1\n"
-	.string "was defeated!$"
+	.string "Oh, I lost! Lalala!$"
 
 Route203_Text_Trainer1PostBattle:
-	.string "ROUTE 203 TRAINER 1\n"
-	.string "has nothing else to say.$"
+	.string "I'm going to collect lots of Gym Badges!\n"
+	.string "I'll work with my Pokemon!$"
 
 Route203_Text_Trainer2Intro:
-	.string "ROUTE 203 TRAINER 2\n"
-	.string "wants to battle!$"
+	.string "Gimme a battle so I can see if I'm ready\n"
+	.string "for the Pokemon Gym Challenge!$"
 
 Route203_Text_Trainer2Defeated:
-	.string "ROUTE 203 TRAINER 2\n"
-	.string "was defeated!$"
+	.string "I guess it means I'm not ready for the\n"
+	.string "Gym challenge yet...$"
 
 Route203_Text_Trainer2PostBattle:
-	.string "ROUTE 203 TRAINER 2\n"
-	.string "has nothing else to say.$"
+	.string "I guess if you don't have a single Gym\n"
+	.string "Badge, you're a total nobody...$"
 
 Route203_Text_Trainer3Intro:
-	.string "ROUTE 203 TRAINER 3\n"
-	.string "wants to battle!$"
+	.string "I found a Trainer while looking for some\n"
+	.string "Pokemon!$"
 
 Route203_Text_Trainer3Defeated:
-	.string "ROUTE 203 TRAINER 3\n"
-	.string "was defeated!$"
+	.string "Huh? Finished so soon?$"
 
 Route203_Text_Trainer3PostBattle:
-	.string "ROUTE 203 TRAINER 3\n"
-	.string "has nothing else to say.$"
+	.string "I walk through tall grass until I find\n"
+	.string "the Pokemon I want.$"
 
 Route203_Text_Trainer4Intro:
-	.string "ROUTE 203 TRAINER 4\n"
-	.string "wants to battle!$"
+	.string "We're always together. I'll show you how\n"
+	.string "we've bonded!$"
 
 Route203_Text_Trainer4Defeated:
-	.string "ROUTE 203 TRAINER 4\n"
-	.string "was defeated!$"
+	.string "Wow, that's an amazing bond you have\n"
+	.string "with your Pokemon.$"
 
 Route203_Text_Trainer4PostBattle:
-	.string "ROUTE 203 TRAINER 4\n"
-	.string "has nothing else to say.$"
+	.string "I don't bear grudges over losing. But I\n"
+	.string "promise I'll get tougher!$"
 
 Route203_Text_Trainer5Intro:
-	.string "ROUTE 203 TRAINER 5\n"
-	.string "wants to battle!$"
+	.string "I'm full of energy because I get power\n"
+	.string "from my Pokemon!$"
 
 Route203_Text_Trainer5Defeated:
-	.string "ROUTE 203 TRAINER 5\n"
-	.string "was defeated!$"
+	.string "Oh! My poor Magby and Zubat!$"
 
 Route203_Text_Trainer5PostBattle:
-	.string "ROUTE 203 TRAINER 5\n"
-	.string "has nothing else to say.$"
+	.string "Avoid tall grass... Or avoid Trainers...\p"
+	.string "Do you have trouble deciding?$"
 
 Route203_Text_Trainer6Intro:
-	.string "ROUTE 203 TRAINER 6\n"
-	.string "wants to battle!$"
+	.string "Check out this cutie I caught earlier!$"
 
 Route203_Text_Trainer6Defeated:
-	.string "ROUTE 203 TRAINER 6\n"
-	.string "was defeated!$"
+	.string "Oh...maybe they weren't ready for a\n"
+	.string "battle yet...$"
 
 Route203_Text_Trainer6PostBattle:
-	.string "ROUTE 203 TRAINER 6\n"
-	.string "has nothing else to say.$"
+	.string "My Bidoof and I are still proud of\n"
+	.string "Togepi!$"

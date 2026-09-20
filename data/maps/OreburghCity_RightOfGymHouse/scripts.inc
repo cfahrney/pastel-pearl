@@ -10,9 +10,11 @@ OreburghCity_RightOfGymHouse_EventScript_NPC2::
 	end
 
 OreburghCity_RightOfGymHouse_Text_NPC1:
-	.string "OREBURGH CITY RIGHT OF GYM HOUSE\n"
-	.string "NPC 1$"
+	.string "Roark is our town's Gym Leader.\p"
+	.string "He may be young, but he keeps the mine\n"
+	.string "running safely and efficiently.$"
 
 OreburghCity_RightOfGymHouse_Text_NPC2:
-	.string "OREBURGH CITY RIGHT OF GYM HOUSE\n"
-	.string "NPC 2$"
+	.string "Roark is a user of Rock-type Pokemon.\p"
+	.string "Don't you think Rock-type Pokemon are\n"
+	.string "nice? I like how lumpy they are!$"

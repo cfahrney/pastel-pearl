@@ -16,3 +16,17 @@ OreburghCity_PokemonCenter_1F_EventScript_Nurse::
 	waitmovement 0
 	release
 	end
+
+OreburghCity_PokemonCenter_1F_EventScript_NPC1::
+	msgbox OreburghCity_PokemonCenter_1F_Text_NPC1, MSGBOX_NPC
+	end
+
+OreburghCity_PokemonCenter_1F_EventScript_NPC2::
+	msgbox OreburghCity_PokemonCenter_1F_Text_NPC2, MSGBOX_NPC
+	end
+
+OreburghCity_PokemonCenter_1F_Text_NPC1:
+	.string "POKEMON CENTER 1F NPC 1$"
+
+OreburghCity_PokemonCenter_1F_Text_NPC2:
+	.string "POKEMON CENTER 1F NPC 2$"
