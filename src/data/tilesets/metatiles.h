@@ -12,8 +12,14 @@ const u16 gMetatileAttributes_General[] = INCBIN_U16("data/tilesets/primary/gene
 const u16 gMetatiles_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatiles.bin");
 const u16 gMetatileAttributes_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatile_attributes.bin");
 
+const u16 gMetatiles_Twinleaf[] = INCBIN_U16("data/tilesets/secondary/twinleaf/metatiles.bin");
+const u16 gMetatileAttributes_Twinleaf[] = INCBIN_U16("data/tilesets/secondary/twinleaf/metatile_attributes.bin");
+
 const u16 gMetatiles_Rustboro[] = INCBIN_U16("data/tilesets/secondary/rustboro/metatiles.bin");
 const u16 gMetatileAttributes_Rustboro[] = INCBIN_U16("data/tilesets/secondary/rustboro/metatile_attributes.bin");
+
+const u16 gMetatiles_Sandgem[] = INCBIN_U16("data/tilesets/secondary/sandgem/metatiles.bin");
+const u16 gMetatileAttributes_Sandgem[] = INCBIN_U16("data/tilesets/secondary/sandgem/metatile_attributes.bin");
 
 const u16 gMetatiles_Dewford[] = INCBIN_U16("data/tilesets/secondary/dewford/metatiles.bin");
 const u16 gMetatileAttributes_Dewford[] = INCBIN_U16("data/tilesets/secondary/dewford/metatile_attributes.bin");

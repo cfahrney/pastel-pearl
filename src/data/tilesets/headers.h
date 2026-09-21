@@ -52,6 +52,17 @@ const struct Tileset gTileset_Petalburg =
     .callback = InitTilesetAnim_Petalburg,
 };
 
+const struct Tileset gTileset_Twinleaf =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Twinleaf,
+    .palettes = gTilesetPalettes_Twinleaf,
+    .metatiles = gMetatiles_Twinleaf,
+    .metatileAttributes = gMetatileAttributes_Twinleaf,
+    .callback = InitTilesetAnim_Twinleaf,
+};
+
 const struct Tileset gTileset_Rustboro =
 {
     .isCompressed = TRUE,
@@ -61,6 +72,17 @@ const struct Tileset gTileset_Rustboro =
     .metatiles = gMetatiles_Rustboro,
     .metatileAttributes = gMetatileAttributes_Rustboro,
     .callback = InitTilesetAnim_Rustboro,
+};
+
+const struct Tileset gTileset_Sandgem =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Sandgem,
+    .palettes = gTilesetPalettes_Sandgem,
+    .metatiles = gMetatiles_Sandgem,
+    .metatileAttributes = gMetatileAttributes_Sandgem,
+    .callback = InitTilesetAnim_Sandgem,
 };
 
 const struct Tileset gTileset_Dewford =

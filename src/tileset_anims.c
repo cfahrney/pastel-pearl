@@ -26,6 +26,7 @@ static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
 static void TilesetAnim_Building(u16);
 static void TilesetAnim_Rustboro(u16);
+static void TilesetAnim_Sandgem(u16);
 static void TilesetAnim_Dewford(u16);
 static void TilesetAnim_Slateport(u16);
 static void TilesetAnim_Mauville(u16);
@@ -51,6 +52,8 @@ static void QueueAnimTiles_General_LandWaterEdge(u16);
 static void QueueAnimTiles_Building_TVTurnedOn(u16);
 static void QueueAnimTiles_Rustboro_WindyWater(u16, u8);
 static void QueueAnimTiles_Rustboro_Fountain(u16);
+static void QueueAnimTiles_Sandgem_WindyWater(u16, u8);
+static void QueueAnimTiles_Sandgem_Fountain(u16);
 static void QueueAnimTiles_Dewford_Flag(u16);
 static void QueueAnimTiles_Slateport_Balloons(u16);
 static void QueueAnimTiles_Mauville_Flowers(u16, u8);
@@ -320,6 +323,45 @@ const u16 tileset_anims_space_2[16] = {};
 const u16 *const gTilesetAnims_Rustboro_Fountain[] = {
     gTilesetAnims_Rustboro_Fountain_Frame0,
     gTilesetAnims_Rustboro_Fountain_Frame1
+};
+
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame0[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/0.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame1[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/1.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame2[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/2.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame3[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/3.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame4[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/4.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame5[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/5.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame6[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/6.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_WindyWater_Frame7[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/windy_water/7.png", ".4bpp");
+
+u16 *const gTilesetAnims_Sandgem_WindyWater_VDests[] = {
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 128)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 132)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 136)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 140)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 144)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 148)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 152)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 156))
+};
+
+const u16 *const gTilesetAnims_Sandgem_WindyWater[] = {
+    gTilesetAnims_Sandgem_WindyWater_Frame0,
+    gTilesetAnims_Sandgem_WindyWater_Frame1,
+    gTilesetAnims_Sandgem_WindyWater_Frame2,
+    gTilesetAnims_Sandgem_WindyWater_Frame3,
+    gTilesetAnims_Sandgem_WindyWater_Frame4,
+    gTilesetAnims_Sandgem_WindyWater_Frame5,
+    gTilesetAnims_Sandgem_WindyWater_Frame6,
+    gTilesetAnims_Sandgem_WindyWater_Frame7
+};
+
+const u16 gTilesetAnims_Sandgem_Fountain_Frame0[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/fountain/0.png", ".4bpp");
+const u16 gTilesetAnims_Sandgem_Fountain_Frame1[] = INCGFX_U16("data/tilesets/secondary/sandgem/anim/fountain/1.png", ".4bpp");
+
+const u16 *const gTilesetAnims_Sandgem_Fountain[] = {
+    gTilesetAnims_Sandgem_Fountain_Frame0,
+    gTilesetAnims_Sandgem_Fountain_Frame1
 };
 
 const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame0[] = INCGFX_U16("data/tilesets/secondary/cave/anim/lava/0.png", ".4bpp");
@@ -680,11 +722,25 @@ void InitTilesetAnim_Petalburg(void)
     sSecondaryTilesetAnimCallback = NULL;
 }
 
+void InitTilesetAnim_Twinleaf(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = NULL;
+}
+
 void InitTilesetAnim_Rustboro(void)
 {
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
     sSecondaryTilesetAnimCallback = TilesetAnim_Rustboro;
+}
+
+void InitTilesetAnim_Sandgem(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Sandgem;
 }
 
 void InitTilesetAnim_Dewford(void)
@@ -857,6 +913,29 @@ static void TilesetAnim_Rustboro(u16 timer)
         QueueAnimTiles_Rustboro_WindyWater(timer / 8, 7);
 }
 
+static void TilesetAnim_Sandgem(u16 timer)
+{
+    if (timer % 8 == 0)
+    {
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 0);
+        QueueAnimTiles_Sandgem_Fountain(timer / 8);
+    }
+    if (timer % 8 == 1)
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 1);
+    if (timer % 8 == 2)
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 2);
+    if (timer % 8 == 3)
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 3);
+    if (timer % 8 == 4)
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 4);
+    if (timer % 8 == 5)
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 5);
+    if (timer % 8 == 6)
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 6);
+    if (timer % 8 == 7)
+        QueueAnimTiles_Sandgem_WindyWater(timer / 8, 7);
+}
+
 static void TilesetAnim_Dewford(u16 timer)
 {
     if (timer % 8 == 0)
@@ -1017,6 +1096,20 @@ static void QueueAnimTiles_Rustboro_Fountain(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Rustboro_Fountain);
     AppendTilesetAnimToBuffer(gTilesetAnims_Rustboro_Fountain[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 448)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Sandgem_WindyWater(u16 timer_div, u8 timer_mod)
+{
+    timer_div -= timer_mod;
+    timer_div %= ARRAY_COUNT(gTilesetAnims_Sandgem_WindyWater);
+    if (gTilesetAnims_Sandgem_WindyWater[timer_div])
+        AppendTilesetAnimToBuffer(gTilesetAnims_Sandgem_WindyWater[timer_div], gTilesetAnims_Sandgem_WindyWater_VDests[timer_mod], 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Sandgem_Fountain(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Sandgem_Fountain);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Sandgem_Fountain[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 448)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Lavaridge_Lava(u16 timer)
