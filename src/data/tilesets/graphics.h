@@ -3199,3 +3199,91 @@ const u16 gTilesetPalettes_SinnohHighRise[][16] =
     INCGFX_U16("data/tilesets/secondary/sinnoh_high_rise/palettes/14.pal", ".gbapal"),
     INCGFX_U16("data/tilesets/secondary/sinnoh_high_rise/palettes/15.pal", ".gbapal"),
 };
+
+const u32 gTilesetTiles_OreburghGym[] = INCGFX_U32("data/tilesets/secondary/oreburgh_gym/tiles.png", ".4bpp.fastSmol", "-num_tiles 60 -Wnum_tiles");
+
+const u16 gTilesetPalettes_OreburghGym[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_gym/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_OreburghMuseum[] = INCGFX_U32("data/tilesets/secondary/oreburgh_museum/tiles.png", ".4bpp.fastSmol", "-num_tiles 319 -Wnum_tiles");
+
+const u16 gTilesetPalettes_OreburghMuseum[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/oreburgh_museum/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_SinnohRustboro[] = INCGFX_U32("data/tilesets/secondary/sinnoh_rustboro/tiles.png", ".4bpp.fastSmol", "-num_tiles 498 -Wnum_tiles");
+
+const u16 gTilesetPalettes_SinnohRustboro[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_rustboro/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_SinnohCave[] = INCGFX_U32("data/tilesets/secondary/sinnoh_cave/tiles.png", ".4bpp.fastSmol", "-num_tiles 425 -Wnum_tiles");
+
+const u16 gTilesetPalettes_SinnohCave[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/sinnoh_cave/palettes/15.pal", ".gbapal"),
+};

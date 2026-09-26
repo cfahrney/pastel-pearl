@@ -63,8 +63,8 @@ JubilifeCity_Text_Sign6:
 	.string "DexNavs for the World!$"
 
 JubilifeCity_Text_Sign7:
-	.string "Global Trade Station\n"
-	.string "Worldwide Pokemon Trading$"
+	.string "Jubilife Battle Dome\n"
+	.string "Put your battling skills to the test!$"
 
 JubilifeCity_Text_Sign8:
 	.string "Trainers' School\n"
@@ -106,22 +106,122 @@ JubilifeCity_Text_NPC1:
 	.string "JUBILIFE CITY NPC 1$"
 
 JubilifeCity_Text_NPC2:
-	.string "JUBILIFE CITY NPC 2$"
+	.string "Hiya! Where'd you come from?\p"
+	.string "...\p"
+	.string "Twinleaf Town, huh...\n"
+	.string "It's a nice place. Quiet and all.\p"
+	.string "Jubilife is a big place, so it might be a\n"
+	.string "bit of a shock to you.$"
 
 JubilifeCity_Text_NPC3:
-	.string "JUBILIFE CITY NPC 3$"
+	.string "Gible and I are going to take on the\n"
+	.string "champion one day! I heard she also has\l"
+	.string "a Gible...$"
 
 JubilifeCity_Text_NPC4:
-	.string "JUBILIFE CITY NPC 4$"
+	.string "Jubilife City's built on land they\n"
+	.string "carved out of a mountain.\p"
+	.string "The people and Pokemon of Oreburgh\n"
+	.string "City helps out with the undertaking.$"
 
 JubilifeCity_Text_NPC5:
-	.string "JUBILIFE CITY NPC 5$"
+	.string "Okay, set six Poke Balls in my belt...\p"
+	.string "Yeah, that'll do it. At most, you can\n"
+	.string "have six Pokemon with you.$"
 
 JubilifeCity_Text_NPC6:
-	.string "JUBILIFE CITY NPC 6$"
+	.string "Hello! Have you visited the Trainer\n"
+	.string "School yet? It's very useful for young\l"
+	.string "trainers like yourself!$"
 
 JubilifeCity_Text_NPC7:
-	.string "JUBILIFE CITY NPC 7$"
+	.string "I'm trading Pokemon with my buddy!$"
 
 JubilifeCity_Text_NPC8:
-	.string "JUBILIFE CITY NPC 8$"
+	.string "I made my Pokemon hold an item before\n"
+	.string "trading it. That will make my friend\l"
+	.string "double happy!$"
+
+JubilifeCity_EventScript_NPC9::
+	msgbox JubilifeCity_Text_NPC9, MSGBOX_NPC
+	end
+
+JubilifeCity_EventScript_NPC10::
+	msgbox JubilifeCity_Text_NPC10, MSGBOX_NPC
+	end
+
+JubilifeCity_EventScript_NPC11::
+	msgbox JubilifeCity_Text_NPC11, MSGBOX_NPC
+	end
+
+JubilifeCity_EventScript_NPC12::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NOCTOWL, CRY_MODE_NORMAL
+	setspeaker JubilifeCity_Text_NPC12Speaker
+	msgbox JubilifeCity_Text_NPC12, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JubilifeCity_EventScript_NPC13::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PIPLUP, CRY_MODE_NORMAL
+	setspeaker JubilifeCity_Text_NPC13Speaker
+	msgbox JubilifeCity_Text_NPC13, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JubilifeCity_Text_NPC9:
+	.string "I'm always glad to see the city add more\n"
+	.string "bike parking. It's such a useful way to\l"
+	.string "get around all of Sinnoh!$"
+
+JubilifeCity_Text_NPC10:
+	.string "I enjoy watching my Piplup play by the\n"
+	.string "fountains.$"
+
+JubilifeCity_Text_NPC11:
+	.string "My Noctowl is always great company for\n"
+	.string "a walk. I caught him when he was just a\l"
+	.string "wee Hoothoot!$"
+
+JubilifeCity_Text_NPC12:
+	.string "Noctoooowl!$"
+
+JubilifeCity_Text_NPC12Speaker:
+	.string "Noctowl$"
+
+JubilifeCity_Text_NPC13:
+	.string "Piiiip!$"
+
+JubilifeCity_Text_NPC13Speaker:
+	.string "Piplup$"
+
+JubilifeCity_EventScript_NPC14::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GIBLE, CRY_MODE_NORMAL
+	setspeaker JubilifeCity_Text_NPC14Speaker
+	msgbox JubilifeCity_Text_NPC14, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JubilifeCity_Text_NPC14:
+	.string "Gible! Gible Gible!$"
+
+JubilifeCity_Text_NPC14Speaker:
+	.string "Gible$"
+
+JubilifeCity_EventScript_NPC15::
+	msgbox JubilifeCity_Text_NPC15, MSGBOX_NPC
+	end
+
+JubilifeCity_Text_NPC15:
+	.string "JUBILIFE CITY NPC 15$"

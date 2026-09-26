@@ -14,6 +14,7 @@ OreburghCity_LeftOfGymHouse_EventScript_NPC3::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
+	setspeaker OreburghCity_LeftOfGymHouse_Text_NPC3Speaker
 	msgbox OreburghCity_LeftOfGymHouse_Text_NPC3, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -34,4 +35,7 @@ OreburghCity_LeftOfGymHouse_Text_NPC2:
 	.string "a sort of orange body.$"
 
 OreburghCity_LeftOfGymHouse_Text_NPC3:
-	.string "Pikachu: Pikaaah!$"
+	.string "Pikaaah!$"
+
+OreburghCity_LeftOfGymHouse_Text_NPC3Speaker:
+	.string "Pikachu$"

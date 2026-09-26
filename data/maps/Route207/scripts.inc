@@ -109,3 +109,24 @@ Route207_Text_Trainer6Defeated:
 Route207_Text_Trainer6PostBattle:
 	.string "ROUTE 207 TRAINER 6\n"
 	.string "has nothing else to say.$"
+
+Route207_EventScript_Sign1::
+	msgbox Route207_Text_Sign1, MSGBOX_SIGN
+	end
+
+Route207_EventScript_Sign2::
+	msgbox Route207_Text_Sign2, MSGBOX_SIGN
+	end
+
+Route207_EventScript_Sign3::
+	msgbox Route207_Text_Sign3, MSGBOX_SIGN
+	end
+
+Route207_Text_Sign1:
+	.string "ROUTE 207 SIGN 1$"
+
+Route207_Text_Sign2:
+	.string "ROUTE 207 SIGN 2$"
+
+Route207_Text_Sign3:
+	.string "ROUTE 207 SIGN 3$"

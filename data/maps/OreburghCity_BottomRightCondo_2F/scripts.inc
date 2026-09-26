@@ -18,6 +18,7 @@ OreburghCity_BottomRightCondo_2F_EventScript_NPC4::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	setspeaker OreburghCity_BottomRightCondo_2F_Text_NPC4Speaker
 	msgbox OreburghCity_BottomRightCondo_2F_Text_NPC4, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -34,3 +35,6 @@ OreburghCity_BottomRightCondo_2F_Text_NPC3:
 
 OreburghCity_BottomRightCondo_2F_Text_NPC4:
 	.string "BOTTOM RIGHT CONDO 2F\nNPC 4$"
+
+OreburghCity_BottomRightCondo_2F_Text_NPC4Speaker:
+	.string "Murkrow$"

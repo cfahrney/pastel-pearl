@@ -137,6 +137,13 @@ static const u16 sDoorNullPalette48[16] = {};
 static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCGFX_U8("graphics/door_anims/trainer_hill_roof_elevator.png", ".4bpp");
 static const u16 sDoorNullPalette49[16] = {};
 static const u8 sDoorAnimTiles_OreburghDoor[] = INCGFX_U8("graphics/door_anims/oreburgh_door.png", ".4bpp");
+static const u8 sDoorAnimTiles_OreburghHighRiseDoor[] = INCGFX_U8("graphics/door_anims/oreburgh_high_rise_door.png", ".4bpp");
+static const u8 sDoorAnimTiles_JubilifeDexnavHq[] = INCGFX_U8("graphics/door_anims/jubilife_dexnav_hq.png", ".4bpp");
+static const u8 sDoorAnimTiles_JubilifeGray[] = INCGFX_U8("graphics/door_anims/jubilife_gray_door.png", ".4bpp");
+static const u8 sDoorAnimTiles_JubilifeTan[] = INCGFX_U8("graphics/door_anims/jubilife_tan_door.png", ".4bpp");
+static const u8 sDoorAnimTiles_JubilifeGts[] = INCGFX_U8("graphics/door_anims/jubilife_gts.png", ".4bpp");
+static const u8 sDoorAnimTiles_SandgemHouse[] = INCGFX_U8("graphics/door_anims/sandgem_house_door.png", ".4bpp");
+static const u8 sDoorAnimTiles_TwinleafHouse[] = INCGFX_U8("graphics/door_anims/twinleaf_house_door.png", ".4bpp");
 
 #if IS_FRLG
 
@@ -295,6 +302,13 @@ static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_OreburghDoor[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sDoorAnimPalettes_OreburghHighRiseDoor[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sDoorAnimPalettes_JubilifeDexnavHq[] = {7, 7, 7, 7, 7, 7, 7, 7};
+static const u8 sDoorAnimPalettes_JubilifeGray[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sDoorAnimPalettes_JubilifeTan[] = {12, 12, 12, 12, 12, 12, 12, 12};
+static const u8 sDoorAnimPalettes_JubilifeGts[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const u8 sDoorAnimPalettes_SandgemHouse[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const u8 sDoorAnimPalettes_TwinleafHouse[] = {10, 10, 10, 10, 10, 10, 10, 10};
 
 #if IS_FRLG
 
@@ -340,6 +354,10 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_General_Door_PokeCenter,                      &gTileset_General, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeCenter, sDoorAnimPalettes_PokeCenter, TRUE},
     {METATILE_General_Door_Gym,                             &gTileset_General, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Gym, sDoorAnimPalettes_Gym},
     {METATILE_General_Door_PokeMart,                        &gTileset_General, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeMart, sDoorAnimPalettes_PokeMart, TRUE},
+    {METATILE_General_Door,                                 &gTileset_SinnohGeneral, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_General, sDoorAnimPalettes_General},
+    {METATILE_SinnohGeneral_Door_PokeCenter,                &gTileset_SinnohGeneral, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeCenter, sDoorAnimPalettes_PokeCenter, TRUE},
+    {METATILE_General_Door_Gym,                             &gTileset_SinnohGeneral, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Gym, sDoorAnimPalettes_Gym},
+    {METATILE_SinnohGeneral_Door_PokeMart,                  &gTileset_SinnohGeneral, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeMart, sDoorAnimPalettes_PokeMart, TRUE},
     {METATILE_Petalburg_Door_Littleroot,                    &gTileset_Petalburg, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Littleroot, sDoorAnimPalettes_Littleroot},
     {METATILE_Petalburg_Door_Littleroot,                    &gTileset_Twinleaf, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Littleroot, sDoorAnimPalettes_Littleroot},
     {METATILE_Petalburg_Door_BirchsLab,                     &gTileset_Petalburg, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_BirchsLab, sDoorAnimPalettes_BirchsLab},
@@ -393,6 +411,13 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_TrainerHill_Door_Elevator_Lobby,              &gTileset_TrainerHill, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
     {METATILE_TrainerHill_Door_Elevator_Roof,               &gTileset_TrainerHill, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {METATILE_Oreburgh_Oreburgh_Door,                       &gTileset_Oreburgh, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_OreburghDoor, sDoorAnimPalettes_OreburghDoor, TRUE},
+    {METATILE_Oreburgh_Oreburgh_HighRise_Door,              &gTileset_Oreburgh, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_OreburghHighRiseDoor, sDoorAnimPalettes_OreburghHighRiseDoor, TRUE},
+    {METATILE_Jubilife_Door_DexnavHq,                       &gTileset_Jubilife, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_JubilifeDexnavHq, sDoorAnimPalettes_JubilifeDexnavHq, TRUE},
+    {METATILE_Jubilife_Door_Gray,                           &gTileset_Jubilife, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_JubilifeGray, sDoorAnimPalettes_JubilifeGray, TRUE},
+    {METATILE_Jubilife_Door_Tan,                            &gTileset_Jubilife, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_JubilifeTan, sDoorAnimPalettes_JubilifeTan, TRUE},
+    {METATILE_Jubilife_Door_Gts,                            &gTileset_Jubilife, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_JubilifeGts, sDoorAnimPalettes_JubilifeGts, TRUE},
+    {METATILE_Sandgem_Door_House,                           &gTileset_Sandgem, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_SandgemHouse, sDoorAnimPalettes_SandgemHouse, TRUE},
+    {METATILE_Sandgem_Door_Twinleaf,                        &gTileset_Sandgem, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_TwinleafHouse, sDoorAnimPalettes_TwinleafHouse, TRUE},
 #else
     {METATILE_GeneralFrlg_Door,                             &gTileset_General_Frlg, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_GeneralFrlg, sDoorAnimPalettes_GeneralFrlg},
     {METATILE_GeneralFrlg_SlidingSingleDoor,                &gTileset_General_Frlg, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_SlidingSingle, sDoorAnimPalettes_SlidingSingle},

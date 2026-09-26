@@ -26,7 +26,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_LAKE_VERITY_BARRY"
+      "flag": "FLAG_HIDE_LAKE_VERITY_BARRY",
+      "poe_muted": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_PROFESSOR_ROWAN",
@@ -40,7 +41,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_LAKE_VERITY_PROFESSOR_ROWAN"
+      "flag": "FLAG_HIDE_LAKE_VERITY_PROFESSOR_ROWAN",
+      "poe_muted": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_LUCASDAWN",
@@ -54,7 +56,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_LAKE_VERITY_LUCASDAWN"
+      "flag": "FLAG_HIDE_LAKE_VERITY_LUCASDAWN",
+      "poe_muted": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_SUITCASE",
@@ -68,7 +71,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_LAKE_VERITY_SUITCASE"
+      "flag": "FLAG_HIDE_LAKE_VERITY_SUITCASE",
+      "poe_muted": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_PLAYER_STARLY",
@@ -76,13 +80,14 @@
       "x": 40,
       "y": 35,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_LAKE_VERITY_PLAYER_STARLY"
+      "flag": "FLAG_HIDE_LAKE_VERITY_PLAYER_STARLY",
+      "poe_muted": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_BARRY_STARLY",
@@ -90,13 +95,14 @@
       "x": 47,
       "y": 28,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_LAKE_VERITY_BARRY_STARLY"
+      "flag": "FLAG_HIDE_LAKE_VERITY_BARRY_STARLY",
+      "poe_muted": true
     }
   ],
   "warp_events": [

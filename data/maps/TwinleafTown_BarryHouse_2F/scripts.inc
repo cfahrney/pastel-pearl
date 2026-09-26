@@ -20,6 +20,7 @@ TwinleafTown_BarryHouse_2F_EventScript_BarryNoticesPlayer::
 	applymovement LOCALID_TWINLEAF_BARRYHOUSE_BARRY, Common_Movement_Delay48
 	waitmovement 0
 	playbgm MUS_RIVAL_THEME, TRUE
+	setspeaker SP_NAME_RIVAL
 	msgbox TwinleafTown_BarryHouse_2F_Text_GoingToTheLake, MSGBOX_DEFAULT
 	closemessage
 	@ Player steps out of Barry's path before he starts running, so his

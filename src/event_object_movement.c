@@ -138,6 +138,9 @@ static void ObjectEventExecHeldMovementAction(struct ObjectEvent *, struct Sprit
 static void UpdateObjectEventSpriteAnimPause(struct ObjectEvent *, struct Sprite *);
 static bool8 IsCoordOutsideObjectEventMovementRange(struct ObjectEvent *, s16, s16);
 static bool8 DoesObjectCollideWithObjectAt(struct ObjectEvent *, s16, s16);
+
+// Script-only: lets the player walk through this object's tile (0 = none).
+static u8 sPlayerCollisionExemptLocalId;
 static void UpdateObjectEventOffscreen(struct ObjectEvent *, struct Sprite *);
 static void UpdateObjectEventSpriteVisibility(struct ObjectEvent *, struct Sprite *);
 static void ObjectEventUpdateMetatileBehaviors(struct ObjectEvent *);
@@ -1459,6 +1462,7 @@ static void ClearAllObjectEvents(void)
 
 void ResetObjectEvents(void)
 {
+    sPlayerCollisionExemptLocalId = 0;
     ClearLinkPlayerObjectEvents();
     ClearAllObjectEvents();
     ClearPlayerAvatarInfo();
@@ -6678,6 +6682,16 @@ bool8 IsMetatileDirectionallyImpassable(struct ObjectEvent *objectEvent, s16 x, 
     return FALSE;
 }
 
+void SetPlayerCollisionExemption(void)
+{
+    sPlayerCollisionExemptLocalId = gSpecialVar_0x8004;
+}
+
+void ClearPlayerCollisionExemption(void)
+{
+    sPlayerCollisionExemptLocalId = 0;
+}
+
 u32 GetObjectObjectCollidesWith(struct ObjectEvent *objectEvent, s16 x, s16 y, bool32 addCoords)
 {
     u8 i;
@@ -6697,6 +6711,7 @@ u32 GetObjectObjectCollidesWith(struct ObjectEvent *objectEvent, s16 x, s16 y, b
         curObject = &gObjectEvents[i];
         if (curObject->active && (curObject->movementType != MOVEMENT_TYPE_FOLLOW_PLAYER || objectEvent != &gObjectEvents[gPlayerAvatar.objectEventId]) && curObject != objectEvent
          && !FollowerNPC_IsCollisionExempt(curObject, objectEvent)
+         && !(sPlayerCollisionExemptLocalId && curObject->localId == sPlayerCollisionExemptLocalId && objectEvent == &gObjectEvents[gPlayerAvatar.objectEventId])
          )
         {
             // check for collision if curObject is active, not the object in question, and not exempt from collisions

@@ -35,6 +35,8 @@
 
 static void CB2_StarterChoose(void);
 static void ClearStarterLabel(void);
+static void Task_StarterIntro(u8 taskId);
+static void Task_WaitStarterIntro(u8 taskId);
 static void Task_StarterChoose(u8 taskId);
 static void Task_HandleStarterChooseInput(u8 taskId);
 static void Task_WaitForStarterSprite(u8 taskId);
@@ -438,7 +440,7 @@ void CB2_ChooseStarter(void)
     ShowBg(2);
     ShowBg(3);
 
-    taskId = CreateTask(Task_StarterChoose, 0);
+    taskId = CreateTask(Task_StarterIntro, 0);
     gTasks[taskId].tStarterSelection = 1;
 
     // Create hand sprite
@@ -470,11 +472,28 @@ static void CB2_StarterChoose(void)
     UpdatePaletteFade();
 }
 
-static void Task_StarterChoose(u8 taskId)
+static void Task_StarterIntro(u8 taskId)
 {
     CreateStarterPokemonLabel(gTasks[taskId].tStarterSelection);
     DrawStdFrameWithCustomTileAndPalette(0, FALSE, 0x2A8, 0xD);
-    AddTextPrinterParameterized(0, FONT_NORMAL, gText_BirchInTrouble, 0, 1, 0, NULL);
+    AddTextPrinterParameterized(0, FONT_NORMAL, gText_StarterIntro, 0, 1, 0, NULL);
+    PutWindowTilemap(0);
+    ScheduleBgCopyTilemapToVram(0);
+    gTasks[taskId].func = Task_WaitStarterIntro;
+}
+
+static void Task_WaitStarterIntro(u8 taskId)
+{
+    if (JOY_NEW(A_BUTTON))
+        gTasks[taskId].func = Task_StarterChoose;
+}
+
+static void Task_StarterChoose(u8 taskId)
+{
+    FillWindowPixelBuffer(0, PIXEL_FILL(1));
+    CreateStarterPokemonLabel(gTasks[taskId].tStarterSelection);
+    DrawStdFrameWithCustomTileAndPalette(0, FALSE, 0x2A8, 0xD);
+    AddTextPrinterParameterized(0, FONT_NORMAL, gText_StarterWhichOne, 0, 1, 0, NULL);
     PutWindowTilemap(0);
     ScheduleBgCopyTilemapToVram(0);
     gTasks[taskId].func = Task_HandleStarterChooseInput;

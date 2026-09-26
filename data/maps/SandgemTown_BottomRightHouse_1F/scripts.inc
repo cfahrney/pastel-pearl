@@ -14,6 +14,7 @@ SandgemTown_BottomRightHouse_1F_EventScript_NPC3::
 	faceplayer
 	waitse
 	playmoncry SPECIES_BIDOOF, CRY_MODE_NORMAL
+	setspeaker SandgemTown_BottomRightHouse_1F_Text_NPC3Speaker
 	msgbox SandgemTown_BottomRightHouse_1F_Text_NPC3, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -27,3 +28,6 @@ SandgemTown_BottomRightHouse_1F_Text_NPC2:
 
 SandgemTown_BottomRightHouse_1F_Text_NPC3:
 	.string "BOTTOM RIGHT HOUSE 1F NPC 3$"
+
+SandgemTown_BottomRightHouse_1F_Text_NPC3Speaker:
+	.string "Bidoof$"

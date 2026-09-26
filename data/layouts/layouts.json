@@ -6886,7 +6886,7 @@
       "width": 13,
       "height": 15,
       "primary_tileset": "gTileset_BuildingFrlg",
-      "secondary_tileset": "gTileset_DepartmentStore",
+      "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/CeladonCity_DepartmentStore_5F_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/CeladonCity_DepartmentStore_5F_Frlg/map.bin",
       "border_height": 2,
@@ -9329,8 +9329,8 @@
       "name": "TwinleafTown_Layout",
       "width": 20,
       "height": 39,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Twinleaf",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_Sandgem",
       "border_filepath": "data/layouts/TwinleafTown/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown/map.bin",
       "layout_version": "emerald"
@@ -9340,8 +9340,8 @@
       "name": "VerityLakefront_Layout",
       "width": 20,
       "height": 18,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_SinnohRustboro",
       "border_filepath": "data/layouts/VerityLakefront/border.bin",
       "blockdata_filepath": "data/layouts/VerityLakefront/map.bin"
     },
@@ -9350,8 +9350,8 @@
       "name": "Route201_Layout",
       "width": 72,
       "height": 26,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_Sandgem",
       "border_filepath": "data/layouts/Route201/border.bin",
       "blockdata_filepath": "data/layouts/Route201/map.bin"
     },
@@ -9426,7 +9426,7 @@
       "name": "LakeVerity_Layout",
       "width": 52,
       "height": 46,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_LakeVerity",
       "border_filepath": "data/layouts/LakeVerity/border.bin",
       "blockdata_filepath": "data/layouts/LakeVerity/map.bin"
@@ -9436,7 +9436,7 @@
       "name": "SandgemTown_Layout",
       "width": 44,
       "height": 34,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Sandgem",
       "border_filepath": "data/layouts/SandgemTown/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown/map.bin"
@@ -9444,9 +9444,9 @@
     {
       "id": "LAYOUT_ROUTE202",
       "name": "Route202_Layout",
-      "width": 37,
+      "width": 45,
       "height": 32,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route202/border.bin",
       "blockdata_filepath": "data/layouts/Route202/map.bin"
@@ -9456,8 +9456,8 @@
       "name": "Route219_Layout",
       "width": 27,
       "height": 32,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_Sandgem",
       "border_filepath": "data/layouts/Route219/border.bin",
       "blockdata_filepath": "data/layouts/Route219/map.bin"
     },
@@ -9535,8 +9535,8 @@
       "id": "LAYOUT_JUBILIFE_CITY",
       "name": "JubilifeCity_Layout",
       "width": 72,
-      "height": 69,
-      "primary_tileset": "gTileset_General",
+      "height": 71,
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/JubilifeCity/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity/map.bin"
@@ -9546,7 +9546,7 @@
       "name": "Route203_Layout",
       "width": 65,
       "height": 26,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route203/border.bin",
       "blockdata_filepath": "data/layouts/Route203/map.bin"
@@ -9556,7 +9556,7 @@
       "name": "Route204_Layout",
       "width": 34,
       "height": 72,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route204/border.bin",
       "blockdata_filepath": "data/layouts/Route204/map.bin"
@@ -9566,8 +9566,8 @@
       "name": "OreburghGate_Layout",
       "width": 28,
       "height": 31,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_SinnohCave",
       "border_filepath": "data/layouts/OreburghGate/border.bin",
       "blockdata_filepath": "data/layouts/OreburghGate/map.bin"
     },
@@ -9576,7 +9576,7 @@
       "name": "OreburghCity_Layout",
       "width": 63,
       "height": 63,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Oreburgh",
       "border_filepath": "data/layouts/OreburghCity/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity/map.bin"
@@ -9586,7 +9586,7 @@
       "name": "Route207_Layout",
       "width": 81,
       "height": 33,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Oreburgh",
       "border_filepath": "data/layouts/Route207/border.bin",
       "blockdata_filepath": "data/layouts/Route207/map.bin"
@@ -9596,7 +9596,7 @@
       "name": "Route206_Layout",
       "width": 120,
       "height": 20,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Oreburgh",
       "border_filepath": "data/layouts/Route206/border.bin",
       "blockdata_filepath": "data/layouts/Route206/map.bin"
@@ -9606,8 +9606,8 @@
       "name": "OreburghGate_B1F_Layout",
       "width": 65,
       "height": 29,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_SinnohCave",
       "border_filepath": "data/layouts/OreburghGate_B1F/border.bin",
       "blockdata_filepath": "data/layouts/OreburghGate_B1F/map.bin"
     },
@@ -9616,8 +9616,8 @@
       "name": "RavagedPath_Layout",
       "width": 36,
       "height": 31,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_SinnohCave",
       "border_filepath": "data/layouts/RavagedPath/border.bin",
       "blockdata_filepath": "data/layouts/RavagedPath/map.bin"
     },
@@ -9727,7 +9727,7 @@
       "width": 10,
       "height": 24,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_RustboroGym",
+      "secondary_tileset": "gTileset_OreburghGym",
       "border_filepath": "data/layouts/OreburghCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity_Gym/map.bin"
     },
@@ -9777,7 +9777,7 @@
       "width": 19,
       "height": 15,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
+      "secondary_tileset": "gTileset_OreburghMuseum",
       "border_filepath": "data/layouts/OreburghCity_Museum/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity_Museum/map.bin"
     },
@@ -9796,8 +9796,8 @@
       "name": "OreburghCity_OreburghMine_Layout",
       "width": 21,
       "height": 25,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_SinnohCave",
       "border_filepath": "data/layouts/OreburghCity_OreburghMine/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity_OreburghMine/map.bin"
     },
@@ -9856,10 +9856,202 @@
       "name": "OreburghCity_OreburghMine_2_Layout",
       "width": 32,
       "height": 31,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_SinnohCave",
       "border_filepath": "data/layouts/OreburghCity_OreburghMine_2/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity_OreburghMine_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_TRAINER_SCHOOL",
+      "name": "JubilifeCity_TrainerSchool_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/JubilifeCity_TrainerSchool/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_TrainerSchool/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_HIGH_RISE_1F",
+      "name": "Template_HighRise_1F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/Template_HighRise_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_HighRise_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_SOUTH_OF_TRAINER_SCHOOL_CONDO_1F",
+      "name": "JubilifeCity_SouthOfTrainerSchoolCondo_1F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/JubilifeCity_SouthOfTrainerSchoolCondo_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_SouthOfTrainerSchoolCondo_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_HIGH_RISE_2F",
+      "name": "Template_HighRise_2F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/Template_HighRise_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_HighRise_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_SOUTH_OF_TRAINER_SCHOOL_CONDO_2F",
+      "name": "JubilifeCity_SouthOfTrainerSchoolCondo_2F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/JubilifeCity_SouthOfTrainerSchoolCondo_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_SouthOfTrainerSchoolCondo_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_CONDOMINIUM_1F",
+      "name": "JubilifeCity_Condominium_1F_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/JubilifeCity_Condominium_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_1F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_DEX_NAV_COMPANY_2F",
+      "name": "JubilifeCity_DexNavCompany_2F_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/JubilifeCity_DexNavCompany_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_DexNavCompany_2F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_TVSTATION_2F",
+      "name": "JubilifeCity_TVStation_2F_Layout",
+      "width": 22,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/JubilifeCity_TVStation_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_TVStation_2F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_CONDOMINIUM_4F",
+      "name": "JubilifeCity_Condominium_4F_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/JubilifeCity_Condominium_4F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_4F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_DEX_NAV_COMPANY_3F",
+      "name": "JubilifeCity_DexNavCompany_3F_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/JubilifeCity_DexNavCompany_3F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_DexNavCompany_3F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_CONDOMINIUM_ELEVATOR",
+      "name": "JubilifeCity_CondominiumElevator_Layout",
+      "width": 5,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/JubilifeCity_CondominiumElevator/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_CondominiumElevator/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_CONDOMINIUM_2F",
+      "name": "JubilifeCity_Condominium_2F_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/JubilifeCity_Condominium_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_2F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_DEX_NAV_COMPANY_1F",
+      "name": "JubilifeCity_DexNavCompany_1F_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/JubilifeCity_DexNavCompany_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_DexNavCompany_1F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_TVSTATION_1F",
+      "name": "JubilifeCity_TVStation_1F_Layout",
+      "width": 21,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/JubilifeCity_TVStation_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_TVStation_1F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_CONDOMINIUM_3F",
+      "name": "JubilifeCity_Condominium_3F_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/JubilifeCity_Condominium_3F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_3F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_BATTLE_DOME_LOBBY",
+      "name": "JubilifeCity_BattleDomeLobby_Layout",
+      "width": 23,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/JubilifeCity_BattleDomeLobby/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_BattleDomeLobby/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_SOUTH_OF_BATTLE_DOME_CONDO_1F",
+      "name": "JubilifeCity_SouthOfBattleDomeCondo_1F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/JubilifeCity_SouthOfBattleDomeCondo_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_SouthOfBattleDomeCondo_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_SOUTH_OF_BATTLE_DOME_CONDO_2F",
+      "name": "JubilifeCity_SouthOfBattleDomeCondo_2F_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/JubilifeCity_SouthOfBattleDomeCondo_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_SouthOfBattleDomeCondo_2F/map.bin"
     }
   ]
 }

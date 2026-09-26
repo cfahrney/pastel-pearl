@@ -18,6 +18,7 @@ OreburghCity_TopRightCondo_1F_EventScript_NPC4::
 	faceplayer
 	waitse
 	playmoncry SPECIES_SENTRET, CRY_MODE_NORMAL
+	setspeaker OreburghCity_TopRightCondo_1F_Text_NPC4Speaker
 	msgbox OreburghCity_TopRightCondo_1F_Text_NPC4, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -28,6 +29,7 @@ OreburghCity_TopRightCondo_1F_EventScript_NPC5::
 	faceplayer
 	waitse
 	playmoncry SPECIES_CLEFFA, CRY_MODE_NORMAL
+	setspeaker OreburghCity_TopRightCondo_1F_Text_NPC5Speaker
 	msgbox OreburghCity_TopRightCondo_1F_Text_NPC5, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -45,5 +47,11 @@ OreburghCity_TopRightCondo_1F_Text_NPC3:
 OreburghCity_TopRightCondo_1F_Text_NPC4:
 	.string "TOP RIGHT CONDO 1F NPC 4$"
 
+OreburghCity_TopRightCondo_1F_Text_NPC4Speaker:
+	.string "Sentret$"
+
 OreburghCity_TopRightCondo_1F_Text_NPC5:
 	.string "TOP RIGHT CONDO 1F NPC 5$"
+
+OreburghCity_TopRightCondo_1F_Text_NPC5Speaker:
+	.string "Cleffa$"

@@ -1231,11 +1231,29 @@
     "Template_PokemonCenter_2F",
     "Template_Mart",
     "Template_StandardHome_1F",
-    "Template_StandardHome_2F"
+    "Template_StandardHome_2F",
+    "Template_HighRise_1F",
+    "Template_HighRise_2F"
   ],
   "gMapGroup_IndoorJubilife": [
     "JubilifeCity_PokemonCenter_1F",
     "JubilifeCity_PokemonCenter_2F",
-    "JubilifeCity_Mart"
+    "JubilifeCity_Mart",
+    "JubilifeCity_TrainerSchool",
+    "JubilifeCity_SouthOfTrainerSchoolCondo_1F",
+    "JubilifeCity_SouthOfTrainerSchoolCondo_2F",
+    "JubilifeCity_Condominium_1F",
+    "JubilifeCity_Condominium_2F",
+    "JubilifeCity_Condominium_3F",
+    "JubilifeCity_CondominiumElevator",
+    "JubilifeCity_Condominium_4F",
+    "JubilifeCity_TVStation_1F",
+    "JubilifeCity_TVStation_2F",
+    "JubilifeCity_DexNavCompany_1F",
+    "JubilifeCity_DexNavCompany_2F",
+    "JubilifeCity_DexNavCompany_3F",
+    "JubilifeCity_BattleDomeLobby",
+    "JubilifeCity_SouthOfBattleDomeCondo_1F",
+    "JubilifeCity_SouthOfBattleDomeCondo_2F"
   ]
 }

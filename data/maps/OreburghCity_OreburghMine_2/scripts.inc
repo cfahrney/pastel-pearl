@@ -72,6 +72,7 @@ OreburghCity_OreburghMine_2_EventScript_NPC4::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_NPC4Speaker
 	msgbox OreburghCity_OreburghMine_2_Text_NPC4, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -82,6 +83,7 @@ OreburghCity_OreburghMine_2_EventScript_NPC5::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_NPC5Speaker
 	msgbox OreburghCity_OreburghMine_2_Text_NPC5, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -96,6 +98,7 @@ OreburghCity_OreburghMine_2_EventScript_NPC7::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_NPC7Speaker
 	msgbox OreburghCity_OreburghMine_2_Text_NPC7, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -113,11 +116,88 @@ OreburghCity_OreburghMine_2_Text_NPC3:
 OreburghCity_OreburghMine_2_Text_NPC4:
 	.string "OREBURGH MINE 2 NPC 4$"
 
+OreburghCity_OreburghMine_2_Text_NPC4Speaker:
+	.string "Machop$"
+
 OreburghCity_OreburghMine_2_Text_NPC5:
 	.string "OREBURGH MINE 2 NPC 5$"
+
+OreburghCity_OreburghMine_2_Text_NPC5Speaker:
+	.string "Machop$"
 
 OreburghCity_OreburghMine_2_Text_NPC6:
 	.string "OREBURGH MINE 2 NPC 6$"
 
 OreburghCity_OreburghMine_2_Text_NPC7:
 	.string "OREBURGH MINE 2 NPC 7$"
+
+OreburghCity_OreburghMine_2_Text_NPC7Speaker:
+	.string "Machop$"
+
+OreburghCity_OreburghMine_2_EventScript_NPC8::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_NPC8Speaker
+	msgbox OreburghCity_OreburghMine_2_Text_NPC8, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_OreburghMine_2_EventScript_NPC9::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_NPC9Speaker
+	msgbox OreburghCity_OreburghMine_2_Text_NPC9, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_OreburghMine_2_EventScript_NPC10::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_NPC10Speaker
+	msgbox OreburghCity_OreburghMine_2_Text_NPC10, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_OreburghMine_2_EventScript_NPC11::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_NPC11Speaker
+	msgbox OreburghCity_OreburghMine_2_Text_NPC11, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_OreburghMine_2_Text_NPC8:
+	.string "OREBURGH MINE 2 NPC 8$"
+
+OreburghCity_OreburghMine_2_Text_NPC8Speaker:
+	.string "Machop$"
+
+OreburghCity_OreburghMine_2_Text_NPC9:
+	.string "OREBURGH MINE 2 NPC 9$"
+
+OreburghCity_OreburghMine_2_Text_NPC9Speaker:
+	.string "Machop$"
+
+OreburghCity_OreburghMine_2_Text_NPC10:
+	.string "OREBURGH MINE 2 NPC 10$"
+
+OreburghCity_OreburghMine_2_Text_NPC10Speaker:
+	.string "Machop$"
+
+OreburghCity_OreburghMine_2_Text_NPC11:
+	.string "OREBURGH MINE 2 NPC 11$"
+
+OreburghCity_OreburghMine_2_Text_NPC11Speaker:
+	.string "Machop$"

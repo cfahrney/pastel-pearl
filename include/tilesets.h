@@ -3,6 +3,8 @@
 
 extern const u32 gTilesetTiles_General[];
 extern const u16 gTilesetPalettes_General[][16];
+extern const u32 gTilesetTiles_SinnohGeneral[];
+extern const u16 gTilesetPalettes_SinnohGeneral[][16];
 
 extern const struct Tileset *const gTilesetPointer_SecretBase;
 extern const struct Tileset *const gTilesetPointer_SecretBaseRedCave;
@@ -66,4 +68,9 @@ extern const struct Tileset gTileset_Oreburgh;
 extern const struct Tileset gTileset_Sandgem;
 extern const struct Tileset gTileset_SinnohBuilding;
 extern const struct Tileset gTileset_SinnohHighRise;
+extern const struct Tileset gTileset_OreburghGym;
+extern const struct Tileset gTileset_OreburghMuseum;
+extern const struct Tileset gTileset_SinnohGeneral;
+extern const struct Tileset gTileset_SinnohRustboro;
+extern const struct Tileset gTileset_SinnohCave;
 #endif //GUARD_tilesets_H

@@ -28,6 +28,7 @@ OreburghCity_EventScript_NPC3::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_Text_NPC3Speaker
 	msgbox OreburghCity_Text_NPC3, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -35,6 +36,9 @@ OreburghCity_EventScript_NPC3::
 
 OreburghCity_Text_NPC3:
 	.string "OREBURGH CITY NPC 3$"
+
+OreburghCity_Text_NPC3Speaker:
+	.string "Machop$"
 
 OreburghCity_EventScript_Sign1::
 	msgbox OreburghCity_Text_Sign1, MSGBOX_SIGN

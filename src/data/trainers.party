@@ -16879,7 +16879,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE201_1 ===
-Name: SCHOOL KID
+Name: Tommy
 Class: School Kid
 Pic: School Kid M
 Gender: Male
@@ -16887,12 +16887,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Starly
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE202_1 ===
-Name: YOUNGSTER
+Name: Tristan
 Class: Youngster
 Pic: Youngster Dp
 Gender: Male
@@ -16900,12 +16900,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Starly
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE202_2 ===
-Name: BUGCATCHER
+Name: Buddy
 Class: Bug Catcher
 Pic: Bug Catcher Dp
 Gender: Male
@@ -16913,8 +16913,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sentret
-Level: 2
+Wurmple
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kricketot
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE202_3 ===
@@ -16926,12 +16930,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
+Shinx
 Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE202_4 ===
-Name: YOUNGSTER
+Name: Logan
 Class: Youngster
 Pic: Youngster Dp
 Gender: Male
@@ -16939,9 +16943,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Growlithe
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Intimidate
 
 === TRAINER_ROUTE203_1 ===
 Name: Madeline

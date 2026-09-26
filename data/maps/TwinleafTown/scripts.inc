@@ -395,6 +395,8 @@ TwinleafTown_EventScript_BarryLeavesHouse::
 	closedoor 5, 10
 	playse SE_WALL_HIT
 	playbgm MUS_RIVAL_THEME, TRUE
+	msgbox TwinleafTown_Text_Thud, MSGBOX_DEFAULT
+	setspeaker SP_NAME_RIVAL
 	msgbox TwinleafTown_Text_ThudGoingToTheLake, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
@@ -408,6 +410,7 @@ TwinleafTown_EventScript_BarryLeavesHouse::
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	applymovement LOCALID_TWINLEAF_BARRY, TwinleafTown_Movement_BarryRunBackAndFacePlayer
 	waitmovement 0
+	setspeaker SP_NAME_RIVAL
 	msgbox TwinleafTown_Text_ForgotSomething, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_TWINLEAF_BARRY, TwinleafTown_Movement_BarryFaceDoor
@@ -427,8 +430,10 @@ TwinleafTown_EventScript_BarryLeavesHouse::
 	releaseall
 	end
 
+TwinleafTown_Text_Thud:
+	.string "THUD!!$"
+
 TwinleafTown_Text_ThudGoingToTheLake:
-	.string "THUD!!\p"
 	.string "What was that about?!\p"
 	.string "Oh, hey, {PLAYER}!\p"
 	.string "Hey! I'm going to the lake!\n"

@@ -1845,3 +1845,39 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/OreburghCity_TopLeftCondo_2F/scripts.inc"
 
 	.include "data/maps/OreburghCity_OreburghMine_2/scripts.inc"
+
+	.include "data/maps/Template_HighRise_1F/scripts.inc"
+
+	.include "data/maps/Template_HighRise_2F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_SouthOfTrainerSchoolCondo_1F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_SouthOfTrainerSchoolCondo_2F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_TrainerSchool/scripts.inc"
+
+	.include "data/maps/JubilifeCity_Condominium_1F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_DexNavCompany_1F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_Condominium_3F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_CondominiumElevator/scripts.inc"
+
+	.include "data/maps/JubilifeCity_Condominium_4F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_TVStation_2F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_DexNavCompany_3F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_DexNavCompany_2F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_TVStation_1F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_Condominium_2F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_BattleDomeLobby/scripts.inc"
+
+	.include "data/maps/JubilifeCity_SouthOfBattleDomeCondo_1F/scripts.inc"
+
+	.include "data/maps/JubilifeCity_SouthOfBattleDomeCondo_2F/scripts.inc"

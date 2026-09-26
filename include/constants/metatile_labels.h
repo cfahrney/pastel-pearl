@@ -320,6 +320,12 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x233
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
 
+// gTileset_Jubilife
+#define METATILE_Jubilife_Door_DexnavHq  0x2AD
+#define METATILE_Jubilife_Door_Gray      0x257
+#define METATILE_Jubilife_Door_Gts       0x240
+#define METATILE_Jubilife_Door_Tan       0x267
+
 // gTileset_LakeVerity
 #define METATILE_LakeVerity_CalmWater  0x211
 #define METATILE_LakeVerity_TallGrass  0x208
@@ -439,9 +445,9 @@
 #define METATILE_MtEmber_CaveEntrance  0x346
 
 // gTileset_Oreburgh
-#define METATILE_Oreburgh_Oreburgh_Door   0x259
-#define METATILE_Oreburgh_Oreburgh_Door2  0x2C1
-#define METATILE_Oreburgh_TallGrass       0x23D
+#define METATILE_Oreburgh_Oreburgh_Door           0x259
+#define METATILE_Oreburgh_Oreburgh_HighRise_Door  0x2AE
+#define METATILE_Oreburgh_TallGrass               0x23D
 
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A
@@ -595,6 +601,10 @@
 // gTileset_SaffronCity
 #define METATILE_SaffronCity_Door         0x284
 #define METATILE_SaffronCity_SilphCoDoor  0x2BC
+
+// gTileset_Sandgem
+#define METATILE_Sandgem_Door_House     0x24D
+#define METATILE_Sandgem_Door_Twinleaf  0x25E
 
 // gTileset_SeaCottage
 #define METATILE_SeaCottage_Teleporter_CableBall_Bottom  0x2BA
@@ -949,6 +959,10 @@
 #define METATILE_SilphCo_VerticalBarrier_TopRight       0x3C1
 #define METATILE_SilphCo_Wall_LeftEdge                  0x347
 #define METATILE_SilphCo_Wall_RightEdge                 0x346
+
+// gTileset_SinnohGeneral
+#define METATILE_SinnohGeneral_Door_PokeCenter  0x061
+#define METATILE_SinnohGeneral_Door_PokeMart    0x041
 
 // gTileset_Slateport
 #define METATILE_Slateport_Door             0x2DC

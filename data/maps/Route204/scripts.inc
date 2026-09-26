@@ -93,6 +93,7 @@ Route204_EventScript_NPC4::
 	faceplayer
 	waitse
 	playmoncry SPECIES_BEAUTIFLY, CRY_MODE_NORMAL
+	setspeaker Route204_Text_NPC4Speaker
 	msgbox Route204_Text_NPC4, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -103,6 +104,7 @@ Route204_EventScript_NPC5::
 	faceplayer
 	waitse
 	playmoncry SPECIES_DUSTOX, CRY_MODE_NORMAL
+	setspeaker Route204_Text_NPC5Speaker
 	msgbox Route204_Text_NPC5, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -119,8 +121,14 @@ Route204_Text_Sign1:
 Route204_Text_NPC4:
 	.string "ROUTE 204 NPC 4$"
 
+Route204_Text_NPC4Speaker:
+	.string "Beautifly$"
+
 Route204_Text_NPC5:
 	.string "ROUTE 204 NPC 5$"
+
+Route204_Text_NPC5Speaker:
+	.string "Dustox$"
 
 Route204_Text_Trainer3Intro:
 	.string "ROUTE 204 TRAINER 3\nwants to battle!$"

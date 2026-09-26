@@ -30,10 +30,17 @@ JubilifeCity_PokemonCenter_1F_EventScript_NPC3::
 	end
 
 JubilifeCity_PokemonCenter_1F_Text_NPC1:
-	.string "POKEMON CENTER 1F NPC 1$"
+	.string "You know how Pokemon have types like\n"
+	.string "Water, Fire, and Grass?\p"
+	.string "They say those types have strengths\n"
+	.string "and weaknesses against other types.$"
 
 JubilifeCity_PokemonCenter_1F_Text_NPC2:
-	.string "POKEMON CENTER 1F NPC 2$"
+	.string "I'd love one of those DexNavs, but I\n"
+	.string "guess I need my own Pokemon first...$"
 
 JubilifeCity_PokemonCenter_1F_Text_NPC3:
-	.string "POKEMON CENTER 1F NPC 3$"
+	.string "You can still catch a Pokemon if you\n"
+	.string "already have six traveling with you.\p"
+	.string "It automatically gets sent to the PC\n"
+	.string "network in Pokemon Centers.$"

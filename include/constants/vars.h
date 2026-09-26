@@ -109,6 +109,7 @@
 //   10  Back on Verity Lakefront, Rowan waits on Route 201
 //   11  Rowan has reclaimed the borrowed Pokemon
 //   12  Mom's homecoming scene done, the player owns their starter
+//   13  Sandgem town tour done, on the way home
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
@@ -165,7 +166,12 @@
 #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
 #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
-#define VAR_UNUSED_0x4083                                0x4083 // Unused Var
+#define VAR_SANDGEM_TOWN_STATE                           0x4083
+// @states Sandgem arrival, from meeting Lucas/Dawn to entering the lab.
+//    0  Player hasn't reached the lab yet
+//    3  Lucas/Dawn escorted the player into the lab
+//    6  Rowan gave the player the Pokedex, Lucas/Dawn left the lab
+//    9  Lucas/Dawn finished the town tour and walked off
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE                           0x4086

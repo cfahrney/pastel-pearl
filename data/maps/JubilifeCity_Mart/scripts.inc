@@ -29,7 +29,13 @@ JubilifeCity_Mart_EventScript_NPC2::
 	end
 
 JubilifeCity_Mart_Text_NPC1:
-	.string "MART NPC 1$"
+	.string "I need potions most of all!\p"
+	.string "If my Pokemon faints, my eyes grow dim\n"
+	.string "and I can't see!\p"
+	.string "Maybe I should get that checked out...$"
 
 JubilifeCity_Mart_Text_NPC2:
-	.string "MART NPC 2$"
+	.string "If you're catching a Pokemon, you have\n"
+	.string "to get its HP down.\p"
+	.string "If you don't, Poke Balls won't be very\n"
+	.string "effective.$"

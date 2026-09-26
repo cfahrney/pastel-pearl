@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_ROUTE202",
-      "offset": 0,
+      "offset": -2,
       "direction": "up"
     }
   ],
@@ -95,6 +95,49 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SandgemTown_EventScript_NPC5",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SANDGEM_TOWN_1"
+    },
+    {
+      "local_id": "LOCALID_SANDGEMTOWN_LUCASDAWN",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 8,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_SANDGEMTOWN_LUCASDAWN",
+      "poe_muted": true
+    },
+    {
+      "local_id": "LOCALID_SANDGEM_BARRY",
+      "graphics_id": "OBJ_EVENT_GFX_BARRY_NORMAL",
+      "x": 8,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_SANDGEM_TOWN_BARRY",
+      "poe_muted": true
     }
   ],
   "warp_events": [
@@ -134,7 +177,44 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_SANDGEM_TOWN_STATE",
+      "var_value": "0",
+      "script": "Route201_EventScript_DawnLucasNoticesPlayerAtY12"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_SANDGEM_TOWN_STATE",
+      "var_value": "0",
+      "script": "Route201_EventScript_DawnLucasNoticesPlayerAtY13"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_SANDGEM_TOWN_STATE",
+      "var_value": "0",
+      "script": "Route201_EventScript_DawnLucasNoticesPlayerAtY14"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_SANDGEM_TOWN_STATE",
+      "var_value": "0",
+      "script": "Route201_EventScript_DawnLucasNoticesPlayerAtY15"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

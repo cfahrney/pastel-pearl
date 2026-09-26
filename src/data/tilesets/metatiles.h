@@ -429,3 +429,18 @@ const u16 gMetatileAttributes_SinnohBuilding[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_SinnohHighRise[] = INCBIN_U16("data/tilesets/secondary/sinnoh_high_rise/metatiles.bin");
 const u16 gMetatileAttributes_SinnohHighRise[] = INCBIN_U16("data/tilesets/secondary/sinnoh_high_rise/metatile_attributes.bin");
+
+const u16 gMetatiles_OreburghGym[] = INCBIN_U16("data/tilesets/secondary/oreburgh_gym/metatiles.bin");
+const u16 gMetatileAttributes_OreburghGym[] = INCBIN_U16("data/tilesets/secondary/oreburgh_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_OreburghMuseum[] = INCBIN_U16("data/tilesets/secondary/oreburgh_museum/metatiles.bin");
+const u16 gMetatileAttributes_OreburghMuseum[] = INCBIN_U16("data/tilesets/secondary/oreburgh_museum/metatile_attributes.bin");
+
+const u16 gMetatiles_SinnohGeneral[] = INCBIN_U16("data/tilesets/primary/sinnoh_general/metatiles.bin");
+const u16 gMetatileAttributes_SinnohGeneral[] = INCBIN_U16("data/tilesets/primary/sinnoh_general/metatile_attributes.bin");
+
+const u16 gMetatiles_SinnohRustboro[] = INCBIN_U16("data/tilesets/secondary/sinnoh_rustboro/metatiles.bin");
+const u16 gMetatileAttributes_SinnohRustboro[] = INCBIN_U16("data/tilesets/secondary/sinnoh_rustboro/metatile_attributes.bin");
+
+const u16 gMetatiles_SinnohCave[] = INCBIN_U16("data/tilesets/secondary/sinnoh_cave/metatiles.bin");
+const u16 gMetatileAttributes_SinnohCave[] = INCBIN_U16("data/tilesets/secondary/sinnoh_cave/metatile_attributes.bin");

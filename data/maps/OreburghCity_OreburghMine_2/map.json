@@ -143,6 +143,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "OreburghCity_OreburghMine_2_EventScript_NPC7",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOP)",
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OreburghCity_OreburghMine_2_EventScript_NPC8",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOP)",
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OreburghCity_OreburghMine_2_EventScript_NPC9",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOP)",
+      "x": 23,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OreburghCity_OreburghMine_2_EventScript_NPC10",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOP)",
+      "x": 24,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OreburghCity_OreburghMine_2_EventScript_NPC11",
+      "flag": "0"
     }
   ],
   "warp_events": [

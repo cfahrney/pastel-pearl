@@ -23,25 +23,30 @@ LakeVerity_EventScript_ArriveAtLake::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkUp2
 	applymovement LOCALID_LAKE_VERITY_BARRY, Common_Movement_WalkUp2
 	waitmovementall
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_WhatsGoingOn, MSGBOX_DEFAULT
 	closemessage
-	call LakeVerity_EventScript_BufferLucasDawnName
 	setfollowernpc LOCALID_LAKE_VERITY_BARRY, FNPC_ALL
 	special SpawnCameraObject
 	applymovement LOCALID_CAMERA, LakeVerity_Movement_CameraPanToRowan
 	waitmovement 0
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_NothingUnusual, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox LakeVerity_Text_RowanMayHaveBeenMistaken, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_PROFESSOR_ROWAN, Common_Movement_FaceRight
 	waitmovement 0
+	setspeaker SP_NAME_ROWAN
 	msgbox LakeVerity_Text_RowanWereLeaving, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, Common_Movement_FaceLeft
 	waitmovement 0
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_LucasDawnFourYears, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox LakeVerity_Text_RowanManyRarePokemon, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_HIDE_LAKE_VERITY_SUITCASE
@@ -55,6 +60,7 @@ LakeVerity_EventScript_ArriveAtLake::
 	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, LakeVerity_Movement_BarryStepRightAndFaceLeft
 	waitmovementall
+	setspeaker SP_NAME_ROWAN
 	msgbox LakeVerity_Text_ExcuseUsLetUsPass, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_PROFESSOR_ROWAN, LakeVerity_Movement_RowanExitToWarp
@@ -67,6 +73,7 @@ LakeVerity_EventScript_ArriveAtLake::
 	waitmovement 0
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnLookAround
 	waitmovement 0
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_SorryFolks, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnExitToWarp
@@ -76,26 +83,33 @@ LakeVerity_EventScript_ArriveAtLake::
 	setflag FLAG_HIDE_LAKE_VERITY_LUCASDAWN
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, LakeVerity_Movement_BarryReturnToPosition
 	waitmovement 0
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_WhatWasThatAbout, MSGBOX_DEFAULT
 	closemessage
 	delay 30
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceUp
 	waitmovement 0
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_LetsGoCheckThisOut, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceLeft
 	waitmovement 0
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryEllipsis, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryTallGrassWarning, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER, LakeVerity_Movement_PlayerEnterGrass
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, LakeVerity_Movement_BarryEnterGrass
 	waitmovementall
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_ItsABriefcase, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_TheyForgotItHere, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_HeardThemSayProfessor, MSGBOX_DEFAULT
 	closemessage
 	@ Spawns both STARLY and flies them in, one toward the player from the
@@ -112,12 +126,16 @@ LakeVerity_EventScript_ArriveAtLake::
 	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceRight
 	waitmovementall
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_StarlyWaaah, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_WhatsGoingOnStarly, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_LookPokeBalls, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_WhichOneDoYouWant, MSGBOX_DEFAULT
 	closemessage
 	@ special ChooseStarter gives the player their starter and runs the
@@ -139,12 +157,16 @@ LakeVerity_EventScript_ArriveAtLake::
 	@ species that counters it, for BARRY's brag line below.
 	bufferleadmonspeciesname STR_VAR_1
 	call LakeVerity_EventScript_BufferCounterStarterName
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryFwaaah, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryMineWasTougher, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryOtherPeoplesPokemon, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryWeHadToUseThem, MSGBOX_DEFAULT
 	closemessage
 	@ LUCAS/DAWN returns for the briefcase; BARRY sidesteps to face them.
@@ -156,18 +178,24 @@ LakeVerity_EventScript_ArriveAtLake::
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, LakeVerity_Movement_BarryStepAsideForLucasDawn
 	waitmovementall
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_LucasDawnWhewFoundBriefcase, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_LucasDawnProfessorWouldveGoneThroughRoof, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnFidget
 	waitmovement 0
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_LucasDawnHunhWhaaaat, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_LucasDawnDidYouUseThesePokemon, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_LucasDawnHowExplainToProfessor, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ASSISTANT
 	msgbox LakeVerity_Text_LucasDawnIllTakeThisBriefcase, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, Common_Movement_FaceLeft
@@ -182,13 +210,16 @@ LakeVerity_EventScript_ArriveAtLake::
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnLeaveReturnPath
 	waitmovement 0
 	removeobject LOCALID_LAKE_VERITY_LUCASDAWN
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryWhatWasThatAboutNow, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, LakeVerity_Movement_BarryApproachPlayerAfterBattle
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryDontKnowLetsGetOutOfHere, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryPokemonGotHurt, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkDown
@@ -203,20 +234,6 @@ LakeVerity_EventScript_ArriveAtLake::
 	waitstate
 	releaseall
 	end
-
-LakeVerity_EventScript_BufferLucasDawnName::
-	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, LakeVerity_EventScript_BufferDawnName
-	goto_if_eq VAR_RESULT, FEMALE, LakeVerity_EventScript_BufferLucasName
-	end
-
-LakeVerity_EventScript_BufferDawnName::
-	bufferstring STR_VAR_1, LakeVerity_Text_Dawn
-	return
-
-LakeVerity_EventScript_BufferLucasName::
-	bufferstring STR_VAR_1, LakeVerity_Text_Lucas
-	return
 
 LakeVerity_EventScript_BufferCounterStarterName::
 	goto_if_eq VAR_STARTER_MON, 0, LakeVerity_EventScript_BufferCounterStarterFire
@@ -236,12 +253,6 @@ LakeVerity_EventScript_BufferCounterStarterGrass::
 	bufferspeciesname STR_VAR_2, SPECIES_TURTWIG
 	return
 
-LakeVerity_Text_Dawn:
-	.string "DAWN$"
-
-LakeVerity_Text_Lucas:
-	.string "LUCAS$"
-
 LakeVerity_Text_WhatsGoingOn:
 	.string "What's going on…?$"
 
@@ -260,7 +271,7 @@ LakeVerity_Text_RowanMayHaveBeenMistaken:
 	.string "have seen the lake.$"
 
 LakeVerity_Text_RowanWereLeaving:
-	.string "{STR_VAR_1}, we're leaving.$"
+	.string "{ASSISTANT}, we're leaving.$"
 
 LakeVerity_Text_LucasDawnFourYears:
 	.string "Professor, you've been gone\n"

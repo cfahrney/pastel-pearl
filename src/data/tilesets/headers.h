@@ -1618,3 +1618,58 @@ const struct Tileset gTileset_SinnohHighRise =
     .metatileAttributes = gMetatileAttributes_SinnohHighRise,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_OreburghGym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_OreburghGym,
+    .palettes = gTilesetPalettes_OreburghGym,
+    .metatiles = gMetatiles_OreburghGym,
+    .metatileAttributes = gMetatileAttributes_OreburghGym,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_OreburghMuseum =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_OreburghMuseum,
+    .palettes = gTilesetPalettes_OreburghMuseum,
+    .metatiles = gMetatiles_OreburghMuseum,
+    .metatileAttributes = gMetatileAttributes_OreburghMuseum,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_SinnohGeneral =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_SinnohGeneral,
+    .palettes = gTilesetPalettes_SinnohGeneral,
+    .metatiles = gMetatiles_SinnohGeneral,
+    .metatileAttributes = gMetatileAttributes_SinnohGeneral,
+    .callback = InitTilesetAnim_General,
+};
+
+const struct Tileset gTileset_SinnohRustboro =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SinnohRustboro,
+    .palettes = gTilesetPalettes_SinnohRustboro,
+    .metatiles = gMetatiles_SinnohRustboro,
+    .metatileAttributes = gMetatileAttributes_SinnohRustboro,
+    .callback = InitTilesetAnim_Rustboro,
+};
+
+const struct Tileset gTileset_SinnohCave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SinnohCave,
+    .palettes = gTilesetPalettes_SinnohCave,
+    .metatiles = gMetatiles_SinnohCave,
+    .metatileAttributes = gMetatileAttributes_SinnohCave,
+    .callback = InitTilesetAnim_Cave,
+};

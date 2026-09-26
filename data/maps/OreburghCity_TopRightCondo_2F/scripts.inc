@@ -18,6 +18,7 @@ OreburghCity_TopRightCondo_2F_EventScript_NPC4::
 	faceplayer
 	waitse
 	playmoncry SPECIES_ROSELIA, CRY_MODE_NORMAL
+	setspeaker OreburghCity_TopRightCondo_2F_Text_NPC4Speaker
 	msgbox OreburghCity_TopRightCondo_2F_Text_NPC4, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -34,3 +35,6 @@ OreburghCity_TopRightCondo_2F_Text_NPC3:
 
 OreburghCity_TopRightCondo_2F_Text_NPC4:
 	.string "TOP RIGHT CONDO 2F NPC 4$"
+
+OreburghCity_TopRightCondo_2F_Text_NPC4Speaker:
+	.string "Roselia$"

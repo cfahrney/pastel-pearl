@@ -493,9 +493,9 @@ static const struct MenuAction sMenuActions_Gender[] = {
     {gText_Girl, {NULL}}
 };
 
-static const u8 *const sDefaultPlayerName_Lucas = COMPOUND_STRING("LUCAS");
-static const u8 *const sDefaultPlayerName_Dawn = COMPOUND_STRING("DAWN");
-static const u8 *const sDefaultRivalName_Barry = COMPOUND_STRING("BARRY");
+static const u8 *const sDefaultPlayerName_Lucas = COMPOUND_STRING("Lucas");
+static const u8 *const sDefaultPlayerName_Dawn = COMPOUND_STRING("Dawn");
+static const u8 *const sDefaultRivalName_Barry = COMPOUND_STRING("Barry");
 
 static const u8 *const sMalePresetNames[] = {
     COMPOUND_STRING("STU"),

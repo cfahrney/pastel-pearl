@@ -13,6 +13,8 @@ extern const u8 gText_ExpandedPlaceholder_Magma[];
 extern const u8 gText_ExpandedPlaceholder_Archie[];
 extern const u8 gText_ExpandedPlaceholder_Maxie[];
 extern const u8 gText_ExpandedPlaceholder_Kyogre[];
+extern const u8 gText_ExpandedPlaceholder_Lucas[];
+extern const u8 gText_ExpandedPlaceholder_Dawn[];
 extern const u8 gText_ExpandedPlaceholder_Groudon[];
 extern const u8 gText_ExpandedPlaceholder_Brendan[];
 extern const u8 gText_ExpandedPlaceholder_May[];
@@ -215,7 +217,8 @@ extern const u8 gText_Birch_SoItsRivalName[];
 extern const u8 gText_Birch_YourePlayer[];
 extern const u8 gText_Birch_AreYouReady[];
 
-extern const u8 gText_BirchInTrouble[];
+extern const u8 gText_StarterIntro[];
+extern const u8 gText_StarterWhichOne[];
 extern const u8 gText_ConfirmStarterChoice[];
 
 // mystery event menu text

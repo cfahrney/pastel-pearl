@@ -79,9 +79,9 @@ static void CB2_SkipToNewGame(void)
     static const u8 sText_PlayerFemale[] = _("LEAF");
     static const u8 sText_Rival[] = _("BLUE");
 #else
-    static const u8 sText_PlayerMale[] = _("LUCAS");
-    static const u8 sText_PlayerFemale[] = _("DAWN");
-    static const u8 sText_Rival[] = _("BARRY");
+    static const u8 sText_PlayerMale[] = _("Lucas");
+    static const u8 sText_PlayerFemale[] = _("Dawn");
+    static const u8 sText_Rival[] = _("Barry");
 #endif  // IS_FRLG
 
     if (!UpdatePaletteFade())

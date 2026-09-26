@@ -78,6 +78,7 @@ Route201_EventScript_BarryNoticesPlayerAtX25::
 	goto Route201_EventScript_BarryJoinsPlayer
 
 Route201_EventScript_BarryJoinsPlayer:
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_RedGyaradosLake, MSGBOX_DEFAULT
 	closemessage
 	setfollowernpc LOCALID_ROUTE201_BARRY, FNPC_ALL
@@ -132,6 +133,7 @@ Route201_Movement_BarryToX25:
 Route201_EventScript_BarryStopsPlayerFromGrass::
 	lockall
 	facefollowernpc
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_DontGoInTallGrass, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Route201_Movement_StepBackLeft
@@ -146,6 +148,7 @@ Route201_EventScript_BarryStopsPlayerFromGrass::
 Route201_EventScript_BarryStopsPlayerFromLeaving::
 	lockall
 	facefollowernpc
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_ForgetGoingHome, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER, Route201_Movement_WalkUp
@@ -186,6 +189,7 @@ Route201_EventScript_RowanNoticesPlayerAtY8::
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_ExclamationMark
 	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanFaceLeftAndPause
 	waitmovementall
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_HeyItsThosePeople, MSGBOX_DEFAULT
 	closemessage
 	delay 16
@@ -199,6 +203,7 @@ Route201_EventScript_RowanNoticesPlayerAtY9::
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_ExclamationMark
 	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanFaceLeftAndPause
 	waitmovementall
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_HeyItsThosePeople, MSGBOX_DEFAULT
 	closemessage
 	delay 16
@@ -208,21 +213,27 @@ Route201_EventScript_RowanNoticesPlayerAtY9::
 	goto Route201_EventScript_RowanConfrontsPlayerAtY9
 
 Route201_EventScript_RowanConfrontsPlayerAtY8:
-	call Route201_EventScript_BufferAssistantName
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHmm, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHeardFromAssistant, MSGBOX_DEFAULT
 	closemessage
 	bufferleadmonspeciesname STR_VAR_2
 	call Route201_EventScript_BufferBarryCounterStarterName
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHmSpecies, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanEllipsis, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHmm, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanISee, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanGoingBackToLab, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanExitRight
@@ -232,19 +243,24 @@ Route201_EventScript_RowanConfrontsPlayerAtY8:
 	@ Safe to set now, since the flag only blocks respawning and doesn't
 	@ affect an object that's already active.
 	setflag FLAG_HIDE_ROUTE201_LUCASDAWNROWAN
+	setspeaker SP_NAME_ASSISTANT
 	msgbox Route201_Text_UhYeaOfCourse, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE201_LUCASDAWN, Common_Movement_FaceLeft
 	waitmovement 0
+	setspeaker SP_NAME_ASSISTANT
 	msgbox Route201_Text_VisitOurLab, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE201_LUCASDAWN, Route201_Movement_LucasDawnExitRight
 	waitmovement 0
 	removeobject LOCALID_ROUTE201_LUCASDAWN
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryWhatWasThatCraziness, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryCouldveJustYelled, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryWeShouldGoHomeToo, MSGBOX_DEFAULT
 	closemessage
 	@ Drops BARRY's follower status so the player's lead POKéMON takes over
@@ -257,21 +273,27 @@ Route201_EventScript_RowanConfrontsPlayerAtY8:
 	end
 
 Route201_EventScript_RowanConfrontsPlayerAtY9:
-	call Route201_EventScript_BufferAssistantName
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHmm, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHeardFromAssistant, MSGBOX_DEFAULT
 	closemessage
 	bufferleadmonspeciesname STR_VAR_2
 	call Route201_EventScript_BufferBarryCounterStarterName
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHmSpecies, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanEllipsis, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanHmm, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanISee, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_ROWAN
 	msgbox Route201_Text_RowanGoingBackToLab, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE201_ROWAN, Route201_Movement_RowanExitRight
@@ -281,19 +303,24 @@ Route201_EventScript_RowanConfrontsPlayerAtY9:
 	@ Safe to set now, since the flag only blocks respawning and doesn't
 	@ affect an object that's already active.
 	setflag FLAG_HIDE_ROUTE201_LUCASDAWNROWAN
+	setspeaker SP_NAME_ASSISTANT
 	msgbox Route201_Text_UhYeaOfCourse, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE201_LUCASDAWN, Common_Movement_FaceLeft
 	waitmovement 0
+	setspeaker SP_NAME_ASSISTANT
 	msgbox Route201_Text_VisitOurLab, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE201_LUCASDAWN, Route201_Movement_LucasDawnExitRight
 	waitmovement 0
 	removeobject LOCALID_ROUTE201_LUCASDAWN
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryWhatWasThatCraziness, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryCouldveJustYelled, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryWeShouldGoHomeToo, MSGBOX_DEFAULT
 	closemessage
 	@ Drops BARRY's follower status so the player's lead POKéMON takes over
@@ -304,20 +331,6 @@ Route201_EventScript_RowanConfrontsPlayerAtY9:
 	waitstate
 	releaseall
 	end
-
-Route201_EventScript_BufferAssistantName:
-	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, Route201_EventScript_BufferDawnName
-	goto_if_eq VAR_RESULT, FEMALE, Route201_EventScript_BufferLucasName
-	end
-
-Route201_EventScript_BufferDawnName:
-	bufferstring STR_VAR_1, Route201_Text_Dawn
-	return
-
-Route201_EventScript_BufferLucasName:
-	bufferstring STR_VAR_1, Route201_Text_Lucas
-	return
 
 @ Gets the species name that counters the player's starter, for BARRY's
 @ brag line. Same type-counter logic as
@@ -340,12 +353,6 @@ Route201_EventScript_BufferCounterGrass:
 	bufferspeciesname STR_VAR_3, SPECIES_TURTWIG
 	return
 
-Route201_Text_Dawn:
-	.string "DAWN$"
-
-Route201_Text_Lucas:
-	.string "LUCAS$"
-
 Route201_Text_HeyItsThosePeople:
 	.string "Hey, it's those people!\n"
 	.string "Is that old guy staring at\l"
@@ -355,7 +362,7 @@ Route201_Text_RowanHmm:
 	.string "Hmm…$"
 
 Route201_Text_RowanHeardFromAssistant:
-	.string "I heard from {STR_VAR_1} that you\n"
+	.string "I heard from {ASSISTANT} that you\n"
 	.string "used our POKéMON? Let me see\l"
 	.string "them, please.$"
 
@@ -371,7 +378,7 @@ Route201_Text_RowanISee:
 	.string "That's how it is…$"
 
 Route201_Text_RowanGoingBackToLab:
-	.string "{STR_VAR_1}!\n"
+	.string "{ASSISTANT}!\n"
 	.string "I'm going back to my lab!$"
 
 Route201_Text_UhYeaOfCourse:
@@ -463,16 +470,13 @@ Route201_EventScript_Trainer1::
 	end
 
 Route201_Text_Trainer1Intro:
-	.string "ROUTE 201 TRAINER 1\n"
-	.string "wants to battle!$"
+	.string "I'm still new to this, okay?$"
 
 Route201_Text_Trainer1Defeated:
-	.string "ROUTE 201 TRAINER 1\n"
-	.string "was defeated!$"
+	.string "Dang, you're really good...$"
 
 Route201_Text_Trainer1PostBattle:
-	.string "ROUTE 201 TRAINER 1\n"
-	.string "has nothing else to say.$"
+	.string "Me and Starly are gonna train real hard.$"
 
 Route201_EventScript_NPC1::
 	msgbox Route201_Text_NPC1, MSGBOX_NPC

@@ -30,6 +30,7 @@ OreburghCity_Museum_EventScript_NPC7::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MIME_JR, CRY_MODE_NORMAL
+	setspeaker OreburghCity_Museum_Text_NPC7Speaker
 	msgbox OreburghCity_Museum_Text_NPC7, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -40,6 +41,7 @@ OreburghCity_Museum_EventScript_NPC8::
 	faceplayer
 	waitse
 	playmoncry SPECIES_SHIELDON, CRY_MODE_NORMAL
+	setspeaker OreburghCity_Museum_Text_NPC8Speaker
 	msgbox OreburghCity_Museum_Text_NPC8, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -58,13 +60,20 @@ OreburghCity_Museum_Text_NPC4:
 	.string "MUSEUM NPC 4$"
 
 OreburghCity_Museum_Text_NPC5:
-	.string "MUSEUM NPC 5$"
+	.string "Mime Jr. LOVES the museum. We come here\n"
+	.string "at least once a week!$"
 
 OreburghCity_Museum_Text_NPC6:
 	.string "MUSEUM NPC 6$"
 
 OreburghCity_Museum_Text_NPC7:
-	.string "MUSEUM NPC 7$"
+	.string "Mime mime!$"
+
+OreburghCity_Museum_Text_NPC7Speaker:
+	.string "Mime Jr.$"
 
 OreburghCity_Museum_Text_NPC8:
-	.string "MUSEUM NPC 8$"
+	.string "Sheild?$"
+
+OreburghCity_Museum_Text_NPC8Speaker:
+	.string "Shieldon$"

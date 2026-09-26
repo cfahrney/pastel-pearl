@@ -34,20 +34,28 @@ TwinleafTown_PlayerHouse_1F_EventScript_MomHomecoming::
 	applymovement LOCALID_PLAYER_MOM, TwinleafTown_PlayerHouse_1F_Movement_MomWalksToCenterAndTurns
 	applymovement LOCALID_PLAYER, TwinleafTown_PlayerHouse_1F_Movement_PlayerFollowsMom
 	waitmovementall
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomWhatsUpDear, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomEllipsis, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomWow, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomGladUnharmed, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomProfessorRowan, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomHeardOfHim, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomVisitSandgem, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomDontWorry, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_TWINLEAF_TOWN_STATE, 12
@@ -143,19 +151,25 @@ TwinleafTown_PlayerHouse_1F_EventScript_MomGivesRunningShoes::
 	playse SE_PIN
 	applymovement LOCALID_PLAYER_MOM, TwinleafTown_PlayerHouse_1F_Movement_MomGivesShoes
 	waitmovement LOCALID_PLAYER_MOM
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomExclaimsPlayerName, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomRivalCameCalling, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomDontKnowWhatItWasAbout, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomPleaseWearThese, MSGBOX_DEFAULT
+	setspeaker SP_NAME_NONE
 	playfanfare MUS_OBTAIN_ITEM
 	message TwinleafTown_PlayerHouse_1F_Text_ReceivedRunningShoes
 	waitfanfare
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomPressBButton, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER_MOM, TwinleafTown_PlayerHouse_1F_Movement_MomReturnsToSpot
@@ -176,8 +190,10 @@ TwinleafTown_PlayerHouse_1F_EventScript_MomDoorReminder::
 	waitmovement LOCALID_PLAYER_MOM
 	applymovement LOCALID_PLAYER, TwinleafTown_PlayerHouse_1F_Movement_PlayerFacesMomAtDoor
 	waitmovement LOCALID_PLAYER
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomOhYesPlayerName, MSGBOX_DEFAULT
 	closemessage
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomDontGoInTallGrass, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE, 2
@@ -270,16 +286,19 @@ TwinleafTown_PlayerHouse_1F_EventScript_MomNothingToSayYet::
 	end
 
 TwinleafTown_PlayerHouse_1F_EventScript_MomImpatientRival::
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomImpatientRival, MSGBOX_NPC
 	end
 
 TwinleafTown_PlayerHouse_1F_EventScript_MomWhileBarryGone::
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomIsntRivalWaiting, MSGBOX_NPC
 	end
 
 TwinleafTown_PlayerHouse_1F_EventScript_MomHomeSafe::
 	goto_if_unset FLAG_TWINLEAF_TOWN_PLAYER_HOUSE_MOM_MENTIONED_SANDGEM, TwinleafTown_PlayerHouse_1F_EventScript_MomOffersRest
 	bufferleadmonspeciesname STR_VAR_1
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomSandgemNotFar, MSGBOX_NPC
 	end
 
@@ -290,6 +309,7 @@ TwinleafTown_PlayerHouse_1F_EventScript_MomHomeSafe::
 TwinleafTown_PlayerHouse_1F_EventScript_MomOffersRest::
 	lock
 	faceplayer
+	setspeaker SP_NAME_MOM
 	msgbox TwinleafTown_PlayerHouse_1F_Text_MomWelcomeHomeRest, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -325,10 +345,14 @@ TwinleafTown_PlayerHouse_1F_EventScript_NPC1::
 	faceplayer
 	waitse
 	playmoncry SPECIES_GLAMEOW, CRY_MODE_NORMAL
+	setspeaker TwinleafTown_PlayerHouse_1F_Text_NPC1Speaker
 	msgbox TwinleafTown_PlayerHouse_1F_Text_NPC1, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
 
 TwinleafTown_PlayerHouse_1F_Text_NPC1:
-	.string "Glammy: Glaaaam!$"
+	.string "Glaaam!$"
+
+TwinleafTown_PlayerHouse_1F_Text_NPC1Speaker:
+	.string "Glameow$"
