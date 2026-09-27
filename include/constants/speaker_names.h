@@ -8,6 +8,7 @@ enum SpeakerNames {
     SP_NAME_RIVAL,
     SP_NAME_ROWAN,
     SP_NAME_ASSISTANT,
+    SP_NAME_RIVAL_MOM,
     SP_NAME_COUNT
 };
 

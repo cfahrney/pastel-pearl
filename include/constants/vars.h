@@ -110,6 +110,7 @@
 //   11  Rowan has reclaimed the borrowed Pokemon
 //   12  Mom's homecoming scene done, the player owns their starter
 //   13  Sandgem town tour done, on the way home
+//   14  Mom gave the Exp. Share and the neighbor handed over the parcel for Barry
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051

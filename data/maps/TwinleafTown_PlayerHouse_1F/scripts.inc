@@ -6,8 +6,17 @@ TwinleafTown_PlayerHouse_1F_MapScripts::
 @ MOM idles at (6,5) normally, and gets relocated to (1,3) here for the
 @ homecoming scene when VAR_TWINLEAF_TOWN_STATE == 11.
 TwinleafTown_PlayerHouse_1F_OnTransition:
+	@ The neighbor only exists during the AfterSandgemTour scene.
+	setflag FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
 	call_if_eq VAR_TWINLEAF_TOWN_STATE, 11, TwinleafTown_PlayerHouse_1F_EventScript_PositionMomForHomecoming
+	call_if_ge VAR_TWINLEAF_TOWN_STATE, 13, TwinleafTown_PlayerHouse_1F_EventScript_RestoreMomSpot
 	end
+
+@ Undo the homecoming relocation (setobjectxyperm is permanent).
+TwinleafTown_PlayerHouse_1F_EventScript_RestoreMomSpot:
+	setobjectxyperm LOCALID_PLAYER_MOM, 6, 5
+	setobjectmovementtype LOCALID_PLAYER_MOM, MOVEMENT_TYPE_FACE_UP
+	return
 
 TwinleafTown_PlayerHouse_1F_EventScript_PositionMomForHomecoming:
 	setobjectxyperm LOCALID_PLAYER_MOM, 1, 3
@@ -17,6 +26,7 @@ TwinleafTown_PlayerHouse_1F_EventScript_PositionMomForHomecoming:
 TwinleafTown_PlayerHouse_1F_OnFrame:
 	map_script_2 VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE, 0, TwinleafTown_PlayerHouse_1F_EventScript_MomGivesRunningShoes
 	map_script_2 VAR_TWINLEAF_TOWN_STATE, 11, TwinleafTown_PlayerHouse_1F_EventScript_MomHomecoming
+	map_script_2 VAR_TWINLEAF_TOWN_STATE, 13, TwinleafTown_PlayerHouse_1F_EventScript_HomeAfterSandgemTour
 	.2byte 0
 
 @ Triggers when VAR_TWINLEAF_TOWN_STATE == 11, right after the player
@@ -356,3 +366,176 @@ TwinleafTown_PlayerHouse_1F_Text_NPC1:
 
 TwinleafTown_PlayerHouse_1F_Text_NPC1Speaker:
 	.string "Glameow$"
+
+@ VAR_TWINLEAF_TOWN_STATE == 13: the moment the player walks in from the Sandgem tour they
+@ walk to MOM at (5,5), MOM heals them, then the scene below runs. Fixed positions on purpose,
+@ so nothing depends on which side the player would have talked to MOM from.
+TwinleafTown_PlayerHouse_1F_EventScript_HomeAfterSandgemTour::
+	lockall
+	applymovement LOCALID_PLAYER, TwinleafTown_PlayerHouse_1F_Movement_PlayerWalksToMom
+	waitmovement LOCALID_PLAYER
+	applymovement LOCALID_PLAYER_MOM, Common_Movement_FaceLeft
+	waitmovement LOCALID_PLAYER_MOM
+	setspeaker SP_NAME_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_MomWelcomeHomeRest, MSGBOX_DEFAULT
+	closemessage
+	fadescreen FADE_TO_BLACK
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
+	fadescreen FADE_FROM_BLACK
+	goto TwinleafTown_PlayerHouse_1F_EventScript_AfterSandgemTour
+
+TwinleafTown_PlayerHouse_1F_Movement_PlayerWalksToMom:
+	walk_up
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+@ MOM gives the EXP. SHARE, then the neighbor drops by with a parcel for RIVAL.
+TwinleafTown_PlayerHouse_1F_EventScript_AfterSandgemTour::
+	setspeaker SP_NAME_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_TourMomWhatsUp, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_EXP_SHARE
+	@ Starts switched on; the player can toggle it from the Bag.
+	setflag FLAG_EXP_SHARE_ON
+	setspeaker SP_NAME_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_TourMomAboutExpShare, MSGBOX_DEFAULT
+	closemessage
+	@ Spawn the neighbor at the door; her object sits off-map and hidden until now.
+	setobjectxyperm LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, 5, 8
+	setobjectmovementtype LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, MOVEMENT_TYPE_FACE_UP
+	clearflag FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
+	addobject LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
+	playse SE_EXIT
+	waitse
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	applymovement LOCALID_PLAYER_MOM, TwinleafTown_PlayerHouse_1F_Movement_MomNoticesNeighbor
+	waitmovementall
+	applymovement LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, TwinleafTown_PlayerHouse_1F_Movement_NeighborWalksIn
+	waitmovement LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
+	setspeaker SP_NAME_RIVAL_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_NeighborExcuseMe, MSGBOX_DEFAULT
+	closemessage
+	setspeaker SP_NAME_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_MomNoHesNot, MSGBOX_DEFAULT
+	closemessage
+	setspeaker SP_NAME_RIVAL_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_NeighborMustHaveLeft, MSGBOX_DEFAULT
+	closemessage
+	setspeaker SP_NAME_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_MomPlayerWillDeliver, MSGBOX_DEFAULT
+	closemessage
+	@ MOM (6,5) and the player (5,5) look at each other.
+	applymovement LOCALID_PLAYER_MOM, Common_Movement_FaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovementall
+	setspeaker SP_NAME_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_MomWontYou, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	applymovement LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, TwinleafTown_PlayerHouse_1F_Movement_NeighborReacts
+	waitmovementall
+	setspeaker SP_NAME_RIVAL_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_NeighborReallyForMe, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_PARCEL
+	setspeaker SP_NAME_RIVAL_MOM
+	msgbox TwinleafTown_PlayerHouse_1F_Text_NeighborLetMeThink, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, TwinleafTown_PlayerHouse_1F_Movement_NeighborLeaves
+	waitmovement LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
+	playse SE_EXIT
+	removeobject LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
+	setflag FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
+	setvar VAR_TWINLEAF_TOWN_STATE, 14
+	releaseall
+	end
+
+TwinleafTown_PlayerHouse_1F_Text_TourMomWhatsUp:
+	.string "What's up, {PLAYER}?\p"
+	.string "…\p"
+	.string "Wow. PROFESSOR ROWAN asked you to\n"
+	.string "do something that big.\p"
+	.string "OK, dear, go for it!\n"
+	.string "Your mom's got your back!\p"
+	.string "Oh, I know! {PLAYER}, I've got\n"
+	.string "something that you'll find useful.$"
+
+TwinleafTown_PlayerHouse_1F_Text_TourMomAboutExpShare:
+	.string "That's an Exp. Share! It will\n"
+	.string "allow all the POKéMON on your team\l"
+	.string "to receive Exp. Points from\l"
+	.string "battles.\p"
+	.string "Don't worry, you can toggle it off\n"
+	.string "in your Bag if you'd prefer.\p"
+	.string "Anywho…\n"
+	.string "I'll be all right by myself, so\l"
+	.string "you go and enjoy your adventure!\p"
+	.string "When you're exposed to new things,\n"
+	.string "and experience new sensations… It\l"
+	.string "makes your mother happy too.\p"
+	.string "… But come back sometimes.\p"
+	.string "I would like to see the kinds of\n"
+	.string "POKéMON you've caught, dear.$"
+
+TwinleafTown_PlayerHouse_1F_Text_NeighborExcuseMe:
+	.string "Excuse me.\n"
+	.string "Is my little {RIVAL} here?$"
+
+TwinleafTown_PlayerHouse_1F_Text_MomNoHesNot:
+	.string "Oh?\n"
+	.string "No, he's not…$"
+
+TwinleafTown_PlayerHouse_1F_Text_NeighborMustHaveLeft:
+	.string "Oh…\n"
+	.string "Then, he must have left already…\l"
+	.string "What to do…\p"
+	.string "That boy shouted about going on an\n"
+	.string "adventure, then he bolted.\p"
+	.string "He's so headstrong and reckless… I\n"
+	.string "at least wanted him to take this…$"
+
+TwinleafTown_PlayerHouse_1F_Text_MomPlayerWillDeliver:
+	.string "Not to worry, {PLAYER} will deliver\n"
+	.string "that to him.$"
+
+TwinleafTown_PlayerHouse_1F_Text_MomWontYou:
+	.string "Won't you, {PLAYER}?$"
+
+TwinleafTown_PlayerHouse_1F_Text_NeighborReallyForMe:
+	.string "Oh, really? You'd do that for me?\p"
+	.string "{PLAYER}, please take this to\n"
+	.string "{RIVAL} for me.$"
+
+TwinleafTown_PlayerHouse_1F_Text_NeighborLetMeThink:
+	.string "Let me think…\p"
+	.string "Knowing my boy, he would probably\n"
+	.string "head straight to JUBILIFE CITY…\p"
+	.string "OK, please take that to my\n"
+	.string "{RIVAL}.$"
+
+TwinleafTown_PlayerHouse_1F_Movement_MomNoticesNeighbor:
+	face_down
+	emote_exclamation_mark
+	step_end
+
+TwinleafTown_PlayerHouse_1F_Movement_NeighborWalksIn:
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+TwinleafTown_PlayerHouse_1F_Movement_NeighborReacts:
+	face_up
+	walk_in_place_up
+	step_end
+
+TwinleafTown_PlayerHouse_1F_Movement_NeighborLeaves:
+	face_down
+	walk_down
+	walk_down
+	step_end

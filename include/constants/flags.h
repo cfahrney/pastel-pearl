@@ -91,8 +91,8 @@
 #define FLAG_HIDE_SANDGEMTOWN_LUCASDAWN     0x45
 #define FLAG_HIDE_SANDGEM_TOWN_BARRY        0x46
 #define FLAG_HIDE_PROFESSORROWANSLAB_LUCASDAWN    0x47
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
+#define FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM    0x48
+#define FLAG_EXP_SHARE_ON    0x49
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
