@@ -40261,29 +40261,29 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_PELIPPER"
               }
             ]
           },
@@ -40321,54 +40321,54 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 3,
+                "max_level": 7,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_FINNEON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 10,
+                "max_level": 25,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_LUMINEON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_CLAMPERL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_LUMINEON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_LUMINEON"
               }
             ]
           }
@@ -40449,64 +40449,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_BIDOOF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
                 "species": "SPECIES_BIDOOF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_KRICKETOT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_BUDEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_BUDEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_KRICKETOT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_BUDEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_BUDEW"
               }
             ]
           }
@@ -40518,64 +40518,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_BIDOOF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
                 "species": "SPECIES_BIDOOF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_STARLY"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_BUDEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_BUDEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_STARLY"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_BUDEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_BUDEW"
               }
             ]
           },
@@ -40583,29 +40583,29 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_PSYDUCK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_PSYDUCK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_PSYDUCK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_PSYDUCK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GOLDUCK"
               }
             ]
           },
@@ -40643,54 +40643,54 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_GOLDEEN"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_GOLDEEN"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_SEAKING"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_SEAKING"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 40,
+                "max_level": 55,
+                "species": "SPECIES_GYARADOS"
               }
             ]
           }
@@ -40702,64 +40702,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_BIDOOF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
                 "species": "SPECIES_BIDOOF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_KRICKETOT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_BUDEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_KRICKETOT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_BUDEW"
               }
             ]
           }
@@ -40771,64 +40771,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_KRICKETOT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_KRICKETUNE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_BRONZOR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_BRONZOR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 16,
+                "max_level": 16,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 16,
+                "max_level": 16,
+                "species": "SPECIES_PONYTA"
               }
             ]
           }
@@ -40840,64 +40840,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_KRICKETUNE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_BRONZOR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_BRONZOR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 16,
+                "max_level": 16,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 16,
+                "max_level": 16,
+                "species": "SPECIES_PONYTA"
               }
             ]
           },
@@ -41024,64 +41024,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_KRICKETUNE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_KRICKETUNE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_BRONZOR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_BRONZOR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 16,
+                "max_level": 16,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 16,
+                "max_level": 16,
+                "species": "SPECIES_PONYTA"
               }
             ]
           }
@@ -41093,64 +41093,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_GEODUDE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_PSYDUCK"
               }
             ]
           }
@@ -41162,64 +41162,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_GEODUDE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_PSYDUCK"
               }
             ]
           },
@@ -41227,29 +41227,29 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_PSYDUCK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_GOLBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_GOLDUCK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_GOLDUCK"
               }
             ]
           },
@@ -41287,54 +41287,54 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 3,
+                "max_level": 7,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_BARBOACH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 10,
+                "max_level": 25,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_WHISCASH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 40,
+                "max_level": 55,
+                "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_WHISCASH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_WHISCASH"
               }
             ]
           }
@@ -41346,64 +41346,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_GEODUDE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_PSYDUCK"
               }
             ]
           }
@@ -41415,64 +41415,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               }
             ]
           }
@@ -41484,64 +41484,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               }
             ]
           },
@@ -41668,64 +41668,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               }
             ]
           }
@@ -41737,64 +41737,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               }
             ]
           }
@@ -41806,64 +41806,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               }
             ]
           },
@@ -41990,64 +41990,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE"
               }
             ]
           }
