@@ -31,7 +31,7 @@ SandgemTown_BottomRightHouse_1F_Text_NPC1:
 SandgemTown_BottomRightHouse_1F_Text_NPC2:
 	.string "Who are you?\p"
 	.string "...\p"
-	.string "Oh, I see! You're doing that Pokédex\n"
+	.string "Oh, I see! You're doing that {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}\n"
 	.string "thing for the professor!\p"
 	.string "Wow! That's the same as my big sibling!\n"
 	.string "Go for it!$"

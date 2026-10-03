@@ -79,7 +79,7 @@ SandgemTown_EventScript_NPC3::
 
 SandgemTown_Text_NPC1:
 	.string "That thing you have!\p"
-	.string "It's a Pokédex, isn't it?!\p"
+	.string "It's a {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}, isn't it?!\p"
 	.string "You're off to see all kinds of Pokémon\n"
 	.string "now! Lucky you!$"
 
@@ -495,7 +495,7 @@ SandgemTown_Text_TourFarewell:
 	.string "{PLAYER}…\p"
 	.string "You should let your family know\n"
 	.string "you're helping Prof. Rowan put\l"
-	.string "together his Pokédex.\p"
+	.string "together his {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}.\p"
 	.string "Sometimes, you have to go far\n"
 	.string "away, so you should let someone\l"
 	.string "know.\p"

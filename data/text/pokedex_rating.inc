@@ -117,7 +117,7 @@ gBirchDexRatingText_OnANationwideBasis::
 gRowanDexRatingText_AreYouCurious::
 	.string "Ah, {PLAYER}!\p"
 	.string "Are you curious about how your\n"
-	.string "Pokédex is coming along?$"
+	.string "{COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} is coming along?$"
 
 gRowanDexRatingText_Cancel::
 	.string "Hm? Oh, you haven't caught enough\n"
@@ -144,7 +144,7 @@ gRowanDexRatingText_LessThan30::
 gRowanDexRatingText_LessThan40::
 	.string "Well, it could use more quantity,\n"
 	.string "but this is looking more like\l"
-	.string "a Pokédex now.$"
+	.string "a {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} now.$"
 
 gRowanDexRatingText_LessThan50::
 	.string "This is coming along pretty good.\n"
@@ -160,7 +160,7 @@ gRowanDexRatingText_LessThan70::
 
 gRowanDexRatingText_LessThan80::
 	.string "This is going to be a fantastic\n"
-	.string "Pokédex.\l"
+	.string "{COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}.\l"
 	.string "That's the feeling I'm getting.$"
 
 gRowanDexRatingText_LessThan90::
@@ -175,7 +175,7 @@ gRowanDexRatingText_LessThan100::
 gRowanDexRatingText_LessThan110::
 	.string "You've finally reached\n"
 	.string "the 100-kind mark.\p"
-	.string "This is an impressive Pokédex!$"
+	.string "This is an impressive {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}!$"
 
 gRowanDexRatingText_LessThan120::
 	.string "There might be Pokémon that can be\n"
@@ -192,7 +192,7 @@ gRowanDexRatingText_LessThan140::
 
 gRowanDexRatingText_LessThan150::
 	.string "I had no idea that there were so\n"
-	.string "many Pokémon species in the Sinnoh\l"
+	.string "many Pokémon species in the {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY}\l"
 	.string "region.$"
 
 gRowanDexRatingText_LessThan160::
@@ -203,8 +203,8 @@ gRowanDexRatingText_LessThan160::
 
 gRowanDexRatingText_LessThan170::
 	.string "One can get a very good idea about\n"
-	.string "the Pokémon of the Sinnoh region\l"
-	.string "by looking through your Pokédex.$"
+	.string "the Pokémon of the {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY} region\l"
+	.string "by looking through your {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}.$"
 
 gRowanDexRatingText_LessThan180::
 	.string "I would say you already qualify as\n"
@@ -212,17 +212,17 @@ gRowanDexRatingText_LessThan180::
 	.string "one, too!$"
 
 gRowanDexRatingText_LessThan190::
-	.string "With a Pokédex this complete,\n"
+	.string "With a {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} this complete,\n"
 	.string "you're a real professional at this!$"
 
 gRowanDexRatingText_LessThan200::
 	.string "You're very close to completing\n"
-	.string "this Pokédex.\l"
+	.string "this {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}.\l"
 	.string "I can feel it in my bones!$"
 
 gRowanDexRatingText_DexCompleted::
 	.string "Congratulations!\n"
-	.string "Your Pokédex is complete!$"
+	.string "Your {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} is complete!$"
 
 gRowanDexRatingText_OnANationwideBasis::
 	.string "Hmhm…\n"
@@ -355,6 +355,6 @@ PokedexRating_Text_LoveSeeingYourPokedex::
 
 gRowanDexRatingText_RegionalComplete::
 	.string "You have recorded every Pokémon\n"
-	.string "in the Sinnoh region…\p"
+	.string "in the {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY} region…\p"
 	.string "I never thought I would live to\n"
 	.string "see it.$"

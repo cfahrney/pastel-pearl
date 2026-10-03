@@ -72,7 +72,7 @@ Route203_EventScript_Trainer6::
 
 Route203_Text_Trainer1Intro:
 	.string "I got a nifty-keen Gym Badge from the\n"
-	.string "Gym Leader in Oreburgh City!$"
+	.string "Gym Leader in {COLOR DYNAMIC_COLOR3}Oreburgh City{COLOR DARK_GRAY}!$"
 
 Route203_Text_Trainer1Defeated:
 	.string "Oh, I lost! Lalala!$"

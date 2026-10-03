@@ -36,7 +36,7 @@ SandgemTown_PokemonCenter_1F_Text_NPC1:
 	.string "health in no time at all!$"
 
 SandgemTown_PokemonCenter_1F_Text_NPC2:
-	.string "There's not much to do in Sandgem Town,\n"
+	.string "There's not much to do in {COLOR DYNAMIC_COLOR3}Sandgem Town{COLOR DARK_GRAY},\n"
 	.string "so I hang out in the Pokémon Center to\l"
 	.string "see all the Pokémon people have.\p"
 	.string "Yours is super cute!$"

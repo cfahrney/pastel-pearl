@@ -246,7 +246,13 @@ Std_PutItemAway::
 	bufferitemnameplural STR_VAR_2, VAR_0x8000, VAR_0x8001
 	checkitemtype VAR_0x8000
 	call EventScript_BufferPutAwayPocketName
+	goto_if_eq VAR_RESULT, POCKET_KEY_ITEMS, Std_PutKeyItemAway
 	msgbox gText_PutItemInPocket
+	return
+
+@ Key items get the accent color on the item name.
+Std_PutKeyItemAway::
+	msgbox gText_PutKeyItemInPocket
 	return
 
 EventScript_BufferPutAwayPocketName::

@@ -2,6 +2,7 @@ TwinleafTown_BarryHouse_1F_MapScripts::
 	.byte 0
 
 TwinleafTown_BarryHouse_1F_EventScript_Mom::
+	setspeaker SP_NAME_RIVAL_MOM
 	goto_if_ge VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_BarryHouse_1F_EventScript_MomAfterStarterCaught
 	goto_if_ge VAR_TWINLEAF_TOWN_STATE, 2, TwinleafTown_BarryHouse_1F_EventScript_MomAfterBarryLeft
 	msgbox TwinleafTown_BarryHouse_1F_Text_HeCantSitStill, MSGBOX_NPC
@@ -27,7 +28,7 @@ TwinleafTown_BarryHouse_1F_Text_RocketedOffAgain:
 	.string "That kid rocketed off again like\n"
 	.string "usual.\p"
 	.string "I guess he would be out on\n"
-	.string "Route 201 by now?\p"
+	.string "{COLOR DYNAMIC_COLOR3}Route 201{COLOR DARK_GRAY} by now?\p"
 	.string "He just can't sit still, that boy.\n"
 	.string "I wonder who he takes after?$"
 

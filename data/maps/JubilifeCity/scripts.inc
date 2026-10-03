@@ -108,9 +108,9 @@ JubilifeCity_Text_NPC1:
 JubilifeCity_Text_NPC2:
 	.string "Hiya! Where'd you come from?\p"
 	.string "...\p"
-	.string "Twinleaf Town, huh...\n"
+	.string "{COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY}, huh...\n"
 	.string "It's a nice place. Quiet and all.\p"
-	.string "Jubilife is a big place, so it might be a\n"
+	.string "{COLOR DYNAMIC_COLOR3}Jubilife{COLOR DARK_GRAY} is a big place, so it might be a\n"
 	.string "bit of a shock to you.$"
 
 JubilifeCity_Text_NPC3:
@@ -119,10 +119,10 @@ JubilifeCity_Text_NPC3:
 	.string "a Gible...$"
 
 JubilifeCity_Text_NPC4:
-	.string "Jubilife City's built on land they\n"
+	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY}'s built on land they\n"
 	.string "carved out of a mountain.\p"
-	.string "The people and Pokemon of Oreburgh\n"
-	.string "City helps out with the undertaking.$"
+	.string "The people and Pokemon of {COLOR DYNAMIC_COLOR3}Oreburgh\n"
+	.string "City{COLOR DARK_GRAY} helps out with the undertaking.$"
 
 JubilifeCity_Text_NPC5:
 	.string "Okay, set six Poke Balls in my belt...\p"
@@ -179,7 +179,7 @@ JubilifeCity_EventScript_NPC13::
 JubilifeCity_Text_NPC9:
 	.string "I'm always glad to see the city add more\n"
 	.string "bike parking. It's such a useful way to\l"
-	.string "get around all of Sinnoh!$"
+	.string "get around all of {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY}!$"
 
 JubilifeCity_Text_NPC10:
 	.string "I enjoy watching my Piplup play by the\n"

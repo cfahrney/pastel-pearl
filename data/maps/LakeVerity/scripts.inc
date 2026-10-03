@@ -271,13 +271,13 @@ LakeVerity_Text_LucasDawnFourYears:
 	.string "Professor, you've been gone\n"
 	.string "for four years now.\p"
 	.string "How are you enjoying being\n"
-	.string "back in Sinnoh?$"
+	.string "back in {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY}?$"
 
 LakeVerity_Text_RowanManyRarePokemon:
 	.string "…Hm. There is one thing\n"
 	.string "I can say.\p"
 	.string "There are many rare kinds\n"
-	.string "of Pokémon in Sinnoh.\p"
+	.string "of Pokémon in {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY}.\p"
 	.string "The region should serve us\n"
 	.string "very well in regards to our\l"
 	.string "studies.$"

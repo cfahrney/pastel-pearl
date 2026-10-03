@@ -92,7 +92,7 @@ Route202_Text_Trainer3Defeated:
 Route202_Text_Trainer3PostBattle:
 	.string "It's nice being able to avoid the tall\n"
 	.string "grass by jumping down all these ledges.\l"
-	.string "It makes getting back to Sandgem Town\l"
+	.string "It makes getting back to {COLOR DYNAMIC_COLOR3}Sandgem Town{COLOR DARK_GRAY}\l"
 	.string "super easy!$"
 
 Route202_Text_Trainer4Intro:

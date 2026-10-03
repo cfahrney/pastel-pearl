@@ -478,7 +478,7 @@ Route201_Text_Trainer1Defeated:
 
 Route201_Text_Trainer1PostBattle:
 	.string "That ledge is one way. Jump down for a\n"
-	.string "shortcut to Twinleaf Town!$"
+	.string "shortcut to {COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY}!$"
 
 Route201_EventScript_NPC1::
 	@ poe:behavior {"mode":"gift","item":"ITEM_POTION","qty":1}
@@ -522,8 +522,8 @@ Route201_Text_NPC1:
 
 Route201_Text_NPC2:
 	.string "I sure wish I had some Berries to plant\n"
-	.string "here. Maybe I'll plan a trip to Floaroma\l"
-	.string "Town soon...$"
+	.string "here. Maybe I'll plan a trip to {COLOR DYNAMIC_COLOR3}Floaroma\l"
+	.string "Town{COLOR DARK_GRAY} soon...$"
 
 Route201_Text_NPC3:
 	.string "Wild Pokémon lurk in the tall grass, but\n"

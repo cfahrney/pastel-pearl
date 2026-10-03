@@ -6,7 +6,11 @@ gText_TheBagIsFull::
 
 gText_PutItemInPocket::
 	.string "{PLAYER} put away the {STR_VAR_2}\n"
-	.string "in the {STR_VAR_3} POCKET.$"
+	.string "in the {STR_VAR_3} Pocket.$"
+
+gText_PutKeyItemInPocket::
+	.string "{PLAYER} put away the {COLOR DYNAMIC_COLOR3}{STR_VAR_2}{COLOR DARK_GRAY}\n"
+	.string "in the {STR_VAR_3} Pocket.$"
 
 gText_PlayerFoundOneItem::
 	.string "{PLAYER} found one {STR_VAR_2}!$"

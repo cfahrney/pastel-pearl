@@ -19,7 +19,7 @@ OreburghCity_Text_NPC1:
 	.string "mine.$"
 
 OreburghCity_Text_NPC2:
-	.string "When I run around with my Running Shoes\n"
+	.string "When I run around with my {COLOR DYNAMIC_COLOR3}Running Shoes{COLOR DARK_GRAY}\n"
 	.string "on, it feels like I'm the center of\l"
 	.string "attention!$"
 

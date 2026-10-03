@@ -96,7 +96,7 @@
 #define FLAG_ROUTE201_NPC1_GIFT             0x4A
 #define FLAG_SANDGEMTOWN_MART_NPC1_GIFT     0x4B
 #define FLAG_HIDE_ROUTE202_LUCASDAWN    0x4C
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
+#define FLAG_HIDE_TRAINERSCHOOL_BARRY    0x4D
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 

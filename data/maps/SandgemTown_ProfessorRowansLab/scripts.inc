@@ -206,8 +206,8 @@ SandgemTown_ProfessorRowansLab_Text_NPC2:
 
 SandgemTown_ProfessorRowansLab_Text_NPC3:
 	.string "Professor Rowan invented a new\n"
-	.string "Pokédex while working alongside a\l"
-	.string "professor from the Kanto region!$"
+	.string "{COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} while working alongside a\l"
+	.string "professor from the {COLOR DYNAMIC_COLOR3}Kanto{COLOR DARK_GRAY} region!$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanFinallyYouveCome:
 	.string "…\p"
@@ -252,16 +252,16 @@ SandgemTown_ProfessorRowansLab_Text_RowanMainTopic:
 	.string "study Pokémon.\p"
 	.string "First of all, I want to know\n"
 	.string "exactly what kinds of Pokémon live\l"
-	.string "in the Sinnoh region.\p"
+	.string "in the {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY} region.\p"
 	.string "To do so, it is necessary to\n"
-	.string "collect data using the Pokédex.\l"
+	.string "collect data using the {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}.\l"
 	.string "This is what I wish to ask of you.$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanEntrustPokedex:
 	.string "I want to entrust you with this\n"
-	.string "Pokédex.\p"
+	.string "{COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}.\p"
 	.string "Will you use it to record data on\n"
-	.string "all the Pokémon in Sinnoh for me?$"
+	.string "all the Pokémon in {COLOR DYNAMIC_COLOR3}Sinnoh{COLOR DARK_GRAY} for me?$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanSilence:
 	.string "…\p"
@@ -277,17 +277,17 @@ SandgemTown_ProfessorRowansLab_Text_RowanGoodAnswer:
 	.string "Good answer!$"
 
 SandgemTown_ProfessorRowansLab_Text_ReceivedPokedex:
-	.string "{PLAYER} received the Pokédex!$"
+	.string "{PLAYER} received the {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}!$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanPokedexSpeech:
-	.string "That Pokédex is a very high-tech\n"
+	.string "That {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} is a very high-tech\n"
 	.string "device. It will automatically\l"
 	.string "record data on every kind of\l"
 	.string "Pokémon you encounter.\p"
 	.string "{PLAYER}, I ask that you go\n"
 	.string "everywhere and meet every kind of\l"
 	.string "Pokémon in this region!\p"
-	.string "When you walked up Route 201 with\n"
+	.string "When you walked up {COLOR DYNAMIC_COLOR3}Route 201{COLOR DARK_GRAY} with\n"
 	.string "your Pokémon, what did you feel?\p"
 	.string "I've lived for 60 long years. Even\n"
 	.string "now, I get a thrill when I'm with\l"
@@ -301,10 +301,10 @@ SandgemTown_ProfessorRowansLab_Text_RowanPokedexSpeech:
 	.string "adventure begins right now!$"
 
 SandgemTown_ProfessorRowansLab_Text_LucasDawnSamePokedex:
-	.string "I've got the same kind of Pokédex\n"
+	.string "I've got the same kind of {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}\n"
 	.string "as you. The professor asked me to\l"
 	.string "help out, so I'm going to go out\l"
-	.string "and fill the Pokédex pages, too.\p"
+	.string "and fill the {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} pages, too.\p"
 	.string "That makes us comrades working\n"
 	.string "toward the same goal. I'll teach\l"
 	.string "you stuff later, OK?$"

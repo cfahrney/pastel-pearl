@@ -125,7 +125,7 @@ TwinleafTown_PlayerHouse_1F_Text_MomGladUnharmed:
 
 TwinleafTown_PlayerHouse_1F_Text_MomProfessorRowan:
 	.string "The professor you mentioned is most\n"
-	.string "likely Professor Rowan of Sandgem Town.$"
+	.string "likely Professor Rowan of {COLOR DYNAMIC_COLOR3}Sandgem Town{COLOR DARK_GRAY}.$"
 
 TwinleafTown_PlayerHouse_1F_Text_MomHeardOfHim:
 	.string "I've heard that he is well known for\n"
@@ -134,7 +134,7 @@ TwinleafTown_PlayerHouse_1F_Text_MomHeardOfHim:
 
 TwinleafTown_PlayerHouse_1F_Text_MomVisitSandgem:
 	.string "{PLAYER}, I think you need to visit\n"
-	.string "him in Sandgem Town.\p"
+	.string "him in {COLOR DYNAMIC_COLOR3}Sandgem Town{COLOR DARK_GRAY}.\p"
 	.string "You need to properly explain why you\n"
 	.string "had no choice but to use his Pokémon.$"
 
@@ -257,7 +257,7 @@ TwinleafTown_PlayerHouse_1F_Text_MomPleaseWearThese:
 
 TwinleafTown_PlayerHouse_1F_Text_ReceivedRunningShoes:
 	.string "{PLAYER} received a pair of\n"
-	.string "Running Shoes!$"
+	.string "{COLOR DYNAMIC_COLOR3}Running Shoes{COLOR DARK_GRAY}!$"
 
 TwinleafTown_PlayerHouse_1F_Text_MomPressBButton:
 	.string "Just press the B Button while\n"
@@ -340,8 +340,8 @@ TwinleafTown_PlayerHouse_1F_Text_MomIsntRivalWaiting:
 	.string "Isn't {RIVAL} waiting for you?$"
 
 TwinleafTown_PlayerHouse_1F_Text_MomSandgemNotFar:
-	.string "Sandgem Town is not far from\n"
-	.string "Twinleaf, I'm sure you and\l"
+	.string "{COLOR DYNAMIC_COLOR3}Sandgem Town{COLOR DARK_GRAY} is not far from\n"
+	.string "{COLOR DYNAMIC_COLOR3}Twinleaf{COLOR DARK_GRAY}, I'm sure you and\l"
 	.string "{STR_VAR_1} can make it there in no\l"
 	.string "time.$"
 
@@ -466,7 +466,7 @@ TwinleafTown_PlayerHouse_1F_Text_TourMomWhatsUp:
 	.string "something that you'll find useful.$"
 
 TwinleafTown_PlayerHouse_1F_Text_TourMomAboutExpShare:
-	.string "That's an Exp. Share! It will\n"
+	.string "That's an {COLOR DYNAMIC_COLOR3}Exp. Share{COLOR DARK_GRAY}! It will\n"
 	.string "allow all the Pokémon on your team\l"
 	.string "to receive Exp. Points from\l"
 	.string "battles.\p"
@@ -514,7 +514,7 @@ TwinleafTown_PlayerHouse_1F_Text_NeighborReallyForMe:
 TwinleafTown_PlayerHouse_1F_Text_NeighborLetMeThink:
 	.string "Let me think…\p"
 	.string "Knowing my boy, he would probably\n"
-	.string "head straight to Jubilife City…\p"
+	.string "head straight to {COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY}…\p"
 	.string "OK, please take that to my\n"
 	.string "{RIVAL}.$"
 
