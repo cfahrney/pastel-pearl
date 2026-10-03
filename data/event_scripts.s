@@ -1087,6 +1087,9 @@ EventScript_AfterWhiteOutMomHeal::
 	lockall
 	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
+	setspeaker SP_NAME_MOM
+	msgbox gText_MomWelcomeHomeTakeRest, MSGBOX_DEFAULT
+	closemessage
 	call Common_EventScript_OutOfCenterPartyHeal
 	setspeaker SP_NAME_MOM
 	msgbox gText_MomAlwaysHereForYou, MSGBOX_DEFAULT
@@ -1425,6 +1428,14 @@ gText_MonsHealed::
 	.string "Your Pokémon have been healed\n"
 	.string "to perfect health.\p"
 	.string "We hope you excel!$"
+
+gText_MomWelcomeHomeTakeRest::
+	.string "{PLAYER}!\n"
+	.string "Welcome home.\p"
+	.string "It sounds like you had quite\n"
+	.string "an experience.\p"
+	.string "Maybe you should take a quick\n"
+	.string "rest.$"
 
 gText_MomAlwaysHereForYou::
 	.string "Know that I'll always be\n"
