@@ -1085,12 +1085,12 @@ EventScript_AfterWhiteOutHealMsg::
 
 EventScript_AfterWhiteOutMomHeal::
 	lockall
-	textcolor NPC_TEXT_COLOR_FEMALE
 	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	msgbox gText_HadQuiteAnExperienceTakeRest
 	call Common_EventScript_OutOfCenterPartyHeal
-	msgbox gText_MomExplainHPGetPotions
+	setspeaker SP_NAME_MOM
+	msgbox gText_MomAlwaysHereForYou, MSGBOX_DEFAULT
+	closemessage
 	fadedefaultbgm
 	releaseall
 	end
@@ -1426,28 +1426,9 @@ gText_MonsHealed::
 	.string "to perfect health.\p"
 	.string "We hope you excel!$"
 
-gText_HadQuiteAnExperienceTakeRest::
-	.string "MOM: {PLAYER}!\n"
-	.string "Welcome home.\p"
-	.string "It sounds like you had quite\n"
-	.string "an experience.\p"
-	.string "Maybe you should take a quick\n"
-	.string "rest.$"
-
-gText_MomExplainHPGetPotions::
-	.string "MOM: Oh, good! You and your\n"
-	.string "Pokémon are looking great.\p"
-	.string "I just heard from {STR_VAR_1}.\p"
-	.string "He said that Pokémon's energy is\n"
-	.string "measured in HP.\p"
-	.string "If your Pokémon lose their HP,\n"
-	.string "you can restore them at any\l"
-	.string "Pokémon Center.\p"
-	.string "If you're going to travel far away,\n"
-	.string "the smart TRAINER stocks up on\l"
-	.string "POTIONS at the Pokémon Mart.\p"
-	.string "Make me proud, honey!\p"
-	.string "Take care!$"
+gText_MomAlwaysHereForYou::
+	.string "Know that I'll always be\n"
+	.string "here for you!$"
 
 gText_RegisteredTrainerinPokeNav::
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\n"
