@@ -98,6 +98,7 @@
 
 // Lighting
 #define OW_SHADOW_INTENSITY             4       // Ranges from 0 to 16, where 0 is fully transparent and 16 is black.
+#define OW_OBJECT_SPAWN_BUFFER         3        // Extra tiles beyond the vanilla spawn/despawn window, so edge objects appear before they scroll into view. Objects in the window count toward the 16-object cap.
 #define OW_OBJECT_SUBPRIORITY           148     // The higher the value, the farther back compared to other sprites. Shadows should be behind object events.
 #define OW_ENABLE_DNS                   TRUE    // If set to TRUE, the overworld will be tinted depending on time of day.
 
