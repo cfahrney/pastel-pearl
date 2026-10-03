@@ -277,7 +277,7 @@ LakeVerity_Text_RowanManyRarePokemon:
 	.string "…Hm. There is one thing\n"
 	.string "I can say.\p"
 	.string "There are many rare kinds\n"
-	.string "of POKéMON in Sinnoh.\p"
+	.string "of Pokémon in Sinnoh.\p"
 	.string "The region should serve us\n"
 	.string "very well in regards to our\l"
 	.string "studies.$"
@@ -306,7 +306,7 @@ LakeVerity_Text_BarryTallGrassWarning:
 	.string "the tall grass?\p"
 	.string "No problem, no problem!\p"
 	.string "We won't be in there long\n"
-	.string "enough for a wild POKéMON to\l"
+	.string "enough for a wild Pokémon to\l"
 	.string "come out.$"
 
 LakeVerity_Text_ItsABriefcase:
@@ -325,13 +325,13 @@ LakeVerity_Text_HeardThemSayProfessor:
 
 LakeVerity_Text_StarlyWaaah:
 	.string "Waaah!\n"
-	.string "Po-POKéMON?!$"
+	.string "Po-Pokémon?!$"
 
 LakeVerity_Text_WhatsGoingOnStarly:
 	.string "What's going on?$"
 
 LakeVerity_Text_LookPokeBalls:
-	.string "Look! These are POKé BALLS!\n"
+	.string "Look! These are Poké Balls!\n"
 	.string "Let's battle using these!$"
 
 LakeVerity_Text_WhichOneDoYouWant:
@@ -348,7 +348,7 @@ LakeVerity_Text_BarryMineWasTougher:
 
 LakeVerity_Text_BarryOtherPeoplesPokemon:
 	.string "…They were other people's\n"
-	.string "POKéMON, though…$"
+	.string "Pokémon, though…$"
 
 LakeVerity_Text_BarryWeHadToUseThem:
 	.string "But we had to use them…\n"
@@ -369,7 +369,7 @@ LakeVerity_Text_LucasDawnHunhWhaaaat:
 
 LakeVerity_Text_LucasDawnDidYouUseThesePokemon:
 	.string "Did you guys…\n"
-	.string "Did you use these POKéMON?!$"
+	.string "Did you use these Pokémon?!$"
 
 LakeVerity_Text_LucasDawnHowExplainToProfessor:
 	.string "Oh, man… How am I gonna\n"
@@ -389,7 +389,7 @@ LakeVerity_Text_BarryDontKnowLetsGetOutOfHere:
 	.string "{PLAYER}, let's get out of here.$"
 
 LakeVerity_Text_BarryPokemonGotHurt:
-	.string "My POKéMON got hurt from\n"
+	.string "My Pokémon got hurt from\n"
 	.string "that battle.\p"
 	.string "If we get attacked, we might\n"
 	.string "be in trouble.$"

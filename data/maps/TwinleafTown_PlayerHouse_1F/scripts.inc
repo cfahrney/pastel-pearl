@@ -129,14 +129,14 @@ TwinleafTown_PlayerHouse_1F_Text_MomProfessorRowan:
 
 TwinleafTown_PlayerHouse_1F_Text_MomHeardOfHim:
 	.string "I've heard that he is well known for\n"
-	.string "his studies on POKéMON.\p"
+	.string "his studies on Pokémon.\p"
 	.string "I hear he's also quite intimidating…$"
 
 TwinleafTown_PlayerHouse_1F_Text_MomVisitSandgem:
 	.string "{PLAYER}, I think you need to visit\n"
 	.string "him in Sandgem Town.\p"
 	.string "You need to properly explain why you\n"
-	.string "had no choice but to use his POKéMON.$"
+	.string "had no choice but to use his Pokémon.$"
 
 TwinleafTown_PlayerHouse_1F_Text_MomDontWorry:
 	.string "Don't worry! I'm sure he'll understand.$"
@@ -270,9 +270,9 @@ TwinleafTown_PlayerHouse_1F_Text_MomOhYesPlayerName:
 
 TwinleafTown_PlayerHouse_1F_Text_MomDontGoInTallGrass:
 	.string "Don't go into the tall grass.\n"
-	.string "Wild POKéMON might attack you.\p"
+	.string "Wild Pokémon might attack you.\p"
 	.string "It would be OK if you had your\n"
-	.string "own POKéMON, but you don't…\l"
+	.string "own Pokémon, but you don't…\l"
 	.string "So…$"
 
 @ MOM's own interact line. First checks whether the intro house scenes
@@ -313,7 +313,7 @@ TwinleafTown_PlayerHouse_1F_EventScript_MomHomeSafe::
 	end
 
 @ Repeatable from here on: MOM offers a free full heal, same
-@ fade/fanfare/heal beats as a POKéMON CENTER visit, just without the
+@ fade/fanfare/heal beats as a Pokémon Center visit, just without the
 @ nurse's counter animation since she's just tucking the player in at
 @ home.
 TwinleafTown_PlayerHouse_1F_EventScript_MomOffersRest::
@@ -347,7 +347,7 @@ TwinleafTown_PlayerHouse_1F_Text_MomSandgemNotFar:
 
 TwinleafTown_PlayerHouse_1F_Text_MomWelcomeHomeRest:
 	.string "Welcome home, {PLAYER}.\n"
-	.string "Are you and your POKéMON healthy?\p"
+	.string "Are you and your Pokémon healthy?\p"
 	.string "Take a quick rest, dear.$"
 
 TwinleafTown_PlayerHouse_1F_EventScript_NPC1::
@@ -458,7 +458,7 @@ TwinleafTown_PlayerHouse_1F_EventScript_AfterSandgemTour::
 TwinleafTown_PlayerHouse_1F_Text_TourMomWhatsUp:
 	.string "What's up, {PLAYER}?\p"
 	.string "…\p"
-	.string "Wow. PROFESSOR ROWAN asked you to\n"
+	.string "Wow. Professor Rowan asked you to\n"
 	.string "do something that big.\p"
 	.string "OK, dear, go for it!\n"
 	.string "Your mom's got your back!\p"
@@ -467,7 +467,7 @@ TwinleafTown_PlayerHouse_1F_Text_TourMomWhatsUp:
 
 TwinleafTown_PlayerHouse_1F_Text_TourMomAboutExpShare:
 	.string "That's an Exp. Share! It will\n"
-	.string "allow all the POKéMON on your team\l"
+	.string "allow all the Pokémon on your team\l"
 	.string "to receive Exp. Points from\l"
 	.string "battles.\p"
 	.string "Don't worry, you can toggle it off\n"
@@ -480,7 +480,7 @@ TwinleafTown_PlayerHouse_1F_Text_TourMomAboutExpShare:
 	.string "makes your mother happy too.\p"
 	.string "… But come back sometimes.\p"
 	.string "I would like to see the kinds of\n"
-	.string "POKéMON you've caught, dear.$"
+	.string "Pokémon you've caught, dear.$"
 
 TwinleafTown_PlayerHouse_1F_Text_NeighborExcuseMe:
 	.string "Excuse me.\n"
@@ -514,7 +514,7 @@ TwinleafTown_PlayerHouse_1F_Text_NeighborReallyForMe:
 TwinleafTown_PlayerHouse_1F_Text_NeighborLetMeThink:
 	.string "Let me think…\p"
 	.string "Knowing my boy, he would probably\n"
-	.string "head straight to JUBILIFE CITY…\p"
+	.string "head straight to Jubilife City…\p"
 	.string "OK, please take that to my\n"
 	.string "{RIVAL}.$"
 

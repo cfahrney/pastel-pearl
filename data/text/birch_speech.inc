@@ -1,28 +1,28 @@
 gText_Birch_Welcome::
 	.string "Hello there! It's so very nice to\n"
 	.string "meet you!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is ROWAN.\p"
+	.string "Welcome to the world of Pokémon!\p"
+	.string "My name is Rowan.\p"
 	.string "However, everyone just calls me the\n"
-	.string "POKéMON PROFESSOR.\p"
+	.string "Pokémon Professor.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "This is what we call a “Pokémon.”\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "We humans live alongside POKéMON\n"
+	.string "We humans live alongside Pokémon\n"
 	.string "as friends.\p"
 	.string "At times we play together, and at\n"
 	.string "other times we work together.\p"
-	.string "Some people use their POKéMON to\n"
+	.string "Some people use their Pokémon to\n"
 	.string "battle and develop closer bonds\l"
 	.string "with them.\p"
 	.string "What do I do?\p"
 	.string "I conduct research so that we may\n"
-	.string "learn more about POKéMON.\p"
+	.string "learn more about Pokémon.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
@@ -67,10 +67,10 @@ gText_Birch_AreYouReady::
 	.string "Your very own tale of grand adventure\n"
 	.string "is about to unfold.\p"
 	.string "On your journey you will meet\n"
-	.string "countless POKéMON.\p"
+	.string "countless Pokémon.\p"
 	.string "I'm sure that along the way you will\n"
 	.string "discover many things, perhaps even\l"
 	.string "something about yourself.\p"
 	.string "Now, go on, leap into the world of\n"
-	.string "POKéMON!\p"
+	.string "Pokémon!\p"
 	.string "$"

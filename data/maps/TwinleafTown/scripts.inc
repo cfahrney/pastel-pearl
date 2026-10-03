@@ -45,13 +45,13 @@ TwinleafTown_EventScript_WomanAfterStarterCaught::
 	end
 
 TwinleafTown_Text_WildPokemonAttackButAlsoFriends:
-	.string "It's true that wild POKéMON do\n"
+	.string "It's true that wild Pokémon do\n"
 	.string "attack people sometimes…\p"
-	.string "However, POKéMON also let you\n"
+	.string "However, Pokémon also let you\n"
 	.string "become friends with them.$"
 
 TwinleafTown_Text_LookGoodTogether:
-	.string "Oh! A POKéMON!\n"
+	.string "Oh! A Pokémon!\n"
 	.string "You look good together!$"
 
 @ Once VAR_TWINLEAF_TOWN_STATE reaches 2, BARRY has already run off toward

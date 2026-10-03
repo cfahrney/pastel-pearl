@@ -118,13 +118,13 @@ Route202_EventScript_NPC2::
 	end
 
 Route202_Text_NPC1Speaker:
-	.string "SHINX$"
+	.string "Shinx$"
 
 Route202_Text_NPC1:
 	.string "ROUTE 202 NPC 1$"
 
 Route202_Text_NPC2Speaker:
-	.string "GROWLITHE$"
+	.string "Growlithe$"
 
 Route202_Text_NPC2:
 	.string "ROUTE 202 NPC 2$"

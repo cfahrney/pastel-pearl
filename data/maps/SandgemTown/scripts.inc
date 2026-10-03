@@ -336,7 +336,7 @@ SandgemTown_Text_WaitingForYou:
 	.string "you.$"
 
 SandgemTown_Text_ThisIsTheLab:
-	.string "See? This is our POKéMON\n"
+	.string "See? This is our Pokémon\n"
 	.string "Research Lab.\p"
 	.string "We'll just go ahead and…$"
 
@@ -392,7 +392,7 @@ SandgemTown_Movement_PlayerEntersLab:
 	step_end
 
 @ VAR_SANDGEM_TOWN_STATE == 6: on leaving the lab, LUCAS/DAWN gives the town tour
-@ (POKéMON CENTER, POKé MART), then walks off north. Player leaves the lab on (8, 10).
+@ (Pokémon Center, Poké Mart), then walks off north. Player leaves the lab on (8, 10).
 SandgemTown_EventScript_TownTour::
 	lockall
 	setvar VAR_0x8004, LOCALID_SANDGEMTOWN_LUCASDAWN
@@ -461,15 +461,15 @@ SandgemTown_Text_TourIntro:
 
 SandgemTown_Text_TourPokemonCenter:
 	.string "This building with the red roof is\n"
-	.string "the POKéMON CENTER.\p"
-	.string "You can get your POKéMON healed\n"
+	.string "the Pokémon Center.\p"
+	.string "You can get your Pokémon healed\n"
 	.string "here if it's been hurt in battle.\p"
-	.string "You'll find a POKéMON CENTER in\n"
+	.string "You'll find a Pokémon Center in\n"
 	.string "most towns.$"
 
 SandgemTown_Text_TourPokeMart:
 	.string "Over here, the building with the\n"
-	.string "blue roof is the POKé MART.\p"
+	.string "blue roof is the Poké Mart.\p"
 	.string "It's a shop where you can buy and\n"
 	.string "sell all sorts of items.\p"
 	.string "{PLAYER}, since you're a rookie\n"
@@ -482,13 +482,13 @@ SandgemTown_Text_TourFarewell:
 	.string "Oh, yea, right!\n"
 	.string "{PLAYER}…\p"
 	.string "You should let your family know\n"
-	.string "you're helping PROF. ROWAN put\l"
-	.string "together his POKéDEX.\p"
+	.string "you're helping Prof. Rowan put\l"
+	.string "together his Pokédex.\p"
 	.string "Sometimes, you have to go far\n"
 	.string "away, so you should let someone\l"
 	.string "know.\p"
 	.string "Oh, but first, go heal up your\n"
-	.string "POKéMON at the POKéMON CENTER.\l"
+	.string "Pokémon at the Pokémon Center.\l"
 	.string "You'll be safe then.\l"
 	.string "OK, be seeing you!$"
 

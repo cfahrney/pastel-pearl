@@ -18,7 +18,7 @@ SandgemTown_ProfessorRowansLab_OnFrame:
 	.2byte 0
 
 @ VAR_SANDGEM_TOWN_STATE == 3: LUCAS/DAWN leads the player to ROWAN, who hands
-@ over the starter and the POKéDEX. Player always enters from warp 0 at (6, 12).
+@ over the starter and the Pokédex. Player always enters from warp 0 at (6, 12).
 SandgemTown_ProfessorRowansLab_EventScript_RowanIntro::
 	lockall
 	setvar VAR_0x8004, LOCALID_PROFESSORROWANSLAB_LUCASDAWN
@@ -159,10 +159,10 @@ SandgemTown_ProfessorRowansLab_Text_RowanFinallyYouveCome:
 	.string "…\p"
 	.string "Finally, you've come. {PLAYER}, was\n"
 	.string "it?\p"
-	.string "Let me see your POKéMON again.\p"
+	.string "Let me see your Pokémon again.\p"
 	.string "…\p"
 	.string "Hm… I see…\p"
-	.string "This POKéMON seems to be rather\n"
+	.string "This Pokémon seems to be rather\n"
 	.string "happy.\p"
 	.string "All righty then!\p"
 	.string "I'll give you that {STR_VAR_1} as a\n"
@@ -179,14 +179,14 @@ SandgemTown_ProfessorRowansLab_Text_RowanRivalToldMe:
 	.string "despite it being your first time.\p"
 	.string "And, from what I can see, there is\n"
 	.string "a growing bond between you and\l"
-	.string "that POKéMON, though it is still\l"
+	.string "that Pokémon, though it is still\l"
 	.string "young.\p"
 	.string "That's why I would like to entrust\n"
 	.string "you with {STR_VAR_1}.$"
 
 SandgemTown_ProfessorRowansLab_Text_LucasDawnGladYoureKind:
 	.string "Boy, am I glad you're kind toward\n"
-	.string "POKéMON.\p"
+	.string "Pokémon.\p"
 	.string "If you weren't, well… I don't even\n"
 	.string "want to think about it.$"
 
@@ -195,19 +195,19 @@ SandgemTown_ProfessorRowansLab_Text_RowanMainTopic:
 	.string "topic.\p"
 	.string "There is something I want you to\n"
 	.string "do for me. My name is Rowan. I\l"
-	.string "study POKéMON.\p"
+	.string "study Pokémon.\p"
 	.string "First of all, I want to know\n"
-	.string "exactly what kinds of POKéMON live\l"
-	.string "in the SINNOH region.\p"
+	.string "exactly what kinds of Pokémon live\l"
+	.string "in the Sinnoh region.\p"
 	.string "To do so, it is necessary to\n"
-	.string "collect data using the POKéDEX.\l"
+	.string "collect data using the Pokédex.\l"
 	.string "This is what I wish to ask of you.$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanEntrustPokedex:
 	.string "I want to entrust you with this\n"
-	.string "POKéDEX.\p"
+	.string "Pokédex.\p"
 	.string "Will you use it to record data on\n"
-	.string "all the POKéMON in SINNOH for me?$"
+	.string "all the Pokémon in Sinnoh for me?$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanSilence:
 	.string "…\p"
@@ -223,23 +223,23 @@ SandgemTown_ProfessorRowansLab_Text_RowanGoodAnswer:
 	.string "Good answer!$"
 
 SandgemTown_ProfessorRowansLab_Text_ReceivedPokedex:
-	.string "{PLAYER} received the POKéDEX!$"
+	.string "{PLAYER} received the Pokédex!$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanPokedexSpeech:
-	.string "That POKéDEX is a very high-tech\n"
+	.string "That Pokédex is a very high-tech\n"
 	.string "device. It will automatically\l"
 	.string "record data on every kind of\l"
-	.string "POKéMON you encounter.\p"
+	.string "Pokémon you encounter.\p"
 	.string "{PLAYER}, I ask that you go\n"
 	.string "everywhere and meet every kind of\l"
-	.string "POKéMON in this region!\p"
-	.string "When you walked up ROUTE 201 with\n"
-	.string "your POKéMON, what did you feel?\p"
+	.string "Pokémon in this region!\p"
+	.string "When you walked up Route 201 with\n"
+	.string "your Pokémon, what did you feel?\p"
 	.string "I've lived for 60 long years. Even\n"
 	.string "now, I get a thrill when I'm with\l"
-	.string "a POKéMON.\p"
+	.string "a Pokémon.\p"
 	.string "Now, you should know that there\n"
-	.string "are countless POKéMON in this\l"
+	.string "are countless Pokémon in this\l"
 	.string "world. That means there are just\l"
 	.string "as many thrills waiting for you\l"
 	.string "out there!\p"
@@ -247,10 +247,10 @@ SandgemTown_ProfessorRowansLab_Text_RowanPokedexSpeech:
 	.string "adventure begins right now!$"
 
 SandgemTown_ProfessorRowansLab_Text_LucasDawnSamePokedex:
-	.string "I've got the same kind of POKéDEX\n"
+	.string "I've got the same kind of Pokédex\n"
 	.string "as you. The professor asked me to\l"
 	.string "help out, so I'm going to go out\l"
-	.string "and fill the POKéDEX pages, too.\p"
+	.string "and fill the Pokédex pages, too.\p"
 	.string "That makes us comrades working\n"
 	.string "toward the same goal. I'll teach\l"
 	.string "you stuff later, OK?$"

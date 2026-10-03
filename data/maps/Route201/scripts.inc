@@ -90,14 +90,14 @@ Route201_Text_RedGyaradosLake:
 	.string "Hey, you saw that news report\n"
 	.string "that was on TV, right?\p"
 	.string "You know, “Search for the Red\n"
-	.string "GYARADOS!\p"
+	.string "Gyarados!\p"
 	.string "The mysterious appearance of the\n"
-	.string "furious POKéMON in a lake!”\p"
+	.string "furious Pokémon in a lake!”\p"
 	.string "That show got me thinking.\p"
 	.string "I'll bet our local lake has a\n"
-	.string "POKéMON like that in it, too!\p"
+	.string "Pokémon like that in it, too!\p"
 	.string "So, that's what we're gonna do.\n"
-	.string "We'll go find a POKéMON like\l"
+	.string "We'll go find a Pokémon like\l"
 	.string "that!$"
 
 Route201_Movement_BarryToX22:
@@ -160,16 +160,16 @@ Route201_Text_DontGoInTallGrass:
 	.string "Remember what your mother said?\p"
 	.string "“{PLAYER}! Don't go into the tall\n"
 	.string "grass!\p"
-	.string "Remember, wild POKéMON may\n"
+	.string "Remember, wild Pokémon may\n"
 	.string "attack you if you're walking in\l"
 	.string "tall grass.\p"
 	.string "It would be OK if you had your\n"
-	.string "own POKéMON, but…”$"
+	.string "own Pokémon, but…”$"
 
 Route201_Text_ForgetGoingHome:
 	.string "Hey! Where are you wandering off\n"
 	.string "to?!\p"
-	.string "That mystery POKéMON on TV!\n"
+	.string "That mystery Pokémon on TV!\n"
 	.string "It's calling out to me!\p"
 	.string "Forget about going back home!$"
 
@@ -263,7 +263,7 @@ Route201_EventScript_RowanConfrontsPlayerAtY8:
 	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryWeShouldGoHomeToo, MSGBOX_DEFAULT
 	closemessage
-	@ Drops BARRY's follower status so the player's lead POKéMON takes over
+	@ Drops BARRY's follower status so the player's lead Pokémon takes over
 	@ as follower (see UpdateFollowingPokemon in event_object_movement.c).
 	destroyfollowernpc
 	setvar VAR_TWINLEAF_TOWN_STATE, 11
@@ -323,7 +323,7 @@ Route201_EventScript_RowanConfrontsPlayerAtY9:
 	setspeaker SP_NAME_RIVAL
 	msgbox Route201_Text_BarryWeShouldGoHomeToo, MSGBOX_DEFAULT
 	closemessage
-	@ Drops BARRY's follower status so the player's lead POKéMON takes over
+	@ Drops BARRY's follower status so the player's lead Pokémon takes over
 	@ as follower (see UpdateFollowingPokemon in event_object_movement.c).
 	destroyfollowernpc
 	setvar VAR_TWINLEAF_TOWN_STATE, 11
@@ -363,7 +363,7 @@ Route201_Text_RowanHmm:
 
 Route201_Text_RowanHeardFromAssistant:
 	.string "I heard from {ASSISTANT} that you\n"
-	.string "used our POKéMON? Let me see\l"
+	.string "used our Pokémon? Let me see\l"
 	.string "them, please.$"
 
 Route201_Text_RowanHmSpecies:
@@ -399,7 +399,7 @@ Route201_Text_BarryCouldveJustYelled:
 	.string "could've just yelled at us, or\l"
 	.string "whatever…\p"
 	.string "And he didn't want their\n"
-	.string "POKéMON back…?$"
+	.string "Pokémon back…?$"
 
 Route201_Text_BarryWeShouldGoHomeToo:
 	.string "{PLAYER}…\n"

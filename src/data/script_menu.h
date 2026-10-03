@@ -532,7 +532,7 @@ static const struct MenuAction MultichoiceList_LinkServicesNoRecordBerry[] =
 
 static const struct MenuAction MultichoiceList_WirelessMinigame[] =
 {
-    {COMPOUND_STRING("POKéMON JUMP")},
+    {COMPOUND_STRING("Pokémon Jump")},
     {COMPOUND_STRING("DODRIO BERRY-PICKING")},
     {gText_Exit},
 };
@@ -713,7 +713,7 @@ static const struct MenuAction MultichoiceList_BattlePalaceRules[] =
 
 static const struct MenuAction MultichoiceList_BattlePyramidRules[] =
 {
-    {COMPOUND_STRING("PYRAMID: POKéMON")},
+    {COMPOUND_STRING("PYRAMID: Pokémon")},
     {COMPOUND_STRING("PYRAMID: TRAINERS")},
     {COMPOUND_STRING("PYRAMID: MAZE")},
     {COMPOUND_STRING("BATTLE BAG")},
@@ -722,9 +722,9 @@ static const struct MenuAction MultichoiceList_BattlePyramidRules[] =
 
 static const struct MenuAction MultichoiceList_BattlePikeRules[] =
 {
-    {COMPOUND_STRING("POKéNAV AND BAG")},
+    {COMPOUND_STRING("Pokénav AND BAG")},
     {COMPOUND_STRING("HELD ITEMS")},
-    {COMPOUND_STRING("POKéMON ORDER")},
+    {COMPOUND_STRING("Pokémon ORDER")},
     {gText_Exit},
 };
 
@@ -1314,7 +1314,7 @@ const u8 *const gStdStrings[] =
     [STDSTRING_TOUGH2] = COMPOUND_STRING("TOUGH"),
     [STDSTRING_ITEMS] = COMPOUND_STRING("ITEMS"),
     [STDSTRING_KEYITEMS] = COMPOUND_STRING("KEY ITEMS"),
-    [STDSTRING_POKEBALLS] = COMPOUND_STRING("POKé BALLS"),
+    [STDSTRING_POKEBALLS] = COMPOUND_STRING("Poké Balls"),
     [STDSTRING_TMHMS] = COMPOUND_STRING("TMs & HMs"),
     [STDSTRING_BERRIES] = COMPOUND_STRING("BERRIES"),
     [STDSTRING_SINGLE] = COMPOUND_STRING("SINGLE"),

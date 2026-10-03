@@ -82,14 +82,14 @@ VerityLakefront_EventScript_BarryHypesUpTheLakeAtX5::
 
 VerityLakefront_Text_RedGyaradosLake:
 	.string "All right! To the lake!\n"
-	.string "Let's find us a red GYARADOS!$"
+	.string "Let's find us a red Gyarados!$"
 
 VerityLakefront_Text_YouGoAhead:
 	.string "You go ahead…$"
 
 VerityLakefront_Text_HaveToReturnThesePokemon:
 	.string "…I know we have to\n"
-	.string "return these POKéMON.\l"
+	.string "return these Pokémon.\l"
 	.string "They're not ours.$"
 
 VerityLakefront_Text_LittleMoreTimeWithThisGuy:
@@ -104,7 +104,7 @@ VerityLakefront_Text_WhereAreYouGoing:
 
 VerityLakefront_Text_HaveToReturnThesePokemonAgain:
 	.string "We have to go return these\n"
-	.string "POKéMON…$"
+	.string "Pokémon…$"
 
 VerityLakefront_Movement_WalkDown2:
 	walk_down

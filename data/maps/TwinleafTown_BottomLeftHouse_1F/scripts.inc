@@ -7,12 +7,12 @@ TwinleafTown_BottomLeftHouse_1F_EventScript_OldWoman::
 
 TwinleafTown_BottomLeftHouse_1F_Text_ProfessorReturned:
 	.string "Did you hear?\p"
-	.string "The POKéMON Professor returned\n"
+	.string "The Pokémon Professor returned\n"
 	.string "to the next town over.\p"
 	.string "They say he was gone for four\n"
 	.string "long years.\p"
 	.string "I wonder if he found some\n"
-	.string "amazing POKéMON while he was\l"
+	.string "amazing Pokémon while he was\l"
 	.string "gone?$"
 
 TwinleafTown_BottomLeftHouse_1F_EventScript_LittleGirl::
@@ -21,4 +21,4 @@ TwinleafTown_BottomLeftHouse_1F_EventScript_LittleGirl::
 
 TwinleafTown_BottomLeftHouse_1F_Text_WantACutePokemon:
 	.string "Listen, listen, {PLAYER}.\n"
-	.string "I want a cute POKéMON!$"
+	.string "I want a cute Pokémon!$"

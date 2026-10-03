@@ -60,7 +60,7 @@ OreburghCity_Museum_Text_NPC4:
 	.string "MUSEUM NPC 4$"
 
 OreburghCity_Museum_Text_NPC5:
-	.string "Mime Jr. LOVES the museum. We come here\n"
+	.string "Mime Jr. Loves the museum. We come here\n"
 	.string "at least once a week!$"
 
 OreburghCity_Museum_Text_NPC6:

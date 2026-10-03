@@ -27,10 +27,10 @@ TwinleafTown_BarryHouse_1F_Text_RocketedOffAgain:
 	.string "That kid rocketed off again like\n"
 	.string "usual.\p"
 	.string "I guess he would be out on\n"
-	.string "ROUTE 201 by now?\p"
+	.string "Route 201 by now?\p"
 	.string "He just can't sit still, that boy.\n"
 	.string "I wonder who he takes after?$"
 
 TwinleafTown_BarryHouse_1F_Text_FriendsWithAPokemon:
 	.string "Oh, you've become friends with a\n"
-	.string "POKéMON, too.$"
+	.string "Pokémon, too.$"
