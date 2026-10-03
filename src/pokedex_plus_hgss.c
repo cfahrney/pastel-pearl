@@ -291,6 +291,8 @@ static const u32 sPokedexPlusHGSS_ScreenSearchNational_Tilemap[] = INCGFX_U32("g
 
 static EWRAM_DATA struct PokedexView *sPokedexView = NULL;
 static EWRAM_DATA u16 sLastSelectedPokemon = 0;
+static EWRAM_DATA MainCallback sReturnCallback = NULL; // NULL returns to the start menu
+static EWRAM_DATA u16 sJumpToDexNum = 0;
 static EWRAM_DATA u8 sPokeBallRotation = 0;
 static EWRAM_DATA struct PokedexListItem *sPokedexListItem = NULL;
 //Pokedex Plus HGSS_Ui
@@ -2043,9 +2045,30 @@ void CB2_OpenPokedexPlusHGSS(void)
         SetVBlankCallback(VBlankCB_Pokedex);
         SetMainCallback2(CB2_Pokedex);
         CreatePokedexList(sPokedexView->dexMode, sPokedexView->dexOrder);
+        if (sJumpToDexNum != 0)
+        {
+            u16 i;
+
+            for (i = 0; i < sPokedexView->pokemonListCount; i++)
+            {
+                if (sPokedexView->pokedexList[i].dexNum == sJumpToDexNum)
+                {
+                    sPokedexView->selectedPokemon = i;
+                    break;
+                }
+            }
+            sJumpToDexNum = 0;
+        }
         m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 0x80);
         break;
     }
+}
+
+void OpenPokedexPlusHGSSForSpecies(enum Species species, MainCallback returnCallback)
+{
+    sReturnCallback = returnCallback;
+    sJumpToDexNum = SpeciesToNationalPokedexNum(species);
+    SetMainCallback2(CB2_OpenPokedexPlusHGSS);
 }
 
 static void ResetPokedexView(struct PokedexView *pokedexView)
@@ -2302,7 +2325,15 @@ static void Task_ClosePokedex(u8 taskId)
         ClearMonSprites();
         FreeWindowAndBgBuffers();
         DestroyTask(taskId);
-        SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
+        if (sReturnCallback != NULL)
+        {
+            SetMainCallback2(sReturnCallback);
+            sReturnCallback = NULL;
+        }
+        else
+        {
+            SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
+        }
         m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 0x100);
         Free(sPokedexView);
     }
