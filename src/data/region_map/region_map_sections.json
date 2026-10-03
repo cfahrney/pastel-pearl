@@ -1685,6 +1685,7 @@
     },
     {
       "id": "MAPSEC_JUBILIFE_CITY",
+      "name": "Jubilife City",
       "x": 5,
       "y": 10,
       "width": 1,
@@ -1716,7 +1717,7 @@
     },
     {
       "id": "MAPSEC_OREBURGH_CITY",
-      "name": "Oreburgh Mine",
+      "name": "Oreburgh City",
       "x": 5,
       "y": 7,
       "width": 1,

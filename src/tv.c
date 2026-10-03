@@ -3337,58 +3337,8 @@ u8 CheckForPlayersHouseNews(void)
 
 void GetMomOrDadStringForTVMessage(void)
 {
-    // If the player is checking the TV in their house it will only refer to their Mom.
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
-    {
-        if (gSaveBlock2Ptr->playerGender == MALE)
-        {
-            if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
-            {
-                StringCopy(gStringVar1, gText_Mom);
-                VarSet(VAR_TEMP_3, 1);
-            }
-        }
-        else
-        {
-            if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F))
-            {
-                StringCopy(gStringVar1, gText_Mom);
-                VarSet(VAR_TEMP_3, 1);
-            }
-        }
-    }
-    if (VarGet(VAR_TEMP_3) == 1)
-    {
-        StringCopy(gStringVar1, gText_Mom);
-    }
-    else if (VarGet(VAR_TEMP_3) == 2)
-    {
-        StringCopy(gStringVar1, gText_Dad);
-    }
-    else if (VarGet(VAR_TEMP_3) > 2)
-    {
-        // Should only happen if VAR_TEMP_3 is already in use by something else.
-        if (VarGet(VAR_TEMP_3) % 2 == 0)
-            StringCopy(gStringVar1, gText_Mom);
-        else
-            StringCopy(gStringVar1, gText_Dad);
-    }
-    else
-    {
-        // Randomly choose whether to refer to Mom or Dad.
-        // NOTE: Because of this, any map that has a TV in it shouldn't rely on VAR_TEMP_3.
-        //       If its value is 0, checking the TV will set it to 1 or 2.
-        if (Random() % 2 != 0)
-        {
-            StringCopy(gStringVar1, gText_Mom);
-            VarSet(VAR_TEMP_3, 1);
-        }
-        else
-        {
-            StringCopy(gStringVar1, gText_Dad);
-            VarSet(VAR_TEMP_3, 2);
-        }
-    }
+    // Sinnoh protagonists only have a Mom.
+    StringCopy(gStringVar1, gText_Mom);
 }
 
 void HideBattleTowerReporter(void)

@@ -132,12 +132,6 @@ LakeVerity_EventScript_ArriveAtLake::
 	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_WhatsGoingOnStarly, MSGBOX_DEFAULT
 	closemessage
-	setspeaker SP_NAME_RIVAL
-	msgbox LakeVerity_Text_LookPokeBalls, MSGBOX_DEFAULT
-	closemessage
-	setspeaker SP_NAME_RIVAL
-	msgbox LakeVerity_Text_WhichOneDoYouWant, MSGBOX_DEFAULT
-	closemessage
 	@ special ChooseStarter gives the player their starter and runs the
 	@ forced STARLY battle. The state var has to advance before the battle
 	@ starts, since returning from battle briefly reactivates on-frame
