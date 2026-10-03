@@ -808,7 +808,7 @@ static void Task_DisplayMainMenu(u8 taskId)
         // so the default gender is MALE.
         if (gSaveBlock2Ptr->playerGender == MALE)
         {
-            palette = RGB(4, 16, 31);
+            palette = RGB(11, 24, 27); // #5AC2DC accent blue
             LoadPalette(&palette, BG_PLTT_ID(15) + 1, PLTT_SIZEOF(1));
         }
         else
