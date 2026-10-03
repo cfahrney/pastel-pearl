@@ -603,8 +603,7 @@
 #define METATILE_SaffronCity_SilphCoDoor  0x2BC
 
 // gTileset_Sandgem
-#define METATILE_Sandgem_Door_House     0x24D
-#define METATILE_Sandgem_Door_Twinleaf  0x25E
+#define METATILE_Sandgem_Door_House  0x24D
 
 // gTileset_SeaCottage
 #define METATILE_SeaCottage_Teleporter_CableBall_Bottom  0x2BA
@@ -1030,6 +1029,9 @@
 #define METATILE_TrickHousePuzzle_RedDoorV_Open1              0x242
 #define METATILE_TrickHousePuzzle_RedDoorV_Retracted          0x24A
 #define METATILE_TrickHousePuzzle_Stairs_Down                 0x20B
+
+// gTileset_Twinleaf
+#define METATILE_Twinleaf_Door_House  0x25E
 
 // gTileset_Underwater
 #define METATILE_Underwater_FloorShadow  0x228

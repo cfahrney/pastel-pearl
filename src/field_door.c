@@ -307,7 +307,7 @@ static const u8 sDoorAnimPalettes_JubilifeDexnavHq[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_JubilifeGray[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_JubilifeTan[] = {12, 12, 12, 12, 12, 12, 12, 12};
 static const u8 sDoorAnimPalettes_JubilifeGts[] = {6, 6, 6, 6, 6, 6, 6, 6};
-static const u8 sDoorAnimPalettes_SandgemHouse[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const u8 sDoorAnimPalettes_SandgemHouse[] = {8, 8, 8, 8, 8, 8, 8, 8};
 static const u8 sDoorAnimPalettes_TwinleafHouse[] = {10, 10, 10, 10, 10, 10, 10, 10};
 
 #if IS_FRLG
@@ -417,7 +417,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Jubilife_Door_Tan,                            &gTileset_Jubilife, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_JubilifeTan, sDoorAnimPalettes_JubilifeTan, TRUE},
     {METATILE_Jubilife_Door_Gts,                            &gTileset_Jubilife, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_JubilifeGts, sDoorAnimPalettes_JubilifeGts, TRUE},
     {METATILE_Sandgem_Door_House,                           &gTileset_Sandgem, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_SandgemHouse, sDoorAnimPalettes_SandgemHouse, TRUE},
-    {METATILE_Sandgem_Door_Twinleaf,                        &gTileset_Sandgem, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_TwinleafHouse, sDoorAnimPalettes_TwinleafHouse, TRUE},
+    {METATILE_Twinleaf_Door_House,                          &gTileset_Sandgem, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_TwinleafHouse, sDoorAnimPalettes_TwinleafHouse, TRUE},
 #else
     {METATILE_GeneralFrlg_Door,                             &gTileset_General_Frlg, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_GeneralFrlg, sDoorAnimPalettes_GeneralFrlg},
     {METATILE_GeneralFrlg_SlidingSingleDoor,                &gTileset_General_Frlg, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_SlidingSingle, sDoorAnimPalettes_SlidingSingle},

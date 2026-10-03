@@ -15,14 +15,14 @@
   "connections": [
     {
       "map": "MAP_SANDGEM_TOWN",
-      "offset": -2,
+      "offset": 10,
       "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 7,
+      "x": 21,
       "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
