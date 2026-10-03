@@ -135,8 +135,56 @@ SandgemTown_ProfessorRowansLab_Movement_LucasDawnLeavesLab:
 	step_end
 
 SandgemTown_ProfessorRowansLab_EventScript_NPC1::
-	msgbox SandgemTown_ProfessorRowansLab_Text_NPC1, MSGBOX_NPC
+	lock
+	faceplayer
+	setspeaker SP_NAME_ROWAN
+	msgbox gRowanDexRatingText_AreYouCurious, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SandgemTown_ProfessorRowansLab_EventScript_DeclineRating
+	call SandgemTown_ProfessorRowansLab_EventScript_RatePokedex
+	release
 	end
+
+SandgemTown_ProfessorRowansLab_EventScript_DeclineRating::
+	setspeaker SP_NAME_ROWAN
+	msgbox gRowanDexRatingText_Cancel, MSGBOX_DEFAULT
+	release
+	end
+
+SandgemTown_ProfessorRowansLab_EventScript_ShowRatingMessage::
+	copyvar VAR_0x8004, VAR_0x8009
+	special ShowRowanPokedexRatingMessage
+	waitmessage
+	waitbuttonpress
+	return
+
+SandgemTown_ProfessorRowansLab_EventScript_RatePokedex::
+	setvar VAR_0x8004, 0
+	specialvar VAR_RESULT, ScriptGetPokedexInfo
+	copyvar VAR_0x8008, VAR_0x8005
+	copyvar VAR_0x8009, VAR_0x8006
+	copyvar VAR_0x800A, VAR_RESULT
+	buffernumberstring STR_VAR_1, VAR_0x8008  @ Num Sinnoh seen
+	buffernumberstring STR_VAR_2, VAR_0x8009  @ Num Sinnoh caught
+	setspeaker SP_NAME_ROWAN
+	msgbox gRowanDexRatingText_SoYouveSeenAndCaught, MSGBOX_DEFAULT
+	call SandgemTown_ProfessorRowansLab_EventScript_ShowRatingMessage
+	specialvar VAR_RESULT, HasAllRegionalMons
+	call_if_eq VAR_RESULT, TRUE, SandgemTown_ProfessorRowansLab_EventScript_RegionalComplete
+	goto_if_eq VAR_0x800A, 0, Common_EventScript_NopReturn  @ National dex not enabled
+	setvar VAR_0x8004, 1
+	specialvar VAR_RESULT, ScriptGetPokedexInfo
+	copyvar VAR_0x8008, VAR_0x8005
+	copyvar VAR_0x8009, VAR_0x8006
+	buffernumberstring STR_VAR_1, VAR_0x8008  @ Num National seen
+	buffernumberstring STR_VAR_2, VAR_0x8009  @ Num National caught
+	setspeaker SP_NAME_ROWAN
+	msgbox gRowanDexRatingText_OnANationwideBasis, MSGBOX_DEFAULT
+	return
+
+SandgemTown_ProfessorRowansLab_EventScript_RegionalComplete::
+	setspeaker SP_NAME_ROWAN
+	msgbox gRowanDexRatingText_RegionalComplete, MSGBOX_DEFAULT
+	return
 
 SandgemTown_ProfessorRowansLab_EventScript_NPC2::
 	msgbox SandgemTown_ProfessorRowansLab_Text_NPC2, MSGBOX_NPC
@@ -150,10 +198,16 @@ SandgemTown_ProfessorRowansLab_Text_NPC1:
 	.string "PROFESSOR ROWANS LAB NPC 1$"
 
 SandgemTown_ProfessorRowansLab_Text_NPC2:
-	.string "PROFESSOR ROWANS LAB NPC 2$"
+	.string "I'm {ASSISTANT}'s father.\p"
+	.string "I'll be happy to assist you on your\n"
+	.string "quest for the professor.\p"
+	.string "Hahahah. Eh…\n"
+	.string "I'm sure we can count on you!$"
 
 SandgemTown_ProfessorRowansLab_Text_NPC3:
-	.string "PROFESSOR ROWANS LAB NPC 3$"
+	.string "Professor Rowan invented a new\n"
+	.string "Pokédex while working alongside a\l"
+	.string "professor from the Kanto region!$"
 
 SandgemTown_ProfessorRowansLab_Text_RowanFinallyYouveCome:
 	.string "…\p"

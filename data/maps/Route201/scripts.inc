@@ -470,17 +470,40 @@ Route201_EventScript_Trainer1::
 	end
 
 Route201_Text_Trainer1Intro:
-	.string "I'm still new to this, okay?$"
+	.string "Hiya! Care for a quick battle! I'm\n"
+	.string "pretty new to this.$"
 
 Route201_Text_Trainer1Defeated:
-	.string "Dang, you're really good...$"
+	.string "Wow, you're good!$"
 
 Route201_Text_Trainer1PostBattle:
-	.string "Me and Starly are gonna train real hard.$"
+	.string "That ledge is one way. Jump down for a\n"
+	.string "shortcut to Twinleaf Town!$"
 
 Route201_EventScript_NPC1::
-	msgbox Route201_Text_NPC1, MSGBOX_NPC
+	@ poe:behavior {"mode":"gift","item":"ITEM_POTION","qty":1}
+	lock
+	faceplayer
+	goto_if_set FLAG_ROUTE201_NPC1_GIFT, Route201_EventScript_NPC1After
+	msgbox Route201_Text_NPC1, MSGBOX_DEFAULT
+	giveitem ITEM_POTION, 1
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_ROUTE201_NPC1_GIFT
+	msgbox Route201_Text_NPC1Received, MSGBOX_DEFAULT
+	release
 	end
+
+Route201_EventScript_NPC1After::
+	msgbox Route201_Text_NPC1After, MSGBOX_DEFAULT
+	release
+	end
+
+Route201_Text_NPC1Received::
+	.string "Use it when your Pokémon's HP is low!$"
+
+Route201_Text_NPC1After::
+	.string "You can find a Pokémon Mart in cities\n"
+	.string "and most major towns.$"
 
 Route201_EventScript_NPC2::
 	msgbox Route201_Text_NPC2, MSGBOX_NPC
@@ -491,10 +514,38 @@ Route201_EventScript_NPC3::
 	end
 
 Route201_Text_NPC1:
-	.string "ROUTE 201 NPC 1$"
+	.string "Hi! I work at the Pokémon Mart. Did you\n"
+	.string "know we items to help restore your\l"
+	.string "Pokémon's HP?\p"
+	.string "Here! Since you seem new to this, you\n"
+	.string "can have this one as a freebie.$"
 
 Route201_Text_NPC2:
-	.string "ROUTE 201 NPC 2$"
+	.string "I sure wish I had some Berries to plant\n"
+	.string "here. Maybe I'll plan a trip to Floaroma\l"
+	.string "Town soon...$"
 
 Route201_Text_NPC3:
-	.string "ROUTE 201 NPC 3$"
+	.string "Wild Pokémon lurk in the tall grass, but\n"
+	.string "some will roam around the grass too!\p"
+	.string "If they see you, be prepared for a\n"
+	.string "battle.$"
+
+Route201_EventScript_Sign1::
+	msgbox Route201_Text_Sign1, MSGBOX_SIGN
+	end
+
+Route201_Text_Sign1:
+	.string "Trainer Tips!\p"
+	.string "Don't be shy! Talk to anyone and\n"
+	.string "everyone you happen to see. By talking\l"
+	.string "to people, you will get invaluable\l"
+	.string "information and advice.$"
+
+Route201_EventScript_Sign2::
+	msgbox Route201_Text_Sign2, MSGBOX_SIGN
+	end
+
+Route201_Text_Sign2:
+	.string "Route 201\n"
+	.string "{RIGHT_ARROW} Sandgem Town$"

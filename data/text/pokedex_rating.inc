@@ -114,6 +114,122 @@ gBirchDexRatingText_OnANationwideBasis::
 	.string "You've seen {STR_VAR_1} Pokémon,\n"
 	.string "and you've caught {STR_VAR_2} Pokémon…$"
 
+gRowanDexRatingText_AreYouCurious::
+	.string "Ah, {PLAYER}!\p"
+	.string "Are you curious about how your\n"
+	.string "Pokédex is coming along?$"
+
+gRowanDexRatingText_Cancel::
+	.string "Hm? Oh, you haven't caught enough\n"
+	.string "Pokémon to make it worthwhile.$"
+
+gRowanDexRatingText_SoYouveSeenAndCaught::
+	.string "Hmhm…\p"
+	.string "So, you've seen {STR_VAR_1} Pokémon,\n"
+	.string "and you've caught {STR_VAR_2} Pokémon…$"
+
+gRowanDexRatingText_LessThan10::
+	.string "Go into grassy areas more and look\n"
+	.string "for Pokémon more carefully.$"
+
+gRowanDexRatingText_LessThan20::
+	.string "I guess you're getting the hang\n"
+	.string "of it. But, it gets harder from here.$"
+
+gRowanDexRatingText_LessThan30::
+	.string "Some Pokémon only appear in\n"
+	.string "certain areas.\l"
+	.string "You must be persistent.$"
+
+gRowanDexRatingText_LessThan40::
+	.string "Well, it could use more quantity,\n"
+	.string "but this is looking more like\l"
+	.string "a Pokédex now.$"
+
+gRowanDexRatingText_LessThan50::
+	.string "This is coming along pretty good.\n"
+	.string "Keep up the effort.$"
+
+gRowanDexRatingText_LessThan60::
+	.string "Are you using any rods?\n"
+	.string "There are many Pokémon in the sea.$"
+
+gRowanDexRatingText_LessThan70::
+	.string "Instead of just catching Pokémon,\n"
+	.string "how about making them evolve, too?$"
+
+gRowanDexRatingText_LessThan80::
+	.string "This is going to be a fantastic\n"
+	.string "Pokédex.\l"
+	.string "That's the feeling I'm getting.$"
+
+gRowanDexRatingText_LessThan90::
+	.string "You've collected this many…\n"
+	.string "Your talent is remarkable!$"
+
+gRowanDexRatingText_LessThan100::
+	.string "Have you visited the Safari Zone?\p"
+	.string "I hear there are some Pokémon that\n"
+	.string "can only be caught there.$"
+
+gRowanDexRatingText_LessThan110::
+	.string "You've finally reached\n"
+	.string "the 100-kind mark.\p"
+	.string "This is an impressive Pokédex!$"
+
+gRowanDexRatingText_LessThan120::
+	.string "There might be Pokémon that can be\n"
+	.string "found using Rock Smash.$"
+
+gRowanDexRatingText_LessThan130::
+	.string "You should get some more Pokémon\n"
+	.string "by trading with others.$"
+
+gRowanDexRatingText_LessThan140::
+	.string "I've heard of Pokémon that evolve\n"
+	.string "when they come to fully love their\l"
+	.string "Trainers.$"
+
+gRowanDexRatingText_LessThan150::
+	.string "I had no idea that there were so\n"
+	.string "many Pokémon species in the Sinnoh\l"
+	.string "region.$"
+
+gRowanDexRatingText_LessThan160::
+	.string "On occasion, some Pokémon appear\n"
+	.string "in large numbers like outbreaks.\p"
+	.string "Don't miss opportunities like\n"
+	.string "those.$"
+
+gRowanDexRatingText_LessThan170::
+	.string "One can get a very good idea about\n"
+	.string "the Pokémon of the Sinnoh region\l"
+	.string "by looking through your Pokédex.$"
+
+gRowanDexRatingText_LessThan180::
+	.string "I would say you already qualify as\n"
+	.string "a Pokémon Professor, and a good\l"
+	.string "one, too!$"
+
+gRowanDexRatingText_LessThan190::
+	.string "With a Pokédex this complete,\n"
+	.string "you're a real professional at this!$"
+
+gRowanDexRatingText_LessThan200::
+	.string "You're very close to completing\n"
+	.string "this Pokédex.\l"
+	.string "I can feel it in my bones!$"
+
+gRowanDexRatingText_DexCompleted::
+	.string "Congratulations!\n"
+	.string "Your Pokédex is complete!$"
+
+gRowanDexRatingText_OnANationwideBasis::
+	.string "Hmhm…\n"
+	.string "On a nationwide basis…\p"
+	.string "You've seen {STR_VAR_1} Pokémon,\n"
+	.string "and you've caught {STR_VAR_2} Pokémon…$"
+
 @ FRLG
 
 PokedexRating_Text_HowIsPokedexComingAlong::
@@ -236,3 +352,9 @@ PokedexRating_Text_LoveSeeingYourPokedex::
 	.string "Actually, I know how it is, but I\n"
 	.string "love seeing it anyway!\p"
 	.string "Let's see…$"
+
+gRowanDexRatingText_RegionalComplete::
+	.string "You have recorded every Pokémon\n"
+	.string "in the Sinnoh region…\p"
+	.string "I never thought I would live to\n"
+	.string "see it.$"

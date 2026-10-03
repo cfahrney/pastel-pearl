@@ -48,20 +48,22 @@ SandgemTown_EventScript_Sign5::
 	end
 
 SandgemTown_Text_Sign1:
-	.string "SANDGEM TOWN SIGN 1$"
+	.string "Pokémon Research Lab$"
 
 SandgemTown_Text_Sign2:
-	.string "Heal your Pokemon!\n"
-	.string "Pokemon Center$"
+	.string "Heal your Pokémon!\n"
+	.string "Pokémon Center$"
 
 SandgemTown_Text_Sign3:
-	.string "SANDGEM TOWN SIGN 3$"
+	.string "All your items needs fulfilled!\n"
+	.string "Pokémon Mart$"
 
 SandgemTown_Text_Sign4:
-	.string "SANDGEM TOWN SIGN 4$"
+	.string "Sandgem Town\n"
+	.string "Town of Sand!$"
 
 SandgemTown_Text_Sign5:
-	.string "SANDGEM TOWN SIGN 5$"
+	.string "{ASSISTANT}'s House$"
 
 SandgemTown_EventScript_NPC1::
 	msgbox SandgemTown_Text_NPC1, MSGBOX_NPC
@@ -76,13 +78,23 @@ SandgemTown_EventScript_NPC3::
 	end
 
 SandgemTown_Text_NPC1:
-	.string "SANDGEM TOWN NPC 1$"
+	.string "That thing you have!\p"
+	.string "It's a Pokédex, isn't it?!\p"
+	.string "You're off to see all kinds of Pokémon\n"
+	.string "now! Lucky you!$"
 
 SandgemTown_Text_NPC2:
-	.string "SANDGEM TOWN NPC 2$"
+	.string "I'm from here but if I'm being honest...\p"
+	.string "I don't like sand. It's coarse and rough\n"
+	.string "and irritating, and it gets everywhere.$"
 
 SandgemTown_Text_NPC3:
-	.string "SANDGEM TOWN NPC 3$"
+	.string "Oh, wow!\n"
+	.string "Pokémon are so cool!\p"
+	.string "You can make yours battle and make\n"
+	.string "them stronger!\p"
+	.string "I wish I had some!\n"
+	.string "It's so cool!$"
 
 @ Ambient rooftop Pokemon: turn and cry, no text box.
 SandgemTown_EventScript_NPC4::

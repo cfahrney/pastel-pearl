@@ -138,28 +138,7 @@ static void WallyHandleActions(enum BattlerId battler)
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
             BtlController_Complete(battler);
-            gBattleStruct->wallyBattleState++;
-            gBattleStruct->wallyMovesState = 0;
-            gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
-        }
-        break;
-    case 2:
-        if (--gBattleStruct->wallyWaitFrames == 0)
-        {
-            PlaySE(SE_SELECT);
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
-            BtlController_Complete(battler);
-            gBattleStruct->wallyBattleState++;
-            gBattleStruct->wallyMovesState = 0;
-            gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
-        }
-        break;
-    case 3:
-        if (--gBattleStruct->wallyWaitFrames == 0)
-        {
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_WALLY_THROW, 0);
-            BtlController_Complete(battler);
-            gBattleStruct->wallyBattleState++;
+            gBattleStruct->wallyBattleState = 4; // one turn each, then the ball
             gBattleStruct->wallyMovesState = 0;
             gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
         }
@@ -280,16 +259,22 @@ void WallyBufferExecCompleted(enum BattlerId battler)
 
 #define sSpeedX data[0]
 
+// Lucas/Dawn is the opposite gender of the player
+static u32 GetAssistantTrainerPic(void)
+{
+    return gSaveBlock2Ptr->playerGender == MALE ? TRAINER_PIC_DAWN : TRAINER_PIC_LUCAS;
+}
+
 static void WallyHandleDrawTrainerPic(enum BattlerId battler)
 {
-    BtlController_HandleDrawTrainerPic(battler, TRAINER_PIC_WALLY, FALSE,
-                                       80, 80 + 4 * (8 - GetTrainerBackPicCoords(TRAINER_PIC_WALLY)->size),
+    BtlController_HandleDrawTrainerPic(battler, GetAssistantTrainerPic(), FALSE,
+                                       80, 80 + 4 * (8 - GetTrainerBackPicCoords(GetAssistantTrainerPic())->size),
                                        30);
 }
 
 static void WallyHandleTrainerSlide(enum BattlerId battler)
 {
-    BtlController_HandleTrainerSlide(battler, TRAINER_PIC_WALLY);
+    BtlController_HandleTrainerSlide(battler, GetAssistantTrainerPic());
 }
 
 #undef sSpeedX
@@ -366,7 +351,7 @@ static void WallyHandleFaintingCry(enum BattlerId battler)
 
 static void WallyHandleIntroTrainerBallThrow(enum BattlerId battler)
 {
-    const u16 *trainerPal = GetTrainerBackPicPalette(TRAINER_PIC_WALLY);
+    const u16 *trainerPal = GetTrainerBackPicPalette(GetAssistantTrainerPic());
     BtlController_HandleIntroTrainerBallThrow(battler, 0xD6F8, trainerPal, 31, Intro_TryShinyAnimShowHealthbox);
 }
 

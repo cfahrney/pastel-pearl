@@ -21,13 +21,23 @@ SandgemTown_BottomRightHouse_1F_EventScript_NPC3::
 	end
 
 SandgemTown_BottomRightHouse_1F_Text_NPC1:
-	.string "BOTTOM RIGHT HOUSE 1F NPC 1$"
+	.string "Ah, so that Rowan fellow is back? He's\n"
+	.string "quite the remarkable man.\p"
+	.string "He's been studying Pokémon since way,\n"
+	.string "way back.\p"
+	.string "My son and grandchild help Rowan with\n"
+	.string "his studies now.$"
 
 SandgemTown_BottomRightHouse_1F_Text_NPC2:
-	.string "BOTTOM RIGHT HOUSE 1F NPC 2$"
+	.string "Who are you?\p"
+	.string "...\p"
+	.string "Oh, I see! You're doing that Pokédex\n"
+	.string "thing for the professor!\p"
+	.string "Wow! That's the same as my big sibling!\n"
+	.string "Go for it!$"
 
 SandgemTown_BottomRightHouse_1F_Text_NPC3:
-	.string "BOTTOM RIGHT HOUSE 1F NPC 3$"
+	.string "Doooof?$"
 
 SandgemTown_BottomRightHouse_1F_Text_NPC3Speaker:
 	.string "Bidoof$"

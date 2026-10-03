@@ -30,10 +30,19 @@ SandgemTown_PokemonCenter_1F_EventScript_NPC3::
 	end
 
 SandgemTown_PokemonCenter_1F_Text_NPC1:
-	.string "POKEMON CENTER 1F NPC 1$"
+	.string "Talk to the nice lady at the counter\n"
+	.string "and hand her your Pokémon.\p"
+	.string "She'll heal your Pokémon to perfect\n"
+	.string "health in no time at all!$"
 
 SandgemTown_PokemonCenter_1F_Text_NPC2:
-	.string "POKEMON CENTER 1F NPC 2$"
+	.string "There's not much to do in Sandgem Town,\n"
+	.string "so I hang out in the Pokémon Center to\l"
+	.string "see all the Pokémon people have.\p"
+	.string "Yours is super cute!$"
 
 SandgemTown_PokemonCenter_1F_Text_NPC3:
-	.string "POKEMON CENTER 1F NPC 3$"
+	.string "Do you see that PC over there?\p"
+	.string "The fancy blue one?\p"
+	.string "If you've got a Pokémon with you, it's\n"
+	.string "free to use. s$"

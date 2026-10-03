@@ -1539,6 +1539,19 @@ void LoadWallyZigzagoon(void)
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE4, &monData);
 }
 
+// Lucas/Dawn's catch-tutorial mon: the starter neither the player nor Barry has
+void LoadAssistantStarter(void)
+{
+    u16 monData;
+    CreateRandomMon(&gParties[B_TRAINER_PLAYER][0], GetStarterPokemon((VarGet(VAR_STARTER_MON) + 2) % 3), 7);
+    monData = MOVE_TACKLE;
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE1, &monData);
+    monData = MOVE_NONE;
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE2, &monData);
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE3, &monData);
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE4, &monData);
+}
+
 bool8 IsStarterInParty(void)
 {
     u8 i;

@@ -3526,7 +3526,7 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                     if (IS_FRLG)
                         textStart = StringCopy(textStart, COMPOUND_STRING("The old man"));
                     else
-                        textStart = StringCopy(textStart, COMPOUND_STRING("Wally"));
+                        textStart = StringCopy(textStart, gSaveBlock2Ptr->playerGender == MALE ? gText_ExpandedPlaceholder_Dawn : gText_ExpandedPlaceholder_Lucas);
                 }
                 else if (GetBattlerPosition(gBattlerAttacker) == B_POSITION_PLAYER_LEFT)
                 {

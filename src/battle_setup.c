@@ -474,6 +474,16 @@ void StartWallyTutorialBattle(void)
     CreateBattleStartTask(B_TRANSITION_SLICE, 0);
 }
 
+// Lucas/Dawn catches a Pichu
+void StartAssistantTutorialBattle(void)
+{
+    CreateMaleMon(&gParties[B_TRAINER_OPPONENT_A][0], SPECIES_PICHU, 5);
+    LockPlayerFieldControls();
+    gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
+    gBattleTypeFlags = BATTLE_TYPE_CATCH_TUTORIAL;
+    CreateBattleStartTask(B_TRANSITION_SLICE, 0);
+}
+
 void StartOldManTutorialBattle(void)
 {
     CreateMaleMon(&gParties[B_TRAINER_OPPONENT_A][0], SPECIES_WEEDLE, 5);

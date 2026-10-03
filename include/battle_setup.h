@@ -55,6 +55,7 @@ void BattleSetup_StartDoubleWildBattle(void);
 void BattleSetup_StartBattlePikeWildBattle(void);
 void BattleSetup_StartRoamerBattle(void);
 void StartWallyTutorialBattle(void);
+void StartAssistantTutorialBattle(void);
 void BattleSetup_StartScriptedWildBattle(void);
 void BattleSetup_StartScriptedDoubleWildBattle(void);
 void BattleSetup_StartLatiBattle(void);

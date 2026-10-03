@@ -372,6 +372,34 @@ extern const u8 gBirchDexRatingText_LessThan190[];
 extern const u8 gBirchDexRatingText_LessThan200[];
 extern const u8 gBirchDexRatingText_DexCompleted[];
 
+// rowan dex rating text
+extern const u8 gRowanDexRatingText_LessThan10[];
+extern const u8 gRowanDexRatingText_LessThan20[];
+extern const u8 gRowanDexRatingText_LessThan30[];
+extern const u8 gRowanDexRatingText_LessThan40[];
+extern const u8 gRowanDexRatingText_LessThan50[];
+extern const u8 gRowanDexRatingText_LessThan60[];
+extern const u8 gRowanDexRatingText_LessThan70[];
+extern const u8 gRowanDexRatingText_LessThan80[];
+extern const u8 gRowanDexRatingText_LessThan90[];
+extern const u8 gRowanDexRatingText_LessThan100[];
+extern const u8 gRowanDexRatingText_LessThan110[];
+extern const u8 gRowanDexRatingText_LessThan120[];
+extern const u8 gRowanDexRatingText_LessThan130[];
+extern const u8 gRowanDexRatingText_LessThan140[];
+extern const u8 gRowanDexRatingText_LessThan150[];
+extern const u8 gRowanDexRatingText_LessThan160[];
+extern const u8 gRowanDexRatingText_LessThan170[];
+extern const u8 gRowanDexRatingText_LessThan180[];
+extern const u8 gRowanDexRatingText_LessThan190[];
+extern const u8 gRowanDexRatingText_LessThan200[];
+extern const u8 gRowanDexRatingText_DexCompleted[];
+extern const u8 gRowanDexRatingText_AreYouCurious[];
+extern const u8 gRowanDexRatingText_Cancel[];
+extern const u8 gRowanDexRatingText_SoYouveSeenAndCaught[];
+extern const u8 gRowanDexRatingText_OnANationwideBasis[];
+extern const u8 gRowanDexRatingText_RegionalComplete[];
+
 // player PC text
 extern const u8 gText_WhatWouldYouLike[];
 extern const u8 gText_NoMailHere[];

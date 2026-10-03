@@ -54,8 +54,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SandgemTown_EventScript_NPC2",
-      "flag": "0",
-      "poe_muted": true
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DP",
@@ -105,9 +104,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_LEMONADE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_SANDGEM_TOWN_1"
+      "flag": "FLAG_ITEM_SANDGEM_TOWN_LEMONADE"
     },
     {
       "local_id": "LOCALID_SANDGEMTOWN_LUCASDAWN",

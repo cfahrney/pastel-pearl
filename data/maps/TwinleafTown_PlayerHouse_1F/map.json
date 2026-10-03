@@ -53,7 +53,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM"
+      "flag": "FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM",
+      "poe_muted": true
     }
   ],
   "warp_events": [
@@ -87,7 +88,8 @@
       "elevation": 0,
       "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "NULL",
+      "poe_muted": true
     },
     {
       "type": "trigger",

@@ -263,7 +263,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "Route201_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -271,7 +271,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "Route201_EventScript_Sign2"
     }
   ]
 }

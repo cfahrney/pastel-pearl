@@ -93,9 +93,9 @@
 #define FLAG_HIDE_PROFESSORROWANSLAB_LUCASDAWN    0x47
 #define FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM    0x48
 #define FLAG_EXP_SHARE_ON    0x49
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
+#define FLAG_ROUTE201_NPC1_GIFT             0x4A
+#define FLAG_SANDGEMTOWN_MART_NPC1_GIFT     0x4B
+#define FLAG_HIDE_ROUTE202_LUCASDAWN    0x4C
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
@@ -1244,9 +1244,9 @@
 #define FLAG_ITEM_OREBURGH_GATE_B1F_BIG_PEARL                       0x4A6
 #define FLAG_ITEM_OREBURGH_GATE_B1F_EARTH_PLATE                     0x4A7
 #define FLAG_ITEM_VERITY_LAKEFRONT_1                                0x4A8
-#define FLAG_ITEM_ROUTE_219_1                                       0x4A9
+#define FLAG_ITEM_ROUTE_219_SOFT_SAND                               0x4A9
 #define FLAG_ITEM_OREBURGH_MINE_2_1                                 0x4AA
-#define FLAG_ITEM_SANDGEM_TOWN_1                                    0x4AB
+#define FLAG_ITEM_SANDGEM_TOWN_LEMONADE                             0x4AB
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag

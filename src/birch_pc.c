@@ -47,8 +47,34 @@ static const u8 *const sBirchDexRatingTexts[BIRCH_DEX_STRINGS] =
     gBirchDexRatingText_DexCompleted,
 };
 
-// This shows your Hoenn Pokédex rating and not your National Dex.
-const u8 *GetPokedexRatingText(u32 count)
+#define ROWAN_DEX_STRINGS BIRCH_DEX_STRINGS
+
+static const u8 *const sRowanDexRatingTexts[ROWAN_DEX_STRINGS] =
+{
+    gRowanDexRatingText_LessThan10,
+    gRowanDexRatingText_LessThan20,
+    gRowanDexRatingText_LessThan30,
+    gRowanDexRatingText_LessThan40,
+    gRowanDexRatingText_LessThan50,
+    gRowanDexRatingText_LessThan60,
+    gRowanDexRatingText_LessThan70,
+    gRowanDexRatingText_LessThan80,
+    gRowanDexRatingText_LessThan90,
+    gRowanDexRatingText_LessThan100,
+    gRowanDexRatingText_LessThan110,
+    gRowanDexRatingText_LessThan120,
+    gRowanDexRatingText_LessThan130,
+    gRowanDexRatingText_LessThan140,
+    gRowanDexRatingText_LessThan150,
+    gRowanDexRatingText_LessThan160,
+    gRowanDexRatingText_LessThan170,
+    gRowanDexRatingText_LessThan180,
+    gRowanDexRatingText_LessThan190,
+    gRowanDexRatingText_LessThan200,
+    gRowanDexRatingText_DexCompleted,
+};
+
+static const u8 *GetRegionalRatingText(const u8 *const *texts, u32 count)
 {
     u32 i, j;
     u16 maxDex = REGIONAL_DEX_COUNT - 1;
@@ -63,7 +89,18 @@ const u8 *GetPokedexRatingText(u32 count)
             maxDex--;
         }
     }
-    return sBirchDexRatingTexts[(count * (BIRCH_DEX_STRINGS - 1)) / maxDex];
+    return texts[(count * (BIRCH_DEX_STRINGS - 1)) / maxDex];
+}
+
+// Regional (Sinnoh) rating, not National.
+const u8 *GetPokedexRatingText(u32 count)
+{
+    return GetRegionalRatingText(sBirchDexRatingTexts, count);
+}
+
+void ShowRowanPokedexRatingMessage(void)
+{
+    ShowFieldMessage(GetRegionalRatingText(sRowanDexRatingTexts, gSpecialVar_0x8004));
 }
 
 void ShowPokedexRatingMessage(void)

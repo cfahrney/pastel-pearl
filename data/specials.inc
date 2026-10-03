@@ -641,3 +641,7 @@ gSpecials::
 	def_special UpdateTrainerCardPhotoIcons
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
+	def_special ShowRowanPokedexRatingMessage
+	def_special HasAllRegionalMons
+	def_special LoadAssistantStarter
+	def_special StartAssistantTutorialBattle, waitstate=1
