@@ -36,7 +36,7 @@ JubilifeCity_PokemonCenter_1F_Text_NPC1:
 	.string "and weaknesses against other types.$"
 
 JubilifeCity_PokemonCenter_1F_Text_NPC2:
-	.string "I'd love one of those DexNavs, but I\n"
+	.string "I'd love one of those {COLOR DYNAMIC_COLOR3}DexNavs{COLOR DARK_GRAY}, but I\n"
 	.string "guess I need my own Pokemon first...$"
 
 JubilifeCity_PokemonCenter_1F_Text_NPC3:

@@ -1,5 +1,16 @@
 JubilifeCity_TrainerSchool_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, JubilifeCity_TrainerSchool_OnTransition
 	.byte 0
+
+JubilifeCity_TrainerSchool_OnTransition:
+	@ Barry is only inside after Lucas/Dawn mentions him and until he leaves with the Town Map.
+	setflag FLAG_HIDE_TRAINERSCHOOL_BARRY
+	call_if_eq VAR_JUBILIFE_CITY_STATE, 3, JubilifeCity_TrainerSchool_EventScript_ShowBarry
+	end
+
+JubilifeCity_TrainerSchool_EventScript_ShowBarry:
+	clearflag FLAG_HIDE_TRAINERSCHOOL_BARRY
+	return
 
 JubilifeCity_TrainerSchool_EventScript_NPC1::
 	msgbox JubilifeCity_TrainerSchool_Text_NPC1, MSGBOX_NPC
@@ -197,7 +208,7 @@ JubilifeCity_TrainerSchool_EventScript_BarryGone::
 	playse SE_EXIT
 	removeobject LOCALID_TRAINERSCHOOL_BARRY
 	setflag FLAG_HIDE_TRAINERSCHOOL_BARRY
-	setvar VAR_JUBILIFE_CITY_STATE, 3
+	setvar VAR_JUBILIFE_CITY_STATE, 6
 	release
 	end
 

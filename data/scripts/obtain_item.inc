@@ -51,6 +51,10 @@ EventScript_BufferBerriesPocket::
 	return
 
 EventScript_ObtainedItem::
+	@ Key items (single) get the accent color on the item name.
+	checkitemtype VAR_0x8006
+	compare VAR_RESULT, POCKET_KEY_ITEMS
+	goto_if_eq EventScript_ObtainedKeyItemCheckAmount
 	compare VAR_0x8001, TRUE
 	goto_if_eq EventScript_ObtainedItemMessage
 	buffernumberstring 0, VAR_0x8001
@@ -63,6 +67,22 @@ EventScript_ContinueObtainedItem:
 	showitemdescription
 	waitfanfare
 	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
+	hideitemdescription
+	setvar VAR_RESULT, TRUE
+	return
+
+EventScript_ObtainedKeyItemCheckAmount::
+	compare VAR_0x8001, TRUE
+	goto_if_eq EventScript_ObtainedKeyItemMessage
+	buffernumberstring 0, VAR_0x8001
+	message gText_ObtainedTheItems
+	goto EventScript_ContinueObtainedItem
+EventScript_ObtainedKeyItemMessage:
+	message gText_ObtainedTheKeyItem
+	delay 10
+	showitemdescription
+	waitfanfare
+	msgbox gText_PutKeyItemInPocket, MSGBOX_DEFAULT
 	hideitemdescription
 	setvar VAR_RESULT, TRUE
 	return

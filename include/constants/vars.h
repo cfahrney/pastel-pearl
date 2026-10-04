@@ -183,8 +183,9 @@
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
 #define VAR_JUBILIFE_CITY_STATE                          0x408B
 // @states Jubilife story beats.
-//    0  Barry is still in the Trainer School
-//    3  Barry took the parcel, gave the player the Town Map and left the school
+//    0  Lucas/Dawn hasn't pointed the player to the Trainer School yet
+//    3  Lucas/Dawn pointed the player to the Trainer School, Barry waits inside
+//    6  Barry took the parcel, gave the player the Town Map and left the school
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E

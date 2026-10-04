@@ -34,6 +34,9 @@ gText_TheDecorWasTransferredToThePC::
 	.string "The {STR_VAR_2} was transferred\n"
 	.string "to the PC.$"
 
+gText_ObtainedTheKeyItem::
+	.string "Obtained the {COLOR DYNAMIC_COLOR3}{STR_VAR_2}{COLOR DARK_GRAY}!$"
+
 gText_ObtainedTheItems::
 	.string "Obtained {STR_VAR_1} {STR_VAR_2}!$"
 
