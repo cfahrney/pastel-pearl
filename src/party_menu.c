@@ -2910,7 +2910,16 @@ static u8 DisplaySelectionWindow(u8 windowType)
         AddTextPrinterParameterized4(sPartyMenuInternal->windowId[0], FONT_NORMAL, cursorDimension, (i * 16) + 1, letterSpacing, 0, sFontColorTable[fontColorsId], 0, text);
     }
 
-    InitMenuInUpperLeftCorner(sPartyMenuInternal->windowId[0], sPartyMenuInternal->numActions, 0, TRUE);
+    // Start on Summary even when Pokédex sits above it
+    for (i = 0; i < sPartyMenuInternal->numActions; i++)
+    {
+        if (sPartyMenuInternal->actions[i] == MENU_SUMMARY)
+            break;
+    }
+    if (i == sPartyMenuInternal->numActions)
+        i = 0;
+
+    InitMenuInUpperLeftCorner(sPartyMenuInternal->windowId[0], sPartyMenuInternal->numActions, i, TRUE);
     ScheduleBgCopyTilemapToVram(2);
 
     return sPartyMenuInternal->windowId[0];
@@ -2973,11 +2982,11 @@ static void InsertExtraFieldActions(struct Pokemon *mon)
 {
     if (GetMonData(mon, MON_DATA_IS_EGG))
         return;
-    // Reverse order so the menu reads Summary, Pokédex, Learn Moves, Rename
+    // Menu reads Pokédex, Summary, Learn Moves, Rename
     InsertFieldAction(1, MENU_RENAME);
     if (CanBoxMonRelearnAnyMove(&mon->box))
         InsertFieldAction(1, MENU_MOVES);
-    InsertFieldAction(1, MENU_POKEDEX);
+    InsertFieldAction(0, MENU_POKEDEX);
 }
 
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
