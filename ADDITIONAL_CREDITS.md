@@ -13,3 +13,7 @@ Source for many of the DP-specific, overworld/battle sprites
 - robloxmaster376
 - [The Spriters Resource](https://www.spriters-resource.com/)
 - The Radiant Quartz / Prismatic Platinum team
+
+### Gym leader overworld sprites
+
+Roark, Gardenia and Candice (`DP_roark`, `DP_gardenia`, `DP_candice` in `graphics/object_events/pics/people/`) come from [Pokémon Emerald Rogue](https://github.com/Pokabbie/pokeemerald-rogue) by Pokabbie. That repo doesn't list its sprite artists, so the original creators are unknown.

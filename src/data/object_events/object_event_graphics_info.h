@@ -3940,6 +3940,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CamperDp = {
     .images = sPicTable_CamperDp,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Candice = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_CANDICE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Candice,
+};
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Charon = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_CHARON,
@@ -4136,6 +4154,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GalacticGruntM = {
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
     .images = sPicTable_GalacticGruntM,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gardenia = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_GARDENIA,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Gardenia,
 };
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GentlemanDp = {
@@ -4586,6 +4622,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichLady = {
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
     .images = sPicTable_RichLady,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roark = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROARK,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Roark,
 };
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockerDp = {

@@ -216,6 +216,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreederF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BugCatcherDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Byron;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CamperDp;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Candice;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Charon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cheryl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cowgirl;
@@ -227,6 +228,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fantina;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FishermanDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GalacticGruntF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GalacticGruntM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gardenia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GentlemanDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HikerDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jupiter;
@@ -252,6 +254,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicMDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rancher;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichBoyDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichLady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roark;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockerDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roughneck;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RuinManiac;
@@ -702,6 +705,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BUG_CATCHER_DP] = &gObjectEventGraphicsInfo_BugCatcherDp,
     [OBJ_EVENT_GFX_BYRON] = &gObjectEventGraphicsInfo_Byron,
     [OBJ_EVENT_GFX_CAMPER_DP] = &gObjectEventGraphicsInfo_CamperDp,
+    [OBJ_EVENT_GFX_CANDICE] = &gObjectEventGraphicsInfo_Candice,
     [OBJ_EVENT_GFX_CHARON] = &gObjectEventGraphicsInfo_Charon,
     [OBJ_EVENT_GFX_CHERYL] = &gObjectEventGraphicsInfo_Cheryl,
     [OBJ_EVENT_GFX_COWGIRL] = &gObjectEventGraphicsInfo_Cowgirl,
@@ -713,6 +717,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_FISHERMAN_DP] = &gObjectEventGraphicsInfo_FishermanDp,
     [OBJ_EVENT_GFX_GALACTIC_GRUNT_F] = &gObjectEventGraphicsInfo_GalacticGruntF,
     [OBJ_EVENT_GFX_GALACTIC_GRUNT_M] = &gObjectEventGraphicsInfo_GalacticGruntM,
+    [OBJ_EVENT_GFX_GARDENIA] = &gObjectEventGraphicsInfo_Gardenia,
     [OBJ_EVENT_GFX_GENTLEMAN_DP] = &gObjectEventGraphicsInfo_GentlemanDp,
     [OBJ_EVENT_GFX_HIKER_DP] = &gObjectEventGraphicsInfo_HikerDp,
     [OBJ_EVENT_GFX_JUPITER] = &gObjectEventGraphicsInfo_Jupiter,
@@ -738,6 +743,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RANCHER] = &gObjectEventGraphicsInfo_Rancher,
     [OBJ_EVENT_GFX_RICH_BOY_DP] = &gObjectEventGraphicsInfo_RichBoyDp,
     [OBJ_EVENT_GFX_RICH_LADY] = &gObjectEventGraphicsInfo_RichLady,
+    [OBJ_EVENT_GFX_ROARK] = &gObjectEventGraphicsInfo_Roark,
     [OBJ_EVENT_GFX_ROCKER_DP] = &gObjectEventGraphicsInfo_RockerDp,
     [OBJ_EVENT_GFX_ROUGHNECK] = &gObjectEventGraphicsInfo_Roughneck,
     [OBJ_EVENT_GFX_RUIN_MANIAC] = &gObjectEventGraphicsInfo_RuinManiac,

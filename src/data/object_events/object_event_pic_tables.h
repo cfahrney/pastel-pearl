@@ -1046,6 +1046,10 @@ static const struct SpriteFrameImage sPicTable_CamperDp[] = {
     overworld_ascending_frames(gObjectEventPic_CamperDp, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Candice[] = {
+    overworld_ascending_frames(gObjectEventPic_Candice, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Charon[] = {
     overworld_ascending_frames(gObjectEventPic_Charon, 2, 4),
 };
@@ -1088,6 +1092,10 @@ static const struct SpriteFrameImage sPicTable_GalacticGruntF[] = {
 
 static const struct SpriteFrameImage sPicTable_GalacticGruntM[] = {
     overworld_ascending_frames(gObjectEventPic_GalacticGruntM, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Gardenia[] = {
+    overworld_ascending_frames(gObjectEventPic_Gardenia, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_GentlemanDp[] = {
@@ -1188,6 +1196,10 @@ static const struct SpriteFrameImage sPicTable_RichBoyDp[] = {
 
 static const struct SpriteFrameImage sPicTable_RichLady[] = {
     overworld_ascending_frames(gObjectEventPic_RichLady, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Roark[] = {
+    overworld_ascending_frames(gObjectEventPic_Roark, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_RockerDp[] = {
