@@ -538,3 +538,54 @@ JubilifeCity_Text_DexNavPresidentExplains:
 	.string "and on every route!\p"
 	.string "Be sure to stop by our headquarters\n"
 	.string "in the city if you'd like more info.$"
+
+JubilifeCity_EventScript_NPC16::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HOUNDOUR, CRY_MODE_NORMAL
+	setspeaker JubilifeCity_Text_NPC16Speaker
+	msgbox JubilifeCity_Text_NPC16, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JubilifeCity_Text_NPC16:
+	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY} NPC 16$"
+
+JubilifeCity_Text_NPC16Speaker:
+	.string "Houndour$"
+
+JubilifeCity_EventScript_NPC17::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PICHU, CRY_MODE_NORMAL
+	setspeaker JubilifeCity_Text_NPC17Speaker
+	msgbox JubilifeCity_Text_NPC17, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JubilifeCity_Text_NPC17:
+	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY} NPC 17$"
+
+JubilifeCity_Text_NPC17Speaker:
+	.string "Pichu$"
+
+JubilifeCity_EventScript_NPC18::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PICHU, CRY_MODE_NORMAL
+	setspeaker JubilifeCity_Text_NPC18Speaker
+	msgbox JubilifeCity_Text_NPC18, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JubilifeCity_Text_NPC18:
+	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY} NPC 18$"
+
+JubilifeCity_Text_NPC18Speaker:
+	.string "Pichu$"

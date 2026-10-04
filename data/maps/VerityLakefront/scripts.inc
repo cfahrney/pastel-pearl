@@ -153,3 +153,54 @@ VerityLakefront_EventScript_Tree1::
 	setflag FLAG_HIDE_VERITY_LAKEFRONT_TREE1
 	releaseall
 	end
+
+VerityLakefront_EventScript_NPC1::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KRICKETUNE, CRY_MODE_NORMAL
+	setspeaker VerityLakefront_Text_NPC1Speaker
+	msgbox VerityLakefront_Text_NPC1, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VerityLakefront_Text_NPC1:
+	.string "{COLOR DYNAMIC_COLOR3}Verity Lakefront{COLOR DARK_GRAY} NPC 1$"
+
+VerityLakefront_Text_NPC1Speaker:
+	.string "Kricketune$"
+
+VerityLakefront_EventScript_NPC2::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KRICKETOT, CRY_MODE_NORMAL
+	setspeaker VerityLakefront_Text_NPC2Speaker
+	msgbox VerityLakefront_Text_NPC2, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VerityLakefront_Text_NPC2:
+	.string "{COLOR DYNAMIC_COLOR3}Verity Lakefront{COLOR DARK_GRAY} NPC 2$"
+
+VerityLakefront_Text_NPC2Speaker:
+	.string "Kricketot$"
+
+VerityLakefront_EventScript_NPC3::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KRICKETOT, CRY_MODE_NORMAL
+	setspeaker VerityLakefront_Text_NPC3Speaker
+	msgbox VerityLakefront_Text_NPC3, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VerityLakefront_Text_NPC3:
+	.string "{COLOR DYNAMIC_COLOR3}Verity Lakefront{COLOR DARK_GRAY} NPC 3$"
+
+VerityLakefront_Text_NPC3Speaker:
+	.string "Kricketot$"

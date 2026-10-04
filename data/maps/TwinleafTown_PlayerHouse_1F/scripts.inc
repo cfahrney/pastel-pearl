@@ -539,3 +539,6 @@ TwinleafTown_PlayerHouse_1F_Movement_NeighborLeaves:
 	walk_down
 	walk_down
 	step_end
+
+TwinleafTown_PlayerHouse_1F_EventScript_Trigger1::
+	end

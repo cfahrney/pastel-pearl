@@ -106,7 +106,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ROXANNE",
+      "local_id": "LOCALID_OREBURGHMINE_2_ROARK",
+      "graphics_id": "OBJ_EVENT_GFX_ROARK",
       "x": 17,
       "y": 27,
       "elevation": 0,
@@ -116,7 +117,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "OreburghCity_OreburghMine_2_EventScript_NPC6",
-      "flag": "0"
+      "flag": "FLAG_HIDE_OREBURGHMINE_2_ROARK",
+      "scriptOnly": true
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",

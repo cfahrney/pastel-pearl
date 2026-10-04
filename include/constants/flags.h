@@ -469,7 +469,7 @@
 #define FLAG_REGISTERED_WALLACE              (TRAINER_REGISTERED_FLAGS_START + REMATCH_WALLACE)
 
 #define FLAG_HIDE_ROUTE203_BARRY_STARTER     0x1AA
-#define FLAG_UNUSED_0x1AB                    0x1AB // Unused Flag
+#define FLAG_HIDE_OREBURGHCITY_BARRY                 0x1AB
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
 #define FLAG_BATTLED_DEOXYS                  0x1AD
@@ -518,13 +518,13 @@
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
 #define FLAG_ENABLE_JUAN_MATCH_CALL          0x1D9
 
-#define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
+#define FLAG_HIDE_OREBURGHCITY_BARRY_STARTER         0x1DA
 
 #define FLAG_SHOWN_MYSTIC_TICKET             0x1DB
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
+#define FLAG_HIDE_OREBURGHMINE_2_ROARK               0x1DE
 #define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
 #define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag

@@ -88,7 +88,7 @@
       "elevation": 0,
       "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "TwinleafTown_PlayerHouse_1F_EventScript_Trigger1"
     },
     {
       "type": "trigger",

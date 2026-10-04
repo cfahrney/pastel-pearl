@@ -481,3 +481,54 @@ TwinleafTown_Text_TownSign:
 	.string "Twinleaf Town\n"
 	.string "“A refreshing town that smells\l"
 	.string "of country living.”$"
+
+TwinleafTown_EventScript_NPC1::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_STARLY, CRY_MODE_NORMAL
+	setspeaker TwinleafTown_Text_NPC1Speaker
+	msgbox TwinleafTown_Text_NPC1, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+TwinleafTown_Text_NPC1:
+	.string "{COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY} NPC 1$"
+
+TwinleafTown_Text_NPC1Speaker:
+	.string "Starly$"
+
+TwinleafTown_EventScript_NPC2::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_STARAVIA, CRY_MODE_NORMAL
+	setspeaker TwinleafTown_Text_NPC2Speaker
+	msgbox TwinleafTown_Text_NPC2, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+TwinleafTown_Text_NPC2:
+	.string "{COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY} NPC 2$"
+
+TwinleafTown_Text_NPC2Speaker:
+	.string "Staravia$"
+
+TwinleafTown_EventScript_NPC3::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BIDOOF, CRY_MODE_NORMAL
+	setspeaker TwinleafTown_Text_NPC3Speaker
+	msgbox TwinleafTown_Text_NPC3, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+TwinleafTown_Text_NPC3:
+	.string "{COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY} NPC 3$"
+
+TwinleafTown_Text_NPC3Speaker:
+	.string "Bidoof$"
