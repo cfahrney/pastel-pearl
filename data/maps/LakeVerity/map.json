@@ -27,7 +27,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_LAKE_VERITY_BARRY",
-      "poe_muted": true
+      "scriptOnly": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_PROFESSOR_ROWAN",
@@ -42,7 +42,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_LAKE_VERITY_PROFESSOR_ROWAN",
-      "poe_muted": true
+      "scriptOnly": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_LUCASDAWN",
@@ -57,7 +57,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_LAKE_VERITY_LUCASDAWN",
-      "poe_muted": true
+      "scriptOnly": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_SUITCASE",
@@ -72,7 +72,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_LAKE_VERITY_SUITCASE",
-      "poe_muted": true
+      "scriptOnly": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_PLAYER_STARLY",
@@ -87,7 +87,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_LAKE_VERITY_PLAYER_STARLY",
-      "poe_muted": true
+      "scriptOnly": true
     },
     {
       "local_id": "LOCALID_LAKE_VERITY_BARRY_STARLY",
@@ -102,7 +102,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_LAKE_VERITY_BARRY_STARLY",
-      "poe_muted": true
+      "scriptOnly": true
     }
   ],
   "warp_events": [

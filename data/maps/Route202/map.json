@@ -114,8 +114,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route202_EventScript_NPC1",
-      "flag": "0",
-      "poe_muted": true
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(GROWLITHE)",
@@ -128,8 +127,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route202_EventScript_NPC2",
-      "flag": "0",
-      "poe_muted": true
+      "flag": "0"
     },
     {
       "local_id": "LOCALID_ROUTE202_LUCASDAWN",
@@ -143,8 +141,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_ROUTE202_LUCASDAWN",
-      "poe_muted": false
+      "flag": "FLAG_HIDE_ROUTE202_LUCASDAWN"
     }
   ],
   "warp_events": [],

@@ -67,7 +67,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_PROFESSORROWANSLAB_LUCASDAWN",
-      "poe_muted": true
+      "scriptOnly": true
     }
   ],
   "warp_events": [

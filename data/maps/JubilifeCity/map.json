@@ -159,8 +159,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0",
-      "poe_muted": true
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PICHU)",
@@ -173,8 +172,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0",
-      "poe_muted": true
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PICHU)",
@@ -187,8 +185,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0",
-      "poe_muted": true
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F",
@@ -345,8 +342,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_JUBILIFECITY_LUCASDAWN",
-      "poe_muted": false
+      "flag": "FLAG_HIDE_JUBILIFECITY_LUCASDAWN"
     },
     {
       "local_id": "LOCALID_JUBILIFECITY_DEXNAVPRESIDENT",

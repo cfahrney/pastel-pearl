@@ -17295,7 +17295,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE203_BARRY_PLAYER_CHOSE_TURTWIG ===
 Name: Barry
-Class: Pkmn Trainer 1
+Class: Rival
 Pic: Barry
 Gender: Male
 Music: Male
@@ -17311,7 +17311,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE203_BARRY_PLAYER_CHOSE_CHIMCHAR ===
 Name: Barry
-Class: Pkmn Trainer 1
+Class: Rival
 Pic: Barry
 Gender: Male
 Music: Male
@@ -17327,7 +17327,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE203_BARRY_PLAYER_CHOSE_PIPLUP ===
 Name: Barry
-Class: Pkmn Trainer 1
+Class: Rival
 Pic: Barry
 Gender: Male
 Music: Male

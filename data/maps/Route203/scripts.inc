@@ -1,15 +1,39 @@
 Route203_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route203_OnTransition
+	map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, Route203_OnReturnToField
 	.byte 0
+
+Route203_OnReturnToField:
+	@ Runs before the post-battle fade-in, so Barry's fainted starter is gone by then.
+	removeobject LOCALID_ROUTE203_BARRY_STARTER
+	end
 
 Route203_OnTransition:
 	@ Barry only waits here once the player has the DexNav.
 	setflag FLAG_HIDE_ROUTE203_BARRY
+	setflag FLAG_HIDE_ROUTE203_BARRY_STARTER
 	call_if_eq VAR_JUBILIFE_CITY_STATE, 3, Route203_EventScript_ShowBarry
 	end
 
 Route203_EventScript_ShowBarry:
 	clearflag FLAG_HIDE_ROUTE203_BARRY
+	clearflag FLAG_HIDE_ROUTE203_BARRY_STARTER
+	@ Barry's Pokémon is the starter the player didn't pick or counter.
+	call_if_eq VAR_STARTER_MON, STARTER_TURTWIG, Route203_EventScript_BarryStarterChimchar
+	call_if_eq VAR_STARTER_MON, STARTER_CHIMCHAR, Route203_EventScript_BarryStarterPiplup
+	call_if_eq VAR_STARTER_MON, STARTER_PIPLUP, Route203_EventScript_BarryStarterTurtwig
+	return
+
+Route203_EventScript_BarryStarterChimchar:
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(CHIMCHAR)
+	return
+
+Route203_EventScript_BarryStarterPiplup:
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(PIPLUP)
+	return
+
+Route203_EventScript_BarryStarterTurtwig:
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(TURTWIG)
 	return
 
 Route203_EventScript_Sign1::
@@ -152,46 +176,46 @@ Route203_Text_Trainer6PostBattle:
 Route203_EventScript_BarryNoticesPlayerAtY17::
 	lockall
 	call Route203_EventScript_BarryNoticesPlayer
-	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY17
-	waitmovement LOCALID_ROUTE203_BARRY
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_Barry_E17
+	applymovement LOCALID_ROUTE203_BARRY_STARTER, Route203_Movement_BarryStarter_E17
+	waitmovementall
 	goto Route203_EventScript_BarryRivalFight1
 
 Route203_EventScript_BarryNoticesPlayerAtY18::
 	lockall
 	call Route203_EventScript_BarryNoticesPlayer
-	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY18
-	waitmovement LOCALID_ROUTE203_BARRY
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_Barry_E18
+	applymovement LOCALID_ROUTE203_BARRY_STARTER, Route203_Movement_BarryStarter_E18
+	waitmovementall
 	goto Route203_EventScript_BarryRivalFight1
 
 Route203_EventScript_BarryNoticesPlayerAtY19::
 	lockall
 	call Route203_EventScript_BarryNoticesPlayer
-	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY19
-	waitmovement LOCALID_ROUTE203_BARRY
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_Barry_E19
+	applymovement LOCALID_ROUTE203_BARRY_STARTER, Route203_Movement_BarryStarter_E19
+	waitmovementall
 	goto Route203_EventScript_BarryRivalFight1
 
 Route203_EventScript_BarryNoticesPlayerAtY20::
 	lockall
 	call Route203_EventScript_BarryNoticesPlayer
-	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY20
-	waitmovement LOCALID_ROUTE203_BARRY
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_Barry_E20
+	applymovement LOCALID_ROUTE203_BARRY_STARTER, Route203_Movement_BarryStarter_E20
+	waitmovementall
 	goto Route203_EventScript_BarryRivalFight1
 
 Route203_EventScript_BarryNoticesPlayerAtY21::
 	lockall
 	call Route203_EventScript_BarryNoticesPlayer
-	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY21
-	waitmovement LOCALID_ROUTE203_BARRY
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_Barry_E21
+	applymovement LOCALID_ROUTE203_BARRY_STARTER, Route203_Movement_BarryStarter_E21
+	waitmovementall
 	goto Route203_EventScript_BarryRivalFight1
 
 Route203_EventScript_BarryNoticesPlayer::
 	playse SE_PIN
 	playbgm MUS_RIVAL_THEME, TRUE
-	applymovement LOCALID_ROUTE203_BARRY, Common_Movement_ExclamationMark
-	waitmovement LOCALID_ROUTE203_BARRY
-	applymovement LOCALID_ROUTE203_BARRY, Common_Movement_FaceLeft
-	waitmovement LOCALID_ROUTE203_BARRY
-	delay 45
 	return
 
 Route203_EventScript_BarryRivalFight1::
@@ -200,6 +224,7 @@ Route203_EventScript_BarryRivalFight1::
 	setspeaker SP_NAME_RIVAL
 	msgbox Route203_Text_BarryGotTougher, MSGBOX_DEFAULT
 	closemessage
+	setflag FLAG_HIDE_ROUTE203_BARRY_STARTER
 	goto_if_eq VAR_STARTER_MON, STARTER_TURTWIG, Route203_EventScript_BarryBattleTurtwig
 	goto_if_eq VAR_STARTER_MON, STARTER_CHIMCHAR, Route203_EventScript_BarryBattleChimchar
 	goto Route203_EventScript_BarryBattlePiplup
@@ -230,7 +255,12 @@ Route203_EventScript_BarryAfterBattle::
 	releaseall
 	end
 
-Route203_Movement_BarryApproachY17:
+Route203_Movement_Barry_E17:
+	emote_exclamation_mark
+	face_left
+	delay_16
+	delay_16
+	delay_16
 	walk_left
 	walk_left
 	walk_left
@@ -238,14 +268,99 @@ Route203_Movement_BarryApproachY17:
 	face_left
 	step_end
 
-Route203_Movement_BarryApproachY18:
+Route203_Movement_Barry_E18:
+	emote_exclamation_mark
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Route203_Movement_Barry_E19:
+	emote_exclamation_mark
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	face_left
+	step_end
+
+Route203_Movement_Barry_E20:
+	emote_exclamation_mark
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	face_left
+	step_end
+
+Route203_Movement_Barry_E21:
+	emote_exclamation_mark
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	face_left
+	step_end
+
+Route203_Movement_BarryStarter_E17:
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
 	walk_left
 	walk_left
 	walk_left
 	face_left
 	step_end
 
-Route203_Movement_BarryApproachY19:
+Route203_Movement_BarryStarter_E18:
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Route203_Movement_BarryStarter_E19:
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_left
+	step_end
+
+Route203_Movement_BarryStarter_E20:
+	face_left
+	delay_16
+	delay_16
+	delay_16
+	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -253,20 +368,15 @@ Route203_Movement_BarryApproachY19:
 	face_left
 	step_end
 
-Route203_Movement_BarryApproachY20:
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
+Route203_Movement_BarryStarter_E21:
 	face_left
-	step_end
-
-Route203_Movement_BarryApproachY21:
+	delay_16
+	delay_16
+	delay_16
 	walk_left
 	walk_left
 	walk_left
-	walk_down
+	walk_left
 	walk_down
 	walk_down
 	face_left
