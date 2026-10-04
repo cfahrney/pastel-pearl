@@ -1,5 +1,16 @@
 Route203_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route203_OnTransition
 	.byte 0
+
+Route203_OnTransition:
+	@ Barry only waits here once the player has the DexNav.
+	setflag FLAG_HIDE_ROUTE203_BARRY
+	call_if_eq VAR_JUBILIFE_CITY_STATE, 3, Route203_EventScript_ShowBarry
+	end
+
+Route203_EventScript_ShowBarry:
+	clearflag FLAG_HIDE_ROUTE203_BARRY
+	return
 
 Route203_EventScript_Sign1::
 	msgbox Route203_Text_Sign1, MSGBOX_SIGN
@@ -137,3 +148,163 @@ Route203_Text_Trainer6Defeated:
 Route203_Text_Trainer6PostBattle:
 	.string "My Bidoof and I are still proud of\n"
 	.string "Togepi!$"
+
+Route203_EventScript_BarryNoticesPlayerAtY17::
+	lockall
+	call Route203_EventScript_BarryNoticesPlayer
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY17
+	waitmovement LOCALID_ROUTE203_BARRY
+	goto Route203_EventScript_BarryRivalFight1
+
+Route203_EventScript_BarryNoticesPlayerAtY18::
+	lockall
+	call Route203_EventScript_BarryNoticesPlayer
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY18
+	waitmovement LOCALID_ROUTE203_BARRY
+	goto Route203_EventScript_BarryRivalFight1
+
+Route203_EventScript_BarryNoticesPlayerAtY19::
+	lockall
+	call Route203_EventScript_BarryNoticesPlayer
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY19
+	waitmovement LOCALID_ROUTE203_BARRY
+	goto Route203_EventScript_BarryRivalFight1
+
+Route203_EventScript_BarryNoticesPlayerAtY20::
+	lockall
+	call Route203_EventScript_BarryNoticesPlayer
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY20
+	waitmovement LOCALID_ROUTE203_BARRY
+	goto Route203_EventScript_BarryRivalFight1
+
+Route203_EventScript_BarryNoticesPlayerAtY21::
+	lockall
+	call Route203_EventScript_BarryNoticesPlayer
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryApproachY21
+	waitmovement LOCALID_ROUTE203_BARRY
+	goto Route203_EventScript_BarryRivalFight1
+
+Route203_EventScript_BarryNoticesPlayer::
+	playse SE_PIN
+	playbgm MUS_RIVAL_THEME, TRUE
+	applymovement LOCALID_ROUTE203_BARRY, Common_Movement_ExclamationMark
+	waitmovement LOCALID_ROUTE203_BARRY
+	applymovement LOCALID_ROUTE203_BARRY, Common_Movement_FaceLeft
+	waitmovement LOCALID_ROUTE203_BARRY
+	delay 45
+	return
+
+Route203_EventScript_BarryRivalFight1::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement LOCALID_PLAYER
+	setspeaker SP_NAME_RIVAL
+	msgbox Route203_Text_BarryGotTougher, MSGBOX_DEFAULT
+	closemessage
+	goto_if_eq VAR_STARTER_MON, STARTER_TURTWIG, Route203_EventScript_BarryBattleTurtwig
+	goto_if_eq VAR_STARTER_MON, STARTER_CHIMCHAR, Route203_EventScript_BarryBattleChimchar
+	goto Route203_EventScript_BarryBattlePiplup
+
+Route203_EventScript_BarryBattleTurtwig::
+	trainerbattle_no_intro TRAINER_ROUTE203_BARRY_PLAYER_CHOSE_TURTWIG, Route203_Text_BarryDefeated
+	goto Route203_EventScript_BarryAfterBattle
+
+Route203_EventScript_BarryBattleChimchar::
+	trainerbattle_no_intro TRAINER_ROUTE203_BARRY_PLAYER_CHOSE_CHIMCHAR, Route203_Text_BarryDefeated
+	goto Route203_EventScript_BarryAfterBattle
+
+Route203_EventScript_BarryBattlePiplup::
+	trainerbattle_no_intro TRAINER_ROUTE203_BARRY_PLAYER_CHOSE_PIPLUP, Route203_Text_BarryDefeated
+	goto Route203_EventScript_BarryAfterBattle
+
+Route203_EventScript_BarryAfterBattle::
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	setspeaker SP_NAME_RIVAL
+	msgbox Route203_Text_BarryVowsToBeToughest, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ROUTE203_BARRY, Route203_Movement_BarryJogsOff
+	waitmovement LOCALID_ROUTE203_BARRY
+	removeobject LOCALID_ROUTE203_BARRY
+	setflag FLAG_HIDE_ROUTE203_BARRY
+	setvar VAR_JUBILIFE_CITY_STATE, 4
+	releaseall
+	end
+
+Route203_Movement_BarryApproachY17:
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	face_left
+	step_end
+
+Route203_Movement_BarryApproachY18:
+	walk_left
+	walk_left
+	walk_left
+	face_left
+	step_end
+
+Route203_Movement_BarryApproachY19:
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	face_left
+	step_end
+
+Route203_Movement_BarryApproachY20:
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	face_left
+	step_end
+
+Route203_Movement_BarryApproachY21:
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	face_left
+	step_end
+
+Route203_Movement_BarryJogsOff:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+Route203_Text_BarryGotTougher:
+	.string "Hey! {PLAYER}!\n"
+	.string "Tell me you got a little tougher!\p"
+	.string "Me? Do you even need to ask?\n"
+	.string "Of course I got tougher!\p"
+	.string "Come on!\n"
+	.string "Let's battle it out!$"
+
+Route203_Text_BarryDefeated:
+	.string "What just happened?\n"
+	.string "I lost?!$"
+
+Route203_Text_BarryVowsToBeToughest:
+	.string "Waah!\n"
+	.string "What do you mean I lost?!\p"
+	.string "Well, that's it!\n"
+	.string "That's the last time I'll ever lose!\p"
+	.string "I'm going to be the world's\n"
+	.string "toughest Trainer, and you know it!\p"
+	.string "The first thing to do is take on\n"
+	.string "the {COLOR DYNAMIC_COLOR3}Oreburgh City{COLOR DARK_GRAY} Pokémon Gym!\p"
+	.string "I'm gonna toughen up for that,\n"
+	.string "totally!$"
