@@ -28,6 +28,7 @@
 // enums
 enum MapPopUp_Themes
 {
+    MAPPOPUP_THEME_PASTEL_DEFAULT, // 0 = fallback for any map section not listed below (all of Sinnoh)
     MAPPOPUP_THEME_WOOD,
     MAPPOPUP_THEME_MARBLE,
     MAPPOPUP_THEME_STONE,
@@ -53,6 +54,7 @@ EWRAM_DATA u8 gPopupTaskId = 0;
 // .rodata
 static const u8 sMapPopUp_Table[][960] =
 {
+    [MAPPOPUP_THEME_PASTEL_DEFAULT] = INCGFX_U8("graphics/map_popup/pastel_default.png", ".4bpp"),
     [MAPPOPUP_THEME_WOOD]       = INCGFX_U8("graphics/map_popup/wood.png", ".4bpp"),
     [MAPPOPUP_THEME_MARBLE]     = INCGFX_U8("graphics/map_popup/marble.png", ".4bpp"),
     [MAPPOPUP_THEME_STONE]      = INCGFX_U8("graphics/map_popup/stone.png", ".4bpp"),
@@ -63,6 +65,7 @@ static const u8 sMapPopUp_Table[][960] =
 
 static const u8 sMapPopUp_OutlineTable[][960] =
 {
+    [MAPPOPUP_THEME_PASTEL_DEFAULT] = INCGFX_U8("graphics/map_popup/pastel_default_outline.png", ".4bpp"),
     [MAPPOPUP_THEME_WOOD]       = INCGFX_U8("graphics/map_popup/wood_outline.png", ".4bpp"),
     [MAPPOPUP_THEME_MARBLE]     = INCGFX_U8("graphics/map_popup/marble_outline.png", ".4bpp"),
     [MAPPOPUP_THEME_STONE]      = INCGFX_U8("graphics/map_popup/stone_outline.png", ".4bpp"),
@@ -73,6 +76,7 @@ static const u8 sMapPopUp_OutlineTable[][960] =
 
 static const u16 sMapPopUp_PaletteTable[][16] =
 {
+    [MAPPOPUP_THEME_PASTEL_DEFAULT] = INCGFX_U16("graphics/map_popup/pastel_default_outline.png", ".gbapal"),
     [MAPPOPUP_THEME_WOOD]       = INCGFX_U16("graphics/map_popup/wood.png", ".gbapal"),
     [MAPPOPUP_THEME_MARBLE]     = INCGFX_U16("graphics/map_popup/marble_outline.png", ".gbapal"),
     [MAPPOPUP_THEME_STONE]      = INCGFX_U16("graphics/map_popup/stone_outline.png", ".gbapal"),
