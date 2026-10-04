@@ -28,6 +28,7 @@
       "flag": "FLAG_HIDE_OREBURGH_MINE_2_ROCK1"
     },
     {
+      "local_id": "LOCALID_OREBURGHMINE_2_ROCK2",
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
       "x": 18,
       "y": 27,

@@ -10,6 +10,7 @@ enum SpeakerNames {
     SP_NAME_ASSISTANT,
     SP_NAME_RIVAL_MOM,
     SP_NAME_DEXNAV_PRESIDENT,
+    SP_NAME_ROARK,
     SP_NAME_COUNT
 };
 

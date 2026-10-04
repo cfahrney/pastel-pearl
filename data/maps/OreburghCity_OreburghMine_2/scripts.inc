@@ -1,5 +1,16 @@
 OreburghCity_OreburghMine_2_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, OreburghCity_OreburghMine_2_OnTransition
 	.byte 0
+
+OreburghCity_OreburghMine_2_OnTransition:
+	@ Roark is only here for the Rock Smash demo (state < 2).
+	setflag FLAG_HIDE_OREBURGHMINE_2_ROARK
+	call_if_lt VAR_OREBURGH_CITY_STATE, 2, OreburghCity_OreburghMine_2_EventScript_ShowRoark
+	end
+
+OreburghCity_OreburghMine_2_EventScript_ShowRoark::
+	clearflag FLAG_HIDE_OREBURGHMINE_2_ROARK
+	return
 
 OreburghCity_OreburghMine_2_EventScript_Rock1::
 	lockall
@@ -90,8 +101,63 @@ OreburghCity_OreburghMine_2_EventScript_NPC5::
 	end
 
 OreburghCity_OreburghMine_2_EventScript_NPC6::
-	msgbox OreburghCity_OreburghMine_2_Text_NPC6, MSGBOX_NPC
+	lock
+	goto_if_ge VAR_OREBURGH_CITY_STATE, 2, OreburghCity_OreburghMine_2_EventScript_NPC6Default
+	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_Roark_OnGreeting
+	waitmovement LOCALID_OREBURGHMINE_2_ROARK
+	setspeaker SP_NAME_ROARK
+	msgbox OreburghCity_OreburghMine_2_Text_RoarkDemoIntro, MSGBOX_DEFAULT
+	closemessage
+	playse SE_M_ROCK_THROW
+	applymovement LOCALID_OREBURGHMINE_2_ROCK2, Movement_SmashRock
+	waitmovement LOCALID_OREBURGHMINE_2_ROCK2
+	removeobject LOCALID_OREBURGHMINE_2_ROCK2
+	setflag FLAG_HIDE_OREBURGH_MINE_2_ROCK2
+	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_Roark_AfterRockSmash
+	waitmovement LOCALID_OREBURGHMINE_2_ROARK
+	setspeaker SP_NAME_ROARK
+	msgbox OreburghCity_OreburghMine_2_Text_RoarkDemoOutro, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_Roark_OnSceneEnd
+	waitmovement LOCALID_OREBURGHMINE_2_ROARK
+	removeobject LOCALID_OREBURGHMINE_2_ROARK
+	setflag FLAG_HIDE_OREBURGHMINE_2_ROARK
+	setvar VAR_OREBURGH_CITY_STATE, 2
+	release
 	end
+
+OreburghCity_OreburghMine_2_EventScript_NPC6Default::
+	msgbox OreburghCity_OreburghMine_2_Text_NPC6, MSGBOX_DEFAULT
+	release
+	end
+
+OreburghCity_OreburghMine_2_Movement_Roark_OnGreeting:
+	face_down
+	delay_16
+	delay_16
+	delay_16
+	face_right
+	step_end
+
+OreburghCity_OreburghMine_2_Movement_Roark_AfterRockSmash:
+	face_down
+	delay_16
+	delay_16
+	step_end
+
+OreburghCity_OreburghMine_2_Movement_Roark_OnSceneEnd:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	step_end
 
 OreburghCity_OreburghMine_2_EventScript_NPC7::
 	lock
@@ -201,3 +267,16 @@ OreburghCity_OreburghMine_2_Text_NPC11:
 
 OreburghCity_OreburghMine_2_Text_NPC11Speaker:
 	.string "Machop$"
+
+OreburghCity_OreburghMine_2_Text_RoarkDemoIntro:
+	.string "OK, stand back and watch this.\p"
+	.string "Using the hidden move Rock Smash, a\n"
+	.string "boulder blocking your way...$"
+
+OreburghCity_OreburghMine_2_Text_RoarkDemoOutro:
+	.string "Fallen boulders need to be smashed so\n"
+	.string "they're out of the way.\p"
+	.string "If you could get the Badge from the Gym\n"
+	.string "in town, you'd be able to do this too.\p"
+	.string "Of course, you'd have to beat the Gym\n"
+	.string "Leader first. That'd be me!$"

@@ -102,26 +102,26 @@
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
 #define VAR_TWINLEAF_TOWN_STATE                          0x404E
 // @states Twinleaf intro arc, from waking up to owning a starter.
-//    0  Game start, Barry is still in his house
-//    1  Barry has left his house
-//    2  Barry found the player upstairs and ran off to Route 201
-//    3  Barry joined the player on Route 201
-//    4  Barry has walked the player into Lake Verity
-//    5  At the lake, before the forced Starly battle
-//    9  Starter chosen, on the way back out of the lake
-//   10  Back on Verity Lakefront, Rowan waits on Route 201
-//   11  Rowan has reclaimed the borrowed Pokemon
-//   12  Mom's homecoming scene done, the player owns their starter
-//   13  Sandgem town tour done, on the way home
-//   14  Mom gave the Exp. Share and the neighbor handed over the parcel for Barry
+//    0  Starting state
+//    1  Player has run into Barry out front of his house
+//    2  Player has found Barry upstairs and watches him run out
+//    3  Player has Barry join as a follower on Route 201
+//    4  Player have entered Barry enter Lake Verity
+//    5  Lake Verity cutscene
+//    9  Player has chosen a starter
+//   10  Player and Barry have left Lake Verity, walking back towards Twinleaf
+//   11  Player and Barry encounter Rowan and Lucas/Dawn once more on Route 201
+//   12  Player has caught Mom up to speed and has starter now
+//   13  No op
+//   14  Player has received Exp. Share from Mom and the Parcel for Barry from Barry's mom
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
 #define VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE             0x4052
 // @states Mom's scripted beats inside the player's house.
-//    0  Mom hasn't given the running shoes yet
-//    1  Running shoes given
-//    2  Mom has warned the player about the tall grass on the way out
+//    0  Starting state
+//    1  Player has received running shoes.
+//    2  Mom has warned player about tall grass on first exit
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var
@@ -172,11 +172,11 @@
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
 #define VAR_SANDGEM_TOWN_STATE                           0x4083
 // @states Sandgem arrival, from meeting Lucas/Dawn to entering the lab.
-//    0  Player hasn't reached the lab yet
-//    3  Lucas/Dawn escorted the player into the lab
-//    6  Rowan gave the player the Pokedex, Lucas/Dawn left the lab
-//    9  Lucas/Dawn finished the town tour and walked off
-//   12  Lucas/Dawn taught the player to catch Pokemon on Route 202 and left
+//    0  Player has arrived in Sandgem
+//    3  Lucas/Dawn has escorted player into the lab
+//    6  Player has received Pokedex from Rowan
+//    9  Lucas/Dawn has given Sandgem Town tour and told Player to go home. 
+//   12  Lucas/Dawn has taught the player to catch/given them 10 Pokéballs
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE                           0x4086
@@ -186,11 +186,11 @@
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
 #define VAR_JUBILIFE_CITY_STATE                          0x408B
 // @states Jubilife story beats.
-//    0  Lucas/Dawn hasn't pointed the player to the Trainer School yet
-//    1  Lucas/Dawn pointed the player to the Trainer School, Barry waits inside
-//    2  Barry took the parcel, gave the player the Town Map and left the school
-//    3  The DexNav President gave the player the DexNav
-//    4  Barry lost to the player on Route 203 and left
+//    0  Player has just arrived to Jubilife
+//    1  Lucas/Dawn points player to the Trainer School to meet Barry
+//    2  Player has received Town Map from delivering Parcel to Barry
+//    3  Player has received DexNav from the DexNavPresident, allowing them to leave Jubilife
+//    4  Player has defeated Barry on Route 203
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E
@@ -212,7 +212,7 @@
 // @states Oreburgh Gym arc, from arriving to beating Roark.
 //    0  Player has just arrived in Oreburgh
 //    1  Player has talked to Barry blocking the Gym
-//    2  Roark, in Oreburgh Mine, sent the player back to the Gym
+//    2  Roark has demonstrated rock smash to the player and returns to the gym
 //    3  Player has defeated Roark
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F

@@ -7,4 +7,5 @@ const u8 *const gSpeakerNamesTable[SP_NAME_COUNT] =
     [SP_NAME_ASSISTANT] = COMPOUND_STRING("{ASSISTANT}"),
     [SP_NAME_RIVAL_MOM] = COMPOUND_STRING("{RIVAL}'s Mom"),
     [SP_NAME_DEXNAV_PRESIDENT] = COMPOUND_STRING("DexNav President"),
+    [SP_NAME_ROARK] = COMPOUND_STRING("Roark"),
 };
