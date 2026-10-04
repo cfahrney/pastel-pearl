@@ -8,7 +8,14 @@ JubilifeCity_OnTransition:
 	@ Lucas/Dawn only waits here until the player has been pointed to the Trainer School.
 	setflag FLAG_HIDE_JUBILIFECITY_LUCASDAWN
 	call_if_eq VAR_JUBILIFE_CITY_STATE, 0, JubilifeCity_EventScript_ShowLucasDawn
+	@ The DexNav President only waits at the north end once the player has the Town Map.
+	setflag FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT
+	call_if_eq VAR_JUBILIFE_CITY_STATE, 2, JubilifeCity_EventScript_ShowDexNavPresident
 	end
+
+JubilifeCity_EventScript_ShowDexNavPresident:
+	clearflag FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT
+	return
 
 JubilifeCity_EventScript_ShowLucasDawn:
 	clearflag FLAG_HIDE_JUBILIFECITY_LUCASDAWN
@@ -79,7 +86,12 @@ JubilifeCity_Text_Sign8:
 	.string "The First Step for Trainers!$"
 
 JubilifeCity_EventScript_NPC1::
+	goto_if_ge VAR_JUBILIFE_CITY_STATE, 2, JubilifeCity_EventScript_NPC1AfterTownMap
 	msgbox JubilifeCity_Text_NPC1, MSGBOX_NPC
+	end
+
+JubilifeCity_EventScript_NPC1AfterTownMap::
+	msgbox JubilifeCity_Text_NPC1AfterTownMap, MSGBOX_NPC
 	end
 
 JubilifeCity_EventScript_NPC2::
@@ -111,8 +123,7 @@ JubilifeCity_EventScript_NPC8::
 	end
 
 JubilifeCity_Text_NPC1:
-	.string "By the way, have you visited the {COLOR DYNAMIC_COLOR3}Trainer\n"
-	.string "School{COLOR DARK_GRAY}?\p"
+	.string "Have you visited the {COLOR DYNAMIC_COLOR3}Trainer School{COLOR DARK_GRAY}?\p"
 	.string "Not yet, right? You really must visit\n"
 	.string "there!$"
 
@@ -282,7 +293,7 @@ JubilifeCity_EventScript_LucasDawnPointsToTrainerSchool::
 	waitmovement LOCALID_JUBILIFECITY_LUCASDAWN
 	removeobject LOCALID_JUBILIFECITY_LUCASDAWN
 	setflag FLAG_HIDE_JUBILIFECITY_LUCASDAWN
-	setvar VAR_JUBILIFE_CITY_STATE, 3
+	setvar VAR_JUBILIFE_CITY_STATE, 1
 	releaseall
 	end
 
@@ -340,3 +351,190 @@ JubilifeCity_Text_LucasDawnUsingPokeBalls:
 	.string "School{COLOR DARK_GRAY} earlier.\p"
 	.string "OK, see you around!\n"
 	.string "Work hard on your {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}!$"
+
+JubilifeCity_Text_NPC1AfterTownMap:
+	.string "Hello! Yes, you!\p"
+	.string "You should have seen the boy that\n"
+	.string "came running by earlier.\p"
+	.string "He ran past me so quickly, I couldn't\n"
+	.string "even manage a hello.$"
+
+@ Progression guard: until the player has the Town Map (state < 2) the FAT MAN stops them at the east exit.
+JubilifeCity_EventScript_FatManNoticesPlayerAtY21::
+	goto JubilifeCity_EventScript_FatManStopsPlayer
+
+JubilifeCity_EventScript_FatManNoticesPlayerAtY22::
+	goto JubilifeCity_EventScript_FatManStopsPlayer
+
+JubilifeCity_EventScript_FatManNoticesPlayerAtY23::
+	goto JubilifeCity_EventScript_FatManStopsPlayer
+
+JubilifeCity_EventScript_FatManNoticesPlayerAtY24::
+	goto JubilifeCity_EventScript_FatManStopsPlayer
+
+JubilifeCity_EventScript_FatManStopsPlayer::
+	goto_if_ge VAR_JUBILIFE_CITY_STATE, 2, JubilifeCity_EventScript_FatManLetsPlayerPass
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_JUBILIFECITY_FATMAN, Common_Movement_ExclamationMark
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovementall
+	delay 45
+	applymovement LOCALID_JUBILIFECITY_FATMAN, Common_Movement_FaceRight
+	waitmovement LOCALID_JUBILIFECITY_FATMAN
+	msgbox JubilifeCity_Text_NPC1, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement LOCALID_PLAYER
+	releaseall
+	end
+
+JubilifeCity_EventScript_FatManLetsPlayerPass::
+	end
+
+@ VAR_JUBILIFE_CITY_STATE == 2: the DexNav President walks down from the north and gives the player the DexNav.
+JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX52::
+	lockall
+	call JubilifeCity_EventScript_DexNavPresidentNoticesPlayer
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_DexNavPresidentApproachX52
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	goto JubilifeCity_EventScript_DexNavPresidentGivesDexNav
+
+JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX53::
+	lockall
+	call JubilifeCity_EventScript_DexNavPresidentNoticesPlayer
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_DexNavPresidentApproachX53
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	goto JubilifeCity_EventScript_DexNavPresidentGivesDexNav
+
+JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX54::
+	lockall
+	call JubilifeCity_EventScript_DexNavPresidentNoticesPlayer
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_DexNavPresidentApproachX54
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	goto JubilifeCity_EventScript_DexNavPresidentGivesDexNav
+
+JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX55::
+	lockall
+	call JubilifeCity_EventScript_DexNavPresidentNoticesPlayer
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_DexNavPresidentApproachX55
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	goto JubilifeCity_EventScript_DexNavPresidentGivesDexNav
+
+JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX56::
+	lockall
+	call JubilifeCity_EventScript_DexNavPresidentNoticesPlayer
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_DexNavPresidentApproachX56
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	goto JubilifeCity_EventScript_DexNavPresidentGivesDexNav
+
+JubilifeCity_EventScript_DexNavPresidentNoticesPlayer::
+	playse SE_PIN
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, Common_Movement_ExclamationMark
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, Common_Movement_FaceDown
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	delay 45
+	return
+
+JubilifeCity_EventScript_DexNavPresidentGivesDexNav::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement LOCALID_PLAYER
+	msgbox JubilifeCity_Text_DexNavPresidentIntro, MSGBOX_DEFAULT
+	closemessage
+	setspeaker SP_NAME_DEXNAV_PRESIDENT
+	msgbox JubilifeCity_Text_DexNavPresidentCampaign, MSGBOX_DEFAULT
+	closemessage
+	playfanfare MUS_OBTAIN_ITEM
+	message JubilifeCity_Text_PlayerReceivedDexNav
+	waitmessage
+	waitfanfare
+	setflag FLAG_SYS_DEXNAV_GET
+	setspeaker SP_NAME_DEXNAV_PRESIDENT
+	msgbox JubilifeCity_Text_DexNavPresidentExplains, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_DexNavPresidentWalksOffNorth
+	waitmovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	removeobject LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	setflag FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT
+	setvar VAR_JUBILIFE_CITY_STATE, 3
+	releaseall
+	end
+
+@ He starts at (54, 35); the player stands on y39 at x52-56.
+JubilifeCity_Movement_DexNavPresidentApproachX52:
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	face_down
+	step_end
+
+JubilifeCity_Movement_DexNavPresidentApproachX53:
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	face_down
+	step_end
+
+JubilifeCity_Movement_DexNavPresidentApproachX54:
+	walk_down
+	walk_down
+	walk_down
+	face_down
+	step_end
+
+JubilifeCity_Movement_DexNavPresidentApproachX55:
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	face_down
+	step_end
+
+JubilifeCity_Movement_DexNavPresidentApproachX56:
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	face_down
+	step_end
+
+JubilifeCity_Movement_DexNavPresidentWalksOffNorth:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+JubilifeCity_Text_DexNavPresidentIntro:
+	.string "Oh, oh, oh?\p"
+	.string "You call yourself a Pokémon Trainer?\n"
+	.string "And yet you have no {COLOR DYNAMIC_COLOR3}DexNav{COLOR DARK_GRAY}?\p"
+	.string "Oh my, you are a rare case indeed!\p"
+	.string "You see, I invented, and now\n"
+	.string "manufacture, {COLOR DYNAMIC_COLOR3}DexNavs{COLOR DARK_GRAY}.$"
+
+JubilifeCity_Text_DexNavPresidentCampaign:
+	.string "Not only that, I'm now conducting the\n"
+	.string "{COLOR DYNAMIC_COLOR3}DexNav{COLOR DARK_GRAY} promotional campaign!\p"
+	.string "Isn't it your lucky day! Here,\n"
+	.string "welcome to the world of {COLOR DYNAMIC_COLOR3}DexNav{COLOR DARK_GRAY}!$"
+
+JubilifeCity_Text_PlayerReceivedDexNav:
+	.string "{PLAYER} received the {COLOR DYNAMIC_COLOR3}DexNav{COLOR DARK_GRAY}!$"
+
+JubilifeCity_Text_DexNavPresidentExplains:
+	.string "That device will help you find and\n"
+	.string "track and chain all sorts of Pokémon,\l"
+	.string "and on every route!\p"
+	.string "Be sure to stop by our headquarters\n"
+	.string "in the city if you'd like more info.$"

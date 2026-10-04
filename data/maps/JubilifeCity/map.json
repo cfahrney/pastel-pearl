@@ -31,6 +31,7 @@
   ],
   "object_events": [
     {
+      "local_id": "LOCALID_JUBILIFECITY_FATMAN",
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
       "x": 66,
       "y": 20,
@@ -346,6 +347,20 @@
       "script": "NULL",
       "flag": "FLAG_HIDE_JUBILIFECITY_LUCASDAWN",
       "poe_muted": false
+    },
+    {
+      "local_id": "LOCALID_JUBILIFECITY_DEXNAVPRESIDENT",
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN_DP",
+      "x": 54,
+      "y": 35,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT"
     }
   ],
   "warp_events": [
@@ -440,6 +455,96 @@
       "var": "VAR_JUBILIFE_CITY_STATE",
       "var_value": "0",
       "script": "JubilifeCity_EventScript_LucasDawnStopsPlayerAtX53"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "0",
+      "script": "JubilifeCity_EventScript_LucasDawnStopsPlayerAtX54"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "2",
+      "script": "JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX52"
+    },
+    {
+      "type": "trigger",
+      "x": 53,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "2",
+      "script": "JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX53"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "2",
+      "script": "JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX54"
+    },
+    {
+      "type": "trigger",
+      "x": 55,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "2",
+      "script": "JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX55"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "2",
+      "script": "JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX56"
+    },
+    {
+      "type": "trigger",
+      "x": 68,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "JubilifeCity_EventScript_FatManNoticesPlayerAtY21"
+    },
+    {
+      "type": "trigger",
+      "x": 68,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "JubilifeCity_EventScript_FatManNoticesPlayerAtY22"
+    },
+    {
+      "type": "trigger",
+      "x": 68,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "JubilifeCity_EventScript_FatManNoticesPlayerAtY23"
+    },
+    {
+      "type": "trigger",
+      "x": 68,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "JubilifeCity_EventScript_FatManNoticesPlayerAtY24"
     }
   ],
   "bg_events": [
