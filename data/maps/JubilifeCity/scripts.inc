@@ -11,7 +11,18 @@ JubilifeCity_OnTransition:
 	@ The DexNav President only waits at the north end once the player has the Town Map.
 	setflag FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT
 	call_if_eq VAR_JUBILIFE_CITY_STATE, 2, JubilifeCity_EventScript_ShowDexNavPresident
+	@ Galactic grunts and Rowan are hidden until their scene shows them.
+	setflag FLAG_HIDE_JUBILIFECITY_GALACTIC_GRUNTS
+	setflag FLAG_HIDE_JUBILIFECITY_PROF_ROWAN
+	call_if_eq VAR_JUBILIFE_CITY_STATE, 5, JubilifeCity_EventScript_ShowGalacticScene
 	end
+
+JubilifeCity_EventScript_ShowGalacticScene:
+	setobjectxyperm LOCALID_JUBILIFECITY_LUCASDAWN, 55, 4
+	clearflag FLAG_HIDE_JUBILIFECITY_LUCASDAWN
+	clearflag FLAG_HIDE_JUBILIFECITY_GALACTIC_GRUNTS
+	clearflag FLAG_HIDE_JUBILIFECITY_PROF_ROWAN
+	return
 
 JubilifeCity_EventScript_ShowDexNavPresident:
 	clearflag FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT
@@ -589,3 +600,299 @@ JubilifeCity_Text_NPC18:
 
 JubilifeCity_Text_NPC18Speaker:
 	.string "Pichu$"
+
+JubilifeCity_EventScript_RowanNoticesPlayerAtX52::
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_JUBILIFECITY_PROF_ROWAN, JubilifeCity_Movement_Rowan_NoticesPlayer
+	waitmovement LOCALID_JUBILIFECITY_PROF_ROWAN
+	applymovement LOCALID_PLAYER, JubilifeCity_Movement_Player_E52
+	waitmovement LOCALID_PLAYER
+	goto JubilifeCity_EventScript_PlayerBattlesGalacticGrunts
+	end
+
+JubilifeCity_EventScript_RowanNoticesPlayerAtX53::
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_JUBILIFECITY_PROF_ROWAN, JubilifeCity_Movement_Rowan_NoticesPlayer
+	waitmovement LOCALID_JUBILIFECITY_PROF_ROWAN
+	applymovement LOCALID_PLAYER, JubilifeCity_Movement_Player_E53
+	waitmovement LOCALID_PLAYER
+	goto JubilifeCity_EventScript_PlayerBattlesGalacticGrunts
+	end
+
+JubilifeCity_EventScript_RowanNoticesPlayerAtX54::
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_JUBILIFECITY_PROF_ROWAN, JubilifeCity_Movement_Rowan_NoticesPlayer
+	waitmovement LOCALID_JUBILIFECITY_PROF_ROWAN
+	applymovement LOCALID_PLAYER, JubilifeCity_Movement_Player_E54
+	waitmovement LOCALID_PLAYER
+	goto JubilifeCity_EventScript_PlayerBattlesGalacticGrunts
+	end
+
+JubilifeCity_EventScript_RowanNoticesPlayerAtX55::
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_JUBILIFECITY_PROF_ROWAN, JubilifeCity_Movement_Rowan_NoticesPlayer
+	waitmovement LOCALID_JUBILIFECITY_PROF_ROWAN
+	applymovement LOCALID_PLAYER, JubilifeCity_Movement_Player_E55
+	waitmovement LOCALID_PLAYER
+	goto JubilifeCity_EventScript_PlayerBattlesGalacticGrunts
+	end
+
+JubilifeCity_EventScript_PlayerBattlesGalacticGrunts::
+	setspeaker SP_NAME_ROWAN
+	msgbox JubilifeCity_Text_RowanShowThemManners, MSGBOX_DEFAULT
+	closemessage
+	setspeaker SP_NAME_MYSTERY_MAN
+	msgbox JubilifeCity_Text_MysteryManBusinessmen, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_JUBILIFECITY_LUCASDAWN, JubilifeCity_Movement_LucasDawn_InitialCallout
+	waitmovement LOCALID_JUBILIFECITY_LUCASDAWN
+	setspeaker SP_NAME_ASSISTANT
+	msgbox JubilifeCity_Text_AssistantJoinMe, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_JUBILIFECITY_LUCASDAWN, JubilifeCity_Movement_LucasDawn_InitialCalloutFollowup
+	waitmovement LOCALID_JUBILIFECITY_LUCASDAWN
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, JubilifeCity_EventScript_GruntBattleWithDawn
+	goto JubilifeCity_EventScript_GruntBattleWithLucas
+	end
+
+JubilifeCity_EventScript_GruntBattleWithDawn::
+	goto_if_eq VAR_STARTER_MON, STARTER_TURTWIG, JubilifeCity_EventScript_GruntBattleDawnTurtwig
+	goto_if_eq VAR_STARTER_MON, STARTER_CHIMCHAR, JubilifeCity_EventScript_GruntBattleDawnChimchar
+	goto JubilifeCity_EventScript_GruntBattleDawnPiplup
+	end
+
+JubilifeCity_EventScript_GruntBattleDawnTurtwig::
+	multi_2_vs_2 TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt1Defeated, TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_2_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt2Defeated, PARTNER_DAWN_PLAYER_CHOSE_TURTWIG
+	goto JubilifeCity_EventScript_GruntBattleResult
+	end
+
+JubilifeCity_EventScript_GruntBattleDawnChimchar::
+	multi_2_vs_2 TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt1Defeated, TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_2_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt2Defeated, PARTNER_DAWN_PLAYER_CHOSE_CHIMCHAR
+	goto JubilifeCity_EventScript_GruntBattleResult
+	end
+
+JubilifeCity_EventScript_GruntBattleDawnPiplup::
+	multi_2_vs_2 TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt1Defeated, TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_2_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt2Defeated, PARTNER_DAWN_PLAYER_CHOSE_PIPLUP
+	goto JubilifeCity_EventScript_GruntBattleResult
+	end
+
+JubilifeCity_EventScript_GruntBattleWithLucas::
+	goto_if_eq VAR_STARTER_MON, STARTER_TURTWIG, JubilifeCity_EventScript_GruntBattleLucasTurtwig
+	goto_if_eq VAR_STARTER_MON, STARTER_CHIMCHAR, JubilifeCity_EventScript_GruntBattleLucasChimchar
+	goto JubilifeCity_EventScript_GruntBattleLucasPiplup
+	end
+
+JubilifeCity_EventScript_GruntBattleLucasTurtwig::
+	multi_2_vs_2 TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt1Defeated, TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_2_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt2Defeated, PARTNER_LUCAS_PLAYER_CHOSE_TURTWIG
+	goto JubilifeCity_EventScript_GruntBattleResult
+	end
+
+JubilifeCity_EventScript_GruntBattleLucasChimchar::
+	multi_2_vs_2 TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt1Defeated, TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_2_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt2Defeated, PARTNER_LUCAS_PLAYER_CHOSE_CHIMCHAR
+	goto JubilifeCity_EventScript_GruntBattleResult
+	end
+
+JubilifeCity_EventScript_GruntBattleLucasPiplup::
+	multi_2_vs_2 TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt1Defeated, TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_2_JUBILIFE_FIGHT, JubilifeCity_Text_Grunt2Defeated, PARTNER_LUCAS_PLAYER_CHOSE_PIPLUP
+	goto JubilifeCity_EventScript_GruntBattleResult
+	end
+
+JubilifeCity_EventScript_GruntBattleResult::
+	switch VAR_RESULT
+	case 1, JubilifeCity_EventScript_GruntsDefeated
+	fadescreen FADE_TO_BLACK
+	special SetCB2WhiteOut
+	waitstate
+	end
+
+JubilifeCity_EventScript_GruntsDefeated::
+	setspeaker SP_NAME_GRUNT
+	msgbox JubilifeCity_Text_GruntRetreat, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_JUBILIFECITY_GALACTIC_GRUNT_2, JubilifeCity_Movement_Grunt2_OnEnd
+	applymovement LOCALID_JUBILIFECITY_GALACTIC_GRUNT_1, JubilifeCity_Movement_Grunt1_OnEnd
+	waitmovementall
+	removeobject LOCALID_JUBILIFECITY_GALACTIC_GRUNT_1
+	removeobject LOCALID_JUBILIFECITY_GALACTIC_GRUNT_2
+	setflag FLAG_HIDE_JUBILIFECITY_GALACTIC_GRUNTS
+	applymovement LOCALID_JUBILIFECITY_LUCASDAWN, JubilifeCity_Movement_LucasDawn_AfterBattle
+	waitmovement LOCALID_JUBILIFECITY_LUCASDAWN
+	setspeaker SP_NAME_ROWAN
+	msgbox JubilifeCity_Text_RowanTeamGalactic, MSGBOX_DEFAULT
+	closemessage
+	setspeaker SP_NAME_ASSISTANT
+	msgbox JubilifeCity_Text_AssistantEvolutionResearch, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_JUBILIFECITY_LUCASDAWN, JubilifeCity_Movement_LucasDawn_OnEnd
+	applymovement LOCALID_JUBILIFECITY_PROF_ROWAN, JubilifeCity_Movement_Rowan_OnEnd
+	waitmovementall
+	removeobject LOCALID_JUBILIFECITY_LUCASDAWN
+	removeobject LOCALID_JUBILIFECITY_PROF_ROWAN
+	setflag FLAG_HIDE_JUBILIFECITY_LUCASDAWN
+	setflag FLAG_HIDE_JUBILIFECITY_PROF_ROWAN
+	setvar VAR_JUBILIFE_CITY_STATE, 6
+	releaseall
+	end
+
+JubilifeCity_Movement_Rowan_NoticesPlayer:
+	face_down
+	emote_exclamation_mark
+	delay_16
+	delay_16
+	step_end
+
+JubilifeCity_Movement_Rowan_OnEnd:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+JubilifeCity_Movement_LucasDawn_InitialCallout:
+	walk_in_place_down
+	delay_16
+	step_end
+
+JubilifeCity_Movement_LucasDawn_InitialCalloutFollowup:
+	walk_left
+	step_end
+
+JubilifeCity_Movement_LucasDawn_AfterBattle:
+	walk_left
+	walk_down
+	delay_16
+	step_end
+
+JubilifeCity_Movement_LucasDawn_OnEnd:
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+JubilifeCity_Movement_Grunt1_OnEnd:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+JubilifeCity_Movement_Grunt2_OnEnd:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+JubilifeCity_Movement_Player_E52:
+	walk_up
+	walk_right
+	face_up
+	delay_16
+	step_end
+
+JubilifeCity_Movement_Player_E53:
+	walk_up
+	delay_16
+	step_end
+
+JubilifeCity_Movement_Player_E54:
+	walk_up
+	walk_left
+	face_up
+	step_end
+
+JubilifeCity_Movement_Player_E55:
+	walk_up
+	walk_left
+	walk_left
+	face_up
+	step_end
+
+JubilifeCity_Text_RowanShowThemManners:
+	.string "Ah, {PLAYER}.\n"
+	.string "Impeccable timing as always.\p"
+	.string "This miscreants are babbling utter\n"
+	.string "nonsense that I just can't stomach.\p"
+	.string "Show them some manners, if you will.$"
+
+JubilifeCity_Text_MysteryManBusinessmen:
+	.string "Oh, Professor Pokémon, must you be so\n"
+	.string "difficult?\p"
+	.string "We are approaching you strictly as\n"
+	.string "businessmen.\p"
+	.string "All you must do is provide us with all\n"
+	.string "your research findings.\p"
+	.string "In return, we'll refrain from causing\n"
+	.string "massive damage to your assistant.$"
+
+JubilifeCity_Text_AssistantJoinMe:
+	.string "{PLAYER}!\n"
+	.string "Join me and battle these guys!$"
+
+JubilifeCity_Text_GruntRetreat:
+	.string "You leave us no option.\n"
+	.string "We will retreat for now.\p"
+	.string "Because Team Galactic is benevolent to\n"
+	.string "all, we shall leave.$"
+
+JubilifeCity_Text_RowanTeamGalactic:
+	.string "That lot...\n"
+	.string "They call themselves Team Galactic.\p"
+	.string "When Pokémon evolve, they seem to\n"
+	.string "release som type of energy...\p"
+	.string "However, I believe that it's a mystic\n"
+	.string "power far beyond our control.\p"
+	.string "But Team Galactic seems to be trying to\n"
+	.string "use that power for something...\p"
+	.string "Anyway, {PLAYER}, well done!\n"
+	.string "You battle quite capably,\p"
+	.string "The sight of you Trainers and Pokémon\n"
+	.string "battling together...\p"
+	.string "I made the right decision in entrusting\n"
+	.string "you with a {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}!$"
+
+JubilifeCity_Text_AssistantEvolutionResearch:
+	.string "{PLAYER}, did you know about this?\p"
+	.string "The professor studies about the\n"
+	.string "evolution of Pokémon, too.\p"
+	.string "According to his research, 90% of all\n"
+	.string "Pokémon are somehow tied to evolution!\p"
+	.string "I guess that means some Pokémon must\n"
+	.string "undergo weird evolutions.\p"
+	.string "So, {PLAYER}...\n"
+	.string "Let's keep working on our {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}\l"
+	.string "project for the prof!$"
+
+JubilifeCity_Text_Grunt1Defeated:
+	.string "How is this madness possible?\n"
+	.string "The two of us, losing to children?$"
+
+JubilifeCity_Text_Grunt2Defeated:
+	.string "This won't do...\n"
+	.string "Time to retreat.\pThis mission is a failure.$"

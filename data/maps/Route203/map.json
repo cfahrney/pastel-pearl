@@ -154,7 +154,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_ROUTE203_BARRY"
+      "flag": "FLAG_HIDE_ROUTE203_BARRY",
+      "scriptOnly": true
     },
     {
       "local_id": "LOCALID_ROUTE203_BARRY_STARTER",
@@ -168,7 +169,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_ROUTE203_BARRY_STARTER"
+      "flag": "FLAG_HIDE_ROUTE203_BARRY_STARTER",
+      "scriptOnly": true
     }
   ],
   "warp_events": [

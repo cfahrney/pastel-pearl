@@ -8,4 +8,6 @@ const u8 *const gSpeakerNamesTable[SP_NAME_COUNT] =
     [SP_NAME_RIVAL_MOM] = COMPOUND_STRING("{RIVAL}'s Mom"),
     [SP_NAME_DEXNAV_PRESIDENT] = COMPOUND_STRING("DexNav President"),
     [SP_NAME_ROARK] = COMPOUND_STRING("Roark"),
+    [SP_NAME_MYSTERY_MAN] = COMPOUND_STRING("Mystery Man"),
+    [SP_NAME_GRUNT] = COMPOUND_STRING("Grunt"),
 };

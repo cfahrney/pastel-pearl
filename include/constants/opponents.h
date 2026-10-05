@@ -895,12 +895,14 @@
 #define TRAINER_ROUTE203_BARRY_PLAYER_CHOSE_PIPLUP 886
 #define TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_1 887
 #define TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_2 888
+#define TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT 889
+#define TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_2_JUBILIFE_FIGHT 890
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for a limited number of additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     889
+#define TRAINERS_COUNT_EMERALD     891
 #define MAX_TRAINERS_COUNT_EMERALD 1176
 
 #if IS_FRLG

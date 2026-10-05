@@ -527,8 +527,8 @@
 #define FLAG_HIDE_OREBURGHMINE_2_ROARK               0x1DE
 #define FLAG_OREBURGHCITY_GYM_TRAINER3_REWARD               0x1DF
 #define FLAG_OREBURGHCITY_NPC6_GIFT                         0x1E0
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
+#define FLAG_HIDE_JUBILIFECITY_GALACTIC_GRUNTS              0x1E1
+#define FLAG_HIDE_JUBILIFECITY_PROF_ROWAN                   0x1E2
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
 // Mystery Gift Flags (Unknown)

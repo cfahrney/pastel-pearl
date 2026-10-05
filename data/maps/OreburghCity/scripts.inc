@@ -409,6 +409,7 @@ OreburghCity_EventScript_BarryRunsIntoPlayerAtY13::
 	end
 
 OreburghCity_EventScript_BarryRunsIntoPlayerFinish::
+	playbgm MUS_RIVAL_THEME, TRUE
 	msgbox OreburghCity_Text_Thud, MSGBOX_DEFAULT
 	applymovement LOCALID_OREBURGHCITY_BARRY, Common_Movement_FacePlayer
 	waitmovement LOCALID_OREBURGHCITY_BARRY
@@ -447,6 +448,8 @@ OreburghCity_EventScript_BarryRunsIntoPlayerWrapUp::
 	removeobject LOCALID_OREBURGHCITY_BARRY_STARTER
 	setflag FLAG_HIDE_OREBURGHCITY_BARRY
 	setflag FLAG_HIDE_OREBURGHCITY_BARRY_STARTER
+	savebgm MUS_DUMMY
+	fadedefaultbgm
 	setvar VAR_OREBURGH_CITY_STATE, 4
 	releaseall
 	end
@@ -630,14 +633,14 @@ OreburghCity_Text_Thud:
 OreburghCity_Text_BarryWhoops:
 	.string "Whoops! {PLAYER}!\n"
 	.string "You got the Gym Badge, huh?\p"
-	.string "Eterna City is the next place with a Gym\n"
+	.string "{COLOR DYNAMIC_COLOR3}Eterna City{COLOR DARK_GRAY} is the next place with a Gym\n"
 	.string "that gives away Badges, right?\p"
 	.string "So, yea, I went to {COLOR DYNAMIC_COLOR3}Route 207{COLOR DARK_GRAY}, but you\n"
 	.string "can't go there without a {COLOR DYNAMIC_COLOR3}Bicycle{COLOR DARK_GRAY}.\p"
 	.string "I made my team battle and toughened\n"
 	.string "them up, so it wasn't a waste.\p"
 	.string "So, I'm going back to {COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY}. Next\n"
-	.string "stop, the Eterna Gym Badge!\p"
+	.string "stop, the {COLOR DYNAMIC_COLOR3}Eterna Gym Badge{COLOR DARK_GRAY}!\p"
 	.string "Ten seconds before I dash!\p"
 	.string "Nine...\p"
 	.string "Bah! Who's got time to count?!$"

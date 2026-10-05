@@ -192,6 +192,7 @@
 //    3  Player has received DexNav from the DexNavPresident, allowing them to leave Jubilife
 //    4  Player has defeated Barry on Route 203
 //    5  Player has defeated Roark and is returning to Jubilife
+//    6  TODO
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E

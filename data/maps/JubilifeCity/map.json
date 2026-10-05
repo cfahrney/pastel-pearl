@@ -346,7 +346,7 @@
     },
     {
       "local_id": "LOCALID_JUBILIFECITY_DEXNAVPRESIDENT",
-      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN_DP",
+      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
       "x": 54,
       "y": 35,
       "elevation": 0,
@@ -357,6 +357,51 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT"
+    },
+    {
+      "local_id": "LOCALID_JUBILIFECITY_GALACTIC_GRUNT_1",
+      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
+      "x": 53,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_JUBILIFECITY_GALACTIC_GRUNTS",
+      "scriptOnly": true
+    },
+    {
+      "local_id": "LOCALID_JUBILIFECITY_GALACTIC_GRUNT_2",
+      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
+      "x": 53,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_JUBILIFECITY_GALACTIC_GRUNTS",
+      "scriptOnly": true
+    },
+    {
+      "local_id": "LOCALID_JUBILIFECITY_PROF_ROWAN",
+      "graphics_id": "OBJ_EVENT_GFX_PROF_ROWAN",
+      "x": 54,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_JUBILIFECITY_PROF_ROWAN",
+      "scriptOnly": true
     }
   ],
   "warp_events": [
@@ -541,6 +586,42 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "JubilifeCity_EventScript_FatManNoticesPlayerAtY24"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "5",
+      "script": "JubilifeCity_EventScript_RowanNoticesPlayerAtX52"
+    },
+    {
+      "type": "trigger",
+      "x": 53,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "5",
+      "script": "JubilifeCity_EventScript_RowanNoticesPlayerAtX53"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "5",
+      "script": "JubilifeCity_EventScript_RowanNoticesPlayerAtX54"
+    },
+    {
+      "type": "trigger",
+      "x": 55,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_JUBILIFE_CITY_STATE",
+      "var_value": "5",
+      "script": "JubilifeCity_EventScript_RowanNoticesPlayerAtX55"
     }
   ],
   "bg_events": [

@@ -42,3 +42,93 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Protect
 - Solar Beam
 - Dragon Claw
+
+=== PARTNER_DAWN_PLAYER_CHOSE_TURTWIG ===
+Name: Dawn
+Class: Pkmn Trainer 1
+Pic: Dawn
+Gender: Female
+Music: Female
+
+Pichu
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Piplup
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== PARTNER_DAWN_PLAYER_CHOSE_CHIMCHAR ===
+Name: Dawn
+Class: Pkmn Trainer 1
+Pic: Dawn
+Gender: Female
+Music: Female
+
+Pichu
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Turtwig
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== PARTNER_DAWN_PLAYER_CHOSE_PIPLUP ===
+Name: Dawn
+Class: Pkmn Trainer 1
+Pic: Dawn
+Gender: Female
+Music: Female
+
+Pichu
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chimchar
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== PARTNER_LUCAS_PLAYER_CHOSE_TURTWIG ===
+Name: Lucas
+Class: Pkmn Trainer 1
+Pic: Lucas
+Gender: Male
+Music: Male
+
+Pichu
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Piplup
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== PARTNER_LUCAS_PLAYER_CHOSE_CHIMCHAR ===
+Name: Lucas
+Class: Pkmn Trainer 1
+Pic: Lucas
+Gender: Male
+Music: Male
+
+Pichu
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Turtwig
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== PARTNER_LUCAS_PLAYER_CHOSE_PIPLUP ===
+Name: Lucas
+Class: Pkmn Trainer 1
+Pic: Lucas
+Gender: Male
+Music: Male
+
+Pichu
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chimchar
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
