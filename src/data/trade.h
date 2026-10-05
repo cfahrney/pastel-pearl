@@ -1211,6 +1211,22 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_PONYTA
+    },
+    [INGAME_TRADE_OREBURGHCITY_TOPRIGHTCONDO_1F_NPC1] =
+    {
+        .nickname = _("Kazam"),
+        .species = SPECIES_ABRA,
+        .ivs = {20, 20, 20, 20, 20, 20},
+        .abilityNum = 0,
+        .otId = 55653,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x5ec29175,
+        .heldItem = ITEM_TWISTED_SPOON,
+        .mailNum = MAIL_NONE,
+        .otName = _("Abby"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_MACHOP
     }
 };
 

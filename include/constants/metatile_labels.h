@@ -276,6 +276,7 @@
 #define METATILE_General_MuddySlope_Frame0     0x0E8
 #define METATILE_General_MuddySlope_Frame1     0x0E9
 #define METATILE_General_MuddySlope_Frame2     0x0EA
+#define METATILE_General_MuddySlope_Frame3     0x0EB
 #define METATILE_General_RedCaveIndent         0x1A0
 #define METATILE_General_RedCaveOpen           0x1A1
 #define METATILE_General_ReflectiveWater       0x0A1
@@ -962,6 +963,10 @@
 // gTileset_SinnohGeneral
 #define METATILE_SinnohGeneral_Door_PokeCenter  0x061
 #define METATILE_SinnohGeneral_Door_PokeMart    0x041
+#define METATILE_SinnohGeneral_MuddySlope_Frame0 0x113
+#define METATILE_SinnohGeneral_MuddySlope_Frame1 0x114
+#define METATILE_SinnohGeneral_MuddySlope_Frame2 0x115
+#define METATILE_SinnohGeneral_MuddySlope_Frame3 0x13F
 
 // gTileset_Slateport
 #define METATILE_Slateport_Door             0x2DC

@@ -15,6 +15,6 @@ OreburghCity_RightOfGymHouse_Text_NPC1:
 	.string "running safely and efficiently.$"
 
 OreburghCity_RightOfGymHouse_Text_NPC2:
-	.string "Roark is a user of Rock-type Pokemon.\p"
-	.string "Don't you think Rock-type Pokemon are\n"
+	.string "Roark is a user of Rock-type Pokémon.\p"
+	.string "Don't you think Rock-type Pokémon are\n"
 	.string "nice? I like how lumpy they are!$"

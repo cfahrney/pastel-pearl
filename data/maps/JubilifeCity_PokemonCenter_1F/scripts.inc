@@ -30,17 +30,17 @@ JubilifeCity_PokemonCenter_1F_EventScript_NPC3::
 	end
 
 JubilifeCity_PokemonCenter_1F_Text_NPC1:
-	.string "You know how Pokemon have types like\n"
+	.string "You know how Pokémon have types like\n"
 	.string "Water, Fire, and Grass?\p"
 	.string "They say those types have strengths\n"
 	.string "and weaknesses against other types.$"
 
 JubilifeCity_PokemonCenter_1F_Text_NPC2:
 	.string "I'd love one of those {COLOR DYNAMIC_COLOR3}DexNavs{COLOR DARK_GRAY}, but I\n"
-	.string "guess I need my own Pokemon first...$"
+	.string "guess I need my own Pokémon first...$"
 
 JubilifeCity_PokemonCenter_1F_Text_NPC3:
-	.string "You can still catch a Pokemon if you\n"
+	.string "You can still catch a Pokémon if you\n"
 	.string "already have six traveling with you.\p"
 	.string "It automatically gets sent to the PC\n"
-	.string "network in Pokemon Centers.$"
+	.string "network in Pokémon Centers.$"

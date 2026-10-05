@@ -16,6 +16,7 @@
 #include "secret_base.h"
 #include "sound.h"
 #include "task.h"
+#include "tilesets.h"
 #include "constants/field_tasks.h"
 #include "constants/items.h"
 #include "constants/songs.h"
@@ -885,8 +886,16 @@ enum {
 
 static const u16 sMuddySlopeMetatiles[] = {
     METATILE_General_MuddySlope_Frame0,
+    METATILE_General_MuddySlope_Frame3,
     METATILE_General_MuddySlope_Frame2,
     METATILE_General_MuddySlope_Frame1
+};
+
+static const u16 sSinnohMuddySlopeMetatiles[] = {
+    METATILE_SinnohGeneral_MuddySlope_Frame0,
+    METATILE_SinnohGeneral_MuddySlope_Frame3,
+    METATILE_SinnohGeneral_MuddySlope_Frame2,
+    METATILE_SinnohGeneral_MuddySlope_Frame1
 };
 
 #define SLOPE_ANIM_TIME 32
@@ -895,14 +904,17 @@ static const u16 sMuddySlopeMetatiles[] = {
 static void SetMuddySlopeMetatile(s16 *data, s16 x, s16 y)
 {
     u16 metatileId;
+    // Slope frames live at different ids in sinnoh_general
+    const u16 *frames = gMapHeader.mapLayout->primaryTileset == &gTileset_SinnohGeneral ? sSinnohMuddySlopeMetatiles : sMuddySlopeMetatiles;
+
     if ((--data[SLOPE_TIME]) == 0)
-        metatileId = METATILE_General_MuddySlope_Frame0;
+        metatileId = frames[0];
     else
-        metatileId = sMuddySlopeMetatiles[data[SLOPE_TIME] / SLOPE_ANIM_STEP_TIME];
+        metatileId = frames[data[SLOPE_TIME] / SLOPE_ANIM_STEP_TIME];
 
     MapGridSetMetatileIdAt(x, y, metatileId);
     CurrentMapDrawMetatileAt(x, y);
-    MapGridSetMetatileIdAt(x, y, METATILE_General_MuddySlope_Frame0);
+    MapGridSetMetatileIdAt(x, y, frames[0]);
 }
 
 static void Task_MuddySlope(u8 taskId)

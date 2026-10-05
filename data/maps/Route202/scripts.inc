@@ -30,7 +30,7 @@ Route202_Text_Sign1:
 
 Route202_Text_Sign2:
 	.string "Trainer Tips!\p"
-	.string "Some Pokemon only appear in the\n"
+	.string "Some Pokémon only appear in the\n"
 	.string "morning. Some only come out during the\l"
 	.string "day, or at night.\p"
 	.string "Be sure to check a route throughout a\n"
@@ -61,8 +61,8 @@ Route202_EventScript_Trainer4::
 	end
 
 Route202_Text_Trainer1Intro:
-	.string "You're a Pokemon Trainer!\n"
-	.string "I happen to be a Pokemon Trainer!\l"
+	.string "You're a Pokémon Trainer!\n"
+	.string "I happen to be a Pokémon Trainer!\l"
 	.string "Our eyes met, so battle we must!$"
 
 Route202_Text_Trainer1Defeated:
@@ -70,18 +70,18 @@ Route202_Text_Trainer1Defeated:
 
 Route202_Text_Trainer1PostBattle:
 	.string "Don't be shy about talking to Trainers\n"
-	.string "you'd like to battle. Pokemon grow\l"
+	.string "you'd like to battle. Pokémon grow\l"
 	.string "stronger and stronger from battling.$"
 
 Route202_Text_Trainer2Intro:
-	.string "Where do you stand on Bug Pokemon?$"
+	.string "Where do you stand on Bug Pokémon?$"
 
 Route202_Text_Trainer2Defeated:
 	.string "Ahhh! My bugs!$"
 
 Route202_Text_Trainer2PostBattle:
 	.string "My bugs are all tuckered out! I need to\n"
-	.string "go to a Pokemon Center!$"
+	.string "go to a Pokémon Center!$"
 
 Route202_Text_Trainer3Intro:
 	.string "Zap zap!$"
@@ -96,7 +96,7 @@ Route202_Text_Trainer3PostBattle:
 	.string "super easy!$"
 
 Route202_Text_Trainer4Intro:
-	.string "Let's have a Pokemon battle! Humph! But\n"
+	.string "Let's have a Pokémon battle! Humph! But\n"
 	.string "I'm gonna win!$"
 
 Route202_Text_Trainer4Defeated:
@@ -132,13 +132,13 @@ Route202_Text_NPC1Speaker:
 	.string "Shinx$"
 
 Route202_Text_NPC1:
-	.string "ROUTE 202 NPC 1$"
+	.string "Shinx!$"
 
 Route202_Text_NPC2Speaker:
 	.string "Growlithe$"
 
 Route202_Text_NPC2:
-	.string "ROUTE 202 NPC 2$"
+	.string "Growllll$"
 
 @ VAR_SANDGEM_TOWN_STATE == 9: LUCAS/DAWN waits at (20, 27) and catches the player on x26 (y25-29).
 

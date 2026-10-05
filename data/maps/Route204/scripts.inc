@@ -18,7 +18,7 @@ Route204_Text_Trainer1Defeated:
 	.string "Wow, you're so strong...$"
 
 Route204_Text_Trainer1PostBattle:
-	.string "Maybe I could have won if my Pokemon\n"
+	.string "Maybe I could have won if my Pokémon\n"
 	.string "was holding a Berry...$"
 
 Route204_Text_Trainer2Intro:
@@ -69,19 +69,19 @@ Route204_EventScript_NPC3::
 	end
 
 Route204_Text_NPC1:
-	.string "My dad gave me some Pokemon! They're\n"
+	.string "My dad gave me some Pokémon! They're\n"
 	.string "gonna win for me!$"
 
 Route204_Text_NPC2:
 	.string "There are boulders blocking the way\n"
-	.string "inside the cavern... I think a Pokemon\l"
+	.string "inside the cavern... I think a Pokémon\l"
 	.string "would be able to break those boulders,\l"
 	.string "though.$"
 
 Route204_Text_NPC3:
 	.string "Are you raising different kinds of\n"
-	.string "Pokemon? If you only have the same\l"
-	.string "type of Pokemon, you'll have a hard time\l"
+	.string "Pokémon? If you only have the same\l"
+	.string "type of Pokémon, you'll have a hard time\l"
 	.string "against types it's weak to.$"
 
 Route204_EventScript_Sign1::

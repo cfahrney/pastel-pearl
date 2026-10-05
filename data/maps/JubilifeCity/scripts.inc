@@ -85,7 +85,7 @@ JubilifeCity_Text_Sign5:
 	.string "City of Joy$"
 
 JubilifeCity_Text_Sign6:
-	.string "The DexNav Company Pokemon\n"
+	.string "The DexNav Company Pokémon\n"
 	.string "DexNavs for the World!$"
 
 JubilifeCity_Text_Sign7:
@@ -154,13 +154,13 @@ JubilifeCity_Text_NPC3:
 JubilifeCity_Text_NPC4:
 	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY}'s built on land they\n"
 	.string "carved out of a mountain.\p"
-	.string "The people and Pokemon of {COLOR DYNAMIC_COLOR3}Oreburgh\n"
+	.string "The people and Pokémon of {COLOR DYNAMIC_COLOR3}Oreburgh\n"
 	.string "City{COLOR DARK_GRAY} helps out with the undertaking.$"
 
 JubilifeCity_Text_NPC5:
-	.string "Okay, set six Poke Balls in my belt...\p"
+	.string "Okay, set six Poké Balls in my belt...\p"
 	.string "Yeah, that'll do it. At most, you can\n"
-	.string "have six Pokemon with you.$"
+	.string "have six Pokémon with you.$"
 
 JubilifeCity_Text_NPC6:
 	.string "Hello! Have you visited the {COLOR DYNAMIC_COLOR3}Trainer\n"
@@ -168,10 +168,10 @@ JubilifeCity_Text_NPC6:
 	.string "trainers like yourself!$"
 
 JubilifeCity_Text_NPC7:
-	.string "I'm trading Pokemon with my buddy!$"
+	.string "I'm trading Pokémon with my buddy!$"
 
 JubilifeCity_Text_NPC8:
-	.string "I made my Pokemon hold an item before\n"
+	.string "I made my Pokémon hold an item before\n"
 	.string "trading it. That will make my friend\l"
 	.string "double happy!$"
 
@@ -257,7 +257,11 @@ JubilifeCity_EventScript_NPC15::
 	end
 
 JubilifeCity_Text_NPC15:
-	.string "JUBILIFE CITY NPC 15$"
+	.string "Hey there, kiddo! Sorry, but the\n"
+	.string "{COLOR DYNAMIC_COLOR3}Jubilife Battle Dome{COLOR DARK_GRAY} is currently\l"
+	.string "closed. We are working on some wicked\l"
+	.string "cool stuff, though! Come back after you\l"
+	.string "have a few badges!$"
 
 @ VAR_JUBILIFE_CITY_STATE == 0: LUCAS/DAWN runs down from the north and points the player to the Trainer School.
 JubilifeCity_EventScript_LucasDawnStopsPlayerAtX53::
@@ -562,7 +566,7 @@ JubilifeCity_EventScript_NPC16::
 	end
 
 JubilifeCity_Text_NPC16:
-	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY} NPC 16$"
+	.string "Houndooour$"
 
 JubilifeCity_Text_NPC16Speaker:
 	.string "Houndour$"
@@ -579,7 +583,7 @@ JubilifeCity_EventScript_NPC17::
 	end
 
 JubilifeCity_Text_NPC17:
-	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY} NPC 17$"
+	.string "Chuuu$"
 
 JubilifeCity_Text_NPC17Speaker:
 	.string "Pichu$"
@@ -596,7 +600,7 @@ JubilifeCity_EventScript_NPC18::
 	end
 
 JubilifeCity_Text_NPC18:
-	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY} NPC 18$"
+	.string "Chu?$"
 
 JubilifeCity_Text_NPC18Speaker:
 	.string "Pichu$"

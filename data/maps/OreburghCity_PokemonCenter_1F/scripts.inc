@@ -26,7 +26,16 @@ OreburghCity_PokemonCenter_1F_EventScript_NPC2::
 	end
 
 OreburghCity_PokemonCenter_1F_Text_NPC1:
-	.string "POKEMON CENTER 1F NPC 1$"
+	.string "Switch on the PC at any Pokémon Center\n"
+	.string "and connect to the Pokémon Storage\l"
+	.string "System.\p"
+	.string "That's all you need to do to store or\n"
+	.string "bring out your Pokémon.$"
 
 OreburghCity_PokemonCenter_1F_Text_NPC2:
-	.string "POKEMON CENTER 1F NPC 2$"
+	.string "I went to the Pokémon Mart to buy some\n"
+	.string "of the Exp. Candies they supposedly\l"
+	.string "find in {COLOR DYNAMIC_COLOR3}Oreburgh Mine{COLOR DARK_GRAY}, but they wouldn't\l"
+	.string "sell me any!\p"
+	.string "I guess you need some Gym Badges to\n"
+	.string "buy them, for some reason.$"

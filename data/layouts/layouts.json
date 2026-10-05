@@ -10003,8 +10003,8 @@
     {
       "id": "LAYOUT_JUBILIFE_CITY_TVSTATION_1F",
       "name": "JubilifeCity_TVStation_1F_Layout",
-      "width": 21,
-      "height": 14,
+      "width": 16,
+      "height": 11,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_LilycoveMuseum",
       "border_filepath": "data/layouts/JubilifeCity_TVStation_1F/border.bin",

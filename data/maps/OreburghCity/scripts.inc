@@ -320,7 +320,7 @@ OreburghCity_EventScript_NPC10::
 	end
 
 OreburghCity_Text_NPC10:
-	.string "OREBURGH CITY NPC 10$"
+	.string "Carrr.$"
 
 OreburghCity_Text_NPC10Speaker:
 	.string "Carkol$"
@@ -337,7 +337,7 @@ OreburghCity_EventScript_NPC11::
 	end
 
 OreburghCity_Text_NPC11:
-	.string "OREBURGH CITY NPC 11$"
+	.string "Roly roly!$"
 
 OreburghCity_Text_NPC11Speaker:
 	.string "Rolycoly$"

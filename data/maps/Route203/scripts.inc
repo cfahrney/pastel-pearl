@@ -58,17 +58,17 @@ Route203_Text_Sign1:
 
 Route203_Text_Sign2:
 	.string "Trainer Tips!\p"
-	.string "Pokemon moves use energy called Power\n"
+	.string "Pokémon moves use energy called Power\n"
 	.string "Points, or PP for short.\p"
 	.string "If the PP of moves runs low, head for\n"
-	.string "any Pokemon Center.$"
+	.string "any Pokémon Center.$"
 
 Route203_Text_Sign3:
 	.string "Trainer tips!\p"
-	.string "If a Pokemon is about to evolve, it can\n"
+	.string "If a Pokémon is about to evolve, it can\n"
 	.string "be instantly stopped.\p"
 	.string "Press the B Button during evolution to\n"
-	.string "startle the Pokemon into stopping.\p"
+	.string "startle the Pokémon into stopping.\p"
 	.string "This is how evolution can be canceled.$"
 
 Route203_Text_Sign4:
@@ -114,11 +114,11 @@ Route203_Text_Trainer1Defeated:
 
 Route203_Text_Trainer1PostBattle:
 	.string "I'm going to collect lots of Gym Badges!\n"
-	.string "I'll work with my Pokemon!$"
+	.string "I'll work with my Pokémon!$"
 
 Route203_Text_Trainer2Intro:
 	.string "Gimme a battle so I can see if I'm ready\n"
-	.string "for the Pokemon Gym Challenge!$"
+	.string "for the Pokémon Gym Challenge!$"
 
 Route203_Text_Trainer2Defeated:
 	.string "I guess it means I'm not ready for the\n"
@@ -130,14 +130,14 @@ Route203_Text_Trainer2PostBattle:
 
 Route203_Text_Trainer3Intro:
 	.string "I found a Trainer while looking for some\n"
-	.string "Pokemon!$"
+	.string "Pokémon!$"
 
 Route203_Text_Trainer3Defeated:
 	.string "Huh? Finished so soon?$"
 
 Route203_Text_Trainer3PostBattle:
 	.string "I walk through tall grass until I find\n"
-	.string "the Pokemon I want.$"
+	.string "the Pokémon I want.$"
 
 Route203_Text_Trainer4Intro:
 	.string "We're always together. I'll show you how\n"
@@ -145,7 +145,7 @@ Route203_Text_Trainer4Intro:
 
 Route203_Text_Trainer4Defeated:
 	.string "Wow, that's an amazing bond you have\n"
-	.string "with your Pokemon.$"
+	.string "with your Pokémon.$"
 
 Route203_Text_Trainer4PostBattle:
 	.string "I don't bear grudges over losing. But I\n"
@@ -153,7 +153,7 @@ Route203_Text_Trainer4PostBattle:
 
 Route203_Text_Trainer5Intro:
 	.string "I'm full of energy because I get power\n"
-	.string "from my Pokemon!$"
+	.string "from my Pokémon!$"
 
 Route203_Text_Trainer5Defeated:
 	.string "Oh! My poor Magby and Zubat!$"

@@ -17,7 +17,7 @@ JubilifeCity_SouthOfTrainerSchoolCondo_1F_EventScript_NPC4::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SENTRET, CRY_MODE_NORMAL
+	playmoncry SPECIES_AMBIPOM, CRY_MODE_NORMAL
 	setspeaker JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC4Speaker
 	msgbox JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC4, MSGBOX_DEFAULT
 	waitmoncry
@@ -28,7 +28,7 @@ JubilifeCity_SouthOfTrainerSchoolCondo_1F_EventScript_NPC5::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_CLEFFA, CRY_MODE_NORMAL
+	playmoncry SPECIES_CHATOT, CRY_MODE_NORMAL
 	setspeaker JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC5Speaker
 	msgbox JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC5, MSGBOX_DEFAULT
 	waitmoncry
@@ -36,22 +36,36 @@ JubilifeCity_SouthOfTrainerSchoolCondo_1F_EventScript_NPC5::
 	end
 
 JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC1:
-	.string "HIGH RISE 1F NPC 1$"
+	.string "Hello there, Trainer!\p"
+	.string "If you get stumped and don't know what\n"
+	.string "to do...\p"
+	.string "Talk to people!\n"
+	.string "Talk to everyone you see!\p"
+	.string "Go places!\n"
+	.string "Go wherever you can!\p"
+	.string "You'll find many new places by doing\n"
+	.string "just that.$"
 
 JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC2:
-	.string "HIGH RISE 1F NPC 2$"
+	.string "Pokémon are wonderful, deeply\n"
+	.string "mysterious creatures.\p"
+	.string "But to Trainers, it seems the only thing\n"
+	.string "that matters is battling!$"
 
 JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC3:
-	.string "HIGH RISE 1F NPC 3$"
+	.string "Did you know?\p"
+	.string "Your {COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY} can tell you all sorts of\n"
+	.string "information about a Pokémon's\l"
+	.string "evolutions.$"
 
 JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC4:
-	.string "HIGH RISE 1F NPC 4$"
+	.string "Aaaambi.$"
 
 JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC4Speaker:
-	.string "Sentret$"
+	.string "Ambipom$"
 
 JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC5:
-	.string "HIGH RISE 1F NPC 5$"
+	.string "Tot! Tot tot!$"
 
 JubilifeCity_SouthOfTrainerSchoolCondo_1F_Text_NPC5Speaker:
-	.string "Cleffa$"
+	.string "Chatot$"

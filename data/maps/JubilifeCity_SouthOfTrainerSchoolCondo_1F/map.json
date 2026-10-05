@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MOM_FRLG",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 5,
       "y": 8,
       "elevation": 0,
@@ -28,11 +28,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DP",
-      "x": 2,
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
+      "x": 8,
       "y": 4,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -43,9 +43,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
       "x": 12,
-      "y": 6,
+      "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -54,9 +54,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SENTRET)",
-      "x": 2,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMBIPOM)",
+      "x": 7,
+      "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -67,9 +67,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFFA)",
-      "x": 13,
-      "y": 6,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHATOT)",
+      "x": 11,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
