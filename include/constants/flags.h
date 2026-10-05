@@ -525,8 +525,8 @@
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
 #define FLAG_HIDE_OREBURGHMINE_2_ROARK               0x1DE
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
+#define FLAG_OREBURGHCITY_GYM_TRAINER3_REWARD               0x1DF
+#define FLAG_OREBURGHCITY_NPC6_GIFT                         0x1E0
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
@@ -1245,7 +1245,7 @@
 #define FLAG_ITEM_OREBURGH_GATE_B1F_EARTH_PLATE                     0x4A7
 #define FLAG_ITEM_VERITY_LAKEFRONT_1                                0x4A8
 #define FLAG_ITEM_ROUTE_219_SOFT_SAND                               0x4A9
-#define FLAG_ITEM_OREBURGH_MINE_2_1                                 0x4AA
+#define FLAG_ITEM_OREBURGH_MINE_2_X_DEFENSE                         0x4AA
 #define FLAG_ITEM_SANDGEM_TOWN_LEMONADE                             0x4AB
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag

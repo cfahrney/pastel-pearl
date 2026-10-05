@@ -70,12 +70,14 @@ OreburghCity_OreburghMine_2_EventScript_NPC1::
 	msgbox OreburghCity_OreburghMine_2_Text_NPC1, MSGBOX_NPC
 	end
 
-OreburghCity_OreburghMine_2_EventScript_NPC2::
-	msgbox OreburghCity_OreburghMine_2_Text_NPC2, MSGBOX_NPC
+OreburghCity_OreburghMine_2_EventScript_Trainer1::
+	trainerbattle_single TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_1, OreburghCity_OreburghMine_2_Text_Trainer1Intro, OreburghCity_OreburghMine_2_Text_Trainer1Defeated
+	msgbox OreburghCity_OreburghMine_2_Text_Trainer1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-OreburghCity_OreburghMine_2_EventScript_NPC3::
-	msgbox OreburghCity_OreburghMine_2_Text_NPC3, MSGBOX_NPC
+OreburghCity_OreburghMine_2_EventScript_Trainer2::
+	trainerbattle_single TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_2, OreburghCity_OreburghMine_2_Text_Trainer2Intro, OreburghCity_OreburghMine_2_Text_Trainer2Defeated
+	msgbox OreburghCity_OreburghMine_2_Text_Trainer2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 OreburghCity_OreburghMine_2_EventScript_NPC4::
@@ -163,7 +165,7 @@ OreburghCity_OreburghMine_2_EventScript_NPC7::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	playmoncry SPECIES_CARKOL, CRY_MODE_NORMAL
 	setspeaker OreburghCity_OreburghMine_2_Text_NPC7Speaker
 	msgbox OreburghCity_OreburghMine_2_Text_NPC7, MSGBOX_DEFAULT
 	waitmoncry
@@ -173,20 +175,32 @@ OreburghCity_OreburghMine_2_EventScript_NPC7::
 OreburghCity_OreburghMine_2_Text_NPC1:
 	.string "OREBURGH MINE 2 NPC 1$"
 
-OreburghCity_OreburghMine_2_Text_NPC2:
-	.string "OREBURGH MINE 2 NPC 2$"
+OreburghCity_OreburghMine_2_Text_Trainer1Intro:
+	.string "OREBURGH MINE 2 TRAINER 1\nwants to battle!$"
 
-OreburghCity_OreburghMine_2_Text_NPC3:
-	.string "OREBURGH MINE 2 NPC 3$"
+OreburghCity_OreburghMine_2_Text_Trainer1Defeated:
+	.string "OREBURGH MINE 2 TRAINER 1\nwas defeated!$"
+
+OreburghCity_OreburghMine_2_Text_Trainer1PostBattle:
+	.string "OREBURGH MINE 2 TRAINER 1\nhas nothing else to say.$"
+
+OreburghCity_OreburghMine_2_Text_Trainer2Intro:
+	.string "OREBURGH MINE 2 TRAINER 2\nwants to battle!$"
+
+OreburghCity_OreburghMine_2_Text_Trainer2Defeated:
+	.string "OREBURGH MINE 2 TRAINER 2\nwas defeated!$"
+
+OreburghCity_OreburghMine_2_Text_Trainer2PostBattle:
+	.string "OREBURGH MINE 2 TRAINER 2\nhas nothing else to say.$"
 
 OreburghCity_OreburghMine_2_Text_NPC4:
-	.string "OREBURGH MINE 2 NPC 4$"
+	.string "Chop chop!$"
 
 OreburghCity_OreburghMine_2_Text_NPC4Speaker:
 	.string "Machop$"
 
 OreburghCity_OreburghMine_2_Text_NPC5:
-	.string "OREBURGH MINE 2 NPC 5$"
+	.string "Chooop$"
 
 OreburghCity_OreburghMine_2_Text_NPC5Speaker:
 	.string "Machop$"
@@ -195,10 +209,10 @@ OreburghCity_OreburghMine_2_Text_NPC6:
 	.string "OREBURGH MINE 2 NPC 6$"
 
 OreburghCity_OreburghMine_2_Text_NPC7:
-	.string "OREBURGH MINE 2 NPC 7$"
+	.string "Kooool.$"
 
 OreburghCity_OreburghMine_2_Text_NPC7Speaker:
-	.string "Machop$"
+	.string "Carkol$"
 
 OreburghCity_OreburghMine_2_EventScript_NPC8::
 	lock
@@ -237,7 +251,7 @@ OreburghCity_OreburghMine_2_EventScript_NPC11::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	playmoncry SPECIES_ROLYCOLY, CRY_MODE_NORMAL
 	setspeaker OreburghCity_OreburghMine_2_Text_NPC11Speaker
 	msgbox OreburghCity_OreburghMine_2_Text_NPC11, MSGBOX_DEFAULT
 	waitmoncry
@@ -245,28 +259,28 @@ OreburghCity_OreburghMine_2_EventScript_NPC11::
 	end
 
 OreburghCity_OreburghMine_2_Text_NPC8:
-	.string "OREBURGH MINE 2 NPC 8$"
+	.string "Chooop$"
 
 OreburghCity_OreburghMine_2_Text_NPC8Speaker:
 	.string "Machop$"
 
 OreburghCity_OreburghMine_2_Text_NPC9:
-	.string "OREBURGH MINE 2 NPC 9$"
+	.string "Chooop$"
 
 OreburghCity_OreburghMine_2_Text_NPC9Speaker:
 	.string "Machop$"
 
 OreburghCity_OreburghMine_2_Text_NPC10:
-	.string "OREBURGH MINE 2 NPC 10$"
+	.string "Chooop$"
 
 OreburghCity_OreburghMine_2_Text_NPC10Speaker:
 	.string "Machop$"
 
 OreburghCity_OreburghMine_2_Text_NPC11:
-	.string "OREBURGH MINE 2 NPC 11$"
+	.string "Coly!$"
 
 OreburghCity_OreburghMine_2_Text_NPC11Speaker:
-	.string "Machop$"
+	.string "Rolycoly$"
 
 OreburghCity_OreburghMine_2_Text_RoarkDemoIntro:
 	.string "OK, stand back and watch this.\p"

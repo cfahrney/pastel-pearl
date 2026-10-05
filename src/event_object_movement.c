@@ -6865,6 +6865,54 @@ bool8 ObjectEventIsHeldMovementActive(struct ObjectEvent *objectEvent)
     return FALSE;
 }
 
+// Scripted NPC walks skip the collision check that sets directionOverwrite, so sideways stairs need it here.
+static void SetStairsDirectionOverwriteForScriptedWalk(struct ObjectEvent *objectEvent, u8 movementActionId)
+{
+    enum Direction dir;
+    s16 x, y;
+
+    if (objectEvent->isPlayer || objectEvent->localId == OBJ_EVENT_ID_FOLLOWER || objectEvent->localId == OBJ_EVENT_ID_NPC_FOLLOWER)
+        return;
+
+    switch (movementActionId)
+    {
+    case MOVEMENT_ACTION_WALK_NORMAL_DOWN:
+    case MOVEMENT_ACTION_WALK_FAST_DOWN:
+        dir = DIR_SOUTH;
+        break;
+    case MOVEMENT_ACTION_WALK_NORMAL_UP:
+    case MOVEMENT_ACTION_WALK_FAST_UP:
+        dir = DIR_NORTH;
+        break;
+    case MOVEMENT_ACTION_WALK_NORMAL_LEFT:
+    case MOVEMENT_ACTION_WALK_FAST_LEFT:
+        dir = DIR_WEST;
+        break;
+    case MOVEMENT_ACTION_WALK_NORMAL_RIGHT:
+    case MOVEMENT_ACTION_WALK_FAST_RIGHT:
+        dir = DIR_EAST;
+        break;
+    default:
+        return;
+    }
+
+    // Stairs only, not GetCollisionAtCoords: it refuses the diagonal when an object (e.g. the player) is on the landing tile.
+    ObjectEventMoveDestCoords(objectEvent, dir, &x, &y);
+    objectEvent->directionOverwrite = DIR_NONE;
+    switch (GetSidewaysStairsCollision(objectEvent, dir, MapGridGetMetatileBehaviorAt(objectEvent->currentCoords.x, objectEvent->currentCoords.y),
+                                       MapGridGetMetatileBehaviorAt(x, y), COLLISION_NONE))
+    {
+    case COLLISION_SIDEWAYS_STAIRS_TO_LEFT:
+        objectEvent->directionOverwrite = GetLeftSideStairsDirection(dir);
+        break;
+    case COLLISION_SIDEWAYS_STAIRS_TO_RIGHT:
+        objectEvent->directionOverwrite = GetRightSideStairsDirection(dir);
+        break;
+    default:
+        break;
+    }
+}
+
 static u8 TryUpdateMovementActionOnStairs(struct ObjectEvent *objectEvent, u8 movementActionId)
 {
     if (objectEvent->isPlayer || objectEvent->localId == OBJ_EVENT_ID_FOLLOWER || objectEvent->localId == OBJ_EVENT_ID_NPC_FOLLOWER)
@@ -6906,6 +6954,7 @@ bool8 ObjectEventSetHeldMovement(struct ObjectEvent *objectEvent, u8 movementAct
     if (ObjectEventIsMovementOverridden(objectEvent))
         return TRUE;
 
+    SetStairsDirectionOverwriteForScriptedWalk(objectEvent, movementActionId);
     movementActionId = TryUpdateMovementActionOnStairs(objectEvent, movementActionId);
 
     UnfreezeObjectEvent(objectEvent);

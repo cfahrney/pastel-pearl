@@ -236,6 +236,32 @@
       "script": "OreburghCity_EventScript_BarryStarter",
       "flag": "FLAG_HIDE_OREBURGHCITY_BARRY_STARTER",
       "scriptOnly": true
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CARKOL)",
+      "x": 39,
+      "y": 38,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OreburghCity_EventScript_NPC10",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ROLYCOLY)",
+      "x": 53,
+      "y": 41,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OreburghCity_EventScript_NPC11",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -359,7 +385,35 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_OREBURGH_CITY_STATE",
+      "var_value": "3",
+      "script": "OreburghCity_EventScript_BarryRunsIntoPlayerAtY11"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_OREBURGH_CITY_STATE",
+      "var_value": "3",
+      "script": "OreburghCity_EventScript_BarryRunsIntoPlayerAtY12"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_OREBURGH_CITY_STATE",
+      "var_value": "3",
+      "script": "OreburghCity_EventScript_BarryRunsIntoPlayerAtY13"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

@@ -191,6 +191,7 @@
 //    2  Player has received Town Map from delivering Parcel to Barry
 //    3  Player has received DexNav from the DexNavPresident, allowing them to leave Jubilife
 //    4  Player has defeated Barry on Route 203
+//    5  Player has defeated Roark and is returning to Jubilife
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E
@@ -214,6 +215,7 @@
 //    1  Player has talked to Barry blocking the Gym
 //    2  Roark has demonstrated rock smash to the player and returns to the gym
 //    3  Player has defeated Roark
+//    4  Player has bumped into Barry while leaving Oreburgh City
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
