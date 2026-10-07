@@ -10052,6 +10052,16 @@
       "secondary_tileset": "gTileset_SinnohHighRise",
       "border_filepath": "data/layouts/JubilifeCity_SouthOfBattleDomeCondo_2F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_SouthOfBattleDomeCondo_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE218",
+      "name": "Route218_Layout",
+      "width": 66,
+      "height": 49,
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_WaterRoute",
+      "border_filepath": "data/layouts/Route218/border.bin",
+      "blockdata_filepath": "data/layouts/Route218/map.bin"
     }
   ]
 }

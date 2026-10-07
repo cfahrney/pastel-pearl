@@ -961,12 +961,12 @@
 #define METATILE_SilphCo_Wall_RightEdge                 0x346
 
 // gTileset_SinnohGeneral
-#define METATILE_SinnohGeneral_Door_PokeCenter  0x061
-#define METATILE_SinnohGeneral_Door_PokeMart    0x041
-#define METATILE_SinnohGeneral_MuddySlope_Frame0 0x113
-#define METATILE_SinnohGeneral_MuddySlope_Frame1 0x114
-#define METATILE_SinnohGeneral_MuddySlope_Frame2 0x115
-#define METATILE_SinnohGeneral_MuddySlope_Frame3 0x13F
+#define METATILE_SinnohGeneral_Door_PokeCenter    0x061
+#define METATILE_SinnohGeneral_Door_PokeMart      0x041
+#define METATILE_SinnohGeneral_MuddySlope_Frame0  0x113
+#define METATILE_SinnohGeneral_MuddySlope_Frame1  0x114
+#define METATILE_SinnohGeneral_MuddySlope_Frame2  0x115
+#define METATILE_SinnohGeneral_MuddySlope_Frame3  0x13F
 
 // gTileset_Slateport
 #define METATILE_Slateport_Door             0x2DC

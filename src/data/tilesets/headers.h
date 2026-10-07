@@ -1673,3 +1673,14 @@ const struct Tileset gTileset_SinnohCave =
     .metatileAttributes = gMetatileAttributes_SinnohCave,
     .callback = InitTilesetAnim_Cave,
 };
+
+const struct Tileset gTileset_WaterRoute =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_WaterRoute,
+    .palettes = gTilesetPalettes_WaterRoute,
+    .metatiles = gMetatiles_WaterRoute,
+    .metatileAttributes = gMetatileAttributes_WaterRoute,
+    .callback = NULL,
+};

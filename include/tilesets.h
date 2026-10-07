@@ -73,4 +73,5 @@ extern const struct Tileset gTileset_OreburghMuseum;
 extern const struct Tileset gTileset_SinnohGeneral;
 extern const struct Tileset gTileset_SinnohRustboro;
 extern const struct Tileset gTileset_SinnohCave;
+extern const struct Tileset gTileset_WaterRoute;
 #endif //GUARD_tilesets_H

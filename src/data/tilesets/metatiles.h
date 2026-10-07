@@ -444,3 +444,6 @@ const u16 gMetatileAttributes_SinnohRustboro[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_SinnohCave[] = INCBIN_U16("data/tilesets/secondary/sinnoh_cave/metatiles.bin");
 const u16 gMetatileAttributes_SinnohCave[] = INCBIN_U16("data/tilesets/secondary/sinnoh_cave/metatile_attributes.bin");
+
+const u16 gMetatiles_WaterRoute[] = INCBIN_U16("data/tilesets/secondary/water_route/metatiles.bin");
+const u16 gMetatileAttributes_WaterRoute[] = INCBIN_U16("data/tilesets/secondary/water_route/metatile_attributes.bin");

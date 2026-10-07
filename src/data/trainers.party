@@ -17406,3 +17406,143 @@ Double Battle: No
 Stunky
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE218_1 ===
+Name: Fisherman
+Class: Fisherman
+Pic: Fisherman Dp
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Pelipper
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Drizzle
+
+Gyarados
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon West
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE218_2 ===
+Name: Miguel
+Class: Fisherman
+Pic: Fisherman Dp
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Luvdisc
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gyarados
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gyarados
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE218_3 ===
+Name: Tony
+Class: Guitarist
+Pic: Rocker Guitarist
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Luxio
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Toxtricity Low Key
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE218_4 ===
+Name: Sailor
+Class: Sailor
+Pic: Sailor Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Mantyke
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Poliwrath
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shiny: Yes
+
+Golduck
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE218_5 ===
+Name: Helen
+Class: Grandmother
+Pic: Old Woman
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Floatzel
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ambipom
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Espeon
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ninetales
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE218_6 ===
+Name: Judy
+Class: Grandmother
+Pic: Old Woman
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Staraptor
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Houndoom
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Raichu
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon West
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Umbreon
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

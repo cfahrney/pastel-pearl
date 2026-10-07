@@ -508,6 +508,9 @@ const u16 gTrainerPalette_YoungCoupleDp[] = INCGFX_U16("graphics/trainers/front_
 const u32 gTrainerFrontPic_YoungsterDp[] = INCGFX_U32("graphics/trainers/front_pics/DP_Youngster.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterDp[] = INCGFX_U16("graphics/trainers/front_pics/DP_Youngster.png", ".gbapal");
 
+const u32 gTrainerFrontPic_OldWoman[] = INCGFX_U32("graphics/trainers/front_pics/old_woman.png", ".4bpp.smol");
+const u16 gTrainerPalette_OldWoman[] = INCGFX_U16("graphics/trainers/front_pics/old_woman.png", ".gbapal");
+
 const u32 gTrainerFrontPic_BugCatcher[] = INCGFX_U32("graphics/trainers/front_pics/bug_catcher.png", ".4bpp.smol");
 const u16 gTrainerPalette_BugCatcher[] = INCGFX_U16("graphics/trainers/front_pics/bug_catcher.png", ".gbapal");
 
@@ -1268,6 +1271,10 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_YOUNGSTER_DP] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_YoungsterDp, gTrainerPalette_YoungsterDp),
+    },
+    [TRAINER_PIC_OLD_WOMAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_OldWoman, gTrainerPalette_OldWoman),
     },
     [TRAINER_PIC_RED] =
     {
