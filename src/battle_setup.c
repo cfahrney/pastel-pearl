@@ -52,6 +52,8 @@
 #include "constants/game_stat.h"
 #include "constants/items.h"
 #include "constants/songs.h"
+#include "constants/script_commands.h"
+#include "constants/trainer_types.h"
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
@@ -1241,6 +1243,30 @@ bool32 GetTrainerFlagFromScriptPointer(const u8 *data)
     return FlagGet(TRAINER_FLAGS_START + temp->params.opponentA);
 }
 
+// Gym leader win: every sight trainer on the current map stops battling (special DefeatMapTrainers).
+void DefeatMapTrainers(void)
+{
+    u32 i;
+    const struct MapEvents *events = gMapHeader.events;
+
+    for (i = 0; i < events->objectEventCount; i++)
+    {
+        const struct ObjectEventTemplate *template = &events->objectEvents[i];
+        struct ScriptContext ctx;
+        TrainerBattleParameter *params;
+
+        if (template->kind != OBJ_KIND_NORMAL || template->trainerType == TRAINER_TYPE_NONE || template->script == NULL)
+            continue;
+        if (!RunScriptImmediatelyUntilEffect(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE | SCREFF_TRAINERBATTLE, template->script, &ctx)
+         || *ctx.scriptPtr != SCR_OP_TRAINERBATTLE)
+            continue;
+        params = (TrainerBattleParameter *)(ctx.scriptPtr + OPCODE_OFFSET);
+        FlagSet(TRAINER_FLAGS_START + params->params.opponentA);
+        if (params->params.opponentB != TRAINER_NONE)
+            FlagSet(TRAINER_FLAGS_START + params->params.opponentB);
+    }
+}
+
 bool32 GetRematchFromScriptPointer(const u8 *data)
 {
 #if FREE_MATCH_CALL
@@ -1665,18 +1691,34 @@ static const u8 *ReturnEmptyStringIfNull(const u8 *string)
         return string;
 }
 
+// Leaders, Elite Four and Champions always get a name box, even with OW_NAME_BOX_NPC_TRAINER off.
+static bool32 TrainerHasNameBox(u16 trainerId)
+{
+    if (OW_NAME_BOX_NPC_TRAINER)
+        return TRUE;
+    switch (GetTrainerClassFromId(trainerId))
+    {
+    case TRAINER_CLASS_LEADER:
+    case TRAINER_CLASS_ELITE_FOUR:
+    case TRAINER_CLASS_CHAMPION:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 static const u8 *GetIntroSpeechOfApproachingTrainer(void)
 {
     if (gApproachingTrainerId == 0)
     {
-        if (OW_NAME_BOX_NPC_TRAINER)
+        if (TrainerHasNameBox(TRAINER_BATTLE_PARAM.opponentA))
             gSpeakerName = GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA);
 
         return ReturnEmptyStringIfNull(TRAINER_BATTLE_PARAM.introTextA);
     }
     else
     {
-        if (OW_NAME_BOX_NPC_TRAINER)
+        if (TrainerHasNameBox(TRAINER_BATTLE_PARAM.opponentB))
             gSpeakerName = GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentB);
 
         return ReturnEmptyStringIfNull(TRAINER_BATTLE_PARAM.introTextB);

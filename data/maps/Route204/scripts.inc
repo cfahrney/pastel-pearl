@@ -119,13 +119,13 @@ Route204_Text_Sign1:
 	.string "ROUTE 204 SIGN 1$"
 
 Route204_Text_NPC4:
-	.string "ROUTE 204 NPC 4$"
+	.string "Beautiflyyy$"
 
 Route204_Text_NPC4Speaker:
 	.string "Beautifly$"
 
 Route204_Text_NPC5:
-	.string "ROUTE 204 NPC 5$"
+	.string "Dustox$"
 
 Route204_Text_NPC5Speaker:
 	.string "Dustox$"

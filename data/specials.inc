@@ -645,3 +645,4 @@ gSpecials::
 	def_special HasAllRegionalMons
 	def_special LoadAssistantStarter
 	def_special StartAssistantTutorialBattle, waitstate=1
+	def_special DefeatMapTrainers

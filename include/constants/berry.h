@@ -143,6 +143,19 @@ enum __attribute__((__packed__)) Flavor
 #define BERRY_TREE_ROUTE_123_SITRUS   88
 #define BERRY_TREE_ROUTE_123_RAWST    89
 
+// Sinnoh (assigned by Poe / pre-poe)
+#define BERRY_TREE_JUBILIFE_CITY_1    90
+#define BERRY_TREE_JUBILIFE_CITY_2    91
+#define BERRY_TREE_JUBILIFE_CITY_3    92
+#define BERRY_TREE_JUBILIFE_CITY_4    93
+#define BERRY_TREE_ROUTE_201_1        94
+#define BERRY_TREE_ROUTE_201_2        95
+#define BERRY_TREE_ROUTE_201_3        96
+#define BERRY_TREE_ROUTE_201_4        97
+#define BERRY_TREE_ROUTE_201_5        98
+#define BERRY_TREE_ROUTE_201_6        99
+#define BERRY_TREE_ROUTE_218_1        100
+#define BERRY_TREE_ROUTE_218_2        101
 // Remainder are unused
 
 #define BERRY_TREES_COUNT 128

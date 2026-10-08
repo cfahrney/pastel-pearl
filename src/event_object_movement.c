@@ -3064,6 +3064,26 @@ void SpawnObjectEventsOnReturnToField(s16 x, s16 y)
     TrySpawnLightSprites(x, y);
 }
 
+// Trainer aces: objects hidden by a trainer's defeat flag vanish right after that battle, before the fade-in.
+void RemoveDefeatedTrainerAces(void)
+{
+    u32 i;
+
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        struct ObjectEvent *objectEvent = &gObjectEvents[i];
+        const struct ObjectEventTemplate *template;
+
+        if (!objectEvent->active || objectEvent->isPlayer)
+            continue;
+        template = GetObjectEventTemplateByLocalIdAndMap(objectEvent->localId, objectEvent->mapNum, objectEvent->mapGroup);
+        if (template == NULL || template->flagId < TRAINER_FLAGS_START || template->flagId > TRAINER_FLAGS_END)
+            continue;
+        if (FlagGet(template->flagId))
+            RemoveObjectEvent(objectEvent);
+    }
+}
+
 static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
 {
     u32 i;

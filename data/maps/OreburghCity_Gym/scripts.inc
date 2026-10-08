@@ -15,14 +15,19 @@ OreburghCity_Gym_EventScript_Trainer3::
 	@ poe:behavior {"reward":{"item":"ITEM_TM_STEALTH_ROCK","qty":1},"setStates":[{"var":"VAR_OREBURGH_CITY_STATE","value":3},{"var":"VAR_JUBILIFE_CITY_STATE","value":5}],"gym":{"badge":1}}
 	trainerbattle_single TRAINER_OREBURGH_CITY_GYM_3, OreburghCity_Gym_Text_Trainer3Intro, OreburghCity_Gym_Text_Trainer3Defeated, OreburghCity_Gym_EventScript_Trainer3Won, NO_MUSIC
 	goto_if_unset FLAG_OREBURGHCITY_GYM_TRAINER3_REWARD, OreburghCity_Gym_EventScript_Trainer3Reward
+	setspeaker SP_NAME_ROARK
 	msgbox OreburghCity_Gym_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 OreburghCity_Gym_EventScript_Trainer3Badge::
+	special DefeatMapTrainers
+	setspeaker SP_NAME_ROARK
 	msgbox OreburghCity_Gym_Text_Trainer3BadgeIntro, MSGBOX_DEFAULT
+	setspeaker SP_NAME_NONE
 	message OreburghCity_Gym_Text_Trainer3Badge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
+	setspeaker SP_NAME_ROARK
 	msgbox OreburghCity_Gym_Text_Trainer3BadgeInfo, MSGBOX_DEFAULT
 	setflag FLAG_BADGE01_GET
 	goto OreburghCity_Gym_EventScript_Trainer3Reward
@@ -30,10 +35,13 @@ OreburghCity_Gym_EventScript_Trainer3Badge::
 OreburghCity_Gym_EventScript_Trainer3Reward::
 	lock
 	faceplayer
+	setspeaker SP_NAME_ROARK
 	msgbox OreburghCity_Gym_Text_Trainer3Reward, MSGBOX_DEFAULT
+	setspeaker SP_NAME_NONE
 	giveitem ITEM_TM_STEALTH_ROCK, 1
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_OREBURGHCITY_GYM_TRAINER3_REWARD
+	setspeaker SP_NAME_ROARK
 	msgbox OreburghCity_Gym_Text_Trainer3RewardAfter, MSGBOX_DEFAULT
 	release
 	end
@@ -143,3 +151,37 @@ OreburghCity_Gym_Text_NPC1:
 	.string "So, did my advice come in handy or what?\p"
 	.string "If my advice was useful, it'd be great if\n"
 	.string "you'd become my fan!$"
+
+OreburghCity_Gym_EventScript_NPC2::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SHIELDON, CRY_MODE_NORMAL
+	setspeaker OreburghCity_Gym_Text_NPC2Speaker
+	msgbox OreburghCity_Gym_Text_NPC2, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_Gym_Text_NPC2Speaker:
+	.string "Shieldon$"
+
+OreburghCity_Gym_Text_NPC2:
+	.string "Shiiiield!$"
+
+OreburghCity_Gym_EventScript_NPC3::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CRANIDOS, CRY_MODE_NORMAL
+	setspeaker OreburghCity_Gym_Text_NPC3Speaker
+	msgbox OreburghCity_Gym_Text_NPC3, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_Gym_Text_NPC3Speaker:
+	.string "Cranidos$"
+
+OreburghCity_Gym_Text_NPC3:
+	.string "Craaanidos.$"

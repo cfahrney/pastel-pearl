@@ -494,7 +494,7 @@ TwinleafTown_EventScript_NPC1::
 	end
 
 TwinleafTown_Text_NPC1:
-	.string "{COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY} NPC 1$"
+	.string "Starly!$"
 
 TwinleafTown_Text_NPC1Speaker:
 	.string "Starly$"
@@ -511,7 +511,7 @@ TwinleafTown_EventScript_NPC2::
 	end
 
 TwinleafTown_Text_NPC2:
-	.string "{COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY} NPC 2$"
+	.string "Star!$"
 
 TwinleafTown_Text_NPC2Speaker:
 	.string "Staravia$"
