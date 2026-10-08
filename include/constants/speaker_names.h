@@ -13,6 +13,7 @@ enum SpeakerNames {
     SP_NAME_ROARK,
     SP_NAME_MYSTERY_MAN,
     SP_NAME_GRUNT,
+    SP_NAME_TRADED_MON,
     SP_NAME_COUNT
 };
 

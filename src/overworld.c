@@ -2700,6 +2700,7 @@ static void InitObjectEventsLocal(void)
 
 static void InitObjectEventsReturnToField(void)
 {
+    UpdateTradedMonGraphics();
     SpawnObjectEventsOnReturnToField(0, 0);
     RemoveDefeatedTrainerAces();
     RotatingGate_InitPuzzleAndGraphics();

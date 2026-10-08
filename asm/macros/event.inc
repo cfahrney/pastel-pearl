@@ -2706,6 +2706,7 @@
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, \declineTradeJump
 	specialvar VAR_0x800B, GetTradeSpecies
 	goto_if_ne VAR_0x800B, VAR_0x8009, \wrongMonJump
+	special RememberTradedMon
 	special CreateInGameTradePokemon
 	special DoInGameTradeScene
 	bufferspeciesname STR_VAR_1, VAR_0x8009

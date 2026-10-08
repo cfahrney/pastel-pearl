@@ -37,6 +37,7 @@
 #include "sound.h"
 #include "sprite.h"
 #include "task.h"
+#include "trade.h"
 #include "trainer_see.h"
 #include "trainer_hill.h"
 #include "util.h"
@@ -1684,12 +1685,15 @@ static u8 InitObjectEventStateFromTemplate(const struct ObjectEventTemplate *tem
     objectEvent->triggerGroundEffectsOnMove = TRUE;
     objectEvent->graphicsId = template->graphicsId;
     SetObjectEventDynamicGraphicsId(objectEvent);
+    objectEvent->graphicsId = GetTradedMonGraphicsId(template->localId, mapNum, mapGroup, objectEvent->graphicsId);
     if (IS_OW_MON_OBJ(objectEvent))
     {
         if (template->script && template->script[0] == 0x7d)
             objectEvent->shiny = T1_READ_16(&template->script[2]) >> 15;
         else if (template->trainerRange_berryTreeId)
             objectEvent->shiny = VarGet(template->trainerRange_berryTreeId) >> 5;
+        if (objectEvent->graphicsId & OBJ_EVENT_MON_SHINY)
+            objectEvent->shiny = TRUE;
     }
     objectEvent->movementType = template->movementType;
     objectEvent->localId = template->localId;
@@ -2519,6 +2523,15 @@ static void ObjectEventEmote(struct ObjectEvent *objEvent, u8 emotion)
     FieldEffectStart(FLDEFF_EMOTE);
 }
 
+// special TradedMonEmote: follower-style emote VAR_0x8004 (FOLLOWER_EMOTION_*) over the last-talked object.
+void TradedMonEmote(void)
+{
+    u8 objectEventId;
+
+    if (!TryGetObjectEventIdByLocalIdAndMap(gSpecialVar_LastTalked, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId))
+        ObjectEventEmote(&gObjectEvents[objectEventId], gSpecialVar_0x8004);
+}
+
 // Find and return direction of metatile behavior within distance
 static enum Direction FindMetatileBehaviorWithinRange(s32 x, s32 y, u32 mb, u8 distance)
 {
@@ -3062,6 +3075,26 @@ void SpawnObjectEventsOnReturnToField(s16 x, s16 y)
     }
     CreateReflectionEffectSprites();
     TrySpawnLightSprites(x, y);
+}
+
+// Trade Pokémon: show the player's traded mon as soon as the trade scene returns, before the objects respawn.
+void UpdateTradedMonGraphics(void)
+{
+    u32 i;
+
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        struct ObjectEvent *objectEvent = &gObjectEvents[i];
+        u16 graphicsId;
+
+        if (!objectEvent->active || objectEvent->isPlayer)
+            continue;
+        graphicsId = GetTradedMonGraphicsId(objectEvent->localId, objectEvent->mapNum, objectEvent->mapGroup, objectEvent->graphicsId);
+        if (graphicsId == objectEvent->graphicsId)
+            continue;
+        objectEvent->graphicsId = graphicsId;
+        objectEvent->shiny = (graphicsId & OBJ_EVENT_MON_SHINY) != 0;
+    }
 }
 
 // Trainer aces: objects hidden by a trainer's defeat flag vanish right after that battle, before the fade-in.

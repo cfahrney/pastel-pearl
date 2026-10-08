@@ -51,6 +51,8 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/union_room.h"
+#include "constants/event_objects.h"
+#include "constants/map_event_ids.h"
 
 // IDs for RunTradeMenuCallback
 enum {
@@ -321,6 +323,17 @@ static void Task_CloseCenterWhiteColumn(u8);
 static void CB2_SaveAndEndWirelessTrade(void);
 
 #include "data/trade.h"
+
+// Overworld object that shows a trade's Pokémon: the NPC's before the trade, the player's after.
+struct TradedMonObject
+{
+    u8 mapGroup;
+    u8 mapNum;
+    u8 localId;
+    u8 tradeId;
+};
+
+#include "data/traded_mon_objects.h"
 
 static bool8 SendLinkData(const void *linkData, u32 size)
 {
@@ -4634,6 +4647,53 @@ enum Species GetTradeSpecies(void)
         return SPECIES_NONE;
     enum Species species = GetBoxMonData(boxmon, MON_DATA_SPECIES);
     return species;
+}
+
+// special RememberTradedMon (in ingame_trade): save the chosen mon's sprite and name for trade VAR_0x8005.
+void RememberTradedMon(void)
+{
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    struct TradedMon *traded;
+    u8 nickname[POKEMON_NAME_BUFFER_SIZE];
+
+    if (gSpecialVar_0x8005 >= INGAME_TRADE_COUNT)
+        return;
+    traded = &gSaveBlock3Ptr->tradedMons[gSpecialVar_0x8005];
+    traded->gfxId = GetBoxMonData(boxmon, MON_DATA_SPECIES) + OBJ_EVENT_MON
+                  + (GetBoxMonData(boxmon, MON_DATA_IS_SHINY) ? OBJ_EVENT_MON_SHINY : 0)
+                  + (GetBoxMonGender(boxmon) == MON_FEMALE ? OBJ_EVENT_MON_FEMALE : 0);
+    GetBoxMonData(boxmon, MON_DATA_NICKNAME, nickname);
+    StringCopy_Nickname(traded->nickname, nickname);
+}
+
+// special BufferTradedMon: trade VAR_0x8005's mon name -> STR_VAR_1, species -> VAR_RESULT (SPECIES_NONE if not traded yet).
+void BufferTradedMon(void)
+{
+    const struct TradedMon *traded;
+
+    gSpecialVar_Result = SPECIES_NONE;
+    if (gSpecialVar_0x8005 >= INGAME_TRADE_COUNT)
+        return;
+    traded = &gSaveBlock3Ptr->tradedMons[gSpecialVar_0x8005];
+    if (!traded->gfxId)
+        return;
+    gSpecialVar_Result = traded->gfxId & OBJ_EVENT_MON_SPECIES_MASK;
+    StringCopy_Nickname(gStringVar1, traded->nickname);
+}
+
+// The player's traded mon's sprite if this object shows a completed trade, else graphicsId.
+u16 GetTradedMonGraphicsId(u8 localId, u8 mapNum, u8 mapGroup, u16 graphicsId)
+{
+    u32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sTradedMonObjects); i++)
+    {
+        const struct TradedMonObject *obj = &sTradedMonObjects[i];
+
+        if (obj->localId == localId && obj->mapNum == mapNum && obj->mapGroup == mapGroup && obj->tradeId < INGAME_TRADE_COUNT)
+            return gSaveBlock3Ptr->tradedMons[obj->tradeId].gfxId ? gSaveBlock3Ptr->tradedMons[obj->tradeId].gfxId : graphicsId;
+    }
+    return graphicsId;
 }
 
 void CreateInGameTradePokemon(void)

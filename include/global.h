@@ -24,6 +24,7 @@
 #include "constants/trainer_tower.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "constants/trade.h"
 #include "config/save.h"
 
 // Prevent cross-jump optimization.
@@ -253,6 +254,13 @@ struct NPCFollower
 #include "constants/items.h"
 #define ITEM_FLAGS_COUNT ((ITEMS_COUNT / 8) + ((ITEMS_COUNT % 8) ? 1 : 0))
 
+// The player's Pokémon given away in an in-game trade, so its overworld object can show it.
+struct TradedMon
+{
+    u16 gfxId; // OBJ_EVENT_GFX_SPECIES + shiny/female bits; 0 = not traded yet
+    u8 nickname[POKEMON_NAME_LENGTH + 1];
+};
+
 struct SaveBlock3
 {
 #if OW_USE_FAKE_RTC
@@ -271,6 +279,7 @@ struct SaveBlock3
 #if APRICORN_TREE_COUNT > 0
     u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
 #endif
+    struct TradedMon tradedMons[INGAME_TRADE_COUNT];
 }; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;

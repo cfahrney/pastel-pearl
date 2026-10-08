@@ -1,21 +1,7 @@
 #ifndef GUARD_FOLLOWER_HELPER_H
 #define GUARD_FOLLOWER_HELPER_H
 
-enum FollowerEmotion
-{
-    FOLLOWER_EMOTION_HAPPY = 0,
-    FOLLOWER_EMOTION_NEUTRAL, // Also called "No emotion"
-    FOLLOWER_EMOTION_SAD,
-    FOLLOWER_EMOTION_UPSET,
-    FOLLOWER_EMOTION_ANGRY,
-    FOLLOWER_EMOTION_PENSIVE,
-    FOLLOWER_EMOTION_LOVE,
-    FOLLOWER_EMOTION_SURPRISE,
-    FOLLOWER_EMOTION_CURIOUS,
-    FOLLOWER_EMOTION_MUSIC,
-    FOLLOWER_EMOTION_POISONED,
-    FOLLOWER_EMOTION_LENGTH,
-};
+#include "constants/followers.h"
 
 // Can be either 3 bytes, a u16 and a byte, or a 24-bit value
 union __attribute__((packed)) MsgConditionData

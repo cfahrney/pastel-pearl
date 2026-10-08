@@ -105,3 +105,42 @@ OreburghCity_TopRightCondo_1F_Text_NPC5:
 
 OreburghCity_TopRightCondo_1F_Text_NPC5Speaker:
 	.string "Clefable$"
+
+OreburghCity_TopRightCondo_1F_EventScript_NPC6::
+	@ poe:behavior {"mode":"tradeMon","trade":"INGAME_TRADE_OREBURGHCITY_TOPRIGHTCONDO_1F_NPC1","emotion":"LOVE"}
+	lock
+	faceplayer
+	setvar VAR_0x8005, INGAME_TRADE_OREBURGHCITY_TOPRIGHTCONDO_1F_NPC1
+	special BufferTradedMon
+	goto_if_ne VAR_RESULT, SPECIES_NONE, OreburghCity_TopRightCondo_1F_EventScript_NPC6Traded
+	waitse
+	playmoncry SPECIES_ABRA, CRY_MODE_NORMAL
+	setspeaker OreburghCity_TopRightCondo_1F_Text_NPC6Speaker
+	msgbox OreburghCity_TopRightCondo_1F_Text_NPC6, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_TopRightCondo_1F_EventScript_NPC6Traded::
+	waitse
+	playmoncry VAR_RESULT, CRY_MODE_NORMAL
+	setvar VAR_0x8004, FOLLOWER_EMOTION_LOVE
+	special TradedMonEmote
+	waitfieldeffect FLDEFF_EMOTE
+	setspeaker SP_NAME_TRADED_MON
+	msgbox OreburghCity_TopRightCondo_1F_Text_NPC6Traded, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_TopRightCondo_1F_Text_NPC6Traded:
+	.string "Chop! Chop chop!\p"
+	.string "{SPEAKER NAME_NONE}{STR_VAR_1} is thrilled to see you!$"
+
+OreburghCity_TopRightCondo_1F_Text_NPC6Speaker:
+	.string "Kazam$"
+
+OreburghCity_TopRightCondo_1F_Text_NPC6:
+	.string "Braaa?\p"
+	.string "{SPEAKER NAME_NONE}The Abra tilts its head at you, floating\n"
+	.string "slightly above the chair.$"

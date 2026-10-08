@@ -144,6 +144,8 @@ void TryMoveObjectEventToMapCoords(u8 localId, u8 mapNum, u8 mapGroup, s16 x, s1
 void PatchObjectPalette(u16 paletteTag, u8 paletteSlot);
 void SpawnObjectEventsOnReturnToField(s16 x, s16 y);
 void RemoveDefeatedTrainerAces(void);
+void UpdateTradedMonGraphics(void);
+void TradedMonEmote(void);
 void OverrideSecretBaseDecorationSpriteScript(u8 localId, u8 mapNum, u8 mapGroup, u8 decorationCategory);
 void GetMapCoordsFromSpritePos(s16 x, s16 y, s16 *destX, s16 *destY);
 u8 GetFaceDirectionAnimNum(enum Direction direction);

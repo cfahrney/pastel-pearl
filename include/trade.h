@@ -20,6 +20,9 @@ int GetUnionRoomTradeMessageId(struct RfuGameCompatibilityData player, struct Rf
 int CanSpinTradeMon(struct Pokemon *mon, u16 monIdx);
 void InitTradeSequenceBgGpuRegs(void);
 void LinkTradeDrawWindow(void);
+void RememberTradedMon(void);
+void BufferTradedMon(void);
+u16 GetTradedMonGraphicsId(u8 localId, u8 mapNum, u8 mapGroup, u16 graphicsId);
 void LoadTradeAnimGfx(void);
 void DrawTextOnTradeWindow(u8 windowId, const u8 *str, u8 speed);
 

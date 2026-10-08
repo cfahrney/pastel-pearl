@@ -646,3 +646,6 @@ gSpecials::
 	def_special LoadAssistantStarter
 	def_special StartAssistantTutorialBattle, waitstate=1
 	def_special DefeatMapTrainers
+	def_special RememberTradedMon
+	def_special BufferTradedMon
+	def_special TradedMonEmote

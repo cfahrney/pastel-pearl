@@ -66,6 +66,7 @@
 #include "constants/sound.h"
 #include "constants/species.h"
 #include "constants/trade.h"
+#include "constants/followers.h"
 #include "constants/trainer_hill.h"
 #include "constants/trainer_tower.h"
 #include "constants/trainers.h"
