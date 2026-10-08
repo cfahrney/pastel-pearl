@@ -138,3 +138,17 @@ Route204_Text_Trainer3Defeated:
 
 Route204_Text_Trainer3PostBattle:
 	.string "ROUTE 204 TRAINER 3\nhas nothing else to say.$"
+
+Route204_EventScript_Sign2::
+	msgbox Route204_Text_Sign2, MSGBOX_SIGN
+	end
+
+Route204_Text_Sign2:
+	.string "ROUTE 204 SIGN 2$"
+
+Route204_EventScript_Sign3::
+	msgbox Route204_Text_Sign3, MSGBOX_SIGN
+	end
+
+Route204_Text_Sign3:
+	.string "ROUTE 204 SIGN 3$"

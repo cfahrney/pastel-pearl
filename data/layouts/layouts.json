@@ -9615,7 +9615,7 @@
       "id": "LAYOUT_RAVAGED_PATH",
       "name": "RavagedPath_Layout",
       "width": 36,
-      "height": 31,
+      "height": 51,
       "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_SinnohCave",
       "border_filepath": "data/layouts/RavagedPath/border.bin",

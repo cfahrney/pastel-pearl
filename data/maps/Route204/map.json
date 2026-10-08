@@ -228,6 +228,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route204_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 42,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route204_EventScript_Sign2"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 57,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route204_EventScript_Sign3"
     }
   ]
 }

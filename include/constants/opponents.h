@@ -903,12 +903,13 @@
 #define TRAINER_ROUTE218_4                  894
 #define TRAINER_ROUTE218_5                  895
 #define TRAINER_ROUTE218_6                  896
+#define TRAINER_RAVAGED_PATH_1              897
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for a limited number of additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     897
+#define TRAINERS_COUNT_EMERALD     898
 #define MAX_TRAINERS_COUNT_EMERALD 1176
 
 #if IS_FRLG

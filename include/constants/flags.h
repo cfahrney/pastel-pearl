@@ -664,7 +664,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
+#define FLAG_HIDE_RAVAGED_PATH_ROCK1                                0x264
 #define FLAG_OREBURGHCITY_TOPRIGHTCONDO_1F_NPC1_TRADED 0x265
 #define FLAG_OREBURGHCITY_TOPRIGHTCONDO_2F_NPC2_GIFT 0x266
 #define FLAG_OREBURGHCITY_TOPLEFTCONDO_1F_NPC1_GIFT 0x267
@@ -673,31 +673,31 @@
 #define FLAG_JUBILIFECITY_CONDOMINIUM_1F_NPC5_GIFT 0x26A
 #define FLAG_JUBILIFECITY_SOUTHOFBATTLEDOMECONDO_1F_NPC1_GIFT 0x26B
 #define FLAG_JUBILIFECITY_SOUTHOFTRAINERSCHOOLCONDO_2F_NPC2_GIFT 0x26C
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
-#define FLAG_UNUSED_0x283  0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
+#define FLAG_HIDE_RAVAGED_PATH_ROCK2                                0x26D
+#define FLAG_HIDE_RAVAGED_PATH_ROCK3                                0x26E
+#define FLAG_HIDE_RAVAGED_PATH_ROCK4                                0x26F
+#define FLAG_HIDE_RAVAGED_PATH_ROCK5                                0x270
+#define FLAG_HIDE_RAVAGED_PATH_ROCK6                                0x271
+#define FLAG_HIDE_RAVAGED_PATH_ROCK7                                0x272
+#define FLAG_HIDE_RAVAGED_PATH_ROCK8                                0x273
+#define FLAG_HIDE_RAVAGED_PATH_ROCK9                                0x274
+#define FLAG_HIDE_RAVAGED_PATH_ROCK10                               0x275
+#define FLAG_HIDE_RAVAGED_PATH_ROCK11                               0x276
+#define FLAG_HIDE_RAVAGED_PATH_ROCK12                               0x277
+#define FLAG_HIDE_RAVAGED_PATH_ROCK13                               0x278
+#define FLAG_HIDE_RAVAGED_PATH_ROCK14                               0x279
+#define FLAG_HIDE_RAVAGED_PATH_ROCK15                               0x27A
+#define FLAG_HIDE_RAVAGED_PATH_ROCK16                               0x27B
+#define FLAG_HIDE_RAVAGED_PATH_ROCK17                               0x27C
+#define FLAG_HIDE_RAVAGED_PATH_ROCK18                               0x27D
+#define FLAG_HIDE_RAVAGED_PATH_ROCK19                               0x27E
+#define FLAG_HIDE_RAVAGED_PATH_ROCK20                               0x27F
+#define FLAG_HIDE_RAVAGED_PATH_ROCK21                               0x280
+#define FLAG_HIDE_RAVAGED_PATH_ROCK22                               0x281
+#define FLAG_HIDE_RAVAGED_PATH_ROCK23                               0x282
+#define FLAG_HIDE_RAVAGED_PATH_ROCK24                               0x283
+#define FLAG_HIDE_RAVAGED_PATH_ROCK25                               0x284
+#define FLAG_HIDE_RAVAGED_PATH_ROCK26                               0x285
 #define FLAG_UNUSED_0x286  0x286 // Unused Flag
 #define FLAG_UNUSED_0x287  0x287 // Unused Flag
 #define FLAG_UNUSED_0x288  0x288 // Unused Flag
@@ -1247,10 +1247,10 @@
 #define FLAG_ITEM_ROUTE_219_SOFT_SAND                               0x4A9
 #define FLAG_ITEM_OREBURGH_MINE_2_X_DEFENSE                         0x4AA
 #define FLAG_ITEM_SANDGEM_TOWN_LEMONADE                             0x4AB
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
+#define FLAG_ITEM_RAVAGED_PATH_1                                    0x4AC
+#define FLAG_ITEM_RAVAGED_PATH_2                                    0x4AD
+#define FLAG_ITEM_RAVAGED_PATH_3                                    0x4AE
+#define FLAG_ITEM_RAVAGED_PATH_4                                    0x4AF
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
