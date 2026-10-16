@@ -1218,6 +1218,8 @@ struct SaveBlock1
 #if IS_FRLG
     struct DaycareMon route5DayCareMon;
 #endif
+    u16 varsExtra[NUM_EXTRA_VARS];
+    u8 flagsExtra[ROUND_BITS_TO_BYTES(NUM_EXTRA_FLAGS)];
     // sizeof: 0x3???
 };
 

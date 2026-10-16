@@ -48,10 +48,15 @@ const u16 gBadgeFlags[NUM_BADGES] =
     FLAG_BADGE08_GET,
 };
 
+STATIC_ASSERT(EXTRA_FLAGS_START % 8 == 0 && EXTRA_FLAGS_END < SPECIAL_FLAGS_START, ExtraFlagsLayout);
+STATIC_ASSERT(EXTRA_VARS_START > VARS_END && EXTRA_VARS_END < SPECIAL_VARS_START, ExtraVarsLayout);
+
 void InitEventData(void)
 {
     memset(gSaveBlock1Ptr->flags, 0, sizeof(gSaveBlock1Ptr->flags));
     memset(gSaveBlock1Ptr->vars, 0, sizeof(gSaveBlock1Ptr->vars));
+    memset(gSaveBlock1Ptr->flagsExtra, 0, sizeof(gSaveBlock1Ptr->flagsExtra));
+    memset(gSaveBlock1Ptr->varsExtra, 0, sizeof(gSaveBlock1Ptr->varsExtra));
     memset(sSpecialFlags, 0, sizeof(sSpecialFlags));
 }
 
@@ -184,8 +189,12 @@ u16 *GetVarPointer(u16 id)
 {
     if (id < VARS_START)
         return NULL;
-    else if (id < SPECIAL_VARS_START)
+    else if (id <= VARS_END)
         return &gSaveBlock1Ptr->vars[id - VARS_START];
+    else if (id >= EXTRA_VARS_START && id <= EXTRA_VARS_END)
+        return &gSaveBlock1Ptr->varsExtra[id - EXTRA_VARS_START];
+    else if (id < SPECIAL_VARS_START)
+        return NULL;
 #if TESTING
     else if (id >= TESTING_VARS_START)
         return &sTestVars[id - TESTING_VARS_START];
@@ -228,8 +237,12 @@ u8 *GetFlagPointer(u16 id)
 {
     if (id == 0)
         return NULL;
-    else if (id < SPECIAL_FLAGS_START)
+    else if (id < FLAGS_COUNT)
         return &gSaveBlock1Ptr->flags[id / 8];
+    else if (id <= EXTRA_FLAGS_END)
+        return &gSaveBlock1Ptr->flagsExtra[(id - EXTRA_FLAGS_START) / 8];
+    else if (id < SPECIAL_FLAGS_START)
+        return NULL;
 #if TESTING
     else if (id >= TESTING_FLAGS_START)
         return &sTestFlags[(id - TESTING_FLAGS_START) / 8];
