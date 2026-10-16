@@ -116,6 +116,7 @@
 #define METATILE_Building_PC_On   0x005
 #define METATILE_Building_TV_Off  0x002
 #define METATILE_Building_TV_On   0x003
+#define METATILE_Building_Void    0x001
 
 // gTileset_BuildingFrlg
 #define METATILE_BuildingFrlg_PCOff  0x062
@@ -967,6 +968,7 @@
 #define METATILE_SinnohGeneral_MuddySlope_Frame1  0x114
 #define METATILE_SinnohGeneral_MuddySlope_Frame2  0x115
 #define METATILE_SinnohGeneral_MuddySlope_Frame3  0x13F
+#define METATILE_SinnohGeneral_Void               0x1B6
 
 // gTileset_Slateport
 #define METATILE_Slateport_Door             0x2DC
