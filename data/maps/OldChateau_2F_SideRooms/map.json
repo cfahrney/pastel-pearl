@@ -1,0 +1,49 @@
+{
+  "id": "MAP_OLD_CHATEAU_2F_SIDE_ROOMS",
+  "name": "OldChateau_2F_SideRooms",
+  "layout": "LAYOUT_OLD_CHATEAU_2F_SIDE_ROOMS",
+  "music": "MUS_OLD_CHATEAU",
+  "region_map_section": "MAPSEC_OLD_CHATEAU",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_OLD_GATEAU",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_OLD_CHATEAU_2_F_SIDE_ROOMS_OLD_GATEAU"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_OLD_CHATEAU_ENTRANCE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_OLD_CHATEAU_ENTRANCE",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
