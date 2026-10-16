@@ -17,13 +17,18 @@
       "map": "MAP_JUBILIFE_CITY",
       "offset": -36,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE204_NORTH",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DP",
       "x": 9,
-      "y": 58,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -36,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DP",
       "x": 15,
-      "y": 42,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -47,22 +52,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DP",
-      "x": 18,
-      "y": 37,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
-      "movement_range_x": 3,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route204_EventScript_NPC3",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 13,
-      "y": 48,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -75,7 +67,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 14,
-      "y": 61,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -87,47 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 4,
-      "y": 18,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM_BULLET_SEED",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_204_TM_BULLET_SEED"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 23,
-      "y": 14,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route204_EventScript_Tree1",
-      "flag": "FLAG_HIDE_ROUTE204_TREE1"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 22,
-      "y": 31,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_AWAKENING",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_204_AWAKENING"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 19,
-      "y": 58,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -140,7 +93,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 31,
-      "y": 52,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -153,7 +106,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 5,
-      "y": 68,
+      "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -166,7 +119,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(BEAUTIFLY)",
       "x": 23,
-      "y": 46,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -179,7 +132,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DUSTOX)",
       "x": 24,
-      "y": 46,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -188,51 +141,23 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route204_EventScript_NPC5",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 33,
-      "y": 11,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route204_EventScript_Trainer3",
-      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 13,
-      "y": 41,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_RAVAGED_PATH",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 22,
-      "y": 34,
-      "elevation": 0,
-      "dest_map": "MAP_RAVAGED_PATH",
-      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
-      "x": 19,
-      "y": 16,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route204_EventScript_Sign1"
-    },
-    {
-      "type": "sign",
       "x": 12,
-      "y": 42,
+      "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route204_EventScript_Sign2"
@@ -240,7 +165,7 @@
     {
       "type": "sign",
       "x": 16,
-      "y": 57,
+      "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route204_EventScript_Sign3"

@@ -64,10 +64,6 @@ Route204_EventScript_NPC2::
 	msgbox Route204_Text_NPC2, MSGBOX_NPC
 	end
 
-Route204_EventScript_NPC3::
-	msgbox Route204_Text_NPC3, MSGBOX_NPC
-	end
-
 Route204_Text_NPC1:
 	.string "My dad gave me some Pokémon! They're\n"
 	.string "gonna win for me!$"
@@ -77,16 +73,6 @@ Route204_Text_NPC2:
 	.string "inside the cavern... I think a Pokémon\l"
 	.string "would be able to break those boulders,\l"
 	.string "though.$"
-
-Route204_Text_NPC3:
-	.string "Are you raising different kinds of\n"
-	.string "Pokémon? If you only have the same\l"
-	.string "type of Pokémon, you'll have a hard time\l"
-	.string "against types it's weak to.$"
-
-Route204_EventScript_Sign1::
-	msgbox Route204_Text_Sign1, MSGBOX_SIGN
-	end
 
 Route204_EventScript_NPC4::
 	lock
@@ -110,14 +96,6 @@ Route204_EventScript_NPC5::
 	release
 	end
 
-Route204_EventScript_Trainer3::
-	trainerbattle_single TRAINER_ROUTE204_3, Route204_Text_Trainer3Intro, Route204_Text_Trainer3Defeated
-	msgbox Route204_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route204_Text_Sign1:
-	.string "ROUTE 204 SIGN 1$"
-
 Route204_Text_NPC4:
 	.string "Beautiflyyy$"
 
@@ -130,25 +108,16 @@ Route204_Text_NPC5:
 Route204_Text_NPC5Speaker:
 	.string "Dustox$"
 
-Route204_Text_Trainer3Intro:
-	.string "ROUTE 204 TRAINER 3\nwants to battle!$"
-
-Route204_Text_Trainer3Defeated:
-	.string "ROUTE 204 TRAINER 3\nwas defeated!$"
-
-Route204_Text_Trainer3PostBattle:
-	.string "ROUTE 204 TRAINER 3\nhas nothing else to say.$"
-
 Route204_EventScript_Sign2::
 	msgbox Route204_Text_Sign2, MSGBOX_SIGN
 	end
 
 Route204_Text_Sign2:
-	.string "ROUTE 204 SIGN 2$"
+	.string "Ravaged Path$"
 
 Route204_EventScript_Sign3::
 	msgbox Route204_Text_Sign3, MSGBOX_SIGN
 	end
 
 Route204_Text_Sign3:
-	.string "ROUTE 204 SIGN 3$"
+	.string "Rt. 204 Jubilife City$"

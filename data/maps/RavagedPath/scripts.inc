@@ -756,8 +756,31 @@ RavagedPath_EventScript_Rock26::
 	end
 
 RavagedPath_EventScript_NPC1::
-	msgbox RavagedPath_Text_NPC1, MSGBOX_NPC
+	@ poe:behavior {"mode":"gift","item":"ITEM_MAX_REPEL","qty":3}
+	lock
+	faceplayer
+	goto_if_set FLAG_RAVAGEDPATH_NPC1_GIFT, RavagedPath_EventScript_NPC1After
+	msgbox RavagedPath_Text_NPC1, MSGBOX_DEFAULT
+	giveitem ITEM_MAX_REPEL, 3
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RAVAGEDPATH_NPC1_GIFT
+	msgbox RavagedPath_Text_NPC1Received, MSGBOX_DEFAULT
+	release
 	end
+
+RavagedPath_EventScript_NPC1After::
+	msgbox RavagedPath_Text_NPC1After, MSGBOX_DEFAULT
+	release
+	end
+
+RavagedPath_Text_NPC1Received::
+	.string "They're working wonders! Not to jinx it,\n"
+	.string "but I haven't encountered a single\l"
+	.string "Pokémon all day!...\p"
+	.string "...I didn't jinx it by saying that, did I?$"
+
+RavagedPath_Text_NPC1After::
+	.string "I didn't jinx it by saying that, did I...?$"
 
 RavagedPath_EventScript_Trainer1::
 	trainerbattle_single TRAINER_RAVAGED_PATH_1, RavagedPath_Text_Trainer1Intro, RavagedPath_Text_Trainer1Defeated
@@ -765,13 +788,22 @@ RavagedPath_EventScript_Trainer1::
 	end
 
 RavagedPath_Text_NPC1:
-	.string "RAVAGED PATH NPC 1$"
+	.string "I should definitely NOT be back here,\n"
+	.string "given that I am without a Pokémon.\p"
+	.string "That said, these repels are STRONG!\n"
+	.string "Here, take some!$"
 
 RavagedPath_Text_Trainer1Intro:
-	.string "RAVAGED PATH TRAINER 1\nwants to battle!$"
+	.string "AHHH!! AAAAAHH!!!\p"
+	.string "You have NO idea how long I've been\n"
+	.string "stuck in here, none of my Pokémon don't\l"
+	.string "know Rock Smash!!! Let's freaking\l"
+	.string "BATTLE!$"
 
 RavagedPath_Text_Trainer1Defeated:
-	.string "RAVAGED PATH TRAINER 1\nwas defeated!$"
+	.string "Whew. That battle got my energy out!\n"
+	.string "I've calmed down.$"
 
 RavagedPath_Text_Trainer1PostBattle:
-	.string "RAVAGED PATH TRAINER 1\nhas nothing else to say.$"
+	.string "Thank you for breaking those rocks! I'm\n"
+	.string "getting OUT of here.$"
