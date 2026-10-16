@@ -5,6 +5,7 @@ VerityLakefront_MapScripts::
 @ Fires when VAR_TWINLEAF_TOWN_STATE == 9, right after warping back from
 @ LAKE VERITY. Swaps BARRY from follower to a stand-in object for the
 @ walk-in, then restores him as a follower.
+
 VerityLakefront_OnFrame:
 	map_script_2 VAR_TWINLEAF_TOWN_STATE, 9, VerityLakefront_EventScript_ReturnFromLake
 	.2byte 0
@@ -34,6 +35,7 @@ VerityLakefront_EventScript_ReturnFromLake::
 
 @ Blocks the player from heading back to the lake while
 @ VAR_TWINLEAF_TOWN_STATE == 10. Repeatable trigger, doesn't advance state.
+
 VerityLakefront_EventScript_BarryStopsReturnToLake::
 	lockall
 	facefollowernpc
@@ -49,6 +51,7 @@ VerityLakefront_EventScript_BarryStopsReturnToLake::
 
 @ Triggers on VAR_TWINLEAF_TOWN_STATE == 3. Has BARRY hype up the lake,
 @ walk the player in, and warp to LAKE VERITY, advancing state to 4.
+
 VerityLakefront_EventScript_BarryHypesUpTheLakeAtX4::
 	lockall
 	facefollowernpc

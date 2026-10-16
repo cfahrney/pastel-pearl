@@ -242,6 +242,7 @@ Route202_EventScript_LucasDawnTeachesCatching::
 	special LoadAssistantStarter
 	special StartAssistantTutorialBattle
 	special LoadPlayerParty
+	special UpdateFollowingPokemon  @ the follower was rebuilt from the borrowed starter during the battle
 	applymovement LOCALID_ROUTE202_LUCASDAWN, Common_Movement_FaceRight
 	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
 	waitmovementall

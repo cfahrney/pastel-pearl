@@ -6,6 +6,7 @@ TwinleafTown_MapScripts::
 @ meant to be heard while the player is still inside the house right
 @ after the homecoming scene. Stepping back outside clears it, so her
 @ next indoor visit gets the repeatable welcome-home/rest offer instead.
+
 TwinleafTown_OnTransition:
 	setflag FLAG_VISITED_TWINLEAF_TOWN
 	call_if_ge VAR_TWINLEAF_TOWN_STATE, 12, TwinleafTown_EventScript_ClearMomSandgemFlag
@@ -58,6 +59,7 @@ TwinleafTown_Text_LookGoodTogether:
 @ ROUTE 201 (see TwinleafTown_BarryHouse_2F_EventScript_BarryNoticesPlayer),
 @ so the neighbor's line updates to match, same convention as
 @ TwinleafTown_BarryHouse_1F_EventScript_Mom.
+
 TwinleafTown_EventScript_Neighbor::
 	goto_if_ge VAR_TWINLEAF_TOWN_STATE, 2, TwinleafTown_EventScript_NeighborAfterBarryLeft
 	msgbox TwinleafTown_Text_BarryWasLookingForYou, MSGBOX_NPC
@@ -94,6 +96,7 @@ TwinleafTown_Text_BarryWentTearingOff:
 @ detours one tile right before climbing so it doesn't climb straight through
 @ the player either. The return trip (after the dialogue) is the exact
 @ reverse of whichever approach was used.
+
 TwinleafTown_EventScript_NeighborBlocksPlayerAtX6::
 	lockall
 	applymovement LOCALID_TWINLEAF_NEIGHBOR, TwinleafTown_Movement_NeighborToX6
@@ -379,6 +382,7 @@ TwinleafTown_Movement_NeighborBackFromX13:
 @ the lake, then rush partway there before realizing he forgot something and
 @ ducking back inside. Advances the state var to 1 at the end, which is also
 @ what lets the player past the neighbor's roadblock up north.
+
 TwinleafTown_EventScript_BarryLeavesHouse::
 	lockall
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
@@ -528,7 +532,7 @@ TwinleafTown_EventScript_NPC3::
 	end
 
 TwinleafTown_Text_NPC3:
-	.string "{COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY} NPC 3$"
+	.string "Dooof$"
 
 TwinleafTown_Text_NPC3Speaker:
 	.string "Bidoof$"
