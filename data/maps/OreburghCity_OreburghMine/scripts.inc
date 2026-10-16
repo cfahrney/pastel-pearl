@@ -32,7 +32,7 @@ OreburghCity_OreburghMine_EventScript_NPC3::
 	end
 
 OreburghCity_OreburghMine_Text_NPC3:
-	.string "OREBURGH MINE NPC 3$"
+	.string "Dude.$"
 
 OreburghCity_OreburghMine_Text_NPC3Speaker:
 	.string "Geodude$"
@@ -49,7 +49,7 @@ OreburghCity_OreburghMine_EventScript_NPC4::
 	end
 
 OreburghCity_OreburghMine_Text_NPC4:
-	.string "OREBURGH MINE NPC 4$"
+	.string "Coooly!$"
 
 OreburghCity_OreburghMine_Text_NPC4Speaker:
 	.string "Rolycoly$"
@@ -66,7 +66,7 @@ OreburghCity_OreburghMine_EventScript_NPC5::
 	end
 
 OreburghCity_OreburghMine_Text_NPC5:
-	.string "OREBURGH MINE NPC 5$"
+	.string "Graveler!$"
 
 OreburghCity_OreburghMine_Text_NPC5Speaker:
 	.string "Graveler$"

@@ -192,9 +192,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_BIG_PEARL",
+      "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_OREBURGH_GATE_B1F_BIG_PEARL"
+      "flag": "FLAG_ITEM_OREBURGH_GATE_B1F_STARDUST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -205,9 +205,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM_SAFEGUARD",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_FLASH",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_OREBURGH_GATE_TM_SAFEGUARD"
+      "flag": "FLAG_ITEM_OREBURGH_GATE_TM_FLASH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",

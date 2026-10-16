@@ -102,65 +102,6 @@ OreburghCity_OreburghMine_2_EventScript_NPC5::
 	release
 	end
 
-OreburghCity_OreburghMine_2_EventScript_NPC6::
-	lock
-	goto_if_ge VAR_OREBURGH_CITY_STATE, 2, OreburghCity_OreburghMine_2_EventScript_NPC6Default
-	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_Roark_OnGreeting
-	waitmovement LOCALID_OREBURGHMINE_2_ROARK
-	setspeaker SP_NAME_ROARK
-	msgbox OreburghCity_OreburghMine_2_Text_RoarkDemoIntro, MSGBOX_DEFAULT
-	closemessage
-	playse SE_M_ROCK_THROW
-	applymovement LOCALID_OREBURGHMINE_2_ROCK2, Movement_SmashRock
-	waitmovement LOCALID_OREBURGHMINE_2_ROCK2
-	removeobject LOCALID_OREBURGHMINE_2_ROCK2
-	setflag FLAG_HIDE_OREBURGH_MINE_2_ROCK2
-	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_Roark_AfterRockSmash
-	waitmovement LOCALID_OREBURGHMINE_2_ROARK
-	setspeaker SP_NAME_ROARK
-	msgbox OreburghCity_OreburghMine_2_Text_RoarkDemoOutro, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_Roark_OnSceneEnd
-	waitmovement LOCALID_OREBURGHMINE_2_ROARK
-	removeobject LOCALID_OREBURGHMINE_2_ROARK
-	setflag FLAG_HIDE_OREBURGHMINE_2_ROARK
-	setvar VAR_OREBURGH_CITY_STATE, 2
-	release
-	end
-
-OreburghCity_OreburghMine_2_EventScript_NPC6Default::
-	msgbox OreburghCity_OreburghMine_2_Text_NPC6, MSGBOX_DEFAULT
-	release
-	end
-
-OreburghCity_OreburghMine_2_Movement_Roark_OnGreeting:
-	face_down
-	delay_16
-	delay_16
-	delay_16
-	face_right
-	step_end
-
-OreburghCity_OreburghMine_2_Movement_Roark_AfterRockSmash:
-	face_down
-	delay_16
-	delay_16
-	step_end
-
-OreburghCity_OreburghMine_2_Movement_Roark_OnSceneEnd:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	walk_up
-	step_end
-
 OreburghCity_OreburghMine_2_EventScript_NPC7::
 	lock
 	faceplayer
@@ -176,22 +117,27 @@ OreburghCity_OreburghMine_2_Text_NPC1:
 	.string "OREBURGH MINE 2 NPC 1$"
 
 OreburghCity_OreburghMine_2_Text_Trainer1Intro:
-	.string "OREBURGH MINE 2 TRAINER 1\nwants to battle!$"
+	.string "Fine, all righty then. Just a quick\n"
+	.string "battle on my break!$"
 
 OreburghCity_OreburghMine_2_Text_Trainer1Defeated:
-	.string "OREBURGH MINE 2 TRAINER 1\nwas defeated!$"
+	.string "Wahaha! Mercy, I cry mercy!$"
 
 OreburghCity_OreburghMine_2_Text_Trainer1PostBattle:
-	.string "OREBURGH MINE 2 TRAINER 1\nhas nothing else to say.$"
+	.string "I'd better get on back to work...\p"
+	.string "You know, I'd rather be traveling around\n"
+	.string "with Pokémon the way you do.$"
 
 OreburghCity_OreburghMine_2_Text_Trainer2Intro:
-	.string "OREBURGH MINE 2 TRAINER 2\nwants to battle!$"
+	.string "I'm gonna let you in on a secret... I\n"
+	.string "snuck my Pokémon to work!$"
 
 OreburghCity_OreburghMine_2_Text_Trainer2Defeated:
-	.string "OREBURGH MINE 2 TRAINER 2\nwas defeated!$"
+	.string "Well, now aren't you something!$"
 
 OreburghCity_OreburghMine_2_Text_Trainer2PostBattle:
-	.string "OREBURGH MINE 2 TRAINER 2\nhas nothing else to say.$"
+	.string "OK, OK, time for work! I'll work up a\n"
+	.string "thirst with my Pokémon!$"
 
 OreburghCity_OreburghMine_2_Text_NPC4:
 	.string "Chop chop!$"
@@ -204,9 +150,6 @@ OreburghCity_OreburghMine_2_Text_NPC5:
 
 OreburghCity_OreburghMine_2_Text_NPC5Speaker:
 	.string "Machop$"
-
-OreburghCity_OreburghMine_2_Text_NPC6:
-	.string "OREBURGH MINE 2 NPC 6$"
 
 OreburghCity_OreburghMine_2_Text_NPC7:
 	.string "Kooool.$"
@@ -282,12 +225,73 @@ OreburghCity_OreburghMine_2_Text_NPC11:
 OreburghCity_OreburghMine_2_Text_NPC11Speaker:
 	.string "Rolycoly$"
 
-OreburghCity_OreburghMine_2_Text_RoarkDemoIntro:
+OreburghCity_OreburghMine_2_EventScript_NPC6::
+	lockall
+	faceplayer
+	goto OreburghCity_OreburghMine_2_EventScript_NPC6_2
+
+OreburghCity_OreburghMine_2_EventScript_NPC6_2::
+	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_LocalidOreburghmine2Roark
+	waitmovement 0
+	goto OreburghCity_OreburghMine_2_EventScript_NPC6_2_2
+
+OreburghCity_OreburghMine_2_EventScript_NPC6_2_3::
+	delay 2
+	goto_if_eq VAR_0x8005, 0, OreburghCity_OreburghMine_2_EventScript_NPC6_2_3
+	faceplayer
+	msgbox OreburghCity_OreburghMine_2_Text_NPC6_3, MSGBOX_DEFAULT
+	closemessage
+	goto OreburghCity_OreburghMine_2_EventScript_NPC6_2_3_2
+
+OreburghCity_OreburghMine_2_EventScript_NPC6_2_3_2::
+	applymovement LOCALID_OREBURGHMINE_2_ROARK, OreburghCity_OreburghMine_2_Movement_LocalidOreburghmine2Roark2
+	waitmovement 0
+	goto OreburghCity_OreburghMine_2_EventScript_NPC6_2_3_2_2
+
+OreburghCity_OreburghMine_2_EventScript_NPC6_2_3_2_2::
+	removeobject LOCALID_OREBURGHMINE_2_ROARK
+	setflag FLAG_OREBURGH_CITY_OREBURGH_MINE_2_ROARK_1
+	setflag FLAG_OREBURGH_CITY_OREBURGH_MINE_2_ROARK_2
+	releaseall
+	end
+
+OreburghCity_OreburghMine_2_EventScript_NPC6_2_2::
+	msgbox OreburghCity_OreburghMine_2_Text_NPC6_2, MSGBOX_DEFAULT
+	closemessage
+	@ TODO(DP): HMEffect 2, 32773
+	delay 20
+	@ TODO(DP): hide DP object 1
+	goto OreburghCity_OreburghMine_2_EventScript_NPC6_2_3
+
+OreburghCity_OreburghMine_2_Movement_LocalidOreburghmine2Roark:
+	delay_16
+	delay_16
+	walk_in_place_right
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	step_end
+
+OreburghCity_OreburghMine_2_Movement_LocalidOreburghmine2Roark2:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+OreburghCity_OreburghMine_2_Text_NPC6_2:
 	.string "OK, stand back and watch this.\p"
 	.string "Using the hidden move Rock Smash, a\n"
 	.string "boulder blocking your way...$"
 
-OreburghCity_OreburghMine_2_Text_RoarkDemoOutro:
+OreburghCity_OreburghMine_2_Text_NPC6_3:
 	.string "Fallen boulders need to be smashed so\n"
 	.string "they're out of the way.\p"
 	.string "If you could get the Badge from the Gym\n"

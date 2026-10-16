@@ -27,71 +27,70 @@ Route207_EventScript_Trainer5::
 	end
 
 Route207_Text_Trainer1Intro:
-	.string "ROUTE 207 TRAINER 1\n"
-	.string "wants to battle!$"
+	.string "Wahaha! Laughter brings good fortune!$"
 
 Route207_Text_Trainer1Defeated:
-	.string "ROUTE 207 TRAINER 1\n"
-	.string "was defeated!$"
+	.string "Wahahaha! There's nothing that I can do\n"
+	.string "but laugh!$"
 
 Route207_Text_Trainer1PostBattle:
-	.string "ROUTE 207 TRAINER 1\n"
-	.string "has nothing else to say.$"
+	.string "Wahaha! ...Go ahead and laugh at me.$"
 
 Route207_Text_Trainer2Intro:
-	.string "ROUTE 207 TRAINER 2\n"
-	.string "wants to battle!$"
+	.string "I wear shorts the whole year! I've got\n"
+	.string "energy to burn!$"
 
 Route207_Text_Trainer2Defeated:
-	.string "ROUTE 207 TRAINER 2\n"
-	.string "was defeated!$"
+	.string "Having lots of energy isn't good\n"
+	.string "enough...$"
 
 Route207_Text_Trainer2PostBattle:
-	.string "ROUTE 207 TRAINER 2\n"
-	.string "has nothing else to say.$"
+	.string "My Pokémon don't wear anything. I worry\n"
+	.string "that they'll be cold.$"
 
 Route207_Text_Trainer3Intro:
-	.string "ROUTE 207 TRAINER 3\n"
-	.string "wants to battle!$"
+	.string "Go for it, my Pokémon! I'll do my best,\n"
+	.string "too!$"
 
 Route207_Text_Trainer3Defeated:
-	.string "ROUTE 207 TRAINER 3\n"
-	.string "was defeated!$"
+	.string "Oh... We lost...$"
 
 Route207_Text_Trainer3PostBattle:
-	.string "ROUTE 207 TRAINER 3\n"
-	.string "has nothing else to say.$"
+	.string "Did you know? You can dig up Fossils in\n"
+	.string "the Underground!\p"
+	.string "Those Fossils can be turned back into\n"
+	.string "Pokémon at the mining museum!$"
 
 Route207_Text_Trainer4Intro:
-	.string "ROUTE 207 TRAINER 4\n"
-	.string "wants to battle!$"
+	.string "Go do it, my Pokémon! I'll work hard, too!$"
 
 Route207_Text_Trainer4Defeated:
-	.string "ROUTE 207 TRAINER 4\n"
-	.string "was defeated!$"
+	.string "Oh... We lost...$"
 
 Route207_Text_Trainer4PostBattle:
-	.string "ROUTE 207 TRAINER 4\n"
-	.string "has nothing else to say.$"
+	.string "I think we'll go visit the TV station in\n"
+	.string "{COLOR DYNAMIC_COLOR3}Jubilife City{COLOR DARK_GRAY} next.$"
 
 Route207_Text_Trainer5Intro:
-	.string "ROUTE 207 TRAINER 5\n"
-	.string "wants to battle!$"
+	.string "I just got through Mt. Coronet, but\n"
+	.string "we've still got fuel in the tank!$"
 
 Route207_Text_Trainer5Defeated:
-	.string "ROUTE 207 TRAINER 5\n"
-	.string "was defeated!$"
+	.string "Whoops! Didn't take much to beat us!$"
 
 Route207_Text_Trainer5PostBattle:
-	.string "ROUTE 207 TRAINER 5\n"
-	.string "has nothing else to say.$"
+	.string "We need to rest up in {COLOR DYNAMIC_COLOR3}Oreburgh City{COLOR DARK_GRAY}\n"
+	.string "before heading to Mt. Coronet again.$"
 
 Route207_EventScript_NPC1::
 	msgbox Route207_Text_NPC1, MSGBOX_NPC
 	end
 
 Route207_Text_NPC1:
-	.string "ROUTE 207 NPC 1$"
+	.string "That slope's too slippery. You'll need a\n"
+	.string "Bike to get up.\p"
+	.string "You don't have a {COLOR DYNAMIC_COLOR3}Bicycle{COLOR DARK_GRAY}? There's a\n"
+	.string "Cycle Shop in {COLOR DYNAMIC_COLOR3}Eterna City{COLOR DARK_GRAY}.$"
 
 Route207_EventScript_Trainer6::
 	trainerbattle_single TRAINER_ROUTE207_6, Route207_Text_Trainer6Intro, Route207_Text_Trainer6Defeated
@@ -99,16 +98,14 @@ Route207_EventScript_Trainer6::
 	end
 
 Route207_Text_Trainer6Intro:
-	.string "ROUTE 207 TRAINER 6\n"
-	.string "wants to battle!$"
+	.string "OK, OK! Let's be quick about this!$"
 
 Route207_Text_Trainer6Defeated:
-	.string "ROUTE 207 TRAINER 6\n"
-	.string "was defeated!$"
+	.string "No way! Give us another battle! ...Oh,\n"
+	.string "right. I'm out of Pokémon.$"
 
 Route207_Text_Trainer6PostBattle:
-	.string "ROUTE 207 TRAINER 6\n"
-	.string "has nothing else to say.$"
+	.string "Yup! I like the way you battle.$"
 
 Route207_EventScript_Sign1::
 	msgbox Route207_Text_Sign1, MSGBOX_SIGN
@@ -123,10 +120,12 @@ Route207_EventScript_Sign3::
 	end
 
 Route207_Text_Sign1:
-	.string "ROUTE 207 SIGN 1$"
+	.string "Route 207\n"
+	.string "{DOWN_ARROW} Oreburgh City$"
 
 Route207_Text_Sign2:
-	.string "ROUTE 207 SIGN 2$"
+	.string "Route 207\n"
+	.string "{RIGHT_ARROW} Mt. Coronet$"
 
 Route207_Text_Sign3:
 	.string "ROUTE 207 SIGN 3$"

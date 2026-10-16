@@ -1,10 +1,6 @@
 OreburghGate_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, OreburghGate_OnTransition
 	.byte 0
-
-OreburghGate_EventScript_Trainer1::
-	trainerbattle_single TRAINER_OREBURGH_GATE_1, OreburghGate_Text_Trainer1Intro, OreburghGate_Text_Trainer1Defeated
-	msgbox OreburghGate_Text_Trainer1PostBattle, MSGBOX_AUTOCLOSE
-	end
 
 OreburghGate_EventScript_Trainer2::
 	trainerbattle_single TRAINER_OREBURGH_GATE_2, OreburghGate_Text_Trainer2Intro, OreburghGate_Text_Trainer2Defeated
@@ -16,41 +12,28 @@ OreburghGate_EventScript_Trainer3::
 	msgbox OreburghGate_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-OreburghGate_Text_Trainer1Intro:
-	.string "OREBURGH GATE TRAINER 1\n"
-	.string "wants to battle!$"
-
-OreburghGate_Text_Trainer1Defeated:
-	.string "OREBURGH GATE TRAINER 1\n"
-	.string "was defeated!$"
-
-OreburghGate_Text_Trainer1PostBattle:
-	.string "OREBURGH GATE TRAINER 1\n"
-	.string "has nothing else to say.$"
-
 OreburghGate_Text_Trainer2Intro:
-	.string "OREBURGH GATE TRAINER 2\n"
-	.string "wants to battle!$"
+	.string "To celebrate my getting through this\n"
+	.string "cave, I'm going to battle you!$"
 
 OreburghGate_Text_Trainer2Defeated:
-	.string "OREBURGH GATE TRAINER 2\n"
-	.string "was defeated!$"
+	.string "Well, I guess losing is something to\n"
+	.string "commemorate, too...$"
 
 OreburghGate_Text_Trainer2PostBattle:
 	.string "Getting through that cave feels like an\n"
 	.string "adventure.$"
 
 OreburghGate_Text_Trainer3Intro:
-	.string "OREBURGH GATE TRAINER 3\n"
-	.string "wants to battle!$"
+	.string "We Trainers will accept challenges\n"
+	.string "anywhere! It's what we do.$"
 
 OreburghGate_Text_Trainer3Defeated:
-	.string "OREBURGH GATE TRAINER 3\n"
-	.string "was defeated!$"
+	.string "Hmm... Insufficiently raised?$"
 
 OreburghGate_Text_Trainer3PostBattle:
-	.string "OREBURGH GATE TRAINER 3\n"
-	.string "has nothing else to say.$"
+	.string "Gee... When you're in a cave, wild\n"
+	.string "Pokémon can appear anytime!$"
 
 OreburghGate_EventScript_Rock1::
 	lockall
@@ -312,3 +295,89 @@ OreburghGate_EventScript_Rock9::
 	waitstate
 	releaseall
 	end
+
+OreburghGate_EventScript_NPC1::
+	lock
+	faceplayer
+	goto_if_unset FLAG_BADGE01_GET, OreburghGate_EventScript_NPC1_2
+	msgbox OreburghGate_Text_NPC1, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OreburghGate_EventScript_NPC1_2::
+	goto_if_set FLAG_OREBURGH_GATE_HIKER_1, OreburghGate_EventScript_NPC1_2_2
+	msgbox OreburghGate_Text_NPC1_2, MSGBOX_DEFAULT
+	setvar VAR_0x8004, ITEM_HM_ROCK_SMASH
+	setvar VAR_0x8005, 1
+	giveitem VAR_0x8004, VAR_0x8005
+	call OreburghGate_EventScript_NPC1_2_3
+	goto OreburghGate_EventScript_NPC1_2_2
+
+OreburghGate_EventScript_NPC1_2_2::
+	msgbox OreburghGate_Text_NPC1_3, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OreburghGate_EventScript_NPC1_2_3::
+	setflag FLAG_OREBURGH_GATE_HIKER_1
+	setvar VAR_OREBURGH_GATE_STATE, 2
+	return
+
+OreburghGate_EventScript_Trigger1::
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_OREBURGH_GATE_HIKER, OreburghGate_Movement_Hiker
+	applymovement LOCALID_PLAYER, OreburghGate_Movement_Player
+	waitmovement 0
+	msgbox OreburghGate_Text_NPC1_2, MSGBOX_DEFAULT
+	setvar VAR_0x8004, ITEM_HM_ROCK_SMASH
+	setvar VAR_0x8005, 1
+	giveitem VAR_0x8004, VAR_0x8005
+	call OreburghGate_EventScript_NPC1_2_3
+	msgbox OreburghGate_Text_NPC1_3, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+OreburghGate_OnTransition::
+	@ DP: set system flag 2511 (not needed here)
+	end
+
+OreburghGate_Movement_Hiker:
+	walk_in_place_down
+	emote_exclamation_mark
+	walk_down
+	step_end
+
+OreburghGate_Movement_Player:
+	delay_16
+	walk_in_place_up
+	step_end
+
+OreburghGate_Text_NPC1:
+	.string "Oh! Good golly! That's {COLOR DYNAMIC_COLOR3}Oreburgh City{COLOR DARK_GRAY}'s\n"
+	.string "Gym Badge!\p"
+	.string "All right! Now you can use the hidden\n"
+	.string "move Rock Smash on small boulders!$"
+
+OreburghGate_Text_NPC1_2:
+	.string "Oh, lookie there! You've got a Pokétch!\p"
+	.string "Hmm... You're still a pretty new Trainer,\n"
+	.string "aren't you?\p"
+	.string "But it's all good! You're a new fellow\n"
+	.string "friend of Pokémon!\p"
+	.string "So, let me make a gift of this Hidden\n"
+	.string "Machine to you!$"
+
+OreburghGate_Text_NPC1_3:
+	.string "That Hidden Machine, or HM for short,\n"
+	.string "contains the hidden move Rock Smash.\p"
+	.string "A Pokémon learning Rock Smash can\n"
+	.string "smash small boulders in the field.\p"
+	.string "But the Trainer has to have the Gym\n"
+	.string "Badge from {COLOR DYNAMIC_COLOR3}Oreburgh City{COLOR DARK_GRAY}.\p"
+	.string "If you don't have that Badge, you can't\n"
+	.string "make a Pokémon use the hidden move\l"
+	.string "Rock Smash outside of battle.$"

@@ -273,25 +273,26 @@ OreburghGate_B1F_EventScript_Trainer2::
 	end
 
 OreburghGate_B1F_Text_Trainer1Intro:
-	.string "OREBURGH GATE B1F TRAINER 1\n"
-	.string "wants to battle!$"
+	.string "I'm a Veteran, yes, but don't you dare\n"
+	.string "treat me like a senior citizen!$"
 
 OreburghGate_B1F_Text_Trainer1Defeated:
-	.string "OREBURGH GATE B1F TRAINER 1\n"
-	.string "was defeated!$"
+	.string "Hnuuurgh... So much skill for one so\n"
+	.string "young!$"
 
 OreburghGate_B1F_Text_Trainer1PostBattle:
-	.string "OREBURGH GATE B1F TRAINER 1\n"
-	.string "has nothing else to say.$"
+	.string "I'll always remain young at heart. Never\n"
+	.string "let them say you're too old!$"
 
 OreburghGate_B1F_Text_Trainer2Intro:
-	.string "OREBURGH GATE B1F TRAINER 2\n"
-	.string "wants to battle!$"
+	.string "If I'm being perfectly honest, I was not\n"
+	.string "thinking when I brought my bike down\l"
+	.string "here.$"
 
 OreburghGate_B1F_Text_Trainer2Defeated:
-	.string "OREBURGH GATE B1F TRAINER 2\n"
-	.string "was defeated!$"
+	.string "Well, that was a nice distraction for a\n"
+	.string "bit.$"
 
 OreburghGate_B1F_Text_Trainer2PostBattle:
-	.string "OREBURGH GATE B1F TRAINER 2\n"
-	.string "has nothing else to say.$"
+	.string "I can't believe I have to lug this bike\n"
+	.string "all the way out of this cave...$"
