@@ -315,7 +315,7 @@ void UpdateOverworldWildEncounter(void)
         RemoveObjectEvent(owe);
     objectEventId = SpawnSpecialObjectEvent(&objectEventTemplate);
 
-    assertf(objectEventId < OBJECT_EVENTS_COUNT, "could not spawn generated overworld encounter. too many object events exist")
+    if (objectEventId >= OBJECT_EVENTS_COUNT) // every object slot is in use on a busy screen; try again later
     {
         SetMinimumOWESpawnTimer();
         return;
@@ -1265,15 +1265,9 @@ static u32 GetGraphicsIdForOWE(const struct InfoOWE *info)
 
 static bool32 CheckCanLoadOWE(enum Species speciesId, bool32 isFemale, bool32 isShiny, s32 x, s32 y)
 {
-    assertf(CheckCanLoadOWE_Palette(speciesId, isFemale, isShiny, x, y), "could not load palette for overworld encounter\nspecies: %d\nfemale: %d\nshiny: %d\ncoords: %d %d", speciesId, isFemale, isShiny, x, y)
-    {
+    // No free palette or sprite VRAM on a busy screen: skip this spawn and try again later.
+    if (!CheckCanLoadOWE_Palette(speciesId, isFemale, isShiny, x, y) || !CheckCanLoadOWE_Tiles(speciesId, isFemale, isShiny, x, y))
         return FALSE;
-    }
-
-    assertf(CheckCanLoadOWE_Tiles(speciesId, isFemale, isShiny, x, y), "could not load sprite tiles for overworld encounter\nspecies: %d\nfemale: %d\nshiny: %d\ncoords: %d %d", speciesId, isFemale, isShiny, x, y)
-    {
-        return FALSE;
-    }
 
     return TRUE;
 }
