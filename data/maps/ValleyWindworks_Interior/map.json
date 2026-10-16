@@ -1,0 +1,154 @@
+{
+  "id": "MAP_VALLEY_WINDWORKS_INTERIOR",
+  "name": "ValleyWindworks_Interior",
+  "layout": "LAYOUT_VALLEY_WINDWORKS_INTERIOR",
+  "music": "MUS_GALACTIC_ETERNA_BUILDING",
+  "region_map_section": "MAPSEC_VALLEY_WINDWORKS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "ValleyWindworks_Interior_EventScript_Trainer1",
+      "flag": "0",
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SATURN",
+      "x": 21,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ValleyWindworks_Interior_EventScript_NPC4",
+      "flag": "0",
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_ASSISTANT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MARS",
+      "x": 20,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ValleyWindworks_Interior_EventScript_NPC1",
+      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_MARS",
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_MARS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
+      "x": 18,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ValleyWindworks_Interior_EventScript_NPC2",
+      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_MARS",
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 10,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ValleyWindworks_Interior_EventScript_NPC3",
+      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_LITTLE_GIRL",
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_LITTLE_GIRL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
+      "x": 12,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "ValleyWindworks_Interior_EventScript_Trainer3",
+      "flag": "0",
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
+      "x": 12,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT",
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT",
+      "scriptOnly": "true"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_VALLEY_WINDWORKS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_VALLEY_WINDWORKS",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_VALLEY_WINDWORKS_STATE",
+      "var_value": "1",
+      "script": "ValleyWindworks_Interior_EventScript_Trigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_VALLEY_WINDWORKS_STATE",
+      "var_value": "1",
+      "script": "ValleyWindworks_Interior_EventScript_Trigger1"
+    }
+  ],
+  "bg_events": []
+}
