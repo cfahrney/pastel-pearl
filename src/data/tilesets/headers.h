@@ -1586,6 +1586,17 @@ const struct Tileset gTileset_Jubilife =
     .callback = NULL,
 };
 
+const struct Tileset gTileset_Canalave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Canalave,
+    .palettes = gTilesetPalettes_Canalave,
+    .metatiles = gMetatiles_Canalave,
+    .metatileAttributes = gMetatileAttributes_Canalave,
+    .callback = NULL,
+};
+
 const struct Tileset gTileset_Oreburgh =
 {
     .isCompressed = TRUE,
@@ -1674,6 +1685,17 @@ const struct Tileset gTileset_SinnohCave =
     .callback = InitTilesetAnim_Cave,
 };
 
+const struct Tileset gTileset_FuegoIronworksInterior =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_FuegoIronworksInterior,
+    .palettes = gTilesetPalettes_FuegoIronworksInterior,
+    .metatiles = gMetatiles_FuegoIronworksInterior,
+    .metatileAttributes = gMetatileAttributes_FuegoIronworksInterior,
+    .callback = InitTilesetAnim_Cave,
+};
+
 const struct Tileset gTileset_WaterRoute =
 {
     .isCompressed = TRUE,
@@ -1682,5 +1704,62 @@ const struct Tileset gTileset_WaterRoute =
     .palettes = gTilesetPalettes_WaterRoute,
     .metatiles = gMetatiles_WaterRoute,
     .metatileAttributes = gMetatileAttributes_WaterRoute,
+    .callback = NULL,
+};
+
+// Mauville's flower animation; frames land on the same tile indices.
+const struct Tileset gTileset_Floaroma =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Floaroma,
+    .palettes = gTilesetPalettes_Floaroma,
+    .metatiles = gMetatiles_Floaroma,
+    .metatileAttributes = gMetatileAttributes_Floaroma,
+    .callback = InitTilesetAnim_Mauville,
+};
+
+const struct Tileset gTileset_Route206 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Route206,
+    .palettes = gTilesetPalettes_Route206,
+    .metatiles = gMetatiles_Route206,
+    .metatileAttributes = gMetatileAttributes_Route206,
+    .callback = InitTilesetAnim_Mauville,
+};
+
+// Petalburg's animation; frames land on the same tile indices.
+const struct Tileset gTileset_EternaForest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_EternaForest,
+    .palettes = gTilesetPalettes_EternaForest,
+    .metatiles = gMetatiles_EternaForest,
+    .metatileAttributes = gMetatileAttributes_EternaForest,
+    .callback = InitTilesetAnim_Petalburg,
+};
+
+const struct Tileset gTileset_Eterna =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Eterna,
+    .palettes = gTilesetPalettes_Eterna,
+    .metatiles = gMetatiles_Eterna,
+    .metatileAttributes = gMetatileAttributes_Eterna,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GateHouse =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GateHouse,
+    .palettes = gTilesetPalettes_GateHouse,
+    .metatiles = gMetatiles_GateHouse,
+    .metatileAttributes = gMetatileAttributes_GateHouse,
     .callback = NULL,
 };

@@ -1227,6 +1227,22 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_MACHOP
+    },
+    [INGAME_TRADE_FLOAROMATOWN_NPC4] =
+    {
+        .nickname = _("Nanu"),
+        .species = SPECIES_MEOWTH_ALOLA,
+        .ivs = {20, 20, 20, 20, 20, 20},
+        .abilityNum = 0,
+        .otId = 15466,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x34462c11,
+        .heldItem = ITEM_NONE,
+        .mailNum = MAIL_NONE,
+        .otName = _("Elio"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_MEOWTH
     }
 };
 

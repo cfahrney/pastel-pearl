@@ -17070,7 +17070,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
+Aipom
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -17079,7 +17079,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE207_1 ===
-Name: HIKER
+Name: Kevin
 Class: Hiker
 Pic: Hiker Dp
 Gender: Male
@@ -17087,12 +17087,24 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Munchlax
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Geodude
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Zubat
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Trapinch
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE207_2 ===
-Name: YOUNGSTER
+Name: Austin
 Class: Youngster
 Pic: Youngster Dp
 Gender: Male
@@ -17100,12 +17112,20 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Staravia
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Geodude
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Monferno
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE207_3 ===
-Name: CAMPER
+Name: Anthony
 Class: Camper
 Pic: Camper Dp
 Gender: Male
@@ -17113,12 +17133,14 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ponyta
+Level: 19
+- Ember
+- Tackle
+- Growl
 
 === TRAINER_ROUTE207_4 ===
-Name: PICNICKER
+Name: Lauren
 Class: Picnicker
 Pic: Picnicker Dp
 Gender: Female
@@ -17126,12 +17148,14 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pachirisu
+Level: 19
+- Spark
+- Quick Attack
+- Charm
 
 === TRAINER_ROUTE207_5 ===
-Name: HIKER
+Name: Justin
 Class: Hiker
 Pic: Hiker Dp
 Gender: Male
@@ -17139,22 +17163,32 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Numel
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Geodude
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 === TRAINER_ROUTE207_6 ===
-Name: TRIATHLETE
-Class: Triathlete
-Pic: Running Triathlete F
+Name: Helen
+Class: Battle Girl
+Pic: Battle Girl Dp
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meditite
+Level: 18
+
+Machop
+Level: 18
 
 === TRAINER_OREBURGH_GATE_1 ===
 Name: HIKER
@@ -17180,37 +17214,56 @@ AI: Check Bad Move
 
 Budew
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Absorb
+- Growth
+- Water Sport
 
 Psyduck
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Tail Whip
 
 === TRAINER_OREBURGH_GATE_3 ===
-Name: PICNICKER
-Class: Picnicker
-Pic: Picnicker Dp
+Name: Curtis
+Class: Camper
+Pic: Camper Dp
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shinx
+Level: 7
 
 === TRAINER_OREBURGH_GATE_B1F_1 ===
-Name: EXPERT
+Name: Grant
 Class: Expert
-Pic: Expert M
+Pic: Veteran
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Riolu
+Level: 33
+- Force Palm
+- Quick Attack
+- Counter
+- Screech
+
+Staraptor
+Level: 34
+- Aerial Ace
+- Take Down
+- Quick Attack
+- Growl
+
+Graveler
+Level: 35
+- Earthquake
+- Rock Slide
+- Rock Polish
+- Defense Curl
 
 === TRAINER_OREBURGH_GATE_B1F_2 ===
 Name: TRIATHLETE
@@ -17221,10 +17274,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
+Chingling
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Monferno
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_OREBURGH_CITY_GYM_1 ===
 Name: Jonathon
@@ -17282,17 +17338,21 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE204_3 ===
-Name: LASS
+Name: Taylor
 Class: Lass
-Pic: Lass
+Pic: Twins Frlg
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Budew
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherubi
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_JUBILIFE_CITY_TRAINER_SCHOOL_1 ===
 Name: Timmy
@@ -17358,7 +17418,7 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_1 ===
-Name: Worker
+Name: Colin
 Class: Hiker
 Pic: Worker
 Gender: Male
@@ -17366,12 +17426,20 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Geodude
+Level: 7
+- Tackle
+- Defense Curl
+- Mud Sport
+
+Onix
+Level: 7
+- Rock Throw
+- Tackle
+- Harden
 
 === TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_2 ===
-Name: Worker
+Name: Mason
 Class: Hiker
 Pic: Worker
 Gender: Male
@@ -17379,9 +17447,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bidoof
-Level: 2
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Machop
+Level: 9
+- Rock Smash
+- Focus Energy
 
 === TRAINER_JUBILIFE_CITY_GALACTIC_GRUNT_1_JUBILIFE_FIGHT ===
 Name: Grunt
@@ -17553,9 +17622,1344 @@ Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
+Double Battle: Yes
+AI: Check Bad Move
+
+Voltorb Hisui
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Discharge
+
+Lanturn
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Volt Absorb
+
+=== TRAINER_ROUTE205_1 ===
+Name: Zackary
+Class: Camper
+Pic: Camper Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Trapinch
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Geodude
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Throw
+- Tackle
+
+=== TRAINER_ROUTE205_2 ===
+Name: Siena
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Pachirisu
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spark
+- Quick Attack
+- Charm
+
+Luxio
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spark
+- Tackle
+
+=== TRAINER_ROUTE205_3 ===
+Name: Daniel
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machop
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Geodude
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Sandshrew
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE205_4 ===
+Name: Jacob
+Class: Camper
+Pic: Camper Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Ponyta
+Level: 14
+- Ember
+- Tackle
+
+=== TRAINER_ROUTE205_5 ===
+Name: GRUNT
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
 Bidoof
 Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE205_6 ===
+Name: GRUNT
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE205_7 ===
+Name: Nicholas
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Rolycoly
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE205_8 ===
+Name: Karina
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Piplup
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bubble
+- Peck
+
+Turtwig
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE205_9 ===
+Name: Kelsey
+Class: Battle Girl
+Pic: Battle Girl Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Makuhita
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machop
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE205_10 ===
+Name: BUGCATCHER
+Class: Bug Catcher
+Pic: Bug Catcher Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Butterfree
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cascoon
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Beautifly
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE205_11 ===
+Name: LASS
+Class: Lass
+Pic: Lass Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE205_12 ===
+Name: Elizabeth
+Class: Aroma Lady
+Pic: Aroma Lady Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Croagunk
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE205_NORTH_1 ===
+Name: Joseph
+Class: Fisherman
+Pic: Fisherman Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Luvdisc
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Goldeen
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE205_NORTH_2 ===
+Name: Zachary
+Class: Fisherman
+Pic: Fisherman Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Magikarp
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Goldeen
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Finneon
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE205_NORTH_3 ===
+Name: Andrew
+Class: Fisherman
+Pic: Fisherman Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Magikarp
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chinchou
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luvdisc
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_VALLEY_WINDWORKS_INTERIOR_1 ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Cascoon
+Level: 11
+- Tackle
+- Harden
+- Poison Sting
+
+=== TRAINER_VALLEY_WINDWORKS_INTERIOR_2 ===
+Name: SATURN
+Class: Galactic
+Pic: Saturn
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_VALLEY_WINDWORKS_INTERIOR_3 ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Wurmple
+Level: 10
+
+Glameow
+Level: 10
+
+=== TRAINER_FUEGO_IRONWORKS_INTERIOR_1 ===
+Name: Holden
+Class: Pkmn Trainer 1
+Pic: Worker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Steelix
+Level: 33
+
+=== TRAINER_FUEGO_IRONWORKS_INTERIOR_2 ===
+Name: Dillan
+Class: Pkmn Trainer 1
+Pic: Worker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 31
+
+Machoke
+Level: 31
+
+=== TRAINER_FUEGO_IRONWORKS_INTERIOR_3 ===
+Name: Conrad
+Class: Pkmn Trainer 1
+Pic: Worker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Rapidash
+Level: 33
+
+=== TRAINER_ROUTE204_NORTH_2 ===
+Name: Brandon
+Class: Bug Catcher
+Pic: Bug Catcher Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Kricketot
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Dustox
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE204_NORTH_3 ===
+Name: Taylor
+Class: Aroma Lady
+Pic: Aroma Lady Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Budew
+Level: 7
+
+Cherubi
+Level: 7
+
+=== TRAINER_ROUTE204_NORTH_4 ===
+Name: Liv & Liz
+Class: Twins
+Pic: Twins Dp
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Check Bad Move
+
+Pachirisu
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pikachu
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ETERNA_FOREST_1 ===
+Name: Phillip
+Class: Bug Catcher
+Pic: Bug Catcher Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Beautifly
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Combee
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Dustox
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ETERNA_FOREST_2 ===
+Name: Donald
+Class: Bug Catcher
+Pic: Bug Catcher Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Burmy Plant
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Kricketune
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Scyther
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_FOREST_3 ===
+Name: Kody
+Class: Psychic
+Pic: Psychic M Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Meditite
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_FOREST_4 ===
+Name: Rachael
+Class: Psychic
+Pic: Psychic F Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Chingling
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Psyduck
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Confusion
+- Water Gun
+- Scratch
+
+=== TRAINER_ETERNA_FOREST_5 ===
+Name: Jack
+Class: Bug Catcher
+Pic: Bug Catcher Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Wurmple
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cutiefly
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Beautifly
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ETERNA_FOREST_6 ===
+Name: Briana
+Class: Lass
+Pic: Lass Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Marill
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pachirisu
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ETERNA_FOREST_7 ===
+Name: TRAINER
+Class: Pkmn Trainer 1
+Pic: Camper Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Budew
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_FOREST_8 ===
+Name: TRAINER
+Class: Pkmn Trainer 1
+Pic: Bug Catcher Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Beedrill
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Volbeat
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_FOREST_9 ===
+Name: Elijah
+Class: Psychic
+Pic: Psychic M Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Abra
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hidden Power
+
+Ralts
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Confusion
+
+=== TRAINER_ETERNA_FOREST_10 ===
+Name: Lindsey
+Class: Psychic
+Pic: Psychic F Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Mime Jr
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hidden Power
+
+Ralts
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Draining Kiss
+
+=== TRAINER_ETERNA_CITY_GYM_1 ===
+Name: Angela
+Class: Aroma Lady
+Pic: Aroma Lady Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Turtwig
+Level: 17
+- Razor Leaf
+- Tackle
+
+=== TRAINER_ETERNA_CITY_GYM_2 ===
+Name: Lindsay
+Class: Beauty
+Pic: Beauty Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Roselia
+Level: 17
+- Mega Drain
+- Poison Sting
+- Stun Spore
+
+=== TRAINER_ETERNA_CITY_GYM_3 ===
+Name: Caroline
+Class: Lass
+Pic: Lass Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Cherubi
+Level: 15
+- Tackle
+- Leech Seed
+
+Roselia
+Level: 15
+- Mega Drain
+- Poison Sting
+- Stun Spore
+
+=== TRAINER_ETERNA_CITY_GYM_4 ===
+Name: Jenna
+Class: Aroma Lady
+Pic: Aroma Lady Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Budew
+Level: 14
+- Absorb
+- Stun Spore
+- Water Sport
+
+Budew
+Level: 13
+- Absorb
+- Stun Spore
+- Water Sport
+
+Budew
+Level: 15
+- Absorb
+- Stun Spore
+- Water Sport
+
+=== TRAINER_ETERNA_CITY_GYM_5 ===
+Name: Gardenia
+Class: Leader
+Pic: Gardenia
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+Items: Super Potion / Super Potion
+
+Cherubi
+Level: 19
+- Grass Knot
+- Leech Seed
+- Growth
+- Safeguard
+
+Turtwig
+Level: 19
+- Grass Knot
+- Razor Leaf
+- Withdraw
+- Reflect
+
+Roserade @ Sitrus Berry
+Level: 22
+- Grass Knot
+- Magical Leaf
+- Poison Sting
+- Stun Spore
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_1F_1 ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Glameow
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_1F_2 ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Wurmple
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- String Shot
+- Poison Sting
+
+Cascoon
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- Harden
+- Poison Sting
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_2F_1 ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Wurmple
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- String Shot
+- Poison Sting
+
+Zubat
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Astonish
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_2F_2 ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Silcoon
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- Harden
+- Poison Sting
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_2F_3 ===
+Name: TRAINER
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_3F_1 ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Wurmple
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- String Shot
+- Poison Sting
+
+Silcoon
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- Harden
+- Poison Sting
+
+Zubat
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Astonish
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_3F_2 ===
+Name: Travon
+Class: Pkmn Trainer 1
+Pic: Scientist
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Kadabra
+Level: 15
+- Confusion
+- Kinesis
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_4F_1 ===
+Name: TRAINER
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_4F_2 ===
+Name: Jupiter
+Class: Galactic
+Pic: Jupiter
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 18
+- Giga Drain
+- Wing Attack
+- Bite
+
+Skuntank @ Sitrus Berry
+Level: 20
+- Night Slash
+- Poison Gas
+- Screech
+- Smokescreen
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_4F_3 ===
+Name: TRAINER
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_CITY_GALACTIC_BUILDING_4F_4 ===
+Name: TRAINER
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE206_1 ===
+Name: Kayla
+Class: Cyclist
+Pic: Cyclist F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 17
+
+=== TRAINER_ROUTE206_2 ===
+Name: Rachel
+Class: Cyclist
+Pic: Cyclist F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Shinx
+Level: 15
+
+Shinx
+Level: 15
+
+=== TRAINER_ROUTE206_3 ===
+Name: Ryan
+Class: Cyclist
+Pic: Cyclist M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 17
+
+=== TRAINER_ROUTE206_4 ===
+Name: John
+Class: Cyclist
+Pic: Cyclist M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Starly
+Level: 15
+
+Staravia
+Level: 15
+
+=== TRAINER_ROUTE206_5 ===
+Name: Nicole
+Class: Cyclist
+Pic: Cyclist F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Starly
+Level: 15
+
+Ponyta
+Level: 15
+
+=== TRAINER_ROUTE206_6 ===
+Name: James
+Class: Cyclist
+Pic: Cyclist M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Ponyta
+Level: 17
+
+=== TRAINER_ROUTE206_7 ===
+Name: Axel
+Class: Cyclist
+Pic: Cyclist M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Staravia
+Level: 17
+
+=== TRAINER_ROUTE206_8 ===
+Name: Theodore
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 15
+
+Onix
+Level: 15
+
+=== TRAINER_ETERNA_CITY_GYM_6 ===
+Name: Youngster
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CANALAVE_CITY_GYM_1 ===
+Name: Ricky
+Class: Black Belt
+Pic: Black Belt Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Steelix
+Level: 33
+- Double Edge
+- Taunt
+- Torment
+- Screech
+
+=== TRAINER_CANALAVE_CITY_GYM_2 ===
+Name: Gary
+Class: Pkmn Trainer 1
+Pic: Worker
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 31
+- Iron Tail
+- Slam
+- Dig
+
+=== TRAINER_CANALAVE_CITY_GYM_3 ===
+Name: Cesar
+Class: Pkmn Trainer 1
+Pic: Ace Trainer M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Skorupi
+Level: 30
+- Iron Tail
+- Acupressure
+- Pin Missile
+- Poison Sting
+
+Steelix
+Level: 32
+- Iron Tail
+- Screech
+- Rock Throw
+- Sandstorm
+
+=== TRAINER_CANALAVE_CITY_GYM_4 ===
+Name: Breanna
+Class: Pkmn Trainer 1
+Pic: Ace Trainer F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Azumarill
+Level: 33
+- Iron Tail
+- Attract
+- Tail Whip
+- Defense Curl
+
+=== TRAINER_CANALAVE_CITY_GYM_5 ===
+Name: David
+Class: Black Belt
+Pic: Black Belt Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 30
+- Iron Tail
+- Rock Throw
+- Sandstorm
+- Screech
+
+Steelix
+Level: 32
+- Slam
+- Rock Slide
+- Sandstorm
+- Screech
+
+=== TRAINER_CANALAVE_CITY_GYM_6 ===
+Name: Jackson
+Class: Pkmn Trainer 1
+Pic: Worker
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 28
+- Iron Tail
+- Slam
+- Dig
+
+Onix
+Level: 28
+- Iron Tail
+- Slam
+- Dig
+
+Onix
+Level: 28
+- Iron Tail
+- Slam
+- Dig
+
+=== TRAINER_CANALAVE_CITY_GYM_7 ===
+Name: Gerardo
+Class: Pkmn Trainer 1
+Pic: Worker
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 29
+- Iron Tail
+- Slam
+- Dig
+
+Onix
+Level: 29
+- Iron Tail
+- Slam
+- Dig
+
+=== TRAINER_ROUTE206_9 ===
+Name: Megan
+Class: Cyclist
+Pic: Cyclist F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Shinx
+Level: 17
+
+=== TRAINER_WAYWARD_CAVE_1F_1 ===
+Name: Diego
+Class: Camper
+Pic: Camper Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Cascoon
+Level: 13
+- Poison Sting
+- Tackle
+
+Dustox
+Level: 17
+- Poison Sting
+- Gust
+- Confusion
+
+=== TRAINER_WAYWARD_CAVE_1F_2 ===
+Name: Tori
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Silcoon
+Level: 15
+- Poison Sting
+- Tackle
+
+Beautifly
+Level: 15
+- Gust
+- Poison Sting
+- Absorb
+
+=== TRAINER_WAYWARD_CAVE_1F_3 ===
+Name: Cassidy
+Class: Lass
+Pic: Lass Dp
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Buneary
+Level: 17
+
+=== TRAINER_WAYWARD_CAVE_1F_4 ===
+Name: Wayne
+Class: Youngster
+Pic: Youngster Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 13
+
+Zubat
+Level: 14
+
+Aipom
+Level: 15
+
+=== TRAINER_WAYWARD_CAVE_1F_5 ===
+Name: Reginald
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 15
+
+Machop
+Level: 15
+
+=== TRAINER_WAYWARD_CAVE_1F_6 ===
+Name: Terry
+Class: Collector
+Pic: Collector Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 12
+
+Gastly
+Level: 13
+
+Gastly
+Level: 17
+
+=== TRAINER_WAYWARD_CAVE_1F_7 ===
+Name: Ana
+Class: Picnicker
+Pic: Picnicker Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Meditite
+Level: 17
+- Confusion
+- Bide
+
+=== TRAINER_WAYWARD_CAVE_1F_8 ===
+Name: Parker
+Class: Camper
+Pic: Camper Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Buizel
+Level: 15
+- Water Gun
+- Swift
+- Quick Attack
+
+Shinx
+Level: 15
+- Spark
+- Bite
+
+=== TRAINER_WAYWARD_CAVE_1F_9 ===
+Name: Gerald
+Class: Ruin Maniac
+Pic: Ruin Maniac Dp
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 15
+
+Bronzor
+Level: 17
+
+=== TRAINER_WAYWARD_CAVE_1F_10 ===
+Name: Lorenzo
+Class: Hiker
+Pic: Hiker Dp
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 17

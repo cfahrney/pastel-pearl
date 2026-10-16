@@ -11,4 +11,8 @@ const u8 *const gSpeakerNamesTable[SP_NAME_COUNT] =
     [SP_NAME_MYSTERY_MAN] = COMPOUND_STRING("Mystery Man"),
     [SP_NAME_GRUNT] = COMPOUND_STRING("Grunt"),
     [SP_NAME_TRADED_MON] = COMPOUND_STRING("{STR_VAR_1}"), // filled by special BufferTradedMon
+    [SP_NAME_CLEFAIRY] = COMPOUND_STRING("Clefairy"),
+    [SP_NAME_GARDENIA] = COMPOUND_STRING("Gardenia"),
+    [SP_NAME_CYNTHIA] = COMPOUND_STRING("Cynthia"),
+    [SP_NAME_BUNEARY] = COMPOUND_STRING("Buneary"),
 };

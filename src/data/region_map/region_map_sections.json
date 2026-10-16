@@ -1750,6 +1750,46 @@
     {
       "id": "MAPSEC_ROUTE_218",
       "name": "Route 218"
+    },
+    {
+      "id": "MAPSEC_FLOAROMA_MEADOW",
+      "name": "Floaroma Meadow"
+    },
+    {
+      "id": "MAPSEC_FLOAROMA_TOWN",
+      "name": "Floaroma Town"
+    },
+    {
+      "id": "MAPSEC_ETERNA_FOREST",
+      "name": "Eterna Forest"
+    },
+    {
+      "id": "MAPSEC_OLD_CHATEAU",
+      "name": "Old Chateau"
+    },
+    {
+      "id": "MAPSEC_ROUTE_205",
+      "name": "Route 205"
+    },
+    {
+      "id": "MAPSEC_VALLEY_WINDWORKS",
+      "name": "Valley Windworks"
+    },
+    {
+      "id": "MAPSEC_FUEGO_IRONWORKS",
+      "name": "Fuego Ironworks"
+    },
+    {
+      "id": "MAPSEC_ETERNA_CITY",
+      "name": "Eterna City"
+    },
+    {
+      "id": "MAPSEC_WAYWARD_CAVE",
+      "name": "Wayward Cave"
+    },
+    {
+      "id": "MAPSEC_CANALAVE_CITY",
+      "name": "Canalave City"
     }
   ]
 }

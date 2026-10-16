@@ -1778,14 +1778,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route203/scripts.inc"
 
 	.include "data/maps/Route204/scripts.inc"
+	.include "data/maps/Route204_North/scripts.inc"
 
 	.include "data/maps/OreburghGate/scripts.inc"
 
 	.include "data/maps/OreburghCity/scripts.inc"
 
 	.include "data/maps/Route207/scripts.inc"
-
-	.include "data/maps/Route206/scripts.inc"
 
 	.include "data/maps/RavagedPath/scripts.inc"
 
@@ -1810,6 +1809,8 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Template_StandardHome_1F/scripts.inc"
 
 	.include "data/maps/Template_StandardHome_2F/scripts.inc"
+
+	.include "data/maps/Template_OneStoryHome/scripts.inc"
 
 	.include "data/maps/OreburghCity_Gym/scripts.inc"
 
@@ -1876,3 +1877,139 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/JubilifeCity_SouthOfBattleDomeCondo_2F/scripts.inc"
 
 	.include "data/maps/Route218/scripts.inc"
+
+	.include "data/maps/FloaromaMeadow/scripts.inc"
+
+	.include "data/maps/FloaromaTown/scripts.inc"
+
+	.include "data/maps/FloaromaMeadow_House/scripts.inc"
+
+	.include "data/maps/FloaromaTown_FlowerShop/scripts.inc"
+
+	.include "data/maps/FloaromaTown_EastOfPokemonCenterHouse/scripts.inc"
+
+	.include "data/maps/FloaromaTown_WestOfFlowerShopHouse/scripts.inc"
+
+	.include "data/maps/FloaromaTown_Mart/scripts.inc"
+
+	.include "data/maps/FloaromaTown_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/FloaromaTown_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/EternaForest/scripts.inc"
+
+	.include "data/maps/OldChateau_Entrance/scripts.inc"
+
+	.include "data/maps/OldChateau_1F/scripts.inc"
+
+	.include "data/maps/OldChateau_2F_SideRooms/scripts.inc"
+
+	.include "data/maps/OldChateau_2F_Corridor/scripts.inc"
+
+	.include "data/maps/OldChateau_2F_Room1/scripts.inc"
+
+	.include "data/maps/OldChateau_2F_Room2/scripts.inc"
+
+	.include "data/maps/OldChateau_2F_Room3/scripts.inc"
+
+	.include "data/maps/OldChateau_2F_Room4/scripts.inc"
+
+	.include "data/maps/OldChateau_2F_Room5/scripts.inc"
+
+	.include "data/maps/Route205/scripts.inc"
+
+	.include "data/maps/Route205_North/scripts.inc"
+
+	.include "data/maps/Route205_House/scripts.inc"
+
+	.include "data/maps/ValleyWindworks/scripts.inc"
+
+	.include "data/maps/ValleyWindworks_Interior/scripts.inc"
+
+	.include "data/maps/FuegoIronworks/scripts.inc"
+
+	.include "data/maps/FuegoIronworks_Interior/scripts.inc"
+
+	.include "data/maps/EternaCity/scripts.inc"
+
+	.include "data/maps/EternaCity_GymEntrance/scripts.inc"
+
+	.include "data/maps/EternaCity_Gym/scripts.inc"
+
+	.include "data/maps/EternaCity_BikeShop/scripts.inc"
+
+	.include "data/maps/EternaCity_GalacticBuilding_1F/scripts.inc"
+
+	.include "data/maps/EternaCity_GalacticBuilding_2F/scripts.inc"
+
+	.include "data/maps/EternaCity_GalacticBuilding_3F/scripts.inc"
+
+	.include "data/maps/EternaCity_GalacticBuilding_4F/scripts.inc"
+
+	.include "data/maps/EternaCity_Condominiums_1F/scripts.inc"
+
+	.include "data/maps/EternaCity_Condominiums_2F/scripts.inc"
+
+	.include "data/maps/EternaCity_Condominiums_3F/scripts.inc"
+
+	.include "data/maps/EternaCity_Condominiums_4F/scripts.inc"
+
+	.include "data/maps/EternaCity_HerbShop/scripts.inc"
+
+	.include "data/maps/EternaCity_Mart/scripts.inc"
+
+	.include "data/maps/EternaCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/EternaCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/EternaCity_WestOfGymEntranceHouse/scripts.inc"
+
+	.include "data/maps/EternaCity_EastOfCondominiumsHouse/scripts.inc"
+
+	.include "data/maps/EternaCity_EastOfPokemonCenterHouse/scripts.inc"
+
+	.include "data/maps/WaywardCave_1F/scripts.inc"
+
+	.include "data/maps/WaywardCave_B1F/scripts.inc"
+
+	.include "data/maps/Route206/scripts.inc"
+
+	.include "data/maps/Route206_EternaGatehouse/scripts.inc"
+
+	.include "data/maps/Route206_CyclingRoadGatehouse/scripts.inc"
+
+	.include "data/maps/EternaForest_Exterior/scripts.inc"
+
+	.include "data/maps/Template_VerticalGateHouse/scripts.inc"
+
+	.include "data/maps/Template_HorizontalGateHouse/scripts.inc"
+
+	.include "data/maps/Route218_JubilifeGatehouse/scripts.inc"
+
+	.include "data/maps/Route218_CanalaveGatehouse/scripts.inc"
+
+	.include "data/maps/CanalaveCity/scripts.inc"
+
+	.include "data/maps/CanalaveCity_Gym/scripts.inc"
+
+	.include "data/maps/CanalaveCity_Library_1F/scripts.inc"
+
+	.include "data/maps/CanalaveCity_Library_2F/scripts.inc"
+
+	.include "data/maps/CanalaveCity_Library_3F/scripts.inc"
+
+	.include "data/maps/CanalaveCity_HarborInn/scripts.inc"
+
+	.include "data/maps/CanalaveCity_Mart/scripts.inc"
+
+	.include "data/maps/CanalaveCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/CanalaveCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/CanalaveCity_SouthOfMartHouse/scripts.inc"
+
+	.include "data/maps/CanalaveCity_MoveDeleterHouse/scripts.inc"
+
+	.include "data/maps/CanalaveCity_SailorEldritchHouse/scripts.inc"
+
+	.include "data/maps/CanalaveCity_SouthOfGymHouse/scripts.inc"

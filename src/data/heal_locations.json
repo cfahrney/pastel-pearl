@@ -383,6 +383,30 @@
       "y": 42,
       "respawn_map": "MAP_JUBILIFE_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_JUBILIFE_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_FLOAROMA_TOWN",
+      "map": "MAP_FLOAROMA_TOWN",
+      "x": 16,
+      "y": 59,
+      "respawn_map": "MAP_FLOAROMA_TOWN_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_FLOAROMA_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_ETERNA_CITY",
+      "map": "MAP_ETERNA_CITY",
+      "x": 17,
+      "y": 19,
+      "respawn_map": "MAP_ETERNA_CITY_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_ETERNA_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_CANALAVE_CITY",
+      "map": "MAP_CANALAVE_CITY",
+      "x": 26,
+      "y": 12,
+      "respawn_map": "MAP_CANALAVE_CITY_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_CANALAVE_NURSE"
     }
   ]
 }

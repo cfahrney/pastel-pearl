@@ -82,7 +82,13 @@
     "gMapGroup_IndoorSandgem",
     "gMapGroup_IndoorOreburgh",
     "gMapGroup_Templates",
-    "gMapGroup_IndoorJubilife"
+    "gMapGroup_IndoorJubilife",
+    "gMapGroup_IndoorFloaroma",
+    "gMapGroup_IndoorRoute205",
+    "gMapGroup_IndoorEterna",
+    "gMapGroup_IndoorRoute206",
+    "gMapGroup_IndoorRoute218",
+    "gMapGroup_IndoorCanalave"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1173,7 +1179,10 @@
     "TwinleafTown",
     "SandgemTown",
     "JubilifeCity",
-    "OreburghCity"
+    "OreburghCity",
+    "FloaromaTown",
+    "EternaCity",
+    "CanalaveCity"
   ],
   "gMapGroup_SinnohRoutes": [
     "Route201",
@@ -1185,12 +1194,33 @@
     "Route204",
     "Route207",
     "Route206",
-    "Route218"
+    "Route218",
+    "Route204_North",
+    "FloaromaMeadow",
+    "Route205",
+    "Route205_North",
+    "ValleyWindworks",
+    "FuegoIronworks",
+    "EternaForest_Exterior"
   ],
   "gMapGroup_SinnohDungeons": [
     "OreburghGate",
     "OreburghGate_B1F",
-    "RavagedPath"
+    "RavagedPath",
+    "EternaForest",
+    "OldChateau_Entrance",
+    "OldChateau_1F",
+    "OldChateau_2F_SideRooms",
+    "OldChateau_2F_Corridor",
+    "OldChateau_2F_Room1",
+    "OldChateau_2F_Room2",
+    "OldChateau_2F_Room3",
+    "OldChateau_2F_Room4",
+    "OldChateau_2F_Room5",
+    "ValleyWindworks_Interior",
+    "FuegoIronworks_Interior",
+    "WaywardCave_1F",
+    "WaywardCave_B1F"
   ],
   "gMapGroup_IndoorTwinleaf": [
     "TwinleafTown_PlayerHouse_1F",
@@ -1234,7 +1264,10 @@
     "Template_StandardHome_1F",
     "Template_StandardHome_2F",
     "Template_HighRise_1F",
-    "Template_HighRise_2F"
+    "Template_HighRise_2F",
+    "Template_OneStoryHome",
+    "Template_HorizontalGateHouse",
+    "Template_VerticalGateHouse"
   ],
   "gMapGroup_IndoorJubilife": [
     "JubilifeCity_PokemonCenter_1F",
@@ -1256,5 +1289,59 @@
     "JubilifeCity_BattleDomeLobby",
     "JubilifeCity_SouthOfBattleDomeCondo_1F",
     "JubilifeCity_SouthOfBattleDomeCondo_2F"
+  ],
+  "gMapGroup_IndoorFloaroma": [
+    "FloaromaMeadow_House",
+    "FloaromaTown_FlowerShop",
+    "FloaromaTown_EastOfPokemonCenterHouse",
+    "FloaromaTown_WestOfFlowerShopHouse",
+    "FloaromaTown_Mart",
+    "FloaromaTown_PokemonCenter_1F",
+    "FloaromaTown_PokemonCenter_2F"
+  ],
+  "gMapGroup_IndoorRoute205": [
+    "Route205_House"
+  ],
+  "gMapGroup_IndoorEterna": [
+    "EternaCity_GymEntrance",
+    "EternaCity_Gym",
+    "EternaCity_BikeShop",
+    "EternaCity_GalacticBuilding_1F",
+    "EternaCity_GalacticBuilding_2F",
+    "EternaCity_GalacticBuilding_3F",
+    "EternaCity_GalacticBuilding_4F",
+    "EternaCity_Condominiums_1F",
+    "EternaCity_Condominiums_2F",
+    "EternaCity_Condominiums_3F",
+    "EternaCity_Condominiums_4F",
+    "EternaCity_HerbShop",
+    "EternaCity_Mart",
+    "EternaCity_PokemonCenter_1F",
+    "EternaCity_PokemonCenter_2F",
+    "EternaCity_WestOfGymEntranceHouse",
+    "EternaCity_EastOfCondominiumsHouse",
+    "EternaCity_EastOfPokemonCenterHouse"
+  ],
+  "gMapGroup_IndoorRoute206": [
+    "Route206_EternaGatehouse",
+    "Route206_CyclingRoadGatehouse"
+  ],
+  "gMapGroup_IndoorRoute218": [
+    "Route218_JubilifeGatehouse",
+    "Route218_CanalaveGatehouse"
+  ],
+  "gMapGroup_IndoorCanalave": [
+    "CanalaveCity_Gym",
+    "CanalaveCity_Library_1F",
+    "CanalaveCity_Library_2F",
+    "CanalaveCity_Library_3F",
+    "CanalaveCity_HarborInn",
+    "CanalaveCity_Mart",
+    "CanalaveCity_PokemonCenter_1F",
+    "CanalaveCity_PokemonCenter_2F",
+    "CanalaveCity_SouthOfMartHouse",
+    "CanalaveCity_MoveDeleterHouse",
+    "CanalaveCity_SailorEldritchHouse",
+    "CanalaveCity_SouthOfGymHouse"
   ]
 }

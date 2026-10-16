@@ -497,6 +497,7 @@ enum
     OBJ_EVENT_GFX_YOUNG_COUPLE_F,
     OBJ_EVENT_GFX_YOUNG_COUPLE_M,
     OBJ_EVENT_GFX_YOUNGSTER_DP,
+    OBJ_EVENT_GFX_MOSSY_ROCK,
     NUM_OBJ_EVENT_GFX,
 };
 
@@ -727,6 +728,7 @@ enum
 #define OBJ_EVENT_PAL_TAG_CANDICE                   0x11B5
 #define OBJ_EVENT_PAL_TAG_GARDENIA                  0x11B6
 #define OBJ_EVENT_PAL_TAG_ROARK                     0x11B7
+#define OBJ_EVENT_PAL_TAG_MOSSY_ROCK                0x11B8
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

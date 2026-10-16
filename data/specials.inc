@@ -645,6 +645,7 @@ gSpecials::
 	def_special HasAllRegionalMons
 	def_special LoadAssistantStarter
 	def_special StartAssistantTutorialBattle, waitstate=1
+	def_special UpdateFollowingPokemon
 	def_special DefeatMapTrainers
 	def_special RememberTradedMon
 	def_special BufferTradedMon

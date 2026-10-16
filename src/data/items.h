@@ -14452,6 +14452,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_OldKey,
     },
 
+    [ITEM_WORKS_KEY] =
+    {
+        .name = ITEM_NAME("Works Key"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A large key for\n"
+            "the doors of the\n"
+            "Valley Windworks."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_BasementKey,
+        .iconPalette = gItemIconPalette_OldKey,
+    },
+
     [ITEM_SCANNER] =
     {
         .name = ITEM_NAME("Scanner"),
