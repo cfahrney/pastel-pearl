@@ -9938,7 +9938,7 @@
       "width": 18,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_JubilifeCondo",
       "border_filepath": "data/layouts/JubilifeCity_Condominium_1F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_1F/map.bin",
       "layout_version": "emerald"
@@ -9948,8 +9948,8 @@
       "name": "JubilifeCity_DexNavCompany_2F_Layout",
       "width": 19,
       "height": 9,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DexNavHQ",
       "border_filepath": "data/layouts/JubilifeCity_DexNavCompany_2F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_DexNavCompany_2F/map.bin",
       "layout_version": "emerald"
@@ -9960,7 +9960,7 @@
       "width": 22,
       "height": 13,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "secondary_tileset": "gTileset_TVStation",
       "border_filepath": "data/layouts/JubilifeCity_TVStation_2F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_TVStation_2F/map.bin",
       "layout_version": "emerald"
@@ -9971,7 +9971,7 @@
       "width": 18,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_JubilifeCondo",
       "border_filepath": "data/layouts/JubilifeCity_Condominium_4F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_4F/map.bin",
       "layout_version": "emerald"
@@ -9982,7 +9982,7 @@
       "width": 19,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Facility",
+      "secondary_tileset": "gTileset_DexNavHQ",
       "border_filepath": "data/layouts/JubilifeCity_DexNavCompany_3F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_DexNavCompany_3F/map.bin",
       "layout_version": "emerald"
@@ -10004,7 +10004,7 @@
       "width": 18,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_JubilifeCondo",
       "border_filepath": "data/layouts/JubilifeCity_Condominium_2F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_2F/map.bin",
       "layout_version": "emerald"
@@ -10015,7 +10015,7 @@
       "width": 19,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Facility",
+      "secondary_tileset": "gTileset_DexNavHQ",
       "border_filepath": "data/layouts/JubilifeCity_DexNavCompany_1F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_DexNavCompany_1F/map.bin",
       "layout_version": "emerald"
@@ -10026,7 +10026,7 @@
       "width": 16,
       "height": 11,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "secondary_tileset": "gTileset_TVStation",
       "border_filepath": "data/layouts/JubilifeCity_TVStation_1F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_TVStation_1F/map.bin",
       "layout_version": "emerald"
@@ -10037,7 +10037,7 @@
       "width": 18,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_JubilifeCondo",
       "border_filepath": "data/layouts/JubilifeCity_Condominium_3F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_Condominium_3F/map.bin",
       "layout_version": "emerald"
@@ -10188,8 +10188,8 @@
       "name": "OldChateau_Entrance_Layout",
       "width": 20,
       "height": 18,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_Entrance/map.bin"
     },
@@ -10198,8 +10198,8 @@
       "name": "OldChateau_1F_Layout",
       "width": 40,
       "height": 14,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_1F/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_1F/map.bin"
     },
@@ -10208,8 +10208,8 @@
       "name": "OldChateau_2F_SideRooms_Layout",
       "width": 32,
       "height": 11,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_2F_SideRooms/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_2F_SideRooms/map.bin"
     },
@@ -10218,8 +10218,8 @@
       "name": "OldChateau_2F_Corridor_Layout",
       "width": 40,
       "height": 8,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_2F_Corridor/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_2F_Corridor/map.bin"
     },
@@ -10228,8 +10228,8 @@
       "name": "OldChateau_2F_Room1_Layout",
       "width": 16,
       "height": 10,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_2F_Room1/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_2F_Room1/map.bin"
     },
@@ -10238,8 +10238,8 @@
       "name": "OldChateau_2F_Room2_Layout",
       "width": 24,
       "height": 10,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_2F_Room2/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_2F_Room2/map.bin"
     },
@@ -10248,8 +10248,8 @@
       "name": "OldChateau_2F_Room3_Layout",
       "width": 26,
       "height": 10,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_2F_Room3/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_2F_Room3/map.bin"
     },
@@ -10258,8 +10258,8 @@
       "name": "OldChateau_2F_Room4_Layout",
       "width": 26,
       "height": 10,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_2F_Room4/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_2F_Room4/map.bin"
     },
@@ -10268,8 +10268,8 @@
       "name": "OldChateau_2F_Room5_Layout",
       "width": 16,
       "height": 10,
-      "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_SinnohCave",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_2F_Room5/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_2F_Room5/map.bin"
     },
@@ -10307,7 +10307,7 @@
       "id": "LAYOUT_VALLEY_WINDWORKS",
       "name": "ValleyWindworks_Layout",
       "width": 32,
-      "height": 22,
+      "height": 28,
       "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Floaroma",
       "border_filepath": "data/layouts/ValleyWindworks/border.bin",
@@ -10359,7 +10359,7 @@
       "width": 18,
       "height": 14,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SinnohBuilding",
+      "secondary_tileset": "gTileset_EternaGym",
       "border_filepath": "data/layouts/EternaCity_GymEntrance/border.bin",
       "blockdata_filepath": "data/layouts/EternaCity_GymEntrance/map.bin"
     },
@@ -10369,7 +10369,7 @@
       "width": 32,
       "height": 32,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SinnohBuilding",
+      "secondary_tileset": "gTileset_EternaGym",
       "border_filepath": "data/layouts/EternaCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/EternaCity_Gym/map.bin"
     },
@@ -10389,7 +10389,7 @@
       "width": 23,
       "height": 15,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_GalacticHQ",
       "border_filepath": "data/layouts/EternaCity_GalacticBuilding_1F/border.bin",
       "blockdata_filepath": "data/layouts/EternaCity_GalacticBuilding_1F/map.bin"
     },
@@ -10399,7 +10399,7 @@
       "width": 23,
       "height": 15,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_GalacticHQ",
       "border_filepath": "data/layouts/EternaCity_GalacticBuilding_2F/border.bin",
       "blockdata_filepath": "data/layouts/EternaCity_GalacticBuilding_2F/map.bin"
     },
@@ -10409,7 +10409,7 @@
       "width": 23,
       "height": 15,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_GalacticHQ",
       "border_filepath": "data/layouts/EternaCity_GalacticBuilding_3F/border.bin",
       "blockdata_filepath": "data/layouts/EternaCity_GalacticBuilding_3F/map.bin"
     },
@@ -10419,7 +10419,7 @@
       "width": 23,
       "height": 15,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_GalacticHQ",
       "border_filepath": "data/layouts/EternaCity_GalacticBuilding_4F/border.bin",
       "blockdata_filepath": "data/layouts/EternaCity_GalacticBuilding_4F/map.bin"
     },
@@ -10559,7 +10559,7 @@
       "width": 16,
       "height": 15,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_GateHouse",
       "border_filepath": "data/layouts/Route206_CyclingRoadGatehouse/border.bin",
       "blockdata_filepath": "data/layouts/Route206_CyclingRoadGatehouse/map.bin"
     },
@@ -10626,10 +10626,10 @@
     {
       "id": "LAYOUT_CANALAVE_CITY",
       "name": "CanalaveCity_Layout",
-      "width": 32,
-      "height": 57,
+      "width": 40,
+      "height": 59,
       "primary_tileset": "gTileset_SinnohGeneral",
-      "secondary_tileset": "gTileset_WaterRoute",
+      "secondary_tileset": "gTileset_Canalave",
       "border_filepath": "data/layouts/CanalaveCity/border.bin",
       "blockdata_filepath": "data/layouts/CanalaveCity/map.bin"
     },

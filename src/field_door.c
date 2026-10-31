@@ -391,6 +391,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Fallarbor_Door_DarkRoof,                      &gTileset_Fallarbor, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_FallarborDarkRoof, sDoorAnimPalettes_FallarborDarkRoof},
     {METATILE_InsideShip_IntactDoor_Bottom_Interior,        &gTileset_InsideShip, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_AbandonedShipRoom, sDoorAnimPalettes_AbandonedShipRoom},
     {METATILE_Shop_Door_Elevator,                           &gTileset_Shop, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_LilycoveDeptStoreElevator, sDoorAnimPalettes_LilycoveDeptStoreElevator},
+    {METATILE_JubilifeCondo_Door_Elevator,                  &gTileset_JubilifeCondo, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_LilycoveDeptStoreElevator, sDoorAnimPalettes_LilycoveDeptStoreElevator},
     {METATILE_Dewford_Door_BattleTower,                     &gTileset_Dewford, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_BattleTowerOld, sDoorAnimPalettes_BattleTowerOld},
     {METATILE_BattleFrontier_Door_Elevator,                 &gTileset_BattleFrontier, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_BattleTowerElevator, sDoorAnimPalettes_BattleTowerElevator},
     // The metatile for this door doesn't seem to correspond to a door in any Emerald tileset. Given the surrounding door animations, it was likely cut from the Battle Frontier.
@@ -420,10 +421,6 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Jubilife_Door_Gray,                           &gTileset_Jubilife, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_JubilifeGray, sDoorAnimPalettes_JubilifeGray, TRUE},
     {METATILE_Jubilife_Door_Tan,                            &gTileset_Jubilife, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_JubilifeTan, sDoorAnimPalettes_JubilifeTan, TRUE},
     {METATILE_Jubilife_Door_Gts,                            &gTileset_Jubilife, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_JubilifeGts, sDoorAnimPalettes_JubilifeGts, TRUE},
-    {METATILE_Jubilife_Door_DexnavHq,                       &gTileset_Canalave, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_JubilifeDexnavHq, sDoorAnimPalettes_JubilifeDexnavHq, TRUE},
-    {METATILE_Jubilife_Door_Gray,                           &gTileset_Canalave, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_JubilifeGray, sDoorAnimPalettes_JubilifeGray, TRUE},
-    {METATILE_Jubilife_Door_Tan,                            &gTileset_Canalave, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_JubilifeTan, sDoorAnimPalettes_JubilifeTan, TRUE},
-    {METATILE_Jubilife_Door_Gts,                            &gTileset_Canalave, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_JubilifeGts, sDoorAnimPalettes_JubilifeGts, TRUE},
     {METATILE_Sandgem_Door_House,                           &gTileset_Sandgem, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_SandgemHouse, sDoorAnimPalettes_SandgemHouse, TRUE},
     {METATILE_Twinleaf_Door_House,                          &gTileset_Sandgem, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_TwinleafHouse, sDoorAnimPalettes_TwinleafHouse, TRUE},
 #else

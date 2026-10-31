@@ -468,3 +468,27 @@ const u16 gMetatileAttributes_Eterna[] = INCBIN_U16("data/tilesets/secondary/ete
 
 const u16 gMetatiles_GateHouse[] = INCBIN_U16("data/tilesets/secondary/gate_house/metatiles.bin");
 const u16 gMetatileAttributes_GateHouse[] = INCBIN_U16("data/tilesets/secondary/gate_house/metatile_attributes.bin");
+
+const u16 gMetatiles_TownTemplates[] = INCBIN_U16("data/tilesets/secondary/town_templates/metatiles.bin");
+const u16 gMetatileAttributes_TownTemplates[] = INCBIN_U16("data/tilesets/secondary/town_templates/metatile_attributes.bin");
+
+const u16 gMetatiles_GalacticHQ[] = INCBIN_U16("data/tilesets/secondary/galactic_hq/metatiles.bin");
+const u16 gMetatileAttributes_GalacticHQ[] = INCBIN_U16("data/tilesets/secondary/galactic_hq/metatile_attributes.bin");
+
+const u16 gMetatiles_DexNavHQ[] = INCBIN_U16("data/tilesets/secondary/dex_nav_hq/metatiles.bin");
+const u16 gMetatileAttributes_DexNavHQ[] = INCBIN_U16("data/tilesets/secondary/dex_nav_hq/metatile_attributes.bin");
+
+const u16 gMetatiles_TVStation[] = INCBIN_U16("data/tilesets/secondary/tv_station/metatiles.bin");
+const u16 gMetatileAttributes_TVStation[] = INCBIN_U16("data/tilesets/secondary/tv_station/metatile_attributes.bin");
+
+const u16 gMetatiles_JubilifeCondo[] = INCBIN_U16("data/tilesets/secondary/jubilife_condo/metatiles.bin");
+const u16 gMetatileAttributes_JubilifeCondo[] = INCBIN_U16("data/tilesets/secondary/jubilife_condo/metatile_attributes.bin");
+
+const u16 gMetatiles_EternaGym[] = INCBIN_U16("data/tilesets/secondary/eterna_gym/metatiles.bin");
+const u16 gMetatileAttributes_EternaGym[] = INCBIN_U16("data/tilesets/secondary/eterna_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_OldChateau[] = INCBIN_U16("data/tilesets/secondary/old_chateau/metatiles.bin");
+const u16 gMetatileAttributes_OldChateau[] = INCBIN_U16("data/tilesets/secondary/old_chateau/metatile_attributes.bin");
+
+const u16 gMetatiles_SinnohInterior[] = INCBIN_U16("data/tilesets/primary/sinnoh_interior/metatiles.bin");
+const u16 gMetatileAttributes_SinnohInterior[] = INCBIN_U16("data/tilesets/primary/sinnoh_interior/metatile_attributes.bin");

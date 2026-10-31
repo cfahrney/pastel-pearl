@@ -220,6 +220,10 @@
 #define METATILE_Fallarbor_RedCaveEntrance_Top       0x347
 #define METATILE_Fallarbor_RedRockWall               0x269
 
+// gTileset_Floaroma
+#define METATILE_Floaroma_WindworksDoor         0x2A1
+#define METATILE_Floaroma_WindworksDoor_Locked  0x2A5
+
 // gTileset_Fortree
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F
 #define METATILE_Fortree_BridgeOverGrass_Raised            0x24E
@@ -327,6 +331,9 @@
 #define METATILE_Jubilife_Door_Gray      0x257
 #define METATILE_Jubilife_Door_Gts       0x240
 #define METATILE_Jubilife_Door_Tan       0x267
+
+// gTileset_JubilifeCondo
+#define METATILE_JubilifeCondo_Door_Elevator  0x21A
 
 // gTileset_LakeVerity
 #define METATILE_LakeVerity_CalmWater  0x211

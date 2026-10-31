@@ -81,4 +81,12 @@ extern const struct Tileset gTileset_Route206;
 extern const struct Tileset gTileset_EternaForest;
 extern const struct Tileset gTileset_Eterna;
 extern const struct Tileset gTileset_GateHouse;
+extern const struct Tileset gTileset_TownTemplates;
+extern const struct Tileset gTileset_GalacticHQ;
+extern const struct Tileset gTileset_DexNavHQ;
+extern const struct Tileset gTileset_TVStation;
+extern const struct Tileset gTileset_JubilifeCondo;
+extern const struct Tileset gTileset_EternaGym;
+extern const struct Tileset gTileset_OldChateau;
+extern const struct Tileset gTileset_SinnohInterior;
 #endif //GUARD_tilesets_H
