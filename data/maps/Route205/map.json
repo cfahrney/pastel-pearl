@@ -384,15 +384,6 @@
     },
     {
       "type": "trigger",
-      "x": 19,
-      "y": 88,
-      "elevation": 3,
-      "var": "VAR_ROUTE205_STATE",
-      "var_value": "0",
-      "script": "Route205_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
       "x": 25,
       "y": 77,
       "elevation": 3,

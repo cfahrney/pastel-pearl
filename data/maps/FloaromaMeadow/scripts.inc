@@ -17,7 +17,7 @@ FloaromaMeadow_Text_NPC4Speaker:
 	.string "Combee$"
 
 FloaromaMeadow_Text_NPC4:
-	.string "FLOAROMA MEADOW NPC 4$"
+	.string "beeeee$"
 
 FloaromaMeadow_EventScript_NPC5::
 	lock
@@ -34,7 +34,7 @@ FloaromaMeadow_Text_NPC5Speaker:
 	.string "Combee$"
 
 FloaromaMeadow_Text_NPC5:
-	.string "FLOAROMA MEADOW NPC 5$"
+	.string "Coooombeee$"
 
 FloaromaMeadow_EventScript_NPC6::
 	lock
@@ -51,7 +51,7 @@ FloaromaMeadow_Text_NPC6Speaker:
 	.string "Vespiquen$"
 
 FloaromaMeadow_Text_NPC6:
-	.string "FLOAROMA MEADOW NPC 6$"
+	.string "Queeeen$"
 
 FloaromaMeadow_EventScript_NPC7::
 	lock
@@ -68,7 +68,7 @@ FloaromaMeadow_Text_NPC7Speaker:
 	.string "Combee$"
 
 FloaromaMeadow_Text_NPC7:
-	.string "FLOAROMA MEADOW NPC 7$"
+	.string "Beeee$"
 
 FloaromaMeadow_EventScript_NPC8::
 	lock
@@ -85,7 +85,7 @@ FloaromaMeadow_Text_NPC8Speaker:
 	.string "Cutiefly$"
 
 FloaromaMeadow_Text_NPC8:
-	.string "FLOAROMA MEADOW NPC 8$"
+	.string "Cuuutie$"
 
 FloaromaMeadow_EventScript_NPC1::
 	end
@@ -140,11 +140,9 @@ FloaromaMeadow_EventScript_NPC3_2_3::
 FloaromaMeadow_EventScript_Trigger1::
 	lockall
 	call FloaromaMeadow_EventScript_Trigger1_2
-	@ TODO(DP): Scripted battle against DP trainer #296 (Galactic Grunt)
-	goto_if_eq VAR_RESULT, 0, FloaromaMeadow_EventScript_Trigger1_2_2
+	trainerbattle_no_intro TRAINER_FLOAROMA_MEADOW_GALACTIC_GRUNT_HONEY_FIGHT, FloaromaMeadow_Text_Trigger1Defeated
 	call FloaromaMeadow_EventScript_Trigger1_2_3
-	@ TODO(DP): Scripted battle against DP trainer #297 (Galactic Grunt)
-	goto_if_eq VAR_RESULT, 0, FloaromaMeadow_EventScript_Trigger1_2_2
+	trainerbattle_no_intro TRAINER_FLOAROMA_MEADOW_GALACTIC_GRUNT_2_HONEY_FIGHT, FloaromaMeadow_Text_Trigger1Defeated_2
 	call FloaromaMeadow_EventScript_Trigger1_2_4
 	@ TODO(DP): Set DP system flag 2441
 	releaseall
@@ -166,10 +164,6 @@ FloaromaMeadow_EventScript_Trigger1_2::
 	msgbox FloaromaMeadow_Text_Trigger1_4, MSGBOX_DEFAULT
 	closemessage
 	return
-
-FloaromaMeadow_EventScript_Trigger1_2_2::
-	releaseall
-	end
 
 FloaromaMeadow_EventScript_Trigger1_2_3::
 	applymovement LOCALID_FLOAROMA_MEADOW_GALACTIC_GRUNT, FloaromaMeadow_Movement_GalacticGrunt3
@@ -199,7 +193,7 @@ FloaromaMeadow_EventScript_Trigger1_2_4::
 	waitmovement 0
 	@ TODO(DP): hide DP object 3
 	msgbox FloaromaMeadow_Text_Trigger1_8, MSGBOX_DEFAULT
-	setvar VAR_0x8004, 438
+	setvar VAR_0x8004, ITEM_WORKS_KEY
 	setvar VAR_0x8005, 1
 	giveitem VAR_0x8004, VAR_0x8005
 	setflag FLAG_FLOAROMA_MEADOW_TRIGGER_2
@@ -270,6 +264,14 @@ FloaromaMeadow_Text_NPC3_4:
 
 FloaromaMeadow_Text_NPC3_5:
 	.string "Oopsy! You can't hold any more.$"
+
+FloaromaMeadow_Text_Trigger1Defeated:
+	.string "...This is why I'm gonna be stuck as\n"
+	.string "a grunt forever...$"
+
+FloaromaMeadow_Text_Trigger1Defeated_2:
+	.string "...If only I had some decent\n"
+	.string "Pokémon...$"
 
 FloaromaMeadow_Text_Trigger1:
 	.string "Enough arguing! Hand over that sweet\n"

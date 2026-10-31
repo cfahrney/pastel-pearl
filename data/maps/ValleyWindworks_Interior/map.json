@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_2",
       "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
       "x": 3,
       "y": 8,
@@ -25,10 +26,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ValleyWindworks_Interior_EventScript_Trainer1",
-      "flag": "0",
-      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_2"
+      "flag": "0"
     },
     {
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_ASSISTANT",
       "graphics_id": "OBJ_EVENT_GFX_SATURN",
       "x": 21,
       "y": 3,
@@ -39,10 +40,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ValleyWindworks_Interior_EventScript_NPC4",
-      "flag": "0",
-      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_ASSISTANT"
+      "flag": "0"
     },
     {
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_MARS",
       "graphics_id": "OBJ_EVENT_GFX_MARS",
       "x": 20,
       "y": 7,
@@ -53,10 +54,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ValleyWindworks_Interior_EventScript_NPC1",
-      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_MARS",
-      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_MARS"
+      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_MARS"
     },
     {
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_4",
       "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
       "x": 18,
       "y": 8,
@@ -67,10 +68,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ValleyWindworks_Interior_EventScript_NPC2",
-      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_MARS",
-      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_4"
+      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_MARS"
     },
     {
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_LITTLE_GIRL",
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
       "x": 10,
       "y": 8,
@@ -81,10 +82,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ValleyWindworks_Interior_EventScript_NPC3",
-      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_LITTLE_GIRL",
-      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_LITTLE_GIRL"
+      "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_LITTLE_GIRL"
     },
     {
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_3",
       "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
       "x": 12,
       "y": 3,
@@ -95,10 +96,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ValleyWindworks_Interior_EventScript_Trainer3",
-      "flag": "0",
-      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT_3"
+      "flag": "0"
     },
     {
+      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT",
       "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
       "x": 12,
       "y": 14,
@@ -110,7 +111,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT",
-      "local_id": "LOCALID_VALLEY_WINDWORKS_INTERIOR_GALACTIC_GRUNT",
       "scriptOnly": "true"
     }
   ],

@@ -81,21 +81,7 @@
   "warp_events": [
     {
       "x": 9,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_FUEGO_IRONWORKS_INTERIOR",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 8,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_FUEGO_IRONWORKS_INTERIOR",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 10,
-      "y": 11,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_FUEGO_IRONWORKS_INTERIOR",
       "dest_warp_id": "0"

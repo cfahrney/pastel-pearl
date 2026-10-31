@@ -116,7 +116,7 @@ ValleyWindworks_Interior_EventScript_Trigger1_2_2::
 ValleyWindworks_Interior_EventScript_Trigger1_2_3::
 	msgbox ValleyWindworks_Interior_Text_Trigger1, MSGBOX_DEFAULT
 	closemessage
-	@ TODO(DP): Scripted battle against DP trainer #295 (Commander Mars)
+	trainerbattle_no_intro TRAINER_VALLEY_WINDWORKS_INTERIOR_MARS_WINDWORKS_FIGHT, ValleyWindworks_Interior_Text_Trigger1Defeated
 	msgbox ValleyWindworks_Interior_Text_Trigger1_2, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -355,6 +355,10 @@ ValleyWindworks_Interior_Text_NPC4_2:
 	.string "the mountains in this canyon.\p"
 	.string "We produce energy from the power of\n"
 	.string "nature itself. It's quite wonderful.$"
+
+ValleyWindworks_Interior_Text_Trigger1Defeated:
+	.string "This can't be?! I lost?!\n"
+	.string "You...you uppity brat!$"
 
 ValleyWindworks_Interior_Text_Trigger1:
 	.string "I'm one of Team Galactic's three\n"

@@ -34,30 +34,28 @@ ValleyWindworks_EventScript_NPC2::
 	faceplayer
 	msgbox ValleyWindworks_Text_NPC2, MSGBOX_DEFAULT
 	closemessage
-	@ TODO(DP): Scripted battle against DP trainer #843 (Galactic Grunt)
-	goto_if_eq VAR_RESULT, 0, ValleyWindworks_EventScript_NPC2_2
+	trainerbattle_no_intro TRAINER_VALLEY_WINDWORKS_GALACTIC_GRUNT_WINDWORKS_FIGHT, ValleyWindworks_Text_NPC2Defeated
 	msgbox ValleyWindworks_Text_NPC2_2, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_VALLEY_WINDWORKS_GALACTIC_GRUNT, ValleyWindworks_Movement_GalacticGrunt
 	waitmovement 0
+	setmetatile 19, 11, METATILE_Floaroma_WindworksDoor, TRUE
 	opendoor 19, 11
 	waitdooranim
 	applymovement LOCALID_VALLEY_WINDWORKS_GALACTIC_GRUNT, ValleyWindworks_Movement_GalacticGrunt2
 	waitmovement 0
 	closedoor 19, 11
 	waitdooranim
+	call_if_unset FLAG_VALLEY_WINDWORKS_SIGN_1, ValleyWindworks_OnLoad_2
 	msgbox ValleyWindworks_Text_NPC2_3, MSGBOX_DEFAULT
 	removeobject LOCALID_VALLEY_WINDWORKS_GALACTIC_GRUNT
 	closemessage
 	releaseall
 	end
 
-ValleyWindworks_EventScript_NPC2_2::
-	releaseall
-	end
-
 ValleyWindworks_EventScript_Sign2::
 	lockall
+	goto_if_set FLAG_VALLEY_WINDWORKS_SIGN_1, ValleyWindworks_EventScript_Sign2_2_2
 	goto_if_set FLAG_FLOAROMA_MEADOW_TRIGGER_2, ValleyWindworks_EventScript_Sign2_2
 	msgbox ValleyWindworks_Text_Sign2, MSGBOX_DEFAULT
 	closemessage
@@ -70,7 +68,7 @@ ValleyWindworks_EventScript_Sign2_2::
 	goto_if_eq VAR_RESULT, NO, ValleyWindworks_EventScript_Sign2_2_2
 	setflag FLAG_VALLEY_WINDWORKS_SIGN_1
 	call ValleyWindworks_EventScript_Sign2_2_3
-	@ TODO(DP): SetWarpPosition 0, 243, 654
+	special DrawWholeMapView
 	msgbox ValleyWindworks_Text_Sign2_3, MSGBOX_DEFAULT
 	closemessage
 	releaseall
@@ -82,7 +80,7 @@ ValleyWindworks_EventScript_Sign2_2_2::
 	end
 
 ValleyWindworks_EventScript_Sign2_2_3::
-	@ TODO(DP): SetBgEventPosition 1, 243, 650
+	setmetatile 19, 11, METATILE_Floaroma_WindworksDoor, TRUE
 	return
 
 ValleyWindworks_OnLoad::
@@ -91,8 +89,9 @@ ValleyWindworks_OnLoad::
 	goto_if_set FLAG_VALLEY_WINDWORKS_EVENT_1, ValleyWindworks_OnLoad_2_2
 	end
 
+@ Locked: a non-door copy of the door tile, so pressing Up doesn't warp.
 ValleyWindworks_OnLoad_2::
-	@ TODO(DP): SetWarpPosition 0, 243, 650
+	setmetatile 19, 11, METATILE_Floaroma_WindworksDoor_Locked, TRUE
 	return
 
 ValleyWindworks_OnLoad_2_2::
@@ -134,6 +133,10 @@ ValleyWindworks_Movement_GalacticGrunt2:
 	walk_up
 	set_invisible
 	step_end
+
+ValleyWindworks_Text_NPC2Defeated:
+	.string "Yeah, like I'm really supposed to\n"
+	.string "win with a Pokémon like this...$"
 
 ValleyWindworks_Text_NPC2:
 	.string "Don't you dare go into the Valley\n"
