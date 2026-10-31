@@ -156,124 +156,13 @@ CanalaveCity_EventScript_NPC10::
 	end
 
 CanalaveCity_EventScript_NPC6::
-	lockall
+	lock
 	faceplayer
-	copyvar VAR_0x8004, VAR_FACING
-	faceplayer
-	goto_if_eq VAR_CANALAVE_CITY_STATE, 2, CanalaveCity_EventScript_NPC6_2
-	message CanalaveCity_Text_NPC6_2
-	waitmessage
-	@ TODO(DP): Multi 1, 1, 0, 1, 32780
-	@ TODO(DP): Unk0042 213, 0
-	call_if_set FLAG_CANALAVE_CITY_SAILOR_1, CanalaveCity_EventScript_NPC6_2_2
-	call_if_set FLAG_CANALAVE_CITY_SAILOR_2, CanalaveCity_EventScript_NPC6_2_3
-	@ TODO(DP): Unk0042 218, 4
-	@ TODO(DP): CloseMulti
-	goto_if_eq VAR_RESULT, 0, CanalaveCity_EventScript_NPC6_2_4
-	goto_if_eq VAR_RESULT, 1, CanalaveCity_EventScript_NPC6_2_5
-	goto_if_eq VAR_RESULT, 2, CanalaveCity_EventScript_NPC6_2_6
-	goto_if_eq VAR_RESULT, 3, CanalaveCity_EventScript_NPC6_2_7
-	goto CanalaveCity_EventScript_NPC6_2_7
-
-CanalaveCity_EventScript_NPC6_2::
-	checkitem ITEM_NONE @ TODO(DP): ITEM_LUNAR_WING, 1
-	goto_if_eq VAR_RESULT, TRUE, CanalaveCity_EventScript_NPC6_2_8
-	msgbox CanalaveCity_Text_NPC6_3, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CanalaveCity_EventScript_NPC6_2_9
-	goto_if_eq VAR_RESULT, NO, CanalaveCity_EventScript_NPC6_2_10
-	end
-
-CanalaveCity_EventScript_NPC6_2_2::
-	@ TODO(DP): Unk0042 214, 1
-	return
-
-CanalaveCity_EventScript_NPC6_2_3::
-	@ TODO(DP): Unk0042 215, 2
-	return
-
-CanalaveCity_EventScript_NPC6_2_4::
-	call CanalaveCity_EventScript_NPC6_2_11
-	call_if_eq VAR_0x8004, DIR_SOUTH, CanalaveCity_EventScript_NPC6_2_12
-	call_if_eq VAR_0x8004, DIR_EAST, CanalaveCity_EventScript_NPC6_2_13
-	call_if_eq VAR_0x8004, DIR_NORTH, CanalaveCity_EventScript_NPC6_2_14
-	@ TODO(DP): ShipAnimation 3, 3, 288, 100, 502
-	releaseall
-	end
-
-CanalaveCity_EventScript_NPC6_2_5::
-	call CanalaveCity_EventScript_NPC6_2_11
-	call_if_eq VAR_0x8004, DIR_SOUTH, CanalaveCity_EventScript_NPC6_2_12
-	call_if_eq VAR_0x8004, DIR_EAST, CanalaveCity_EventScript_NPC6_2_13
-	call_if_eq VAR_0x8004, DIR_NORTH, CanalaveCity_EventScript_NPC6_2_14
-	@ TODO(DP): ShipAnimation 3, 2, 260, 39, 277
-	releaseall
-	end
-
-CanalaveCity_EventScript_NPC6_2_6::
-	call CanalaveCity_EventScript_NPC6_2_11
-	call_if_eq VAR_0x8004, DIR_SOUTH, CanalaveCity_EventScript_NPC6_2_12
-	call_if_eq VAR_0x8004, DIR_EAST, CanalaveCity_EventScript_NPC6_2_13
-	call_if_eq VAR_0x8004, DIR_NORTH, CanalaveCity_EventScript_NPC6_2_14
-	@ TODO(DP): ShipAnimation 3, 3, 320, 152, 277
-	releaseall
-	end
-
-CanalaveCity_EventScript_NPC6_2_7::
+	msgbox CanalaveCity_Text_NPC6_2, MSGBOX_DEFAULT
 	msgbox CanalaveCity_Text_NPC6_4, MSGBOX_DEFAULT
 	closemessage
-	releaseall
+	release
 	end
-
-CanalaveCity_EventScript_NPC6_2_8::
-	msgbox CanalaveCity_Text_NPC6_5, MSGBOX_DEFAULT
-	closemessage
-	releaseall
-	end
-
-CanalaveCity_EventScript_NPC6_2_9::
-	msgbox CanalaveCity_Text_NPC6_6, MSGBOX_DEFAULT
-	closemessage
-	goto CanalaveCity_EventScript_NPC6_2_5
-
-CanalaveCity_EventScript_NPC6_2_10::
-	msgbox CanalaveCity_Text_NPC6_7, MSGBOX_DEFAULT
-	closemessage
-	releaseall
-	end
-
-CanalaveCity_EventScript_NPC6_2_11::
-	msgbox CanalaveCity_Text_NPC6_8, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_CANALAVE_CITY_SAILOR_2, CanalaveCity_Movement_Sailor2
-	waitmovement 0
-	playse SE_EXIT
-	applymovement LOCALID_CANALAVE_CITY_SAILOR_2, CanalaveCity_Movement_Sailor22
-	waitmovement 0
-	return
-
-CanalaveCity_EventScript_NPC6_2_12::
-	applymovement LOCALID_PLAYER, CanalaveCity_Movement_Player
-	waitmovement 0
-	playse SE_EXIT
-	applymovement LOCALID_PLAYER, CanalaveCity_Movement_Player2
-	waitmovement 0
-	return
-
-CanalaveCity_EventScript_NPC6_2_13::
-	applymovement LOCALID_PLAYER, CanalaveCity_Movement_Player3
-	waitmovement 0
-	playse SE_EXIT
-	applymovement LOCALID_PLAYER, CanalaveCity_Movement_Player2
-	waitmovement 0
-	return
-
-CanalaveCity_EventScript_NPC6_2_14::
-	applymovement LOCALID_PLAYER, CanalaveCity_Movement_Player4
-	waitmovement 0
-	playse SE_EXIT
-	applymovement LOCALID_PLAYER, CanalaveCity_Movement_Player2
-	waitmovement 0
-	return
 
 CanalaveCity_EventScript_Sign1::
 	call CanalaveCity_EventScript_Sign1_2
@@ -312,41 +201,38 @@ CanalaveCity_EventScript_Sign7::
 
 CanalaveCity_EventScript_Trigger1::
 	lockall
-	getplayerxy VAR_0x8004, VAR_0x8005
-	goto_if_eq VAR_0x8005, 12, CanalaveCity_EventScript_Trigger1_2
-	goto_if_eq VAR_0x8005, 13, CanalaveCity_EventScript_Trigger1_2_2
-	goto_if_eq VAR_0x8005, 14, CanalaveCity_EventScript_Trigger1_2_3
-	goto_if_eq VAR_0x8005, 15, CanalaveCity_EventScript_Trigger1_2_4
-	goto_if_eq VAR_0x8005, 16, CanalaveCity_EventScript_Trigger1_2_5
-	end
-
-CanalaveCity_EventScript_Trigger1_2::
-	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 6, 12
-	goto CanalaveCity_EventScript_Trigger1_2_6
-
-CanalaveCity_EventScript_Trigger1_2_2::
-	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 6, 13
-	goto CanalaveCity_EventScript_Trigger1_2_6
-
-CanalaveCity_EventScript_Trigger1_2_3::
-	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 6, 14
-	goto CanalaveCity_EventScript_Trigger1_2_6
-
-CanalaveCity_EventScript_Trigger1_2_4::
-	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 6, 15
-	goto CanalaveCity_EventScript_Trigger1_2_6
-
-CanalaveCity_EventScript_Trigger1_2_5::
-	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 6, 16
-	goto CanalaveCity_EventScript_Trigger1_2_6
-
-CanalaveCity_EventScript_Trigger1_2_6::
 	setobjectmovementtype LOCALID_CANALAVE_CITY_BARRY, MOVEMENT_TYPE_FACE_RIGHT
-	clearflag FLAG_HIDE_CANALAVE_CITY_BARRY
 	clearflag FLAG_HIDE_CANALAVE_CITY_BARRY
 	addobject LOCALID_CANALAVE_CITY_BARRY
 	playbgm MUS_RIVAL_THEME, FALSE
-	applymovement LOCALID_CANALAVE_CITY_BARRY, CanalaveCity_Movement_Barry
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_eq VAR_0x8005, 14, CanalaveCity_EventScript_Trigger1_2
+	goto_if_eq VAR_0x8005, 15, CanalaveCity_EventScript_Trigger1_2_2
+	goto_if_eq VAR_0x8005, 16, CanalaveCity_EventScript_Trigger1_2_3
+	goto CanalaveCity_EventScript_Trigger1_2_4
+
+CanalaveCity_EventScript_Trigger1_2::
+	applymovement LOCALID_CANALAVE_CITY_BARRY, CanalaveCity_Movement_Barry_E23_14
+	waitmovement 0
+	goto CanalaveCity_EventScript_Trigger1_2_6
+
+CanalaveCity_EventScript_Trigger1_2_2::
+	applymovement LOCALID_CANALAVE_CITY_BARRY, CanalaveCity_Movement_Barry_E23_15
+	waitmovement 0
+	goto CanalaveCity_EventScript_Trigger1_2_6
+
+CanalaveCity_EventScript_Trigger1_2_3::
+	applymovement LOCALID_CANALAVE_CITY_BARRY, CanalaveCity_Movement_Barry_E23_16
+	waitmovement 0
+	goto CanalaveCity_EventScript_Trigger1_2_6
+
+CanalaveCity_EventScript_Trigger1_2_4::
+	applymovement LOCALID_CANALAVE_CITY_BARRY, CanalaveCity_Movement_Barry_E23_17
+	waitmovement 0
+	goto CanalaveCity_EventScript_Trigger1_2_6
+
+CanalaveCity_EventScript_Trigger1_2_6::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
 	waitmovement 0
 	setspeaker SP_NAME_RIVAL
 	msgbox CanalaveCity_Text_Trigger1, MSGBOX_DEFAULT
@@ -357,15 +243,15 @@ CanalaveCity_EventScript_Trigger1_2_6::
 	goto CanalaveCity_EventScript_Trigger1_2_9
 
 CanalaveCity_EventScript_Trigger1_2_7::
-	@ TODO(DP): Scripted battle against DP trainer #477 (Pokémon Trainer Barry Cedric)
+	trainerbattle_no_intro TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_TURTWIG, CanalaveCity_Text_Trigger1Defeated
 	goto CanalaveCity_EventScript_Trigger1_2_10
 
 CanalaveCity_EventScript_Trigger1_2_8::
-	@ TODO(DP): Scripted battle against DP trainer #478 (Pokémon Trainer Barry Cedric)
+	trainerbattle_no_intro TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_CHIMCHAR, CanalaveCity_Text_Trigger1Defeated
 	goto CanalaveCity_EventScript_Trigger1_2_10
 
 CanalaveCity_EventScript_Trigger1_2_9::
-	@ TODO(DP): Scripted battle against DP trainer #476 (Pokémon Trainer Barry Cedric)
+	trainerbattle_no_intro TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_PIPLUP, CanalaveCity_Text_Trigger1Defeated
 	goto CanalaveCity_EventScript_Trigger1_2_10
 
 CanalaveCity_EventScript_Trigger1_2_10::
@@ -387,7 +273,6 @@ CanalaveCity_EventScript_Trigger1_2_11::
 CanalaveCity_OnTransition::
 	call Common_EventScript_SetupLucasDawnAssistantGfxId
 	call_if_eq VAR_CANALAVE_CITY_STATE_3, 2, CanalaveCity_OnTransition_2
-	call_if_eq VAR_CANALAVE_CITY_STATE_3, 3, CanalaveCity_OnTransition_2_2
 	call CanalaveCity_EventScript_Sign1_2
 	call_if_eq VAR_TEMP_0, 0, CanalaveCity_OnTransition_2_3
 	call_if_eq VAR_TEMP_0, 1, CanalaveCity_OnTransition_2_4
@@ -405,12 +290,6 @@ CanalaveCity_OnTransition_2::
 	setvar VAR_CANALAVE_CITY_STATE_3, 0
 	return
 
-CanalaveCity_OnTransition_2_2::
-	setobjectxyperm LOCALID_CANALAVE_CITY_SAILOR_2, 23, 5
-	setobjectmovementtype LOCALID_CANALAVE_CITY_SAILOR_2, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectmovementtype LOCALID_CANALAVE_CITY_SAILOR_2, MOVEMENT_TYPE_FACE_RIGHT
-	return
-
 CanalaveCity_OnTransition_2_3::
 	@ TODO(DP): SetBgEventPosition 0, 58, 713
 	@ TODO(DP): SetWarpPosition 5, 59, 712
@@ -421,13 +300,13 @@ CanalaveCity_OnTransition_2_4::
 	return
 
 CanalaveCity_OnTransition_2_5::
-	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 7, 22
+	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 15, 24
 	setobjectmovementtype LOCALID_CANALAVE_CITY_BARRY, MOVEMENT_TYPE_FACE_UP
 	setobjectmovementtype LOCALID_CANALAVE_CITY_BARRY, MOVEMENT_TYPE_FACE_UP
 	return
 
 CanalaveCity_OnTransition_2_6::
-	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 5, 10
+	setobjectxyperm LOCALID_CANALAVE_CITY_BARRY, 13, 12
 	setobjectmovementtype LOCALID_CANALAVE_CITY_BARRY, MOVEMENT_TYPE_FACE_DOWN
 	setobjectmovementtype LOCALID_CANALAVE_CITY_BARRY, MOVEMENT_TYPE_FACE_DOWN
 	return
@@ -525,65 +404,57 @@ CanalaveCity_EventScript_OnFrame2_2_3::
 	releaseall
 	end
 
-CanalaveCity_EventScript_OnFrame3::
-	lockall
-	playse SE_PIN
-	applymovement LOCALID_CANALAVE_CITY_SAILOR_2, CanalaveCity_Movement_Sailor23
-	waitmovement 0
-	msgbox CanalaveCity_Text_OnFrame3, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_CANALAVE_CITY_SAILOR_2, CanalaveCity_Movement_Sailor24
-	waitmovement 0
-	removeobject LOCALID_CANALAVE_CITY_SAILOR_2
-	setobjectxyperm LOCALID_CANALAVE_CITY_SAILOR_2, 13, 39
-	setobjectmovementtype LOCALID_CANALAVE_CITY_SAILOR_2, MOVEMENT_TYPE_FACE_LEFT
-	setobjectmovementtype LOCALID_CANALAVE_CITY_SAILOR_2, MOVEMENT_TYPE_FACE_LEFT
-	addobject LOCALID_CANALAVE_CITY_SAILOR_2
-	setvar VAR_CANALAVE_CITY_STATE_3, 4
-	releaseall
-	end
-
 CanalaveCity_OnFrame:
 	map_script_2 VAR_CANALAVE_CITY_STATE_2, 2, CanalaveCity_EventScript_OnFrame1
 	map_script_2 VAR_CANALAVE_CITY_STATE_2, 4, CanalaveCity_EventScript_OnFrame2
-	map_script_2 VAR_CANALAVE_CITY_STATE_3, 3, CanalaveCity_EventScript_OnFrame3
 	.2byte 0
 
-CanalaveCity_Movement_Sailor2:
+CanalaveCity_Movement_Barry_E23_14:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	face_right
-	delay_16
-	delay_16
 	step_end
 
-CanalaveCity_Movement_Sailor22:
-	set_invisible
-	step_end
-
-CanalaveCity_Movement_Player:
-	walk_down
+CanalaveCity_Movement_Barry_E23_15:
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	face_right
-	delay_16
-	delay_16
 	step_end
 
-CanalaveCity_Movement_Player2:
-	set_invisible
-	step_end
-
-CanalaveCity_Movement_Player3:
-	walk_right
-	delay_16
-	delay_16
-	step_end
-
-CanalaveCity_Movement_Player4:
-	walk_up
+CanalaveCity_Movement_Barry_E23_16:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	face_right
-	delay_16
-	delay_16
 	step_end
 
-CanalaveCity_Movement_Barry:
+CanalaveCity_Movement_Barry_E23_17:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
@@ -592,6 +463,8 @@ CanalaveCity_Movement_Barry:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
+	walk_fast_right
+	face_right
 	step_end
 
 CanalaveCity_Movement_Barry2:
@@ -680,29 +553,6 @@ CanalaveCity_Movement_ProfRowan2:
 
 CanalaveCity_Movement_Npc:
 	walk_in_place_left
-	step_end
-
-CanalaveCity_Movement_Sailor23:
-	emote_exclamation_mark
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	step_end
-
-CanalaveCity_Movement_Sailor24:
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
 	step_end
 
 CanalaveCity_Text_NPC5_2:
@@ -810,36 +660,9 @@ CanalaveCity_Text_NPC10:
 CanalaveCity_Text_NPC6_2:
 	.string "Do you wanna set sail?$"
 
-CanalaveCity_Text_NPC6_3:
-	.string "I've lost my love of sailing since my son\n"
-	.string "fell into that horrid nightmare...\p"
-	.string "I need the Lunar Wing from Fullmoon\n"
-	.string "Island to awaken him!\p"
-	.string "Would you go to Fullmoon Island for me?\n"
-	.string "If not for me, then for my son?$"
-
 CanalaveCity_Text_NPC6_4:
 	.string "You just tell me whenever you need to\n"
 	.string "set sail!$"
-
-CanalaveCity_Text_NPC6_5:
-	.string "That Lunar Wing... Please! Take it to my\n"
-	.string "son...$"
-
-CanalaveCity_Text_NPC6_6:
-	.string "We're both counting on you!\p"
-	.string "Only you can awaken my son from his\n"
-	.string "awful nightmare...\p"
-	.string "Please, I need the Lunar Wing from\n"
-	.string "Fullmoon Island to awaken him!$"
-
-CanalaveCity_Text_NPC6_7:
-	.string "Do you need to get ready?\p"
-	.string "I'll be waiting here. We're desperate for\n"
-	.string "your help.$"
-
-CanalaveCity_Text_NPC6_8:
-	.string "Anchors aweigh!$"
 
 CanalaveCity_Text_Sign1_2:
 	.string "Harbor Inn A Roost for Restless Sailors\n"
@@ -919,11 +742,50 @@ CanalaveCity_Text_OnFrame2_5:
 CanalaveCity_Text_OnFrame2_6:
 	.string "Lake Valor... I wonder what happened?$"
 
-CanalaveCity_Text_OnFrame3:
-	.string "You've been asleep for a long, long\n"
-	.string "time... What happened to you?\p"
-	.string "And what were you doing here? No one's\n"
-	.string "lived here for fifty years.$"
-
 CanalaveCity_Text_PsyduckSpeaker:
 	.string "Psyduck$"
+
+CanalaveCity_Text_Trigger1Defeated:
+	.string "What just happened?! You're telling me\n"
+	.string "I lost?!$"
+
+CanalaveCity_EventScript_NPC11::
+	end
+
+CanalaveCity_Text_NPC11:
+	.string "CANALAVE CITY NPC 11$"
+
+CanalaveCity_EventScript_NPC12::
+	end
+
+CanalaveCity_Text_NPC12:
+	.string "CANALAVE CITY NPC 12$"
+
+CanalaveCity_EventScript_NPC13::
+	end
+
+CanalaveCity_Text_NPC13:
+	.string "CANALAVE CITY NPC 13$"
+
+CanalaveCity_EventScript_NPC14::
+	end
+
+CanalaveCity_Text_NPC14:
+	.string "CANALAVE CITY NPC 14$"
+
+CanalaveCity_EventScript_NPC15::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DRATINI, CRY_MODE_NORMAL
+	setspeaker CanalaveCity_Text_NPC15Speaker
+	msgbox CanalaveCity_Text_NPC15, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+CanalaveCity_Text_NPC15Speaker:
+	.string "Dratini$"
+
+CanalaveCity_Text_NPC15:
+	.string "Draaaaa$"

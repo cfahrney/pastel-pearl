@@ -28,6 +28,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_CANALAVE_CITY_LIBRARY_1_F_LASS",
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 2,
       "y": 5,
@@ -38,8 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CanalaveCity_Library_1F_EventScript_NPC2",
-      "flag": "0",
-      "local_id": "LOCALID_CANALAVE_CITY_LIBRARY_1_F_LASS"
+      "flag": "0"
     }
   ],
   "warp_events": [

@@ -15,14 +15,23 @@ Route218_CanalaveGatehouse_EventScript_NPC2::
 Route218_CanalaveGatehouse_EventScript_Trigger1::
 	lockall
 	call Route218_CanalaveGatehouse_EventScript_Trigger1_2
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
 	checkplayergender
 	goto_if_eq VAR_RESULT, 0, Route218_CanalaveGatehouse_EventScript_Trigger1_2_2
 	goto Route218_CanalaveGatehouse_EventScript_Trigger1_2_3
 
 Route218_CanalaveGatehouse_EventScript_Trigger1_2::
 	getplayerxy VAR_0x8005, VAR_0x8006
+	goto_if_eq VAR_0x8006, 4, Route218_CanalaveGatehouse_EventScript_Trigger1_2_10
 	goto_if_eq VAR_0x8006, 5, Route218_CanalaveGatehouse_EventScript_Trigger1_2_4
 	goto Route218_CanalaveGatehouse_EventScript_Trigger1_2_5
+
+Route218_CanalaveGatehouse_EventScript_Trigger1_2_10::
+	playse SE_PIN
+	applymovement LOCALID_ROUTE218_CANALAVE_GATEHOUSE_ASSISTANT, Route218_CanalaveGatehouse_Movement_Assistant_E8_4
+	waitmovement 0
+	return
 
 Route218_CanalaveGatehouse_EventScript_Trigger1_2_2::
 	msgbox Route218_CanalaveGatehouse_Text_Trigger1, MSGBOX_DEFAULT
@@ -57,8 +66,14 @@ Route218_CanalaveGatehouse_EventScript_Trigger1_2_6::
 
 Route218_CanalaveGatehouse_EventScript_Trigger1_2_7::
 	getplayerxy VAR_0x8005, VAR_0x8006
+	goto_if_eq VAR_0x8006, 4, Route218_CanalaveGatehouse_EventScript_Trigger1_2_11
 	goto_if_eq VAR_0x8006, 5, Route218_CanalaveGatehouse_EventScript_Trigger1_2_8
 	goto Route218_CanalaveGatehouse_EventScript_Trigger1_2_9
+
+Route218_CanalaveGatehouse_EventScript_Trigger1_2_11::
+	applymovement LOCALID_ROUTE218_CANALAVE_GATEHOUSE_ASSISTANT, Route218_CanalaveGatehouse_Movement_Assistant_E8_4_Leave
+	waitmovement 0
+	return
 
 Route218_CanalaveGatehouse_EventScript_Trigger1_2_8::
 	applymovement LOCALID_ROUTE218_CANALAVE_GATEHOUSE_ASSISTANT, Route218_CanalaveGatehouse_Movement_Assistant3
@@ -70,6 +85,22 @@ Route218_CanalaveGatehouse_EventScript_Trigger1_2_9::
 	waitmovement 0
 	return
 
+Route218_CanalaveGatehouse_Movement_Assistant_E8_4:
+	emote_exclamation_mark
+	walk_right
+	walk_up
+	walk_up
+	walk_in_place_right
+	step_end
+
+Route218_CanalaveGatehouse_Movement_Assistant_E8_4_Leave:
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
 Route218_CanalaveGatehouse_Movement_Assistant:
 	emote_exclamation_mark
 	walk_right
@@ -80,6 +111,7 @@ Route218_CanalaveGatehouse_Movement_Assistant:
 Route218_CanalaveGatehouse_Movement_Assistant2:
 	emote_exclamation_mark
 	walk_right
+	walk_in_place_right
 	step_end
 
 Route218_CanalaveGatehouse_Movement_Assistant3:
