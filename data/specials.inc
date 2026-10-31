@@ -650,3 +650,4 @@ gSpecials::
 	def_special RememberTradedMon
 	def_special BufferTradedMon
 	def_special TradedMonEmote
+	def_special GetBadgeCount

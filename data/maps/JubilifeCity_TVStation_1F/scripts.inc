@@ -15,57 +15,41 @@ JubilifeCity_TVStation_1F_EventScript_NPC4::
 	end
 
 JubilifeCity_TVStation_1F_Text_NPC2:
-	.string "TV STATION 1F NPC 2$"
+	.string "I'm getting some impressionism, perhaps\n"
+	.string "late 18th century...$"
 
 JubilifeCity_TVStation_1F_Text_NPC3:
-	.string "TV STATION 1F NPC 3$"
+	.string "He has no idea what he's talking about\n"
+	.string "but he makes a good tour guide.$"
 
 JubilifeCity_TVStation_1F_Text_NPC4:
-	.string "TV STATION 1F NPC 4$"
+	.string "Such beauty in this piece... so\n"
+	.string "impressive...probably the best in here...\p"
+	.string "...\p"
+	.string "...it's my piece...$"
 
 JubilifeCity_TVStation_1F_EventScript_NPC5::
+	@ poe:behavior {"mode":"plain","options":[{"id":0,"text":"JubilifeCity_TVStation_1F_Text_NPC5_2"}]}
 	msgbox JubilifeCity_TVStation_1F_Text_NPC5_2, MSGBOX_NPC
 	end
 
 JubilifeCity_TVStation_1F_EventScript_NPC1::
+	@ poe:behavior {"mode":"plain","options":[{"id":0,"text":"JubilifeCity_TVStation_1F_Text_NPC1_2"}]}
 	msgbox JubilifeCity_TVStation_1F_Text_NPC1_2, MSGBOX_NPC
 	end
 
 JubilifeCity_TVStation_1F_EventScript_NPC6::
-	lock
-	faceplayer
-	goto_if_ne VAR_JUBILIFE_CITY_TVSTATION_1F_STATE, 0, JubilifeCity_TVStation_1F_EventScript_NPC6_2
-	@ TODO(DP): goto if DP system flag 2729 is set
-	msgbox JubilifeCity_TVStation_1F_Text_NPC6_2, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, JubilifeCity_TVStation_1F_EventScript_NPC6_2_3
-	goto JubilifeCity_TVStation_1F_EventScript_NPC6_2_4
+	msgbox JubilifeCity_TVStation_1F_Text_NPC6, MSGBOX_NPC
+	end
 
-JubilifeCity_TVStation_1F_EventScript_NPC6_2::
-	message JubilifeCity_TVStation_1F_Text_NPC6_3
-	waitmessage
-	copyvar VAR_0x8002, VAR_JUBILIFE_CITY_TVSTATION_1F_STATE
-	goto JubilifeCity_TVStation_1F_EventScript_NPC6_2_5
+JubilifeCity_TVStation_1F_Text_NPC6::
+	.string "Welcome to the Jubilife TV Station!\n"
+	.string "Please enjoy the art around the lobby,\l"
+	.string "as it's all local artists! We are big\l"
+	.string "supporters of the arts here.$"
 
 JubilifeCity_TVStation_1F_EventScript_NPC6_2_2::
 	msgbox JubilifeCity_TVStation_1F_Text_NPC6_4, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-JubilifeCity_TVStation_1F_EventScript_NPC6_2_3::
-	@ TODO(DP): Set DP system flag 2729
-	msgbox JubilifeCity_TVStation_1F_Text_NPC6_5, MSGBOX_DEFAULT
-	@ TODO(DP): CheckLottoNumber 32768
-	@ TODO(DP): SetvarIdNumber 0, 32768, 2, 5
-	msgbox JubilifeCity_TVStation_1F_Text_NPC6_6, MSGBOX_DEFAULT
-	@ TODO(DP): CompareLottoNumber 32769, 32770, 32771, 32768
-	goto_if_eq VAR_0x8002, 0, JubilifeCity_TVStation_1F_EventScript_NPC6_2_6
-	goto_if_eq VAR_0x8002, 1, JubilifeCity_TVStation_1F_EventScript_NPC6_2_7
-	goto_if_eq VAR_0x8003, 0, JubilifeCity_TVStation_1F_EventScript_NPC6_2_8
-	goto JubilifeCity_TVStation_1F_EventScript_NPC6_2_9
-
-JubilifeCity_TVStation_1F_EventScript_NPC6_2_4::
-	msgbox JubilifeCity_TVStation_1F_Text_NPC6_7, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -348,14 +332,12 @@ JubilifeCity_TVStation_1F_EventScript_NPC13_2_2::
 JubilifeCity_TVStation_1F_EventScript_NPC14::
 	lock
 	faceplayer
-	@ TODO(DP): goto if DP trainer #431 (Guitarist Arturo) is beaten
+	goto_if_defeated TRAINER_JUBILIFE_CITY_TVSTATION_1F_GUITARIST, JubilifeCity_TVStation_1F_EventScript_NPC14_2
 	msgbox JubilifeCity_TVStation_1F_Text_NPC14, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, JubilifeCity_TVStation_1F_EventScript_NPC14_2_2
 	msgbox JubilifeCity_TVStation_1F_Text_NPC14_2, MSGBOX_DEFAULT
 	closemessage
-	@ TODO(DP): Scripted battle against DP trainer #431 (Guitarist Arturo)
-	@ TODO(DP): Mark DP trainer #431 beaten
-	@ TODO(DP): Set DP system flag 2735
+	trainerbattle_no_intro TRAINER_JUBILIFE_CITY_TVSTATION_1F_GUITARIST, JubilifeCity_TVStation_1F_Text_NPC14Defeat
 	release
 	end
 
@@ -372,6 +354,7 @@ JubilifeCity_TVStation_1F_EventScript_NPC14_2_2::
 	end
 
 JubilifeCity_TVStation_1F_EventScript_NPC7::
+	@ poe:behavior {"mode":"plain","options":[{"id":0,"text":"JubilifeCity_TVStation_1F_Text_NPC7_2"}]}
 	msgbox JubilifeCity_TVStation_1F_Text_NPC7_2, MSGBOX_NPC
 	end
 
@@ -394,7 +377,6 @@ JubilifeCity_TVStation_1F_OnTransition_2::
 	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_REPORTER_2
 	setflag FLAG_JUBILIFE_CITY_TVSTATION_1F_EVENT_1
 	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_PIKACHU
-	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_MAN
 	@ TODO(DP): GetDayOfWeek 16384
 	goto_if_eq VAR_TEMP_0, 0, JubilifeCity_TVStation_1F_OnTransition_2_2
 	goto_if_eq VAR_TEMP_0, 1, JubilifeCity_TVStation_1F_OnTransition_2_3
@@ -431,23 +413,19 @@ JubilifeCity_TVStation_1F_OnTransition_2_7::
 	end
 
 JubilifeCity_TVStation_1F_OnTransition_2_8::
-	clearflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_MAN
 	end
 
 JubilifeCity_TVStation_1F_Text_NPC5_2:
-	.string "They keep records of things like how\n"
-	.string "many battles you've won in a row, or how\l"
-	.string "many Pokémon you've caught.\p"
-	.string "You can check everyone's records up on\n"
-	.string "the third floor.$"
+	.string "The art is super cool and all but I\n"
+	.string "mostly just appreciate the free A/C. I\l"
+	.string "can't stand the heat! Maybe I should\l"
+	.string "move to Snowpoint City...$"
 
 JubilifeCity_TVStation_1F_Text_NPC1_2:
-	.string "Why don't you try dressing up your\n"
-	.string "Pokémon now?\p"
-	.string "We have a Fitting Room on the second\n"
-	.string "floor.\p"
-	.string "Dress up your Pokémon nicely with\n"
-	.string "Accessories!$"
+	.string "Hi there! Apologies, the upstairs is\n"
+	.string "currently off limits for non-employees.\l"
+	.string "We are hoping to bring back tours in the\l"
+	.string "near future, though! Stay tuned!$"
 
 JubilifeCity_TVStation_1F_Text_NPC6_2:
 	.string "This is the Pokémon Lottery Corner.\p"
@@ -645,12 +623,15 @@ JubilifeCity_TVStation_1F_Text_NPC14_3:
 	.string "about spirit, too!\p"
 	.string "That's why a battle is rock!$"
 
+JubilifeCity_TVStation_1F_Text_NPC14Defeat:
+	.string "You beat me, man, but...\n"
+	.string "I feel totally amped to jam harder!$"
+
 JubilifeCity_TVStation_1F_Text_NPC14_4:
 	.string "Now, that is so lame. You have to let\n"
 	.string "your passion burn!$"
 
 JubilifeCity_TVStation_1F_Text_NPC7_2:
-	.string "The Trainers that gather over there are\n"
-	.string "looking for battles.\p"
-	.string "That corner used to be for karaoke, but\n"
-	.string "now it's all battling!$"
+	.string "The TV Station turned their lobby into\n"
+	.string "a museum for local artists! I'd love to\l"
+	.string "have artwork displayed here one day...$"

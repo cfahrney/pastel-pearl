@@ -1006,6 +1006,15 @@ u8 GetLeadMonFriendshipScore(void)
     return GetMonFriendshipScore(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()]);
 }
 
+// specialvar VAR_RESULT, GetBadgeCount: how many badges the player has.
+u16 GetBadgeCount(void)
+{
+    u32 count = 0;
+    for (u32 flag = FLAG_BADGE01_GET; flag < FLAG_BADGE01_GET + NUM_BADGES; flag++)
+        count += FlagGet(flag);
+    return count;
+}
+
 static void CB2_FieldShowRegionMap(void)
 {
     FieldInitRegionMap(CB2_ReturnToFieldContinueScriptPlayMapMusic);

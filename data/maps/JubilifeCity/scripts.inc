@@ -253,8 +253,18 @@ JubilifeCity_Text_NPC14Speaker:
 	.string "Gible$"
 
 JubilifeCity_EventScript_NPC15::
+	@ poe:behavior {"mode":"plain","options":[{"id":0},{"id":1,"cond":{"var":"BADGES","op":"ge","value":1}}]}
+	specialvar VAR_RESULT, GetBadgeCount
+	goto_if_ge VAR_RESULT, 1, JubilifeCity_EventScript_NPC15Var1
 	msgbox JubilifeCity_Text_NPC15, MSGBOX_NPC
 	end
+
+JubilifeCity_EventScript_NPC15Var1::
+	msgbox JubilifeCity_Text_NPC15Var1, MSGBOX_NPC
+	end
+
+JubilifeCity_Text_NPC15Var1::
+	.string "JUBILIFE CITY NPC 15 OPTION 1$"
 
 JubilifeCity_Text_NPC15:
 	.string "Hey there, kiddo! Sorry, but the\n"

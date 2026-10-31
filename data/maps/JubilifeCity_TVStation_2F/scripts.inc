@@ -11,39 +11,21 @@ JubilifeCity_TVStation_2F_EventScript_NPC4::
 	end
 
 JubilifeCity_TVStation_2F_Text_NPC2:
-	.string "TV STATION 2F NPC 2$"
+	.string "Fooo$"
 
 JubilifeCity_TVStation_2F_Text_NPC4:
-	.string "TV STATION 2F NPC 4$"
+	.string "Foo bar$"
 
 JubilifeCity_TVStation_2F_EventScript_NPC1::
 	msgbox JubilifeCity_TVStation_2F_Text_NPC1_2, MSGBOX_NPC
 	end
 
 JubilifeCity_TVStation_2F_EventScript_NPC3::
-	lock
-	faceplayer
-	goto_if_set FLAG_JUBILIFE_CITY_TVSTATION_2F_NPC_1, JubilifeCity_TVStation_2F_EventScript_NPC3_2
-	copyvar VAR_RESULT, VAR_STARTER_MON
-	call_if_eq VAR_STARTER_MON, STARTER_TURTWIG, JubilifeCity_TVStation_2F_EventScript_NPC3_2_2
-	call_if_eq VAR_STARTER_MON, STARTER_CHIMCHAR, JubilifeCity_TVStation_2F_EventScript_NPC3_2_3
-	call_if_eq VAR_STARTER_MON, STARTER_PIPLUP, JubilifeCity_TVStation_2F_EventScript_NPC3_2_4
-	copyvar VAR_JUBILIFE_CITY_TVSTATION_2F_STATE, VAR_0x8004
-	@ TODO(DP): GetFashionNameWithArticle 0, 32772
-	msgbox JubilifeCity_TVStation_2F_Text_NPC3_2, MSGBOX_DEFAULT
-	setvar VAR_0x8005, 1
-	@ TODO(DP): Common DP script 2015
-	setflag FLAG_JUBILIFE_CITY_TVSTATION_2F_NPC_1
-	closemessage
-	release
+	msgbox JubilifeCity_TVStation_2F_Text_NPC3, MSGBOX_NPC
 	end
 
-JubilifeCity_TVStation_2F_EventScript_NPC3_2::
-	@ TODO(DP): GetFashionName 0, 16650
-	msgbox JubilifeCity_TVStation_2F_Text_NPC3_3, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
+JubilifeCity_TVStation_2F_Text_NPC3::
+	.string "Foooooooo$"
 
 JubilifeCity_TVStation_2F_EventScript_NPC3_2_2::
 	setvar VAR_0x8004, 92
@@ -73,9 +55,7 @@ JubilifeCity_TVStation_2F_Text_NPC1_2:
 	.string "dress today?$"
 
 JubilifeCity_TVStation_2F_Text_NPC3_2:
-	.string "The star of tomorrow is... You! Your\n"
-	.string "Pokémon has a glow about it!\p"
-	.string "So, a gift for our future star!$"
+	.string "Fooo$"
 
 JubilifeCity_TVStation_2F_Text_NPC3_3:
 	.string "That's a {STR_VAR_1}!\p"
