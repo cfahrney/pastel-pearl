@@ -169,7 +169,7 @@ VerityLakefront_EventScript_NPC1::
 	end
 
 VerityLakefront_Text_NPC1:
-	.string "{COLOR DYNAMIC_COLOR3}Verity Lakefront{COLOR DARK_GRAY} NPC 1$"
+	.string "krick$"
 
 VerityLakefront_Text_NPC1Speaker:
 	.string "Kricketune$"
@@ -186,7 +186,7 @@ VerityLakefront_EventScript_NPC2::
 	end
 
 VerityLakefront_Text_NPC2:
-	.string "{COLOR DYNAMIC_COLOR3}Verity Lakefront{COLOR DARK_GRAY} NPC 2$"
+	.string "tot$"
 
 VerityLakefront_Text_NPC2Speaker:
 	.string "Kricketot$"
@@ -203,7 +203,7 @@ VerityLakefront_EventScript_NPC3::
 	end
 
 VerityLakefront_Text_NPC3:
-	.string "{COLOR DYNAMIC_COLOR3}Verity Lakefront{COLOR DARK_GRAY} NPC 3$"
+	.string "Tooot$"
 
 VerityLakefront_Text_NPC3Speaker:
 	.string "Kricketot$"
