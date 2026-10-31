@@ -30,6 +30,8 @@ EventScript_ResetAllMapFlags::
 	setvar VAR_FLOAROMA_TOWN_STATE, 1
 	setvar VAR_OREBURGH_GATE_STATE, 1
 	@ end Diamond/Pearl
+	clearflag FLAG_HIDE_FLOAROMA_TOWN_CYRUS @ DP cut Floaroma's Cyrus scene; Pastel Pearl plays it
+	setvar VAR_FLOAROMA_TOWN_STATE, 0
 	setflag FLAG_HIDE_TWINLEAF_TOWN_BARRY
 	setflag FLAG_HIDE_LAKE_VERITY_BARRY
 	setflag FLAG_HIDE_LAKE_VERITY_SUITCASE

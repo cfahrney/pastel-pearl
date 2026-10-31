@@ -323,113 +323,114 @@
 // 0x7000+ so they can't collide with literal values like OBJ_EVENT_GFX_SPECIES (0x4000 + species).
 #define EXTRA_VARS_START                                 0x7000
 #define VAR_ROUTE205_STATE                               0x7000
-// @states Imported from Diamond/Pearl (DP var 0x4089).
-//    0  TODO
-//    1  TODO
+// @states Route 205 girl whose papa is trapped in the Valley Windworks (DP var 0x4089).
+//    0  Player hasn't met the little girl on Route 205
+//    1  Little girl has asked the player to rescue her papa from the Valley Windworks
+//    2  Player has beaten Mars and freed the papa; the balloon Pokémon can appear outside
 #define VAR_FLOAROMA_TOWN_STATE                          0x7001
-// @states Imported from Diamond/Pearl (DP var 0x4072).
-//    0  TODO
-//    1  TODO
+// @states Cyrus at Floaroma's south entrance (DP var 0x4072; DP cut the scene, Pastel Pearl restores it in new_game.inc).
+//    0  Cyrus scene at the south entrance plays
+//    1  Cyrus scene done
 #define VAR_FLOAROMA_MEADOW_STATE                        0x7002
-// @states Imported from Diamond/Pearl (DP var 0x40E9).
-//    0  TODO
-//    1  TODO
+// @states Team Galactic in Floaroma Meadow (DP var 0x40E9).
+//    0  Galactic grunts are still harassing the Floaroma Meadow honey man
+//    1  Player has beaten the grunts and picked up the Works Key
 #define VAR_VALLEY_WINDWORKS_STATE                       0x7003
-// @states Imported from Diamond/Pearl (DP var 0x40CF).
-//    0  TODO
-//    2  TODO
-//    3  TODO
+// @states Team Galactic's takeover of the Valley Windworks (DP var 0x40CF).
+//    0  Galactic grunt is still guarding inside the windworks
+//    1  Grunt saw the Works Key and fled; Mars is waiting inside
+//    2  Player has beaten Mars and the little girl's papa is free
+//    3  Windworks back to normal (set on entering the outside map after the rescue)
 #define VAR_ETERNA_FOREST_STATE                          0x7004
-// @states Imported from Diamond/Pearl (DP var 0x40B1).
-//    0  TODO
-//    1  TODO
-//    2  TODO
+// @states Cheryl travelling with the player through Eterna Forest (DP var 0x40B1).
+//    0  Cheryl isn't travelling with the player
+//    1  Cheryl is travelling with the player
+//    2  Cheryl has said goodbye at the forest exit
 #define VAR_ETERNA_FOREST_STATE_2                        0x7005
-// @states Imported from Diamond/Pearl (DP var 0x403F).
-//    0  TODO
-//    608  TODO
+// @states DP's tag-battle partner, as a DP trainer id (DP var 0x403F); not a story state.
+//    0  No tag-battle partner
+//  608  Cheryl is the player's tag-battle partner (Eterna Forest)
+//  612  Mira is the player's tag-battle partner (Wayward Cave)
 #define VAR_OLD_CHATEAU_1F_STATE                         0x7006
-// @states Imported from Diamond/Pearl (DP var 0x4110).
-//    0  TODO
-//    1  TODO
+// @states One-shot: the old man's walk-off when entering the Old Chateau (DP var 0x4110).
+//    0  Nothing pending
+//    1  Old man's walk-off plays this visit (set on entering, cleared after)
 #define VAR_ETERNA_CITY_STATE                            0x7007
-// @states Imported from Diamond/Pearl (DP var 0x407A).
-//    0  TODO
-//    1  TODO
-#define VAR_ETERNA_CITY_STATE_2                          0x7008
-// @states Imported from Diamond/Pearl (DP var 0x4114).
-//    0  TODO
-//    1  TODO
+// @states Cynthia at Eterna City's entrance (DP var 0x407A).
+//    0  Player hasn't met Cynthia at the city entrance
+//    1  Cynthia has talked to the player and left
 #define VAR_ETERNA_CITY_STATE_3                          0x7009
-// @states Imported from Diamond/Pearl (DP var 0x411B).
-//    0  TODO
-//    1  TODO
+// @states The Bicycle from the Eterna Bike Shop (DP var 0x411B).
+//    0  Player hasn't received the Bicycle
+//    1  Player has the Bicycle; Cycling Road gets pointed out at the south exit
 #define VAR_CANALAVE_CITY_STATE                          0x700A
-// @states Imported from Diamond/Pearl (DP var 0x4106).
-//    0  TODO
-//    2  TODO
+// @states Post-game: the sailor's son's nightmare and the Lunar Wing (DP var 0x4106).
+//    0  No nightmare yet, or the boy is cured
+//    1  Post-game: the sailor's son is having nightmares
+//    2  Player has seen the nightmare; the sailor will sail to Fullmoon Island
+//    3  Player woke the boy with the Lunar Wing
 #define VAR_CANALAVE_CITY_STATE_2                        0x700B
-// @states Imported from Diamond/Pearl (DP var 0x4078).
-//    0  TODO
-//    1  TODO
-//    2  TODO
-//    3  TODO
-//    4  TODO
-//    5  TODO
-//    6  TODO
+// @states Canalave story, from Barry's bridge battle to the lakes (DP var 0x4078).
+//    0  Player hasn't battled Barry at the bridge
+//    1  Player has beaten Barry at the bridge
+//    2  Player has the Mine Badge; Barry waits outside the Gym
+//    3  Barry congratulated the player and ran to the Library
+//    4  Rowan has handed out the lake assignments in the Library
+//    5  Lake Valor explosion reported; Rowan and the assistant leave
+//    6  Rowan and the assistant are gone from Canalave
 #define VAR_CANALAVE_CITY_STATE_3                        0x700C
-// @states Imported from Diamond/Pearl (DP var 0x40F8).
-//    0  TODO
-//    2  TODO
-//    3  TODO
-//    4  TODO
+// @states DP's Member Card event (Darkrai, Newmoon Island; DP var 0x40F8). Not in Pastel Pearl: nothing sets it.
+//    0  Nothing pending
+//    2  DP: mid-event (the Harbor Inn dream); reset to 0 on entering Canalave
 #define VAR_CANALAVE_CITY_STATE_4                        0x700D
-// @states Imported from Diamond/Pearl (DP var 0x4020).
-//    0  TODO
-//    97  TODO
+// @states DP's sprite var for the Lucas/Dawn object, set by player gender (DP var 0x4020); not a story state.
+//    0  Player is a girl
+//   97  Player is a boy (DP sprite 97)
 #define VAR_CANALAVE_CITY_STATE_5                        0x700E
-// @states Imported from Diamond/Pearl (DP var 0x40B2).
-//    0  TODO
-//    1  TODO
+// @states Rowan's meeting on Canalave Library 3F (DP var 0x40B2).
+//    0  Library meeting hasn't started
+//    1  Barry is waiting on Library 3F; the meeting plays on entering
+//    2  Library meeting with Rowan is done
 #define VAR_OREBURGH_GATE_STATE                          0x700F
-// @states Imported from Diamond/Pearl (DP var 0x4093).
-//    0  TODO
-//    1  TODO
-//    2  TODO
+// @states The hiker's HM Rock Smash in Oreburgh Gate (DP var 0x4093).
+//    0  Unused (new game sets 1)
+//    1  Hiker hasn't given the player HM Rock Smash yet
+//    2  Hiker has given the player HM Rock Smash
 #define VAR_JUBILIFE_CITY_TVSTATION_1F_STATE             0x7010
-// @states Imported from Diamond/Pearl (DP var 0x40F2).
-//    0  TODO
+// @states Loto prize held at the Lottery Corner while the Bag is full (DP var 0x40F2).
+//    0  No Loto prize waiting (any other value is the held prize)
 #define VAR_JUBILIFE_CITY_TVSTATION_2F_STATE             0x7011
-// @states Imported from Diamond/Pearl (DP var 0x410A).
-//    0  TODO
+// @states Scratch for the "star of tomorrow" gift (DP var 0x410A); not a story state.
+//    0  Holds the gift only while that script runs
 #define VAR_ETERNA_CITY_GYM_STATE                        0x7012
-// @states Imported from Diamond/Pearl (DP var 0x40AE).
-//    0  TODO
-//    1  TODO
-//    2  TODO
-//    3  TODO
-//    4  TODO
+// @states Gardenia's Gym: which trainers are beaten, each pointing to the next (DP var 0x40AE).
+//    0  No Gym trainers beaten yet
+//    1  First trainer beaten (hint: past the two boulders)
+//    2  Second trainer beaten (hint: in the middle of three trees)
+//    3  Third trainer beaten (hint: beside four flowers)
+//    4  All Gym trainers beaten; only Gardenia is left
 #define VAR_ROUTE206_ETERNA_GATEHOUSE_STATE              0x7013
-// @states Imported from Diamond/Pearl (DP var 0x40EC).
-//    0  TODO
+// @states Bicycle check at the Cycling Road gate, rechecked on every entry (DP var 0x40EC).
+//    0  Player has no Bicycle, so the clerk stops them
+//    1  Player has the Bicycle
 #define VAR_ROUTE218_CANALAVE_GATEHOUSE_STATE            0x7014
-// @states Imported from Diamond/Pearl (DP var 0x4105).
-//    0  TODO
-//    1  TODO
+// @states Rowan's assistant upgrading the Pokédex at the Route 218 gate (DP var 0x4105).
+//    0  Assistant hasn't upgraded the Pokédex yet
+//    1  Assistant has upgraded the Pokédex and left
 #define VAR_ROUTE206_STATE                               0x7015
-// @states Imported from Diamond/Pearl (DP var 0x411C).
-//    0  TODO
-//    1  TODO
+// @states One-shot: getting on the Bicycle when arriving on Cycling Road (DP var 0x411C).
+//    0  Nothing pending
+//    1  Player just arrived on Cycling Road; they're put on the Bicycle this frame
 #define VAR_WAYWARD_CAVE_1F_STATE                        0x7016
-// @states Imported from Diamond/Pearl (DP var 0x4091).
-//    0  TODO
-//    1  TODO
-//    2  TODO
+// @states Mira travelling with the player through Wayward Cave (DP var 0x4091).
+//    0  Mira isn't travelling with the player
+//    1  Mira is travelling with the player
+//    2  Mira has said goodbye at the cave exit
 #define VAR_WAYWARD_CAVE_1F_STATE_2                      0x7017
-// @states Imported from Diamond/Pearl (DP var 0x40E2).
-//    0  TODO
-//    1  TODO
-//    2  TODO
+// @states Which of Mira's chat lines comes next while she travels with you (DP var 0x40E2).
+//    0  Mira's first chat line comes next
+//    1  Mira's second chat line comes next
+//    2  Mira's last chat line, from then on
 #define VAR_UNUSED_0x7018                        0x7018 // Unused Var
 #define VAR_UNUSED_0x7019                        0x7019 // Unused Var
 #define VAR_UNUSED_0x701A                        0x701A // Unused Var

@@ -18963,3 +18963,237 @@ AI: Check Bad Move
 
 Onix
 Level: 17
+
+=== TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_TURTWIG ===
+Name: Barry
+Class: Rival
+Pic: Barry
+Gender: Male
+Music: Male
+Double Battle: No
+
+Staravia
+Level: 31
+- Aerial Ace
+- Take Down
+- Quick Attack
+- Double Team
+
+Buizel
+Level: 32
+- Aqua Jet
+- Pursuit
+- Quick Attack
+- Swift
+
+Heracross
+Level: 30
+- Brick Break
+- Aerial Ace
+- Night Slash
+- Horn Attack
+
+Roselia
+Level: 32
+- Giga Drain
+- Toxic Spikes
+- Leech Seed
+- Grass Whistle
+
+Monferno
+Level: 35
+- Brick Break
+- Flame Wheel
+- Mach Punch
+- Aerial Ace
+
+=== TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_PIPLUP ===
+Name: Barry
+Class: Rival
+Pic: Barry
+Gender: Male
+Music: Male
+Double Battle: No
+
+Staravia
+Level: 31
+- Aerial Ace
+- Take Down
+- Quick Attack
+- Double Team
+
+Buizel
+Level: 32
+- Aqua Jet
+- Pursuit
+- Quick Attack
+- Swift
+
+Heracross
+Level: 30
+- Brick Break
+- Aerial Ace
+- Night Slash
+- Horn Attack
+
+Ponyta
+Level: 32
+- Fire Spin
+- Take Down
+- Stomp
+- Tail Whip
+
+Grotle
+Level: 35
+- Razor Leaf
+- Bite
+- Mega Drain
+- Leech Seed
+
+=== TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_CHIMCHAR ===
+Name: Barry
+Class: Rival
+Pic: Barry
+Gender: Male
+Music: Male
+Double Battle: No
+
+Staravia
+Level: 31
+- Aerial Ace
+- Take Down
+- Quick Attack
+- Double Team
+
+Roselia
+Level: 32
+- Giga Drain
+- Toxic Spikes
+- Leech Seed
+- Grass Whistle
+
+Heracross
+Level: 30
+- Brick Break
+- Aerial Ace
+- Night Slash
+- Horn Attack
+
+Ponyta
+Level: 32
+- Fire Spin
+- Take Down
+- Stomp
+- Tail Whip
+
+Prinplup
+Level: 35
+- Bubble Beam
+- Aerial Ace
+- Metal Claw
+- Fury Attack
+
+=== TRAINER_FLOAROMA_MEADOW_GALACTIC_GRUNT_HONEY_FIGHT ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+
+Wurmple
+Level: 9
+- Tackle
+- String Shot
+
+Silcoon
+Level: 9
+- Tackle
+- Harden
+
+=== TRAINER_FLOAROMA_MEADOW_GALACTIC_GRUNT_2_HONEY_FIGHT ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+
+Zubat
+Level: 11
+- Leech Life
+- Astonish
+
+=== TRAINER_VALLEY_WINDWORKS_GALACTIC_GRUNT_WINDWORKS_FIGHT ===
+Name: Grunt
+Class: Galactic
+Pic: Galactic Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+
+Glameow
+Level: 11
+
+=== TRAINER_VALLEY_WINDWORKS_INTERIOR_MARS_WINDWORKS_FIGHT ===
+Name: Mars
+Class: Galactic
+Pic: Mars
+Gender: Female
+Music: Female
+Double Battle: No
+
+Zubat
+Level: 14
+- Bite
+- Leech Life
+- Toxic
+
+Purugly @ Oran Berry
+Level: 16
+- Feint Attack
+- Scratch
+- Fake Out
+
+=== TRAINER_JUBILIFE_CITY_TVSTATION_1F_GUITARIST ===
+Name: Arturo
+Class: Guitarist
+Pic: Rocker Guitarist
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Zubat
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_FOREST_EXTERIOR_1 ===
+Name: Beauty
+Class: Beauty
+Pic: Beauty Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ETERNA_FOREST_EXTERIOR_2 ===
+Name: Camper
+Class: Camper
+Pic: Camper Dp
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

@@ -981,12 +981,22 @@
 #define TRAINER_WAYWARD_CAVE_1F_8 972
 #define TRAINER_WAYWARD_CAVE_1F_9 973
 #define TRAINER_WAYWARD_CAVE_1F_10 974
+#define TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_TURTWIG 975
+#define TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_PIPLUP 976
+#define TRAINER_CANALAVE_CITY_BARRY_PLAYER_CHOSE_CHIMCHAR 977
+#define TRAINER_FLOAROMA_MEADOW_GALACTIC_GRUNT_HONEY_FIGHT 978
+#define TRAINER_FLOAROMA_MEADOW_GALACTIC_GRUNT_2_HONEY_FIGHT 979
+#define TRAINER_VALLEY_WINDWORKS_GALACTIC_GRUNT_WINDWORKS_FIGHT 980
+#define TRAINER_VALLEY_WINDWORKS_INTERIOR_MARS_WINDWORKS_FIGHT 981
+#define TRAINER_JUBILIFE_CITY_TVSTATION_1F_GUITARIST 982
+#define TRAINER_ETERNA_FOREST_EXTERIOR_1 983
+#define TRAINER_ETERNA_FOREST_EXTERIOR_2 984
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for a limited number of additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     975
+#define TRAINERS_COUNT_EMERALD     985
 #define MAX_TRAINERS_COUNT_EMERALD 1176
 
 #if IS_FRLG
