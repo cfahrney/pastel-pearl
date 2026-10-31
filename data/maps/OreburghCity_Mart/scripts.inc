@@ -2,14 +2,16 @@ OreburghCity_Mart_MapScripts::
 	.byte 0
 
 OreburghCity_Mart_EventScript_Clerk::
-	@ poe:behavior {"mode":"mart","items":[{"item":"ITEM_POKE_BALL","badges":0},{"item":"ITEM_POTION","badges":0},{"item":"ITEM_ANTIDOTE","badges":0},{"item":"ITEM_PARALYZE_HEAL","badges":0},{"item":"ITEM_AWAKENING","badges":0},{"item":"ITEM_EXP_CANDY_XS","badges":1},{"item":"ITEM_EXP_CANDY_S","badges":2},{"item":"ITEM_EXP_CANDY_M","badges":5},{"item":"ITEM_EXP_CANDY_L","badges":6},{"item":"ITEM_EXP_CANDY_XL","badges":8}]}
+	@ poe:behavior {"mode":"mart","items":[{"item":"ITEM_POKE_BALL","badges":0},{"item":"ITEM_GREAT_BALL","badges":3},{"item":"ITEM_ULTRA_BALL","badges":5},{"item":"ITEM_POTION","badges":0},{"item":"ITEM_SUPER_POTION","badges":1},{"item":"ITEM_HYPER_POTION","badges":5},{"item":"ITEM_MAX_POTION","badges":7},{"item":"ITEM_FULL_RESTORE","badges":8},{"item":"ITEM_REVIVE","badges":3},{"item":"ITEM_ANTIDOTE","badges":0},{"item":"ITEM_PARALYZE_HEAL","badges":0},{"item":"ITEM_AWAKENING","badges":1},{"item":"ITEM_BURN_HEAL","badges":1},{"item":"ITEM_ICE_HEAL","badges":1},{"item":"ITEM_FULL_HEAL","badges":5},{"item":"ITEM_ESCAPE_ROPE","badges":1},{"item":"ITEM_REPEL","badges":1},{"item":"ITEM_SUPER_REPEL","badges":3},{"item":"ITEM_MAX_REPEL","badges":5},{"item":"ITEM_HEAL_BALL","badges":0},{"item":"ITEM_NET_BALL","badges":0},{"item":"ITEM_EXP_CANDY_XS","badges":1},{"item":"ITEM_EXP_CANDY_S","badges":2},{"item":"ITEM_EXP_CANDY_M","badges":5},{"item":"ITEM_EXP_CANDY_L","badges":6},{"item":"ITEM_EXP_CANDY_XL","badges":8}]}
 	lock
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
 	goto_if_set FLAG_BADGE08_GET, OreburghCity_Mart_EventScript_ClerkB8
+	goto_if_set FLAG_BADGE07_GET, OreburghCity_Mart_EventScript_ClerkB7
 	goto_if_set FLAG_BADGE06_GET, OreburghCity_Mart_EventScript_ClerkB6
 	goto_if_set FLAG_BADGE05_GET, OreburghCity_Mart_EventScript_ClerkB5
+	goto_if_set FLAG_BADGE03_GET, OreburghCity_Mart_EventScript_ClerkB3
 	goto_if_set FLAG_BADGE02_GET, OreburghCity_Mart_EventScript_ClerkB2
 	goto_if_set FLAG_BADGE01_GET, OreburghCity_Mart_EventScript_ClerkB1
 	pokemart OreburghCity_Mart_EventScript_ClerkItems
@@ -24,7 +26,8 @@ OreburghCity_Mart_EventScript_ClerkItems::
 	.2byte ITEM_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
 	pokemartlistend
 
 OreburghCity_Mart_EventScript_ClerkB1::
@@ -38,9 +41,16 @@ OreburghCity_Mart_EventScript_ClerkB1::
 OreburghCity_Mart_EventScript_ClerkB1Items::
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
 	.2byte ITEM_EXP_CANDY_XS
 	pokemartlistend
 
@@ -55,9 +65,44 @@ OreburghCity_Mart_EventScript_ClerkB2::
 OreburghCity_Mart_EventScript_ClerkB2Items::
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	pokemartlistend
+
+OreburghCity_Mart_EventScript_ClerkB3::
+	pokemart OreburghCity_Mart_EventScript_ClerkB3Items
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+
+OreburghCity_Mart_EventScript_ClerkB3Items::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_REVIVE
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_AWAKENING
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
 	.2byte ITEM_EXP_CANDY_XS
 	.2byte ITEM_EXP_CANDY_S
 	pokemartlistend
@@ -72,10 +117,24 @@ OreburghCity_Mart_EventScript_ClerkB5::
 
 OreburghCity_Mart_EventScript_ClerkB5Items::
 	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_REVIVE
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
 	.2byte ITEM_EXP_CANDY_XS
 	.2byte ITEM_EXP_CANDY_S
 	.2byte ITEM_EXP_CANDY_M
@@ -91,10 +150,59 @@ OreburghCity_Mart_EventScript_ClerkB6::
 
 OreburghCity_Mart_EventScript_ClerkB6Items::
 	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_REVIVE
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
+	.2byte ITEM_EXP_CANDY_L
+	pokemartlistend
+
+OreburghCity_Mart_EventScript_ClerkB7::
+	pokemart OreburghCity_Mart_EventScript_ClerkB7Items
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+
+OreburghCity_Mart_EventScript_ClerkB7Items::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_REVIVE
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_AWAKENING
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
 	.2byte ITEM_EXP_CANDY_XS
 	.2byte ITEM_EXP_CANDY_S
 	.2byte ITEM_EXP_CANDY_M
@@ -111,10 +219,26 @@ OreburghCity_Mart_EventScript_ClerkB8::
 
 OreburghCity_Mart_EventScript_ClerkB8Items::
 	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_REVIVE
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NET_BALL
 	.2byte ITEM_EXP_CANDY_XS
 	.2byte ITEM_EXP_CANDY_S
 	.2byte ITEM_EXP_CANDY_M
