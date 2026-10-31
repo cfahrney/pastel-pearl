@@ -158,6 +158,8 @@ const u32 gObjectEventPic_Roark[] = INCGFX_U32("graphics/object_events/pics/peop
 const u16 gObjectEventPal_Roark[] = INCGFX_U16("graphics/object_events/palettes/DP_roark.pal", ".gbapal");
 const u32 gObjectEventPic_MossyRock[] = INCGFX_U32("graphics/object_events/pics/misc/mossy_rock.png", ".4bpp");
 const u16 gObjectEventPal_MossyRock[] = INCGFX_U16("graphics/object_events/palettes/mossy_rock.pal", ".gbapal");
+const u32 gObjectEventPic_PalkiaStatue[] = INCGFX_U32("graphics/object_events/pics/misc/palkia_statue.png", ".4bpp");
+const u16 gObjectEventPal_PalkiaStatue[] = INCGFX_U16("graphics/object_events/palettes/palkia_statue.pal", ".gbapal");
 const u32 gObjectEventPic_RockerDp[] = INCGFX_U32("graphics/object_events/pics/people/DP_rocker.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_RockerDp[] = INCGFX_U16("graphics/object_events/palettes/DP_rocker.pal", ".gbapal");
 const u32 gObjectEventPic_Roughneck[] = INCGFX_U32("graphics/object_events/pics/people/DP_roughneck.png", ".4bpp", "-mwidth 2 -mheight 4");
@@ -795,3 +797,4 @@ const u16 gObjectEventPic_JigglypuffOld[] = INCGFX_U16("graphics/object_events/p
 const u16 gObjectEventPic_PidgeyOld[] = INCGFX_U16("graphics/object_events/pics/pokemon_old/pidgey.png", ".4bpp", "-mwidth 2 -mheight 2");
 const u16 gObjectEventPic_ClefairyOld[] = INCGFX_U16("graphics/object_events/pics/pokemon_old/clefairy.png", ".4bpp", "-mwidth 2 -mheight 2");
 
+const u16 gObjectEventPic_SeagallopVertical[] = INCGFX_U16("graphics/object_events/pics/misc/seagallop_vertical.png", ".4bpp");

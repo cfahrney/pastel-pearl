@@ -438,6 +438,12 @@ const u16 gTrainerPalette_Riley[] = INCGFX_U16("graphics/trainers/front_pics/DP_
 
 const u32 gTrainerFrontPic_Roark[] = INCGFX_U32("graphics/trainers/front_pics/DP_Roark.png", ".4bpp.smol");
 const u16 gTrainerPalette_Roark[] = INCGFX_U16("graphics/trainers/front_pics/DP_Roark.png", ".gbapal");
+const u32 gTrainerFrontPic_SisAndBroDp[] = INCGFX_U32("graphics/trainers/front_pics/DP_SisAndBroDp.png", ".4bpp.smol");
+const u16 gTrainerPalette_SisAndBroDp[] = INCGFX_U16("graphics/trainers/front_pics/DP_SisAndBroDp.png", ".gbapal");
+const u32 gTrainerFrontPic_Flint[] = INCGFX_U32("graphics/trainers/front_pics/DP_Flint.png", ".4bpp.smol");
+const u16 gTrainerPalette_Flint[] = INCGFX_U16("graphics/trainers/front_pics/DP_Flint.png", ".gbapal");
+const u32 gTrainerFrontPic_Aaron[] = INCGFX_U32("graphics/trainers/front_pics/DP_Aaron.png", ".4bpp.smol");
+const u16 gTrainerPalette_Aaron[] = INCGFX_U16("graphics/trainers/front_pics/DP_Aaron.png", ".gbapal");
 
 const u32 gTrainerFrontPic_RockerGuitarist[] = INCGFX_U32("graphics/trainers/front_pics/DP_Rocker_Guitarist.png", ".4bpp.smol");
 const u16 gTrainerPalette_RockerGuitarist[] = INCGFX_U16("graphics/trainers/front_pics/DP_Rocker_Guitarist.png", ".gbapal");
@@ -1179,6 +1185,18 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_ROARK] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Roark, gTrainerPalette_Roark),
+    },
+    [TRAINER_PIC_SIS_AND_BRO_DP] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SisAndBroDp, gTrainerPalette_SisAndBroDp),
+    },
+    [TRAINER_PIC_FLINT] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Flint, gTrainerPalette_Flint),
+    },
+    [TRAINER_PIC_AARON] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Aaron, gTrainerPalette_Aaron),
     },
     [TRAINER_PIC_ROCKER_GUITARIST] =
     {

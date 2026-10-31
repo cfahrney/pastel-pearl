@@ -362,6 +362,22 @@ static const struct SpriteFrameImage sPicTable_MossyRock[] = {
     obj_frame_tiles(gObjectEventPic_MossyRock),
 };
 
+static const struct SpriteFrameImage sPicTable_PalkiaStatue[] = {
+    obj_frame_tiles(gObjectEventPic_PalkiaStatue),
+};
+
+static const struct SpriteFrameImage sPicTable_SeagallopVertical[] = {
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+    overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
+};
+
 static const struct SpriteFrameImage sPicTable_MrBrineysBoat[] = {
     overworld_frame(gObjectEventPic_MrBrineysBoat, 4, 4, 0),
     overworld_frame(gObjectEventPic_MrBrineysBoat, 4, 4, 1),
