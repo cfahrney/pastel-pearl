@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_CLEFAIRY",
       "graphics_id": "OBJ_EVENT_GFX_CLEFAIRY",
       "x": 12,
       "y": 7,
@@ -25,10 +26,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EternaCity_GalacticBuilding_4F_EventScript_NPC2",
-      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_BUILDING_4F_CLEFAIRY",
-      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_CLEFAIRY"
+      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_BUILDING_4F_CLEFAIRY"
     },
     {
+      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_JUPITER",
       "graphics_id": "OBJ_EVENT_GFX_JUPITER",
       "x": 11,
       "y": 8,
@@ -39,10 +40,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EternaCity_GalacticBuilding_4F_EventScript_NPC1",
-      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_GRUNT",
-      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_JUPITER"
+      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_GRUNT"
     },
     {
+      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_BUNEARY",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUNEARY)",
       "x": 12,
       "y": 9,
@@ -53,10 +54,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EternaCity_GalacticBuilding_4F_EventScript_NPC4",
-      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_BUILDING_4F_CLEFAIRY",
-      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_BUNEARY"
+      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_BUILDING_4F_CLEFAIRY"
     },
     {
+      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_MIDDLE_AGED_MAN",
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 9,
       "y": 8,
@@ -67,14 +68,13 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EternaCity_GalacticBuilding_4F_EventScript_NPC3",
-      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_BUILDING_4F_CLEFAIRY",
-      "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_MIDDLE_AGED_MAN"
+      "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_BUILDING_4F_CLEFAIRY"
     }
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 3,
+      "x": 7,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY_GALACTIC_BUILDING_3F",
       "dest_warp_id": "1"

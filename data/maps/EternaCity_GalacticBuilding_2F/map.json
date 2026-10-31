@@ -69,15 +69,15 @@
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 3,
+      "x": 12,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY_GALACTIC_BUILDING_1F",
       "dest_warp_id": "1"
     },
     {
-      "x": 15,
-      "y": 3,
+      "x": 7,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY_GALACTIC_BUILDING_3F",
       "dest_warp_id": "0"

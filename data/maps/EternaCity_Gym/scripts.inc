@@ -48,6 +48,7 @@ EternaCity_Gym_EventScript_NPC2::
 	playfanfare MUS_OBTAIN_BADGE
 	waitfanfare
 	setflag FLAG_BADGE02_GET
+	clearflag FLAG_HIDE_ETERNA_FOREST_GARDENIA
 	@ TODO(DP): AddSpecialGameStat 23
 	settrainerflag TRAINER_ETERNA_CITY_GYM_4
 	settrainerflag TRAINER_ETERNA_CITY_GYM_1

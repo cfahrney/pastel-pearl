@@ -1,5 +1,4 @@
 EternaCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, EternaCity_OnTransition
 	.byte 0
 
 EternaCity_EventScript_NPC1::
@@ -51,13 +50,6 @@ EternaCity_Text_NPC5:
 	.string "all creepy and tense.\p"
 	.string "I don't know what those people are\n"
 	.string "doing up in that place...$"
-
-EternaCity_EventScript_NPC6::
-	msgbox EternaCity_Text_NPC6, MSGBOX_NPC
-	end
-
-EternaCity_Text_NPC6:
-	.string "ETERNA CITY NPC 6$"
 
 EternaCity_EventScript_NPC7::
 	msgbox EternaCity_Text_NPC7, MSGBOX_NPC
@@ -128,13 +120,6 @@ EternaCity_EventScript_Sign2::
 EternaCity_Text_Sign2:
 	.string "Eterna City History Living$"
 
-EternaCity_EventScript_Sign3::
-	msgbox EternaCity_Text_Sign3, MSGBOX_SIGN
-	end
-
-EternaCity_Text_Sign3:
-	.string "ETERNA CITY SIGN 3$"
-
 EternaCity_EventScript_Sign4::
 	msgbox EternaCity_Text_Sign4, MSGBOX_SIGN
 	end
@@ -180,39 +165,38 @@ EternaCity_EventScript_Sign9::
 
 EternaCity_EventScript_Trigger1::
 	lockall
-	getplayerxy VAR_0x8004, VAR_0x8005
-	goto_if_eq VAR_0x8005, 11, EternaCity_EventScript_Trigger1_2
-	goto_if_eq VAR_0x8005, 12, EternaCity_EventScript_Trigger1_2_2
-	goto_if_eq VAR_0x8005, 13, EternaCity_EventScript_Trigger1_2_3
-	end
-
-EternaCity_EventScript_Trigger1_2::
-	setobjectxyperm LOCALID_ETERNA_CITY_CYNTHIA, 24, 11
-	goto EternaCity_EventScript_Trigger1_2_4
-
-EternaCity_EventScript_Trigger1_2_2::
-	setobjectxyperm LOCALID_ETERNA_CITY_CYNTHIA, 24, 12
-	goto EternaCity_EventScript_Trigger1_2_4
-
-EternaCity_EventScript_Trigger1_2_3::
-	setobjectxyperm LOCALID_ETERNA_CITY_CYNTHIA, 24, 13
-	goto EternaCity_EventScript_Trigger1_2_4
-
-EternaCity_EventScript_Trigger1_2_4::
-	clearflag FLAG_HIDE_ETERNA_CITY_CYNTHIA
 	clearflag FLAG_HIDE_ETERNA_CITY_CYNTHIA
 	addobject LOCALID_ETERNA_CITY_CYNTHIA
 	playse SE_PIN
-	applymovement LOCALID_ETERNA_CITY_CYNTHIA, EternaCity_Movement_Cynthia
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_eq VAR_0x8005, 11, EternaCity_EventScript_Trigger1_2
+	goto_if_eq VAR_0x8005, 12, EternaCity_EventScript_Trigger1_2_2
+	goto EternaCity_EventScript_Trigger1_2_3
+
+EternaCity_EventScript_Trigger1_2::
+	applymovement LOCALID_ETERNA_CITY_CYNTHIA, EternaCity_Movement_Cynthia_E15_11
+	waitmovement 0
+	goto EternaCity_EventScript_Trigger1_2_4
+
+EternaCity_EventScript_Trigger1_2_2::
+	applymovement LOCALID_ETERNA_CITY_CYNTHIA, EternaCity_Movement_Cynthia_E15_12
+	waitmovement 0
+	goto EternaCity_EventScript_Trigger1_2_4
+
+EternaCity_EventScript_Trigger1_2_3::
+	applymovement LOCALID_ETERNA_CITY_CYNTHIA, EternaCity_Movement_Cynthia_E15_13
+	waitmovement 0
+	goto EternaCity_EventScript_Trigger1_2_4
+
+EternaCity_EventScript_Trigger1_2_4::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
 	msgbox EternaCity_Text_Trigger1, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ETERNA_CITY_CYNTHIA, EternaCity_Movement_Cynthia2
 	waitmovement 0
 	msgbox EternaCity_Text_Trigger1_2, MSGBOX_DEFAULT
-	setvar VAR_0x8004, 420
-	setvar VAR_0x8005, 1
-	giveitem VAR_0x8004, VAR_0x8005
+	giveitem ITEM_HM01
 	setspeaker SP_NAME_CYNTHIA
 	msgbox EternaCity_Text_Trigger1_3, MSGBOX_DEFAULT
 	closemessage
@@ -245,81 +229,6 @@ EternaCity_EventScript_Trigger1_2_8::
 	setvar VAR_ETERNA_CITY_STATE, 1
 	releaseall
 	end
-
-EternaCity_EventScript_Trigger2::
-	lockall
-	getplayerxy VAR_0x8004, VAR_0x8005
-	call_if_eq VAR_0x8004, 15, EternaCity_EventScript_Trigger2_2
-	call_if_eq VAR_0x8004, 16, EternaCity_EventScript_Trigger2_2_2
-	call_if_eq VAR_0x8004, 17, EternaCity_EventScript_Trigger2_2_3
-	call_if_eq VAR_0x8004, 18, EternaCity_EventScript_Trigger2_2_4
-	call_if_eq VAR_0x8004, 19, EternaCity_EventScript_Trigger2_2_5
-	applymovement LOCALID_PLAYER, EternaCity_Movement_Player3
-	waitmovement 0
-	msgbox EternaCity_Text_Trigger2, MSGBOX_DEFAULT
-	closemessage
-	call_if_eq VAR_0x8004, 15, EternaCity_EventScript_Trigger2_2_6
-	call_if_eq VAR_0x8004, 16, EternaCity_EventScript_Trigger2_2_7
-	call_if_eq VAR_0x8004, 17, EternaCity_EventScript_Trigger2_2_8
-	call_if_eq VAR_0x8004, 18, EternaCity_EventScript_Trigger2_2_9
-	call_if_eq VAR_0x8004, 19, EternaCity_EventScript_Trigger2_2_10
-	applymovement LOCALID_PLAYER, EternaCity_Movement_Player4
-	waitmovement 0
-	releaseall
-	end
-
-EternaCity_EventScript_Trigger2_2::
-	playse SE_PIN
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_2::
-	playse SE_PIN
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman2
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_3::
-	playse SE_PIN
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman3
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_4::
-	playse SE_PIN
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman4
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_5::
-	playse SE_PIN
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman5
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_6::
-	return
-
-EternaCity_EventScript_Trigger2_2_7::
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman6
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_8::
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman7
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_9::
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman8
-	waitmovement 0
-	return
-
-EternaCity_EventScript_Trigger2_2_10::
-	applymovement LOCALID_ETERNA_CITY_WOMAN, EternaCity_Movement_Woman9
-	waitmovement 0
-	return
 
 EternaCity_EventScript_Trigger3::
 	lockall
@@ -373,25 +282,35 @@ EternaCity_EventScript_Trigger3_2_6::
 	waitmovement 0
 	return
 
-EternaCity_OnTransition::
-	checkitem ITEM_BICYCLE, 1
-	copyvar VAR_TEMP_0, VAR_RESULT
-	goto_if_eq VAR_TEMP_0, FALSE, EternaCity_OnTransition_2
-	checkitem ITEM_NONE @ TODO(DP): DP item 428, 1
-	copyvar VAR_TEMP_0, VAR_RESULT
-	goto_if_eq VAR_TEMP_0, TRUE, EternaCity_OnTransition_2
-	setvar VAR_ETERNA_CITY_STATE_2, 0
-	end
-
-EternaCity_OnTransition_2::
-	setvar VAR_ETERNA_CITY_STATE_2, 1
-	end
-
-EternaCity_Movement_Cynthia:
+EternaCity_Movement_Cynthia_E15_11:
 	walk_left
 	walk_left
 	emote_exclamation_mark
 	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+EternaCity_Movement_Cynthia_E15_12:
+	walk_down
+	walk_left
+	walk_left
+	emote_exclamation_mark
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+EternaCity_Movement_Cynthia_E15_13:
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	emote_exclamation_mark
 	walk_left
 	walk_left
 	walk_left
@@ -453,80 +372,6 @@ EternaCity_Movement_Player2:
 	walk_in_place_up
 	delay_16
 	walk_in_place_left
-	step_end
-
-EternaCity_Movement_Player3:
-	walk_in_place_left
-	step_end
-
-EternaCity_Movement_Player4:
-	walk_up
-	step_end
-
-EternaCity_Movement_Woman:
-	walk_in_place_fast_right
-	emote_exclamation_mark
-	delay_8
-	step_end
-
-EternaCity_Movement_Woman2:
-	walk_in_place_fast_right
-	emote_exclamation_mark
-	delay_8
-	walk_right
-	step_end
-
-EternaCity_Movement_Woman3:
-	walk_in_place_fast_right
-	emote_exclamation_mark
-	delay_8
-	walk_right
-	walk_right
-	step_end
-
-EternaCity_Movement_Woman4:
-	walk_in_place_fast_right
-	emote_exclamation_mark
-	delay_8
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
-EternaCity_Movement_Woman5:
-	walk_in_place_fast_right
-	emote_exclamation_mark
-	delay_8
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
-EternaCity_Movement_Woman6:
-	walk_left
-	walk_in_place_fast_right
-	step_end
-
-EternaCity_Movement_Woman7:
-	walk_left
-	walk_left
-	walk_in_place_fast_right
-	step_end
-
-EternaCity_Movement_Woman8:
-	walk_left
-	walk_left
-	walk_left
-	walk_in_place_fast_right
-	step_end
-
-EternaCity_Movement_Woman9:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_in_place_fast_right
 	step_end
 
 EternaCity_Movement_Player5:
@@ -621,15 +466,26 @@ EternaCity_Text_Trigger1_3:
 	.string "{COLOR DYNAMIC_COLOR3}Pokédex{COLOR DARK_GRAY}, right?\p"
 	.string "Then luck be with you, young Trainer!$"
 
-EternaCity_Text_Trigger2:
-	.string "Oh, don't tell me you don't have an\n"
-	.string "Explorer Kit?\p"
-	.string "You should have a word with the man\n"
-	.string "next door to the Pokémon Center.$"
-
 EternaCity_Text_Trigger3:
 	.string "Oh, wow! You got a {COLOR DYNAMIC_COLOR3}Bicycle{COLOR DARK_GRAY}!\p"
 	.string "You can ride down Cycling Road and end\n"
 	.string "up in Hearthome City.\p"
 	.string "It's a fast and fun ride. You should\n"
 	.string "check it out!$"
+
+EternaCity_EventScript_NPC13::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PALKIA, CRY_MODE_NORMAL
+	setspeaker EternaCity_Text_NPC13Speaker
+	msgbox EternaCity_Text_NPC13, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+EternaCity_Text_NPC13Speaker:
+	.string "Palkia$"
+
+EternaCity_Text_NPC13:
+	.string "Boo lol$"

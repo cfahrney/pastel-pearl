@@ -10,7 +10,7 @@ EternaCity_HerbShop_EventScript_NPC3::
 	faceplayer
 	message EternaCity_HerbShop_Text_NPC3_2
 	waitmessage
-	@ TODO(DP): SpecialMart 4
+	pokemart EternaCity_HerbShop_EventScript_NPC3MartItems
 	release
 	end
 
@@ -31,3 +31,11 @@ EternaCity_HerbShop_Text_NPC2_2:
 	.string "Someone ought to invent herbal\n"
 	.string "medicine that isn't bitter.\p"
 	.string "That would be a medical breakthrough!$"
+
+	.align 2
+EternaCity_HerbShop_EventScript_NPC3MartItems:
+	.2byte ITEM_HEAL_POWDER
+	.2byte ITEM_ENERGY_POWDER
+	.2byte ITEM_ENERGY_ROOT
+	.2byte ITEM_REVIVAL_HERB
+	pokemartlistend

@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_OLD_CHATEAU_1_F_OLD_MAN",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_2",
       "x": 19,
       "y": 4,
@@ -26,7 +27,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_OLD_CHATEAU_1F_OLD_MAN",
-      "local_id": "LOCALID_OLD_CHATEAU_1_F_OLD_MAN",
       "scriptOnly": "true"
     }
   ],
