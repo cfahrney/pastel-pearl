@@ -17,10 +17,10 @@
   "warp_events": [
     {
       "x": 8,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_BOTTOM_RIGHT_HOUSE_1F",
-      "dest_warp_id": "2"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],
