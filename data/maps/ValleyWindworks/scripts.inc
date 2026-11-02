@@ -39,7 +39,7 @@ ValleyWindworks_EventScript_NPC2::
 	closemessage
 	applymovement LOCALID_VALLEY_WINDWORKS_GALACTIC_GRUNT, ValleyWindworks_Movement_GalacticGrunt
 	waitmovement 0
-	setmetatile 19, 11, METATILE_Floaroma_WindworksDoor, TRUE
+	setmetatile 19, 11, METATILE_Floaroma_WindworksDoor, FALSE
 	opendoor 19, 11
 	waitdooranim
 	applymovement LOCALID_VALLEY_WINDWORKS_GALACTIC_GRUNT, ValleyWindworks_Movement_GalacticGrunt2
@@ -80,7 +80,7 @@ ValleyWindworks_EventScript_Sign2_2_2::
 	end
 
 ValleyWindworks_EventScript_Sign2_2_3::
-	setmetatile 19, 11, METATILE_Floaroma_WindworksDoor, TRUE
+	setmetatile 19, 11, METATILE_Floaroma_WindworksDoor, FALSE
 	return
 
 ValleyWindworks_OnLoad::
