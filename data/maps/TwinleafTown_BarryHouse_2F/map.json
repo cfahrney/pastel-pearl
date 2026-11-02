@@ -17,7 +17,7 @@
     {
       "local_id": "LOCALID_TWINLEAF_BARRYHOUSE_BARRY",
       "graphics_id": "OBJ_EVENT_GFX_BARRY_NORMAL",
-      "x": 8,
+      "x": 7,
       "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -36,7 +36,7 @@
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_TWINLEAF_TOWN_BARRY_HOUSE_1F",
-      "dest_warp_id": "2"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],
