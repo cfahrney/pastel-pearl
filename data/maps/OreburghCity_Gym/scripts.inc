@@ -146,7 +146,7 @@ OreburghCity_Gym_Text_Trainer3PostBattle:
 	.string "tougher than I am!$"
 
 OreburghCity_Gym_Text_NPC1:
-	.string "Oh! PLAYER!\n"
+	.string "Oh! {PLAYER}!\n"
 	.string "You've taken care of the Gym Leader!\p"
 	.string "So, did my advice come in handy or what?\p"
 	.string "If my advice was useful, it'd be great if\n"

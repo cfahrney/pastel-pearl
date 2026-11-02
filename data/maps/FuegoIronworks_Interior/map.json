@@ -142,16 +142,16 @@
       "x": 44,
       "y": 15,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_INTERIOR_1"
+      "item": "ITEM_HYPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_INTERIOR_HYPER_POTION"
     },
     {
       "type": "hidden_item",
       "x": 22,
       "y": 3,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_INTERIOR_2"
+      "item": "ITEM_FULL_HEAL",
+      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_INTERIOR_FULL_HEAL"
     }
   ]
 }

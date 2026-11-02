@@ -94,16 +94,16 @@
       "x": 17,
       "y": 4,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_1"
+      "item": "ITEM_MAX_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_MAX_POTION"
     },
     {
       "type": "hidden_item",
       "x": 27,
       "y": 17,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_2"
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_FUEGO_IRONWORKS_ULTRA_BALL"
     },
     {
       "type": "sign",

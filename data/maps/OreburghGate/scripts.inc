@@ -349,6 +349,7 @@ OreburghGate_Movement_Hiker:
 	walk_in_place_down
 	emote_exclamation_mark
 	walk_down
+	walk_down
 	step_end
 
 OreburghGate_Movement_Player:

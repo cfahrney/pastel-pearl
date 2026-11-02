@@ -273,24 +273,24 @@
       "x": 20,
       "y": 7,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_207_1"
+      "item": "ITEM_POKE_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_207_POKE_BALL"
     },
     {
       "type": "hidden_item",
       "x": 34,
       "y": 15,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_207_2"
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_207_RARE_CANDY"
     },
     {
       "type": "hidden_item",
       "x": 28,
       "y": 6,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_207_3"
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_207_REVIVE"
     }
   ]
 }

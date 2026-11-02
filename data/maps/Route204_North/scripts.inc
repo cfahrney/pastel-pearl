@@ -79,13 +79,21 @@ Route204_North_EventScript_Trainer4::
 	end
 
 Route204_North_Text_Trainer4Intro:
-	.string "ROUTE 204 NORTH TRAINER 4\nwants to battle!$"
+	.string "Liv: We can one-shot this Trainer, can't\n"
+	.string "we, Liz?\p"
+	.string "Liz: We're the strongest in our class!$"
 
 Route204_North_Text_Trainer4Defeated:
-	.string "ROUTE 204 NORTH TRAINER 4\nwas defeated!$"
+	.string "Liv: Oh, oh, oh?\p"
+	.string "Liz: Oh, but, wait!$"
 
 Route204_North_Text_Trainer4PostBattle:
-	.string "ROUTE 204 NORTH TRAINER 4\nhas nothing else to say.$"
+	.string "Liv: Awww! That is so bad!\p"
+	.string "Liz: I wish I could be strong like you\n"
+	.string "when I get bigger.$"
 
 Route204_North_Text_Trainer4NotEnoughMons:
-	.string "ROUTE 204 NORTH TRAINER 4\nwants a double battle!$"
+	.string "Liv: You only have one Pokémon? That's\n"
+	.string "so boring!\p"
+	.string "Liz: Um, will you battle with us? Me and\n"
+	.string "Liv?$"
