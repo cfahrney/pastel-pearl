@@ -267,7 +267,7 @@ Route201_EventScript_RowanConfrontsPlayerAtY8:
 	@ as follower (see UpdateFollowingPokemon in event_object_movement.c).
 	destroyfollowernpc
 	setvar VAR_TWINLEAF_TOWN_STATE, 11
-	warp MAP_TWINLEAF_TOWN_PLAYER_HOUSE_1F, 1, 5
+	warp MAP_TWINLEAF_TOWN_PLAYER_HOUSE_1F, 1, 6
 	waitstate
 	releaseall
 	end
@@ -327,7 +327,7 @@ Route201_EventScript_RowanConfrontsPlayerAtY9:
 	@ as follower (see UpdateFollowingPokemon in event_object_movement.c).
 	destroyfollowernpc
 	setvar VAR_TWINLEAF_TOWN_STATE, 11
-	warp MAP_TWINLEAF_TOWN_PLAYER_HOUSE_1F, 1, 5
+	warp MAP_TWINLEAF_TOWN_PLAYER_HOUSE_1F, 1, 6
 	waitstate
 	releaseall
 	end

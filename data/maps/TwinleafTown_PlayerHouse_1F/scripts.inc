@@ -3,7 +3,7 @@ TwinleafTown_PlayerHouse_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, TwinleafTown_PlayerHouse_1F_OnFrame
 	.byte 0
 
-@ MOM idles at (6,5) normally, and gets relocated to (1,3) here for the
+@ MOM idles at (6,6) normally, and gets relocated to (1,4) here for the
 @ homecoming scene when VAR_TWINLEAF_TOWN_STATE == 11.
 TwinleafTown_PlayerHouse_1F_OnTransition:
 	@ The neighbor only exists during the AfterSandgemTour scene.
@@ -14,12 +14,12 @@ TwinleafTown_PlayerHouse_1F_OnTransition:
 
 @ Undo the homecoming relocation (setobjectxyperm is permanent).
 TwinleafTown_PlayerHouse_1F_EventScript_RestoreMomSpot:
-	setobjectxyperm LOCALID_PLAYER_MOM, 6, 5
+	setobjectxyperm LOCALID_PLAYER_MOM, 6, 6
 	setobjectmovementtype LOCALID_PLAYER_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
 TwinleafTown_PlayerHouse_1F_EventScript_PositionMomForHomecoming:
-	setobjectxyperm LOCALID_PLAYER_MOM, 1, 3
+	setobjectxyperm LOCALID_PLAYER_MOM, 1, 4
 	setobjectmovementtype LOCALID_PLAYER_MOM, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -143,7 +143,7 @@ TwinleafTown_PlayerHouse_1F_Text_MomDontWorry:
 
 @ Triggers when VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE == 0, the instant the
 @ player lands on this map for the very first time (coming downstairs, at
-@ (9,1)). Runs on-frame rather than a coordinate/step trigger, since
+@ (10,3)). Runs on-frame rather than a coordinate/step trigger, since
 @ those are unreliable on the game's very first-ever warp (the new-game
 @ startup path loads the map synchronously in one frame instead of the
 @ normal multi-frame warp sequence every other warp uses).
@@ -217,13 +217,13 @@ TwinleafTown_PlayerHouse_1F_Movement_MomGivesShoes:
 	walk_right
 	walk_right
 	walk_right
-	walk_up
+	walk_right
 	walk_up
 	step_end
 
 TwinleafTown_PlayerHouse_1F_Movement_MomReturnsToSpot:
 	walk_down
-	walk_down
+	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -405,7 +405,7 @@ TwinleafTown_PlayerHouse_1F_EventScript_AfterSandgemTour::
 	msgbox TwinleafTown_PlayerHouse_1F_Text_TourMomAboutExpShare, MSGBOX_DEFAULT
 	closemessage
 	@ Spawn the neighbor at the door; her object sits off-map and hidden until now.
-	setobjectxyperm LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, 5, 8
+	setobjectxyperm LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, 5, 9
 	setobjectmovementtype LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM, MOVEMENT_TYPE_FACE_UP
 	clearflag FLAG_HIDE_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
 	addobject LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM
