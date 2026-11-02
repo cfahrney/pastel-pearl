@@ -59,13 +59,6 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_TWINLEAF_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 5,
       "y": 9,
       "elevation": 0,
@@ -74,7 +67,7 @@
     },
     {
       "x": 10,
-      "y": 2,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_TWINLEAF_TOWN_PLAYER_HOUSE_2F",
       "dest_warp_id": "0"
@@ -93,15 +86,6 @@
     {
       "type": "trigger",
       "x": 5,
-      "y": 9,
-      "elevation": 0,
-      "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
-      "var_value": "1",
-      "script": "TwinleafTown_PlayerHouse_1F_EventScript_MomDoorReminder"
-    },
-    {
-      "type": "trigger",
-      "x": 4,
       "y": 9,
       "elevation": 0,
       "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
