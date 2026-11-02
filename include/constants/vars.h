@@ -431,7 +431,18 @@
 //    0  Mira's first chat line comes next
 //    1  Mira's second chat line comes next
 //    2  Mira's last chat line, from then on
-#define VAR_UNUSED_0x7018                        0x7018 // Unused Var
+#define VAR_ETERNA_CITY_EAST_OF_POKEMON_CENTER_HOUSE_STATE 0x7018
+// @states Imported from Diamond/Pearl (DP var 0x40B6).
+//    0  TODO
+//    1  TODO
+//    2  TODO
+//    3  TODO
+//    4  TODO
+//    5  TODO
+//    6  TODO
+//    7  TODO
+//    8  TODO
+//    9  TODO
 #define VAR_UNUSED_0x7019                        0x7019 // Unused Var
 #define VAR_UNUSED_0x701A                        0x701A // Unused Var
 #define VAR_UNUSED_0x701B                        0x701B // Unused Var
