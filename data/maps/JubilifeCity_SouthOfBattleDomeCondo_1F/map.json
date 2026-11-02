@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
       "x": 5,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DP",
       "x": 2,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_SNOW_M",
       "x": 12,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -56,7 +56,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOTHOOT)",
       "x": 2,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(VULPIX_ALOLA)",
       "x": 13,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -82,22 +82,15 @@
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
-      "dest_warp_id": "5"
-    },
-    {
       "x": 9,
-      "y": 10,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_JUBILIFE_CITY",
       "dest_warp_id": "5"
     },
     {
       "x": 12,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_JUBILIFE_CITY_SOUTH_OF_BATTLE_DOME_CONDO_2F",
       "dest_warp_id": "0"
