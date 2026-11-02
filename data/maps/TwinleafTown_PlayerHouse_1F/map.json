@@ -18,7 +18,7 @@
       "local_id": "LOCALID_PLAYER_MOM",
       "graphics_id": "OBJ_EVENT_GFX_MOM_FRLG",
       "x": 6,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -31,7 +31,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLAMEOW)",
       "x": 10,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -45,7 +45,7 @@
       "local_id": "LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM",
       "graphics_id": "OBJ_EVENT_GFX_MOM",
       "x": 0,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 0,
@@ -59,22 +59,22 @@
   ],
   "warp_events": [
     {
+      "x": 4,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
       "x": 5,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_TWINLEAF_TOWN",
       "dest_warp_id": "0"
     },
     {
-      "x": 6,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_TWINLEAF_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 9,
-      "y": 1,
+      "x": 10,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_TWINLEAF_TOWN_PLAYER_HOUSE_2F",
       "dest_warp_id": "0"
@@ -83,8 +83,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 9,
-      "y": 2,
+      "x": 10,
+      "y": 3,
       "elevation": 0,
       "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
       "var_value": "0",
@@ -92,8 +92,8 @@
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 8,
+      "x": 5,
+      "y": 9,
       "elevation": 0,
       "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
       "var_value": "1",
@@ -101,8 +101,8 @@
     },
     {
       "type": "trigger",
-      "x": 5,
-      "y": 8,
+      "x": 4,
+      "y": 9,
       "elevation": 0,
       "var": "VAR_TWINLEAF_TOWN_PLAYER_HOUSE_STATE",
       "var_value": "1",
