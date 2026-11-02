@@ -10596,9 +10596,9 @@
     {
       "id": "LAYOUT_ROUTE218_JUBILIFE_GATEHOUSE",
       "name": "Route218_JubilifeGatehouse_Layout",
-      "width": 13,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_GateHouse",
       "border_filepath": "data/layouts/Route218_JubilifeGatehouse/border.bin",
       "blockdata_filepath": "data/layouts/Route218_JubilifeGatehouse/map.bin"
@@ -10606,9 +10606,9 @@
     {
       "id": "LAYOUT_ROUTE218_CANALAVE_GATEHOUSE",
       "name": "Route218_CanalaveGatehouse_Layout",
-      "width": 13,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_GateHouse",
       "border_filepath": "data/layouts/Route218_CanalaveGatehouse/border.bin",
       "blockdata_filepath": "data/layouts/Route218_CanalaveGatehouse/map.bin"
