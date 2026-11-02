@@ -991,12 +991,14 @@
 #define TRAINER_JUBILIFE_CITY_TVSTATION_1F_GUITARIST 982
 #define TRAINER_ETERNA_FOREST_EXTERIOR_1 983
 #define TRAINER_ETERNA_FOREST_EXTERIOR_2 984
+#define TRAINER_ROUTE219_1 985
+#define TRAINER_ROUTE219_2 986
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for a limited number of additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     985
+#define TRAINERS_COUNT_EMERALD     987
 #define MAX_TRAINERS_COUNT_EMERALD 1176
 
 #if IS_FRLG
