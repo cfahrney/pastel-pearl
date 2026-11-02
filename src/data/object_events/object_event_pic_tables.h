@@ -1222,6 +1222,10 @@ static const struct SpriteFrameImage sPicTable_Roark[] = {
     overworld_ascending_frames(gObjectEventPic_Roark, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_MomDp[] = {
+    overworld_ascending_frames(gObjectEventPic_MomDp, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_RockerDp[] = {
     overworld_ascending_frames(gObjectEventPic_RockerDp, 2, 4),
 };

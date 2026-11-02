@@ -255,6 +255,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rancher;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichBoyDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichLady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roark;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MomDp;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MossyRock;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SeagallopVertical;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PalkiaStatue;
@@ -747,6 +748,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RICH_BOY_DP] = &gObjectEventGraphicsInfo_RichBoyDp,
     [OBJ_EVENT_GFX_RICH_LADY] = &gObjectEventGraphicsInfo_RichLady,
     [OBJ_EVENT_GFX_ROARK] = &gObjectEventGraphicsInfo_Roark,
+    [OBJ_EVENT_GFX_MOM_DP] = &gObjectEventGraphicsInfo_MomDp,
     [OBJ_EVENT_GFX_MOSSY_ROCK] = &gObjectEventGraphicsInfo_MossyRock,
     [OBJ_EVENT_GFX_SEAGALLOP_VERTICAL] = &gObjectEventGraphicsInfo_SeagallopVertical,
     [OBJ_EVENT_GFX_PALKIA_STATUE] = &gObjectEventGraphicsInfo_PalkiaStatue,

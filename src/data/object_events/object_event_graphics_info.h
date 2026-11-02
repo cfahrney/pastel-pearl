@@ -4699,6 +4699,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roark = {
     .images = sPicTable_Roark,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MomDp = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MOM_DP,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_MomDp,
+};
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockerDp = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_ROCKER_DP,
