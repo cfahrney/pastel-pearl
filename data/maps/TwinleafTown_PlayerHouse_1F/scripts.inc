@@ -196,6 +196,7 @@ TwinleafTown_PlayerHouse_1F_EventScript_MomGivesRunningShoes::
 @ and runs into the neighbor/BARRY's house sequence outside.
 TwinleafTown_PlayerHouse_1F_EventScript_MomDoorReminder::
 	lockall
+	playse SE_PIN
 	applymovement LOCALID_PLAYER_MOM, TwinleafTown_PlayerHouse_1F_Movement_MomFacesPlayerAtDoor
 	waitmovement LOCALID_PLAYER_MOM
 	applymovement LOCALID_PLAYER, TwinleafTown_PlayerHouse_1F_Movement_PlayerFacesMomAtDoor
@@ -232,6 +233,7 @@ TwinleafTown_PlayerHouse_1F_Movement_MomReturnsToSpot:
 
 TwinleafTown_PlayerHouse_1F_Movement_MomFacesPlayerAtDoor:
 	face_down
+	emote_exclamation_mark
 	delay_16
 	step_end
 

@@ -120,7 +120,7 @@ SandgemTown_EventScript_NPC5::
 Route201_EventScript_DawnLucasNoticesPlayerAtY12::
 	lockall
 	playse SE_PIN
-	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_ExclamationMark
+	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, SandgemTown_Movement_LucasDawnNoticesPlayer
 	waitmovement 0
 	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_Delay48
 	waitmovement 0
@@ -132,7 +132,7 @@ Route201_EventScript_DawnLucasNoticesPlayerAtY12::
 Route201_EventScript_DawnLucasNoticesPlayerAtY13::
 	lockall
 	playse SE_PIN
-	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_ExclamationMark
+	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, SandgemTown_Movement_LucasDawnNoticesPlayer
 	waitmovement 0
 	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_Delay48
 	waitmovement 0
@@ -144,7 +144,7 @@ Route201_EventScript_DawnLucasNoticesPlayerAtY13::
 Route201_EventScript_DawnLucasNoticesPlayerAtY14::
 	lockall
 	playse SE_PIN
-	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_ExclamationMark
+	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, SandgemTown_Movement_LucasDawnNoticesPlayer
 	waitmovement 0
 	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_Delay48
 	waitmovement 0
@@ -156,7 +156,7 @@ Route201_EventScript_DawnLucasNoticesPlayerAtY14::
 Route201_EventScript_DawnLucasNoticesPlayerAtY15::
 	lockall
 	playse SE_PIN
-	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_ExclamationMark
+	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, SandgemTown_Movement_LucasDawnNoticesPlayer
 	waitmovement 0
 	applymovement LOCALID_SANDGEMTOWN_LUCASDAWN, Common_Movement_Delay48
 	waitmovement 0
@@ -164,6 +164,11 @@ Route201_EventScript_DawnLucasNoticesPlayerAtY15::
 	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
 	waitmovementall
 	goto SandgemTown_EventScript_LucasDawnLeadsToLabAtY15
+
+SandgemTown_Movement_LucasDawnNoticesPlayer:
+	face_left
+	emote_exclamation_mark
+	step_end
 
 SandgemTown_Movement_LucasDawnApproachAtY12:
 	walk_left
