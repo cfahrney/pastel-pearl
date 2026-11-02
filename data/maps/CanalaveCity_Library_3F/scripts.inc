@@ -381,6 +381,7 @@ CanalaveCity_Library_3F_EventScript_OnFrame_2_6::
 	applymovement LOCALID_CANALAVE_CITY_LIBRARY_3_F_PROF_ROWAN, CanalaveCity_Library_3F_Movement_ProfRowan5
 	@ TODO(DP): Move the camera
 	waitmovement 0
+	playse SE_EXIT
 	removeobject LOCALID_CANALAVE_CITY_LIBRARY_3_F_BARRY
 	removeobject LOCALID_CANALAVE_CITY_LIBRARY_3_F_NPC
 	@ TODO(DP): ReleaseCamera

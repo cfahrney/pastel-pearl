@@ -29,6 +29,7 @@ TwinleafTown_BarryHouse_2F_EventScript_BarryNoticesPlayer::
 	waitmovement 0
 	applymovement LOCALID_TWINLEAF_BARRYHOUSE_BARRY, TwinleafTown_BarryHouse_2F_Movement_BarryLeaveDownStairs
 	waitmovement 0
+	playse SE_EXIT
 	removeobject LOCALID_TWINLEAF_BARRYHOUSE_BARRY
 	savebgm MUS_DUMMY
 	fadedefaultbgm
@@ -58,7 +59,6 @@ TwinleafTown_BarryHouse_2F_Movement_PlayerStepAside:
 	step_end
 
 TwinleafTown_BarryHouse_2F_Movement_BarryLeaveDownStairs:
-	walk_fast_left
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left

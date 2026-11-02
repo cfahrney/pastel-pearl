@@ -65,6 +65,7 @@ LakeVerity_EventScript_ArriveAtLake::
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_PROFESSOR_ROWAN, LakeVerity_Movement_RowanExitToWarp
 	waitmovement 0
+	playse SE_EXIT
 	removeobject LOCALID_LAKE_VERITY_PROFESSOR_ROWAN
 	@ Prevents ROWAN's template from respawning on camera scroll.
 	setflag FLAG_HIDE_LAKE_VERITY_PROFESSOR_ROWAN
@@ -78,6 +79,7 @@ LakeVerity_EventScript_ArriveAtLake::
 	closemessage
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnExitToWarp
 	waitmovement 0
+	playse SE_EXIT
 	removeobject LOCALID_LAKE_VERITY_LUCASDAWN
 	@ Same respawn-prevention for LUCAS/DAWN.
 	setflag FLAG_HIDE_LAKE_VERITY_LUCASDAWN
@@ -166,6 +168,7 @@ LakeVerity_EventScript_ArriveAtLake::
 	@ LUCAS/DAWN returns for the briefcase; BARRY sidesteps to face them.
 	addobject LOCALID_LAKE_VERITY_LUCASDAWN
 	setobjectxy LOCALID_LAKE_VERITY_LUCASDAWN, 39, 41
+	playse SE_EXIT
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnReturnApproach
 	waitmovement 0
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnTakeBarrysSpot
@@ -203,6 +206,7 @@ LakeVerity_EventScript_ArriveAtLake::
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceDown
 	applymovement LOCALID_LAKE_VERITY_LUCASDAWN, LakeVerity_Movement_LucasDawnLeaveReturnPath
 	waitmovement 0
+	playse SE_EXIT
 	removeobject LOCALID_LAKE_VERITY_LUCASDAWN
 	setspeaker SP_NAME_RIVAL
 	msgbox LakeVerity_Text_BarryWhatWasThatAboutNow, MSGBOX_DEFAULT
