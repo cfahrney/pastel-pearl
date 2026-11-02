@@ -143,7 +143,7 @@ static void WarpToTruck(void)
     else
     {
         // Skip the moving-truck intro; warp straight into the player's bedroom in Twinleaf Town,
-        // standing in front of the TV, with the clock unset. Unlike Littleroot's Brendan's/May's
+        // standing in front of the TV. Unlike Littleroot's Brendan's/May's
         // House split, Twinleaf has a single shared player house (the rival has their own house),
         // so there's no other-gender house/family to hide here.
         VarSet(VAR_LITTLEROOT_INTRO_STATE, 4);
@@ -224,6 +224,12 @@ void NewGameInitData(void)
         RunScriptImmediately(EventScript_ResetAllMapFlagsFrlg);
     else
         RunScriptImmediately(EventScript_ResetAllMapFlags);
+    if (!IS_FRLG)
+    {
+        // No wall-clock setup: run on the internal clock from the start.
+        FlagSet(FLAG_SET_WALL_CLOCK);
+        InitTimeBasedEvents();
+    }
     StringCopy(gSaveBlock1Ptr->rivalName, rivalName);
     ResetMiniGamesRecords();
     InitUnionRoomChatRegisteredTexts();

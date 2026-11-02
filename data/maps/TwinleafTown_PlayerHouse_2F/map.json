@@ -23,17 +23,7 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 3,
-      "elevation": 0,
-      "var": "FLAG_SET_WALL_CLOCK",
-      "var_value": "0",
-      "script": "TwinleafTown_PlayerHouse_2F_EventScript_SetTheClock"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
