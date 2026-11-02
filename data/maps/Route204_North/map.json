@@ -167,8 +167,8 @@
       "x": 8,
       "y": 7,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_204_NORTH_1"
+      "item": "ITEM_POKE_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_204_NORTH_POKE_BALL"
     }
   ]
 }

@@ -48,38 +48,3 @@ EternaForest_Exterior_EventScript_Tree2::
 	setflag FLAG_HIDE_ETERNA_FOREST_EXTERIOR_TREE2
 	releaseall
 	end
-
-EternaForest_Exterior_EventScript_Trainer1::
-	trainerbattle_single TRAINER_ETERNA_FOREST_EXTERIOR_1, EternaForest_Exterior_Text_Trainer1Intro, EternaForest_Exterior_Text_Trainer1Defeated
-	msgbox EternaForest_Exterior_Text_Trainer1PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-EternaForest_Exterior_Text_Trainer1Intro:
-	.string "EXTERIOR TRAINER 1$"
-
-EternaForest_Exterior_Text_Trainer1Defeated:
-	.string "EXTERIOR TRAINER 1$"
-
-EternaForest_Exterior_Text_Trainer1PostBattle:
-	.string "EXTERIOR TRAINER 1$"
-
-EternaForest_Exterior_EventScript_Trainer2::
-	trainerbattle_single TRAINER_ETERNA_FOREST_EXTERIOR_2, EternaForest_Exterior_Text_Trainer2Intro, EternaForest_Exterior_Text_Trainer2Defeated
-	msgbox EternaForest_Exterior_Text_Trainer2PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-EternaForest_Exterior_Text_Trainer2Intro:
-	.string "EXTERIOR TRAINER 2$"
-
-EternaForest_Exterior_Text_Trainer2Defeated:
-	.string "EXTERIOR TRAINER 2$"
-
-EternaForest_Exterior_Text_Trainer2PostBattle:
-	.string "EXTERIOR TRAINER 2$"
-
-EternaForest_Exterior_EventScript_NPC1::
-	msgbox EternaForest_Exterior_Text_NPC1, MSGBOX_NPC
-	end
-
-EternaForest_Exterior_Text_NPC1:
-	.string "EXTERIOR NPC 1$"

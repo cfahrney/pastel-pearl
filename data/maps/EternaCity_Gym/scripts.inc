@@ -18,21 +18,7 @@ EternaCity_Gym_Text_NPC1Speaker:
 	.string "Roserade$"
 
 EternaCity_Gym_Text_NPC1:
-	.string "GYM NPC 1$"
-
-EternaCity_Gym_EventScript_Trainer6::
-	trainerbattle_single TRAINER_ETERNA_CITY_GYM_6, EternaCity_Gym_Text_Trainer6Intro, EternaCity_Gym_Text_Trainer6Defeated
-	msgbox EternaCity_Gym_Text_Trainer6PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-EternaCity_Gym_Text_Trainer6Intro:
-	.string "GYM TRAINER 6$"
-
-EternaCity_Gym_Text_Trainer6Defeated:
-	.string "GYM TRAINER 6$"
-
-EternaCity_Gym_Text_Trainer6PostBattle:
-	.string "GYM TRAINER 6$"
+	.string "Roserade! Rose!$"
 
 EternaCity_Gym_EventScript_NPC2::
 	lock

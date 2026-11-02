@@ -102,45 +102,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EternaForest_Exterior_EventScript_Tree2",
       "flag": "FLAG_HIDE_ETERNA_FOREST_EXTERIOR_TREE2"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY_DP",
-      "x": 19,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "EternaForest_Exterior_EventScript_Trainer1",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER_DP",
-      "x": 23,
-      "y": 15,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "EternaForest_Exterior_EventScript_Trainer2",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER_DP",
-      "x": 28,
-      "y": 19,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EternaForest_Exterior_EventScript_NPC1",
-      "flag": "0"
     }
   ],
   "warp_events": [],
@@ -151,16 +112,16 @@
       "x": 25,
       "y": 9,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ETERNA_FOREST_EXTERIOR_1"
+      "item": "ITEM_ANTIDOTE",
+      "flag": "FLAG_HIDDEN_ITEM_ETERNA_FOREST_EXTERIOR_ANTIDOTE"
     },
     {
       "type": "hidden_item",
       "x": 15,
       "y": 5,
       "elevation": 0,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ETERNA_FOREST_EXTERIOR_2"
+      "item": "ITEM_HONEY",
+      "flag": "FLAG_HIDDEN_ITEM_ETERNA_FOREST_EXTERIOR_HONEY"
     }
   ]
 }

@@ -129,3 +129,16 @@ Route207_Text_Sign2:
 
 Route207_Text_Sign3:
 	.string "ROUTE 207 SIGN 3$"
+
+Route207_EventScript_Sign4::
+	msgbox Route207_Text_Sign4, MSGBOX_SIGN
+	end
+
+Route207_Text_Sign4:
+	.string "Trainer Tips Pokémon may become\n"
+	.string "immobilized if they are asleep or\l"
+	.string "paralyzed.\p"
+	.string "If it happens to your Pokémon, it could\n"
+	.string "be disastrous.\p"
+	.string "If your opponent's Pokémon can't move,\n"
+	.string "it's a big opportunity!$"

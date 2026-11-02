@@ -1,13 +1,6 @@
 Route218_CanalaveGatehouse_MapScripts::
 	.byte 0
 
-Route218_CanalaveGatehouse_EventScript_NPC1::
-	msgbox Route218_CanalaveGatehouse_Text_NPC1, MSGBOX_NPC
-	end
-
-Route218_CanalaveGatehouse_Text_NPC1:
-	.string "CANALAVE GATEHOUSE NPC 1$"
-
 Route218_CanalaveGatehouse_EventScript_NPC2::
 	msgbox Route218_CanalaveGatehouse_Text_NPC2_2, MSGBOX_NPC
 	end
