@@ -4,6 +4,7 @@
 #include "random.h"
 #include "event_data.h"
 #include "fieldmap.h"
+#include "tilesets.h"
 #include "field_camera.h"
 #include "field_specials.h"
 #include "fldeff.h"
@@ -854,6 +855,10 @@ static void SetTVMetatilesOnMap(int width, int height, u16 metatileId)
 {
     int x;
     int y;
+
+    // TV_On/TV_Off are gTileset_Building metatiles; elsewhere they'd overwrite custom TV art.
+    if (gMapHeader.mapLayout->primaryTileset != &gTileset_Building)
+        return;
 
     for (y = 0; y < height; y++)
     {
