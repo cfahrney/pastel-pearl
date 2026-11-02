@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3_FRLG",
       "x": 5,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
       "x": 2,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 12,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -56,7 +56,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
       "x": 5,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -69,22 +69,15 @@
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 10,
-      "elevation": 0,
-      "dest_map": "MAP_OREBURGH_CITY",
-      "dest_warp_id": "6"
-    },
-    {
       "x": 9,
-      "y": 10,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_OREBURGH_CITY",
       "dest_warp_id": "6"
     },
     {
       "x": 12,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_OREBURGH_CITY_TOP_LEFT_CONDO_2F",
       "dest_warp_id": "0"
