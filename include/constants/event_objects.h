@@ -500,7 +500,6 @@ enum
     OBJ_EVENT_GFX_MOSSY_ROCK,
     OBJ_EVENT_GFX_SEAGALLOP_VERTICAL,
     OBJ_EVENT_GFX_PALKIA_STATUE,
-    OBJ_EVENT_GFX_MOM_DP,
     NUM_OBJ_EVENT_GFX,
 };
 
@@ -733,7 +732,6 @@ enum
 #define OBJ_EVENT_PAL_TAG_ROARK                     0x11B7
 #define OBJ_EVENT_PAL_TAG_MOSSY_ROCK                0x11B8
 #define OBJ_EVENT_PAL_TAG_PALKIA_STATUE             0x11B9
-#define OBJ_EVENT_PAL_TAG_MOM_DP                    0x11BA
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

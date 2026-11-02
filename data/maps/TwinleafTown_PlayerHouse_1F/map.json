@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_PLAYER_MOM",
-      "graphics_id": "OBJ_EVENT_GFX_MOM_DP",
+      "graphics_id": "OBJ_EVENT_GFX_MOM",
       "x": 6,
       "y": 6,
       "elevation": 0,
@@ -43,7 +43,7 @@
     },
     {
       "local_id": "LOCALID_TWINLEAFPLAYERHOUSE_1F_BARRY_MOM",
-      "graphics_id": "OBJ_EVENT_GFX_MOM",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3_FRLG",
       "x": 0,
       "y": 9,
       "elevation": 0,
