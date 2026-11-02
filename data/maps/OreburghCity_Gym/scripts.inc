@@ -185,3 +185,33 @@ OreburghCity_Gym_Text_NPC3Speaker:
 
 OreburghCity_Gym_Text_NPC3:
 	.string "Craaanidos.$"
+
+OreburghCity_Gym_EventScript_NPC4_2_2::
+	release
+	end
+
+OreburghCity_Gym_EventScript_Sign1::
+	lockall
+	goto_if_set FLAG_BADGE01_GET, OreburghCity_Gym_EventScript_Sign1_2
+	msgbox OreburghCity_Gym_Text_Sign1, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+OreburghCity_Gym_EventScript_Sign1_2::
+	msgbox OreburghCity_Gym_Text_Sign1_2, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+OreburghCity_Gym_EventScript_Sign2::
+	goto OreburghCity_Gym_EventScript_Sign1
+	end
+
+OreburghCity_Gym_Text_Sign1:
+	.string "Oreburgh Pokémon Gym Leader: Roark\n"
+	.string "Certified Trainers: {RIVAL}$"
+
+OreburghCity_Gym_Text_Sign1_2:
+	.string "Oreburgh Pokémon Gym Leader: Roark\n"
+	.string "Certified Trainers: {RIVAL} {PLAYER}$"

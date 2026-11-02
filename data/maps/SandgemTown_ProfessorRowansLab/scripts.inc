@@ -19,6 +19,7 @@ SandgemTown_ProfessorRowansLab_OnFrame:
 
 @ VAR_SANDGEM_TOWN_STATE == 3: LUCAS/DAWN leads the player to ROWAN, who hands
 @ over the starter and the Pokédex. Player always enters from warp 0 at (6, 12).
+
 SandgemTown_ProfessorRowansLab_EventScript_RowanIntro::
 	lockall
 	setvar VAR_0x8004, LOCALID_PROFESSORROWANSLAB_LUCASDAWN
@@ -308,3 +309,60 @@ SandgemTown_ProfessorRowansLab_Text_LucasDawnSamePokedex:
 	.string "That makes us comrades working\n"
 	.string "toward the same goal. I'll teach\l"
 	.string "you stuff later, OK?$"
+
+SandgemTown_ProfessorRowansLab_EventScript_Sign1::
+	lockall
+	msgbox SandgemTown_ProfessorRowansLab_Text_Sign1, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+SandgemTown_ProfessorRowansLab_EventScript_Sign2::
+	lockall
+	msgbox SandgemTown_ProfessorRowansLab_Text_Sign2, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+SandgemTown_ProfessorRowansLab_EventScript_Sign3::
+	lockall
+	msgbox SandgemTown_ProfessorRowansLab_Text_Sign3, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+SandgemTown_ProfessorRowansLab_EventScript_Sign4::
+	lockall
+	msgbox SandgemTown_ProfessorRowansLab_Text_Sign4, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+SandgemTown_ProfessorRowansLab_EventScript_Sign5::
+	lockall
+	msgbox SandgemTown_ProfessorRowansLab_Text_Sign5, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+SandgemTown_ProfessorRowansLab_Text_Sign1:
+	.string "Adventure Rule No. 1 The X Button opens\n"
+	.string "the menu.$"
+
+SandgemTown_ProfessorRowansLab_Text_Sign2:
+	.string "Adventure Rule No. 2 Record your\n"
+	.string "progress with Save.$"
+
+SandgemTown_ProfessorRowansLab_Text_Sign3:
+	.string "It's crammed full of books with all\n"
+	.string "sorts of Pokémon information.$"
+
+SandgemTown_ProfessorRowansLab_Text_Sign4:
+	.string "There's a lot of reference material and\n"
+	.string "research reports on Pokémon.$"
+
+SandgemTown_ProfessorRowansLab_Text_Sign5:
+	.string "{PLAYER} checked the PC.\p"
+	.string "The screen is filled with special terms\n"
+	.string "and academic writing that is impossible\l"
+	.string "to figure out.$"

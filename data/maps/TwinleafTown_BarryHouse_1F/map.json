@@ -46,6 +46,15 @@
     }
   ],
   "coord_events": [],
-  "bg_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TwinleafTown_BarryHouse_1F_EventScript_Sign3"
+    }
+  ],
   "region": "REGION_HOENN"
 }

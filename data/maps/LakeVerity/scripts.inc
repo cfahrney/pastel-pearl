@@ -11,6 +11,7 @@ LakeVerity_OnTransition:
 @ in from VERITY LAKEFRONT with BARRY following. Swaps him to a stand-in
 @ object for immediate visibility, runs the ROWAN/LUCAS-DAWN scene, then
 @ restores him as a follower.
+
 LakeVerity_OnFrame:
 	map_script_2 VAR_TWINLEAF_TOWN_STATE, 4, LakeVerity_EventScript_ArriveAtLake
 	.2byte 0
@@ -601,7 +602,6 @@ LakeVerity_Movement_BarryApproachPlayerAfterBattle:
 	face_left
 	step_end
 
-
 LakeVerity_Movement_PlayerLeaveLakeVerity:
 	face_down
 	delay_16
@@ -619,7 +619,6 @@ LakeVerity_Movement_PlayerLeaveLakeVerity:
 	walk_down
 	step_end
 
-
 LakeVerity_Movement_BarryLeaveLakeVerity:
 	walk_left
 	walk_down
@@ -635,3 +634,78 @@ LakeVerity_Movement_BarryLeaveLakeVerity:
 	walk_down
 	walk_down
 	step_end
+
+LakeVerity_EventScript_NPC1::
+	lock
+	faceplayer
+	goto_if_set FLAG_LAKE_VERITY_PROF_ROWAN_1, LakeVerity_EventScript_NPC1_2
+	setflag FLAG_LAKE_VERITY_PROF_ROWAN_1
+	setspeaker SP_NAME_ROWAN
+	msgbox LakeVerity_Text_NPC1, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+LakeVerity_EventScript_NPC1_2::
+	setspeaker SP_NAME_ROWAN
+	msgbox LakeVerity_Text_NPC1_2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+LakeVerity_EventScript_NPC2::
+	lock
+	faceplayer
+	checkplayergender
+	goto_if_eq VAR_RESULT, 0, LakeVerity_EventScript_NPC2_2
+	goto LakeVerity_EventScript_NPC2_2_2
+
+LakeVerity_EventScript_NPC2_2::
+	setspeaker SP_NAME_ASSISTANT
+	message LakeVerity_Text_NPC2
+	waitmessage
+	goto LakeVerity_EventScript_NPC2_2_3
+
+LakeVerity_EventScript_NPC2_2_2::
+	setspeaker SP_NAME_ASSISTANT
+	message LakeVerity_Text_NPC2_2
+	waitmessage
+	goto LakeVerity_EventScript_NPC2_2_3
+
+LakeVerity_EventScript_NPC2_2_3::
+	waitbuttonpress
+	closemessage
+	release
+	end
+
+LakeVerity_EventScript_NPC3::
+	goto LakeVerity_EventScript_NPC1
+	end
+
+LakeVerity_Text_NPC1:
+	.string "Hmmm...\p"
+	.string "No legendary Pokémon, nothing out of\n"
+	.string "the ordinary...\p"
+	.string "{PLAYER}, how was Lake Valor? Anything\n"
+	.string "to report?\p"
+	.string "What? You're just going there now?\n"
+	.string "You've got to move faster than that!$"
+
+LakeVerity_Text_NPC1_2:
+	.string "{PLAYER}, how was Lake Valor? Anything\n"
+	.string "to report?\p"
+	.string "What? You're just going there now?\n"
+	.string "You've got to move faster than that!$"
+
+LakeVerity_Text_NPC2:
+	.string "{PLAYER}, how was Lake Valor?\p"
+	.string "There's nothing wrong here. The lake\n"
+	.string "hasn't changed at all.\p"
+	.string "We haven't found a legendary Pokémon,\n"
+	.string "either, though...$"
+
+LakeVerity_Text_NPC2_2:
+	.string "Hiya, {PLAYER}! How's Lake Valor?\p"
+	.string "There's nothing wrong here. The lake is\n"
+	.string "ordinary, as usual.\p"
+	.string "There's no legendary Pokémon, either...$"

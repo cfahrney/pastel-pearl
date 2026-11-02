@@ -231,6 +231,7 @@ Route202_EventScript_LucasDawnCatchingTips::
 	goto_if_eq VAR_RESULT, YES, Route202_EventScript_LucasDawnKnowsHowToCatch
 
 @ Walks into the grass, then plays the catch tutorial battle.
+
 Route202_EventScript_LucasDawnTeachesCatching::
 	setspeaker SP_NAME_ASSISTANT
 	msgbox Route202_Text_LucasDawnWatchThis, MSGBOX_DEFAULT
@@ -440,3 +441,13 @@ Route202_Text_LucasDawnTravelFarther:
 	.string "That way, you'll have a better shot\n"
 	.string "at meeting more Pokémon.\p"
 	.string "See you around!$"
+
+Route202_EventScript_NPC3::
+	msgbox Route202_Text_NPC3, MSGBOX_NPC
+	end
+
+Route202_Text_NPC3:
+	.string "Some Pokémon only appear in the\n"
+	.string "morning. Some only come out at night.\p"
+	.string "I'm going to keep waiting right here till\n"
+	.string "I've seen every last one of 'em!$"

@@ -746,11 +746,11 @@
 #define FLAG_HIDDEN_ITEM_ETERNA_FOREST_EXTERIOR_ANTIDOTE            0x2B3
 #define FLAG_HIDDEN_ITEM_ETERNA_FOREST_EXTERIOR_HONEY               0x2B4
 #define FLAG_HIDDEN_ITEM_ROUTE_207_SUPER_POTION                     0x2B5
-#define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
-#define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
-#define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
-#define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
+#define FLAG_HIDDEN_ITEM_JUBILIFE_CITY_PARALYZE_HEAL                0x2B6
+#define FLAG_HIDDEN_ITEM_OREBURGH_CITY_STARDUST                     0x2B7
+#define FLAG_HIDDEN_ITEM_ROUTE_219_SUPER_POTION                     0x2B8
+#define FLAG_HIDDEN_ITEM_TWINLEAF_TOWN_ODD_KEYSTONE                 0x2B9
+#define FLAG_HIDDEN_ITEM_VERITY_LAKEFRONT_POTION                    0x2BA
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
 
 // Event Flags
@@ -1292,16 +1292,16 @@
 #define FLAG_ITEM_JUBILIFE_CITY_EXP_CANDY_L                         0x4D6
 #define FLAG_ITEM_ROUTE_202_1                                       0x4D7
 #define FLAG_ITEM_CANALAVE_CITY_DAWN_STONE                          0x4D8
-#define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
+#define FLAG_ITEM_ETERNA_FOREST_EXTERIOR_TM_SLEEP_TALK              0x4D9
+#define FLAG_ITEM_ETERNA_FOREST_EXTERIOR_SILVER_POWDER              0x4DA
+#define FLAG_ITEM_LAKE_VERITY_TM_FIRE_BLAST                         0x4DB
+#define FLAG_ITEM_OLD_CHATEAU_2_F_ROOM_1_DREAD_PLATE                0x4DC
 #define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
+#define FLAG_ITEM_OLD_CHATEAU_2_F_ROOM_4_TM_SUBSTITUTE              0x4DE
 #define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
+#define FLAG_ITEM_OREBURGH_CITY_OREBURGH_MINE_X_DEFENSE             0x4E0
+#define FLAG_ITEM_OREBURGH_CITY_OREBURGH_MINE_2_ESCAPE_ROPE         0x4E1
+#define FLAG_ITEM_ROUTE_218_HONEY                                   0x4E2
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
@@ -1738,31 +1738,26 @@
 #define FLAG_ETERNA_CITY_EAST_OF_POKEMON_CENTER_HOUSE_OLD_MAN_4 (EXTRA_FLAGS_START + 0x05C)
 #define FLAG_HIDE_ETERNA_CITY_WEST_OF_GYM_ENTRANCE_HOUSE_PROF_OAK (EXTRA_FLAGS_START + 0x05D)
 #define FLAG_ETERNA_CITY_WEST_OF_GYM_ENTRANCE_HOUSE_PROF_OAK_1 (EXTRA_FLAGS_START + 0x05E)
-#define FLAG_UNUSED_EXTRA_0x05F                 (EXTRA_FLAGS_START + 0x05F) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x060                 (EXTRA_FLAGS_START + 0x060) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x061                 (EXTRA_FLAGS_START + 0x061) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x062                 (EXTRA_FLAGS_START + 0x062) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x063                 (EXTRA_FLAGS_START + 0x063) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x064                 (EXTRA_FLAGS_START + 0x064) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x065                 (EXTRA_FLAGS_START + 0x065) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x066                 (EXTRA_FLAGS_START + 0x066) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x067                 (EXTRA_FLAGS_START + 0x067) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x068                 (EXTRA_FLAGS_START + 0x068) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x069                 (EXTRA_FLAGS_START + 0x069) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x06A                 (EXTRA_FLAGS_START + 0x06A) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x06B                 (EXTRA_FLAGS_START + 0x06B) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x06C                 (EXTRA_FLAGS_START + 0x06C) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x06D                 (EXTRA_FLAGS_START + 0x06D) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x06E                 (EXTRA_FLAGS_START + 0x06E) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x06F                 (EXTRA_FLAGS_START + 0x06F) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x070                 (EXTRA_FLAGS_START + 0x070) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x071                 (EXTRA_FLAGS_START + 0x071) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x072                 (EXTRA_FLAGS_START + 0x072) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x073                 (EXTRA_FLAGS_START + 0x073) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x074                 (EXTRA_FLAGS_START + 0x074) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x075                 (EXTRA_FLAGS_START + 0x075) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x076                 (EXTRA_FLAGS_START + 0x076) // Unused Flag
-#define FLAG_UNUSED_EXTRA_0x077                 (EXTRA_FLAGS_START + 0x077) // Unused Flag
+#define FLAG_ETERNA_CITY_CONDOMINIUMS_1F_LITTLE_BOY_1 (EXTRA_FLAGS_START + 0x05F)
+#define FLAG_ETERNA_CITY_CONDOMINIUMS_2F_OLD_WOMAN_1 (EXTRA_FLAGS_START + 0x060)
+#define FLAG_ETERNA_CITY_CONDOMINIUMS_4F_OLD_WOMAN_1 (EXTRA_FLAGS_START + 0x061)
+#define FLAG_ETERNA_FOREST_EXTERIOR_WOMAN_1          (EXTRA_FLAGS_START + 0x062)
+#define FLAG_HIDE_JUBILIFE_CITY_FAT_MAN              (EXTRA_FLAGS_START + 0x063)
+#define FLAG_HIDE_JUBILIFE_CITY_MIDDLE_AGED_MAN      (EXTRA_FLAGS_START + 0x064)
+#define FLAG_HIDE_JUBILIFE_CITY_CLOWN                (EXTRA_FLAGS_START + 0x065)
+#define FLAG_HIDE_JUBILIFE_CITY_CLOWN_2              (EXTRA_FLAGS_START + 0x066)
+#define FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_1         (EXTRA_FLAGS_START + 0x067)
+#define FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_2         (EXTRA_FLAGS_START + 0x068)
+#define FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_3         (EXTRA_FLAGS_START + 0x069)
+#define FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_4         (EXTRA_FLAGS_START + 0x06A)
+#define FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_5         (EXTRA_FLAGS_START + 0x06B)
+#define FLAG_HIDE_JUBILIFE_CITY_TRAINER_SCHOOL_BARRY (EXTRA_FLAGS_START + 0x06C)
+#define FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_1     (EXTRA_FLAGS_START + 0x06D)
+#define FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_2     (EXTRA_FLAGS_START + 0x06E)
+#define FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_3     (EXTRA_FLAGS_START + 0x06F)
+#define FLAG_HIDE_LAKE_VERITY_NPC                    (EXTRA_FLAGS_START + 0x070)
+#define FLAG_LAKE_VERITY_PROF_ROWAN_1                (EXTRA_FLAGS_START + 0x071)
+#define FLAG_OLD_CHATEAU_2F_ROOM2_SIGN_1             (EXTRA_FLAGS_START + 0x072)
 #define FLAG_UNUSED_EXTRA_0x078                 (EXTRA_FLAGS_START + 0x078) // Unused Flag
 #define FLAG_UNUSED_EXTRA_0x079                 (EXTRA_FLAGS_START + 0x079) // Unused Flag
 #define FLAG_UNUSED_EXTRA_0x07A                 (EXTRA_FLAGS_START + 0x07A) // Unused Flag

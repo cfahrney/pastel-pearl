@@ -157,6 +157,7 @@ JubilifeCity_TrainerSchool_Text_Sign5:
 	.string "TRAINER SCHOOL SIGN 5$"
 
 @ Barry studies here until the player brings the parcel from his mom.
+
 JubilifeCity_TrainerSchool_EventScript_Barry::
 	lock
 	faceplayer
@@ -217,6 +218,7 @@ JubilifeCity_TrainerSchool_EventScript_BarryNoParcel::
 	end
 
 @ Player stood left (6,3) or right (8,3) of Barry.
+
 JubilifeCity_TrainerSchool_Movement_BarryLeavesPlayerBeside:
 	walk_fast_down
 	walk_fast_down
@@ -229,6 +231,7 @@ JubilifeCity_TrainerSchool_Movement_BarryLeavesPlayerBeside:
 	step_end
 
 @ Player stood below Barry (7,4).
+
 JubilifeCity_TrainerSchool_Movement_BarryLeavesPlayerBelow:
 	walk_fast_left
 	walk_fast_left
@@ -291,3 +294,75 @@ JubilifeCity_TrainerSchool_Text_BarryOreburgh:
 JubilifeCity_TrainerSchool_Text_ObtainedTownMap:
 	.string "Obtained the {COLOR DYNAMIC_COLOR3}Town Map{COLOR DARK_GRAY}!$"
 
+JubilifeCity_TrainerSchool_EventScript_NPC7::
+	lock
+	faceplayer
+	goto_if_set FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_1, JubilifeCity_TrainerSchool_EventScript_NPC7_2
+	msgbox JubilifeCity_TrainerSchool_Text_NPC7, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, JubilifeCity_TrainerSchool_EventScript_NPC7_2_2
+	goto_if_eq VAR_RESULT, NO, JubilifeCity_TrainerSchool_EventScript_NPC7_2_3
+	end
+
+JubilifeCity_TrainerSchool_EventScript_NPC7_2::
+	msgbox JubilifeCity_TrainerSchool_Text_NPC7_2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+JubilifeCity_TrainerSchool_EventScript_NPC7_2_2::
+	msgbox JubilifeCity_TrainerSchool_Text_NPC7_3, MSGBOX_DEFAULT
+	closemessage
+	@ TODO(DP): Scripted battle against DP trainer #345 (School Kid Christine)
+	setflag FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_1
+	goto_if_set FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_2, JubilifeCity_TrainerSchool_EventScript_NPC7_2_5
+	goto_if_unset FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_2, JubilifeCity_TrainerSchool_EventScript_NPC7_2_6
+	end
+
+JubilifeCity_TrainerSchool_EventScript_NPC7_2_3::
+	msgbox JubilifeCity_TrainerSchool_Text_NPC7_4, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+JubilifeCity_TrainerSchool_EventScript_NPC7_2_4::
+	release
+	end
+
+JubilifeCity_TrainerSchool_EventScript_NPC7_2_5::
+	goto_if_set FLAG_JUBILIFE_CITY_TRAINER_SCHOOL_GIRL_3, JubilifeCity_TrainerSchool_EventScript_NPC7_2_6
+	msgbox JubilifeCity_TrainerSchool_Text_NPC7_5, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+JubilifeCity_TrainerSchool_EventScript_NPC7_2_6::
+	msgbox JubilifeCity_TrainerSchool_Text_NPC7_2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+JubilifeCity_TrainerSchool_Text_NPC7:
+	.string "I just became friends with my Pokémon.\p"
+	.string "I'm not sure if we can do this properly,\n"
+	.string "but may we battle?$"
+
+JubilifeCity_TrainerSchool_Text_NPC7_2:
+	.string "Do you think we would have done better\n"
+	.string "if I used Potions?$"
+
+JubilifeCity_TrainerSchool_Text_NPC7_3:
+	.string "I need to try the things I learned\n"
+	.string "before I forget them!$"
+
+JubilifeCity_TrainerSchool_Text_NPC7_4:
+	.string "Boo! Where's your sense of adventure?\p"
+	.string "Don't be shy about talking to people\n"
+	.string "and getting into battles!$"
+
+JubilifeCity_TrainerSchool_Text_NPC7_5:
+	.string "We were actually confident that we\n"
+	.string "would do pretty good.\p"
+	.string "But I'm completely impressed by how\n"
+	.string "tough you are.\p"
+	.string "If you'd like, talk to my friend and get\n"
+	.string "a Technical Machine from him.$"

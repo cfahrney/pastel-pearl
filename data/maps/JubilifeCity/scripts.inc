@@ -252,28 +252,6 @@ JubilifeCity_Text_NPC14:
 JubilifeCity_Text_NPC14Speaker:
 	.string "Gible$"
 
-JubilifeCity_EventScript_NPC15::
-	@ poe:behavior {"mode":"plain","options":[{"id":0},{"id":1,"cond":{"var":"BADGES","op":"ge","value":1}}]}
-	specialvar VAR_RESULT, GetBadgeCount
-	goto_if_ge VAR_RESULT, 1, JubilifeCity_EventScript_NPC15Var1
-	msgbox JubilifeCity_Text_NPC15, MSGBOX_NPC
-	end
-
-JubilifeCity_EventScript_NPC15Var1::
-	msgbox JubilifeCity_Text_NPC15Var1, MSGBOX_NPC
-	end
-
-JubilifeCity_Text_NPC15Var1::
-	.string "JUBILIFE CITY NPC 15 OPTION 1$"
-
-JubilifeCity_Text_NPC15:
-	.string "Hey there, kiddo! Sorry, but the\n"
-	.string "{COLOR DYNAMIC_COLOR3}Jubilife Battle Dome{COLOR DARK_GRAY} is currently\l"
-	.string "closed. We are working on some wicked\l"
-	.string "cool stuff, though! Come back after you\l"
-	.string "have a few badges!$"
-
-@ VAR_JUBILIFE_CITY_STATE == 0: LUCAS/DAWN runs down from the north and points the player to the Trainer School.
 JubilifeCity_EventScript_LucasDawnStopsPlayerAtX53::
 	lockall
 	applymovement LOCALID_JUBILIFECITY_LUCASDAWN, JubilifeCity_Movement_LucasDawnEntersFrame
@@ -385,6 +363,7 @@ JubilifeCity_Text_NPC1AfterTownMap:
 	.string "even manage a hello.$"
 
 @ Progression guard: until the player has the Town Map (state < 2) the FAT MAN stops them at the east exit.
+
 JubilifeCity_EventScript_FatManNoticesPlayerAtY21::
 	goto JubilifeCity_EventScript_FatManStopsPlayer
 
@@ -418,6 +397,7 @@ JubilifeCity_EventScript_FatManLetsPlayerPass::
 	end
 
 @ VAR_JUBILIFE_CITY_STATE == 2: the DexNav President walks down from the north and gives the player the DexNav.
+
 JubilifeCity_EventScript_DexnavPresidentStopsPlayerAtX52::
 	lockall
 	call JubilifeCity_EventScript_DexNavPresidentNoticesPlayer
@@ -487,6 +467,7 @@ JubilifeCity_EventScript_DexNavPresidentGivesDexNav::
 	end
 
 @ He starts at (54, 35); the player stands on y39 at x52-56.
+
 JubilifeCity_Movement_DexNavPresidentApproachX52:
 	walk_down
 	walk_down
@@ -910,3 +891,226 @@ JubilifeCity_Text_Grunt1Defeated:
 JubilifeCity_Text_Grunt2Defeated:
 	.string "This won't do...\n"
 	.string "Time to retreat.\pThis mission is a failure.$"
+
+JubilifeCity_EventScript_NPC19::
+	msgbox JubilifeCity_Text_NPC19, MSGBOX_NPC
+	end
+
+JubilifeCity_EventScript_NPC20::
+	msgbox JubilifeCity_Text_NPC20, MSGBOX_NPC
+	end
+
+JubilifeCity_EventScript_NPC21::
+	msgbox JubilifeCity_Text_NPC21, MSGBOX_NPC
+	end
+
+JubilifeCity_EventScript_NPC22::
+	lockall
+	faceplayer
+	setvar VAR_0x8004, 0
+	call JubilifeCity_EventScript_NPC22_2
+	goto_if_eq VAR_0x8004, 3, JubilifeCity_EventScript_NPC22_2_2
+	msgbox JubilifeCity_Text_NPC22, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+JubilifeCity_EventScript_NPC22_2::
+	call_if_set FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_1, JubilifeCity_EventScript_NPC22_2_3
+	call_if_set FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_2, JubilifeCity_EventScript_NPC22_2_3
+	call_if_set FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_3, JubilifeCity_EventScript_NPC22_2_3
+	return
+
+JubilifeCity_EventScript_NPC22_2_2::
+	msgbox JubilifeCity_Text_NPC22_2, MSGBOX_DEFAULT
+	removeitem ITEM_NONE @ TODO(DP): ITEM_COUPON_1, 1
+	removeitem ITEM_NONE @ TODO(DP): ITEM_COUPON_2, 1
+	removeitem ITEM_NONE @ TODO(DP): ITEM_COUPON_3, 1
+	@ TODO(DP): GivePoketch
+	setvar VAR_JUBILIFE_CITY_STATE_2, 2
+	@ TODO(DP): UnlockPoketchApp 0
+	@ TODO(DP): UnlockPoketchApp 1
+	@ TODO(DP): UnlockPoketchApp 3
+	@ TODO(DP): UnlockPoketchApp 4
+	message JubilifeCity_Text_NPC22_3
+	waitmessage
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	msgbox JubilifeCity_Text_NPC22_4, MSGBOX_DEFAULT
+	closemessage
+	copyvar VAR_RESULT, VAR_FACING
+	goto_if_eq VAR_RESULT, DIR_NORTH, JubilifeCity_EventScript_NPC22_2_4
+	goto_if_eq VAR_RESULT, DIR_SOUTH, JubilifeCity_EventScript_NPC22_2_5
+	goto_if_eq VAR_RESULT, DIR_WEST, JubilifeCity_EventScript_NPC22_2_4
+	goto_if_eq VAR_RESULT, DIR_EAST, JubilifeCity_EventScript_NPC22_2_4
+	end
+
+JubilifeCity_EventScript_NPC22_2_3::
+	addvar VAR_0x8004, 1
+	return
+
+JubilifeCity_EventScript_NPC22_2_4::
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_LocalidJubilifecityDexnavpresident
+	applymovement LOCALID_PLAYER, JubilifeCity_Movement_Player
+	waitmovement 0
+	goto JubilifeCity_EventScript_NPC22_2_6
+
+JubilifeCity_EventScript_NPC22_2_5::
+	applymovement LOCALID_JUBILIFECITY_DEXNAVPRESIDENT, JubilifeCity_Movement_LocalidJubilifecityDexnavpresident2
+	applymovement LOCALID_PLAYER, JubilifeCity_Movement_Player2
+	waitmovement 0
+	goto JubilifeCity_EventScript_NPC22_2_6
+
+JubilifeCity_EventScript_NPC22_2_6::
+	removeobject LOCALID_JUBILIFECITY_DEXNAVPRESIDENT
+	setflag FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_4
+	clearflag FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_5
+	releaseall
+	end
+
+JubilifeCity_EventScript_NPC23::
+	lock
+	faceplayer
+	goto_if_set FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_2, JubilifeCity_EventScript_NPC23_2
+	msgbox JubilifeCity_Text_NPC23, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, JubilifeCity_EventScript_NPC23_2_2
+	goto_if_eq VAR_RESULT, NO, JubilifeCity_EventScript_NPC23_2_3
+	end
+
+JubilifeCity_EventScript_NPC23_2::
+	msgbox JubilifeCity_Text_NPC23_2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+JubilifeCity_EventScript_NPC23_2_2::
+	playse SE_DING_DONG
+	msgbox JubilifeCity_Text_NPC23_3, MSGBOX_DEFAULT
+	msgbox JubilifeCity_Text_NPC23_4, MSGBOX_DEFAULT
+	msgbox JubilifeCity_Text_NPC23_5, MSGBOX_DEFAULT
+	setvar VAR_0x8004, ITEM_NONE @ TODO(DP): ITEM_COUPON_2
+	setvar VAR_0x8005, 1
+	setflag FLAG_JUBILIFE_CITY_MIDDLE_AGED_MAN_2
+	giveitem VAR_0x8004, VAR_0x8005
+	closemessage
+	release
+	end
+
+JubilifeCity_EventScript_NPC23_2_3::
+	playse SE_PC_ON
+	msgbox JubilifeCity_Text_NPC23_6, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+JubilifeCity_EventScript_NPC15::
+	msgbox JubilifeCity_Text_NPC15_2, MSGBOX_NPC
+	end
+
+JubilifeCity_Movement_LocalidJubilifecityDexnavpresident:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+JubilifeCity_Movement_Player:
+	delay_16
+	walk_in_place_up
+	step_end
+
+JubilifeCity_Movement_LocalidJubilifecityDexnavpresident2:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+JubilifeCity_Movement_Player2:
+	delay_16
+	walk_in_place_left
+	walk_in_place_up
+	step_end
+
+JubilifeCity_Text_NPC19:
+	.string "When you walk with your Pokémon, they\n"
+	.string "gradually grow friendlier.$"
+
+JubilifeCity_Text_NPC20:
+	.string "Did you see me on TV? I was in an\n"
+	.string "interview!$"
+
+JubilifeCity_Text_NPC21:
+	.string "OK, set six Poké Balls in my belt...\p"
+	.string "Yeah, that'll do it. At most, you can\n"
+	.string "have six Pokémon with you.$"
+
+JubilifeCity_Text_NPC22:
+	.string "The three clowns will each ask you a\n"
+	.string "skill-testing question.\p"
+	.string "The questions will all have to do with\n"
+	.string "Pokémon.\p"
+	.string "After all, a Pokétch is a tool for\n"
+	.string "Pokémon Trainers.\p"
+	.string "Collect a Coupon from each clown, then\n"
+	.string "come see me, OK?$"
+
+JubilifeCity_Text_NPC22_2:
+	.string "OK, let me count your Coupons! I'll use\n"
+	.string "the Pokétch here...\p"
+	.string "One, two, three! Bravo! I say, bravo!\p"
+	.string "In return for these Coupons, I present\n"
+	.string "you this Pokémon Watch, or Pokétch for\l"
+	.string "short!$"
+
+JubilifeCity_Text_NPC22_3:
+	.string "{PLAYER} received a Pokétch!$"
+
+JubilifeCity_Text_NPC22_4:
+	.string "You can add apps to your Pokétch to\n"
+	.string "make it even more versatile!\p"
+	.string "Touch the Pokétch screen and please do\n"
+	.string "try it out!$"
+
+JubilifeCity_Text_NPC23:
+	.string "Hi! I'm a Pokétch campaign clown! Let's\n"
+	.string "roll out my question!\p"
+	.string "Just like Pokémon types, the moves of\n"
+	.string "Pokémon also have types?$"
+
+JubilifeCity_Text_NPC23_2:
+	.string "If the Pokémon's type matches its\n"
+	.string "move's type, that move is made much\l"
+	.string "more powerful!$"
+
+JubilifeCity_Text_NPC23_3:
+	.string "Ding-ding! You're absolutely correct!$"
+
+JubilifeCity_Text_NPC23_4:
+	.string "If the Pokémon's type matches its\n"
+	.string "move's type, that move is made much\l"
+	.string "more powerful!$"
+
+JubilifeCity_Text_NPC23_5:
+	.string "Here you go! Your Pokétch Coupon!$"
+
+JubilifeCity_Text_NPC23_6:
+	.string "Bzzzzt! That's the wrong answer...$"
+
+JubilifeCity_Text_NPC15_2:
+	.string "Past here is the GTS, which stands for\n"
+	.string "Global Trade Station.\p"
+	.string "Trading Pokémon means connecting with\n"
+	.string "friends, both old and new.\p"
+	.string "That's awesome!$"

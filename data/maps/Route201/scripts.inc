@@ -4,6 +4,7 @@ Route201_MapScripts::
 
 @ Shows BARRY while VAR_TWINLEAF_TOWN_STATE == 2, and ROWAN/LUCAS-DAWN
 @ while it's == 10.
+
 Route201_OnTransition:
 	call Common_EventScript_SetupLucasDawnAssistantGfxId
 	setflag FLAG_HIDE_ROUTE201_BARRY
@@ -33,6 +34,7 @@ Route201_EventScript_ShowRowanAndLucasDawn:
 
 @ Triggers when VAR_TWINLEAF_TOWN_STATE == 2. Has BARRY run down to meet
 @ the player and join as a follower.
+
 Route201_EventScript_BarryNoticesPlayerAtX22::
 	lockall
 	playse SE_PIN
@@ -130,6 +132,7 @@ Route201_Movement_BarryToX25:
 
 @ Blocks the player from entering the tall grass while
 @ VAR_TWINLEAF_TOWN_STATE == 3. Repeatable trigger, doesn't advance state.
+
 Route201_EventScript_BarryStopsPlayerFromGrass::
 	lockall
 	facefollowernpc
@@ -145,6 +148,7 @@ Route201_EventScript_BarryStopsPlayerFromGrass::
 
 @ Blocks the player from returning to Twinleaf while
 @ VAR_TWINLEAF_TOWN_STATE == 3. Repeatable trigger, doesn't advance state.
+
 Route201_EventScript_BarryStopsPlayerFromLeaving::
 	lockall
 	facefollowernpc
@@ -183,6 +187,7 @@ Route201_Movement_WalkUp:
 
 @ Triggers when VAR_TWINLEAF_TOWN_STATE == 10, having ROWAN catch up
 @ with the player.
+
 Route201_EventScript_RowanNoticesPlayerAtY8::
 	lockall
 	playse SE_PIN
@@ -335,6 +340,7 @@ Route201_EventScript_RowanConfrontsPlayerAtY9:
 @ Gets the species name that counters the player's starter, for BARRY's
 @ brag line. Same type-counter logic as
 @ LakeVerity_EventScript_BufferCounterStarterName.
+
 Route201_EventScript_BufferBarryCounterStarterName:
 	goto_if_eq VAR_STARTER_MON, 0, Route201_EventScript_BufferCounterFire
 	goto_if_eq VAR_STARTER_MON, 1, Route201_EventScript_BufferCounterWater
@@ -549,3 +555,11 @@ Route201_EventScript_Sign2::
 Route201_Text_Sign2:
 	.string "Route 201\n"
 	.string "{RIGHT_ARROW} Sandgem Town$"
+
+Route201_EventScript_NPC4::
+	msgbox Route201_Text_NPC4, MSGBOX_NPC
+	end
+
+Route201_Text_NPC4:
+	.string "That ledge is one way. Jump down for a\n"
+	.string "shortcut to {COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY}!$"

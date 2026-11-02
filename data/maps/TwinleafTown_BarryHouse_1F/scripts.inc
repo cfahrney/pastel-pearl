@@ -35,3 +35,14 @@ TwinleafTown_BarryHouse_1F_Text_RocketedOffAgain:
 TwinleafTown_BarryHouse_1F_Text_FriendsWithAPokemon:
 	.string "Oh, you've become friends with a\n"
 	.string "Pokémon, too.$"
+
+TwinleafTown_BarryHouse_1F_EventScript_Sign3::
+	lockall
+	msgbox TwinleafTown_BarryHouse_1F_Text_Sign3, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+TwinleafTown_BarryHouse_1F_Text_Sign3:
+	.string "Mom's favorite dessert is in the\n"
+	.string "refrigerator.$"

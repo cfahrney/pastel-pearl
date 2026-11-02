@@ -26,3 +26,13 @@ OreburghCity_BottomRightCondo_1F_Text_NPC3:
 	.string "Your Pokémon could use some toughening\n"
 	.string "up! Why not try training in the {COLOR DYNAMIC_COLOR3}Oreburgh\l"
 	.string "Mine{COLOR DARK_GRAY}?$"
+
+OreburghCity_BottomRightCondo_1F_EventScript_NPC4::
+	msgbox OreburghCity_BottomRightCondo_1F_Text_NPC4, MSGBOX_NPC
+	end
+
+OreburghCity_BottomRightCondo_1F_Text_NPC4:
+	.string "Hiya! Your Pokémon could use some\n"
+	.string "toughening up.\p"
+	.string "Why not try training in the {COLOR DYNAMIC_COLOR3}Oreburgh\n"
+	.string "Mine{COLOR DARK_GRAY}?$"

@@ -644,3 +644,59 @@ OreburghCity_Text_BarryWhoops:
 	.string "Ten seconds before I dash!\p"
 	.string "Nine...\p"
 	.string "Bah! Who's got time to count?!$"
+
+OreburghCity_EventScript_NPC12::
+	lock
+	faceplayer
+	goto_if_set FLAG_BADGE01_GET, OreburghCity_EventScript_NPC12_2
+	goto_if_set FLAG_OREBURGH_CITY_OREBURGH_MINE_2_ROARK_1, OreburghCity_EventScript_NPC12_2_2
+	msgbox OreburghCity_Text_NPC12, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OreburghCity_EventScript_NPC12_2::
+	msgbox OreburghCity_Text_NPC12_2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OreburghCity_EventScript_NPC12_2_2::
+	msgbox OreburghCity_Text_NPC12_3, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OreburghCity_EventScript_NPC13::
+	msgbox OreburghCity_Text_NPC13, MSGBOX_NPC
+	end
+
+OreburghCity_EventScript_NPC14::
+	msgbox OreburghCity_Text_NPC14, MSGBOX_NPC
+	end
+
+OreburghCity_Text_NPC12:
+	.string "Is that guy in front of the Gym your\n"
+	.string "friend?\p"
+	.string "He's sort of twitchy and impatient.$"
+
+OreburghCity_Text_NPC12_2:
+	.string "Can I see your Trainer Case?\p"
+	.string "It's got the Gym Badge you just won,\n"
+	.string "right?$"
+
+OreburghCity_Text_NPC12_3:
+	.string "Oh, hi, you're back! The Gym Leader's\n"
+	.string "waiting for you.$"
+
+OreburghCity_Text_NPC13:
+	.string "These vents exchange the hot air down\n"
+	.string "below with the fresh air outside.\p"
+	.string "Looking down them gives me the urge to\n"
+	.string "start yelling into 'em! Hello!$"
+
+OreburghCity_Text_NPC14:
+	.string "TMs are single use only, but HMs can be\n"
+	.string "used over and over.\p"
+	.string "It's tricky trying to decide which\n"
+	.string "Pokémon should learn what moves.$"

@@ -298,3 +298,32 @@ OreburghCity_OreburghMine_2_Text_NPC6_3:
 	.string "in town, you'd be able to do this too.\p"
 	.string "Of course, you'd have to beat the Gym\n"
 	.string "Leader first. That'd be me!$"
+
+OreburghCity_OreburghMine_2_EventScript_NPC12::
+	msgbox OreburghCity_OreburghMine_2_Text_NPC12, MSGBOX_NPC
+	end
+
+OreburghCity_OreburghMine_2_EventScript_NPC13::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setspeaker OreburghCity_OreburghMine_2_Text_MachopSpeaker
+	message OreburghCity_OreburghMine_2_Text_NPC13
+	waitmessage
+	waitmoncry
+	waitbuttonpress
+	closemessage
+	release
+	end
+
+OreburghCity_OreburghMine_2_Text_NPC12:
+	.string "I met these Machop on {COLOR DYNAMIC_COLOR3}Route 207{COLOR DARK_GRAY}.\p"
+	.string "They've now become my most trusted\n"
+	.string "partners!$"
+
+OreburghCity_OreburghMine_2_Text_MachopSpeaker:
+	.string "Machop$"
+
+OreburghCity_OreburghMine_2_Text_NPC13:
+	.string "Chopmacho!$"

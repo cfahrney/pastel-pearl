@@ -422,3 +422,14 @@ Route205_Text_Trigger2:
 	.string "We are also using the energy of the\n"
 	.string "Valley Windworks for something.\p"
 	.string "But that is of no concern to you!$"
+
+Route205_EventScript_NPC5::
+	msgbox Route205_Text_NPC5, MSGBOX_NPC
+	end
+
+Route205_Text_NPC5:
+	.string "Many Poison-type Pokémon make the\n"
+	.string "Eterna Forest their home.\p"
+	.string "But I didn't buy any Antidotes. What\n"
+	.string "should I do?\p"
+	.string "Do I press on, or do I go back?$"

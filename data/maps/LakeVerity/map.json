@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "LakeVerity_EventScript_NPC1",
       "flag": "FLAG_HIDE_LAKE_VERITY_PROFESSOR_ROWAN",
       "scriptOnly": true
     },
@@ -55,7 +55,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "LakeVerity_EventScript_NPC2",
       "flag": "FLAG_HIDE_LAKE_VERITY_LUCASDAWN",
       "scriptOnly": true
     },
@@ -70,7 +70,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "LakeVerity_EventScript_NPC3",
       "flag": "FLAG_HIDE_LAKE_VERITY_SUITCASE",
       "scriptOnly": true
     },
@@ -103,6 +103,19 @@
       "script": "NULL",
       "flag": "FLAG_HIDE_LAKE_VERITY_BARRY_STARLY",
       "scriptOnly": true
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 17,
+      "y": 39,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_FIRE_BLAST",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LAKE_VERITY_TM_FIRE_BLAST"
     }
   ],
   "warp_events": [

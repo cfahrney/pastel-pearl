@@ -4,6 +4,7 @@ TwinleafTown_BarryHouse_2F_MapScripts::
 
 @ VAR_TWINLEAF_TOWN_STATE == 1: fires automatically the moment the player
 @ walks in (no trigger tile needed) since Barry is already in the room.
+
 TwinleafTown_BarryHouse_2F_OnFrame:
 	map_script_2 VAR_TWINLEAF_TOWN_STATE, 1, TwinleafTown_BarryHouse_2F_EventScript_BarryNoticesPlayer
 	.2byte 0
@@ -67,3 +68,33 @@ TwinleafTown_BarryHouse_2F_Movement_BarryLeaveDownStairs:
 	walk_fast_left
 	walk_up
 	step_end
+
+TwinleafTown_BarryHouse_2F_EventScript_Sign1::
+	lockall
+	msgbox TwinleafTown_BarryHouse_2F_Text_Sign1, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+TwinleafTown_BarryHouse_2F_EventScript_Sign2::
+	msgbox TwinleafTown_BarryHouse_2F_Text_Sign2, MSGBOX_SIGN
+	end
+
+TwinleafTown_BarryHouse_2F_EventScript_Sign3::
+	lockall
+	msgbox TwinleafTown_BarryHouse_2F_Text_Sign3, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+TwinleafTown_BarryHouse_2F_Text_Sign1:
+	.string "It's a Wii! It's controlled by a Wii\n"
+	.string "Remote!$"
+
+TwinleafTown_BarryHouse_2F_Text_Sign2:
+	.string "The X Button\n"
+	.string "opens the menu!$"
+
+TwinleafTown_BarryHouse_2F_Text_Sign3:
+	.string "The TV is showing the title screen of a\n"
+	.string "video game.$"
