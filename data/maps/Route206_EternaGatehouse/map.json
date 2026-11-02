@@ -78,25 +78,11 @@
       "dest_warp_id": "11"
     },
     {
-      "x": 4,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE206",
-      "dest_warp_id": "5"
-    },
-    {
       "x": 5,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206",
       "dest_warp_id": "5"
-    },
-    {
-      "x": 6,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE206",
-      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
