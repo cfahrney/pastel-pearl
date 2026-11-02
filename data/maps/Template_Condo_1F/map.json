@@ -82,13 +82,6 @@
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_TEMPLATE_CONDO_1F",
-      "dest_warp_id": "7"
-    },
-    {
       "x": 9,
       "y": 12,
       "elevation": 0,
