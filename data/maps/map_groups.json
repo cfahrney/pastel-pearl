@@ -1264,10 +1264,15 @@
     "Template_StandardHome_1F",
     "Template_StandardHome_2F",
     "Template_HighRise_1F",
-    "Template_HighRise_2F",
+    "Template_HighRise_Mid",
     "Template_OneStoryHome",
     "Template_HorizontalGateHouse",
-    "Template_VerticalGateHouse"
+    "Template_VerticalGateHouse",
+    "Template_HighRise_Top",
+    "Template_Condo_1F",
+    "Template_Condo_2F",
+    "Template_MessyOneStoryHome",
+    "Template_VerticalGuardlessGateHouse"
   ],
   "gMapGroup_IndoorJubilife": [
     "JubilifeCity_PokemonCenter_1F",

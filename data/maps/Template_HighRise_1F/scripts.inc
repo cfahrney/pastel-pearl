@@ -36,22 +36,22 @@ Template_HighRise_1F_EventScript_NPC5::
 	end
 
 Template_HighRise_1F_Text_NPC1:
-	.string "HIGH RISE 1F NPC 1$"
+	.string "High Rise 1F NPC 1$"
 
 Template_HighRise_1F_Text_NPC2:
-	.string "HIGH RISE 1F NPC 2$"
+	.string "High Rise 1F NPC 2$"
 
 Template_HighRise_1F_Text_NPC3:
-	.string "HIGH RISE 1F NPC 3$"
+	.string "High Rise 1F NPC 3$"
 
 Template_HighRise_1F_Text_NPC4:
-	.string "HIGH RISE 1F NPC 4$"
+	.string "High Rise 1F NPC 4$"
 
 Template_HighRise_1F_Text_NPC4Speaker:
 	.string "Sentret$"
 
 Template_HighRise_1F_Text_NPC5:
-	.string "HIGH RISE 1F NPC 5$"
+	.string "High Rise 1F NPC 5$"
 
 Template_HighRise_1F_Text_NPC5Speaker:
 	.string "Cleffa$"

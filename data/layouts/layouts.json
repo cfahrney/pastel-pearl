@@ -9359,8 +9359,8 @@
       "id": "LAYOUT_TWINLEAF_TOWN_TOP_RIGHT_HOUSE_1F",
       "name": "TwinleafTown_TopRightHouse_1F_Layout",
       "width": 9,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
+      "height": 9,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_TopRightHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_TopRightHouse_1F/map.bin",
@@ -9370,8 +9370,8 @@
       "id": "LAYOUT_TWINLEAF_TOWN_PLAYER_HOUSE_1F",
       "name": "TwinleafTown_PlayerHouse_1F_Layout",
       "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
+      "height": 10,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_PlayerHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_PlayerHouse_1F/map.bin",
@@ -9381,8 +9381,8 @@
       "id": "LAYOUT_TWINLEAF_TOWN_PLAYER_HOUSE_2F",
       "name": "TwinleafTown_PlayerHouse_2F_Layout",
       "width": 10,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
+      "height": 9,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_PlayerHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_PlayerHouse_2F/map.bin",
@@ -9403,8 +9403,8 @@
       "id": "LAYOUT_TWINLEAF_TOWN_BOTTOM_LEFT_HOUSE_1F",
       "name": "TwinleafTown_BottomLeftHouse_1F_Layout",
       "width": 9,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
+      "height": 9,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/TwinleafTown_BottomLeftHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTown_BottomLeftHouse_1F/map.bin",
@@ -9715,8 +9715,8 @@
       "id": "LAYOUT_TEMPLATE_STANDARD_HOME_1F",
       "name": "Template_StandardHome_1F_Layout",
       "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
+      "height": 10,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/Template_StandardHome_1F/border.bin",
       "blockdata_filepath": "data/layouts/Template_StandardHome_1F/map.bin"
@@ -9725,8 +9725,8 @@
       "id": "LAYOUT_TEMPLATE_STANDARD_HOME_2F",
       "name": "Template_StandardHome_2F_Layout",
       "width": 10,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
+      "height": 9,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/Template_StandardHome_2F/border.bin",
       "blockdata_filepath": "data/layouts/Template_StandardHome_2F/map.bin"
@@ -9735,8 +9735,8 @@
       "id": "LAYOUT_TEMPLATE_ONE_STORY_HOME",
       "name": "Template_OneStoryHome_Layout",
       "width": 9,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
+      "height": 9,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/Template_OneStoryHome/border.bin",
       "blockdata_filepath": "data/layouts/Template_OneStoryHome/map.bin"
@@ -9896,8 +9896,8 @@
       "id": "LAYOUT_TEMPLATE_HIGH_RISE_1F",
       "name": "Template_HighRise_1F_Layout",
       "width": 15,
-      "height": 11,
-      "primary_tileset": "gTileset_Building",
+      "height": 13,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohHighRise",
       "border_filepath": "data/layouts/Template_HighRise_1F/border.bin",
       "blockdata_filepath": "data/layouts/Template_HighRise_1F/map.bin"
@@ -9913,14 +9913,14 @@
       "blockdata_filepath": "data/layouts/JubilifeCity_SouthOfTrainerSchoolCondo_1F/map.bin"
     },
     {
-      "id": "LAYOUT_TEMPLATE_HIGH_RISE_2F",
-      "name": "Template_HighRise_2F_Layout",
+      "id": "LAYOUT_TEMPLATE_HIGH_RISE_MID",
+      "name": "Template_HighRise_Mid_Layout",
       "width": 15,
-      "height": 11,
-      "primary_tileset": "gTileset_Building",
+      "height": 12,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_SinnohHighRise",
-      "border_filepath": "data/layouts/Template_HighRise_2F/border.bin",
-      "blockdata_filepath": "data/layouts/Template_HighRise_2F/map.bin"
+      "border_filepath": "data/layouts/Template_HighRise_Mid/border.bin",
+      "blockdata_filepath": "data/layouts/Template_HighRise_Mid/map.bin"
     },
     {
       "id": "LAYOUT_JUBILIFE_CITY_SOUTH_OF_TRAINER_SCHOOL_CONDO_2F",
@@ -10576,9 +10576,9 @@
     {
       "id": "LAYOUT_TEMPLATE_VERTICAL_GATE_HOUSE",
       "name": "Template_VerticalGateHouse_Layout",
-      "width": 9,
-      "height": 11,
-      "primary_tileset": "gTileset_Building",
+      "width": 11,
+      "height": 12,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_GateHouse",
       "border_filepath": "data/layouts/Template_VerticalGateHouse/border.bin",
       "blockdata_filepath": "data/layouts/Template_VerticalGateHouse/map.bin"
@@ -10586,9 +10586,9 @@
     {
       "id": "LAYOUT_TEMPLATE_HORIZONTAL_GATE_HOUSE",
       "name": "Template_HorizontalGateHouse_Layout",
-      "width": 13,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_GateHouse",
       "border_filepath": "data/layouts/Template_HorizontalGateHouse/border.bin",
       "blockdata_filepath": "data/layouts/Template_HorizontalGateHouse/map.bin"
@@ -10616,9 +10616,9 @@
     {
       "id": "LAYOUT_ROUTE206_ETERNA_GATEHOUSE",
       "name": "Route206_EternaGatehouse_Layout",
-      "width": 9,
-      "height": 11,
-      "primary_tileset": "gTileset_Building",
+      "width": 11,
+      "height": 12,
+      "primary_tileset": "gTileset_SinnohInterior",
       "secondary_tileset": "gTileset_GateHouse",
       "border_filepath": "data/layouts/Route206_EternaGatehouse/border.bin",
       "blockdata_filepath": "data/layouts/Route206_EternaGatehouse/map.bin"
@@ -10752,6 +10752,56 @@
       "secondary_tileset": "gTileset_SinnohBuilding",
       "border_filepath": "data/layouts/CanalaveCity_SouthOfGymHouse/border.bin",
       "blockdata_filepath": "data/layouts/CanalaveCity_SouthOfGymHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_CONDO_2F",
+      "name": "Template_Condo_2F_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_SinnohInterior",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/Template_Condo_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_Condo_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_CONDO_1F",
+      "name": "Template_Condo_1F_Layout",
+      "width": 15,
+      "height": 13,
+      "primary_tileset": "gTileset_SinnohInterior",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/Template_Condo_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Template_Condo_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_HIGH_RISE_TOP",
+      "name": "Template_HighRise_Top_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_SinnohInterior",
+      "secondary_tileset": "gTileset_SinnohHighRise",
+      "border_filepath": "data/layouts/Template_HighRise_Top/border.bin",
+      "blockdata_filepath": "data/layouts/Template_HighRise_Top/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_MESSY_ONE_STORY_HOME",
+      "name": "Template_MessyOneStoryHome_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_SinnohInterior",
+      "secondary_tileset": "gTileset_SinnohBuilding",
+      "border_filepath": "data/layouts/Template_MessyOneStoryHome/border.bin",
+      "blockdata_filepath": "data/layouts/Template_MessyOneStoryHome/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_VERTICAL_GUARDLESS_GATE_HOUSE",
+      "name": "Template_VerticalGuardlessGateHouse_Layout",
+      "width": 5,
+      "height": 12,
+      "primary_tileset": "gTileset_SinnohInterior",
+      "secondary_tileset": "gTileset_GateHouse",
+      "border_filepath": "data/layouts/Template_VerticalGuardlessGateHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Template_VerticalGuardlessGateHouse/map.bin"
     }
   ]
 }

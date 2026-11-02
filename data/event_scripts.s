@@ -1842,7 +1842,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 
 	.include "data/maps/Template_HighRise_1F/scripts.inc"
 
-	.include "data/maps/Template_HighRise_2F/scripts.inc"
+	.include "data/maps/Template_HighRise_Mid/scripts.inc"
 
 	.include "data/maps/JubilifeCity_SouthOfTrainerSchoolCondo_1F/scripts.inc"
 
@@ -2013,3 +2013,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/CanalaveCity_SailorEldritchHouse/scripts.inc"
 
 	.include "data/maps/CanalaveCity_SouthOfGymHouse/scripts.inc"
+
+	.include "data/maps/Template_Condo_1F/scripts.inc"
+
+	.include "data/maps/Template_HighRise_Top/scripts.inc"
+
+	.include "data/maps/Template_Condo_2F/scripts.inc"
+
+	.include "data/maps/Template_MessyOneStoryHome/scripts.inc"
+
+	.include "data/maps/Template_VerticalGuardlessGateHouse/scripts.inc"
