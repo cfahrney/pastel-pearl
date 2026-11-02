@@ -39687,84 +39687,84 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_PELIPPER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_PELIPPER"
               }
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 3,
+                "max_level": 7,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_FINNEON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 10,
+                "max_level": 25,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_LUMINEON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_SHELLDER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_LUMINEON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BIDOOF"
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_LUMINEON"
               }
             ]
           }
@@ -41443,6 +41443,213 @@
         {
           "map": "MAP_ROUTE205_NORTH",
           "base_label": "gRoute205_North_Night",
+          "land_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_SHELLOS"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_PACHIRISU"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_PACHIRISU"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ETERNA_FOREST_EXTERIOR",
+          "base_label": "gEternaForest_Exterior_Morning",
+          "land_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_SHELLOS"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_PACHIRISU"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_PACHIRISU"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ETERNA_FOREST_EXTERIOR",
+          "base_label": "gEternaForest_Exterior_Day",
+          "land_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_SHELLOS"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_PACHIRISU"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_PACHIRISU"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ETERNA_FOREST_EXTERIOR",
+          "base_label": "gEternaForest_Exterior_Night",
           "land_mons": {
             "encounter_rate": 30,
             "mons": [
