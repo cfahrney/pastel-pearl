@@ -17237,7 +17237,7 @@ Level: 7
 
 === TRAINER_OREBURGH_GATE_B1F_1 ===
 Name: Grant
-Class: Expert
+Class: Veteran
 Pic: Veteran
 Gender: Male
 Music: Male
@@ -17339,8 +17339,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE204_3 ===
 Name: Taylor
-Class: Lass
-Pic: Twins Frlg
+Class: Aroma Lady
+Pic: Aroma Lady Dp
 Gender: Female
 Music: Female
 Double Battle: No
@@ -17419,7 +17419,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_1 ===
 Name: Colin
-Class: Hiker
+Class: Worker
 Pic: Worker
 Gender: Male
 Music: Male
@@ -17440,7 +17440,7 @@ Level: 7
 
 === TRAINER_OREBURGH_CITY_OREBURGH_MINE_2_2 ===
 Name: Mason
-Class: Hiker
+Class: Worker
 Pic: Worker
 Gender: Male
 Music: Male
@@ -17949,7 +17949,7 @@ Level: 10
 
 === TRAINER_FUEGO_IRONWORKS_INTERIOR_1 ===
 Name: Holden
-Class: Pkmn Trainer 1
+Class: Worker
 Pic: Worker
 Gender: Male
 Music: Male
@@ -17961,7 +17961,7 @@ Level: 33
 
 === TRAINER_FUEGO_IRONWORKS_INTERIOR_2 ===
 Name: Dillan
-Class: Pkmn Trainer 1
+Class: Worker
 Pic: Worker
 Gender: Male
 Music: Male
@@ -17976,7 +17976,7 @@ Level: 31
 
 === TRAINER_FUEGO_IRONWORKS_INTERIOR_3 ===
 Name: Conrad
-Class: Pkmn Trainer 1
+Class: Worker
 Pic: Worker
 Gender: Male
 Music: Male
@@ -18304,8 +18304,8 @@ Level: 15
 Name: Gardenia
 Class: Leader
 Pic: Gardenia
-Gender: Male
-Music: Male
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 Items: Super Potion / Super Potion
@@ -18334,7 +18334,7 @@ Level: 22
 === TRAINER_ETERNA_CITY_GALACTIC_BUILDING_1F_1 ===
 Name: Grunt
 Class: Galactic
-Pic: Galactic Grunt M
+Pic: Galactic Grunt F
 Gender: Female
 Music: Female
 Double Battle: No
@@ -18425,7 +18425,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ETERNA_CITY_GALACTIC_BUILDING_3F_1 ===
 Name: Grunt
 Class: Galactic
-Pic: Galactic Grunt M
+Pic: Galactic Grunt F
 Gender: Female
 Music: Female
 Double Battle: No
@@ -18453,7 +18453,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ETERNA_CITY_GALACTIC_BUILDING_3F_2 ===
 Name: Travon
-Class: Pkmn Trainer 1
+Class: Scientist
 Pic: Scientist
 Gender: Male
 Music: Male
@@ -18665,7 +18665,7 @@ Level: 33
 
 === TRAINER_CANALAVE_CITY_GYM_2 ===
 Name: Gary
-Class: Pkmn Trainer 1
+Class: Worker
 Pic: Worker
 Gender: Female
 Music: Female
@@ -18680,7 +18680,7 @@ Level: 31
 
 === TRAINER_CANALAVE_CITY_GYM_3 ===
 Name: Cesar
-Class: Pkmn Trainer 1
+Class: Ace Trainer
 Pic: Ace Trainer M
 Gender: Male
 Music: Male
@@ -18703,7 +18703,7 @@ Level: 32
 
 === TRAINER_CANALAVE_CITY_GYM_4 ===
 Name: Breanna
-Class: Pkmn Trainer 1
+Class: Ace Trainer
 Pic: Ace Trainer F
 Gender: Female
 Music: Female
@@ -18742,7 +18742,7 @@ Level: 32
 
 === TRAINER_CANALAVE_CITY_GYM_6 ===
 Name: Jackson
-Class: Pkmn Trainer 1
+Class: Worker
 Pic: Worker
 Gender: Female
 Music: Female
@@ -18769,7 +18769,7 @@ Level: 28
 
 === TRAINER_CANALAVE_CITY_GYM_7 ===
 Name: Gerardo
-Class: Pkmn Trainer 1
+Class: Worker
 Pic: Worker
 Gender: Female
 Music: Female

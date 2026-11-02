@@ -41,7 +41,7 @@
       "flag": "FLAG_HIDE_ETERNA_CITY_GALACTIC_GRUNT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_M",
+      "graphics_id": "OBJ_EVENT_GFX_GALACTIC_GRUNT_F",
       "x": 14,
       "y": 5,
       "elevation": 0,
