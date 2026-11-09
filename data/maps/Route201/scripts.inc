@@ -470,21 +470,7 @@ Route201_Movement_LucasDawnExitRight:
 	walk_right
 	step_end
 
-Route201_EventScript_Trainer1::
-	trainerbattle_single TRAINER_ROUTE201_1, Route201_Text_Trainer1Intro, Route201_Text_Trainer1Defeated
-	msgbox Route201_Text_Trainer1PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route201_Text_Trainer1Intro:
-	.string "Hiya! Care for a quick battle! I'm\n"
-	.string "pretty new to this.$"
-
-Route201_Text_Trainer1Defeated:
-	.string "Wow, you're good!$"
-
-Route201_Text_Trainer1PostBattle:
-	.string "That ledge is one way. Jump down for a\n"
-	.string "shortcut to {COLOR DYNAMIC_COLOR3}Twinleaf Town{COLOR DARK_GRAY}!$"
+@ retired: Route201_EventScript_Trainer1 (deleted)
 
 Route201_EventScript_NPC1::
 	@ poe:behavior {"mode":"gift","item":"ITEM_POTION","qty":1}

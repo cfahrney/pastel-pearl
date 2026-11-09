@@ -861,10 +861,10 @@
 #define TRAINER_MAY_PLACEHOLDER             854
 
 // Pastel Pearl trainers (Route 201-207 / Oreburgh)
-#define TRAINER_ROUTE201_1                  855
+#define TRAINER_ROUTE201_1                  855  // retired, slot kept to keep later IDs stable
 #define TRAINER_ROUTE202_1                  856
 #define TRAINER_ROUTE202_2                  857
-#define TRAINER_ROUTE202_3                  858
+#define TRAINER_ROUTE202_3                  858  // retired, slot kept to keep later IDs stable
 #define TRAINER_ROUTE202_4                  859
 #define TRAINER_ROUTE203_1                  860
 #define TRAINER_ROUTE203_2                  861

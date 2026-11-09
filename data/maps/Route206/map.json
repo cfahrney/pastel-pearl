@@ -191,7 +191,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_206_1",
-      "script": "NULL",
+      "script": "BerryTreeScript",
       "flag": "0"
     },
     {
@@ -204,7 +204,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_206_2",
-      "script": "NULL",
+      "script": "BerryTreeScript",
       "flag": "0"
     },
     {
@@ -279,42 +279,42 @@
       "y": 116,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "4"
+      "dest_warp_id": "1"
     },
     {
       "x": 15,
       "y": 116,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "4"
+      "dest_warp_id": "1"
     },
     {
       "x": 14,
       "y": 109,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "2"
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
       "y": 109,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "2"
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_ETERNA_GATEHOUSE",
-      "dest_warp_id": "3"
+      "dest_warp_id": "1"
     },
     {
       "x": 16,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_ETERNA_GATEHOUSE",
-      "dest_warp_id": "3"
+      "dest_warp_id": "1"
     },
     {
       "x": 12,
@@ -328,21 +328,21 @@
       "y": 109,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "2"
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 109,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "2"
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 109,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "3"
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
@@ -356,7 +356,7 @@
       "y": 116,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_CYCLING_ROAD_GATEHOUSE",
-      "dest_warp_id": "5"
+      "dest_warp_id": "1"
     },
     {
       "x": 11,
@@ -394,7 +394,7 @@
     {
       "type": "sign",
       "x": 17,
-      "y": 128,
+      "y": 127,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route206_EventScript_Sign1"

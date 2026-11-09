@@ -50,10 +50,7 @@ Route202_EventScript_Trainer2::
 	msgbox Route202_Text_Trainer2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route202_EventScript_Trainer3::
-	trainerbattle_single TRAINER_ROUTE202_3, Route202_Text_Trainer3Intro, Route202_Text_Trainer3Defeated
-	msgbox Route202_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
-	end
+@ retired: Route202_EventScript_Trainer3 (deleted)
 
 Route202_EventScript_Trainer4::
 	trainerbattle_single TRAINER_ROUTE202_4, Route202_Text_Trainer4Intro, Route202_Text_Trainer4Defeated
@@ -82,18 +79,6 @@ Route202_Text_Trainer2Defeated:
 Route202_Text_Trainer2PostBattle:
 	.string "My bugs are all tuckered out! I need to\n"
 	.string "go to a Pokémon Center!$"
-
-Route202_Text_Trainer3Intro:
-	.string "Zap zap!$"
-
-Route202_Text_Trainer3Defeated:
-	.string "Aww..no more zaps.$"
-
-Route202_Text_Trainer3PostBattle:
-	.string "It's nice being able to avoid the tall\n"
-	.string "grass by jumping down all these ledges.\l"
-	.string "It makes getting back to {COLOR DYNAMIC_COLOR3}Sandgem Town{COLOR DARK_GRAY}\l"
-	.string "super easy!$"
 
 Route202_Text_Trainer4Intro:
 	.string "Let's have a Pokémon battle! Humph! But\n"
