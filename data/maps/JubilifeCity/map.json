@@ -73,8 +73,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "JubilifeCity_EventScript_NPC3",
-      "flag": "FLAG_HIDE_JUBILIFE_CITY_CLOWN_2",
-      "local_id": "LOCALID_JUBILIFE_CITY_CLOWN_3"
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
@@ -100,8 +99,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "JubilifeCity_EventScript_NPC5",
-      "flag": "FLAG_HIDE_JUBILIFE_CITY_CLOWN",
-      "local_id": "LOCALID_JUBILIFE_CITY_CLOWN"
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
@@ -325,6 +323,7 @@
       "flag": "FLAG_HIDE_ROUTE204_TREE1"
     },
     {
+      "local_id": "LOCALID_JUBILIFE_CITY_CLERK",
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
       "x": 27,
       "y": 43,
@@ -335,8 +334,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "JubilifeCity_EventScript_NPC15",
-      "flag": "0",
-      "local_id": "LOCALID_JUBILIFE_CITY_CLERK"
+      "flag": "0"
     },
     {
       "local_id": "LOCALID_JUBILIFECITY_LUCASDAWN",
@@ -364,7 +362,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "JubilifeCity_EventScript_NPC22",
+      "script": "NULL",
       "flag": "FLAG_HIDE_JUBILIFECITY_DEXNAVPRESIDENT",
       "scriptOnly": true
     },
@@ -555,20 +553,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "JubilifeCity_EventScript_NPC21",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 21,
-      "y": 18,
-      "elevation": 5,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "JubilifeCity_EventScript_NPC23",
-      "flag": "FLAG_HIDE_JUBILIFE_CITY_CLOWN",
-      "local_id": "LOCALID_JUBILIFE_CITY_CLOWN_2"
     }
   ],
   "warp_events": [

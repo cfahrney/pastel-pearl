@@ -243,32 +243,6 @@ JubilifeCity_TVStation_1F_EventScript_NPC10_2_2::
 	release
 	end
 
-JubilifeCity_TVStation_1F_EventScript_NPC11::
-	lock
-	faceplayer
-	@ TODO(DP): goto if DP trainer #460 (Clown Lee) is beaten
-	msgbox JubilifeCity_TVStation_1F_Text_NPC11, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, JubilifeCity_TVStation_1F_EventScript_NPC11_2_2
-	msgbox JubilifeCity_TVStation_1F_Text_NPC11_2, MSGBOX_DEFAULT
-	closemessage
-	@ TODO(DP): Scripted battle against DP trainer #460 (Clown Lee)
-	@ TODO(DP): Mark DP trainer #460 beaten
-	@ TODO(DP): Set DP system flag 2735
-	release
-	end
-
-JubilifeCity_TVStation_1F_EventScript_NPC11_2::
-	msgbox JubilifeCity_TVStation_1F_Text_NPC11_3, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
-JubilifeCity_TVStation_1F_EventScript_NPC11_2_2::
-	msgbox JubilifeCity_TVStation_1F_Text_NPC11_4, MSGBOX_DEFAULT
-	closemessage
-	release
-	end
-
 JubilifeCity_TVStation_1F_EventScript_NPC12::
 	lock
 	faceplayer
@@ -363,7 +337,6 @@ JubilifeCity_TVStation_1F_OnTransition::
 	@ TODO(DP): Unmark DP trainer #371 beaten
 	@ TODO(DP): Unmark DP trainer #370 beaten
 	@ TODO(DP): Unmark DP trainer #369 beaten
-	@ TODO(DP): Unmark DP trainer #460 beaten
 	@ TODO(DP): Unmark DP trainer #368 beaten
 	@ TODO(DP): Unmark DP trainer #465 beaten
 	@ TODO(DP): Unmark DP trainer #431 beaten
@@ -373,7 +346,6 @@ JubilifeCity_TVStation_1F_OnTransition_2::
 	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_IDOL
 	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_REPORTER
 	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_CAMERAMAN
-	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_CLOWN
 	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_REPORTER_2
 	setflag FLAG_JUBILIFE_CITY_TVSTATION_1F_EVENT_1
 	setflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_PIKACHU
@@ -381,7 +353,6 @@ JubilifeCity_TVStation_1F_OnTransition_2::
 	goto_if_eq VAR_TEMP_0, 0, JubilifeCity_TVStation_1F_OnTransition_2_2
 	goto_if_eq VAR_TEMP_0, 1, JubilifeCity_TVStation_1F_OnTransition_2_3
 	goto_if_eq VAR_TEMP_0, 2, JubilifeCity_TVStation_1F_OnTransition_2_4
-	goto_if_eq VAR_TEMP_0, 3, JubilifeCity_TVStation_1F_OnTransition_2_5
 	goto_if_eq VAR_TEMP_0, 4, JubilifeCity_TVStation_1F_OnTransition_2_6
 	goto_if_eq VAR_TEMP_0, 5, JubilifeCity_TVStation_1F_OnTransition_2_7
 	goto_if_eq VAR_TEMP_0, 6, JubilifeCity_TVStation_1F_OnTransition_2_8
@@ -397,10 +368,6 @@ JubilifeCity_TVStation_1F_OnTransition_2_3::
 
 JubilifeCity_TVStation_1F_OnTransition_2_4::
 	clearflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_CAMERAMAN
-	end
-
-JubilifeCity_TVStation_1F_OnTransition_2_5::
-	clearflag FLAG_HIDE_JUBILIFE_CITY_TVSTATION_1F_CLOWN
 	end
 
 JubilifeCity_TVStation_1F_OnTransition_2_6::
@@ -557,24 +524,6 @@ JubilifeCity_TVStation_1F_Text_NPC10_4:
 	.string "That's a downer...\p"
 	.string "I thought I'd found a Trainer and\n"
 	.string "Pokémon who'd shine on camera.$"
-
-JubilifeCity_TVStation_1F_Text_NPC11:
-	.string "Are we all ready to have some fun? I\n"
-	.string "sure am! Aren't you having fun?!\p"
-	.string "Let's make it fun! OK?!$"
-
-JubilifeCity_TVStation_1F_Text_NPC11_2:
-	.string "OK, how shall we do this? Shall we do\n"
-	.string "something fantastical?$"
-
-JubilifeCity_TVStation_1F_Text_NPC11_3:
-	.string "A clown's makeup is a face that's crying\n"
-	.string "while laughing.\p"
-	.string "It defines what we do!$"
-
-JubilifeCity_TVStation_1F_Text_NPC11_4:
-	.string "Oh, how shall I say this...? It makes me\n"
-	.string "all lonely, I say...$"
 
 JubilifeCity_TVStation_1F_Text_NPC12:
 	.string "Oh, no. What we really want to see is you\n"

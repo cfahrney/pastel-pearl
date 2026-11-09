@@ -443,10 +443,7 @@
 //    7  TODO
 //    8  TODO
 //    9  TODO
-#define VAR_JUBILIFE_CITY_STATE_2                        0x7019
-// @states Imported from Diamond/Pearl (DP var 0x4079).
-//    0  TODO
-//    2  TODO
+#define VAR_UNUSED_0x7019                        0x7019 // Unused Var
 #define VAR_UNUSED_0x701C                        0x701C // Unused Var
 #define VAR_UNUSED_0x701D                        0x701D // Unused Var
 #define VAR_UNUSED_0x701E                        0x701E // Unused Var
