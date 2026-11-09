@@ -273,6 +273,8 @@ s32 LearnMove(const struct MoveLearnUI *ui, u8 taskId)
     case LEARN_MOVE:
         if (GiveMoveToBoxMon(boxmon, move) != MON_HAS_MAX_MOVES)
             return LEARNED_MOVE_1;
+        else if (ui->skipPrompts)
+            return WANT_REPLACE_2;
         else
             return ASK_REPLACEMENT_1;
     case ASK_REPLACEMENT_1:
@@ -318,7 +320,16 @@ s32 LearnMove(const struct MoveLearnUI *ui, u8 taskId)
         return WANT_REPLACE_3;
     case WANT_REPLACE_3:
         if (GetMoveSlotToReplace() == MAX_MON_MOVES)
+        {
+            if (ui->skipPrompts)
+            {
+                gSpecialVar_Result = FALSE;
+                return LEARN_MOVE_END;
+            }
             return REFUSE_REPLACE_1;
+        }
+        else if (ui->skipPrompts)
+            return REPLACE_MOVE_1;
         else
             return FORGOT_MOVE_1;
     case LEARNED_MOVE_1:
@@ -338,6 +349,7 @@ s32 LearnMove(const struct MoveLearnUI *ui, u8 taskId)
     case REPLACE_MOVE_1:
     {
         u32 slot = GetMoveSlotToReplace();
+        StringCopy(gStringVar3, GetMoveName(GetBoxMonData(boxmon, MON_DATA_MOVE1 + slot)));
         RemoveBoxMonPPBonus(boxmon, slot);
         u32 originalPP = GetBoxMonData(boxmon, MON_DATA_PP1 + slot);
         u32 pp = GetMovePP(move);
@@ -347,7 +359,10 @@ s32 LearnMove(const struct MoveLearnUI *ui, u8 taskId)
         GetBoxMonNickname(boxmon, gStringVar1);
         StringCopy(gStringVar2, GetMoveName(move));
         gSpecialVar_Result = TRUE;
-        ui->printMessage(gText_PkmnLearnedMove4);
+        if (ui->skipPrompts)
+            ui->printMessage(gText_MoveRelearnerPkmnForgotMoveAndLearnedNew);
+        else
+            ui->printMessage(gText_PkmnLearnedMove4);
         return LEARN_MOVE_END;
     }
     case DID_NOT_LEARN_1:
@@ -372,6 +387,13 @@ s32 GetLearnMoveStartState(void)
 s32 GetLearnMoveStartAfterPromptState(void)
 {
     return PROMPT_BEFORE_LEARNING_1;
+}
+
+// Relearner start: its list is built from the mon's own relearnable moves, which are not in the
+// teachable learnset VALIDATE_BEFORE_LEARNING checks, so skip straight to the move itself.
+s32 GetLearnMoveStartNoPromptState(void)
+{
+    return LEARN_MOVE;
 }
 
 //At the time of writing code for this, there was no prescribed way to make a task persist between scenes

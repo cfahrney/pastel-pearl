@@ -314,6 +314,7 @@ static void SpriteCB_MoveSelector(struct Sprite *);
 static void DestroyMoveSelectorSprites(u8);
 static void SetMainMoveSelectorColor(u8);
 static void KeepMoveSelectorVisible(u8);
+static void RestoreMoveSelectorAfterPageChange(void);
 static void SummaryScreen_DestroyAnimDelayTask(void);
 static bool32 ShouldShowMoveRelearner(void);
 static bool32 ShouldShowRename(void);
@@ -1237,13 +1238,13 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
         sMonSummaryScreen->lockMovesFlag = TRUE;
         break;
     case SUMMARY_MODE_SELECT_MOVE:
-        sMonSummaryScreen->minPageIndex = PSS_PAGE_BATTLE_MOVES;
+        sMonSummaryScreen->minPageIndex = 0;
         sMonSummaryScreen->maxPageIndex = PSS_PAGE_COUNT - 1;
         sMonSummaryScreen->lockMonFlag = TRUE;
         break;
     }
 
-    if (mode == SUMMARY_MODE_RELEARNER_BATTLE)
+    if (mode == SUMMARY_MODE_RELEARNER_BATTLE || mode == SUMMARY_MODE_SELECT_MOVE)
         sMonSummaryScreen->currPageIndex = PSS_PAGE_BATTLE_MOVES;
     else if (mode == SUMMARY_MODE_RELEARNER_CONTEST)
         sMonSummaryScreen->currPageIndex = PSS_PAGE_CONTEST_MOVES;
@@ -1609,6 +1610,15 @@ static void SetDefaultTilemaps(void)
         SetBgAttribute(2, BG_ATTR_PRIORITY, 1);
         ChangeBgX(1, 0x10000, BG_COORD_ADD);
         ChangeBgX(2, 0x10000, BG_COORD_ADD);
+        ShowBg(1);
+        ShowBg(2);
+    }
+    else if (sMonSummaryScreen->mode == SUMMARY_MODE_SELECT_MOVE)
+    {
+        SetBgTilemapBuffer(1, sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_SKILLS][0]);
+        SetBgAttribute(1, BG_ATTR_PRIORITY, 2);
+        SetBgAttribute(2, BG_ATTR_PRIORITY, 1);
+        ChangeBgX(1, 0x10000, BG_COORD_ADD);
         ShowBg(1);
         ShowBg(2);
     }
@@ -2242,6 +2252,7 @@ static void PssScrollRightEnd(u8 taskId) // display right
     PutPageWindowTilemaps(sMonSummaryScreen->currPageIndex);
     SetTypeIcons();
     TryDrawExperienceProgressBar();
+    RestoreMoveSelectorAfterPageChange();
     SwitchTaskToFollowupFunc(taskId);
 }
 
@@ -2294,6 +2305,7 @@ static void PssScrollLeftEnd(u8 taskId) // display left
     PutPageWindowTilemaps(sMonSummaryScreen->currPageIndex);
     SetTypeIcons();
     TryDrawExperienceProgressBar();
+    RestoreMoveSelectorAfterPageChange();
     SwitchTaskToFollowupFunc(taskId);
 }
 
@@ -2633,12 +2645,13 @@ static void Task_HandleReplaceMoveInput(u8 taskId)
     {
         if (gPaletteFade.active != TRUE)
         {
-            if (JOY_NEW(DPAD_UP))
+            // Up/down and A only mean anything on the two move pages.
+            if (JOY_NEW(DPAD_UP) && IS_MOVE_PAGE(sMonSummaryScreen->currPageIndex))
             {
                 data[0] = 4;
                 ChangeSelectedMove(data, -1, &sMonSummaryScreen->firstMoveIndex);
             }
-            else if (JOY_NEW(DPAD_DOWN))
+            else if (JOY_NEW(DPAD_DOWN) && IS_MOVE_PAGE(sMonSummaryScreen->currPageIndex))
             {
                 data[0] = 4;
                 ChangeSelectedMove(data, 1, &sMonSummaryScreen->firstMoveIndex);
@@ -2651,7 +2664,7 @@ static void Task_HandleReplaceMoveInput(u8 taskId)
             {
                 ChangePage(taskId, 1);
             }
-            else if (JOY_NEW(A_BUTTON))
+            else if (JOY_NEW(A_BUTTON) && IS_MOVE_PAGE(sMonSummaryScreen->currPageIndex))
             {
                 if (CanReplaceMove() == TRUE)
                 {
@@ -4700,6 +4713,12 @@ static void CreateMoveSelectorSprites(u8 idArrayStart)
 
 static void SpriteCB_MoveSelector(struct Sprite *sprite)
 {
+    if (!IS_MOVE_PAGE(sMonSummaryScreen->currPageIndex))
+    {
+        sprite->invisible = TRUE;
+        return;
+    }
+
     if (sprite->animNum > 3 && sprite->animNum < 7)
     {
         sprite->data[1] = (sprite->data[1] + 1) & 0x1F;
@@ -4742,6 +4761,12 @@ static void SetMainMoveSelectorColor(u8 which)
         else
             StartSpriteAnim(&gSprites[spriteIds[i]], which + 6);
     }
+}
+
+static void RestoreMoveSelectorAfterPageChange(void)
+{
+    if (sMonSummaryScreen->mode == SUMMARY_MODE_SELECT_MOVE && IS_MOVE_PAGE(sMonSummaryScreen->currPageIndex))
+        KeepMoveSelectorVisible(SPRITE_ARR_ID_MOVE_SELECTOR1);
 }
 
 static void KeepMoveSelectorVisible(u8 firstSpriteId)

@@ -8,6 +8,7 @@ struct MoveLearnUI {
     void (*playFanfare)(u32 songId);
     void (*showMoveList)(u8 taskId);
     void (*endTask)(u8 taskId);
+    bool8 skipPrompts; // skip every yes/no and status message; act on the first press
 };
 
 u32 IsBoxMonExcluded(struct BoxPokemon *boxmon);
@@ -15,6 +16,7 @@ bool32 CanBoxMonBeSelected(struct BoxPokemon *boxmon);
 s32 LearnMove(const struct MoveLearnUI *ui, u8 taskId);
 s32 GetLearnMoveStartState(void);
 s32 GetLearnMoveStartAfterPromptState(void);
+s32 GetLearnMoveStartNoPromptState(void);
 s32 GetLearnMoveResumeAfterSummaryScreenState(void);
 
 #endif // GUARD_CHOOSEBOXMON_H

@@ -81,6 +81,7 @@ static EWRAM_DATA struct {
 
 EWRAM_DATA enum MoveRelearnerStates gMoveRelearnerState = MOVE_RELEARNER_LEVEL_UP_MOVES;
 EWRAM_DATA enum RelearnMode gRelearnMode = RELEARN_MODE_NONE;
+EWRAM_DATA bool8 gPartyMenuCursorOnLearnMoves = FALSE;
 
 static const u16 sUI_Pal[] = INCGFX_U16("graphics/interface/ui_learn_move.png", ".gbapal");
 
@@ -545,7 +546,8 @@ static const struct MoveLearnUI sMoveLearnUI =
     .printMessage = UIPrintMessage,
     .playFanfare = UIPlayFanfare,
     .showMoveList = UIShowMoveList,
-    .endTask = UIEndTask
+    .endTask = UIEndTask,
+    .skipPrompts = TRUE
 };
 
 static void Task_MoveRelearner_Quit(u8 taskId)
@@ -555,6 +557,7 @@ static void Task_MoveRelearner_Quit(u8 taskId)
 
     if (gRelearnMode == RELEARN_MODE_PARTY_MENU)
     {
+        gPartyMenuCursorOnLearnMoves = TRUE;
         gLastViewedMonIndex = gTasks[taskId].tPartyIndex;
         SetMainCallback2(CB2_ReturnToPartyMenuFromSummaryScreen);
     }
@@ -574,37 +577,6 @@ static void Task_MoveRelearner_Quit(u8 taskId)
     gRelearnMode = RELEARN_MODE_NONE;
     DestroyTask(taskId);
 }
-
-static void Task_MoveRelearner_Giveup_Answer(u8 taskId)
-{
-    switch (Menu_ProcessInputNoWrapClearOnChoose())
-    {
-    case 0: // Yes
-        if (gRelearnMode == RELEARN_MODE_SCRIPT)
-            gSpecialVar_Result = FALSE;
-        gTasks[taskId].func = Task_MoveRelearner_Quit;
-        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
-        break;
-    case 1: // No
-    case MENU_B_PRESSED:
-        gTasks[taskId].func = Task_MoveRelearner_HandleInput;
-        ShowTeachMoveText();
-        AddScrollArrows();
-        break;
-    }
-}
-
-static void Task_MoveRelearner_Giveup_Prompt(u8 taskId)
-{
-
-    if (IsTextPrinterActiveOnWindow(RELEARNERWIN_MSG))
-        return;
-
-    MoveRelearnerCreateYesNoMenu();
-    gTasks[taskId].func = Task_MoveRelearner_Giveup_Answer;
-}
-
-
 
 static void Task_MoveRelearner_LearnMove(u8 taskId)
 {
@@ -647,12 +619,10 @@ static void Task_MoveRelearner_HandleInput(u8 taskId)
     case LIST_CANCEL:
         PlaySE(SE_SELECT);
         RemoveScrollArrows();
-        gTasks[taskId].func = Task_MoveRelearner_Giveup_Prompt;
         if (gRelearnMode == RELEARN_MODE_SCRIPT)
-            StringExpandPlaceholders(gStringVar4, gText_MoveRelearnerGiveUp);
-        else
-            StringExpandPlaceholders(gStringVar4, gText_MoveRelearnerStop);
-        MoveRelearnerPrintMessage(gStringVar4);
+            gSpecialVar_Result = FALSE;
+        gTasks[taskId].func = Task_MoveRelearner_Quit;
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
         break;
     default:
         PlaySE(SE_SELECT);
@@ -660,16 +630,8 @@ static void Task_MoveRelearner_HandleInput(u8 taskId)
         StringCopy(gStringVar2, GetMoveName(itemId));
         gTasks[taskId].func = Task_MoveRelearner_LearnMove;
         gTasks[taskId].tMove = GetCurrentSelectedMove();
-        gTasks[taskId].tState = GetLearnMoveStartAfterPromptState();
-        const u8 *message = gText_MoveRelearnerTeachMoveConfirm;
-        if (ShouldConsumeTmItem(gTasks[taskId].tMove))
-        {
-            enum Item item = GetTMHMItemIdFromMoveId(gTasks[taskId].tMove);
-            StringCopy(gStringVar3, GetItemName(item));
-            if (!GetItemImportance(item))
-                message = gText_MoveRelearnerTeachMoveConfirmUseTm;
-        }
-        UIPrintMessage(message);
+        gSpecialVar_Result = FALSE;
+        gTasks[taskId].tState = GetLearnMoveStartNoPromptState();
         break;
     }
 }

@@ -2910,10 +2910,17 @@ static u8 DisplaySelectionWindow(u8 windowType)
         AddTextPrinterParameterized4(sPartyMenuInternal->windowId[0], FONT_NORMAL, cursorDimension, (i * 16) + 1, letterSpacing, 0, sFontColorTable[fontColorsId], 0, text);
     }
 
-    // Start on Summary even when Pokédex sits above it
+    // Start on Summary even when Pokédex sits above it, or back on Learn Moves if that is
+    // where we just came from.
+    u8 startAction = MENU_SUMMARY;
+    if (gPartyMenuCursorOnLearnMoves)
+    {
+        startAction = MENU_MOVES;
+        gPartyMenuCursorOnLearnMoves = FALSE;
+    }
     for (i = 0; i < sPartyMenuInternal->numActions; i++)
     {
-        if (sPartyMenuInternal->actions[i] == MENU_SUMMARY)
+        if (sPartyMenuInternal->actions[i] == startAction)
             break;
     }
     if (i == sPartyMenuInternal->numActions)
