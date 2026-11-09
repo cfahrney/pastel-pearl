@@ -57,25 +57,11 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 2,
-      "elevation": 0,
-      "dest_map": "MAP_ETERNA_CITY",
-      "dest_warp_id": "10"
-    },
-    {
       "x": 5,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY",
       "dest_warp_id": "10"
-    },
-    {
-      "x": 6,
-      "y": 2,
-      "elevation": 0,
-      "dest_map": "MAP_ETERNA_CITY",
-      "dest_warp_id": "11"
     },
     {
       "x": 5,

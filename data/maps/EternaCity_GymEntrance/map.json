@@ -28,6 +28,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_ETERNA_CITY_GYM_ENTRANCE_GARDENIA",
       "graphics_id": "OBJ_EVENT_GFX_GARDENIA",
       "x": 8,
       "y": 3,
@@ -38,8 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EternaCity_GymEntrance_EventScript_NPC2",
-      "flag": "FLAG_HIDE_ETERNA_CITY_GYM_ENTRANCE_GARDENIA",
-      "local_id": "LOCALID_ETERNA_CITY_GYM_ENTRANCE_GARDENIA"
+      "flag": "FLAG_HIDE_ETERNA_CITY_GYM_ENTRANCE_GARDENIA"
     }
   ],
   "warp_events": [
@@ -56,13 +56,6 @@
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY_GYM",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 9,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_ETERNA_CITY",
-      "dest_warp_id": "8"
     }
   ],
   "coord_events": [],
