@@ -700,3 +700,37 @@ OreburghCity_Text_NPC14:
 	.string "used over and over.\p"
 	.string "It's tricky trying to decide which\n"
 	.string "Pokémon should learn what moves.$"
+
+OreburghCity_EventScript_NPC15::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NUMEL, CRY_MODE_NORMAL
+	setspeaker OreburghCity_Text_NPC15Speaker
+	msgbox OreburghCity_Text_NPC15, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_Text_NPC15Speaker:
+	.string "Numel$"
+
+OreburghCity_Text_NPC15:
+	.string "Nuuu… meeel.$"
+
+OreburghCity_EventScript_NPC16::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NUMEL, CRY_MODE_NORMAL
+	setspeaker OreburghCity_Text_NPC16Speaker
+	msgbox OreburghCity_Text_NPC16, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OreburghCity_Text_NPC16Speaker:
+	.string "Numel$"
+
+OreburghCity_Text_NPC16:
+	.string "Numel numel!$"
