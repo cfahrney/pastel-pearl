@@ -22,6 +22,9 @@
 #include "constants/item_effects.h"
 #include "constants/hold_effects.h"
 
+// The TM/HM pocket has to hold one slot per machine, or the last ones silently fail to be added.
+STATIC_ASSERT(BAG_TMHM_COUNT >= NUM_ALL_MACHINES, TMHMPocketTooSmall);
+
 #define DUMMY_PC_BAG_POCKET                 \
 {                                           \
     .id = POCKET_DUMMY,                     \
