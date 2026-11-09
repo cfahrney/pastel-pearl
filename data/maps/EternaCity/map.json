@@ -301,14 +301,14 @@
       "y": 57,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_ETERNA_GATEHOUSE",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 57,
       "elevation": 0,
       "dest_map": "MAP_ROUTE206_ETERNA_GATEHOUSE",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     },
     {
       "x": 22,

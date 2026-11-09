@@ -17,7 +17,7 @@
     {
       "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_CLEFAIRY",
       "graphics_id": "OBJ_EVENT_GFX_CLEFAIRY",
-      "x": 12,
+      "x": 11,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -31,7 +31,7 @@
     {
       "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_JUPITER",
       "graphics_id": "OBJ_EVENT_GFX_JUPITER",
-      "x": 11,
+      "x": 10,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -45,7 +45,7 @@
     {
       "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_BUNEARY",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUNEARY)",
-      "x": 12,
+      "x": 11,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -59,7 +59,7 @@
     {
       "local_id": "LOCALID_ETERNA_CITY_GALACTIC_BUILDING_4_F_MIDDLE_AGED_MAN",
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 9,
+      "x": 8,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -74,7 +74,7 @@
   "warp_events": [
     {
       "x": 7,
-      "y": 2,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY_GALACTIC_BUILDING_3F",
       "dest_warp_id": "1"

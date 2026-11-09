@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 5,
+      "x": 6,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "x": 8,
+      "x": 9,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -56,25 +56,18 @@
   ],
   "warp_events": [
     {
-      "x": 11,
+      "x": 13,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY",
       "dest_warp_id": "4"
     },
     {
-      "x": 15,
-      "y": 3,
+      "x": 16,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ETERNA_CITY_CONDOMINIUMS_2F",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 12,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_ETERNA_CITY",
-      "dest_warp_id": "4"
     }
   ],
   "coord_events": [],
