@@ -403,7 +403,7 @@
     {
       "id": "HEAL_LOCATION_CANALAVE_CITY",
       "map": "MAP_CANALAVE_CITY",
-      "x": 34,
+      "x": 38,
       "y": 14,
       "respawn_map": "MAP_CANALAVE_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_CANALAVE_NURSE"

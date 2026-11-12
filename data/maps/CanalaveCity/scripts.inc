@@ -789,3 +789,37 @@ CanalaveCity_Text_NPC15Speaker:
 
 CanalaveCity_Text_NPC15:
 	.string "Draaaaa$"
+
+CanalaveCity_EventScript_NPC16::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	setspeaker CanalaveCity_Text_NPC16Speaker
+	msgbox CanalaveCity_Text_NPC16, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+CanalaveCity_Text_NPC16Speaker:
+	.string "Wingull$"
+
+CanalaveCity_Text_NPC16:
+	.string "CANALAVE CITY NPC 16$"
+
+CanalaveCity_EventScript_NPC17::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	setspeaker CanalaveCity_Text_NPC17Speaker
+	msgbox CanalaveCity_Text_NPC17, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+CanalaveCity_Text_NPC17Speaker:
+	.string "Wingull$"
+
+CanalaveCity_Text_NPC17:
+	.string "CANALAVE CITY NPC 17$"
