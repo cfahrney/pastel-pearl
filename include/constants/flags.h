@@ -751,7 +751,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_219_SUPER_POTION                     0x2B8
 #define FLAG_HIDDEN_ITEM_TWINLEAF_TOWN_ODD_KEYSTONE                 0x2B9
 #define FLAG_HIDDEN_ITEM_VERITY_LAKEFRONT_POTION                    0x2BA
-#define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_218_NORTH_1                          0x2BB
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
@@ -776,7 +776,7 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_218_NORTH_2                          0x2D9
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
@@ -1302,7 +1302,7 @@
 #define FLAG_ITEM_OREBURGH_CITY_OREBURGH_MINE_X_DEFENSE             0x4E0
 #define FLAG_ITEM_OREBURGH_CITY_OREBURGH_MINE_2_ESCAPE_ROPE         0x4E1
 #define FLAG_ITEM_ROUTE_218_HONEY                                   0x4E2
-#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
+#define FLAG_ITEM_ROUTE_218_NORTH_1                                 0x4E3
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
 #define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag

@@ -993,12 +993,18 @@
 #define TRAINER_ETERNA_FOREST_EXTERIOR_2 984
 #define TRAINER_ROUTE219_1 985
 #define TRAINER_ROUTE219_2 986
+#define TRAINER_ROUTE218_NORTH_1 987
+#define TRAINER_ROUTE218_NORTH_2 988
+#define TRAINER_ROUTE218_NORTH_3 989
+#define TRAINER_ROUTE218_NORTH_4 990
+#define TRAINER_ROUTE218_NORTH_5 991
+#define TRAINER_ROUTE218_NORTH_6 992
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for a limited number of additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     987
+#define TRAINERS_COUNT_EMERALD     993
 #define MAX_TRAINERS_COUNT_EMERALD 1176
 
 #if IS_FRLG

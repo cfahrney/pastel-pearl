@@ -22,6 +22,11 @@
       "map": "MAP_CANALAVE_CITY",
       "offset": -20,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE218_NORTH",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
