@@ -1790,6 +1790,10 @@
     {
       "id": "MAPSEC_CANALAVE_CITY",
       "name": "Canalave City"
+    },
+    {
+      "id": "MAPSEC_IRON_COAST",
+      "name": "Iron Coast"
     }
   ]
 }

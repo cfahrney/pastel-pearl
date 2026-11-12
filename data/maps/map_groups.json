@@ -1201,7 +1201,10 @@
     "Route205_North",
     "ValleyWindworks",
     "FuegoIronworks",
-    "EternaForest_Exterior"
+    "EternaForest_Exterior",
+    "IronCoast",
+    "IronCoast_North",
+    "Route218_North"
   ],
   "gMapGroup_SinnohDungeons": [
     "OreburghGate",

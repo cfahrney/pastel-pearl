@@ -10626,7 +10626,7 @@
     {
       "id": "LAYOUT_CANALAVE_CITY",
       "name": "CanalaveCity_Layout",
-      "width": 40,
+      "width": 44,
       "height": 59,
       "primary_tileset": "gTileset_SinnohGeneral",
       "secondary_tileset": "gTileset_Canalave",
@@ -10802,6 +10802,36 @@
       "secondary_tileset": "gTileset_GateHouse",
       "border_filepath": "data/layouts/Template_VerticalGuardlessGateHouse/border.bin",
       "blockdata_filepath": "data/layouts/Template_VerticalGuardlessGateHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_IRON_COAST_NORTH",
+      "name": "IronCoast_North_Layout",
+      "width": 41,
+      "height": 84,
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_WaterRoute",
+      "border_filepath": "data/layouts/IronCoast_North/border.bin",
+      "blockdata_filepath": "data/layouts/IronCoast_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_IRON_COAST",
+      "name": "IronCoast_Layout",
+      "width": 129,
+      "height": 29,
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_Canalave",
+      "border_filepath": "data/layouts/IronCoast/border.bin",
+      "blockdata_filepath": "data/layouts/IronCoast/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE218_NORTH",
+      "name": "Route218_North_Layout",
+      "width": 66,
+      "height": 28,
+      "primary_tileset": "gTileset_SinnohGeneral",
+      "secondary_tileset": "gTileset_Canalave",
+      "border_filepath": "data/layouts/Route218_North/border.bin",
+      "blockdata_filepath": "data/layouts/Route218_North/map.bin"
     }
   ]
 }

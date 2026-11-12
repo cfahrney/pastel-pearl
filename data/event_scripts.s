@@ -2023,3 +2023,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Template_MessyOneStoryHome/scripts.inc"
 
 	.include "data/maps/Template_VerticalGuardlessGateHouse/scripts.inc"
+
+	.include "data/maps/IronCoast/scripts.inc"
+
+	.include "data/maps/Route218_North/scripts.inc"
+
+	.include "data/maps/IronCoast_North/scripts.inc"
