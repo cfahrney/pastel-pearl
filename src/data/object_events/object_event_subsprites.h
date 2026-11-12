@@ -380,6 +380,84 @@ const struct SubspriteTable sOamTables_64x64[] = {
     {ARRAY_COUNT(sOamTable_64x64_3), sOamTable_64x64_3}
 };
 
+static const struct Subsprite sOamTable_64x128_0[] = {
+    {
+        .x = -32,
+        .y = -64,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 2
+    },
+    {
+        .x = -32,
+        .y = 0,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 64,
+        .priority = 2
+    }
+};
+
+static const struct Subsprite sOamTable_64x128_1[] = {
+    {
+        .x = -32,
+        .y = -64,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 1
+    },
+    {
+        .x = -32,
+        .y = 0,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 64,
+        .priority = 1
+    }
+};
+
+static const struct Subsprite sOamTable_64x128_2[] = {
+    {
+        .x = -32,
+        .y = -64,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 2
+    },
+    {
+        .x = -32,
+        .y = 0,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 64,
+        .priority = 2
+    }
+};
+
+static const struct Subsprite sOamTable_64x128_3[] = {
+    {
+        .x = -32,
+        .y = -64,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 2
+    },
+    {
+        .x = -32,
+        .y = 0,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 64,
+        .priority = 2
+    }
+};
+
+// Two stacked 64x64 pieces; index 0 isn't empty since the base oam is only 8x8.
+static const struct SubspriteTable sOamTables_64x128[] = {
+    {ARRAY_COUNT(sOamTable_64x128_0), sOamTable_64x128_0},
+    {ARRAY_COUNT(sOamTable_64x128_0), sOamTable_64x128_0},
+    {ARRAY_COUNT(sOamTable_64x128_1), sOamTable_64x128_1},
+    {ARRAY_COUNT(sOamTable_64x128_2), sOamTable_64x128_2},
+    {ARRAY_COUNT(sOamTable_64x128_3), sOamTable_64x128_3},
+    {ARRAY_COUNT(sOamTable_64x128_3), sOamTable_64x128_3}
+};
+
 static const struct Subsprite sOamTable_96x40_0[] = {
     {
         .x = -48,

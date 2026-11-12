@@ -1601,6 +1601,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PalkiaStatue = {
     .images = sPicTable_PalkiaStatue,
 };
 
+// DP's ferry (Canalave, Iron Island); bottom of the art sits on the object's tile.
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ferry = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_FERRY,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 4096,
+    .width = 64,
+    .height = 128,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_8x8,
+    .subspriteTables = sOamTables_64x128,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Ferry,
+};
+
 // Canalave's ferry: Seagallop art pointing up/down, sharing Seagallop's palette.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SeagallopVertical = {
     .tileTag = TAG_NONE,

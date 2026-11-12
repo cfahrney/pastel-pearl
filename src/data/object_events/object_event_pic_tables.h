@@ -366,6 +366,10 @@ static const struct SpriteFrameImage sPicTable_PalkiaStatue[] = {
     obj_frame_tiles(gObjectEventPic_PalkiaStatue),
 };
 
+static const struct SpriteFrameImage sPicTable_Ferry[] = {
+    obj_frame_tiles(gObjectEventPic_Ferry),
+};
+
 static const struct SpriteFrameImage sPicTable_SeagallopVertical[] = {
     overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),
     overworld_frame(gObjectEventPic_SeagallopVertical, 4, 16, 0),

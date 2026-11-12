@@ -575,6 +575,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Roark,                    OBJ_EVENT_PAL_TAG_ROARK},
     {gObjectEventPal_MossyRock,                OBJ_EVENT_PAL_TAG_MOSSY_ROCK},
     {gObjectEventPal_PalkiaStatue,             OBJ_EVENT_PAL_TAG_PALKIA_STATUE},
+    {gObjectEventPal_Ferry,                    OBJ_EVENT_PAL_TAG_FERRY},
     {gObjectEventPal_RockerDp,                 OBJ_EVENT_PAL_TAG_ROCKER_DP},
     {gObjectEventPal_Roughneck,                OBJ_EVENT_PAL_TAG_ROUGHNECK},
     {gObjectEventPal_RuinManiac,               OBJ_EVENT_PAL_TAG_RUIN_MANIAC},
