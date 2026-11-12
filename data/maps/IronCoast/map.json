@@ -1,0 +1,36 @@
+{
+  "id": "MAP_IRON_COAST",
+  "name": "IronCoast",
+  "layout": "LAYOUT_IRON_COAST",
+  "music": "MUS_ROUTE_205_DAY",
+  "region_map_section": "MAPSEC_IRON_COAST",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_CANALAVE_CITY",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_IRON_COAST_NORTH",
+      "offset": 81,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE218_NORTH",
+      "offset": 44,
+      "direction": "down"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}
